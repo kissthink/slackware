@@ -1,0 +1,68 @@
+Tue Mar  4 13:18:39 CET 2014
+ap/glances-1.7.4-x86_64-1_microlinux.txz: Upgraded.
++--------------------------+
+Tue Mar  4 11:51:50 CET 2014
+l/pysetuptools-2.1-x86_64-1_microlinux.txz: Added.
+l/psutil-1.2.1-x86_64-1_microlinux.txz: Added.
+ap/glances-1.7.2-x86_64-1_microlinux.txz: Added.
++--------------------------+
+Wed Dec 25 15:33:45 CET 2013
+Microlinux Enterprise Server 14.0 64-bit released! This is an LTS release,
+which means packages will be maintained for as long as the underlying Slackware
+system is officially supported.
+
+MLES 14.0 64-bit provides the following extra software:
+
+AP
+|-- p7zip
+|-- pwgen
+|-- recode
+|-- sbopkg
+`-- unrar
+
+D
+|-- perl-BerkeleyDB
+|-- perl-digest-hmac
+|-- perl-digest-sha1
+|-- perl-IO-Multiplex
+|-- perl-net-dns
+|-- perl-net-ip
+`-- perl-Net-Server
+
+L
+|-- libmpdclient
+|-- libsigc++
+`-- libtorrent
+
+MULTIMEDIA
+|-- faac
+|-- faad2
+|-- ffmpeg
+|-- lame
+|-- libcuefile
+|-- libmms
+|-- libmp4v2
+|-- libreplaygain
+|-- libshout
+|-- musepack-tools
+|-- speex
+`-- twolame
+
+N
+|-- dovecot
+|-- icecast
+|-- mpd
+|-- ncmpc
+|-- postfix
+|-- postgrey
+|-- rtorrent
+|-- squid
+`-- squidGuard
+
+PROFILE
+`-- user-settings-console
+
+Have fun,
+
+Niki Kovacs <info@microlinux.fr>
++---------------------------+
