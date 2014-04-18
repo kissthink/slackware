@@ -1,0 +1,276 @@
+============
+Github HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+============
+
+Dernière révision : 24 mars 2014
+
+Ce HOWTO décrit la création et la gestion d'un dépôt Github.
+
+
+  * Introduction
+  * Récupérer un dépôt existant
+  * Exemple de dépôt simple
+  * Exemple de dépôt plus avancé
+  * Détruire un dépôt
+
+
+Introduction
+------------
+
+Github est un service web d'hébergement et de gestion de développement de
+logiciels. Il utilise le programme Git. En dehors des comptes professionnels
+payants, Github propose des comptes gratuits pour les projets de logiciels
+libres.
+
+On utilisera Git pour stocker :
+
+  - de la documentation au format texte simple
+  - des scripts shell (SlackBuilds ou autres)
+  - des patchs
+  - des fichiers de configuration
+  - etc.
+
+On évitera de stocker :
+
+  - des archives de code source
+  - des fonds d'écran
+  - des polices de caractères
+  - etc.
+
+
+Récupérer un dépôt existant
+---------------------------
+
+Exemple :
+
+  $ git clone https://github.com/kikinovak/slackware
+
+Autre exemple :
+
+  $ git clone https://github.com/mateslackbuilds/msb
+
+Ces dépôts sont mis à jour de temps en temps. Pour récupérer les dernières
+mises à jour, il suffit de se placer à la racine du dépôt et d'invoquer la
+commande suivante :
+
+  $ git pull
+
+
+Exemple de dépôt simple
+-----------------------
+
+Pour commencer, on va créer un dépôt 'howtos' dans lequel on va stocker toute
+notre documentation.
+
+Créer une base de dépôt local :
+
+  $ mkdir howtos
+  $ cd howtos
+  $ touch README.txt
+
+Éditer le fichier README.txt
+
+--8<---------- README.txt ----------------------------------------------------
+Ma documentation personnelle pour la distribution Slackware.
+--8<--------------------------------------------------------------------------
+
+Aller sur le site de Github :
+
+  * https://github.com
+
+Créer un compte en choisissant l'option 'Choose your personal plan - Free'.
+
+  /!\ Ne pas oublier de confirmer la validité du compte.
+
+Créer un premier dépôt : 'New repository'
+
+Choisir un nom pour ce dépôt :
+
+  Owner      /    Repository name
+  glagaffe   /    howtos
+
+Description (optional) :
+
+Ma documentation personnelle pour la distribution Slackware.
+
+  (X) Public
+  [ ] Initialize this repository with a README.
+  Create repository.
+
+Initialiser le dépôt local. À partir du répertoire 'howtos/' créé plus haut :
+
+  $ cd howtos   --> si l'on n'y est pas déjà
+  $ git init
+  $ git add README.txt
+  $ git commit -m "Commit initial"
+  $ git config --global user.email "glagaffe@microlinux.fr"
+  $ git config --global user.name "Gaston Lagaffe"
+  $ git remote add origin https://github.com/glagaffe/howtos.git
+  $ git push -u origin master
+
+À partir de là, ajouter un ou plusieurs HOWTOs dans ce dépôt local.
+
+Remonter à la racine du dépôt et afficher l'état du dépôt :
+
+  $ git status
+
+Ajouter tous les nouveaux fichiers :
+
+  $ git add *
+
+Voir ce que Git en pense :
+
+  $ git status
+
+Faire le commit :
+
+  $ git commit -a
+
+Éventuellement, spécifier un message de commit (facultatif). Sinon, mettez
+simplement trois petits points '...'. Ensuite, uploader le commit :
+
+  $ git push
+
+Modifier un ou plusieurs HOWTOs dans le dépôt local.
+
+Voir ce que Git en pense :
+
+  $ git status
+
+Faire le commit :
+
+  $ git commit -a
+  $ git push
+
+Récupérer le dépôt sur une autre machine :
+
+  $ git clone https://github.com/glagaffe/howtos
+
+Examiner le contenu de ce qu'on vient de récupérer.
+
+Sur la première machine, effectuer quelques modifications mineures sans
+oublier de faire un commit :
+
+  $ git commit -a
+  $ git push
+
+Ensuite, mettre à jour l'état du dépôt sur la deuxième machine :
+
+  $ git pull
+
+À partir de là, expérimenter avec les deux machines. Modifier des fichiers sur
+l'une et synchroniser avec l'autre.
+
+
+Exemple de dépôt plus avancé
+----------------------------
+
+Le dépôt 'slackbuilds' servira à stocker tous nos scripts de compilation de
+Slackware.
+
+Créer une base de dépôt local. On va le faire en tant que root :
+
+  # mkdir slackbuilds
+  # cd slackbuilds
+  # touch README.txt
+
+Éditer le fichier README.txt
+
+--8<---------- README.txt ----------------------------------------------------
+Ma collection de SlackBuilds pour la distribution Slackware.
+--8<--------------------------------------------------------------------------
+
+Créer un dépôt 'slackware' sur Github.com.
+
+  Owner      /    Repository name
+  glagaffe   /    slackbuilds
+
+Description (optional) :
+
+Ma collection de SlackBuilds pour la distribution Slackware.
+
+  (X) Public
+  [ ] Initialize this repository with a README.
+  Create repository.
+
+Initialiser le dépôt local. À partir du répertoire 'slackbuilds/' créé plus haut :
+
+  # cd slackbuilds   --> si l'on n'y est pas déjà
+  # git init
+  # git add README.txt
+  # git commit -m "Commit initial"
+  # git config --global user.email "glagaffe@microlinux.fr"
+  # git config --global user.name "Gaston Lagaffe"
+  # git remote add origin https://github.com/glagaffe/slackbuilds.git
+  # git push -u origin master
+
+Télécharger un ou plusieurs SlackBuilds et le code source correspondant :
+
+  # links slackbuilds.org
+
+Ranger le tout proprement. Voici un exemple avec l'encodeur MP3 'lame' :
+
+  # cd lame
+  # ls -l 
+  -rw-r--r-- 1 root root  1445348 mars  24 10:46 lame-3.99.5.tar.gz
+  -rw-r--r-- 1 1026 users     293 nov.  22 20:45 lame.info
+  -rwxr-xr-x 1 1026 users    3201 nov.  22 20:47 lame.SlackBuild
+  -rw-r--r-- 1 1026 users     199 août  20  2011 README
+  -rw-r--r-- 1 1026 users     784 nov.  22 20:47 slack-desc
+
+Pour éviter que Git prenne en compte l'archive compressée de code source,
+créer un fichier '.gitignore' dans ce même répertoire, comme ceci :
+
+--8<---------- .gitignore ----------------------------------------------------
+lame-*.tar.gz
+--8<--------------------------------------------------------------------------
+
+Remonter à la racine du dépôt et afficher l'état du dépôt :
+
+  # git status
+
+Ajouter tous les nouveaux fichiers :
+
+  # git add *
+
+Voir ce que git en pense :
+
+  # git status
+
+Faire le commit :
+
+  # git commit -a
+
+Éventuellement, spécifier un message de commit (facultatif). Ensuite :
+
+  # git push
+
+Modifier quelques fichiers dans le dépôt local. Par exemple, supprimer le
+fichier 'lame.info', modifier 'slack-desc' et 'lame.SlackBuild'.
+
+Voir ce que Git en pense :
+
+  # git status
+
+Faire le commit :
+
+  # git commit -a
+  # git push
+
+Là aussi, expérimenter avec deux machines. Modifier des fichiers sur l'une et
+synchroniser avec l'autre.
+
+
+Détruire un dépôt
+-----------------
+
+Sur Github.com, cliquer sur le nom du dépôt > 'Settings' > 
+
+  'Danger Zone' > 'Delete this repository'
+
+Confirmer la suppression en tapant le nom du dépôt.
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt
+# vim: set encoding=latin1
