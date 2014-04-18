@@ -23,45 +23,45 @@ d/perl-net-dns
 d/perl-Net-Server
 d/perl-BerkeleyDB
 
-#####################
-# Various libraries #
-#####################
-l/libmpdclient
-l/libsigc++
-l/libtorrent
-
 ##############
 # Multimedia #
 ##############
 multimedia/faad2
 multimedia/lame
 multimedia/libcuefile
-multimedia/libmms
-multimedia/libmp4v2
-multimedia/libreplaygain
-multimedia/speex
-multimedia/twolame
-multimedia/faac
-multimedia/ffmpeg
-multimedia/musepack-tools
-multimedia/libshout
+#multimedia/libmms
+#multimedia/libmp4v2
+#multimedia/libreplaygain
+#multimedia/speex
+#multimedia/twolame
+#multimedia/faac
+#multimedia/ffmpeg
+#multimedia/musepack-tools
+#multimedia/libshout
+ 
+#####################
+# Various libraries #
+#####################
+#l/libmpdclient
+#l/libsigc++
+#l/libtorrent
+#l/pysetuptools
+#l/psutil
 
 ###########################
 # Networking applications #
 ###########################
-n/rtorrent
-n/squid
-n/squidGuard
-n/postfix
-n/dovecot
-n/postgrey
-n/mpd
-n/icecast
-n/ncmpc
+#n/rtorrent
+#n/squid
+#n/squidGuard
+#n/postfix
+#n/dovecot
+#n/postgrey
+#n/mpd
+#n/icecast
+#n/ncmpc
 
-##########################
-# Post-release additions #
-##########################
-l/pysetuptools
-l/psutil
-ap/glances
+################
+# System tools #
+################
+#ap/glances

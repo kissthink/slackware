@@ -27,7 +27,7 @@ set -x
 
 PRGNAM=user-settings-console
 VERSION=${VERSION:-1.0}	
-BUILD=${BUILD:-4}
+BUILD=${BUILD:-5}
 TAG=${TAG:-"_microlinux"}
 
 ARCH=noarch

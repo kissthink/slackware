@@ -6,8 +6,8 @@
 # Modified by Niki Kovacs <info@microlinux.fr>
 
 PRGNAM=libcuefile
-VERSION=${VERSION:-r453}
-BUILD=${BUILD:-3}
+VERSION=${VERSION:-r475}
+BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}

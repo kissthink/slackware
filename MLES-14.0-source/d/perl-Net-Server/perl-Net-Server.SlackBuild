@@ -31,7 +31,7 @@
 
 PRGNAM="perl-Net-Server"
 VERSION=${VERSION:-2.007}
-BUILD=${BUILD:-3}
+BUILD=${BUILD:-4}
 TAG=${TAG:-_microlinux}
 
 SRCNAM="$(printf $PRGNAM | cut -f2- -d-)"

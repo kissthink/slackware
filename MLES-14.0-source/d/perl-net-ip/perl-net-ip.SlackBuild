@@ -27,7 +27,7 @@
 PRGNAM=perl-net-ip
 SRCNAM=Net-IP
 VERSION=${VERSION:-1.26}
-BUILD=${BUILD:-3}
+BUILD=${BUILD:-4}
 TAG=${TAG:-_microlinux}
 
 if [ -z "$ARCH" ]; then
