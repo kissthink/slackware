@@ -16,6 +16,13 @@ d/perl-BerkeleyDB-0.53-i486-1_microlinux.txz: Upgraded.
 multimedia/faad2-2.7-i486-4_microlinux.txz: Rebuilt.
 multimedia/lame-3.99.5-i486-4_microlinux.txz: Rebuilt.
 multimedia/libcuefile-r475-i486-1_microlinux.txz: Upgraded.
+multimedia/libmms-0.6.2-i486-4_microlinux.txz: Rebuilt.
+multimedia/libmp4v2-2.0.0-i486-4_microlinux.txz: Rebuilt.
+multimedia/libreplaygain-r475-i486-1_microlinux.txz: Upgraded.
+multimedia/speex-1.2rc1-i486-4_microlinux.txz: Rebuilt.
+multimedia/twolame-0.3.13-i486-4_microlinux.txz: Rebuilt.
+multimedia/faac-1.28-i486-5_microlinux.txz: Rebuilt.
+multimedia/ffmpeg-0.11.1-i486-5_microlinux.txz: Rebuilt.
 +--------------------------+
 Tue Mar  4 13:14:19 CET 2014
 ap/glances-1.7.4-i486-1_microlinux.txz: Upgraded.
