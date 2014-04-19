@@ -36,32 +36,32 @@ multimedia/speex
 multimedia/twolame
 multimedia/faac
 multimedia/ffmpeg
-#multimedia/musepack-tools
-#multimedia/libshout
+multimedia/musepack-tools
+multimedia/libshout
  
 #####################
 # Various libraries #
 #####################
-#l/libmpdclient
-#l/libsigc++
-#l/libtorrent
-#l/pysetuptools
-#l/psutil
+l/libmpdclient
+l/libsigc++
+l/libtorrent
+l/pysetuptools
+l/psutil
 
 ###########################
 # Networking applications #
 ###########################
-#n/rtorrent
-#n/squid
-#n/squidGuard
-#n/postfix
-#n/dovecot
-#n/postgrey
-#n/mpd
-#n/icecast
-#n/ncmpc
+n/rtorrent
+n/squid
+n/squidGuard
+n/postfix
+n/dovecot
+n/postgrey
+n/mpd
+n/icecast
+n/ncmpc
 
 ################
 # System tools #
 ################
-#ap/glances
+ap/glances

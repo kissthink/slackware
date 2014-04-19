@@ -1,3 +1,23 @@
+Sat Apr 19 06:09:52 CEST 2014
+Spring cleaning day two.
+multimedia/musepack-tools-r475-i486-1_microlinux.txz: Upgraded.
+multimedia/libshout-2.3.1-i486-1_microlinux.txz: Upgraded.
+l/libmpdclient-2.7-i486-4_microlinux.txz: Rebuilt.
+l/libsigc++-2.2.11-i486-1_microlinux.txz: Upgraded.
+l/libtorrent-0.13.0-i486-4_microlinux.txz: Rebuilt.
+l/pysetuptools-2.1-i486-2_microlinux.txz: Rebuilt.
+l/psutil-1.2.1-i486-2_microlinux.txz: Rebuilt.
+n/rtorrent-0.9.0-i486-5_microlinux.txz: Rebuilt.
+n/squid-3.1.23-i486-1_microlinux.txz: Upgraded.
+n/squidGuard-1.4-i486-4_microlinux.txz: Rebuilt.
+n/postfix-2.9.9-i486-1_microlinux.txz: Upgraded.
+n/dovecot-2.1.17-i486-4_microlinux.txz: Rebuilt.
+n/postgrey-1.34-i486-4_microlinux.txz: Rebuilt.
+n/mpd-0.17.1-i486-4_microlinux.txz: Rebuilt.
+n/icecast-2.3.3-i486-1_microlinux.txz: Upgraded.
+n/ncmpc-0.16-i486-4_microlinux.txz: Rebuilt.
+ap/glances-1.7.6-i486-1_microlinux.txz: Upgraded.
++--------------------------+
 Fri Apr 18 14:01:22 CEST 2014
 The MLES-14.0-32bit repository is undergoing a major spring cleaning.
 profile/user-settings-console-1.0-noarch-5_microlinux.txz: Rebuilt.

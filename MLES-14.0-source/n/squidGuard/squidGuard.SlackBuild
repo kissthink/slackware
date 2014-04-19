@@ -25,7 +25,7 @@
 
 PRGNAM=squidGuard			
 VERSION=${VERSION:-1.4}	 
-BUILD=${BUILD:-3}
+BUILD=${BUILD:-4}
 TAG=${TAG:-_microlinux}		
 
 NUMJOBS=${NUMJOBS:--j5}
