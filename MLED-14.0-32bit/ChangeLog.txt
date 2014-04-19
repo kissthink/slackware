@@ -7,6 +7,9 @@ ap/unrar-5.0.14-i486-1_microlinux.txz: Upgraded.
 ap/p7zip-9.20.1-i486-3_microlinux.txz: Rebuilt.
 ap/cdlabelgen-4.3.0-noarch-3_microlinux.txz: Rebuilt.
 n/fping-2.4b2_to-i486-1_microlinux.txz: Removed.
+d/acpica-20131115-i486-1_microlinux.txz: Upgraded.
+d/gc-7.2d-i486-4_microlinux.txz: Rebuilt.
+d/jdk-7u55-i586-1_microlinux.txz: Upgraded.
 +--------------------------+
 Sat Mar 29 14:02:07 CET 2014
 d/jdk-7u51-i586-1_microlinux.txz: Upgraded.

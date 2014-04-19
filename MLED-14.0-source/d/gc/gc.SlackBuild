@@ -26,7 +26,7 @@
 
 PRGNAM=gc
 VERSION=${VERSION:-7.2d}
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-4}
 TAG=${TAG:-_microlinux}
 
 TARVERS=7.2
@@ -65,7 +65,7 @@ fi
 set -e
 
 if [ ! -r $PRGNAM-$VERSION.tar.gz ] ; then
-   wget -c http://www.hpl.hp.com/personal/Hans_Boehm/gc/gc_source/$PRGNAM-$VERSION.tar.gz
+   wget -c https://launchpad.net/libgc/main/$VERSION/+download/$PRGNAM-$VERSION.tar.gz
 fi
 
 md5sum -c $PRGNAM-$VERSION.tar.gz.md5

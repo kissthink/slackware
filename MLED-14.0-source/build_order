@@ -15,9 +15,9 @@ ap/cdlabelgen
 ###############
 # Development #
 ###############
-#d/acpica
-#d/gc
-#d/jdk
+d/acpica
+d/gc
+d/jdk
 #d/lua
 #d/numpy
 #d/orc
