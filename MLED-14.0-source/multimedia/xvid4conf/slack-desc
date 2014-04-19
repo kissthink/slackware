@@ -1,0 +1,12 @@
+         |-----handy-ruler-------------------------------------------------------|
+xvid4conf: xvid4conf (XviD configuration tool)
+xvid4conf:
+xvid4conf: This tool creates XviD configuration files. The generated configuration
+xvid4conf: file is meant to be read by transcodes xvid4 export module. This module
+xvid4conf: (and so the configuration file) is intended to be used with XviD 1.0
+xvid4conf: (dev-api-4)
+xvid4conf:
+xvid4conf:
+xvid4conf:
+xvid4conf:
+xvid4conf: Package created by Niki Kovacs <info@microlinux.fr>

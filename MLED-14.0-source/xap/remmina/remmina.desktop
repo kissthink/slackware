@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=Remote Desktop
+Name[de]=Entfernter Rechner
+Name[fr]=Bureau distant
+Comment=Remmina
+TryExec=remmina
+Exec=remmina
+Icon=remmina
+Terminal=false
+Type=Application
+Actions=
+Categories=;Network;
+StartupNotify=true

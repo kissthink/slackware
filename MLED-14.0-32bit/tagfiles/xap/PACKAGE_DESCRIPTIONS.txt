@@ -1,0 +1,495 @@
+audacious: audacious (A relatively powerful media player)
+audacious:
+audacious: Audacious is a media player, based on Beep Media Player, which is in
+audacious: turn based on the X Multimedia System (XMMS).  It is used to play
+audacious: audio and other kinds of media files.  By default Audacious can play
+audacious: MPEG audio, Ogg Vorbis, RIFF wav, most module formats, and a few
+audacious: other formats.  Audacious can be extended through plugins to play a
+audacious: number of other audio and video formats.
+audacious:
+audacious: The webpage for Audacious is: http://www.audacious-media-player.org.
+audacious:
+audacious-plugins: audacious-plugins (Plugins used by the Audacious media player)
+audacious-plugins:
+audacious-plugins: This is a collection of plugins for Audacious to support additional
+audacious-plugins: media formats.
+audacious-plugins:
+audacious-plugins: The webpage for Audacious is: http://www.audacious-media-player.org.
+audacious-plugins:
+audacious-plugins:
+audacious-plugins:
+audacious-plugins:
+audacious-plugins:
+blackbox: blackbox (Blackbox window manager)
+blackbox:
+blackbox: Blackbox is that fast, light window manager you have been looking for
+blackbox: without all those annoying library dependencies.
+blackbox:
+blackbox: Also included in this package is the bbkeys utility for controlling
+blackbox: keyboard shortcut commands from within Blackbox.
+blackbox:
+blackbox: The Blackbox home page is http://blackboxwm.sourceforge.net
+blackbox:
+blackbox:
+blueman: Blueman (Graphical Bluetooth Manager)
+blueman:
+blueman: Blueman is a GTK+ Bluetooth Manager for tasks such as:
+blueman:
+blueman:   - Connecting to 3G/EDGE/GPRS via DUN profile.
+blueman:   - Connecting to/Creating bluetooth networks
+blueman:   - Connecting to input and audio devices
+blueman:   - Sending/Receiving/Browsing files via OBEX
+blueman:   - Pairing
+blueman:
+blueman: Homepage:  http://blueman-project.org
+electricsheep: electricsheep (distributed screensaver)
+electricsheep:
+electricsheep: Electric Sheep is an xscreensaver module that displays mpeg video
+electricsheep: of an animated fractal flame.  In the background it contributes
+electricsheep: render cycles to the next animation.  Periodically it uploades
+electricsheep: completed frames to the server, where they are compressed for
+electricsheep: distribution to all clients.
+electricsheep: This program is recommended only if you have a high bandwidth
+electricsheep: connection to the internet such as DSL or cable modem.
+electricsheep:
+electricsheep: electricsheep home: http://electricsheep.org/
+fluxbox: fluxbox (Fluxbox window manager)
+fluxbox:
+fluxbox: Fluxbox is yet another windowmanager for X that is based on blackbox
+fluxbox: but with many new features.
+fluxbox:
+fluxbox:
+fluxbox:
+fluxbox:
+fluxbox:
+fluxbox:
+fluxbox:
+fvwm: fvwm (a small and fast virtual window manager for X)
+fvwm:
+fvwm: Fvwm is the classic highly-configurable virtual window manager for
+fvwm: X11.  It is a derivative of twm, redesigned to minimize memory
+fvwm: consumption, provide a 3-D look to window frames, and provide a simple
+fvwm: virtual desktop.
+fvwm:
+fvwm: Homepage:  http://www.fvwm.org
+fvwm:
+fvwm:
+fvwm:
+geeqie: geeqie (Geeqie image viewer)
+geeqie:
+geeqie: Geeqie is an interactive GTK based image viewer that supports multiple
+geeqie: image formats, zooming, panning, thumbnails, and sorting images into
+geeqie: collections.
+geeqie:
+geeqie: Homepage:  http://geeqie.sourceforge.net
+geeqie:
+geeqie:
+geeqie:
+geeqie:
+gftp: gftp (FTP client for X)
+gftp:
+gftp: gFTP is a multithreaded FTP client for X written using GTK+.  It
+gftp: features simultaneous downloads, resuming of interrupted file
+gftp: transfers, file transfer queues, downloading of entire directories,
+gftp: ftp proxy support, remote directory caching, passive and non-passive
+gftp: file transfers, drag-n-drop support, bookmarks menu, stop button,
+gftp: and many more features.
+gftp:
+gftp:
+gftp:
+gimp: gimp (The GNU Image Manipulation Program)
+gimp:
+gimp: The GIMP is a powerful tool for the preparation and manipulation of
+gimp: digital images.  The GIMP provides the user with a wide variety of
+gimp: image manipulation, painting, processing, and rendering tools.  The
+gimp: GIMP's open design and extensible architecture make for a very
+gimp: powerful end product for photo and image retouching, web graphics
+gimp: design, or digital illustration.
+gimp:
+gimp:
+gimp:
+gkrellm: gkrellm (GNU Krell Monitors)
+gkrellm:
+gkrellm: GKrellM charts SMP CPU, load, Disk, and all active net interfaces
+gkrellm: automatically. An on/off button and online timer for the PPP interface
+gkrellm: is provided. Monitors for memory and swap usage, file system, internet
+gkrellm: connections, APM laptop battery, mbox style mailboxes, and cpu temps.
+gkrellm: Also includes an uptime monitor, hostname label, and clock/calendar.
+gkrellm:
+gkrellm: Bill Wilson is the author of GKrellM.
+gkrellm:
+gkrellm:
+gnuchess: gnuchess (GPL licensed chess engines and graphical frontends)
+gnuchess:
+gnuchess: This is a package of programs for playing chess.  It includes the
+gnuchess: gnuchess and Sjeng chess engines, and the eboard and XBoard
+gnuchess: graphical interfaces to these engines.
+gnuchess:
+gnuchess:
+gnuchess:
+gnuchess:
+gnuchess:
+gnuchess:
+gnuplot: gnuplot (plotting utility)
+gnuplot:
+gnuplot: Gnuplot is a command-line driven interactive function plotting utility
+gnuplot: for UNIX, MSDOS, and VMS platforms.  The software is copyrighted but
+gnuplot: freely distributed (i.e., you don't have to pay for it).  It was
+gnuplot: originally intended as graphical program which would allow scientists
+gnuplot: and students to visualize mathematical functions and data.  Gnuplot
+gnuplot: supports many different types of terminals, plotters, and printers
+gnuplot: (including many color devices, and pseudo-devices like LaTeX) and is
+gnuplot: easily extensible to include new devices.
+gnuplot:
+gucharmap: gucharmap (character map utility)
+gucharmap:
+gucharmap: gucharmap is a Unicode character map and font viewer.
+gucharmap:
+gucharmap:
+gucharmap:
+gucharmap:
+gucharmap:
+gucharmap:
+gucharmap:
+gucharmap:
+gv: gv (PS/PDF file viewer)
+gv:
+gv: gv is a PostScript and PDF previewer.  It allows users to view and
+gv: navigate through PostScript and PDF documents on an X display by 
+gv: providing a user interface for the ghostscript interpreter.
+gv:
+gv: gv was written by Johannes Plass, using the source code for Tim
+gv: Theisen's ghostview 1.5 as a starting point.
+gv:
+gv:
+gv:
+imagemagick: imagemagick (a robust collection of image processing tools)
+imagemagick:
+imagemagick: ImageMagick is a collection of tools for manipulating and displaying
+imagemagick: digital images.  It can merge images, transform image dimensions,
+imagemagick: do screen captures, create animation sequences, and convert between
+imagemagick: many different image formats.  
+imagemagick:
+imagemagick: ImageMagick was written by John Cristy of ImageMagick Studio.
+imagemagick:
+imagemagick: Home page:  http://www.imagemagick.org/
+imagemagick:
+mozilla-firefox: mozilla-firefox (Mozilla Firefox Web browser)
+mozilla-firefox:
+mozilla-firefox: This project is a redesign of the Mozilla browser component written
+mozilla-firefox: using the XUL user interface language.  Firefox empowers you to
+mozilla-firefox: browse faster, more safely and more efficiently than with any other
+mozilla-firefox: browser.
+mozilla-firefox:
+mozilla-firefox: Visit the Mozilla Firefox project online:
+mozilla-firefox:   http://www.mozilla.org/projects/firefox/
+mozilla-firefox:
+mozilla-firefox:
+mozilla-thunderbird: mozilla-thunderbird (Mozilla Thunderbird mail application)
+mozilla-thunderbird:
+mozilla-thunderbird: Mozilla Thunderbird is a redesign of the Mozilla mail component
+mozilla-thunderbird: written using the XUL user interface language.  Thunderbird makes
+mozilla-thunderbird: emailing safer, faster, and easier than ever before with the
+mozilla-thunderbird: industry's best implementations of features such as intelligent spam
+mozilla-thunderbird: filters, built-in RSS reader, quick search, and much more.
+mozilla-thunderbird:
+mozilla-thunderbird: Visit the Mozilla Thunderbird project online:
+mozilla-thunderbird:   http://www.mozilla.org/projects/thunderbird/
+mozilla-thunderbird:
+MPlayer: MPlayer (MPEG-4 digital video technology)
+MPlayer:
+MPlayer: MPlayer is a movie player for LINUX. It plays most MPEG, VOB, AVI,
+MPlayer: Ogg/OGM, VIVO, ASF/WMA/WMV, QT/MOV/MP4, FLI, RM, NuppelVideo,
+MPlayer: YUV4MPEG, FILM, RoQ, PVA files, supported by many native, XAnim,
+MPlayer: and Win32 DLL codecs. You can watch VideoCD, SVCD, DVD, 3ivx,
+MPlayer: DivX 3/4/5 and even WMV movies, too (without the avifile library).
+MPlayer: MPlayer supports 10 types of subtitles formats: VobSub,
+MPlayer: MicroDVD, SubRip, SubViewer, Sami, VPlayer, RT, SSA, AQTitle, MPsub.
+MPlayer:
+MPlayer: Homepage for MPLayer is http://www.mplayerhq.hu/
+network-manager-applet: network-manager-applet (NetworkManager Applet)
+network-manager-applet:
+network-manager-applet: nm-applet is a gui frontend for NetworkManager.
+network-manager-applet:
+network-manager-applet:
+network-manager-applet:
+network-manager-applet:
+network-manager-applet:
+network-manager-applet:
+network-manager-applet:
+network-manager-applet:
+pan: pan (USENET newsreader)
+pan:
+pan: This is PAN, a powerful and user-friendly USENET newsreader based on
+pan: GTK+2.  Pan is the only Unix newsreader to score 100% on the Good
+pan: Net-Keeping Seal of Approval newsreader evaluations.
+pan:
+pan:
+pan:
+pan:
+pan: Homepage:  http://pan.rebelbase.com
+pan:
+pidgin: pidgin (GTK+ instant messaging program)
+pidgin:
+pidgin: Pidgin allows you to talk to anyone using a variety of messaging
+pidgin: protocols, including AIM (Oscar and TOC), ICQ, IRC, Yahoo!, MSN
+pidgin: Messenger, Jabber, Gadu-Gadu, Napster, and Zephyr.  These protocols
+pidgin: are implemented using a modular, easy to use design.  To use a
+pidgin: protocol, just load the plugin for it.
+pidgin:
+pidgin: For more info, see:  http://www.pidgin.im
+pidgin:
+pidgin:
+rdesktop: rdesktop (Remote Desktop Protocol client)
+rdesktop:
+rdesktop: rdesktop is a client for Remote Desktop Protocol (RDP), used in a
+rdesktop: number of Microsoft products including Windows NT Terminal Server,
+rdesktop: Windows 2000 Server, Windows XP, and Windows 2003 Server.
+rdesktop:
+rdesktop: For more information, see:  http://www.rdesktop.org
+rdesktop:
+rdesktop:
+rdesktop:
+rdesktop:
+rxvt: rxvt (terminal emulator)
+rxvt:
+rxvt: rxvt is a color vt102 terminal emulator intended as an xterm
+rxvt: replacement for users who do not require features such as Tektronix
+rxvt: 4014 emulation and toolkit-style configurability.  As a result, rxvt
+rxvt: uses much less memory -- a significant advantage on a machine serving
+rxvt: many X sessions.  Also included is rclock, an analog clock for X.
+rxvt:
+rxvt:
+rxvt:
+rxvt:
+sane: sane (Scanner Access Now Easy)
+sane:
+sane: SANE is a universal scanner interface that provides standardized
+sane: access to any raster image scanner hardware, such as flatbed scanners,
+sane: hand-held scanners, video and still cameras, frame-grabbers, and other
+sane: similar devices.
+sane:
+sane:
+sane:
+sane:
+sane:
+seamonkey: SeaMonkey (an open-source web browser suite)
+seamonkey:
+seamonkey: The SeaMonkey browser suite.  SeaMonkey features a state-of-the-art
+seamonkey: web browser and powerful email client, as well as a WYSIWYG web page
+seamonkey: composer and a feature-rich IRC chat client.
+seamonkey:
+seamonkey:
+seamonkey:
+seamonkey: Visit the SeaMonkey project at this URL:
+seamonkey:   http://www.mozilla.org/projects/seamonkey/
+seamonkey:
+seyon: seyon (telecommunications package)
+seyon:
+seyon: Seyon is a complete full-featured telecommunications package for the
+seyon: X Window System.  Some of its features are:  Dialing directory that
+seyon: supports an unlimited number of entries.  Terminal emulation window
+seyon: supporting DEC VT02, Tektronix 4014, and ANSI.  Script language to
+seyon: automate tedious tasks such as logging into remote hosts.  Unlimited
+seyon: number of slots for external file transfer protocols.  Support for
+seyon: zmodem auto-download.  Seyon is intended to be both simple and
+seyon: extensively configurable.
+seyon:
+vim-gvim: vim-gvim (gvim, the X/GTK2 enabled version of vim)
+vim-gvim:
+vim-gvim: Gvim is a graphical version of vim.  Vim is an almost compatible
+vim-gvim: version of the UNIX editor vi.  Many new features have been added,
+vim-gvim: such as multi level undo, command line history, filename completion,
+vim-gvim: block operations, and more.
+vim-gvim:
+vim-gvim: The main vim package in the AP series is required to use this package.
+vim-gvim:
+vim-gvim: Vim's development is led by Bram Moolenaar.
+vim-gvim:
+windowmaker: windowmaker (a fast and elegant window manager)
+windowmaker:
+windowmaker: Window Maker is a window manager for the X Window System that is
+windowmaker: relatively fast and small, feature rich, easy to use, with a simple
+windowmaker: and elegant appearance reminiscent of the NeXTSTEP(tm) graphical
+windowmaker: user interface.
+windowmaker:
+windowmaker: Window Maker is part of the official GNU project.
+windowmaker:
+windowmaker:
+windowmaker:
+x11-ssh-askpass: x11-ssh-askpass (an X11-based passphrase dialog)
+x11-ssh-askpass:
+x11-ssh-askpass: x11-ssh-askpass is an X11-based passphrase dialog for use
+x11-ssh-askpass: with OpenSSH.
+x11-ssh-askpass:
+x11-ssh-askpass:
+x11-ssh-askpass:
+x11-ssh-askpass:
+x11-ssh-askpass:
+x11-ssh-askpass:
+x11-ssh-askpass:
+x3270: x3270 (IBM host access tool for X)
+x3270:
+x3270: x3270 opens a telnet connection to an IBM host in an X window.  Since
+x3270: the window created by x3270 can use its own font for displaying
+x3270: characters, is a fairly accurate representation of an IBM 3278.
+x3270:
+x3270:
+x3270:
+x3270:
+x3270:
+x3270:
+xaos: xaos (an interactive fractal zoomer)
+xaos:
+xaos: XaoS is a fast portable real-time interactive fractal zoomer.  It
+xaos: displays the Mandelbrot set (and other popular fractals), and allows
+xaos: the user to smoothly zoom in or out of a fractal.  Other features
+xaos: include autopilot mode, palette changing, PNG saving, and fractal
+xaos: inversion.
+xaos:
+xaos: Visit XaoS online:  http://xaos.sf.net
+xaos:
+xaos:
+xchat: xchat (GTK+-based IRC client)
+xchat:
+xchat: X-Chat is a GTK+-based IRC (Internet Relay Chat) client.
+xchat:
+xchat:
+xchat:
+xchat:
+xchat:
+xchat:
+xchat:
+xchat:
+xfractint: xfractint (fractal generation program)
+xfractint:
+xfractint: Xfractint draws a wide variety of fractals. Xfractint is a port of the
+xfractint: DOS program Fractint.  
+xfractint:
+xfractint: The primary original authors of Fractint are Bert Tyler, Timothy
+xfractint: Wegner, Mark Peterson, and Pieter Branderhorst.  Fractint was ported
+xfractint: to X by Ken Shirriff.
+xfractint:
+xfractint:
+xfractint:
+xgames: xgames (small X games collection)
+xgames:
+xgames: A few small and historic games and toys for X.
+xgames:
+xgames: Includes maze, spider, xcolormap, xlander, xminesweep, xroach, xsnow.
+xgames:
+xgames:
+xgames:
+xgames:
+xgames:
+xgames:
+xine-lib: xine-lib (xine multimedia playback engine libraries)
+xine-lib:
+xine-lib: xine-lib is a free (GPL licensed) high-performance multimedia
+xine-lib: playback engine.  The xine shared libraries are used by xine-ui (and
+xine-lib: other media players and multimedia applications) for smooth video
+xine-lib: processing and playback of multimedia streams such as movies, radio
+xine-lib: and TV network streams, DVDs, and VCDs.
+xine-lib:
+xine-lib:
+xine-lib:
+xine-lib:
+xine-ui: xine-ui (xine multimedia playback engine user interface)
+xine-ui:
+xine-ui: Xine is a free multimedia player.  It plays back CDs, DVDs, and VCDs,
+xine-ui: multimedia files, and multimedia streamed over a network.
+xine-ui:
+xine-ui: The xine-ui package contains the graphical user interface for the
+xine-ui: xine multimedia player.
+xine-ui:
+xine-ui:
+xine-ui:
+xine-ui:
+xlockmore: xlockmore (screen locker for X)
+xlockmore:
+xlockmore: Patrick J. Naughton's xlock screensaver/locker for X, with many
+xlockmore: more modes added by David A. Bagley.
+xlockmore:
+xlockmore: The 'Bob' bitmap has been included especially for Slackware, as well
+xlockmore: as a Linux penguin logo.  (NOTE: the image of J. R. "Bob" Dobbs is a
+xlockmore: registered trademark of The Subgenius Foundation, used by permission)
+xlockmore:
+xlockmore:
+xlockmore:
+xmms: xmms (X Multimedia System)
+xmms:
+xmms: XMMS is the X Multimedia System.  It is used to play audio and other
+xmms: kinds of media files.  By default XMMS can play MPEG audio, Ogg
+xmms: Vorbis, RIFF wav, most module formats, and a few other formats.  XMMS
+xmms: can be extended through plugins to play a number of other audio and
+xmms: video formats.
+xmms:
+xmms:
+xmms:
+xmms:
+xpaint: xpaint (simple X paint program)
+xpaint:
+xpaint: XPaint is a versatile bitmap/pixmap editing tool with a feature set
+xpaint: similar to MacPaint.
+xpaint:
+xpaint: The short features list:
+xpaint:   Brushes, Spray paint, Pencil, Lines, Arcs, Pattern Fill, Text,
+xpaint:   Boxes, Circles, Polygons.
+xpaint: Works on multiple images simultaneously. Cut/Copy/Paste between all
+xpaint: active images. Fatbits/Zoom on the image windows.
+xpaint:
+xpdf: xpdf (PDF viewer for X)
+xpdf:
+xpdf: Xpdf is a viewer for Portable Document Format (PDF) files.
+xpdf:
+xpdf: xpdf was written by Derek B. Noonburg.
+xpdf:
+xpdf:
+xpdf:
+xpdf:
+xpdf:
+xpdf:
+xsane: xsane (Graphical frontend to SANE, Scanner Access Now Easy)
+xsane:
+xsane: xsane provides a graphical user-interface to control an image
+xsane: acquisition device such as a flatbed scanner.  It allows previewing
+xsane: and scanning individual images and can be invoked either directly
+xsane: from the command-line or through the GIMP image manipulation program.
+xsane:
+xsane: xsane accesses image acquisition devices through the SANE (Scanner
+xsane: Access Now Easy) interface. 
+xsane:
+xsane:
+xscreensaver: xscreensaver (a screen saver and locker for X)
+xscreensaver:
+xscreensaver: A modular screen saver and locker for the X Window System.  Highly
+xscreensaver: customizable:  allows the use of any program that can draw on the
+xscreensaver: root window as a display mode.  More than 100 display modes are
+xscreensaver: included in this package.
+xscreensaver:
+xscreensaver:
+xscreensaver:
+xscreensaver:
+xscreensaver:
+xv: xv (John Bradley's interactive image viewer)
+xv:
+xv: xv is an interactive image manipulation program.
+xv:
+xv: NOTICE:  This program is unregistered shareware.  Please read the 
+xv: license information included.
+xv:
+xv:
+xv:
+xv:
+xv:
+xxgdb: xxgdb (graphical program debugger interface)
+xxgdb:
+xxgdb: Xxgdb is a graphical user interface to the gdb debugger under the X
+xxgdb: Window System.  It provides visual feedback and mouse input for the
+xxgdb: user to control program execution through breakpoints, to examine and
+xxgdb: traverse the function call stack, and to display values of variables
+xxgdb: and data structures.
+xxgdb:
+xxgdb:
+xxgdb:
+xxgdb:

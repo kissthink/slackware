@@ -1,0 +1,12 @@
+              |-----handy-ruler------------------------------------------------------|
+subtitleripper: subtitleripper (DVD Subtitle Ripper for Linux)
+subtitleripper:
+subtitleripper: If you want to convert DVD subtitles into text format or VobSub 
+subtitleripper: format this program could be useful for you. However, it is only one
+subtitleripper: tiny tool that you need in the process of producing srt files. This 
+subtitleripper: software depends heavily on transcode for its input and is
+subtitleripper: therefore part of the transcode package
+subtitleripper:
+subtitleripper: 
+subtitleripper:
+subtitleripper: Package created by Niki Kovacs <info@microlinux.fr>

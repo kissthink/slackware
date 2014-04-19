@@ -1,5 +1,4 @@
 Sat Apr 19 06:09:52 CEST 2014
-Spring cleaning day two.
 multimedia/musepack-tools-r475-i486-1_microlinux.txz: Upgraded.
 multimedia/libshout-2.3.1-i486-1_microlinux.txz: Upgraded.
 l/libmpdclient-2.7-i486-4_microlinux.txz: Rebuilt.
@@ -19,7 +18,6 @@ n/ncmpc-0.16-i486-4_microlinux.txz: Rebuilt.
 ap/glances-1.7.6-i486-1_microlinux.txz: Upgraded.
 +--------------------------+
 Fri Apr 18 14:01:22 CEST 2014
-Spring cleaning.
 profile/user-settings-console-1.0-noarch-5_microlinux.txz: Rebuilt.
 ap/sbopkg-0.36.0-noarch-4_microlinux.txz: Rebuilt.
 ap/recode-3.6-i486-5_microlinux.txz: Rebuilt.

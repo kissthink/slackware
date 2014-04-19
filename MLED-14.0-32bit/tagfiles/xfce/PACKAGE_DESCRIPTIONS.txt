@@ -1,0 +1,319 @@
+exo: exo (libexo extension library)
+exo:
+exo: This is libexo, an extension library to Xfce, developed by
+exo: os-cillation.  While Xfce comes with quite a few libraries that are
+exo: targeted at desktop development, libexo is targeted at application
+exo: development.  It also has some helper applications that are used
+exo: throughout the entire desktop.
+exo:
+exo: 
+exo:
+exo:
+garcon: garcon (menu implementation for Xfce)
+garcon:
+garcon: This is garcon, a freedesktop.org compliant menu implementation based
+garcon: on GLib and GIO.  It was started as a rewrite of the former Xfce menu
+garcon: library called libxfce4menu.
+garcon:
+garcon:
+garcon:
+garcon:
+garcon:
+garcon:
+gtk-xfce-engine: gtk-xfce-engine (Xfce Gtk+ engines)
+gtk-xfce-engine:
+gtk-xfce-engine: The GTK-Xfce-Engine package contains several GTK+-2/3 themes and the
+gtk-xfce-engine: applications and libraries needed to display them.  This is useful for
+gtk-xfce-engine: customizing the appearance of your Xfce desktop.
+gtk-xfce-engine:
+gtk-xfce-engine:
+gtk-xfce-engine:
+gtk-xfce-engine:
+gtk-xfce-engine:
+gtk-xfce-engine:
+libxfce4ui: libxfce4ui (Xfce widget library)
+libxfce4ui:
+libxfce4ui: This is libxfce4ui, the replacement of the old libxfcegui4 library.
+libxfce4ui: It is used to share commonly used Xfce widgets among the Xfce
+libxfce4ui: applications.
+libxfce4ui:
+libxfce4ui:
+libxfce4ui:
+libxfce4ui:
+libxfce4ui:
+libxfce4ui:
+libxfce4util: libxfce4util (basic utility library for Xfce)
+libxfce4util:
+libxfce4util: Basic utility library for Xfce.  This provides useful functions not
+libxfce4util: relating to the handling of the user interface.
+libxfce4util: 
+libxfce4util:
+libxfce4util:
+libxfce4util:
+libxfce4util:
+libxfce4util:
+libxfce4util:
+libxfcegui4: libxfcegui4 (old Xfce widget library)
+libxfcegui4:
+libxfcegui4: This is a widget library for Xfce.  It has been replaced by the use
+libxfcegui4: of the libxfce4ui library, but older programs might still need it.
+libxfcegui4:
+libxfcegui4:
+libxfcegui4:
+libxfcegui4:
+libxfcegui4:
+libxfcegui4:
+libxfcegui4:
+orage: orage (Xfce's calendar)
+orage:
+orage: Orage is a time-managing application for the Xfce desktop environment.
+orage:
+orage:
+orage:
+orage:
+orage:
+orage:
+orage:
+orage:
+Terminal: Terminal (Xfce's Terminal Emulator)
+Terminal:
+Terminal: This is the Terminal emulator application.  Terminal is a lightweight
+Terminal: and easy to use terminal emulator for the X windowing system, with 
+Terminal: some new ideas and features that makes it unique among X terminal 
+Terminal: emulators.
+Terminal:
+Terminal:
+Terminal:
+Terminal:
+Terminal:
+Thunar: Thunar (file manager)
+Thunar:
+Thunar: Thunar is a modern file manager for the Xfce Desktop Environment.
+Thunar: Thunar has been designed from the ground up to be fast and
+Thunar: easy-to-use.  Its user interface is clean and intuitive, and does not
+Thunar: include any confusing or useless options.  Thunar is fast and
+Thunar: responsive with a good start up time and directory load time.
+Thunar:
+Thunar: Homepage:  http://thunar.xfce.org
+Thunar:
+Thunar:
+thunar-volman: thunar-volman (Thunar Volume Manager Plugin)
+thunar-volman: 
+thunar-volman: thunar-volman is an extension for the Thunar File Manager, 
+thunar-volman: which enables automatic management of removable drives and 
+thunar-volman: media. 
+thunar-volman: 
+thunar-volman: 
+thunar-volman: 
+thunar-volman: 
+thunar-volman: 
+thunar-volman: 
+tumbler: tumbler (thumbnail generator)
+tumbler:
+tumbler: Tumbler is a D-Bus service for applications to request thumbnails
+tumbler: for various URI schemes and MIME types. It is written in an object-
+tumbler: oriented fashion using GLib and GObject.  It provides plugin
+tumbler: interfaces for extending the URI schemes and MIME types for which
+tumbler: thumbnails can be generated as well as for replacing the storage
+tumbler: backend that is used to store the thumbnails on disk. 
+tumbler:
+tumbler:
+tumbler:
+xfce4-appfinder: xfce4-appfinder (Application finder)
+xfce4-appfinder:
+xfce4-appfinder: The Xfce application finder is a tool to find and launch installed
+xfce4-appfinder: applications on your system and execute commands.  It can also be used
+xfce4-appfinder: to quickly add launchers to the Xfce Panel by dragging an item from
+xfce4-appfinder: the view and dropping it on the panel.
+xfce4-appfinder:
+xfce4-appfinder:
+xfce4-appfinder:
+xfce4-appfinder:
+xfce4-appfinder:
+xfce4-clipman-plugin: xfce4-clipman-plugin (clipman plugin for the Xfce panel)
+xfce4-clipman-plugin:
+xfce4-clipman-plugin: Clipman allows you to keep several clipboard selections in memory
+xfce4-clipman-plugin: which you can then use to toggle.  It can pull the clips from both
+xfce4-clipman-plugin: the selection and the copy buffer, restore your clipboard on login,
+xfce4-clipman-plugin: and prevent an empty clipboard.
+xfce4-clipman-plugin:
+xfce4-clipman-plugin:
+xfce4-clipman-plugin:
+xfce4-clipman-plugin:
+xfce4-clipman-plugin:
+xfce4-dev-tools: xfce4-dev-tools (Xfce development tools)
+xfce4-dev-tools:
+xfce4-dev-tools: The Xfce development tools are a collection of tools and macros for
+xfce4-dev-tools: Xfce developers and people that want to build Xfce from Git.
+xfce4-dev-tools:
+xfce4-dev-tools:
+xfce4-dev-tools:
+xfce4-dev-tools:
+xfce4-dev-tools:
+xfce4-dev-tools:
+xfce4-dev-tools:
+xfce4-mixer: xfce4-mixer (Sound mixer applet for Xfce)
+xfce4-mixer:
+xfce4-mixer: The xfce4-mixer package contains a volume control application based 
+xfce4-mixer: on GStreamer written to conceptually fit into the Xfce desktop 
+xfce4-mixer: environment.  It also contains a plugin for the Xfce panel which is 
+xfce4-mixer: especially designed for use with the mouse wheel.
+xfce4-mixer:
+xfce4-mixer:
+xfce4-mixer:
+xfce4-mixer:
+xfce4-mixer:
+xfce4-notifyd: xfce4-notifyd (Xfce Notify Daemon)
+xfce4-notifyd:
+xfce4-notifyd: Xfce4-notifyd is a simple, visually-appealing notification daemon
+xfce4-notifyd: for Xfce.  Applications can use xfce4-notifyd to pop up a notification
+xfce4-notifyd: bubble by sending messages through D-Bus.
+xfce4-notifyd:
+xfce4-notifyd: Homepage: http://spuriousinterrupt.org/projects/xfce4-notifyd
+xfce4-notifyd:
+xfce4-notifyd:
+xfce4-notifyd:
+xfce4-notifyd:
+xfce4-panel: xfce4-panel (panel for Xfce)
+xfce4-panel:
+xfce4-panel: The Xfce panel is part of the Xfce Desktop Environment and features
+xfce4-panel: program launchers, panel menus, a clock, a desktop switcher, and more.
+xfce4-panel: Many aspects of the panel can be configured through graphical dialogs,
+xfce4-panel: but also by GTK+ style properties and Xfconf settings.
+xfce4-panel:
+xfce4-panel:
+xfce4-panel:
+xfce4-panel:
+xfce4-panel:
+xfce4-power-manager: xfce4-power-manager (Power Management Daemon for Xfce)
+xfce4-power-manager:
+xfce4-power-manager: xfce4-power-manager makes power management functions (such as
+xfce4-power-manager: suspend and hibernate) easy inside the Xfce Desktop Environment.
+xfce4-power-manager:
+xfce4-power-manager:
+xfce4-power-manager:
+xfce4-power-manager:
+xfce4-power-manager:
+xfce4-power-manager:
+xfce4-power-manager:
+xfce4-screenshooter: xfce4-screenshooter (screenshooter plugin for Xfce)
+xfce4-screenshooter:
+xfce4-screenshooter: The screenshooter plugin adds a panel button that allows you to take
+xfce4-screenshooter: screenshots.
+xfce4-screenshooter:
+xfce4-screenshooter:
+xfce4-screenshooter:
+xfce4-screenshooter:
+xfce4-screenshooter:
+xfce4-screenshooter:
+xfce4-screenshooter:
+xfce4-session: xfce4-session (Xfce session manager)
+xfce4-session:
+xfce4-session: Xfce4-session is a session manager for Xfce.  Its task is to save the
+xfce4-session: state of your desktop (opened applications and their location) and
+xfce4-session: restore it during a next startup.  You can create several different
+xfce4-session: sessions and choose one of them on startup.
+xfce4-session:
+xfce4-session:
+xfce4-session:
+xfce4-session:
+xfce4-session:
+xfce4-settings: xfce4-settings (Xfce settings manager)
+xfce4-settings:
+xfce4-settings: xfce4-settings is the Xfce settings manager front-end.  It comes with
+xfce4-settings: several different components for configuring application-independent
+xfce4-settings: settings inside xfconf.
+xfce4-settings:
+xfce4-settings:
+xfce4-settings:
+xfce4-settings:
+xfce4-settings:
+xfce4-settings:
+xfce4-systemload-plugin: xfce4-systemload-plugin (systemload plugin for the Xfce panel)
+xfce4-systemload-plugin:
+xfce4-systemload-plugin: This plugin displays the current system load on the Xfce panel.
+xfce4-systemload-plugin:
+xfce4-systemload-plugin:
+xfce4-systemload-plugin:
+xfce4-systemload-plugin:
+xfce4-systemload-plugin:
+xfce4-systemload-plugin:
+xfce4-systemload-plugin:
+xfce4-systemload-plugin:
+xfce4-taskmanager: xfce4-taskmanager (running apps / task manager application)
+xfce4-taskmanager:
+xfce4-taskmanager: xfce4-taskmanager shows a list of running apps (similar to the
+xfce4-taskmanager: task manager included with some other operating systems)  :)
+xfce4-taskmanager:
+xfce4-taskmanager: The taskmanager is started by running the command 'xfce4-taskmanager'
+xfce4-taskmanager:
+xfce4-taskmanager:
+xfce4-taskmanager:
+xfce4-taskmanager:
+xfce4-taskmanager:
+xfce4-volumed: xfce4-volumed (audio volume management daemon)
+xfce4-volumed:
+xfce4-volumed: This daemon is responsible for making the volume up/down and mute 
+xfce4-volumed: keys of the keyboard work automatically, and uses the XFCE mixer's 
+xfce4-volumed: defined card and track for choosing which track to act on. 
+xfce4-volumed:
+xfce4-volumed: It also provides volume change and mute toggle notifications if 
+xfce4-volumed: a notification daemon is running (using libnotify).
+xfce4-volumed:
+xfce4-volumed: Homepage: https://launchpad.net/xfce4-volumed
+xfce4-volumed:
+xfce4-weather-plugin: xfce4-weather-plugin (weather plugin for the Xfce panel)
+xfce4-weather-plugin:
+xfce4-weather-plugin: The weather plugin displays current weather conditions and forecasts.
+xfce4-weather-plugin:
+xfce4-weather-plugin:
+xfce4-weather-plugin:
+xfce4-weather-plugin:
+xfce4-weather-plugin:
+xfce4-weather-plugin:
+xfce4-weather-plugin:
+xfce4-weather-plugin:
+xfconf: xfconf (Xfce configuration storage system)
+xfconf:
+xfconf: A daemon and query system for managing the storage and retrieval of
+xfconf: settings for the Xfce Desktop Environment, both graphically as well as
+xfconf: from the command line.
+xfconf:
+xfconf:
+xfconf:
+xfconf:
+xfconf:
+xfconf:
+xfdesktop: xfdesktop (Xfce desktop manager)
+xfdesktop:
+xfdesktop: Xfdesktop is a desktop manager for the Xfce Desktop Environment.
+xfdesktop: Desktop in this respect means the root window.  The manager handles
+xfdesktop: tasks such as the background image and color, the root menu and window
+xfdesktop: list, minimized application icons, and file icons on the desktop.
+xfdesktop:
+xfdesktop:
+xfdesktop:
+xfdesktop:
+xfdesktop:
+xfwm4: xfwm4 (Xfce Window Manager)
+xfwm4:
+xfwm4: This package contains xfwm4 which is the window manager for Xfce4.
+xfwm4: It is designed to run with the rest of Xfce, but it also makes a
+xfwm4: capable window manager for any X11 environment.
+xfwm4:
+xfwm4:
+xfwm4:
+xfwm4:
+xfwm4:
+xfwm4:
+xfwm4-themes: xfwm4-themes (themes for the Xfce window manager)
+xfwm4-themes:
+xfwm4-themes: This package contains a wide variety of themes for xfwm4, the window
+xfwm4-themes: manager of the Xfce4 project.  If the default theme is not to your
+xfwm4-themes: liking, you'll probably find the eyecandy you're looking for here.
+xfwm4-themes:
+xfwm4-themes:
+xfwm4-themes:
+xfwm4-themes:
+xfwm4-themes:
+xfwm4-themes:
