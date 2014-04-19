@@ -6,12 +6,11 @@ profile/user-settings-console
 ###################
 # Basic utilities #
 ###################
-#ap/sbopkg
-#ap/recode
-#ap/unrar
-#ap/p7zip
-#ap/cdlabelgen
-#n/fping
+ap/sbopkg
+ap/recode
+ap/unrar
+ap/p7zip
+ap/cdlabelgen
 
 ###############
 # Development #

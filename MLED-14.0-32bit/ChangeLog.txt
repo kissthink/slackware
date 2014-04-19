@@ -1,3 +1,13 @@
+Sat Apr 19 10:31:16 CEST 2014
+Moving MLED to MATE.
+profile/user-settings-console-1.0-noarch-3_microlinux.txz: Rebuilt.
+ap/sbopkg-0.36.0-noarch-3_microlinux.txz: Rebuilt.
+ap/recode-3.6-i486-5_microlinux.txz: Rebuilt.
+ap/unrar-5.0.14-i486-1_microlinux.txz: Upgraded.
+ap/p7zip-9.20.1-i486-3_microlinux.txz: Rebuilt.
+ap/cdlabelgen-4.3.0-noarch-3_microlinux.txz: Rebuilt.
+n/fping-2.4b2_to-i486-1_microlinux.txz: Removed.
++--------------------------+
 Sat Mar 29 14:02:07 CET 2014
 d/jdk-7u51-i586-1_microlinux.txz: Upgraded.
 multimedia/flash-player-plugin-11.2.202.341-i386-1_microlinux.txz: Upgraded.
