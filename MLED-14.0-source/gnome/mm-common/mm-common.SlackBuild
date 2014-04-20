@@ -30,7 +30,7 @@
 
 PRGNAM=mm-common
 VERSION=${VERSION:-0.9.5}
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-3}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}

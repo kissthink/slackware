@@ -28,7 +28,7 @@
 
 PRGNAM=gtkmm
 VERSION=${VERSION:-2.24.2}
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-3}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}
