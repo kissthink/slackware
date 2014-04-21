@@ -14,7 +14,7 @@
 
 PRGNAM=libtorrent
 VERSION=0.13.0
-BUILD=${BUILD:-3}
+BUILD=${BUILD:-4}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}

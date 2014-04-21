@@ -28,8 +28,8 @@
 # Modified by Niki Kovacs <info@microlinux.fr>
 
 PRGNAM=libsigc++
-VERSION=2.2.10
-BUILD=${BUILD:-3}
+VERSION=2.2.11
+BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}
