@@ -1,0 +1,252 @@
+Sat Mar 29 09:07:23 CET 2014
+multimedia/flashplayer-plugin-11.2.202.341-i386-1_microlinux.txz: Upgraded.
+d/jdk-7u51-i586-1_microlinux.txz: Upgraded.
+locale/mozilla-firefox-l10n-24.4.0-i486-1_microlinux.txz: Upgraded.
+locale/mozilla-thunderbird-l10n-24.3.0-i486-1_microlinux.txz: Upgraded.
++--------------------------+
+Thu Mar  6 06:58:31 CET 2014
+n/freerdp-20131115_ea18d2b-i486-1_microlinux.txz: Added.
+xap/remmina-20131008_26b814a-i486-_microlinux.txz: Added.
++--------------------------+
+Mon Feb 10 07:57:23 CET 2014
+locale/mozilla-firefox-l10n-24.3.0-i486-1_microlinux.txz: Upgraded.
+locale/mozilla-thunderbird-l10n-24.3.0-i486-1_microlinux.txz: Upgraded.
+multimedia/gstreamer1-1.2.2-i486-1_microlinux.txz: Added.
+multimedia/gst1-plugins-base-1.2.2-i486-1_microlinux.tgz: Added.
+multimedia/gst1-plugins-good-1.2.2-i486-1_microlinux.txz: Added.
+multimedia/gst1-plugins-bad-1.2.2-i486-1_microlinux.txz: Added.
+multimedia/gst1-plugins-ugly-1.2.2-i486-1_microlinux.txz: Added.
+multimedia/gst1-libav-1.2.2-i486-1_microlinux.txz: Added.
+	This batch of updated gstreamer-1.x packages are installed alongside the
+	stock gstreamer and gst-plugins-* packages included with Slackware.
+gnome/brasero-3.11.3-i486-1_microlinux.txz: Upgraded.
++--------------------------+
+Tue Jan 21 10:18:04 CET 2014
+xap/winff-1.5.2-i486-1_microlinux.txz: Added.
+	WinFF doesn't have any particular runtime dependencies except ffmpeg, but
+	it's written in Free Pascal, so you'll need a Free Pascal Compiler on your
+	machine. Make sure to install packages fpc, fpc-source and lazarus before
+	launching the build. They're all available on SlackBuilds.org.
+xap/geany-1.23.1-i486-1_microlinux.txz: Added.
+xap/geany-plugins-1.23-i486-1_microlinux.txz: Added.
++--------------------------+
+Mon Jan 13 20:32:25 CET 2014
+locale/openoffice-langpack-hu-4.0.1-i486-1_microlinux.txz: Added.
+  Request from user aszabo on LQ.
++--------------------------+
+Tue Jan  7 12:31:15 CET 2014
+n/broadcom-sta-6.30.223.141_3.10.17_smp-i486-1_microlinux.txz: Added.
++--------------------------+
+Thu Jan  2 15:32:04 CET 2014
+l/podofo-0.9.2-i486-1_microlinux.txz: Added.
+xap/scribus-1.4.3-i486-1_microlinux.txz: Added.
++--------------------------+
+Wed Jan  1 11:36:03 CET 2014
+xap/transmission-2.60-i486-1_microlinux.txz: Downgraded.
+	Transmission's GTK3 client keeps forgetting its preferences. Until this gets
+	sorted out, we're reverting to 2.60, the last know version to build the GTK2
+	client (--with-gtk=2), which isn't affected by this bug. 
++--------------------------+
+Mon Dec 30 14:27:32 CET 2013
+Microlinux Enterprise Desktop 14.1 32-bit released! This is an LTS release,
+which means packages will be maintained for as long as the underlying Slackware
+system is officially supported.
+
+MLED 14.1 32-bit provides the following extra software:
+
+AP
+|-- cdlabelgen
+|-- p7zip
+|-- recode
+|-- sbopkg
+`-- unrar
+
+D
+|-- acpica
+|-- jdk
+|-- lua
+|-- numpy
+|-- orc
+|-- perl-cairo
+|-- perl-event
+|-- perl-extutils-depends
+|-- perl-extutils-pkgconfig
+|-- perl-glib
+|-- perl-gtk2
+|-- perl-libintl
+|-- perl-pango
+`-- scons
+
+GNOME
+|-- atkmm
+|-- brasero
+|-- cairomm
+|-- evince
+|-- gdm
+|-- glibmm
+|-- gnote
+|-- goocanvas
+|-- gthumb
+|-- gtkmm
+|-- libgnomecanvas
+|-- libgnomecups
+|-- libgnomeprint
+|-- libgnomeprintui
+|-- libsigc++
+|-- libunique
+|-- mm-common
+|-- pangomm
+|-- pygoocanvas
+`-- totem-pl-parser
+
+L
+|-- BeautifulSoup
+|-- cryptopp
+|-- enca
+|-- gsl
+|-- imlib2
+|-- jbig2dec
+|-- libburn
+|-- libisoburn
+|-- libisofs
+|-- lxml
+|-- protobuf
+|-- pysetuptools
+|-- pyxdg
+|-- tolua++
+`-- wxGTK
+
+LOCALE
+|-- mozilla-firefox-l10n
+|-- mozilla-thunderbird-l10n
+`-- openoffice-langpack
+
+MULTIMEDIA
+|-- a52dec
+|-- cddb-py
+|-- celt
+|-- dirac
+|-- faac
+|-- faad2
+|-- ffmpeg
+|-- flashplayer-plugin
+|-- frei0r
+|-- gsm
+|-- gst-ffmpeg
+|-- gst-plugins-bad
+|-- gst-plugins-ugly
+|-- id3lib
+|-- ladspa_sdk
+|-- lame
+|-- libaacs
+|-- libass
+|-- libavc1394
+|-- libbluray
+|-- libcdaudio
+|-- libcuefile
+|-- libdc1394
+|-- libdca
+|-- libdv
+|-- libdvdcss
+|-- libdvdnav
+|-- libiec61883
+|-- libilbc
+|-- libkate
+|-- libmms
+|-- libmodplug
+|-- libmp4v2
+|-- libmpeg2
+|-- libmusicbrainz
+|-- libmusicbrainz3
+|-- libquicktime
+|-- libreplaygain
+|-- libshout
+|-- libvpx
+|-- live555
+|-- lsdvd
+|-- mjpegtools
+|-- mlt
+|-- mplayer-codecs
+|-- musepack-tools
+|-- ogmtools
+|-- OpenAL
+|-- opencore-amr
+|-- openjpeg
+|-- opus
+|-- rtmpdump
+|-- schroedinger
+|-- soundtouch
+|-- speex
+|-- subtitleripper
+|-- transcode
+|-- twolame
+|-- vcdimager
+|-- x264
+|-- xvid4conf
+`-- xvidcore
+
+N
+`-- fping
+
+PROFILE
+|-- user-settings-console
+`-- user-settings-xfce
+
+X
+|-- ccsm
+|-- compiz-bcop
+|-- compizconfig-python
+|-- compiz-plugins-extra
+|-- compiz-plugins-main
+|-- emerald
+|-- emerald-themes
+|-- eurostile-fonts
+|-- fusion-icon
+|-- google-droid-fonts
+|-- libcompizconfig
+`-- webcore-fonts
+
+XAP
+|-- aMule
+|-- asunder
+|-- audacious
+|-- audacious-plugins
+|-- audacity
+|-- catfish
+|-- conky
+|-- dvdrip
+|-- easytag
+|-- filezilla
+|-- galculator
+|-- gcolor2
+|-- gtkcdlabel
+|-- inkscape
+|-- leafpad
+|-- MPlayer
+|-- mupdf
+|-- openoffice
+|-- openshot
+|-- poedit
+|-- simple-scan
+|-- smplayer
+|-- transmission
+|-- virtualbox
+|-- virtualbox-extension-pack
+`-- virtualbox-kernel
+
+XFCE
+|-- aero
+|-- clearlooks-phenix-theme
+|-- faenza-icon-theme
+|-- gtk-engines
+|-- microlinux-wallpapers
+|-- slack-wallpapers
+|-- thunar-archive-plugin
+|-- xarchiver
+|-- xfce4-xkb-plugin
+`-- xfwm4-theme-axe
+
+Have fun,
+
+Niki Kovacs <info@microlinux.fr>
++---------------------------+

@@ -1,0 +1,12 @@
+          |-----handy-ruler------------------------------------------------------|
+galculator: Galculator (Scientific Calculator)
+galculator:
+galculator: Galculator is a GTK 2 based calculator with ordinary notation/reverse
+galculator: polish notation, a formula entry mode, different number bases (DEC,
+galculator: HEX, OCT, BIN) and different units of angular measure 
+galculator: (DEG, RAD, GRAD).
+galculator: 
+galculator:
+galculator:
+galculator:
+galculator: Package created by Niki Kovacs <info@microlinux.fr>
