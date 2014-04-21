@@ -1,3 +1,42 @@
+Mon Apr 21 19:35:14 CEST 2014
+profile/user-settings-console-1.0-noarch-2_microlinux.txz: Rebuilt.
+ap/sbopkg-0.37.0-noarch-2_microlinux.txz: Rebuilt.
+ap/recode-3.6-x86_64-5_microlinux.txz: Rebuilt.
+ap/unrar-5.0.13-x86_64-2_microlinux.txz: Rebuilt.
+ap/p7zip-9.20.1-x86_64-2_microlinux.txz: Rebuilt.
+ap/pwgen-2.06-x86_64-4_microlinux.txz: Rebuilt.
+d/perl-IO-Multiplex-1.13-x86_64-4_microlinux.txz: Rebuilt.
+d/perl-digest-sha1-2.13-x86_64-4_microlinux.txz: Rebuilt.
+d/perl-digest-hmac-1.03-x86_64-4_microlinux.txz: Rebuilt.
+d/perl-net-ip-1.26-x86_64-4_microlinux.txz: Rebuilt.
+d/perl-net-dns-0.72-x86_64-4_microlinux.txz: Rebuilt.
+d/perl-Net-Server-2.007-x86_64-4_microlinux.txz: Rebuilt.
+d/perl-BerkeleyDB-0.53-x86_64-1_microlinux.txz: Upgraded.
+multimedia/faad2-2.7-x86_64-2_microlinux.txz: Rebuilt.
+multimedia/lame-3.99.5-x86_64-2_microlinux.txz: Rebuilt.
+multimedia/libcuefile-r475-x86_64-2_microlinux.txz: Rebuilt.
+multimedia/libmms-0.6.2-x86_64-2_microlinux.txz: Rebuilt.
+multimedia/libmp4v2-2.0.0-x86_64-2_microlinux.txz: Rebuilt.
+multimedia/libreplaygain-r475-x86_64-2_microlinux.txz: Rebuilt.
+multimedia/speex-1.2rc1-x86_64-2_microlinux.txz: Rebuilt.
+multimedia/twolame-0.3.13-x86_64-2_microlinux.txz: Rebuilt.
+multimedia/faac-1.28-x86_64-3_microlinux.txz: Rebuilt.
+multimedia/ffmpeg-2.1-x86_64_custom-2_microlinux.txz: Rebuilt.
+multimedia/musepack-tools-r475-x86_64-2_microlinux.txz: Rebuilt.
+multimedia/libshout-2.3.1-x86_64-3_microlinux.txz: Rebuilt.
+l/libmpdclient-2.7-x86_64-4_microlinux.txz: Rebuilt.
+l/libsigc++-2.2.11-x86_64-1_microlinux.txz: Upgraded.
+l/libtorrent-0.13.0-x86_64-4_microlinux.txz: Rebuilt.
+l/pysetuptools-2.1-x86_64-2_microlinux.txz: Rebuilt.
+l/psutil-1.2.1-x86_64-2_microlinux.txz: Rebuilt.
+n/rtorrent-0.9.0-x86_64-5_microlinux.txz: Rebuilt.
+n/squid-3.1.23-x86_64-2_microlinux.txz: Rebuilt.
+n/squidGuard-1.4-x86_64-4_microlinux.txz: Rebuilt.
+n/postfix-2.9.9-x86_64-1_microlinux.txz: Rebuilt.
+n/dovecot-2.1.17-x86_64-4_microlinux.txz: Rebuilt.
+n/postgrey-1.34-x86_64-4_microlinux.txz: Rebuilt.
+ap/glances-1.7.6-x86_64-1_microlinux.txz: Upgraded.
++--------------------------+
 Tue Mar  4 13:24:34 CET 2014
 ap/glances-1.7.4-x86_64-1_microlinux.txz: Upgraded.
 +--------------------------+
