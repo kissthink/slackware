@@ -1,0 +1,12 @@
+          |-----handy-ruler------------------------------------------------------|
+squidGuard: squidGuard (URL redirector)
+squidGuard:
+squidGuard: SquidGuard is a URL redirector used to use blacklists with the proxy
+squidGuard: software Squid. This package makes uses of the blacklist files 
+squidGuard: provided by the University of Toulouse and contains a script to 
+squidGuard: retrieve and update these files.
+squidGuard: 
+squidGuard: 
+squidGuard: 
+squidGuard:
+squidGuard: Package created by Niki Kovacs <info@microlinux.fr>
