@@ -1,3 +1,14 @@
+Tue Apr 22 06:56:00 CEST 2014
+profile/user-settings-console-1.0-noarch-2_microlinux.txz: Rebuilt.
+ap/sbopkg-0.37.0-noarch-2_microlinux.txz: Rebuilt.
+ap/recode-3.6-x86_64-2_microlinux.txz: Rebuilt.
+ap/unrar-5.0.13-x86_64-2_microlinux.txz: Rebuilt.
+ap/p7zip-9.20.1-x86_64-2_microlinux.txz: Rebuilt.
+ap/cdlabelgen-4.3.0-noarch-2_microlinux.txz: Rebuilt.
+n/fping-2.4b2_to-x86_64-1_microlinux.txz: Removed.
+d/acpica-20131115-x86_64-1_microlinux.txz: Upgraded.
+d/jdk-7u55-x86_64-1_microlinux.txz: Upgraded.
++--------------------------+
 Sat Mar 29 12:11:38 CET 2014
 multimedia/flashplayer-plugin-11.2.202.341-x86_64-1_microlinux.txz: Upgraded.
 d/jdk-7u51-x86_64-1_microlinux.txz: Upgraded.
