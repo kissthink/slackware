@@ -30,7 +30,7 @@
 
 PRGNAM=libcdaudio
 VERSION=${VERSION:-0.99.12p2}
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-3}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}

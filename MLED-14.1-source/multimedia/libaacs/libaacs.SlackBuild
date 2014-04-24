@@ -25,7 +25,7 @@
 # Modified by Niki Kovacs <info@microlinux.fr>
 
 PRGNAM=libaacs
-VERSION=${VERSION:-0.6.0}
+VERSION=${VERSION:-0.7.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
@@ -80,12 +80,9 @@ find . \
  -exec chmod 644 {} \;
 
 # Fix CL/RF formatting.
-sed -i 's/\r//g' KEYDB.cfg
-
-# Remove freaking -Werror flags. Stupid for a release package.
-sed -i '/-Werror=/,/break;/d' configure.ac
-
-./bootstrap
+cat KEYDB.cfg | sed -e 's/\r//g' > KEYDB.cfg.new
+touch -r KEYDB.cfg KEYDB.cfg.new
+mv KEYDB.cfg.new KEYDB.cfg
 
 CFLAGS="$SLKCFLAGS" \
 ./configure \

@@ -10,7 +10,7 @@
 PRGNAM=cddb-py
 ORIGNAM=CDDB
 VERSION=${VERSION:-1.4}
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-3}
 TAG=${TAG:-_microlinux}
 
 # Automatically determine the architecture we're building on:
