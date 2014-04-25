@@ -107,6 +107,9 @@ for j in ${COLORS}; do
   make DESTDIR="$PKG" install-gnome-${j}
 done
 
+# Slackware branding (cannibalized from Faenza icon theme)
+tar xvzf $CWD/slackware-branding.tar.gz -C $PKG/usr/share/icons/gnome-colors-common/
+
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
   AUTHORS COPYING ChangeLog README \
