@@ -147,6 +147,10 @@ x/eurostile-fonts
 # MATE desktop #
 ################
 mate/gnome-colors
+mate/aero
+mate/clearlooks-phenix-theme
+mate/microlinux-wallpapers
+mate/slack-wallpapers
 
 ##########
 # Compiz #

@@ -43,6 +43,10 @@ x/google-droid-fonts-20100409-noarch-2_microlinux.txz: Rebuilt.
 x/webcore-fonts-3.0-noarch-2_microlinux.txz: Rebuilt.
 x/eurostile-fonts-1.0-noarch-2_microlinux.txz: Rebuilt.
 mate/gnome-colors-5.5.1-noarch-2_microlinux.txz: Added.
+mate/aero-1.0-noarch-1_microlinux.txz: Added.
+mate/clearlooks-phenix-theme-20131228-noarch-1_microlinux.txz: Added.
+mate/microlinux-wallpapers-1.0-noarch-3_microlinux.txz: Added.
+mate/slack-wallpapers-0.284-noarch-1_microlinux.txz: Added.
 +--------------------------+
 Thu Apr 24 07:40:37 CEST 2014
 multimedia/a52dec-0.7.4-i486-2_microlinux.txz: Rebuilt.
