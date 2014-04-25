@@ -125,9 +125,9 @@ multimedia/mutagen
 #########
 # Fonts #
 #########
-#x/google-droid-fonts
-#x/webcore-fonts
-#x/eurostile-fonts
+x/google-droid-fonts
+x/webcore-fonts
+x/eurostile-fonts
 
 ################
 # Xfce desktop #
@@ -142,6 +142,11 @@ multimedia/mutagen
 #xfce/xarchiver
 #xfce/thunar-archive-plugin
 #xfce/xfce4-xkb-plugin
+
+################
+# MATE desktop #
+################
+mate/gnome-colors
 
 ##########
 # Compiz #

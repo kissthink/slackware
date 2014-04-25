@@ -1,0 +1,12 @@
+            |-----handy-ruler------------------------------------------------------|
+gnome-colors: gnome-colors (extra icon themes for the gnome desktop)
+gnome-colors:
+gnome-colors: The GNOME-Colors is a project that aims to make the desktop as
+gnome-colors: elegant, consistent and colorful as possible. The current goal is
+gnome-colors: to allow full color customization of themes, icons, GDM logins
+gnome-colors: and splash screens.  There are nine full color-schemes available;
+gnome-colors: Noble (Purple), Brave (Blue), Human (Orange), Wine (Red), Dust
+gnome-colors: (Chocolate), Illustrious (Pink) and Wise (Green), Carbonite
+gnome-colors: (Dark-grow) and Tribute (Light-grow).
+gnome-colors: 
+gnome-colors: Package created by Niki Kovacs <info@microlinux.fr>
