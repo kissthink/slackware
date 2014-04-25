@@ -130,20 +130,6 @@ x/webcore-fonts
 x/eurostile-fonts
 
 ################
-# Xfce desktop #
-################
-#xfce/aero
-#xfce/faenza-icon-theme
-#xfce/gtk-engines
-#xfce/clearlooks-phenix-theme
-#xfce/xfwm4-theme-axe
-#xfce/microlinux-wallpapers
-#xfce/slack-wallpapers
-#xfce/xarchiver
-#xfce/thunar-archive-plugin
-#xfce/xfce4-xkb-plugin
-
-################
 # MATE desktop #
 ################
 mate/gnome-colors
@@ -151,19 +137,6 @@ mate/aero
 mate/clearlooks-phenix-theme
 mate/microlinux-wallpapers
 mate/slack-wallpapers
-
-##########
-# Compiz #
-##########
-#x/compiz-bcop
-#x/libcompizconfig
-#x/compizconfig-python
-#x/ccsm
-#x/compiz-plugins-main
-#x/compiz-plugins-extra
-#x/emerald
-#x/emerald-themes
-#x/fusion-icon
 
 #################
 # Login manager #
