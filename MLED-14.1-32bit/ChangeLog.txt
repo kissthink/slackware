@@ -25,6 +25,20 @@ multimedia/libshout-2.3.1-i486-3_microlinux.txz: Rebuilt.
 multimedia/schroedinger-1.0.11-i486-2_microlinux.txz: Rebuilt.
 multimedia/ffmpeg-2.1-i686_custom-2_microlinux.txz: Rebuilt.
 multimedia/libquicktime-1.2.4-i486-2_microlinux.txz: Rebuilt.
+multimedia/mlt-0.9.0-i486-2_microlinux.txz: Rebuilt.
+multimedia/musepack-tools-r475-i486-2_microlinux.txz: Rebuilt.
+multimedia/gst-plugins-bad-0.10.23-i486-2_microlinux.txz: Rebuilt.
+multimedia/gst-plugins-ugly-0.10.19-i486-2_microlinux.txz: Rebuilt.
+multimedia/gst-python-0.10.22-i486-1_microlinux.txz: Added.
+multimedia/libmpeg2-0.5.1-i486-2_microlinux.txz: Rebuilt.
+multimedia/transcode-1.1.7-i486-2_microlinux.txz: Rebuilt.
+multimedia/gstreamer1-1.2.2-i486-2_microlinux.txz: Rebuilt.
+multimedia/gst1-plugins-base-1.2.2-i486-2_microlinux.txz: Rebuilt.
+multimedia/gst1-plugins-good-1.2.2-i486-2_microlinux.txz: Rebuilt.
+multimedia/gst1-plugins-bad-1.2.2-i486-2_microlinux.txz: Rebuilt.
+multimedia/gst1-plugins-ugly-1.2.2-i486-2_microlinux.txz: Rebuilt.
+multimedia/gst1-libav-1.2.2-i486-2_microlinux.txz: Rebuilt.
+multimedia/mutagen-1.22-i486-1_microlinux.txz: Added.
 +--------------------------+
 Thu Apr 24 07:40:37 CEST 2014
 multimedia/a52dec-0.7.4-i486-2_microlinux.txz: Rebuilt.

@@ -107,19 +107,20 @@ multimedia/libshout
 multimedia/schroedinger
 multimedia/ffmpeg
 multimedia/libquicktime
-#multimedia/mlt
-#multimedia/musepack-tools
-#multimedia/gst-plugins-bad
-#multimedia/gst-plugins-ugly
-#multimedia/libmpeg2
-#multimedia/transcode
-# Post-release
-#multimedia/gstreamer1
-#multimedia/gst1-plugins-base
-#multimedia/gst1-plugins-good
-#multimedia/gst1-plugins-bad
-#multimedia/gst1-plugins-ugly
-#multimedia/gst1-libav
+multimedia/mlt
+multimedia/musepack-tools
+multimedia/gst-plugins-bad
+multimedia/gst-plugins-ugly
+multimedia/gst-python
+multimedia/libmpeg2
+multimedia/transcode
+multimedia/gstreamer1
+multimedia/gst1-plugins-base
+multimedia/gst1-plugins-good
+multimedia/gst1-plugins-bad
+multimedia/gst1-plugins-ugly
+multimedia/gst1-libav
+multimedia/mutagen
 
 #########
 # Fonts #

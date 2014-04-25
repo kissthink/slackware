@@ -28,7 +28,7 @@
 
 PRGNAM=gst-plugins-bad
 VERSION=${VERSION:-0.10.23}
-BUILD=${BUILD:-1}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}
@@ -93,6 +93,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --disable-static \
   --disable-musepack \
   --disable-opus \
+  --disable-modplug \
   --build=$ARCH-slackware-linux
 
 make $NUMJOBS 

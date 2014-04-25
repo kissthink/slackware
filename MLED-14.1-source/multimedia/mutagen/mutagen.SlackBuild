@@ -1,8 +1,10 @@
 #!/bin/sh
 
-# Slackware build script for transcode
+# Slackware build script for Mutagen
 
-# Copyright 2008-2013 Heinz Wiesinger, Amsterdam, The Netherlands
+# Currently maintained by Dugan Chen (thedoogster [at] gmail [dot] [com])
+
+# Copyright 2008  Frank Caraballo <fecaraballo{at}gmail{dot}com>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,12 +26,10 @@
 #
 # Modified by Niki Kovacs <info@microlinux.fr>
 
-PRGNAM=transcode
-VERSION=1.1.7
-BUILD=${BUILD:-2}
+PRGNAM=mutagen
+VERSION=${VERSION:-1.22}
+BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
-
-NUMJOBS=${NUMJOBS:--j5}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -58,20 +58,20 @@ else
   LIBDIRSUFFIX=""
 fi
 
-set -e
+set -e 
 
-if [ ! -r $PRGNAM-$VERSION.tar.bz2 ] ; then
-   wget -c http://bitbucket.org/france/transcode-tcforge/downloads/$PRGNAM-$VERSION.tar.bz2
+if [ ! -r $PRGNAM-$VERSION.tar.gz ] ; then
+   wget -c http://mutagen.googlecode.com/files/$PRGNAM-$VERSION.tar.gz
 fi
 
-md5sum -c $PRGNAM-$VERSION.tar.bz2.md5
+md5sum -c $PRGNAM-$VERSION.tar.gz.md5
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
-cd $TMP
+cd $TMP || exit 1
 rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$PRGNAM-$VERSION.tar.bz2
-cd $PRGNAM-$VERSION
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz || exit 1
+cd $PRGNAM-$VERSION || exit 1
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 -o -perm 511 \) \
@@ -79,61 +79,23 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
  -exec chmod 644 {} \;
 
-# Fix building with newer ffmpeg
-patch -p0 -i $CWD/transcode-1.1.7-ffmpeg.patch
-patch -p0 -i $CWD/transcode-1.1.7-ffmpeg-0.10.patch
-patch -p1 -i $CWD/transcode-1.1.7-ffmpeg-0.11.patch
-patch -p1 -i $CWD/transcode-1.1.7-preset-free.patch
-patch -p0 -i $CWD/transcode-1.1.7-libav-9.patch
-patch -p1 -i $CWD/transcode-1.1.7-preset-force.patch
-patch -p1 -i $CWD/transcode-1.1.7-ffmpeg2.patch
-
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
-LDFLAGS="-L/usr/lib${LIBDIRSUFFIX}" \
-./configure \
-  --prefix=/usr \
-  --libdir=/usr/lib${LIBDIRSUFFIX} \
-  --sysconfdir=/etc \
-  --localstatedir=/var \
-  --docdir=/usr/doc/$PRGNAM-$VERSION \
-  --mandir=/usr/man \
-  --enable-alsa \
-  --enable-v4l \
-  --enable-libv4l2=${LIBV4L:-yes} \
-  --enable-libv4lconvert=${LIBV4L:-yes} \
-  --enable-libmpeg2=${LIBMPEG2:-yes} \
-  --enable-libmpeg2convert=${LIBMPEG2:-yes} \
-  --enable-ogg \
-  --enable-vorbis \
-  --enable-theora \
-  --enable-x264=${X264:-yes} \
-  --enable-xvid=${XVID:-yes} \
-  --enable-faac=${FAAC:-yes} \
-  --enable-freetype2 \
-  --enable-sdl \
-  --enable-libxml2 \
-  --enable-libdv=${LIBDV:-yes} \
-  --enable-libquicktime=${QUICKTIME:-yes} \
-  --enable-mjpegtools=${MJPEGTOOLS:-yes} \
-  --enable-a52=${A52DEC:-yes} \
-  --enable-nuv \
-  --enable-lzo \
-  --enable-libpostproc \
-  --enable-imagemagick \
-  --build=$ARCH-slackware-linux
+python setup.py build || exit 1
+python setup.py install --root $PKG || exit 1
 
-make $NUMJOBS
-make install-strip DESTDIR=$PKG
+# Move man page(s) to correct location:
+mv $PKG/usr/share/man $PKG/usr/man
+rm -rf $PKG/usr/share
 
-find $PKG/usr/man -type f -exec gzip -9 {} \;
+( cd $PKG/usr/man
+  find . -type f -exec gzip -9 {} \;
+  for i in $( find . -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
+)
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a AUTHORS ChangeLog COPYING INSTALL README STYLE TODO \
- $PKG/usr/doc/$PRGNAM-$VERSION
-# --docdir does not work
-mv $PKG/usr/share/doc/$PRGNAM/* $PKG/usr/doc/$PRGNAM-$VERSION/
-rm -rf $PKG/usr/share
+cp -a COPYING NEWS PKG-INFO README TODO \
+  $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
