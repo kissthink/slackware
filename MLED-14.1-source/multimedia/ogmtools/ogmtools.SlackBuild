@@ -31,7 +31,7 @@
 
 PRGNAM=ogmtools
 VERSION=1.5
-BUILD=${BUILD:-1}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}
