@@ -1,3 +1,6 @@
+Sat Apr 26 07:24:10 CEST 2014
+gnome/gdm-2.20.11-x86_64-2_microlinux.txz: Rebuilt.
++--------------------------+
 Fri Apr 25 12:18:29 CEST 2014
 multimedia/libreplaygain-r475-x86_64-2_microlinux.txz: Rebuilt.
 multimedia/libvpx-1.2.0-x86_64-2_microlinux.txz: Rebuilt.
