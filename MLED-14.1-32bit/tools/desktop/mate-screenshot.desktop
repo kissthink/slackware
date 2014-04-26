@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Screenshot
+Name[de]=Bildschirmfoto
+Name[fr]=Capture d'écran
+Comment=MATE Screenshot
+Exec=mate-screenshot --interactive
+Terminal=false
+Type=Application
+Icon=applets-screenshooter
+StartupNotify=true
+Categories=Graphics;
+OnlyShowIn=MATE;
+X-MATE-Bugzilla-Bugzilla=MATE
+X-MATE-Bugzilla-Product=mate-utils
+X-MATE-Bugzilla-Component=screenshot
+X-MATE-Bugzilla-OtherBinaries=mate-panel-screenshot

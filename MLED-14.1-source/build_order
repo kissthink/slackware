@@ -141,7 +141,7 @@ mate/slack-wallpapers
 #################
 # Login manager #
 #################
-#gnome/gdm
+gnome/gdm
 
 ################
 # Applications #

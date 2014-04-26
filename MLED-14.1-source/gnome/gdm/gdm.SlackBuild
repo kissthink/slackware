@@ -13,7 +13,7 @@
 
 PRGNAM=gdm
 VERSION=${VERSION:-2.20.11}
-BUILD=${BUILD:-1}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}
@@ -68,7 +68,14 @@ find . \
  \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
  -exec chmod 644 {} \;
 
-patch -p1 < $CWD/gdm-2.20.10-numlockx.patch 
+# Activate Numlock
+patch -p1 < $CWD/patches/gdm-2.20.10-numlockx.patch
+
+# Don't automatically start ssh-agent -- this is the user's job
+patch -p1 < $CWD/patches/do_not_start_ssh-agent.diff
+
+# Fix crypt() usage with glibc-2.17 and later
+patch -p1 < $CWD/patches/gdm-2.20.11-crypt.diff
 
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
@@ -76,12 +83,14 @@ CXXFLAGS="$SLKCFLAGS" \
   --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
   --sysconfdir=/etc \
-  --localstatedir=/var/state \
+  --localstatedir=/var/lib \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
-  --disable-static \
   --disable-scrollkeeper \
-  --with-prefetch=no \
+  --enable-console-helper=no \
+  --enable-static=no \
+  --enable-ipv6=yes \
+  --with-dmconfdir=/usr/share/xsessions \
   --build=$ARCH-slackware-linux
 
 make $NUMJOBS SUSPEND_COMMAND=/usr/sbin/pm-suspend
@@ -102,7 +111,7 @@ chown -R root:root $PKG/usr/share/gdm/themes/
 # Default settings
 sed -i "s|^#Greeter=\(.*\)|Greeter=/usr/libexec/gdmgreeter|" \
   $PKG/usr/share/gdm/defaults.conf
-sed -i "s/^#DefaultSession=\(.*\)/DefaultSession=xfce.desktop/" \
+sed -i "s/^#DefaultSession=\(.*\)/DefaultSession=mate.desktop/" \
   $PKG/usr/share/gdm/defaults.conf
 sed -i "s/^#GtkTheme=\(.*\)/GtkTheme=Clearlooks-Phenix/" \
   $PKG/usr/share/gdm/defaults.conf

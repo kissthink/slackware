@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Calculator
+Name[de]=Taschenrechner
+Name[fr]=Calculatrice
+Comment=MATE Calculator
+Exec=mate-calc
+Icon=accessories-calculator
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GTK;Utility;Calculator;
+X-MATE-DocPath=mate-calc/mate-calc.xml
+X-MATE-Bugzilla-Bugzilla=MATE
+X-MATE-Bugzilla-Product=mate-calc
+X-MATE-Bugzilla-Component=general
+X-MATE-Bugzilla-OtherBinaries=mate-calculator

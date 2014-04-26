@@ -1,10 +1,10 @@
 [Desktop Entry]
-Version=1.0
-Type=Application
 Name=Audio Player
 Name[de]=Audio-Player
 Name[fr]=Lecteur audio
 Comment=Exaile
+Version=1.0
+Type=Application
 Icon=exaile
 Exec=exaile %F
 Terminal=false

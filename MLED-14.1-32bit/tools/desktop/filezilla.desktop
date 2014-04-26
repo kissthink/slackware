@@ -2,10 +2,11 @@
 Name=FTP client
 Name[de]=FTP-Programm
 Name[fr]=Téléchargement FTP
-Comment=filezilla
+Comment=Filezilla
 Exec=filezilla
 Terminal=false
-Icon=filezilla
+#Icon=filezilla
+Icon=network-server
 Type=Application
 Categories=Network;FileTransfer;
 Version=1.0

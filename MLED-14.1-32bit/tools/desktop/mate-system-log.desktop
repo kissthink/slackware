@@ -1,0 +1,18 @@
+[Desktop Entry]
+NoDisplay=true
+Name=System Log Files
+Name[de]=Systemprotokolle
+Name[fr]=Journaux système
+Comment=MATE System Log
+Exec=mate-system-log
+Icon=logviewer
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GTK;MATE;System;Monitor;
+OnlyShowIn=MATE;
+X-MATE-DocPath=mate-system-log/mate-system-log.xml
+X-MATE-Bugzilla-Bugzilla=MATE
+X-MATE-Bugzilla-Product=mate-utils
+X-MATE-Bugzilla-Component=logview
+X-MATE-Bugzilla-Version=1.6.0
