@@ -12,7 +12,7 @@
 PRGNAM=libvpx
 VERSION=${VERSION:-1.1.0}
 SRCVERSION=$(echo $VERSION | tr _ -)
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-3}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}

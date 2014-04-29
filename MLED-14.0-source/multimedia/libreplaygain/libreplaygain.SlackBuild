@@ -7,7 +7,7 @@
 
 PRGNAM=libreplaygain
 VERSION=${VERSION:-r453}
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-3}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}

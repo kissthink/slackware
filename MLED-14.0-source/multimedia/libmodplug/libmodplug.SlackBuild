@@ -8,7 +8,7 @@
 
 PRGNAM=libmodplug
 VERSION=0.8.8.4
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-3}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}
