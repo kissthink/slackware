@@ -20,7 +20,7 @@
 
 PRGNAM=vcdimager
 VERSION=0.7.23
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-3}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}

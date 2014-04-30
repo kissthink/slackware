@@ -8,7 +8,7 @@
 PRGNAM=musepack-tools
 SRCNAM=musepack_src
 VERSION=${VERSION:-r435}
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-3}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}

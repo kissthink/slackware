@@ -11,7 +11,7 @@
 
 PRGNAM=rtmpdump
 VERSION=${VERSION:-20120308_7340f6d}
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-3}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}
