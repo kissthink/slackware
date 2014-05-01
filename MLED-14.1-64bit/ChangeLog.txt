@@ -1,8 +1,6 @@
 Thu May  1 10:52:12 CEST 2014
 mate/elementary-icon-theme-3.1-noarch-1_microlinux.txz: Added.
 mate/elementary-extras-1.0-noarch-1_microlinux.txz: Added.
-xap/openoffice-4.0.1_en_US-x86_64-1_microlinux.txz: Removed.
-xap/libreoffice-4.1.6-x86_64-1_microlinux.txz: Added.
 +--------------------------+
 Sat Apr 26 07:24:10 CEST 2014
 gnome/gdm-2.20.11-x86_64-2_microlinux.txz: Rebuilt.
