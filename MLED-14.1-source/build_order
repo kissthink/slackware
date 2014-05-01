@@ -148,6 +148,7 @@ gnome/gdm
 ################
 # Applications #
 ################
+xap/libreoffice
 #xap/MPlayer
 #xap/aMule
 #xap/asunder
