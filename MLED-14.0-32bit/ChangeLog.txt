@@ -38,6 +38,8 @@ mate/clearlooks-phenix-theme-20131228-noarch-2_microlinux.txz: Added.
 mate/microlinux-wallpapers-1.0-noarch-3_microlinux.txz: Added.
 mate/slack-wallpapers-0.284-noarch-1_microlinux.txz: Added.
 gnome/gdm-2.20.11-i486-2_microlinux.txz: Rebuilt.
+mate/elementary-icon-theme-3.1-noarch-1_microlinux.txz: Added.
+mate/elementary-extras-1.0-noarch-1_microlinux.txz: Added.
 +--------------------------+
 Wed Apr 30 06:41:50 CEST 2014
 multimedia/rtmpdump-20120308_7340f6d-i486-3_microlinux.txz: Rebuilt.
