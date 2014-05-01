@@ -119,46 +119,35 @@ multimedia/gst-plugins-bad
 multimedia/gst-plugins-ugly
 multimedia/libmpeg2
 multimedia/transcode
+multimedia/gst-python
+multimedia/mutagen
+multimedia/gstreamer1
+multimedia/gst1-plugins-base
+multimedia/gst1-plugins-good
+multimedia/gst1-plugins-bad
+multimedia/gst1-plugins-ugly
+multimedia/gst1-libav
 
 #########
 # Fonts #
 #########
-#x/google-droid-fonts
-#x/webcore-fonts
-#x/eurostile-fonts
+x/google-droid-fonts
+x/webcore-fonts
+x/eurostile-fonts
 
 ################
-# Xfce desktop #
+# MATE desktop #
 ################
-#xfce/aero
-#xfce/faenza-icon-theme
-#xfce/gtk-engines
-#xfce/clearlooks-phenix-theme
-#xfce/xfwm4-theme-axe
-#xfce/microlinux-wallpapers
-#xfce/slack-wallpapers
-#xfce/Terminal
-#xfce/xarchiver
-#xfce/thunar-archive-plugin
-#xfce/xfce4-xkb-plugin
-
-##########
-# Compiz #
-##########
-#x/compiz-bcop
-#x/libcompizconfig
-#x/compizconfig-python
-#x/ccsm
-#x/compiz-plugins-main
-#x/compiz-plugins-extra
-#x/emerald
-#x/emerald-themes
-#x/fusion-icon
+mate/gnome-colors
+mate/aero
+mate/clearlooks-phenix-theme
+mate/microlinux-wallpapers
+mate/slack-wallpapers
 
 #################
 # Login manager #
 #################
-#gnome/gdm
+gnome/gdm
 
 ################
 # Applications #

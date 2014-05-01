@@ -49,8 +49,8 @@ cd $TMP
 rm -rf backdrops/
 tar xvzf $CWD/backdrops.tar.gz || exit 1
 
-mkdir -p $PKG/usr/share/xfce4/backdrops
-cp -a backdrops/* $PKG/usr/share/xfce4/backdrops/
+mkdir -p $PKG/usr/share/backgrounds/mate/microlinux
+cp -a backdrops/* $PKG/usr/share/backgrounds/mate/microlinux/
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
@@ -63,5 +63,5 @@ cd $PKG
 
 # Cleanup
 cd $TMP
-rm -rf $PKG
+rm -rf backdrops $PKG
 

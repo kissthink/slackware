@@ -1,3 +1,44 @@
+Thu May  1 06:21:42 CEST 2014
+multimedia/gst-python-0.10.22-i486-1_microlinux.txz: Added.
+multimedia/mutagen-1.22-i486-1_microlinux.txz: Added.
+multimedia/gstreamer1-1.2.2-i486-2_microlinux.txz: Added.
+multimedia/gst1-plugins-base-1.2.2-i486-2_microlinux.txz: Added.
+multimedia/gst1-plugins-good-1.2.2-i486-2_microlinux.txz: Added.
+multimedia/gst1-plugins-bad-1.2.2-i486-2_microlinux.txz: Added.
+multimedia/gst1-plugins-ugly-1.2.2-i486-2_microlinux.txz: Added.
+multimedia/gst1-libav-1.2.2-i486-2_microlinux.txz: Added.
+x/ccsm-0.8.4-i486-1_microlinux.txz: Removed.
+x/compiz-bcop-0.8.8-i486-1_microlinux.txz: Removed.
+x/compizconfig-python-0.8.4-i486-1_microlinux.txz: Removed.
+x/compiz-plugins-extra-0.8.8-i486-1_microlinux.txz: Removed.
+x/compiz-plugins-main-0.8.8-i486-1_microlinux.txz: Removed.
+x/emerald-0.8.8-i486-1_microlinux.txz: Removed.
+x/emerald-themes-0.6.0-i486-1_microlinux.txz: Removed.
+x/fusion-icon-20080213-i486-1_microlinux.txz: Removed.
+x/libcompizconfig-0.8.8-i486-1_microlinux.txz: Removed.
+  Compiz doesn't play well with MATE.
+xfce/aero-1.0-noarch-1_microlinux.txz: Removed.
+xfce/clearlooks-phenix-theme-20131129-noarch-1_microlinux.txz: Removed.
+xfce/faenza-icon-theme-1.3-noarch-1_microlinux.txz: Removed.
+xfce/gtk-engines-2.20.2-i486-1_microlinux.txz: Removed.
+  Provided by MSB.
+xfce/microlinux-wallpapers-1.0-noarch-3_microlinux.txz: Removed.
+xfce/slack-wallpapers-0.212-noarch-3_microlinux.txz: Removed.
+xfce/Terminal-0.6.1-i486-2_microlinux.txz: Removed.
+xfce/thunar-archive-plugin-0.3.0-i486-1_microlinux.txz: Removed.
+xfce/xarchiver-0.5.2-i486-1_microlinux.txz: Removed.
+xfce/xfce4-xkb-plugin-0.5.6-i486-1_microlinux.txz: Removed.
+xfce/xfwm4-theme-axe-1.0-noarch-1_microlinux.txz: Removed.
+x/eurostile-fonts-1.0-noarch-2_microlinux.txz: Rebuilt.
+x/google-droid-fonts-20100409-noarch-2_microlinux.txz: Rebuilt.
+x/webcore-fonts-3.0-noarch-2_microlinux.txz: Rebuilt.
+mate/gnome-colors-5.5.1-noarch-2_microlinux.txz: Added.
+mate/aero-1.0-noarch-2_microlinux.txz: Added.
+mate/clearlooks-phenix-theme-20131228-noarch-2_microlinux.txz: Added.
+mate/microlinux-wallpapers-1.0-noarch-3_microlinux.txz: Added.
+mate/slack-wallpapers-0.284-noarch-1_microlinux.txz: Added.
+gnome/gdm-2.20.11-i486-2_microlinux.txz: Rebuilt.
++--------------------------+
 Wed Apr 30 06:41:50 CEST 2014
 multimedia/rtmpdump-20120308_7340f6d-i486-3_microlinux.txz: Rebuilt.
 multimedia/soundtouch-1.6.0-i486-3_microlinux.txz: Rebuilt.
