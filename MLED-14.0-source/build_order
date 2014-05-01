@@ -139,8 +139,6 @@ x/eurostile-fonts
 # MATE desktop #
 ################
 mate/gnome-colors
-mate/elementary-icon-theme
-mate/elementary-extras
 mate/aero
 mate/clearlooks-phenix-theme
 mate/microlinux-wallpapers
