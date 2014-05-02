@@ -188,8 +188,8 @@ xap/libreoffice
 ################
 # Translations #
 ################
-#locale/mozilla-firefox-l10n
-#locale/mozilla-thunderbird-l10n
+locale/mozilla-firefox-l10n
+locale/mozilla-thunderbird-l10n
 # locale/openoffice --> build manually
 
 #########################

@@ -1,3 +1,12 @@
+Fri May  2 06:36:27 CEST 2014
+locale/mozilla-firefox-l10n-24.5.0-i486-1_microlinux.txz: Upgraded.
+locale/mozilla-thunderbird-l10n-24.5.0-i486-1_microlinux.txz: Upgraded.
+locale/openoffice-langpack-de-4.0.1-i486-1_microlinux.txz: Removed.
+locale/openoffice-langpack-fr-4.0.1-i486-1_microlinux.txz: Removed.
+locale/openoffice-langpack-hu-4.0.1-i486-1_microlinux.txz: Removed.
+locale/libreoffice-langpack-de-4.1.6-i586-1_microlinux.txz: Added.
+locale/libreoffice-langpack-fr-4.1.6-i586-1_microlinux.txz: Added.
++--------------------------+
 Thu May  1 10:36:30 CEST 2014
 mate/elementary-icon-theme-3.1-noarch-1_microlinux.txz: Added.
 mate/elementary-extras-1.0-noarch-1_microlinux.txz: Added.

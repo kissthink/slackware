@@ -1,9 +1,8 @@
 #!/bin/sh
 
-# Slackware build script for openoffice-langpack
+# Slackware build script for LibreOffice Language Packs
 
-# Written by Niki Kovacs <info@microlinux.fr)
-#
+# Copyright 2010-2013 Niels Horn, Rio de Janeiro, RJ, Brazil
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,20 +22,29 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-PRGNAM=openoffice-langpack
-VERSION=${VERSION:-4.0.1}
+# Written by Niels Horn <niels.horn@gmail.com>
+# Revision date: 2013/11/06
+#
+# Modified by Niki Kovacs <info@microlinux.fr>
+
+PRGNAM=libreoffice-langpack
+VERSION=${VERSION:-"4.1.6"}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
+#LOLANG=${LOLANG:-en-GB}
+#PKG_LANG=${LOLANG//-/_}
+LOLANG=${LOLANG:-fr}
 
-# Automatically determine the architecture we're building on:
+# I'll leave this line here, as I always have to change it with every release
+SRCVERSION=$VERSION
+SRCSHORT=$(echo $VERSION | cut -f1-2 -d.)
+
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i486 ;;
     arm*) ARCH=arm ;;
-    # Unless $ARCH is already set, use uname -m for all other
-    # archs:
-    *) ARCH=$( uname -m ) ;;
+       *) ARCH=$( uname -m ) ;;
   esac
 fi
 
@@ -45,78 +53,68 @@ TMP=${TMP:-/tmp/microlinux}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
-# To build another language pack (like german for example) pass the according
-# locale to the script: OOLANG=de ./openoffice-langpack.SlackBuild
-OOLANG=${OOLANG:-fr}
-
-PKG_LANG=${OOLANG//-/_} # Leave this alone
-MIRROR=sourceforge.net/projects/openofficeorg.mirror/files
-
 # Change source package name
 if [ "$ARCH" = "x86_64" ]; then
   SRCARCH="x86-64"
   PKGARCH="$ARCH"
+  URLARCH="x86_64"
+  LIBDIRSUFFIX=64
 elif [ "$ARCH" = "arm" ]; then
-  printf "\n$ARCH is unsupported for OOo...\n\n"
+  printf "\n$ARCH is unsupported for LibreOffice...\n\n"
   exit 1
 else
   SRCARCH="x86"
   PKGARCH="i586"
+  URLARCH="x86"
+  LIBDIRSUFFIX=""
 fi
 
 set -e
 
-# Building the final name.
-TARNAME="Apache_OpenOffice_${VERSION}_Linux_${SRCARCH}_langpack-rpm_${OOLANG}.tar.gz"
+# Concatenate all parts to get the full name of the tarball
+TARNAME="LibreOffice_${SRCVERSION}_Linux_${SRCARCH}_rpm_langpack_${LOLANG}.tar.gz"
 
-echo $TARNAME
+# Download mirror
+MIRROR=download.documentfoundation.org/libreoffice/stable/$VERSION/rpm/$URLARCH
 
 if [ ! -r $TARNAME ] ; then
-  wget -c http://$MIRROR/$VERSION/binaries/$OOLANG/$TARNAME
+  wget -c http://$MIRROR/$TARNAME
 fi
 
 md5sum -c $TARNAME.md5
 
-# Ignore this - it's just to get the toplevel directory name of the
-# extracted tarball archive
+# Get "base" directory of tarball
 SOURCEDIR=$(tar tzf $CWD/$TARNAME 2>/dev/null | head -n 1 | tr -d \/)
-# If the above operation failed for some reason, unset SOURCEDIR so that
-# the "set -eu" below will cause us to bail out with an error
-# Normally SOURCEDIR=en-US
-[ -z $SOURCEDIR ] && unset SOURCEDIR
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 rm -rf $TMP/$SOURCEDIR
 
-# Extract tarball
 tar xvf $CWD/$TARNAME -C $TMP
 
-cd $TMP/$SOURCEDIR/RPMS
+cd $TMP/$SOURCEDIR/RPMS/
 
-# Extract the files from the *.rpm
 for FILE in *.rpm ; do rpm2cpio < $FILE | cpio -imdv ; done
-mv opt $PKG/
+mv opt $PKG
 cd $PKG
 
+# Move docs to their expected locations
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+cd $PKG/opt/libreoffice$SRCSHORT
+  mv readmes $PKG/usr/doc/$PRGNAM-$VERSION
+cd -
+cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+
+mkdir -p $PKG/install
+cat $CWD/slack-desc-$LOLANG > $PKG/install/slack-desc
+
+# Fix ownership and permissions and make the package
 chown -R root:root .
 find . -type d -exec chmod 755 {} \;
 chmod -R u+rw,go+r-w,a-s .
 
-# Move docs to their correct locations
-mkdir -p $PKG/usr/doc/$PRGNAM-${VERSION}_${PKG_LANG}
-for i in readmes ; do
-    mv $PKG/opt/openoffice4/$i \
-      $PKG/usr/doc/$PRGNAM-${VERSION}_${PKG_LANG}/$i ;
-done
-
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-${VERSION}_${PKG_LANG}/$PRGNAM.SlackBuild
-
-mkdir -p $PKG/install
-cat $CWD/slack-desc-$OOLANG > $PKG/install/slack-desc
-
-/sbin/makepkg -c n -l y $OUTPUT/$PRGNAM-${PKG_LANG}-${VERSION}-$ARCH-$BUILD$TAG.txz
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-${LOLANG}-${VERSION}-$PKGARCH-$BUILD$TAG.${PKGTYPE:-txz}
 
 # Cleanup
 cd $TMP
-rm -rf $OOLANG $PKG
+rm -rf $SOURCEDIR $PKG
