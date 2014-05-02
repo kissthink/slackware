@@ -29,7 +29,7 @@
 
 PRGNAM=freerdp
 VERSION=${VERSION:-20131115_ea18d2b}
-BUILD=${BUILD:-1}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}

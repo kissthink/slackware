@@ -25,7 +25,7 @@
 
 PRGNAM=gtkcdlabel      
 VERSION=${VERSION:-1.15}  
-BUILD=${BUILD:-1}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}   
 
 # Automatically determine the architecture we're building on:

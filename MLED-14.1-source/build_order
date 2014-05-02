@@ -149,41 +149,35 @@ gnome/gdm
 # Applications #
 ################
 xap/libreoffice
-#xap/MPlayer
-#xap/aMule
-#xap/asunder
-#xap/audacious
-#xap/audacious-plugins
-#xap/audacity
-#gnome/brasero
-#xap/catfish
-#xap/conky
-#xap/dvdrip
-#xap/easytag
-#gnome/evince
-#xap/filezilla 
-#xap/galculator
-#xap/gcolor2
-#xap/geany
-#xap/geany-plugins
-#gnome/gnote
-#gnome/gthumb
-#xap/gtkcdlabel
-#xap/inkscape
-#xap/leafpad
-#xap/mupdf
-#xap/openoffice
-#xap/openshot
-#xap/poedit
-#xap/scribus
-#xap/simple-scan
-#xap/smplayer
-#xap/transmission
-#xap/virtualbox
-#xap/virtualbox-kernel
-#xap/virtualbox-extension-pack
+xap/MPlayer
+xap/aMule
+xap/asunder
+xap/audacity
+gnome/brasero
+xap/conky
+xap/easytag
+xap/filezilla 
+xap/gcolor2
+xap/geany
+xap/geany-plugins
+gnome/gnote
+gnome/gthumb
+xap/gtkcdlabel
+xap/inkscape
+xap/mupdf
+xap/openshot
+xap/poedit
+xap/scribus
+xap/smplayer
+xap/transmission
+xap/virtualbox
+xap/virtualbox-kernel
+xap/virtualbox-extension-pack
+xap/exaile
+n/freerdp
+xap/remmina
 # External build dependencies for winff: fpc, fpc-source and lazarus
-#xap/winff
+xap/winff
 
 ################
 # Translations #
@@ -200,6 +194,4 @@ locale/mozilla-thunderbird-l10n
 ##########################
 # Post-release additions #
 ##########################
-#n/freerdp
-#xap/remmina
 
