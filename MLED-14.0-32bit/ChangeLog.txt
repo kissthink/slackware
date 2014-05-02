@@ -1,3 +1,13 @@
+Fri May  2 07:20:43 CEST 2014
+xap/openoffice-4.0.1_en_US-i586-2_microlinux.txz: Removed.
+locale/openoffice-langpack-de-4.0.1-i486-1_microlinux.txz: Removed.
+locale/openoffice-langpack-fr-4.0.1-i486-1_microlinux.txz: Removed.
+xap/libreoffice-4.1.6-i586-1_microlinux.txz: Added.
+locale/libreoffice-langpack-de-4.1.6-i586-1_microlinux.txz: Added.
+locale/libreoffice-langpack-fr-4.1.6-i586-1_microlinux.txz: Added.
+locale/mozilla-firefox-l10n-17.0.11-i486-2_microlinux.txz: Rebuilt.
+locale/mozilla-thunderbird-l10n-17.0.11-i486-2_microlinux.txz: Rebuilt.
++--------------------------+
 Thu May  1 06:21:42 CEST 2014
 multimedia/gst-python-0.10.22-i486-1_microlinux.txz: Added.
 multimedia/mutagen-1.22-i486-1_microlinux.txz: Added.

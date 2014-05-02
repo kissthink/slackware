@@ -152,6 +152,7 @@ gnome/gdm
 ################
 # Applications #
 ################
+xap/libreoffice
 #xap/MPlayer
 #xap/aMule
 #xap/asunder
@@ -190,8 +191,8 @@ gnome/gdm
 ################
 # Translations #
 ################
-#locale/mozilla-firefox-l10n
-#locale/mozilla-thunderbird-l10n
+locale/mozilla-firefox-l10n
+locale/mozilla-thunderbird-l10n
 # locale/openoffice --> build manually
 
 #########################
