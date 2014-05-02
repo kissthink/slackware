@@ -1,3 +1,11 @@
+Fri May  2 08:45:27 CEST 2014
+xap/openoffice-4.0.1_en_US-x86_64-2_microlinux.txz: Removed.
+xap/libreoffice-4.1.6-x86_64-1_microlinux.txz: Added.
+locale/libreoffice-langpack-de-4.1.6-x86_64-1_microlinux.txz: Added.
+locale/libreoffice-langpack-fr-4.1.6-x86_64-1_microlinux.txz: Added.
+locale/mozilla-firefox-l10n-17.0.11-x86_64-2_microlinux.txz: Rebuilt.
+locale/mozilla-thunderbird-l10n-17.0.11-x86_64-2_microlinux.txz: Rebuilt.
++--------------------------+
 Thu May  1 09:01:08 CEST 2014
 multimedia/gst-python-0.10.22-x86_64-1_microlinux.txz: Added.
 multimedia/mutagen-1.22-x86_64-1_microlinux.txz: Added.
