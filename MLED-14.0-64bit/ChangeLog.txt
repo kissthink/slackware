@@ -1,3 +1,40 @@
+Sat May  3 17:41:48 CEST 2014
+xap/MPlayer-1.1-x86_64-3_microlinux.txz: Rebuilt.
+xap/aMule-2.3.1-x86_64-3_microlinux.txz: Rebuilt.
+xap/asunder-2.4-x86_64-1_microlinux.txz: Upgraded.
+xap/audacious-3.2.4-x86_64-2_microlinux.txz: Removed.
+xap/audacious-plugins-3.2.4-x86_64-2_microlinux.txz: Removed.
+xap/audacity-2.0.5-x86_64-2_microlinux.txz: Rebuilt.
+ap/itstool-1.2.0-x86_64-1_microlinux.txz: Added.
+gnome/brasero-3.11.3-x86_64-2_microlinux.txz: Upgraded.
+xap/leafpad-0.8.18.1-x86_64-2_microlinux.txz: Removed.
+xap/conky-1.9.0-x86_64-2_microlinux.txz: Rebuilt.
+xap/dvdrip-0.98.11-x86_64-1_microlinux.txz: Removed.
+xap/easytag-2.1.10-x86_64-1_microlinux.txz: Upgraded.
+gnome/evince-3.4.0-x86_64-2_microlinux.txz: Removed.
+xap/filezilla-3.7.3-x86_64-3_microlinux.txz: Rebuilt.
+xap/galculator-2.1.2-x86_64-1_microlinux.txz: Removed.
+xap/gcolor2-0.4-x86_64-2_microlinux.txz: Rebuilt.
+xap/geany-1.23.1-x86_64-2_microlinux.txz: Rebuilt.
+xap/geany-plugins-1.23-x86_64-2_microlinux.txz: Rebuilt.
+gnome/gnote-0.7.6-x86_64-3_microlinux.txz: Rebuilt.
+gnome/gthumb-3.0.3-x86_64-1_microlinux.txz: Upgraded.
+xap/gtkcdlabel-1.15-noarch-3_microlinux.txz: Rebuilt.
+xap/inkscape-0.48.4-x86_64-3_microlinux.txz: Rebuilt.
+xap/mupdf-1.2-x86_64-3_microlinux.txz: Rebuilt.
+xap/openshot-1.4.3-x86_64-3_microlinux.txz: Rebuilt.
+xap/scribus-1.4.3-x86_64-2_microlinux.txz: Rebuilt.
+xap/simple-scan-2.32.0.2-x86_64-2_microlinux.txz: Removed.
+xap/smplayer-14.3.0-x86_64-1_microlinux.txz: Rebuilt.
+xap/transmission-2.77-x86_64-3_microlinux.txz: Rebuilt.
+xap/virtualbox-4.2.24-x86_64-1_microlinux.txz: Upgraded.
+xap/virtualbox-extension-pack-4.2.24-x86_64-1_microlinux.txz: Upgraded.
+xap/virtualbox-kernel-4.2.24_3.2.45-x86_64-1_microlinux.txz: Upgraded.
+xap/exaile-3.3.2-x86_64-1_microlinux.txz: Added.
+n/freerdp-20131115_ea18d2b-x86_64-2_microlinux.txz: Rebuilt.
+xap/remmina-20131008_26b814a-x86_64-2_microlinux.txz: Rebuilt.
+xap/winff-1.5.3-x86_64-1_microlinux.txz: Upgraded.
++--------------------------+
 Fri May  2 08:45:27 CEST 2014
 xap/openoffice-4.0.1_en_US-x86_64-2_microlinux.txz: Removed.
 xap/libreoffice-4.1.6-x86_64-1_microlinux.txz: Added.
