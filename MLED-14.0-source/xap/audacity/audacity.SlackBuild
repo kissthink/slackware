@@ -31,7 +31,7 @@
 # Modified by Niki Kovacs <info@microlinux.fr)
 
 PRGNAM=audacity
-VERSION=${VERSION:-2.0.3}	 
+VERSION=${VERSION:-2.0.5}	 
 BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}		
 

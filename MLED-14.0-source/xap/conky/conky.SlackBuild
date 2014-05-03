@@ -8,7 +8,7 @@
 
 PRGNAM=conky
 VERSION=1.9.0
-BUILD=${BUILD:-1}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}
@@ -85,7 +85,6 @@ CXXFLAGS="$SLKCFLAGS" \
   --enable-weather-metar \
   --enable-weather-xoap \
   --enable-portmon \
-	--enable-audacious \
   --enable-mpd=yes \
   --enable-rss=yes \
   --enable-wlan=yes \

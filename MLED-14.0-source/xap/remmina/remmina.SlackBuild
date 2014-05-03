@@ -9,7 +9,7 @@
 
 PRGNAM=remmina
 VERSION=${VERSION:-20131008_26b814a}
-BUILD=${BUILD:-}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}

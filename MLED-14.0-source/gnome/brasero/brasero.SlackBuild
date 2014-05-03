@@ -7,8 +7,8 @@
 # Modified by Niki Kovacs <info@microlinux.fr>
 
 PRGNAM=brasero
-VERSION=${VERSION:-2.32.1}
-BUILD=${BUILD:-1}
+VERSION=${VERSION:-3.11.3}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}
@@ -48,17 +48,17 @@ fi
 
 set -e 
 
-if [ ! -r $PRGNAM-$VERSION.tar.bz2 ] ; then
-   wget -c http://ftp.gnome.org/pub/gnome/sources/$PRGNAM/2.32/$PRGNAM-$VERSION.tar.bz2
+if [ ! -r $PRGNAM-$VERSION.tar.xz ] ; then
+   wget -c http://ftp.gnome.org/pub/gnome/sources/$PRGNAM/3.11/$PRGNAM-$VERSION.tar.xz
 fi
 
-md5sum -c $PRGNAM-$VERSION.tar.bz2.md5
+md5sum -c $PRGNAM-$VERSION.tar.xz.md5
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$PRGNAM-$VERSION.tar.bz2
+tar xvf $CWD/$PRGNAM-$VERSION.tar.xz
 cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \

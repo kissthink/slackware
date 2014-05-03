@@ -24,8 +24,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=winff
-SRCNAM=WinFF
-VERSION=${VERSION:-1.5.2}
+VERSION=${VERSION:-1.5.3}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
@@ -59,17 +58,20 @@ fi
 
 set -e # Exit on most errors
 
-if [ ! -r $SRCNAM-$VERSION-source.tar.gz ] ; then
-   wget -c http://winff.googlecode.com/files/$SRCNAM-$VERSION-source.tar.gz
+URL="sourceforge.net/projects/winpenpack/files/X-WinFF/program_sources"
+
+if [ ! -r $PRGNAM-$VERSION-source.tar.gz ] ; then
+   wget -c http://$URL/$PRGNAM-$VERSION-source.tar.gz
 fi
 
-md5sum -c $SRCNAM-$VERSION-source.tar.gz.md5
+md5sum -c $PRGNAM-$VERSION-source.tar.gz.md5
 
 rm -rf $PKG
-mkdir -p $TMP/$PRGNAM $PKG $OUTPUT
+#mkdir -p $TMP/$PRGNAM $PKG $OUTPUT
+mkdir -p $TMP $PKG 
 cd $TMP
-rm -rf $TMP/$PRGNAM/*
-tar xvzf $CWD/$SRCNAM-$VERSION-source.tar.gz -C $TMP/$PRGNAM/
+rm -rf $TMP/$PRGNAM
+tar xvzf $CWD/$PRGNAM-$VERSION-source.tar.gz -C $TMP
 cd $PRGNAM
 chown -R root:root .
 find . \
