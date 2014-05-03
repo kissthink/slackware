@@ -1,0 +1,12 @@
+===================
+BUGS & KNOWN ISSUES Niki Kovacs <info@microlinux.fr>
+===================
+
+Here's a list of known problems and bugs in MLED and MLES. If you think you
+have found a bug, don't hesitate to let my know by either sending me an email
+or posting a message on LinuxQuestions.org.
+
+[ ] = pending
+[X] = solved
+
+

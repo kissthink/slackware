@@ -1,0 +1,1595 @@
+alpine: alpine (Alternatively Licensed Program for Internet News and Email)
+alpine:
+alpine: Alpine is a fast, easy to use email client that is suitable for both
+alpine: the inexperienced email user as well as for the most demanding of
+alpine: power users.  Alpine is based on the Pine(R) Message System, which
+alpine: was also developed at the University of Washington.  Alpine can be
+alpine: learned by exploration and the use of context-sensitive help.  The
+alpine: user experience is highly customizable through the use of the Alpine
+alpine: Setup command.
+alpine:
+alpine: The Alpine site may be found here:  http://patches.freeiz.com/alpine
+autofs: autofs (kernel-based automounter)
+autofs:
+autofs: autofs is a kernel-based automounter for Linux.  It performs a job
+autofs: similar to amd(8) but relies on a small stub of kernel code instead of
+autofs: pretending to be an NFS server.  The result is simpler code, better
+autofs: reliability, and much faster operation in the common case (everything
+autofs: already mounted.)
+autofs:
+autofs:
+autofs:
+autofs:
+biff+comsat: biff+comsat (mail arrival notification daemon)
+biff+comsat:
+biff+comsat: Comsat is the server process which receives reports of incoming mail
+biff+comsat: and notifies users if they have requested this service.  "biff" is
+biff+comsat: the program that requests comsat service "biff y", and may be placed
+biff+comsat: in a user's startup file if they'd like to hear a beep and trash
+biff+comsat: their console with each new piece of junk mail.  ;-)
+biff+comsat:
+biff+comsat: Biff was the name of Heidi Stettner's dog, who barked when the
+biff+comsat: mailman came.  Biff was well known to many of the early BSD developers
+biff+comsat: living in Evans Hall at U.C. Berkeley.
+bind: bind (DNS server and utilities)
+bind:
+bind: The named daemon and support utilities such as dig, host, and
+bind: nslookup.  Sample configuration files for running a simple caching
+bind: nameserver are included.  Documentation for advanced name server
+bind: setup can be found in /usr/doc/bind-9.x.x/.
+bind:
+bind:
+bind:
+bind:
+bind:
+bluez: bluez (Bluetooth libraries and utilities)
+bluez:
+bluez: Bluez is the Bluetooth stack for Linux, allowing Bluetooth adaptors
+bluez: and devices to be used with Linux.  This package contains the Bluez
+bluez: libraries, utilities, and other support files.
+bluez: 
+bluez: For more info, visit:  http://www.bluez.org
+bluez:
+bluez:
+bluez:
+bluez:
+bluez-firmware: bluez-firmware (Bluetooth(TM) firmware)
+bluez-firmware:
+bluez-firmware: The bluez-firmware package contains firmware needed by various
+bluez-firmware: chipsets to support Bluetooth(TM) on Linux.
+bluez-firmware:
+bluez-firmware: For more info, visit:  http://www.bluez.org
+bluez-firmware:
+bluez-firmware:
+bluez-firmware:
+bluez-firmware:
+bluez-firmware:
+bluez-hcidump: bluez-hcidump (Bluetooth analyzer)
+bluez-hcidump:
+bluez-hcidump: The bluez-hcidump package contains a network analyzer for Bluetooth.
+bluez-hcidump: This utility (hcidump) utility reads raw HCI data coming from and
+bluez-hcidump: going to a Bluetooth device and prints commands, events and data.
+bluez-hcidump:
+bluez-hcidump: For more info, visit:  http://www.bluez.org
+bluez-hcidump:
+bluez-hcidump:
+bluez-hcidump:
+bluez-hcidump:
+bootp: bootp
+bootp:
+bootp: This is an enhanced version of the CMU BOOTP server which was derived
+bootp: from the original BOOTP server created by Bill Croft at Stanford.
+bootp: BOOTP allows a network administrator to setup networking information
+bootp: for clients via an /etc/bootptab on a server so that the clients can
+bootp: automatically get their networking information.
+bootp:
+bootp:
+bootp:
+bootp:
+bridge-utils: bridge-utils (network Ethernet bridging utilities)
+bridge-utils:
+bridge-utils: This package contains utilities for configuring Linux Ethernet
+bridge-utils: bridges.  The Linux Ethernet bridge can be used for connecting
+bridge-utils: multiple Ethernet devices together.  The connecting is fully
+bridge-utils: transparent.  Hosts connected to one Ethernet device see hosts
+bridge-utils: connected through a bridge to the other Ethernet devices directly.
+bridge-utils:
+bridge-utils: bridge-utils was written by Stephen Hemminger and Lennert Buytenhek.
+bridge-utils:
+bridge-utils:
+bsd-finger: bsd-finger (user information lookup program)
+bsd-finger:
+bsd-finger: The finger displays information about the system users.  Finger
+bsd-finger: displays the user's login name, real name, terminal name and write
+bsd-finger: status (as a ``*'' after the terminal name if write permission is
+bsd-finger: denied), idle time, login time, office location and office phone
+bsd-finger: number.
+bsd-finger:
+bsd-finger: As fingerd leaks semi-private information about your machine's
+bsd-finger: usernames and other data, fingerd should be used with caution.
+bsd-finger: Allow machines on a need-to-know basis.
+ca-certificates: ca-certificates (PEM Files of CA Certificates)
+ca-certificates:
+ca-certificates: This package includes PEM files of CA certificates to allow SSL-based
+ca-certificates: applications to check for the authenticity of SSL connections.
+ca-certificates:
+ca-certificates: Homepage: http://packages.qa.debian.org/c/ca-certificates.html
+ca-certificates:
+ca-certificates:
+ca-certificates:
+ca-certificates:
+ca-certificates:
+cifs-utils: cifs-utils (CIFS filesystem utilities)
+cifs-utils:
+cifs-utils: This is the release version of cifs-utils, a package of utilities for
+cifs-utils: doing and managing mounts of the Linux CIFS filesystem.  The in-kernel
+cifs-utils: CIFS filesystem is generally the preferred method for mounting
+cifs-utils: SMB/CIFS shares on Linux.  This filesystem relies on a set of
+cifs-utils: user-space tools that were originally part of Samba, but have now been
+cifs-utils: split off into this separate package.
+cifs-utils:
+cifs-utils: Home page:  http://wiki.samba.org/index.php/LinuxCIFS_utils
+cifs-utils:
+conntrack-tools: conntrack-tools (userspace tools for conntrack)
+conntrack-tools:
+conntrack-tools: The conntrack-tools are a set of userspace tools that allow system
+conntrack-tools: administrators to interact with the Connection Tracking System (the
+conntrack-tools: module that provides stateful packet inspection for iptables).
+conntrack-tools:
+conntrack-tools: The conntrack-tools include the userspace daemon conntrackd 
+conntrack-tools: and the command line interface conntrack.
+conntrack-tools:
+conntrack-tools:
+conntrack-tools:
+crda: crda (Central Regulatory Domain Agent)
+crda: 
+crda: This is the Central Regulatory Domain Agent for Linux. 
+crda: It serves one purpose: tell the Linux kernel what to enforce. 
+crda: In essence, it is a udev helper for communication between
+crda: the kernel and userspace.  
+crda: 
+crda: You only need to run this manually for debugging purposes.
+crda: 
+crda: http://wireless.kernel.org/download/crda/
+crda: 
+curl: curl (command line URL data transfer tool)
+curl:
+curl: Curl is a command line tool for transferring data specified with URL
+curl: syntax.  The command is designed to work without user interaction or
+curl: any kind of interactivity.   Curl offers a busload of useful tricks
+curl: like proxy support, user authentication, ftp upload, HTTP post,  SSL
+curl: (https:) connections, cookies, file transfer resume and more.
+curl:
+curl: libcurl is a library that Curl uses to do its job. It is readily
+curl: available to be used by your software, too.
+curl:
+cyrus-sasl: cyrus-sasl (Simple Authentication and Security Layer)
+cyrus-sasl:
+cyrus-sasl: This is the Cyrus SASL library.  Cyrus SASL is used by mail programs 
+cyrus-sasl: on the client or server side to provide authentication and
+cyrus-sasl: authorization services.  See RFC 2222 for more information.
+cyrus-sasl:
+cyrus-sasl:
+cyrus-sasl:
+cyrus-sasl:
+cyrus-sasl:
+cyrus-sasl:
+dhcp: dhcp (DHCP server and client utilities)
+dhcp:
+dhcp: This package provides the ISC's DHCP utilities, including both a
+dhcp: server and client.  The DHCP protocol allows a host to contact a
+dhcp: central server which maintains a list of IP addresses which may be
+dhcp: assigned on one or more subnets.   A DHCP client may request an
+dhcp: address from this pool, and then use it temporarily for communication
+dhcp: on the network.   The DHCP protocol also provides a mechanism whereby
+dhcp: a client can learn important details about the network to which it is
+dhcp: attached, such as the location of a default router or name server.
+dhcp:
+dhcpcd: dhcpcd (DHCP client daemon)
+dhcpcd:
+dhcpcd: The DHCP client program dhcpcd is used to connect to a network by
+dhcpcd: contacting a DHCP server.  dhcpcd gets an IP address and other
+dhcpcd: information from a corresponding DHCP server, configures the network
+dhcpcd: interface automatically, and tries to renew the lease time according
+dhcpcd: to RFC2131 or RFC1541 depending on the command line option.
+dhcpcd:
+dhcpcd:
+dhcpcd:
+dhcpcd:
+dirmngr: CRL (Certificate Revocation Lists Manager)
+dirmngr:
+dirmngr: Dirmngr is a server for managing and downloading certificate
+dirmngr: revocation lists (CRLs) for X.509 certificates and for downloading
+dirmngr: the certificates themselves.  Dirmngr also handles OCSP requests as
+dirmngr: an alternative to CRLs.  Dirmngr is either invoked internally by
+dirmngr: gpgsm (from gnupg 2.x) or when running as a system daemon through
+dirmngr: the dirmngr-client tool.
+dirmngr:
+dirmngr:
+dirmngr:
+dnsmasq: dnsmasq (small DNS and DHCP server)
+dnsmasq:
+dnsmasq: Dnsmasq is a lightweight, easy to configure DNS forwarder and DHCP
+dnsmasq: server.  It is designed to provide DNS (and optionally DHCP) to a
+dnsmasq: small network, and can serve the names of local machines which are not
+dnsmasq: in the global DNS. 
+dnsmasq:
+dnsmasq: Dnsmasq was written by Simon Kelley.
+dnsmasq:
+dnsmasq:
+dnsmasq:
+ebtables: ebtables (Ethernet frame filtering on a Linux bridge)
+ebtables:
+ebtables: The ebtables utility enables basic Ethernet frame filtering on a
+ebtables: Linux bridge, logging, MAC NAT and brouting.  It only provides basic
+ebtables: IP filtering, the full-fledged IP filtering on a Linux bridge is
+ebtables: done with iptables.
+ebtables:
+ebtables: Homepage: http://ebtables.sourceforge.net/
+ebtables:
+ebtables:
+ebtables:
+elm: elm (Menu-driven user mail program)
+elm:
+elm: Elm is an interactive screen-oriented mailer program originally
+elm: written by Dave Taylor, and continued by the Elm Development Group. 
+elm:
+elm:
+elm:
+elm:
+elm:
+elm:
+elm:
+epic5: epic5 (Internet Relay Chat client)
+epic5:
+epic5: EPIC is the (E)nhanced (P)rogrammable (I)RC-II (C)lient.
+epic5:
+epic5: The EPIC home page is:        http://www.epicsol.org/
+epic5: The EPIC main ftp site is:    ftp://ftp.epicsol.org/
+epic5: The EPIC IRC channel is:      #epic on EFNet
+epic5:
+epic5:
+epic5:
+epic5:
+ethtool: ethtool (a tool for examining and tuning a network interface)
+ethtool:
+ethtool: ethtool is a small utility for examining and tuning your Ethernet
+ethtool: based network interface.  For more details, see "man ethtool".
+ethtool:
+ethtool: ethtool was written by David Miller, with help from Jakub Jelinek,
+ethtool: Jeff Garzik, Tim Hockin, Eli Kupermann, Chris Leech, Scott Feldman,
+ethtool: and Andi Kleen.
+ethtool:
+ethtool:
+ethtool:
+fetchmail: fetchmail (mail retrieval and forwarding utility)
+fetchmail:
+fetchmail: fetchmail is a mail retrieval and forwarding utility.  It fetches
+fetchmail: mail from a POP, IMAP, or ETRN-capable remote mailserver and forwards
+fetchmail: it to your local (client) machine's delivery system.  You can then
+fetchmail: handle the retrieved mail using normal mail user agents such as elm,
+fetchmail: pine, or mutt.  The fetchmail utility can be run in a daemon mode to
+fetchmail: repeatedly poll one or more systems at a specified interval.
+fetchmail:
+fetchmail: fetchmail is probably not secure.
+fetchmail:
+getmail: getmail (POP3 mail retriever)
+getmail:
+getmail: getmail is a POP3 mail retriever, with support for both ordinary and
+getmail: domain (or multidrop) POP3 mailboxes.  It is written in Python, and
+getmail: licensed under the GNU General Public License version 2.
+getmail:
+getmail: getmail was written by Charles Cazabon.
+getmail:
+getmail:
+getmail:
+getmail:
+gnupg: gnupg (The GNU Privacy Guard)
+gnupg:
+gnupg: GnuPG is GNU's tool for secure communication and data storage.  It can
+gnupg: be used to encrypt data and to create digital signatures.  It includes
+gnupg: an advanced key management facility and is compliant with the proposed
+gnupg: OpenPGP Internet standard as described in RFC2440.
+gnupg:
+gnupg:
+gnupg:
+gnupg:
+gnupg:
+gnupg2: GnuPG2 (The GNU Privacy Guard version 2.x)
+gnupg2:
+gnupg2: GnuPG is GNU's tool for secure communication and data storage.  It can
+gnupg2: be used to encrypt data and to create digital signatures.  It includes
+gnupg2: an advanced key management facility and is compliant with the proposed
+gnupg2: OpenPGP Internet standard as described in RFC2440 and the S/MIME
+gnupg2: standard as described by several RFCs.
+gnupg2:
+gnupg2: GnuPG 2.0 is the stable version of GnuPG integrating support for
+gnupg2: OpenPGP and S/MIME.  It does not conflict with an installed 1.4.x
+gnupg2: OpenPGP-only version.
+gnutls: gnutls (GNU TLS library)
+gnutls:
+gnutls: This is a TLS (Transport Layer Security) 1.0 and SSL (Secure Sockets
+gnutls: Layer) 3.0 implementation.  In brief, GnuTLS can be described as a
+gnutls: library which offers an API to access secure communication protocols.
+gnutls: These protocols provide privacy over insecure lines, and were designed
+gnutls: to prevent eavesdropping, tampering, or message forgery.
+gnutls:
+gnutls: Homepage: http://www.gnu.org/software/gnutls/
+gnutls:
+gnutls:
+gpa: gpa (GNU Privacy Assistant)
+gpa:
+gpa: GPA is a graphical frontend for the GNU Privacy Guard (GnuPG, 
+gpa: http://www.gnupg.org).  GPA can be used to encrypt, decrypt, and
+gpa: sign files, to verify signatures and to manage the private and
+gpa: public keys.
+gpa:
+gpa:
+gpa:
+gpa:
+gpa:
+gpgme: gpgme (GnuPG Made Easy)
+gpgme:
+gpgme: GPGME (GnuPG Made Easy) is a C language library that allows to add
+gpgme: support for cryptography to a program.  It is designed to make access
+gpgme: to public key crypto engines like GnuPG or GpgSM easier for
+gpgme: applications.  GPGME provides a high-level crypto API for encryption,
+gpgme: decryption, signing, signature verification and key management.
+gpgme:
+gpgme: GPGME uses GnuPG and GpgSM as its backends to support OpenPGP and the 
+gpgme: Cryptographic Message Syntax (CMS).
+gpgme:
+htdig: htdig (web indexing and searching system)
+htdig:
+htdig: The ht://Dig system is a complete web indexing and searching system
+htdig: for a small domain or intranet.  This system is not indended to
+htdig: replace the need for outside Internet search engines such as Google,
+htdig: but rather to cover the search needs for a single company, campus, or
+htdig: even a particular sub section of a web site.
+htdig:
+htdig:
+htdig:
+htdig:
+httpd: httpd (The Apache HTTP Server)
+httpd:
+httpd: Apache is an HTTP server designed as a plug-in replacement for the
+httpd: NCSA HTTP server.  It fixes numerous bugs in the NCSA server and
+httpd: includes many frequently requested new features, and has an API which
+httpd: allows it to be extended to meet users' needs more easily.
+httpd:
+httpd: Apache is the most popular web server in the known universe; over
+httpd: half of the servers on the Internet are running Apache or one of
+httpd: its variants.
+httpd:
+icmpinfo: icmpinfo (ICMP monitoring utility)
+icmpinfo:
+icmpinfo: Icmpinfo is a tool for looking at the ICMP messages received on the
+icmpinfo: running host.  It can be used to detect and record attack attempts, as
+icmpinfo: well as help diagnose network problems.
+icmpinfo:
+icmpinfo: icmpinfo was written by Laurent Demailly.
+icmpinfo:
+icmpinfo:
+icmpinfo:
+icmpinfo:
+idnkit: idnkit (Internationalized domain names toolkit)
+idnkit:
+idnkit: idnkit is a toolkit for handling internationalized domain names.
+idnkit: It includes a library for handling internationalized domain names
+idnkit: (libidnkit, libidnkitlite), a codeset conversion utility (idnconv),
+idnkit: and a command which adds IDN dynamically to applications (runidn).
+idnkit:
+idnkit:
+idnkit:
+idnkit: Homepage: http://www.nic.ad.jp/en/idn/
+idnkit:
+iftop: iftop (Display bandwidth usage on an interface)
+iftop:
+iftop: iftop does for network usage what top(1) does for CPU usage.
+iftop: It listens to network traffic on a named interface and displays a
+iftop: table of current bandwidth usage by pairs of hosts.  Handy for
+iftop: answering the question "why is our link so slow?".
+iftop:
+iftop:
+iftop:
+iftop: Homepage:  http://www.ex-parrot.com/~pdw/iftop/
+iftop:
+imapd: imapd (IMAP4rev1 from alpine)
+imapd:
+imapd: /usr/sbin/ipop3d and /usr/sbin/imapd are servers supporting the POP3
+imapd: and IMAP remote mail access protocols.  They allow users to download
+imapd: mail from your Linux system for remote viewing.
+imapd:
+imapd:
+imapd:
+imapd:
+imapd:
+imapd:
+inetd: inetd (Internet super-server)
+inetd:
+inetd: This is a program to listen for connections on certain Internet
+inetd: sockets and invokes a program to service the request.  Essentially,
+inetd: inetd allows running one daemon to invoke several others, reducing
+inetd: load on the system.  Many of the network services are run through
+inetd: inetd, so you'll probably need it.
+inetd:
+inetd: This version of inetd was ported from OpenBSD.
+inetd:
+inetd:
+iproute2: iproute2 (IP routing utilities)
+iproute2:
+iproute2: These are tools used to administer many advanced IP routing features
+iproute2: in the kernel.  See Configure.help in the kernel documentation 
+iproute2: (search for iproute2) for more information on which kernel options
+iproute2: these tools are used with.
+iproute2: 
+iproute2: These utilities were written by Alexey Kuznetsov.  The current
+iproute2: maintainer of iproute2 is Stephen Hemminger.
+iproute2:
+iproute2:
+ipset: ipset (administration tool for kernel IP sets)
+ipset:
+ipset: IP sets are a Linux kernel framework administered by the ipset 
+ipset: utility.  Depending on the type, currently an IP set may store IP 
+ipset: addresses, (TCP/UDP) port numbers, or IP addresses with MAC addresses 
+ipset: in a way which ensures lightning speed when matching an entry against 
+ipset: a set.  
+ipset:
+ipset: Homepage: http://ipset.netfilter.org/
+ipset:
+ipset:
+iptables: iptables (IP packet filter administration)
+iptables:
+iptables: iptables is a packet filter administration tool. 
+iptables:
+iptables: Iptables can be used to build internet firewalls based on stateless
+iptables: and stateful packet filtering, use NAT and masquerading for sharing
+iptables: internet access if you don't have enough public IP addresses, use NAT
+iptables: to implement transparent proxies, aid the tc and iproute2 systems
+iptables: used to build sophisticated QoS and policy routers, do further packet
+iptables: manipulation (mangling) like altering the TOS/DSCP/ECN bits of the IP
+iptables: header, and much more.  See:  http://www.netfilter.org
+iptraf-ng: iptraf-ng (console-based network monitoring program)
+iptraf-ng:
+iptraf-ng: IPTraf is a console-based network monitoring program for Linux that
+iptraf-ng: displays information about IP traffic such as:
+iptraf-ng:
+iptraf-ng:   Current TCP connections, types of IP packets, packet and byte
+iptraf-ng:   counts, TCP/UDP counts by ports, packet counts by packet sizes,
+iptraf-ng:   packet and byte counts by IP address, interface activity, flag
+iptraf-ng:   statuses on TCP packets, and other LAN station statistics.
+iptraf-ng:
+iptraf-ng: iptraf-ng was written by Gerard Paul Java.
+iputils: iputils (a collection of common network tools)
+iputils:
+iputils: The iputils package contains network tools found on nearly all *NIX
+iputils: systems, along with an extra or two.  Some of the utilities found
+iputils: here include arping, clockdiff, ping, ping6, rarpd, rdisc, tracepath,
+iputils: tracepath6, and traceroute6.
+iputils:
+iputils: iputils is maintained by YOSHIFUJI Hideaki.
+iputils:
+iputils:
+iputils:
+ipw2100-fw: ipw2100-fw (Intel ipw2100 wireless firmware)
+ipw2100-fw:
+ipw2100-fw: This firmware is used by the ipw2100 kernel module for the Intel
+ipw2100-fw: PRO/Wireless 2100 Network Connection mini PCI adapter.
+ipw2100-fw: Your use of this firmware is governed by this Intel license:
+ipw2100-fw:   /usr/doc/ipw2100-fw-1.3/LICENSE
+ipw2100-fw:
+ipw2100-fw: Visit Intel's Linux wireless website at this address:
+ipw2100-fw:   http://intellinuxwireless.org/
+ipw2100-fw:
+ipw2100-fw:
+ipw2200-fw: ipw2200-fw (Intel ipw2200 wireless firmware)
+ipw2200-fw:
+ipw2200-fw: This firmware is used by the ipw2200 kernel module for the Intel
+ipw2200-fw: PRO/Wireless 2915ABG Network Connection and Intel PRO/Wireless 2200BG
+ipw2200-fw: Network Connection mini PCI adapters.
+ipw2200-fw: Your use of this firmware is governed by this Intel license:
+ipw2200-fw:   /usr/doc/ipw2200-fw-3.1/LICENSE
+ipw2200-fw:
+ipw2200-fw: Visit Intel's Linux wireless website at this address:
+ipw2200-fw:   http://intellinuxwireless.org/
+ipw2200-fw:
+irssi: irssi (Internet Relay Chat client)
+irssi:
+irssi: Irssi is an Internet Relay Chat client.  Designed to be both secure
+irssi: and expandable, irssi is easily customized using modules and scripts.
+irssi:
+irssi: For more information, visit:  http://irssi.org
+irssi:
+irssi: irssi was written by Timo Sirainen.
+irssi:
+irssi:
+irssi:
+iw: iw (tool for configuring Linux wireless devices)
+iw:
+iw: This package contains the `iw' tool which allows you to configure and
+iw: show information about wireless networking.  The tool is currently used
+iw: for drivers based on the mac80211 stack, but work is under way to make
+iw: it useful for other wireless drivers as well.
+iw: 
+iw: Homepage: http://wireless.kernel.org/en/users/Documentation/iw 
+iw:   
+iw:   
+iw:   
+lftp: lftp (command line file transfer program)
+lftp:
+lftp: lftp is a program that allows sophisticated ftp and http connections
+lftp: to other hosts.  lftp can handle many file access methods including
+lftp: ftp, ftps, http, https, hftp, fish and file.  Every operation in lftp
+lftp: is reliable, that is any non-fatal error is ignored and the operation
+lftp: is retried.  lftp has shell-like command syntax.  lftp has a built in
+lftp: mirror feature which can download or upload a whole directory tree.
+lftp: To learn about many more features of lftp, see 'man lftp'.
+lftp:
+lftp:
+libassuan: libassuan (Interprocess Communication Library for GPG)
+libassuan:
+libassuan: This is the IPC library used by GnuPG 2.x, GPGME and a few other
+libassuan: packages. 
+libassuan:
+libassuan:
+libassuan:
+libassuan:
+libassuan:
+libassuan:
+libassuan:
+libgcrypt: libgcrypt (General purpose crypto library)
+libgcrypt:
+libgcrypt: Libgcrypt is a general purpose crypto library based on the code 
+libgcrypt: used in GnuPG. 
+libgcrypt:
+libgcrypt:
+libgcrypt:
+libgcrypt:
+libgcrypt:
+libgcrypt:
+libgcrypt:
+libgpg-error: libgpg-error (GnuPG Error Definitions Library)
+libgpg-error:
+libgpg-error: This is a library that defines common error values for all GnuPG
+libgpg-error: components.  Among these are GPG, GPGSM, GPGME, GPG-Agent, 
+libgpg-error: libgcrypt, Libksba, DirMngr, Pinentry, SmartCard Daemon, and more.
+libgpg-error:
+libgpg-error:
+libgpg-error:
+libgpg-error:
+libgpg-error:
+libgpg-error:
+libksba: libksba (X.509 & CMS library for S/MIME and TLS)
+libksba:
+libksba: KSBA (pronounced Kasbah) is a library to make X.509 certificates as
+libksba: well as the CMS easily accessible by other applications.
+libksba: Both specifications are building blocks of S/MIME and TLS.
+libksba:
+libksba:
+libksba:
+libksba:
+libksba:
+libksba:
+libmbim: libmbim (MBIM library and utils)
+libmbim:
+libmbim: The Mobile Broadband Interface Model (MBIM) is a new standard to
+libmbim: communicate with mobile broadband modem devices developed by the
+libmbim: USB Implementors Forum.
+libmbim:
+libmbim: Homepage: http://www.freedesktop.org/software/libmbim/
+libmbim:
+libmbim:
+libmbim:
+libmbim:
+libmnl: libmnl (user-space library oriented to Netlink developers)
+libmnl:
+libmnl: libmnl is a minimalistic user-space library oriented to Netlink
+libmnl: developers.  There are a lot of common tasks in parsing, validating,
+libmnl: constructing of both the Netlink header and TLVs that are repetitive
+libmnl: and easy to get wrong.  This library aims to provide simple helpers
+libmnl: that allows you to re-use code and to avoid re-inventing the wheel.
+libmnl:
+libmnl: Homepage: http://www.netfilter.org/projects/libmnl/
+libmnl:
+libmnl:
+libnetfilter_acct: libnetfilter_acct (userspace library for netfilter accounting)
+libnetfilter_acct:
+libnetfilter_acct: libnetfilter_acct is the userspace library providing interface 
+libnetfilter_acct: to extended accounting infrastructure. 
+libnetfilter_acct:
+libnetfilter_acct: libnetfilter_acct is used by nfacct.
+libnetfilter_acct:
+libnetfilter_acct:
+libnetfilter_acct:
+libnetfilter_acct:
+libnetfilter_acct:
+libnetfilter_conntrack: libnetfilter_conntrack (netfilter conntrack library)
+libnetfilter_conntrack:
+libnetfilter_conntrack: libnetfilter_conntrack is a userspace library providing a programming
+libnetfilter_conntrack: interface (API) to the in-kernel connection tracking state table.
+libnetfilter_conntrack: This library is currently used by conntrack-tools and many other
+libnetfilter_conntrack: applications.
+libnetfilter_conntrack:
+libnetfilter_conntrack:
+libnetfilter_conntrack:
+libnetfilter_conntrack:
+libnetfilter_conntrack:
+libnetfilter_cthelper: libnetfilter_cthelper (userspace infrastructure for conntrack helpers)
+libnetfilter_cthelper:
+libnetfilter_cthelper: Connection tracking helpers allows you to filter multi-flow protocols
+libnetfilter_cthelper: that usually separate control and data traffic into different flows.
+libnetfilter_cthelper: This is the case of application protocols like FTP, SIP and H.323 that
+libnetfilter_cthelper: are already supported by Netfilter.  These helpers are implemented in
+libnetfilter_cthelper: kernel-space.
+libnetfilter_cthelper:
+libnetfilter_cthelper:
+libnetfilter_cthelper:
+libnetfilter_cthelper:
+libnetfilter_cttimeout: libnetfilter_cttimeout (connection tracking timeout library)
+libnetfilter_cttimeout:
+libnetfilter_cttimeout: libnetfilter_cttimeout is the userspace library that provides the
+libnetfilter_cttimeout: programming interface to the fine-grain connection tracking timeout
+libnetfilter_cttimeout: infrastructure.  With this library, you can create, update and delete
+libnetfilter_cttimeout: timeout policies that can be attached to traffic flows.
+libnetfilter_cttimeout:
+libnetfilter_cttimeout:
+libnetfilter_cttimeout:
+libnetfilter_cttimeout:
+libnetfilter_cttimeout:
+libnetfilter_log: libnetfilter_log (userspace packet logging library)
+libnetfilter_log:
+libnetfilter_log: libnetfilter_log is a userspace library providing interface to
+libnetfilter_log: packets that have been logged by the kernel packet filter.  It is
+libnetfilter_log: part of a system that deprecates the old syslog/dmesg based packet
+libnetfilter_log: logging.  This library has been previously known as libnfnetlink_log.
+libnetfilter_log:
+libnetfilter_log: Homepage: http://www.netfilter.org/projects/libnetfilter_log/
+libnetfilter_log:
+libnetfilter_log:
+libnetfilter_log:
+libnetfilter_queue: libnetfilter_queue (userspace API for netfilter packet queueing)
+libnetfilter_queue:
+libnetfilter_queue: libnetfilter_queue is a userspace library providing an API to packets
+libnetfilter_queue: that have been queued by the kernel packet filter.  It is part of a 
+libnetfilter_queue: system that deprecates the old ip_queue / libipq mechanism.
+libnetfilter_queue:
+libnetfilter_queue: libnetfilter_queue has been previously known as libnfnetlink_queue. 
+libnetfilter_queue:
+libnetfilter_queue:
+libnetfilter_queue:
+libnetfilter_queue:
+libnfnetlink: libnfnetlink (library for netfilter kernel/userspace comm)
+libnfnetlink: 
+libnfnetlink: libnfnetlink is the low-level library for netfilter related 
+libnfnetlink: kernel/userspace communication.  It provides a generic messaging
+libnfnetlink: infrastructure for in-kernel netfilter subsystems (such as 
+libnfnetlink: nfnetlink_log, nfnetlink_queue, nfnetlink_conntrack) and their 
+libnfnetlink: respective users and/or management tools in userspace.
+libnfnetlink:
+libnfnetlink:
+libnfnetlink:
+libnfnetlink:
+libqmi: libqmi (QMI library and utils)
+libqmi:
+libqmi: libqmi is a glib-based library for talking to WWAN modems and devices
+libqmi: which speak the Qualcomm MSM Interface (QMI) protocol.
+libqmi:
+libqmi: Homepage: http://www.freedesktop.org/software/libqmi/
+libqmi:
+libqmi:
+libqmi:
+libqmi:
+libqmi:
+links: links (WWW browser for the console)
+links:
+links: Links is a console mode WWW browser, supporting colors, correct table
+links: rendering, background downloading, frames, Javascript, and a menu
+links: driven configuration interface.  The default is text output, but
+links: graphical output (using -g) is also supported using the Linux
+links: framebuffer console or SVGAlib.
+links:
+links: links was written by Mikulas Patocka.
+links:
+links:
+lynx: Lynx (text mode browser)
+lynx:
+lynx: Lynx is a distributed hypertext browser with full World Wide Web
+lynx: capabilities.  Lynx can be used to access information on the World 
+lynx: Wide Web, or to build information systems intended primarily for local
+lynx: access.  For example, Lynx has been used to build several Campus Wide
+lynx: Information Systems (CWIS).  
+lynx:
+lynx: Lynx's authors include Lou Montulli, Garrett Blythe, Craig Lavender,
+lynx: Michael Grobe, and Charles Rezac.
+lynx:
+mailx: mailx (a simple mail client)
+mailx:
+mailx: Mailx is derived from Berkeley Mail and is intended provide the
+mailx: functionality of the POSIX mailx command with additional support
+mailx: for MIME, IMAP, POP3, SMTP, and S/MIME. It provides enhanced
+mailx: features for interactive use, such as caching and disconnected
+mailx: operation for IMAP, message threading, scoring, and filtering.
+mailx: It is also usable as a mail batch language, both for sending
+mailx: and receiving mail.
+mailx:
+mailx: The maintainer and primary developer of mailx is Gunnar Ritter.
+mcabber: mcabber (Jabber console client)
+mcabber:
+mcabber: mcabber is a small Jabber console client for Linux, maintained by
+mcabber: Mikael Berthe.  Mcabber includes features such as SSL support,
+mcabber: multi-user chat (MUC), history logging, commands completion, and
+mcabber: external actions triggers.
+mcabber:
+mcabber: mcabber project home is:  http://www.lilotux.net/~mikael/mcabber/
+mcabber:
+mcabber:
+mcabber:
+metamail: metamail (MIME extensions for mail)
+metamail:
+metamail: Metamail is an implementation of MIME, the Multipurpose Internet
+metamail: Mail Extensions, a proposed standard for multimedia mail on the
+metamail: Internet.  Metamail implements MIME, and also implements extensibility
+metamail: and configuration via the "mailcap" mechanism described in an
+metamail: informational RFC that is a companion to the MIME document.
+metamail:
+metamail:
+metamail:
+metamail:
+mobile-broadband-provider-info: mobile-broadband-provider-info (service provider settings)
+mobile-broadband-provider-info:
+mobile-broadband-provider-info: This package contains mobile broadband settings for service providers
+mobile-broadband-provider-info: in various countries.
+mobile-broadband-provider-info:
+mobile-broadband-provider-info:
+mobile-broadband-provider-info:
+mobile-broadband-provider-info: For more info, see:
+mobile-broadband-provider-info:
+mobile-broadband-provider-info: http://live.gnome.org/NetworkManager/MobileBroadband/ServiceProviders
+mobile-broadband-provider-info:
+ModemManager: ModemManager (mobile broadband modem API)
+ModemManager:
+ModemManager: ModemManager provides a unified high level API for communicating with
+ModemManager: mobile broadband modems. 
+ModemManager:
+ModemManager: For more info, see:
+ModemManager:   http://cgit.freedesktop.org/ModemManager/ModemManager/
+ModemManager:
+ModemManager:
+ModemManager:
+ModemManager:
+mtr: mtr (a network diagnostic tool)
+mtr:
+mtr: mtr combines the functionality of the 'traceroute' and 'ping' programs
+mtr: in a single network diagnostic tool.
+mtr:
+mtr: Matt Kimball wrote most of mtr, and mtr is currently maintained by
+mtr: Roger Wolff.
+mtr:
+mtr: mtr has a home page: http://www.bitwizard.nl/mtr/
+mtr:
+mtr:
+mutt: Mutt (the Mutt mail user agent)
+mutt:
+mutt: Mutt is a small but very powerful text-based MIME mail client.  Mutt
+mutt: is highly configurable, and is well suited to the mail power user with
+mutt: advanced features like key bindings, keyboard macros, mail threading,
+mutt: regular expression searches and a powerful pattern matching language
+mutt: for selecting groups of messages.
+mutt:
+mutt:
+mutt:
+mutt:
+nc: nc (Netcat network utility)
+nc:
+nc: Netcat, or "nc" as the actual program is named, is a simple utility
+nc: which reads and writes data across network connections, using TCP or
+nc: UDP protocol.  It is designed to be a reliable "back-end" tool that
+nc: can be used directly or easily driven by other programs and scripts.
+nc: At the same time, it is a feature-rich network debugging and
+nc: exploration tool, since it can create almost any kind of connection
+nc: you would need and has several interesting built-in capabilities.
+nc: Netcat was written by *Hobbit* <hobbit@avian.org>, and is a product
+nc: of Avian Research.
+ncftp: ncftp (ftp client)
+ncftp:
+ncftp: NcFTP is a user interface to the Internet standard File Transfer
+ncftp: Protocol.  This program allows a user to transfer files to and from a
+ncftp: remote network site, and offers additional features that are not found
+ncftp: in the standard interface for ftp.
+ncftp:
+ncftp:
+ncftp:
+ncftp:
+ncftp:
+netatalk: netatalk (Appletalk file and print server)
+netatalk:
+netatalk: Netatalk is an Appletalk file and print server for Linux.  Using 
+netatalk: Netatalk, Macintosh computers on your local network can mount Linux 
+netatalk: volumes as if they were standard Appletalk network drives, and can
+netatalk: print to the Linux box's printer as if it were a network printer
+netatalk: supporting PostScript.
+netatalk:
+netatalk: Netatalk was originally written by the Research Systems Unix Group at
+netatalk: The University of Michigan, and is maintained by the Netatalk Team.
+netatalk:
+netdate: netdate (simple network time utility)
+netdate:
+netdate: Netdate takes a list of names of Internet hosts as arguments, selects
+netdate: the one which supplies the best time, and sets the system time
+netdate: accordingly.  The invoker must be the super-user for the time to be
+netdate: set.  Protocol names (either udp or tcp) may be interspersed with the
+netdate: host names, and determine the protocol which will be used to connect
+netdate: to the hosts whose names follow, up to the next protocol name or the
+netdate: end of the arguments.  The default protocol is udp.
+netdate:
+netdate: These days, "ntpdate" is probably a better choice.
+netkit-bootparamd: netkit-bootparamd (boot parameter server)
+netkit-bootparamd:
+netkit-bootparamd: This package provides rpc.bootparamd and callbootd, programs used to
+netkit-bootparamd: provide information to diskless clients so they can boot.  It is
+netkit-bootparamd: used primarily to allow a Linux server to boot a Sun machine using
+netkit-bootparamd: SunOS bootparam.
+netkit-bootparamd:
+netkit-bootparamd: netkit-bootparamd was written by Klas Heggemann.
+netkit-bootparamd:
+netkit-bootparamd:
+netkit-bootparamd:
+netkit-ftp: netkit-ftp (the old BSD FTP client)
+netkit-ftp:
+netkit-ftp: Ftp is the user interface to the Internet standard File Transfer
+netkit-ftp: Protocol.  The program allows a user to transfer files to and from a
+netkit-ftp: remote network site.
+netkit-ftp:
+netkit-ftp: This is a program of mostly historical value.  For a more powerful
+netkit-ftp: command-line FTP client, look at something like lftp.
+netkit-ftp:
+netkit-ftp:
+netkit-ftp:
+netkit-ntalk: netkit-ntalk (talk client and talkd daemon)
+netkit-ntalk:
+netkit-ntalk: talk and talkd are the BSD communication client server system for
+netkit-ntalk: the command line.  "talk" is the client that asks another user to
+netkit-ntalk: respond; and "in.talkd" is the server that notifies a user that
+netkit-ntalk: someone else wants to initiate a conversation.
+netkit-ntalk:
+netkit-ntalk: The talk command appeared in 4.2BSD.
+netkit-ntalk:
+netkit-ntalk:
+netkit-ntalk:
+netkit-routed: netkit-routed (dynamic network routing daemon)
+netkit-routed:
+netkit-routed: Routed is invoked at boot time to manage the network routing tables.
+netkit-routed: The routing daemon uses a variant of the Xerox NS Routing Information
+netkit-routed: Protocol in maintaining up to date kernel routing table entries.
+netkit-routed: It used a generalized protocol capable of use with multiple address
+netkit-routed: types, but is currently used only for Internet routing within a
+netkit-routed: cluster of networks.
+netkit-routed:
+netkit-routed: Fair warning:  routed is no longer maintained and may be insecure.
+netkit-routed:
+netkit-rsh: netket-rsh (the BSD rsh/rcp/rlogin clients and daemon)
+netkit-rsh:
+netkit-rsh: The old BSD rsh suite.  Note that none of these programs provide
+netkit-rsh: encryption or strong authentication of network connections.  As such,
+netkit-rsh: their use is discouraged.  The "ssh" protocol and package is a
+netkit-rsh: cryptographically secure replacement.
+netkit-rsh:
+netkit-rsh:
+netkit-rsh:
+netkit-rsh:
+netkit-rsh:
+netkit-rusers: netkit-rusers (show users logged in to machines on local network)
+netkit-rusers:
+netkit-rusers: The rusers command produces output similar to who, but for the list
+netkit-rusers: of hosts or all machines on the local network.  For each host
+netkit-rusers: responding to the rusers query, the hostname with the names of the
+netkit-rusers: users currently logged on is printed on each line.  The rusers
+netkit-rusers: command will wait for one minute to catch late responders.
+netkit-rusers:
+netkit-rusers: Portmap and rpc.rusersd must be running on remote machines.  Should
+netkit-rusers: probably be considered insecure (or at least ill-advised) on public
+netkit-rusers: networks.
+netkit-rwall: netkit-rwall (send a message to all users)
+netkit-rwall:
+netkit-rwall: The rwall command sends a message to the users logged into the
+netkit-rwall: specified host.  The message to be sent can be typed in and
+netkit-rwall: terminated with EOF or it can be in a file.
+netkit-rwall:
+netkit-rwall: Run the rpc.rwalld daemon with caution.  It may be insecure.
+netkit-rwall:
+netkit-rwall: The rwall command appeared in SunOS.
+netkit-rwall:
+netkit-rwall:
+netkit-rwho: netkit-rwho (who is logged in on local machines)
+netkit-rwho:
+netkit-rwho: The rwho command produces output similar to who, but for all machines
+netkit-rwho: on the local network.  If no report has been received from a machine
+netkit-rwho: for 11 minutes then rwho assumes the machine is down, and does not
+netkit-rwho: report users last known to be logged into that machine.  If a users
+netkit-rwho: hasn't typed to the system for a minute or more, then rwho reports
+netkit-rwho: this idle time.  If a user hasn't typed to the system for an hour or
+netkit-rwho: more, then the user will be omitted from the output of rwho unless
+netkit-rwho: the -a flag is given.
+netkit-rwho:
+netkit-timed: netkit-timed (time server daemon)
+netkit-timed:
+netkit-timed: This is an early BSD time server daemon.  While ntpd is better for
+netkit-timed: most purposes, this might be useful for secure networks or embedded
+netkit-timed: systems in need of something more lightweight.
+netkit-timed:
+netkit-timed: The timed daemon appeared in 4.3BSD.
+netkit-timed:
+netkit-timed:
+netkit-timed:
+netkit-timed:
+netpipes: netpipes
+netpipes:
+netpipes: Robert Forsman's netpipes package makes TCP/IP streams usable in shell
+netpipes: scripts.  It can also simplify client/server code by allowing the 
+netpipes: programmer to skip all the tedious programming bits related to sockets
+netpipes: and concentrate on writing a filter/service.  Here's an example of
+netpipes: what you can do with 'faucet' and 'hose', two netpipes commands:
+netpipes: 
+netpipes: server$ faucet 3000 -out tar cf - .
+netpipes: client$ hose server 3000 -in tar xvf -
+netpipes:
+net-snmp: net-snmp (Simple Network Management Protocol tools)
+net-snmp:
+net-snmp: Various tools relating to the Simple Network Management Protocol:
+net-snmp:
+net-snmp: An extensible agent
+net-snmp: An SNMP library
+net-snmp: Tools to request or set information from SNMP agents
+net-snmp: Tools to generate and handle SNMP traps
+net-snmp: A version of the UNIX 'netstat' command using SNMP
+net-snmp: A graphical Perl/Tk/SNMP based mib browser
+net-snmp:
+nettle: Nettle (small cryptographic library)
+nettle:
+nettle: Nettle is a cryptographic library that is designed to fit easily in 
+nettle: more or less any context: In crypto toolkits for object-oriented 
+nettle: languages (C++, Python, Pike, ...), in applications like LSH or 
+nettle: GNUPG, or even in kernel space.
+nettle:
+nettle: Homepage: http://www.lysator.liu.se/~nisse/nettle/
+nettle:
+nettle:
+nettle:
+net-tools: net-tools (base Linux networking utilities)
+net-tools:
+net-tools: This is the core collection of tools such as "ifconfig" and "route"
+net-tools: used to configure networking on Linux.  You won't be able to do much
+net-tools: networking without this package and the network-scripts.
+net-tools:
+net-tools: The net-tools package was maintained for many years by Phil Blundell
+net-tools: and Bernd Eckenfels.
+net-tools:
+net-tools:
+net-tools:
+netwatch: netwatch (a network monitor)
+netwatch:
+netwatch: Netwatch allows a user (superuser) to monitor activity on the network.
+netwatch: The monitor includes statistics on transmitted and received packets,
+netwatch: bytes, protocol, and more.
+netwatch:
+netwatch:
+netwatch:
+netwatch:
+netwatch:
+netwatch:
+NetworkManager: NetworkManager (Networking that Just Works)
+NetworkManager:
+NetworkManager: The point of NetworkManager is to make networking configuration and
+NetworkManager: setup as painless and automatic as possible.  NetworkManager sets IP
+NetworkManager: addresses, default routes, associating with wireless access points
+NetworkManager: or wired LANs, and other network configuration settings in a simple,
+NetworkManager: automated fashion (manual overrides are still possible).
+NetworkManager:
+NetworkManager: Home page: http://projects.gnome.org/NetworkManager/
+NetworkManager:
+NetworkManager:
+network-scripts: network-scripts (Scripts to configure a network)
+network-scripts:
+network-scripts: These are the basic scripts and files used to define a network and
+network-scripts: configure network interfaces on Linux.  Most of the original
+network-scripts: /etc files were written by Fred N. van Kempen, or borrowed from BSD.
+network-scripts: The rc.inet1 and rc.inet2 scripts were mostly written by Patrick
+network-scripts: Volkerding, with suggestions and fixes from hundreds of contributors
+network-scripts: over the years.
+network-scripts:
+network-scripts:
+network-scripts:
+netwrite: netwrite (in.writed daemon for accepting network "write")
+netwrite:
+netwrite: Writed implements a very simple protocol that allows a write(1)
+netwrite: program on one host to connect up to one on another host, allowing
+netwrite: communications across the network.  Writed is meant to be run from
+netwrite: inetd(8) listening for TCP requests on port 811.  No attempt is made
+netwrite: to determine the authenticity of users sending messages.  This
+netwrite: program should probably not be deployed on insecure networks.
+netwrite:
+netwrite:
+netwrite:
+newspost: newspost (binary posting utility)
+newspost:
+newspost: Newspost is a usenet binary autoposter.  It will uuencode or yencode
+newspost: files and post them to usenet newsgroups.  In addition, it can
+newspost: automatically generate and post .SFV checksum files and .PAR parity
+newspost: files.
+newspost:
+newspost: Newspost was mostly  written by Jim Faulkner, with some help from
+newspost: William McBrine.  Portions borrowed from cksfv by Bryan Call, and
+newspost: parchive by Willem Monsuwe.
+newspost:
+nfacct: nfacct (tool to create/retrieve/delete accounting objects)
+nfacct:
+nfacct: nfacct is the command line tool to create/retrieve/delete accounting
+nfacct: objects.  
+nfacct:
+nfacct: The main features of nfacct are:
+nfacct: - listing the objects of the nfacct table in plain text/XML
+nfacct: - atomically get and reset objects of the nfacct table
+nfacct: - adding new objects to the nfacct table
+nfacct: - deleting objects from the nfacct table
+nfacct:
+nfs-utils: nfs-utils (Network File System daemons and utilities)
+nfs-utils:
+nfs-utils: The nfs-utils package contains the necessary daemons and utilities to
+nfs-utils: run an NFS server on Linux.
+nfs-utils:
+nfs-utils: You'll also need the portmap package to use NFS.
+nfs-utils:
+nfs-utils:
+nfs-utils:
+nfs-utils:
+nfs-utils:
+nmap: nmap (network scanner)
+nmap:
+nmap: Nmap ("Network Mapper") is an open source utility for network
+nmap: exploration or security auditing.  It was designed to rapidly scan
+nmap: large networks, although it works fine against single hosts.  Nmap
+nmap: uses raw IP packets in novel ways to determine what hosts are
+nmap: available on the network, what services (ports) they are offering,
+nmap: what operating system (and OS version) they are running, what type of
+nmap: packet filters/firewalls are in use, and dozens of other
+nmap: characteristics.  Nmap runs on most types of computers, and both
+nmap: console and graphical versions are available.
+nn: nn (the NN newsreader)
+nn:
+nn: nn is an easy to use menu driven newsreader by Kim F. Storm.
+nn:
+nn: nn stands for "No News is good news", and the nn newsreader is
+nn: designed to let you minimize the amount of time you spend reading news
+nn: (or, more realistically, to let you to read even more newsgroups :-).
+nn: This version of nn reads news from a news server via NNTP, and can
+nn: make use of your NNTP server's NOV database.
+nn:
+nn:
+ntp: ntp (Network Time Protocol daemon)
+ntp:
+ntp: The Network Time Protocol (NTP) is used to synchronize the time of a
+ntp: computer client or server to another server or reference time source,
+ntp: such as a radio or satellite receiver or modem. It provides client
+ntp: accuracies typically within a millisecond on LANs and up to a few tens
+ntp: of milliseconds on WANs relative to a primary server synchronized to
+ntp: Coordinated Universal Time (UTC) via a Global Positioning Service
+ntp: (GPS) receiver, for example. 
+ntp:
+ntp:
+obex-data-server: obex-data-server (Obex D-Bus Service Support)
+obex-data-server:
+obex-data-server: Obex-data-server is a D-Bus service providing high-level OBEX client 
+obex-data-server: and server side functionality, and currently supports OPP, FTP 
+obex-data-server: profiles and Bluetooth transport.
+obex-data-server:
+obex-data-server:
+obex-data-server:
+obex-data-server:
+obex-data-server:
+obex-data-server:
+obexfs: obexfs (mount filesystem of ObexFTP capable devices)
+obexfs:
+obexfs: ObexFS uses FUSE to mount filesystems of ObexFTP capable devices
+obexfs: either manually or in autofs style mode. It can handle all devices
+obexfs: that the obexftp package can handle, connected via serial cable,
+obexfs: IrDA, bluetooth, or USB.
+obexfs:
+obexfs: http://dev.zuckschwerdt.org/openobex/wiki/ObexDownloads
+obexfs:
+obexfs:
+obexfs:
+obexftp: obexftp (Access devices via ObexFTP, such as mobile phones)
+obexftp:
+obexftp: This package contains some command line tools and the ObexFTP
+obexftp: library.  Using OpenOBEX it enables you to transfer data via IrDA,
+obexftp: Bluetooth, as well as some custom (Siemens, Ericsson) serial port
+obexftp: protocols.
+obexftp:
+obexftp: ObexFTP was written by Christian W. Zuckschwerdt.
+obexftp:
+obexftp: The project site is:  http://triq.net/obexftp.html
+obexftp:
+openldap-client: openldap-client (OpenLDAP client programs)
+openldap-client:
+openldap-client: OpenLDAP is an open source implementation of the Lightweight
+openldap-client: Directory Access Protocol.  LDAP is a alternative to the X.500
+openldap-client: Directory Access Protocol (DAP). It uses the TCP/IP stack versus
+openldap-client: the overly complex OSI stack.
+openldap-client:
+openldap-client: LDAP is often used to provide authentication (such as for email).
+openldap-client:
+openldap-client: The OpenLDAP homepage is http://www.openldap.org/
+openldap-client:
+openobex: openobex (Object Exchange protocol library)
+openobex:
+openobex: OpenOBEX is a free open source implementation of the Object Exchange
+openobex: (OBEX) protocol.  OBEX is a session protocol and can best be
+openobex: described as a binary HTTP protocol.  OBEX is optimised for ad-hoc
+openobex: wireless links and can be used to exchange all kinds of objects like
+openobex: files, pictures, calendar entries (vCal) and business cards (vCard).
+openobex:
+openobex: Visit the project here:  http://www.openobex.org
+openobex:
+openobex:
+openssh: openssh (Secure Shell daemon and clients)
+openssh:
+openssh: ssh (Secure Shell) is a program for logging into a remote machine and
+openssh: for executing commands on a remote machine.  It is intended to replace
+openssh: rlogin and rsh, and provide secure encrypted communications between
+openssh: two untrusted hosts over an insecure network.  sshd (SSH Daemon) is
+openssh: the daemon program for ssh.  OpenSSH is based on the last free version
+openssh: of Tatu Ylonen's SSH, further enhanced and cleaned up by Aaron
+openssh: Campbell, Bob Beck, Markus Friedl, Niels Provos, Theo de Raadt, and
+openssh: Dug Song.  It has a homepage at http://www.openssh.com/
+openssh:
+openssl: openssl (Secure Sockets Layer toolkit)
+openssl:
+openssl: The OpenSSL certificate management tool and the shared libraries that
+openssl: provide various encryption and decryption algorithms and protocols.
+openssl:
+openssl: This product includes software developed by the OpenSSL Project for
+openssl: use in the OpenSSL Toolkit (http://www.openssl.org).  This product
+openssl: includes cryptographic software written by Eric Young
+openssl: (eay@cryptsoft.com).  This product includes software written by Tim
+openssl: Hudson (tjh@cryptsoft.com).
+openssl:
+openvpn: openvpn (secure IP tunnel daemon)
+openvpn:
+openvpn: OpenVPN is a full-featured SSL VPN which can accommodate a wide range
+openvpn: of configurations, including remote access, site-to-site VPNs, WiFi
+openvpn: security, and enterprise-scale remote access with load balancing,
+openvpn: failover, and fine-grained access-controls.
+openvpn:
+openvpn: OpenVPN's home on the net is:  http://openvpn.net
+openvpn:
+openvpn:
+openvpn:
+p11-kit: p11-kit (PKCS#11 toolkit)
+p11-kit:
+p11-kit: p11-kit provides a way to load and enumerate PKCS#11 modules. 
+p11-kit:
+p11-kit: It provides a standard configuration setup for installing PKCS#11 
+p11-kit: modules in such a way that they're discoverable.  It also solves
+p11-kit: problems with coordinating the use of PKCS#11 by different components
+p11-kit: or libraries living in the same process.
+p11-kit:
+p11-kit: Homepage: http://p11-glue.freedesktop.org/p11-kit.html
+p11-kit:
+php: php (HTML-embedded scripting language)
+php:
+php: PHP is an HTML-embedded scripting language.  It shares syntax
+php: characteristics with C, Java, and Perl.  The primary objective behind
+php: this language is to make a fast and easy-to-use scripting language
+php: for dynamic web sites.
+php:
+php: More information can be found online at http://www.php.net/
+php:
+php:
+php:
+pidentd: pidentd (TCP/IP IDENT protocol server)
+pidentd:
+pidentd: The identd daemon implements the IDENT protocol as specified in
+pidentd: RFC1413.  When your machine connects to a remote system, the remote
+pidentd: machine may connect to your identd daemon to find out either the
+pidentd: user name or other information about the process that initiated
+pidentd: the connection.  Some remote machines may choose not to allow your
+pidentd: connections if you do not provide access to an identd daemon.
+pidentd:
+pidentd: The pidentd daemon was written by Peter Eriksson.
+pidentd:
+pinentry: pinentry (PIN Entry dialogs)
+pinentry:
+pinentry: This is a collection of simple PIN or passphrase entry dialogs which
+pinentry: utilize the Assuan protocol as described by the aegypten project.
+pinentry:
+pinentry: See http://www.gnupg.org/aegypten/ for details.
+pinentry:
+pinentry:
+pinentry:
+pinentry:
+pinentry:
+popa3d: popa3d (a POP3 daemon)
+popa3d:
+popa3d: popa3d is a Post Office Protocol version 3 (POP3) server.  A POP3
+popa3d: server operates on local mailboxes on behalf of its remote users.
+popa3d: Users can connect at any time to check their mailbox and fetch the
+popa3d: mail that has accumulated.  The design goals of this POP3 server are
+popa3d: security, reliability, RFC compliance (slightly relaxed to work with
+popa3d: real-world POP3 clients), and high performance.
+popa3d:
+popa3d: The popa3d daemon was written by Solar Designer.
+popa3d:
+portmap: portmap (a daemon to manage RPC connections)
+portmap:
+portmap: The portmapper (/sbin/rpc.portmap) is a network daemon used to manage
+portmap: connections to RPC services.  Daemons that offer RPC services (such
+portmap: as the daemons for NFS) tell the portmapper on what port they listen. 
+portmap: Unlike the services registered with the inetd, RPC network port
+portmap: numbers may change each time the system is booted.
+portmap:
+portmap: The portmapper is required to use NFS or other RPC services.
+portmap:
+portmap:
+ppp: ppp (Point-to-Point Protocol)
+ppp:
+ppp: The Point-to-Point Protocol (PPP) provides a method for transmitting
+ppp: data over serial links.  It's commonly used for connecting to the
+ppp: Internet using a modem.  This package includes the PPP daemon (pppd),
+ppp: which negotiates with the peer to establish the link and sets up the
+ppp: ppp network interface, and pppsetup, an easy-to-use utility for
+ppp: setting up your PPP daemon.
+ppp:
+ppp:
+ppp:
+procmail: procmail (mail processing and local delivery program)
+procmail:
+procmail: Can be used to create mail-servers, mailing lists, sort your incoming
+procmail: mail into separate folders/files (real convenient when subscribing to
+procmail: one or more mailing lists or for prioritizing your mail), preprocess
+procmail: your mail, start any programs upon mail arrival (e.g. to generate
+procmail: different chimes on your workstation for different types of mail) or
+procmail: selectively forward certain incoming mail automatically to someone.
+procmail: Procmail is required by sendmail to deliver the local mail.
+procmail: The author of procmail is Stephen R. van den Berg.
+procmail:
+proftpd: proftpd (FTP server daemon)
+proftpd:
+proftpd: ProFTPD is the Professional File Transfer Protocol (FTP) server
+proftpd: daemon.  ProFTPD grew out of the desire to have a secure and
+proftpd: configurable FTP server, and out of a significant admiration of the
+proftpd: Apache web server.
+proftpd:
+proftpd:
+proftpd:
+proftpd:
+proftpd:
+pssh: pssh (tools for collective remote system management)
+pssh:
+pssh: Pssh, a.k.a. "parallel ssh", are Python-written wrapper scripts for
+pssh: OpenSSH and rsync tools.  They are useful for simultaneous control
+pssh: of large number of machines, using parallel ssh sessions.  Included
+pssh: are parallel versions of ssh, scp, and rsync, as well as a parallel
+pssh: kill command.
+pssh:
+pssh: Pssh has been written by Brent Chun <bnc at theether.org>, and is
+pssh: currently maintained by Andrew McNabb <amcnabb at mcnabbs.org>.
+pssh: Homepage:  http://parallel-ssh.googlecode.com
+pth: pth (GNU Portable Threads)
+pth:
+pth: Pth is a very portable POSIX/ANSI-C based library for Unix platforms
+pth: which provides non-preemptive priority-based scheduling for multiple
+pth: threads of execution (aka `multithreading') inside event-driven
+pth: applications.  All threads run in the same address space of the
+pth: server application, but each thread has its own individual
+pth: program-counter, run-time stack, signal mask and errno variable.
+pth:
+pth:
+pth:
+rdist: rdist (remote file distribution program)
+rdist:
+rdist: Rdist is a remote file distribution program.  It is used to maintain
+rdist: identical copies of files over multiple network hosts.  It preserves
+rdist: the owner, group, mode, and mtime of files if possible and can update
+rdist: programs that are executing.
+rdist:
+rdist:
+rdist:
+rdist:
+rdist:
+rfkill: rfkill (tool to query subsystem interfaces)
+rfkill:
+rfkill: rfkill is a small tool to query the state of the rfkill switches,
+rfkill: buttons and subsystem interfaces.
+rfkill:
+rfkill: http://linuxwireless.org/en/users/Documentation/rfkill
+rfkill:
+rfkill:
+rfkill:
+rfkill:
+rfkill:
+rp-pppoe: rp-pppoe (Roaring Penguin PPPoE client)
+rp-pppoe:
+rp-pppoe: PPPoE (Point-to-Point Protocol over Ethernet) is a protocol used by
+rp-pppoe: many ADSL Internet Service Providers. Roaring Penguin has a free
+rp-pppoe: client for Linux systems to connect to PPPoE service providers.
+rp-pppoe:
+rp-pppoe: The client is a user-mode program and does not require any kernel
+rp-pppoe: modifications. It is fully compliant with RFC 2516, the official
+rp-pppoe: PPPoE specification.
+rp-pppoe:
+rp-pppoe:
+rsync: rsync (remote file sync)
+rsync:
+rsync: rsync is a replacement for rcp that has many more features.  It
+rsync: uses the "rsync algorithm" which provides a very fast method for
+rsync: bringing remote files into sync.  It does this by sending just the
+rsync: differences in the files across the link, without requiring that both
+rsync: sets of files are present at one of the ends of the link beforehand.
+rsync:
+rsync: rsync was written by Andrew Tridgell and Paul Mackerras.
+rsync:
+rsync:
+samba: samba (CIFS file and print server)
+samba:
+samba: Samba is a CIFS file and print server for CIFS clients.  It allows
+samba: you to make file space or printers on a Samba host available to CIFS
+samba: clients (such as PCs running Windows).
+samba:
+samba: If you have any Windows file servers, you may be able to replace them
+samba: or supplement them with Samba.  One of Samba's big strengths is
+samba: integration, so you can use it to tie together your Linux hosts and
+samba: Windows PC clients.
+samba:
+sendmail: sendmail (mail transfer agent)
+sendmail:
+sendmail: Eric Allman's mail transport agent. The _Unix System Administration
+sendmail: Handbook_ calls sendmail 'The most complex and complete mail delivery
+sendmail: system in common use...'
+sendmail:
+sendmail: Ready-made configuration files are included for systems connected by
+sendmail: TCP/IP (with or without a nameserver) and for systems using UUCP.
+sendmail:
+sendmail: The procmail package is required to handle local mail delivery.
+sendmail:
+sendmail-cf: sendmail-cf (configuration files for sendmail)
+sendmail-cf:
+sendmail-cf: These files are used to create sendmail.cf configuration files.  The
+sendmail-cf: m4 macro processor is also required in order to make use of these
+sendmail-cf: files. 
+sendmail-cf:
+sendmail-cf: The files and documentation in /usr/share/sendmail should make it
+sendmail-cf: possible to support virtually any mail configuration.  NOTE: You
+sendmail-cf: probably won't need this package if you're planning to use one of the
+sendmail-cf: sendmail.cf samples included in the sendmail package.
+sendmail-cf:
+slrn: slrn (s-lang read news)
+slrn:
+slrn: slrn is an easy to use but powerful newsreader.  It is highly
+slrn: customizable, supports scoring, free key bindings, and can be extended
+slrn: using the s-lang macro language.
+slrn:
+slrn: slrn was written and is maintained by John E. Davis.
+slrn:
+slrn:
+slrn:
+slrn:
+snownews: snownews (a console RSS newsreader)
+snownews:
+snownews: Snownews is a console RSS/RDF news reader. It supports all versions
+snownews: of RSS natively and can be expanded via plugins to support many other
+snownews: other formats.
+snownews:
+snownews: Snownews was written and is maintained by Oliver Feiler.
+snownews:
+snownews: Snownews homepage:  http://kiza.kcore.de/software/snownews
+snownews:
+snownews:
+stunnel: stunnel (Universal SSL tunnel)
+stunnel:
+stunnel: The stunnel program is designed to work as an SSL encryption wrapper
+stunnel: between remote client and local (inetd-startable) or remote servers.
+stunnel: The goal is to facilitate SSL encryption and authentication for
+stunnel: non-SSL-aware programs.
+stunnel:
+stunnel: stunnel can be used to add SSL functionality to commonly used inetd
+stunnel: daemons like POP-2, POP-3 and IMAP servers without any changes in the
+stunnel: programs' code.
+stunnel:
+tcpdump: tcpdump (network monitoring tool)
+tcpdump:
+tcpdump: Tcpdump is a tool for network monitoring and data acquisition.  You
+tcpdump: can use it to dump information on all the packets on a network that
+tcpdump: match a boolean expression.  Tcpdump uses libpcap, a system
+tcpdump: independent interface for user-level packet capture.
+tcpdump:
+tcpdump: Project homepage:          http://sourceforge.net/projects/tcpdump/
+tcpdump:
+tcpdump:
+tcpdump:
+tcp_wrappers: tcp_wrappers (TCP/IP daemon wrapper library and utilities)
+tcp_wrappers:
+tcp_wrappers: With this package you can monitor and filter incoming requests for
+tcp_wrappers: network services for access control, and detection things like host
+tcp_wrappers: name spoofing and host address spoofing.  Nearly all the network
+tcp_wrappers: daemons on Slackware are "wrapped" using this library, and most
+tcp_wrappers: daemons in /etc/inetd.conf use tcp_wrappers' tcpd wrapper daemon.
+tcp_wrappers: If you plan to do much networking, you will need tcp_wrappers.
+tcp_wrappers:
+tcp_wrappers: tcp_wrappers was written by Wietse Venema.
+tcp_wrappers:
+telnet: telnet (the telnet client and daemon)
+telnet:
+telnet: telnet supports the original DARPA telnet interactive communication
+telnet: protocol.  As connecting to a telnetd server transmits your password
+telnet: over the network in cleartext, telnet's use as a login protocol has
+telnet: been mostly superceded by the use of ssh and sshd.  However, the
+telnet: telnet client is still a very handy tool, and telnetd may still have
+telnet: some uses on networks that are known to be secure.
+telnet:
+telnet: telnet and telnetd were ported from BSD.
+telnet:
+tftp-hpa: tftp-hpa (Trivial File Transfer Protocol)
+tftp-hpa:
+tftp-hpa: The Trivial File Transfer Protocol (TFTP) is normally used only for
+tftp-hpa: booting diskless workstations (or the Slackware installer).  The tftp
+tftp-hpa: package provides the user interface for TFTP, which allows users to
+tftp-hpa: transfer files to and from a remote machine.  This program and TFTP
+tftp-hpa: provide very little security, and should not be enabled unless it is
+tftp-hpa: expressly needed.
+tftp-hpa:
+tftp-hpa: tftp-hpa is maintained by H. Peter Anvin.
+tftp-hpa:
+tin: tin (the Tin newsreader)
+tin:
+tin: Tin is a full-screen, easy-to-use Netnews reader.  It can read news
+tin: locally (i.e. /var/spool/news) or remotely (rtin or tin -r option)
+tin: via a NNTP (Network News Transport Protocol) server.  It will
+tin: automatically utilize NOV (news overview) style index files if
+tin: available locally or via the nntp xover command.
+tin:
+tin: Tin was written by Iain Lea <iain@ecrc.de> and is currently
+tin: maintained by Urs Janssen <urs@tin.org>.
+tin:
+traceroute: traceroute (IP packet route tracing utility)
+traceroute:
+traceroute: The traceroute utility displays the route used by IP packets on their
+traceroute: way to a specified network host.  Traceroute will display the IP
+traceroute: number and host name (if possible) of all the machines along the route
+traceroute: taken by the packets.  If you're having network connectivity problems,
+traceroute: traceroute can show you where the trouble is located.
+traceroute:
+traceroute:
+traceroute:
+traceroute:
+trn: trn (a threaded newsreader)
+trn:
+trn: A threaded news reader for reading a remote NNTP server.  Compiled to
+trn: use Overviews or mthreads, and to read news through your NNTP server.
+trn: Be sure to set NNTPSERVER in your /etc/profile or /etc/csh.login. 
+trn:
+trn:
+trn:
+trn:
+trn:
+trn:
+ulogd: ulogd (Userspace Logging Daemon)
+ulogd:
+ulogd: ulogd is a userspace logging daemon for netfilter/iptables related 
+ulogd: logging.  This includes per-packet logging of security violations, 
+ulogd: per-packet logging for accounting, per-flow logging and flexible 
+ulogd: user-defined accounting. 
+ulogd:
+ulogd:
+ulogd:
+ulogd:
+ulogd:
+uucp: uucp (Taylor UUCP)
+uucp:
+uucp: Ian Taylor's Unix to Unix copy: mail and news over modem lines. 
+uucp: This is the standard UUCP package of the Free Software Foundation.
+uucp:
+uucp: Configured to use HoneyDanBer and/or Taylor configuration files.
+uucp:
+uucp:
+uucp:
+uucp:
+uucp:
+vlan: vlan (VLAN (802.1q) configuration program)
+vlan:
+vlan: The vlan package contains the vconfig program, which allows you to
+vlan: create and remove VLAN devices on a VLAN enabled kernel.  VLAN
+vlan: devices are virtual Ethernet devices which represent virtual LANs on
+vlan: the physical LAN.
+vlan:
+vlan: vlan is primarily the work of Alex Zeffertt, Cambridge Broadband Ltd,
+vlan: extensively rewritten by Ben Greear.
+vlan:
+vlan:
+vsftpd: vsftpd (Very Secure FTP Daemon)
+vsftpd:
+vsftpd: vsftpd is an FTP server, or daemon. The 'vs' stands for Very Secure.
+vsftpd: Obviously this is not a guarantee, but a reflection that the entire
+vsftpd: codebase was written with security in mind, and carefully designed to
+vsftpd: be resilient to attack (as well as extremely fast and scalable).
+vsftpd:
+vsftpd: The vsftpd homepage is http://vsftpd.beasts.org/
+vsftpd:
+vsftpd: The Very Secure FTP Daemon was written by Chris Evans.
+vsftpd:
+wget: wget (a non-interactive network retriever)
+wget:
+wget: GNU Wget is a free network utility to retrieve files from the 
+wget: World Wide Web using HTTP and FTP, the two most widely used Internet
+wget: protocols.  It works non-interactively, thus enabling work in the
+wget: background after having logged off.
+wget:
+wget: The author of Wget is Hrvoje Niksic <hniksic@srce.hr>.
+wget:
+wget:
+wget:
+whois: whois (whois directory client)
+whois:
+whois: This is an enhanced whois (RFC 954) client derived from the BSD and
+whois: RIPE whois programs.  It can automatically select the appropriate
+whois: whois server for most queries.
+whois:
+whois: This version of whois was written by Marco d'Itri
+whois: For more information, see:  http://www.linux.it/~md/software/
+whois:
+whois:
+whois:
+wireless-tools: wireless-tools (utilities for wireless networking)
+wireless-tools:
+wireless-tools: This package contains tools and a library used for configuring
+wireless-tools: wireless networking interfaces:
+wireless-tools:   iwconfig (the main wireless tool),  iwlist (display more detailed
+wireless-tools:   information than iwconfig),  iwspy (get stats per MAC address and
+wireless-tools:   more),  iwpriv (set driver private ioctls),  iwgetid (show the
+wireless-tools:   ESSID or NWID of a device),  iwevent (display wireless events),
+wireless-tools:   ifrename (rename a network interface).
+wireless-tools:
+wireless-tools: The wireless-tools were written by Jean Tourrilhes.
+wpa_supplicant: wpa_supplicant (WPA/WPA2/IEEE 802.1X Supplicant)
+wpa_supplicant:
+wpa_supplicant: wpa_supplicant is a WPA Supplicant for Linux with support for WPA and
+wpa_supplicant: WPA2 (IEEE 802.11i / RSN).  Supplicant is the IEEE 802.1X/WPA
+wpa_supplicant: component that is used in the client stations.  It implements key
+wpa_supplicant: negotiation with a WPA Authenticator and it controls the roaming and
+wpa_supplicant: IEEE 802.11 authentication/association of the wlan driver.
+wpa_supplicant:
+wpa_supplicant: More info: http://hostap.epitest.fi/wpa_supplicant/
+wpa_supplicant:
+wpa_supplicant:
+yptools: yptools (NIS servers and clients)
+yptools:
+yptools: NIS stands for Network Information Service.  NIS is usually used to
+yptools: provide /etc/passwd and /etc/group information throughout the network.
+yptools: Most Sun-based networks run NIS, and Linux machines can take full
+yptools: advantage of existing NIS service or provide NIS service themselves.
+yptools:
+yptools:
+yptools:
+yptools:
+yptools:
+ytalk: ytalk (multi-user chat program)
+ytalk:
+ytalk: YTalk is a multi-user chat program.  It works almost exactly like the
+ytalk: UNIX talk program and even communicates with the same talk daemon, but
+ytalk: YTalk allows for multiple connections.
+ytalk:
+ytalk:
+ytalk:
+ytalk:
+ytalk:
+ytalk:
+zd1211-firmware: zd1211-firmware (Firmware for zd1211 USB wireless)
+zd1211-firmware:
+zd1211-firmware: This distribution contains the firmware files for the ZD1211 chip,
+zd1211-firmware: which is used in WLAN USB sticks.  The files are generated from C
+zd1211-firmware: header files distributed in the original ZyDAS ZD1211 driver.  The
+zd1211-firmware: GPL-licensed header files used to produce the firmware blobs are also
+zd1211-firmware: present in this distribution.
+zd1211-firmware:
+zd1211-firmware: The full source of the original ZYDAS driver is available from
+zd1211-firmware:   http://zd1211.wiki.sourceforge.net/VendorDriver
+zd1211-firmware:
