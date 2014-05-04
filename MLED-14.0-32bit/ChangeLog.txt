@@ -172,8 +172,6 @@ xap/openoffice-4.0.1_en_US-i586-2_microlinux.txz: Removed.
 locale/openoffice-langpack-de-4.0.1-i486-1_microlinux.txz: Removed.
 locale/openoffice-langpack-fr-4.0.1-i486-1_microlinux.txz: Removed.
 xap/libreoffice-4.1.6-i586-1_microlinux.txz: Added.
-	LibreOffice stable offers all the stability from OpenOffice, with better
-	support. 
 locale/libreoffice-langpack-de-4.1.6-i586-1_microlinux.txz: Added.
 locale/libreoffice-langpack-fr-4.1.6-i586-1_microlinux.txz: Added.
 locale/mozilla-firefox-l10n-17.0.11-i486-2_microlinux.txz: Rebuilt.
@@ -183,14 +181,11 @@ xap/aMule-2.3.1-i486-3_microlinux.txz: Rebuilt.
 xap/asunder-2.4-i486-1_microlinux.txz: Upgraded.
 xap/audacious-3.2.4-i486-2_microlinux.txz: Removed.
 xap/audacious-plugins-3.2.4-i486-2_microlinux.txz: Removed.
-  Replaced by Exaile.
 xap/audacity-2.0.5-i486-2_microlinux.txz: Upgraded.
 ap/itstool-1.2.0-i486-1_microlinux.txz: Added.
 gnome/brasero-3.11.3-i486-2_microlinux.txz: Upgraded.
 xap/conky-1.9.0-i486-2_microlinux.txz: Rebuilt.
 xap/dvdrip-0.98.11-i486-1_microlinux.txz: Removed.
-  This dinosaur written in Perl-GTK is too much of a hassle to maintain. Use
-	Mencoder.
 xap/easytag-2.1.10-i486-1_microlinux.txz: Upgraded.
 gnome/evince-3.4.0-i486-2_microlinux.txz: Removed.
 xap/filezilla-3.7.3-i486-3_microlinux.txz: Rebuilt.
@@ -207,14 +202,12 @@ xap/mupdf-1.2-i486-3_microlinux.txz: Rebuilt.
 xap/openshot-1.4.3-i486-3_microlinux.txz: Rebuilt.
 xap/scribus-1.4.3-i486-2_microlinux.txz: Rebuilt.
 xap/simple-scan-2.32.0.2-i486-2_microlinux.txz: Removed.
-  Simple Scan lacks some necessary functionality. Better use XSane.
 xap/smplayer-14.3.0-i486-1_microlinux.txz: Upgraded.
 xap/transmission-2.77-i486-3_microlinux.txz: Rebuilt.
 xap/virtualbox-4.2.24-i486-1_microlinux.txz: Upgraded.
 xap/virtualbox-extension-pack-4.2.24-i486-1_microlinux.txz: Upgraded.
 xap/virtualbox-kernel-4.2.24_3.2.45_smp-i486-1_microlinux.txz: Upgraded.
 xap/exaile-3.3.2-i486-1_microlinux.txz: Added.
-  Replacement for Audacious.
 n/freerdp-20131115_ea18d2b-i486-2_microlinux.txz: Rebuilt.
 xap/remmina-20131008_26b814a-i486-2_microlinux.txz: Rebuilt.
 xap/winff-1.5.3-i486-1_microlinux.txz: Upgraded.
