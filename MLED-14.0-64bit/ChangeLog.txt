@@ -1,3 +1,7 @@
+Sun May  4 07:51:13 CEST 2014
+profile/user-settings-xfce-1.0-noarch-1_microlinux.txz: Removed.
+profile/user-settings-mate-1.0-noarch-1_microlinux.txz: Added.
++--------------------------+
 Sat May  3 17:41:48 CEST 2014
 xap/MPlayer-1.1-x86_64-3_microlinux.txz: Rebuilt.
 xap/aMule-2.3.1-x86_64-3_microlinux.txz: Rebuilt.
