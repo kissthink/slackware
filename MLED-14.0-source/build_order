@@ -193,11 +193,9 @@ locale/mozilla-thunderbird-l10n
 #########################
 # Desktop configuration #
 #########################
-#profile/user-settings-xfce
+profile/user-settings-mate
 
 ##########################
 # Post-release additions #
 ##########################
-#n/freerdp
-#xap/remmina
 
