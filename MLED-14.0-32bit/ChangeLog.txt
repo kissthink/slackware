@@ -2,16 +2,16 @@ Sun May  4 07:41:13 CEST 2014
 	MLED is moving to MATE as main desktop environment, for a host of compelling
 	reasons. The MATE desktop environment has proven to be as rock-solid as Xfce.
 	The Caja file manager offers more functionality than Thunar while being
-	visually more appealing. Basic desktop applications like a simple text editor,
-	a document viewer or an archive manager are already shipping with the base
-	desktop. Multimedia hotkey support is perfect, as well as a number of tiny
-	details. With all this, MATE stays light on system resources and runs
+	visually more appealing. Basic desktop applications like a simple text
+	editor, a document viewer or an archive manager are already shipping with the
+	base desktop. Multimedia hotkey support is perfect, as well as a number of
+	tiny details. With all this, MATE stays light on system resources and runs
 	perfectly even on very old hardware. We've been testing this for some time
 	now, and our choice has been motivated by merely technical and pragmatic
 	arguments. A warm *thank you* goes to Willy Sudiarto and Chess Griffin for
-	providing this excellent desktop environment for Slackware. 
-	Check out README_MATE.txt for a detailed explanation on how to manage today's
-	huge batch of updates and move MLED to MATE.
+	providing this excellent desktop environment for Slackware.  Check out
+	README_MATE.txt for a detailed explanation on how to manage today's huge
+	batch of updates and move MLED to MATE.
 profile/user-settings-console-1.0-noarch-3_microlinux.txz: Rebuilt.
 ap/sbopkg-0.36.0-noarch-3_microlinux.txz: Rebuilt.
 ap/recode-3.6-i486-5_microlinux.txz: Rebuilt.
