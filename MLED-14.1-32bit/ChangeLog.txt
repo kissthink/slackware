@@ -1,3 +1,7 @@
+Sun May  4 07:27:15 CEST 2014
+profile/user-settings-xfce-1.0-noarch-1_microlinux.txz: Removed.
+profile/user-settings-mate-1.0-noarch-1_microlinux.txz: Added.
++--------------------------+
 Fri May  2 06:36:27 CEST 2014
 locale/mozilla-firefox-l10n-24.5.0-i486-1_microlinux.txz: Upgraded.
 locale/mozilla-thunderbird-l10n-24.5.0-i486-1_microlinux.txz: Upgraded.
