@@ -1,0 +1,14 @@
+# /etc/hosts.allow
+ALL     : localhost                   : ALLOW 
+ALL     : serveur                     : ALLOW 
+ALL     : serveur.mondomaine.tld      : ALLOW 
+#sshd   : ALL                         : ALLOW 
+sshd    : 192.168.2.0/255.255.255.0   : ALLOW
+sshd    : *.mondomaine.tld            : ALLOW
+portmap : 192.168.2.0/255.255.255.0   : ALLOW 
+portmap : *.mondomaine.tld            : ALLOW 
+mountd  : 192.168.2.0/255.255.255.0   : ALLOW 
+mountd  : *.mondomaine.tld            : ALLOW 
+vsftpd  : 127.0.0.1                   : ALLOW
+vsftpd  : 192.168.2.0/255.255.255.0   : ALLOW 
+vsftpd  : *.mondomaine.tld            : ALLOW 

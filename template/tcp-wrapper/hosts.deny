@@ -1,0 +1,2 @@
+# /etc/hosts.deny
+ALL : ALL : spawn (echo +++ $(date) +++ Attempt from %a to %d >> /var/log/deny.log) 

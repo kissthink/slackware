@@ -1,0 +1,6 @@
+# /etc/hosts.allow
+ALL  : localhost           : ALLOW
+ALL  : sd-XXXXX            : ALLOW
+ALL  : sd-XXXXX.dedibox.fr : ALLOW
+sshd : ALL                 : ALLOW 
+
