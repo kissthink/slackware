@@ -1,0 +1,19 @@
+# Ajouter les services et les ports correspondants ci-dessous à la fin du
+# fichier /etc/services
+
+# Port statique pour NIS
+ypserv    834/tcp    # NIS server
+ypserv    834/udp    # NIS server
+
+# Ports statiques pour NFS
+statd     32765/tcp  # NFS statd (in)
+statd     32765/udp  # NFS statd (in)
+statd     32766/tcp  # NFS statd (out)
+statd     32766/udp  # NFS statd (out)
+mountd    32767/tcp  # NFS mountd
+mountd    32767/udp  # NFS mountd
+lockd     32768/tcp  # NFS lockd 
+lockd     32768/udp  # NFS lockd 
+rquotad   32769/tcp  # NFS mountd
+rquotad   32769/udp  # NFS mountd
+
