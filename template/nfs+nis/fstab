@@ -1,4 +1,5 @@
-# Ajouter cette ligne au fichier /etc/fstab
+# /etc/fstab
+...
 serveur:/home  /home  nfs  rsize=8192,wsize=8192,timeo=14,intr  0  0
 
 

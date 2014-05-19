@@ -3,7 +3,7 @@
 driftfile /etc/ntp/drift
 logfile /var/log/ntp.log
 
-server 192.168.2.1  --> éditer l'IP du serveur
+server 192.168.2.1 
 
 server 127.127.1.0 
 fudge 127.127.1.0 stratum 10 

@@ -1,11 +1,11 @@
-# Ajouter les services et les ports correspondants ci-dessous à la fin du
-# fichier /etc/services
+# /etc/services
+...
 
-# Port statique pour NIS
+# NIS
 ypserv    834/tcp    # NIS server
 ypserv    834/udp    # NIS server
 
-# Ports statiques pour NFS
+# NFS
 statd     32765/tcp  # NFS statd (in)
 statd     32765/udp  # NFS statd (in)
 statd     32766/tcp  # NFS statd (out)
