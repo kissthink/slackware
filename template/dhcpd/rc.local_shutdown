@@ -1,0 +1,6 @@
+# /etc/rc.d/rc.local_shutdown
+#
+# Stop DHCP server
+if [ -x /etc/rc.d/rc.dhcpd ]; then
+  /etc/rc.d/rc.dhcpd stop
+fi
