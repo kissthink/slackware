@@ -5,12 +5,13 @@
 IPT=$(which iptables)
 MOD=$(which modprobe)
 IFACE_INET=eth0
+IFACE_LAN=eth1
 
 function start {
   
   # Default policies
   $IPT -P INPUT DROP
-  $IPT -P FORWARD DROP
+  $IPT -P FORWARD ACCEPT
   $IPT -P OUTPUT ACCEPT
 
   # Trust ourselves
@@ -21,53 +22,71 @@ function start {
   $IPT -A INPUT -p icmp --icmp-type time-exceeded -j ACCEPT
   $IPT -A INPUT -p icmp --icmp-type destination-unreachable -j ACCEPT
 
-  # Established connections 
+  # Established connections
   $IPT -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
 
-  # FTP 
+  # Local FTP 
   # $MOD ip_conntrack_ftp
-  # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 21 -j ACCEPT
+  # $IPT -A INPUT -p tcp -i $IFACE_LAN --dport 21 -j ACCEPT
 
-  # Unlimited SSH
-  $IPT -A INPUT -p tcp -i $IFACE_INET --dport 22 -j ACCEPT
+  # Local SSH 
+  $IPT -A INPUT -p tcp -i $IFACE_LAN --dport 22 -j ACCEPT
 
-  # Limited SSH
+  # Limited SSH from the outside
   # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 22 -m state --state NEW \
-  #  -m recent --set --name SSH
+  #         -m recent --set --name SSH
   # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 22 -m state --state NEW \
-  #  -m recent --update --seconds 60 --hitcount 2 --rttl --name SSH -j DROP
+  #         -m recent --update --seconds 60 --hitcount 2 --rttl --name SSH -j DROP
   # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 22 -j ACCEPT
 
-  # SMTP 
-  # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 25 -j ACCEPT
+  # DNS 
+  # $IPT -A INPUT -p tcp -i $IFACE_LAN --dport 53 -j ACCEPT
+  # $IPT -A INPUT -p udp -i $IFACE_LAN --dport 53 -j ACCEPT
 
-  # DNS
-  # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 53 -j ACCEPT
-  # $IPT -A INPUT -p udp -i $IFACE_INET --dport 53 -j ACCEPT
+  # DHCP
+  # $IPT -A INPUT -p udp -i $IFACE_LAN --dport 67:68 -j ACCEPT
 
   # HTTP 
-  # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 80 -j ACCEPT
+  # $IPT -A INPUT -p tcp -i $IFACE_LAN --dport 80 -j ACCEPT
 
-  # POP
-  # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 110 -j ACCEPT
+  # HTTPS 
+  # $IPT -A INPUT -p tcp -i $IFACE_LAN --dport 443 -j ACCEPT
 
-  # IMAP
-  # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 143 -j ACCEPT
+  # NTP 
+  # $IPT -A INPUT -p udp -i $IFACE_LAN --dport 123 -j ACCEPT
 
-  # HTTPS
-  # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 443 -j ACCEPT
+  # Samba 
+  # $IPT -A INPUT -p udp -i $IFACE_LAN --dport 137:138 -j ACCEPT
+  # $IPT -A INPUT -p tcp -i $IFACE_LAN --dport 139 -j ACCEPT
+  # $IPT -A INPUT -p tcp -i $IFACE_LAN --dport 445 -j ACCEPT
 
-  # SMTP (Thunderbird)
-  # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 587 -j ACCEPT
+  # CUPS
+  # $IPT -A INPUT -p tcp -i $IFACE_LAN --dport 631 -j ACCEPT
+  # $IPT -A INPUT -p udp -i $IFACE_LAN --dport 631 -j ACCEPT
 
-  # IMAPS
-  # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 993 -j ACCEPT
+  # NFS
+  # $IPT -A INPUT -p tcp -i $IFACE_LAN --dport 111 -j ACCEPT
+  # $IPT -A INPUT -p udp -i $IFACE_LAN --dport 111 -j ACCEPT
+  # $IPT -A INPUT -p tcp -i $IFACE_LAN --dport 2049 -j ACCEPT
+  # $IPT -A INPUT -p udp -i $IFACE_LAN --dport 2049 -j ACCEPT
+  # $IPT -A INPUT -p tcp -i $IFACE_LAN --dport 32765:32769 -j ACCEPT
+  # $IPT -A INPUT -p udp -i $IFACE_LAN --dport 32765:32769 -j ACCEPT
 
-  # Accepter les requêtes POPS
-  # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 995 -j ACCEPT
+  # NIS
+  # $IPT -A INPUT -p tcp -i $IFACE_LAN --dport 834 -j ACCEPT
+  # $IPT -A INPUT -p udp -i $IFACE_LAN --dport 834 -j ACCEPT
 
-  # Autoriser le serveur Icecast 
-  # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 8000 -j ACCEPT
+  # Squid 
+  #$IPT -A INPUT -p tcp -i $IFACE_LAN --dport 3128 -j ACCEPT
+  #$IPT -A INPUT -p udp -i $IFACE_LAN --dport 3128 -j ACCEPT
+
+  # Transparent proxy : redirect all HTTP requests except those for the server
+  # itself to port 3128
+  # $IPT -A PREROUTING -t nat -i $IFACE_LAN -p tcp ! -d 192.168.2.1 \
+  #               --dport 80 -j REDIRECT --to-port 3128
+
+  # MPD 
+  # $IPT -A INPUT -p tcp -i $IFACE_LAN --dport 8000 -j ACCEPT
 
   # Log rejected connections
   $IPT -A INPUT -j LOG --log-prefix "+++ IPv4 packet rejected +++"
