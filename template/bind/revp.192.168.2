@@ -1,0 +1,14 @@
+; revp.192.168.2 
+$ORIGIN 2.168.192.in-addr.arpa.
+$TTL 86400
+@ IN SOA serveur.mondomaine.local. hostmaster.mondomaine.local. (
+    2014240501 ; serial
+    3H         ; refresh 
+    15M        ; retry 
+    1W         ; expiry 
+    1D )       ; minimum 
+    IN NS  serveur.mondomaine.local.
+1   IN PTR serveur.mondomaine.local.
+2   IN PTR poste02.mondomaine.local.
+3   IN PTR poste03.mondomaine.local.
+4   IN PTR poste04.mondomaine.local.

@@ -1,0 +1,16 @@
+; zone.mondomaine.local
+$TTL 86400
+$ORIGIN mondomaine.local.
+@ IN SOA serveur.mondomaine.local. hostmaster.mondomaine.local. (
+    2014240501 ; serial 
+    3H         ; refresh
+    15M        ; retry
+    1W         ; expiry
+    1D )       ; minimum
+           IN NS serveur.mondomaine.local.
+           IN MX 10 mail.mondomaine.local.
+serveur    IN A 192.168.2.1
+poste02    IN A 192.168.2.2
+poste03    IN A 192.168.2.3
+poste04    IN A 192.168.2.4
+
