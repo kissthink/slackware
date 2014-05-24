@@ -1,4 +1,4 @@
-; zone.mondomaine.local
+; /var/named/zone.mondomaine.local
 $TTL 86400
 $ORIGIN mondomaine.local.
 @ IN SOA serveur.mondomaine.local. hostmaster.mondomaine.local. (

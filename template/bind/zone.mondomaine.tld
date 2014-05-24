@@ -1,17 +1,17 @@
-; zone.osteo-sommieres.fr
+; /var/named/zone.mondomaine.tld
 $TTL 86400
-$ORIGIN osteo-sommieres.fr.
-@ IN SOA ns.osteo-sommieres.fr. hostmaster.osteo-sommieres.fr. (
-   2013090801   ; sn
+$ORIGIN mondomaine.tld.
+@ IN SOA ns.mondomaine.tld. hostmaster.mondomaine.tld. (
+   2014052401   ; sn
         10800   ; refresh (3 heures)
           600   ; retry (10 minutes)
       1814400   ; expiry (3 semaines)
         10800 ) ; minimum (3 heures)
-        IN          NS      ns.osteo-sommieres.fr.
+        IN          NS      ns.mondomaine.tld.
         IN          NS      nssec.online.net.
-        IN          MX      10 mail.osteo-sommieres.fr.
-osteo-sommieres.fr. A       88.191.189.120
+        IN          MX      10 mail.mondomaine.tld.
+mondomaine.tld. A           88.191.189.120
 ns      IN          A       88.191.189.120
 mail    IN          A       88.191.189.120
-www     CNAME               osteo-sommieres.fr.
-ftp     CNAME               osteo-sommieres.fr.
+www     CNAME               mondomaine.tld.
+ftp     CNAME               mondomaine.tld.
