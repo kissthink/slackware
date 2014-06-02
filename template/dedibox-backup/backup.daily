@@ -7,7 +7,7 @@ FTPUSER="sd-XXXXX"
 FTPPASS="pass_ftp"
 FTPHOST="dedibackup-dc2.online.net"
 
-# Configuration du serveur
+# Config
 cd /
 tar czf - etc/ | curl -T - -u $FTPUSER:$FTPPASS \
   ftp://$FTPHOST/$SERVER-$MONTH-config.tar.gz
@@ -17,17 +17,17 @@ cd /var
 tar czf - named/ | curl -T - -u $FTPUSER:$FTPPASS \
   ftp://$FTPHOST/$SERVER-$MONTH-dns.tar.gz
 
-# Sites Web
+# Web
 cd /var/www
 tar czf - vhosts/ | curl -T - -u $FTPUSER:$FTPPASS \
   ftp://$FTPHOST/$SERVER-$MONTH-vhosts.tar.gz
 
-# Mails
+# Mail
 cd /
 tar czf - home/ | curl -T - -u $FTPUSER:$FTPPASS \
   ftp://$FTPHOST/$SERVER-$MONTH-mails.tar.gz
 
-# Bases de données 
+# MySQL
 DB1NAME="mabase"
 DB1USER="utilisateur_mysql_de_mabase"
 DB1PASS="pass_mysql_de_mabase"

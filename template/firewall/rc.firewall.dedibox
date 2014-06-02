@@ -63,10 +63,10 @@ function start {
   # IMAPS
   # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 993 -j ACCEPT
 
-  # Accepter les requêtes POPS
+  # POPS
   # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 995 -j ACCEPT
 
-  # Autoriser le serveur Icecast 
+  # Icecast 
   # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 8000 -j ACCEPT
 
   # Log rejected connections
