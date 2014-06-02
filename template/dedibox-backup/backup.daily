@@ -1,0 +1,42 @@
+#!/bin/bash
+#
+# /etc/cron.daily/backup
+MONTH=$(date "+%m")
+SERVER="sd-XXXXX"
+FTPUSER="sd-XXXXX"
+FTPPASS="pass_ftp"
+FTPHOST="dedibackup-dc2.online.net"
+
+# Configuration du serveur
+cd /
+tar czf - etc/ | curl -T - -u $FTPUSER:$FTPPASS \
+  ftp://$FTPHOST/$SERVER-$MONTH-config.tar.gz
+
+# DNS
+cd /var
+tar czf - named/ | curl -T - -u $FTPUSER:$FTPPASS \
+  ftp://$FTPHOST/$SERVER-$MONTH-dns.tar.gz
+
+# Sites Web
+cd /var/www
+tar czf - vhosts/ | curl -T - -u $FTPUSER:$FTPPASS \
+  ftp://$FTPHOST/$SERVER-$MONTH-vhosts.tar.gz
+
+# Mails
+cd /
+tar czf - home/ | curl -T - -u $FTPUSER:$FTPPASS \
+  ftp://$FTPHOST/$SERVER-$MONTH-mails.tar.gz
+
+# Bases de données 
+DB1NAME="mabase"
+DB1USER="utilisateur_mysql_de_mabase"
+DB1PASS="pass_mysql_de_mabase"
+mysqldump -u $DB1USER -p$DB1PASS $DB1NAME | curl -T - -u $FTPUSER:$FTPPASS \
+  ftp://$FTPHOST/$SERVER-$MONTH-database-$DB1NAME.sql
+
+DB2NAME="mabase2"
+DB2USER="utilisateur_mysql_de_mabase2"
+DB2PASS="pass_mysql_de_mabase2"
+mysqldump -u $DB2USER -p$DB2PASS $DB2NAME | curl -T - -u $FTPUSER:$FTPPASS \
+  ftp://$FTPHOST/$SERVER-$MONTH-database-$DB2NAME.sql
+

@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# /etc/cron.weekly/backup
+MONTH=$(date "+%m")
+SERVER="sd-XXXXX"
+FTPUSER="sd-XXXXX"
+FTPPASS="pass_ftp"
+FTPHOST="dedibackup-dc2.online.net"
+
+# Webradio
+cd /var/lib
+tar czf - mpd/ | curl -T - -u $FTPUSER:$FTPPASS \
+  ftp://$FTPHOST/$SERVER-$MONTH-webradio.tar.gz
+
+
