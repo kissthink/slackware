@@ -3,7 +3,7 @@ RSYNC=$(which rsync)
 CWD=$(pwd)
 LOCALSTUFF=$CWD/..
 RSYNCUSER=kikinovak
-SERVER=nestor
-SERVERDIR=/srv/httpd/vhosts/mirror/htdocs/microlinux
+SERVER=alphamule
+SERVERDIR=/home/kikinovak/Public/unixgarden
 $RSYNC -av $LOCALSTUFF --exclude '.git*' $RSYNCUSER@$SERVER:$SERVERDIR 
 

@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (c) 2013 Niki Kovacs <info@microlinux.fr>
+# Copyright (c) 2014 Niki Kovacs <info@microlinux.fr>
 # -----------------------------------------------------------------------------
 #
 # This script builds all Slackware packages listed in the 'build_order' file. 
