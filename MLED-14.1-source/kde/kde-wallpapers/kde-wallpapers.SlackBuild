@@ -75,11 +75,7 @@ fi
 
 set -e 
 
-if [ ! -r $PRGNAM-$VERSION.tar.xz ] ; then
-   wget -c http://download.kde.org/stable/$VERSION/src/$PRGNAM-$VERSION.tar.xz
-fi
-
-md5sum -c $PRGNAM-$VERSION.tar.xz.md5
+wget -c http://download.kde.org/stable/$VERSION/src/$PRGNAM-$VERSION.tar.xz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

@@ -77,8 +77,6 @@ set -e
 
 wget -c http://download.kde.org/stable/$VERSION/src/$PRGNAM-$VERSION.tar.xz
 
-md5sum -c $PRGNAM-$VERSION.tar.xz.md5
-
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
