@@ -6,11 +6,11 @@ profile/user-settings-console
 #######
 # KDE #
 #######
-#kde/kde-baseapps
-#kde/kde-base-artwork
-#kde/kde-workspace
-#kde/kde-wallpapers
-#kde/user-settings-kde
+kde/kde-baseapps
+kde/kde-base-artwork
+kde/kde-workspace
+kde/kde-wallpapers
+kde/user-settings-kde
 
 ###################
 # Basic utilities #

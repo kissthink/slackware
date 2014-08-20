@@ -1,0 +1,30 @@
+Microlinux Enterprise Desktop
+-----------------------------
+
+Pourquoi baser MLED sur KDE ? Quelques arguments.
+
+1. Applications imbattables comme Dolphin, Okular, K3B, Digikam.
+
+2. Beaucoup moins de dépendances sous le capot que Xfce et/ou MATE.
+
+3. Gestionnaire de connexion KDM. 
+
+4. Gestionnaire de fenêtres KWin avec toute une panoplie d'effets graphiques.
+
+5. Thème par défaut propre et professionnel.
+
+6. Sur les vieilles machines, il y a toujours la possibilité de démarrer une
+   session failsafe.
+
+Objectif
+--------
+
+Un bureau KDE 4.10.5 réduit avec un minimum d'applications pour commencer.
+
+[ ] LibreOffice 4.2.6
+[ ] trim-desktop-base.sh
+[ ] Jeu de tagfiles
+[ ] Dépôt de paquets http://www.microlinux.fr/testing/
+[ ] Compilation dans VirtualBox et OpenGL
+[ ] Entrées de menu propres
+[ ] Profil par défaut pour KDE
