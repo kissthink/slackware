@@ -296,6 +296,10 @@ pykde4
 skanlite 
 svgpart 
 
+# KDEI
+kde-l10n-de 
+kde-l10n-fr 
+
 # L
 ConsoleKit 
 GConf 
@@ -686,6 +690,12 @@ yptools
 ytalk 
 zd1211-firmware 
 
+# T
+tetex 
+tetex-doc 
+transfig 
+xfig 
+
 # TCL
 expect 
 hfsutils 
@@ -693,12 +703,6 @@ tcl
 tclx 
 tix 
 tk 
-
-# T
-tetex 
-tetex-doc 
-transfig 
-xfig 
 
 # X
 anthy 
@@ -989,10 +993,11 @@ xwud
 
 # XAP
 MPlayer 
+audacious 
+audacious-plugins 
 fluxbox 
 gftp 
 gimp 
-gucharmap 
 imagemagick 
 mozilla-firefox 
 mozilla-thunderbird 
@@ -1001,7 +1006,6 @@ pidgin
 sane 
 windowmaker 
 xine-lib 
-xsane 
 xscreensaver 
 
 # Y

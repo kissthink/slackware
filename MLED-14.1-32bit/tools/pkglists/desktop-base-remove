@@ -154,7 +154,6 @@ kde-l10n-ca
 kde-l10n-ca@valencia 
 kde-l10n-cs 
 kde-l10n-da 
-kde-l10n-de 
 kde-l10n-el 
 kde-l10n-en_GB 
 kde-l10n-es 
@@ -162,7 +161,6 @@ kde-l10n-et
 kde-l10n-eu 
 kde-l10n-fa 
 kde-l10n-fi 
-kde-l10n-fr 
 kde-l10n-ga 
 kde-l10n-gl 
 kde-l10n-he 
@@ -217,8 +215,6 @@ xf86-video-nouveau
 xf86-video-nv 
 
 # XAP
-audacious 
-audacious-plugins 
 blackbox 
 blueman 
 ddd 
@@ -228,6 +224,7 @@ geeqie
 gkrellm 
 gnuchess 
 gnuplot 
+gucharmap 
 gv 
 pan 
 rdesktop 
@@ -246,6 +243,7 @@ xlockmore
 xmms 
 xpaint 
 xpdf 
+xsane 
 xv 
 
 # XFCE
