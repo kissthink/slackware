@@ -248,6 +248,54 @@ mplayerplug-in
 # K
 kernel-source 
 
+# KDE
+ark 
+audiocd-kio 
+gwenview 
+k3b 
+kactivities 
+kamera 
+kate 
+kaudiocreator 
+kcalc 
+kcharselect 
+kcolorchooser 
+kde-base-artwork 
+kde-baseapps 
+kde-runtime 
+kde-wallpapers 
+kde-workspace 
+kdeartwork 
+kdegraphics-mobipocket 
+kdegraphics-strigi-analyzer 
+kdegraphics-thumbnailers 
+kdelibs 
+kdepimlibs 
+kio-mtp 
+kmix 
+konsole 
+ksaneplugin 
+ksnapshot 
+libkcddb 
+libkcompactdisc 
+libkdcraw 
+libkexiv2 
+libkipi 
+libksane 
+mplayerthumbs 
+nepomuk-core 
+networkmanagement 
+okular 
+oxygen-gtk2 
+oxygen-gtk3 
+oxygen-icons 
+polkit-kde-agent-1 
+polkit-kde-kcmodules-1 
+print-manager 
+pykde4 
+skanlite 
+svgpart 
+
 # L
 ConsoleKit 
 GConf 
