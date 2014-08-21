@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Exec=skanlite -caption "%c" %i
+Icon=scanner
+X-DocPath=skanlite/index.html
+Terminal=false
+Name=Skanlite
+GenericName=Image Scanning
+GenericName[de]=Scannerprogramm
+GenericName[fr]=Acquisition d'images
+Categories=Graphics;
+StartupNotify=true

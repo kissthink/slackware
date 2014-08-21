@@ -7,6 +7,7 @@ CWD=$(pwd)
 ENTRIESDIR=$CWD/desktop
 ENTRIES=`ls $ENTRIESDIR` 
 MENUDIRS="  /usr/share/applications \
+            /usr/share/applications/kde4 \
             /usr/share/distcc \
             /opt/libreoffice4.2/share/xdg"
 
