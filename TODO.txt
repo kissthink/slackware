@@ -25,6 +25,6 @@ Un bureau KDE 4.10.5 réduit avec un minimum d'applications pour commencer.
 [ ] trim-desktop-base.sh
 [ ] Jeu de tagfiles
 [ ] Dépôt de paquets http://www.microlinux.fr/testing/
-[ ] Compilation dans VirtualBox et OpenGL
+[*] Compilation dans VirtualBox et OpenGL
 [ ] Entrées de menu propres
 [ ] Profil par défaut pour KDE
