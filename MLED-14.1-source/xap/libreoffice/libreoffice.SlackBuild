@@ -116,9 +116,6 @@ rm -rf desktop-integration *.rpm
 mv opt usr $PKG
 cd $PKG
 
-# Kill a broken symlink
-rm -f $PKG/usr/share/applications/libreoffice3-startcenter.desktop
-
 # Create symlinks in /usr/bin to actual binaries
 cd $PKG/usr/bin
   for FILE in \
@@ -133,18 +130,18 @@ rm -f opt/libreoffice$SRCSHORT/share/fonts/truetype/{DejaVu,Liberation}*.ttf
 
 # Fix Exec commands in the desktop files
 # See http://bugzilla.xfce.org/show_bug.cgi?id=2430
-#cd $PKG/opt/libreoffice$SRCSHORT/share/xdg/
-#  for APP in base calc draw impress math writer; do
-#    sed -i "s%Exec=libreoffice -%Exec=/opt/libreoffice$SRCSHORT/program/s%" $APP.desktop ;
-#  done
-#cd -
+cd $PKG/opt/libreoffice$SRCSHORT/share/xdg/
+  for APP in base calc draw impress math writer; do
+    sed -i "s%Exec=libreoffice -%Exec=/opt/libreoffice$SRCSHORT/program/s%" $APP.desktop ;
+  done
+cd -
 
 # Install our own tweaked set of desktop files
-find $PKG -name '*.desktop' | xargs rm -f
-mkdir -p $PKG/usr/share/applications
-for FILE in $(ls $CWD/desktop/*.desktop); do
-  cp -a $FILE $PKG/usr/share/applications/
-done
+#find $PKG -name '*.desktop' | xargs rm -f
+#mkdir -p $PKG/usr/share/applications
+#for FILE in $(ls $CWD/desktop/*.desktop); do
+#  cp -a $FILE $PKG/usr/share/applications/
+#done
 
 # Move docs to their expected locations
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
