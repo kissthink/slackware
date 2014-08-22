@@ -1,0 +1,104 @@
+Buildbox 
+--------
+
+Configuration d'une machine dédiée à la compilation des paquets Slackware.
+
+
+##################
+# Partition swap #
+##################
+
+Partition swap commune à tous les systèmes :
+
+  Périphérique Amorce  Début        Fin      Blocs     Id  Système
+  /dev/sda1              63     3903794     1951866   82  partition d'échange Linux
+
+
+#####################
+# Système principal # 
+#####################
+
+Slackware64 14.1 64-bit (système principal) :
+
+  Périphérique Amorce  Début        Fin      Blocs     Id  Système
+  /dev/sda2         3903795    19535039     7815622+  83  Linux
+
+
+########
+# MLES #
+########
+
+MLES n° 1 32-bit :
+
+  Périphérique Amorce  Début        Fin      Blocs     Id  Système
+  /dev/sda3        19535040    48837599    14651280   83  Linux
+
+MLES n° 1 64-bit :
+
+  Périphérique Amorce  Début        Fin      Blocs     Id  Système
+  /dev/sda5        48837663    78140159    14651248+  83  Linux
+
+MLES n° 2 32-bit :
+
+  Périphérique Amorce  Début        Fin      Blocs     Id  Système
+  /dev/sda6        78140223   107442719    14651248+  83  Linux
+
+MLES n° 2 64-bit :
+
+  Périphérique Amorce  Début        Fin      Blocs     Id  Système
+  /dev/sda7       107442783   136745279    14651248+  83  Linux
+
+MLES n° 3 32-bit :
+
+  Périphérique Amorce  Début        Fin      Blocs     Id  Système
+  /dev/sda8       136745343   166047839    14651248+  83  Linux
+
+MLES n° 3 64-bit :
+
+  Périphérique Amorce  Début        Fin      Blocs     Id  Système
+  /dev/sda9       166047903   195350399    14651248+  83  Linux
+
+MLES n° 4 32-bit :
+
+  Périphérique Amorce  Début        Fin      Blocs     Id  Système
+  /dev/sda10      195350463   224652959    14651248+  83  Linux
+
+MLES n° 4 64-bit :
+
+  Périphérique Amorce  Début        Fin      Blocs     Id  Système
+  /dev/sda11      224653023   253955519    14651248+  83  Linux
+
+########
+# MLED # 
+########
+
+MLED n° 1 32-bit :
+
+  Périphérique Amorce  Début        Fin      Blocs     Id  Système
+  /dev/sda12      253955583   312544574    29294496   83  Linux
+
+MLED n° 1 32-bit :
+
+  Périphérique Amorce  Début        Fin      Blocs     Id  Système
+  /dev/sda13      312544638   371133629    29294496   83  Linux
+
+MLED n° 2 32-bit :
+
+  Périphérique Amorce  Début        Fin      Blocs     Id  Système
+  /dev/sda14      371133693   429722684    29294496   83  Linux
+
+MLED n° 2 64-bit :
+
+  Périphérique Amorce  Début        Fin      Blocs     Id  Système
+  /dev/sda15      429722748   488311739    29294496   83  Linux
+
+
+################
+# Installation # 
+################
+
+Les systèmes n'ont pas de partition /boot séparée.
+
+  /!\ NE PAS INSTALLER LILO /!\
+
+Niki Kovacs -- Fri Aug 22 19:48:47 CEST 2014
