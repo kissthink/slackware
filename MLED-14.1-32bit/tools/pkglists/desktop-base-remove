@@ -2,7 +2,6 @@
 emacs 
 
 # KDE
-amarok 
 analitza 
 blinken 
 bluedevil 
@@ -214,6 +213,8 @@ xf86-video-nouveau
 xf86-video-nv 
 
 # XAP
+audacious 
+audacious-plugins 
 blackbox 
 blueman 
 ddd 

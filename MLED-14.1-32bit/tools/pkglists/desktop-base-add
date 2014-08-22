@@ -249,6 +249,7 @@ mplayerplug-in
 kernel-source 
 
 # KDE
+amarok 
 ark 
 audiocd-kio 
 gwenview 
@@ -994,8 +995,6 @@ xwud
 
 # XAP
 MPlayer 
-audacious 
-audacious-plugins 
 fluxbox 
 gftp 
 gimp 
