@@ -101,4 +101,12 @@ Les systèmes n'ont pas de partition /boot séparée.
 
   /!\ NE PAS INSTALLER LILO /!\
 
-Niki Kovacs -- Fri Aug 22 19:48:47 CEST 2014
+
+#############
+# ChangeLog #
+#############
+
+Fri Aug 22 20:41:33 CEST 2014
+Installation du système principal sur /dev/sda2.
+Configuration de WindowMaker, Sbopkg et Conky.
++---------------------------+
