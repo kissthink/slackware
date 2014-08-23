@@ -1,42 +1,26 @@
 Buildbox 
 --------
 
-Configuration d'une machine dédiée à la compilation des paquets Slackware.
+Ce document décrit la Configuration d'une machine dédiée à la compilation des
+paquets Slackware pour toutes les versions de MLED et MLES.
+
+sda1     2 Go   partition swap commune à tous les systèmes
+sda2     8 Go   système principal Slackware 14.1 64-bit + LILO
+sda3    15 Go   MLES 14.0 32-bit
+sda5    15 Go   MLES 14.0 64-bit
+sda6    15 Go   MLES 14.1 32-bit  
+sda7    15 Go   MLES 14.1 64-bit
+sda8    15 Go   MLES **** 32-bit 
+sda9    15 Go   MLES **** 64-bit
+sda10   15 Go   MLES **** 32-bit
+sda11   15 Go   MLES **** 64-bit
+sda12   30 Go   MLED 14.1 32-bit
+sda13   30 Go   MLED 14.1 64-bit
+sda14   30 Go   MLED **** 32-bit
+sda15   30 Go   MLED **** 64-bit
 
 
-##################
-# Partition swap #
-##################
 
-Partition swap commune à tous les systèmes :
-
-  Périphérique Amorce  Début        Fin      Blocs     Id  Système
-  /dev/sda1              63     3903794     1951866   82  partition d'échange Linux
-
-
-#####################
-# Système principal # 
-#####################
-
-Slackware64 14.1 64-bit (système principal) :
-
-  Périphérique Amorce  Début        Fin      Blocs     Id  Système
-  /dev/sda2         3903795    19535039     7815622+  83  Linux
-
-
-########
-# MLES #
-########
-
-MLES n° 1 32-bit :
-
-  Périphérique Amorce  Début        Fin      Blocs     Id  Système
-  /dev/sda3        19535040    48837599    14651280   83  Linux
-
-MLES n° 1 64-bit :
-
-  Périphérique Amorce  Début        Fin      Blocs     Id  Système
-  /dev/sda5        48837663    78140159    14651248+  83  Linux
 
 MLES n° 2 32-bit :
 
