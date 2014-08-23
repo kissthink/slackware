@@ -1,0 +1,79 @@
+Buildbox 
+--------
+
+Ce document décrit la Configuration d'une machine dédiée à la compilation des
+paquets Slackware pour toutes les versions de MLED et MLES.
+
+
+Schéma de partitionnement
+-------------------------
+
+La machine est un multi-boot qui contient en tout et pour tout 13 systèmes :
+
+  * 1 système principal pour la supervision
+  * 4 versions de MLES pour 2 architectures
+  * 2 versions de MLED pour 2 architectures
+
+
+  Partition  Taille                 Système
+  -----------------------------------------------------------------------
+    sda1       2 Go     partition swap commune à tous les systèmes
+    sda2       8 Go     système principal Slackware 14.1 64-bit + LILO
+    sda3      15 Go     MLES 14.0 32-bit
+    sda5      15 Go     MLES 14.0 64-bit
+    sda6      15 Go     MLES 14.1 32-bit  
+    sda7      15 Go     MLES 14.1 64-bit
+    sda8      15 Go     MLES **** 32-bit 
+    sda9      15 Go     MLES **** 64-bit
+    sda10     15 Go     MLES **** 32-bit
+    sda11     15 Go     MLES **** 64-bit
+    sda12     30 Go     MLED 14.1 32-bit
+    sda13     30 Go     MLED 14.1 64-bit
+    sda14     30 Go     MLED **** 32-bit
+    sda15     30 Go     MLED **** 64-bit
+
+
+Installation
+------------
+
+1.  Les systèmes n'ont pas de partition /boot séparée.
+
+2.  Désélectionner les groupes de paquets KDE, KDEI, XAP et XFCE.
+
+3.  Ne pas réinstaller LILO, qui se trouve déjà sur sda2 !
+
+4.  Inclure les modules ext4 et i915 dans l'initrd.
+
+5.  Au redémarrage, installer le paquet 'user-settings-console'.
+
+6.  Configurer 'slackpkg' et effectuer la mise à jour initiale.
+
+7.  Configurer la disposition du clavier en mode graphique.
+
+8.  Créer un utilisateur.
+
+9.  Installer WindowMaker et passer en init 4.
+
+10. Ajouter le nouveau système au moniteur disque de Conky.
+
+11. Copier les clés SSH depuis le système principal.
+
+12. Sur MLED64, installer la couche Multilib.
+
+
+ChangeLog
+---------
+
+Installation de recode sur /dev/sda2.
++---------------------------+
+Fri Aug 22 20:41:33 CEST 2014
+Installation du système principal sur /dev/sda2.
+Configuration de WindowMaker.
+Installation de sbopkg.
+Installation de Conky.
+Mise à jour initiale.
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt
+# vim: set encoding=latin1
