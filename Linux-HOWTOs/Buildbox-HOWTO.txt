@@ -60,7 +60,9 @@ Installation
 
     # cp /etc/ssh/ssh_host_*key* /mnt/sdaX/etc/ssh/
 
-12. Sur MLED64, installer la couche Multilib.
+12. Élaguer le système de base.
+
+13. Sur MLED64, installer la couche Multilib.
 
 
 ChangeLog
