@@ -157,7 +157,7 @@ kde/user-settings-kde
 ################
 # Applications #
 ################
-#xap/libreoffice
+xap/libreoffice
 #xap/MPlayer
 #xap/aMule
 #xap/asunder
