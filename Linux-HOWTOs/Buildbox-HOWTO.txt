@@ -69,6 +69,10 @@ ChangeLog
 ---------
 
 Installation de recode sur /dev/sda2.
+Installation de MLES 14.0 32-bit sur /dev/sda3.
+Installation de MLES 14.0 64-bit sur /dev/sda5.
+Installation de MLES 14.1 32-bit sur /dev/sda6.
+Installation de MLES 14.1 64-bit sur /dev/sda7.
 +---------------------------+
 Fri Aug 22 20:41:33 CEST 2014
 Installation du système principal sur /dev/sda2.
