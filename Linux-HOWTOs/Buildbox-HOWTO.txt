@@ -56,7 +56,9 @@ Installation
 
 10. Ajouter le nouveau système au moniteur disque de Conky.
 
-11. Copier les clés SSH depuis le système principal.
+11. Copier les clés SSH depuis le système principal :
+
+    # cp /etc/ssh/ssh_host_*key* /mnt/sdaX/etc/ssh/
 
 12. Sur MLED64, installer la couche Multilib.
 
