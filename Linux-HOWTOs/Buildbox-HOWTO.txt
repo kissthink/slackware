@@ -38,7 +38,7 @@ Installation
 
 1.  Les systèmes n'ont pas de partition /boot séparée.
 
-2.  Désélectionner les groupes de paquets KDE, KDEI, XAP et XFCE.
+2.  Désélectionner les groupes de paquets E, KDE, KDEI, XAP et XFCE.
 
 3.  Ne pas réinstaller LILO, qui se trouve déjà sur sda2 !
 
