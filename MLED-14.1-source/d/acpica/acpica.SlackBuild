@@ -65,11 +65,7 @@ fi
 
 set -e
 
-if [ ! -r $PRGNAM-unix2-$VERSION.tar.gz ] ; then
-   wget -c https://acpica.org/sites/$PRGNAM/files/$PRGNAM-unix2-$VERSION.tar.gz
-fi
-
-md5sum -c $PRGNAM-unix2-$VERSION.tar.gz.md5
+wget -c https://acpica.org/sites/$PRGNAM/files/$PRGNAM-unix2-$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

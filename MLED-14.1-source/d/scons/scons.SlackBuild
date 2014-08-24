@@ -28,11 +28,7 @@ DOCS="CHANGES.txt LICENSE.txt README.txt RELEASE.txt"
 
 set -e
 
-if [ ! -r $PRGNAM-$VERSION.tar.gz ] ; then
-   wget -c http://downloads.sourceforge.net/$PRGNAM/$PRGNAM-$VERSION.tar.gz
-fi
-
-md5sum -c $PRGNAM-$VERSION.tar.gz.md5
+wget -c http://downloads.sourceforge.net/$PRGNAM/$PRGNAM-$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

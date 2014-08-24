@@ -23,12 +23,12 @@ ap/cdlabelgen
 ###############
 # Development #
 ###############
-#d/acpica
-#d/jdk
-#d/lua
-#d/numpy
-#d/orc
-#d/scons
+d/acpica
+d/jdk
+d/lua
+d/numpy
+d/orc
+d/scons
 
 ######################
 # GNOME dependencies #
