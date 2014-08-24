@@ -16,7 +16,7 @@ VERSION=${VERSION:-5.6.2}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j5}
+NUMJOBS=${NUMJOBS:--j3}
 
 # Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
@@ -49,11 +49,7 @@ fi
 
 set -e
 
-if [ ! -r ${PRGNAM}$(echo $VERSION | tr -d .).zip ] ; then
-   wget -c http://www.cryptopp.com/${PRGNAM}$(echo $VERSION | tr -d .).zip
-fi
-
-md5sum -c ${PRGNAM}$(echo $VERSION | tr -d .).zip.md5
+wget -c http://www.cryptopp.com/${PRGNAM}$(echo $VERSION | tr -d .).zip
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

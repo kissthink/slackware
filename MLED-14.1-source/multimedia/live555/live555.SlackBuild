@@ -13,7 +13,7 @@ VERSION=${VERSION:-2011.12.23}
 BUILD=${BUILD:-3}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j5}
+NUMJOBS=${NUMJOBS:--j3}
 
 SRCNAM=live
 
@@ -37,12 +37,8 @@ esac
 
 set -eu
 
-if [ ! -r $SRCNAM.$VERSION.tar.gz ] ; then
-   wget -c --no-check-certificate \
-     https://live555sourcecontrol.googlecode.com/files/$SRCNAM.$VERSION.tar.gz
-fi
-
-md5sum -c $SRCNAM.$VERSION.tar.gz.md5
+wget -c --no-check-certificate \
+  https://live555sourcecontrol.googlecode.com/files/$SRCNAM.$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

@@ -32,7 +32,7 @@ SRCVERSION=$(echo $VERSION | tr _ -)
 BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j5}
+NUMJOBS=${NUMJOBS:--j3}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -67,11 +67,7 @@ fi
 
 set -e
 
-if [ ! -r $PRGNAM-v$SRCVERSION.tar.bz2 ] ; then
-   wget -c http://webm.googlecode.com/files/$PRGNAM-v$SRCVERSION.tar.bz2
-fi
-
-md5sum -c $PRGNAM-v$SRCVERSION.tar.bz2.md5
+wget -c http://webm.googlecode.com/files/$PRGNAM-v$SRCVERSION.tar.bz2
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

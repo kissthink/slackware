@@ -9,7 +9,7 @@ VERSION=${VERSION:-2.1.5}
 BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j5}
+NUMJOBS=${NUMJOBS:--j3}
 
 # Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
@@ -42,11 +42,7 @@ fi
 
 set -e
 
-if [ ! -r $PRGNAM-$VERSION.tar.gz ] ; then
-   wget -c http://ftp.musicbrainz.org/pub/musicbrainz/historical/$PRGNAM-$VERSION.tar.gz
-fi
-
-md5sum -c $PRGNAM-$VERSION.tar.gz.md5
+wget -c http://ftp.musicbrainz.org/pub/musicbrainz/historical/$PRGNAM-$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

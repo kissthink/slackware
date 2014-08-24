@@ -46,11 +46,7 @@ DOCS="PKG-INFO"
 
 set -e
 
-if [ ! -r $PRGNAM-$VERSION.tar.gz ] ; then
-   wget -c http://www.crummy.com/software/$PRGNAM/download/3.x/$PRGNAM-$VERSION.tar.gz
-fi
-
-md5sum -c $PRGNAM-$VERSION.tar.gz.md5
+wget -c http://www.crummy.com/software/$PRGNAM/download/3.x/$PRGNAM-$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

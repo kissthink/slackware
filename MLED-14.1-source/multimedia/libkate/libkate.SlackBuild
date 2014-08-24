@@ -32,7 +32,7 @@ VERSION=${VERSION:-0.4.1}
 BUILD=${BUILD:-3}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j5}
+NUMJOBS=${NUMJOBS:--j3}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -63,11 +63,7 @@ fi
 
 set -e # Exit on most errors
 
-if [ ! -r $PRGNAM-$VERSION.tar.gz ] ; then
-   wget -c https://libkate.googlecode.com/files/$PRGNAM-$VERSION.tar.gz
-fi
-
-md5sum -c $PRGNAM-$VERSION.tar.gz.md5
+wget -c https://libkate.googlecode.com/files/$PRGNAM-$VERSION.tar.gz
 
 rm -fr $TMP/$PRGNAM-$VERSION $PKG
 mkdir -p $TMP $PKG $OUTPUT

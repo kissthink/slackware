@@ -32,7 +32,7 @@ VERSION=1.2.0
 BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j5}
+NUMJOBS=${NUMJOBS:--j3}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -63,11 +63,7 @@ fi
 
 set -e
 
-if [ ! -r $PRGNAM-$VERSION.tar.xz ] ; then
-   wget -c http://www.kernel.org/pub/linux/libs/ieee1394/$PRGNAM-$VERSION.tar.xz
-fi
-
-md5sum -c $PRGNAM-$VERSION.tar.xz.md5
+wget -c http://www.kernel.org/pub/linux/libs/ieee1394/$PRGNAM-$VERSION.tar.xz
 
 rm -rf $TMP/$PRGNAM-$VERSION $PKG
 mkdir -p $TMP $PKG $OUTPUT
