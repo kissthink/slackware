@@ -2,7 +2,7 @@ loadTemplate("org.kde.plasma-desktop.defaultPanel")
 
 for (var i = 0; i < screenCount; ++i) {
     var desktop = new Activity
-    desktop.name = i18n("Workstation")
+    desktop.name = i18n("MLED")
 
     folderview = desktop.addWidget("folderview");
     folderview.writeConfig("url", "desktop:/");

@@ -13,7 +13,7 @@ widget.writeConfig("Url", "file:///usr/share/applications/mozilla-firefox.deskto
 var widget = panel.addWidget("icon")
 widget.writeConfig("Url", "file:///usr/share/applications/mozilla-thunderbird.desktop")
 var widget = panel.addWidget("icon")
-widget.writeConfig("Url", "file:///opt/openoffice4/share/xdg/startcenter.desktop")
+widget.writeConfig("Url", "file:///opt/libreoffice4.2/share/xdg/startcenter.desktop")
 tasks = panel.addWidget("tasks")
 panel.addWidget("systemtray")
 panel.addWidget("digital-clock")
