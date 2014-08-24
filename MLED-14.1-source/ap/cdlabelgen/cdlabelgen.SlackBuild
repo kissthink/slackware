@@ -37,11 +37,7 @@ OUTPUT=${OUTPUT:-/tmp}
 
 set -e 
 
-if [ ! -r $PRGNAM-$VERSION.tgz ] ; then
-   wget -c http://www.aczoom.com/pub/tools/$PRGNAM-$VERSION.tgz
-fi
-
-md5sum -c $PRGNAM-$VERSION.tgz.md5
+wget -c http://www.aczoom.com/pub/tools/$PRGNAM-$VERSION.tgz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

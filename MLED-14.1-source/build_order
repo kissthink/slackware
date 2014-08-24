@@ -14,11 +14,11 @@ kde/kde-wallpapers
 ###################
 # Basic utilities #
 ###################
-#ap/sbopkg
-#ap/recode
-#ap/unrar
-#ap/p7zip
-#ap/cdlabelgen
+ap/sbopkg
+ap/recode
+ap/unrar
+ap/p7zip
+ap/cdlabelgen
 
 ###############
 # Development #
