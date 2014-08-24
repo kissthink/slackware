@@ -32,7 +32,7 @@ VERSION=1.13
 BUILD=${BUILD:-5}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j5}
+NUMJOBS=${NUMJOBS:--j3}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -63,11 +63,7 @@ fi
 
 set -e
 
-if [ ! -r ${PRGNAM}_${VERSION}.tgz ] ; then
-   wget -c http://www.ladspa.org/download/${PRGNAM}_${VERSION}.tgz
-fi
-
-md5sum -c ${PRGNAM}_${VERSION}.tgz.md5
+wget -c http://www.ladspa.org/download/${PRGNAM}_${VERSION}.tgz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

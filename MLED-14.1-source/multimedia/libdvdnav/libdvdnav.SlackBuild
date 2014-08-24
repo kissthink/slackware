@@ -29,7 +29,7 @@ VERSION=4.2.0
 BUILD=${BUILD:-3}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j5}
+NUMJOBS=${NUMJOBS:--j3}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -60,11 +60,7 @@ fi
 
 set -e
 
-if [ ! -r $PRGNAM-$VERSION.tar.bz2 ] ; then
-   wget -c http://dvdnav.mplayerhq.hu/releases/$PRGNAM-$VERSION.tar.bz2
-fi
-
-md5sum -c $PRGNAM-$VERSION.tar.bz2.md5
+wget -c http://dvdnav.mplayerhq.hu/releases/$PRGNAM-$VERSION.tar.bz2
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

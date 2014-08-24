@@ -23,7 +23,7 @@
 # Modified by Niki Kovacs <info@microlinux.fr>
 
 PRGNAM=flashplayer-plugin
-VERSION=${VERSION:-11.2.202.346}
+VERSION=${VERSION:-11.2.202.394}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 VERS_MAJ=$(printf $VERSION | cut -d. -f1)
@@ -51,11 +51,7 @@ OUTPUT=${OUTPUT:-/tmp}
 
 set -e
 
-if [ ! -r install_flash_player_${VERS_MAJ}_linux.${ARCH}.tar.gz ] ; then
-   wget -c https://$URL/$VERSION/install_flash_player_${VERS_MAJ}_linux.${ARCH}.tar.gz
-fi
-
-md5sum -c install_flash_player_${VERS_MAJ}_linux.${ARCH}.tar.gz.md5
+wget -c https://$URL/$VERSION/install_flash_player_${VERS_MAJ}_linux.${ARCH}.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

@@ -46,11 +46,7 @@ fi
 
 set -e
 
-if [ ! -r $ORIGNAM.tar.gz ] ; then
-   wget -c http://$PRGNAM.sourceforge.net/$ORIGNAM.tar.gz
-fi
-
-md5sum -c $ORIGNAM.tar.gz.md5
+wget -c http://$PRGNAM.sourceforge.net/$ORIGNAM.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
