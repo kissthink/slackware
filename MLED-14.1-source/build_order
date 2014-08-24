@@ -10,7 +10,6 @@ kde/kde-baseapps
 kde/kde-base-artwork
 kde/kde-workspace
 kde/kde-wallpapers
-kde/user-settings-kde
 
 ###################
 # Basic utilities #
@@ -198,7 +197,7 @@ xap/libreoffice
 #########################
 # Desktop configuration #
 #########################
-#profile/user-settings-mate
+profile/user-settings-kde
 
 ##########################
 # Post-release additions #
