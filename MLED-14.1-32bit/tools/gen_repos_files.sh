@@ -1,5 +1,5 @@
 #!/bin/bash
-# Copyright (c) 2006-2013  Eric Hameleers, Eindhoven, The Netherlands
+# Copyright (c) 2006-2014  Eric Hameleers, Eindhoven, The Netherlands
 # All rights reserved.
 #
 #   Permission to use, copy, modify, and distribute this software for
@@ -28,7 +28,7 @@
 # ---------------------------------------------------------------------------
 cat <<"EOT"
 # -------------------------------------------------------------------#
-# $Id: gen_repos_files.sh,v 1.77 2013/06/05 20:53:45 root Exp root $ #
+# $Id: gen_repos_files.sh,v 1.92 2014/07/31 20:27:53 root Exp root $ #
 # -------------------------------------------------------------------#
 EOT
 
@@ -36,7 +36,7 @@ EOT
 BASENAME=$( basename $0 )
 
 # The script'""s revision number will be displayed in the RSS feed:
-REV=$( echo "$Revision: 1.77 $" | cut -d' '  -f2 )
+REV=$( echo "$Revision: 1.92 $" | cut -d' '  -f2 )
 
 # The repository owner's defaults file;
 # you can override any of the default values in this file:
@@ -46,7 +46,7 @@ USERDEFS=${USERDEFS:-~/.genreprc}
 # Sane defaults:
 
 # The directory of the Slackware package repository:
-REPOSROOT=${REPOSROOT:-"/web/mirror/htdocs/microlinux/MLED-14.1-32bit/"}
+REPOSROOT=${REPOSROOT:-"/home/kikinovak/Public/slackware"}
 
 # Repository maintainer
 REPOSOWNER=${REPOSOWNER:-"Niki Kovacs <info@microlinux.fr>"}
@@ -57,7 +57,7 @@ REPOSOWNER=${REPOSOWNER:-"Niki Kovacs <info@microlinux.fr>"}
 REPOSOWNERGPG=${REPOSOWNERGPG:-""}
 
 # Under what URL is the repository accessible:
-DL_URL=${DL_URL:-"http://www.microlinux.fr/slackware/MLED-14.1-32bit/"}
+DL_URL=${DL_URL:-"http://www.microlinux.fr/testing/MLED-14.1-32bit/"}
 
 # The title of the generated RSS feed:
 RSS_TITLE=${RSS_TITLE:-"Microlinux Enterprise Desktop 14.1 32-bit"}
@@ -66,7 +66,7 @@ RSS_TITLE=${RSS_TITLE:-"Microlinux Enterprise Desktop 14.1 32-bit"}
 RSS_ICON=${RSS_ICON:-"http://www.microlinux.fr/images/habillage/pingouin_ayo_small.png"}
 
 # The URL linked to when clicking on the logo:
-RSS_LINK=${RSS_LINK:-"http://www.microlinux.fr/slackware/MLED-14.1-32bit"}
+RSS_LINK=${RSS_LINK:-"http://www.microlinux.fr/testing/MLED-14.1-32bit/"}
 
 # URL to the full changelog.txt:
 RSS_CLURL=${RSS_CLURL:-"http://www.microlinux.fr/slackware/MLED-14.1-32bit/ChangeLog.txt"}
@@ -79,7 +79,7 @@ RSS_FEEDMAX=${RSS_FEEDMAX:-15}
 
 # The RSS generator must use a unique feed identifier.
 # Generate one for your feed by using the string returned by "uuidgen -t":
-RSS_UUID=${RSS_UUID:-"d0959e48-715c-11e3-a46f-001fd0aeecfe"}
+RSS_UUID=${RSS_UUID:-"829132a6-2c15-11e4-a716-001ec942847b"}
 
 # Either use gpg or gpg2:
 GPGBIN=${GPGBIN:-"/usr/bin/gpg"}
@@ -105,10 +105,18 @@ FOLLOW_SYMLINKS=${FOLLOW_SYMLINKS:-1}
 # Separate FILELIST.TXT, MANIFEST etc.. files will be created for all of them:
 REPO_SUBDIRS=${REPO_SUBDIRS:-""}
 
+# If you want to exclude certain directories or files from being included
+# in the repository metadata, define them here (space-separated).
+# Example: REPO_EXCLUDES="RCS logs .genreprc"
+REPO_EXCLUDES=${REPO_EXCLUDES:-""}
+
 # ---------------------------------------------------------------------------
 
 # By default, no debug messages
 DEBUG=0
+
+# Timestamp to be used all around the script:
+UPDATEDATE="$(LC_ALL=C date -u)"
 
 # A value of "yes" means that .meta .md5 and/or .asc files are
 # always (re)generated.
@@ -116,6 +124,9 @@ DEBUG=0
 FORCEMD5="no"    # .md5 files
 FORCEPKG="no"    # .meta files
 FORCEASC="no"    # .asc files
+TOUCHUP="no"     # rsync has issues with files whose content has changed, but
+                 # both size and timestamp remain unchanged (needs expensive
+                 # '--checksum' to detect these file changes)
 # We may have a need to only update the ChangeLog files:
 RSSONLY="no"     # ChangeLog .rss and .txt
 # For a sub-repository we do not have a ChangeLog:
@@ -124,6 +135,10 @@ CHANGELOG="yes"
 # Variable used to limit the search for packages which lack .md5/.asc file,
 # to those packages changed less than NOTOLDER days ago.
 NOTOLDER=""
+
+# Variable used to import the content of a text file as the new ChangeLog.txt
+# entry. If empty, you will be asked to type a new entry yourself.
+LOGINPUT=""
 
 #
 # --- no need to change anything below this line ----------------------------
@@ -141,22 +156,35 @@ PIDFILE=/var/tmp/$(basename $0 .sh).pid
 # Make sure the PID file is removed when we kill the process
 trap 'rm -f $PIDFILE; exit 1' TERM INT
 
+# Determine the prune parameters for the 'find' commands:
+PRUNES=""
+if [ -n "$REPO_EXCLUDES" ]; then
+  echo "--- Excluding: $REPO_EXCLUDES"
+  for substr in $REPO_EXCLUDES ; do
+    PRUNES="${PRUNES} -o -name ${substr} -prune "
+  done
+fi
+
 # Command line parameter processing:
-while getopts ":ahmn:prsv" Option
+while getopts ":ahl:mn:prstv" Option
 do
   case $Option in
     h ) echo "Parameters are:"
         echo "  -h        : This help text"
         echo "  -a        : Force generation of .asc gpg signature files"
+        echo "  -l <log>  : Use file <log> as input for ChangeLog.txt"
         echo "  -m        : Force generation of .md5 files"
         echo "  -n <days> : Only look for packages not older than <days> days"
         echo "  -p        : Force generation of package .meta files"
         echo "  -r        : Update ChangeLog TXT and RSS files only"
         echo "  -s        : Sub-repository: does not have ChangeLog TXT or RSS"
+        echo "  -t        : Timestamp of metafiles equal to package timestamp"
         echo "  -v        : Verbose messages about packages found"
         exit
         ;;
     a ) FORCEASC="yes"
+        ;;
+    l ) LOGINPUT="${OPTARG}"
         ;;
     m ) FORCEMD5="yes"
         ;;
@@ -167,6 +195,8 @@ do
     r ) RSSONLY="yes"
         ;;
     s ) CHANGELOG="no"
+        ;;
+    t ) TOUCHUP="yes"
         ;;
     v ) DEBUG=1
         ;;
@@ -247,7 +277,7 @@ function addpkg {
     # This is a courtesy service:
     echo "--> Generating .txt file for $NAME"
     $COMPEXE -cd $PKG | tar xOf - install/slack-desc | sed -n '/^#/d;/:/p' > $LOCATION/$TXTFILE
-    touch -r $PKG $LOCATION/$TXTFILE
+    [ "$TOUCHUP" == "yes"  ] && touch -r $PKG $LOCATION/$TXTFILE || touch -d "$UPDATEDATE" $LOCATION/$TXTFILE
   fi
 
   if [ "$FORCEPKG" == "yes" -o ! -f $LOCATION/$METAFILE ]; then
@@ -292,8 +322,8 @@ function addpkg {
       $COMPEXE -cd $PKG | tar xOf - install/slack-desc | sed -n '/^#/d;/:/p' >> $LOCATION/$METAFILE
     fi
     echo "" >> $LOCATION/$METAFILE
+  [ "$TOUCHUP" == "yes"  ] && touch -r $PKG $LOCATION/$METAFILE || touch -d "$UPDATEDATE" $LOCATION/$METAFILE
   fi
-  touch -r $PKG $LOCATION/$METAFILE
 
   # Package location may have changed:
   sed -e "/^PACKAGE LOCATION: /s,^.*$,PACKAGE LOCATION:  $LOCATION," $LOCATION/$METAFILE >> $PACKAGESFILE
@@ -341,10 +371,13 @@ EOF
     $COMPEXE -cd $PKG | tar -tvvf - >> $LOCATION/$LSTFILE
     echo "" >> $LOCATION/$LSTFILE
     echo "" >> $LOCATION/$LSTFILE
-    touch -r $PKG $LOCATION/$LSTFILE
+    [ "$TOUCHUP" == "yes"  ] && touch -r $PKG $LOCATION/$LSTFILE || touch -d "$UPDATEDATE" $LOCATION/$LSTFILE
   fi
 
-  cat $LOCATION/$LSTFILE >> $MANIFESTFILE
+  # Compensate for partial pathnames in .lst files found in sub-repos:
+  cat $LOCATION/$LSTFILE \
+    | sed -e "s%^||   Package:  .*$%||   Package:  $PKG%" \
+    >> $MANIFESTFILE
 } # end of function 'addman'
 
 
@@ -371,7 +404,7 @@ function genmd5 {
     (cd $LOCATION
      md5sum $NAME > $MD5FILE
     )
-    touch -r $PKG $LOCATION/$MD5FILE
+    [ "$TOUCHUP" == "yes"  ] && touch -r $PKG $LOCATION/$MD5FILE || touch -d "$UPDATEDATE" $LOCATION/$MD5FILE
   fi
 
 } # end of function 'genmd5'
@@ -400,7 +433,7 @@ function genasc {
      rm -f $ASCFILE
      gpg_sign $NAME
     )
-    touch -r $PKG $LOCATION/$ASCFILE
+    [ "$TOUCHUP" == "yes"  ] && touch -r $PKG $LOCATION/$ASCFILE || touch -d "$UPDATEDATE" $LOCATION/$ASCFILE
   fi
 
 } # end of function 'genasc'
@@ -423,9 +456,9 @@ function gen_filelist {
 
   ( cd ${DIR}
     cat <<EOT > ${LISTFILE}
-$(LC_ALL=C date -u)
+$UPDATEDATE
 
-Here is the file list for ${DL_URL} ,
+Here is the file list for ${DL_URL:-this directory} ,
 maintained by ${REPOSOWNER} .
 If you are using a mirror site and find missing or extra files
 in the subdirectories, please have the archive administrator
@@ -433,9 +466,9 @@ refresh the mirror.
 
 EOT
     if [ $FOLLOW_SYMLINKS -eq 1 ]; then
-      find -L . | sort | xargs ls -nld >> ${LISTFILE}
+      find -L . -print $PRUNES | sort | xargs ls -nld --time-style=long-iso >> ${LISTFILE}
     else
-      find . | sort | xargs ls -nld >> ${LISTFILE}
+      find . -print $PRUNES | sort | xargs ls -nld --time-style=long-iso >> ${LISTFILE}
     fi
   )
 } # end of function 'gen_filelist'
@@ -464,8 +497,12 @@ function upd_changelog {
   local LOGTEXT=""
   local i=0
 
-  # Ask for a new ChangeLog entry
-  read -er -p "Enter ChangeLog.txt description: "
+  if [ "$LOGINPUT" == "" ]; then
+    # Ask for a new ChangeLog entry
+    read -er -p "Enter ChangeLog.txt description: "
+  else
+    REPLY=$(cat "$LOGINPUT" 2>/dev/null)
+  fi
 
   if [ "$REPLY" == "" ]; then
     echo "No input, so I won't update your $CHANGELOG"
@@ -496,7 +533,7 @@ function upd_changelog {
 
   cat <<-EOT > ${DIR}/.${CHANGELOG}
 	+--------------------------+
-	$(LC_ALL=C date -u)
+	$UPDATEDATE
 	EOT
 
   for IND in $(seq 0 $i); do
@@ -516,9 +553,9 @@ function gpg_sign {
   # Create a gpg signature for a file. Use either gpg or gpg2 and optionally
   # let gpg-agent provide the passphrase.
   if [ $USE_GPGAGENT -eq 1 ]; then
-    $GPGBIN --use-agent -bas --batch --quiet $1
+    $GPGBIN --use-agent -bas -u "$REPOSOWNERGPG" --batch --quiet $1
   else
-    echo $TRASK | $GPGBIN -bas --passphrase-fd 0 --batch --quiet $1
+    echo $TRASK | $GPGBIN -bas -u "$REPOSOWNERGPG" --passphrase-fd 0 --batch --quiet $1
   fi
   return $?
 }
@@ -653,16 +690,15 @@ run_repo() {
 
   cd $RDIR
 
-  # Create temporary MANIFEST PACKAGES.TXT and CHECKSUMS.md5 files:
+  # Create temporary MANIFEST and PACKAGES.TXT files:
   cat /dev/null > .MANIFEST
   cat /dev/null > .PACKAGES.TXT
-  cat /dev/null > .CHECKSUMS.md5
 
   # This tries to look for filenames with the Slackware package name format:
   if [ $FOLLOW_SYMLINKS -eq 1 ]; then
-    PKGS=$( find -L . -type f -name '*-*-*-*.t[blxg]z' -print | sort )
+    PKGS=$( find -L . -type f -name '*-*-*-*.t[blxg]z' -print $PRUNES | sort )
   else
-    PKGS=$( find . -type f -name '*-*-*-*.t[blxg]z' -print | sort )
+    PKGS=$( find . -type f -name '*-*-*-*.t[blxg]z' -print $PRUNES | sort )
   fi
   for pkg in $PKGS; do
     # Found a filename with matching format, is it really a slackpack?
@@ -698,9 +734,13 @@ run_repo() {
   done
 
   # Make the changes visible:
-  echo "PACKAGES.TXT;  $(LC_ALL=C date -u)" > PACKAGES.TXT
+  echo "PACKAGES.TXT;  $UPDATEDATE" > PACKAGES.TXT
   echo "" >> PACKAGES.TXT
-  cat .PACKAGES.TXT >> PACKAGES.TXT
+  if [ -n "$DL_URL" ]; then
+    cat .PACKAGES.TXT >> PACKAGES.TXT
+  else
+    cat .PACKAGES.TXT | grep -v "PACKAGE MIRROR: " >> PACKAGES.TXT
+  fi
   rm -f .PACKAGES.TXT
   cat .MANIFEST > MANIFEST
   rm -f .MANIFEST
@@ -711,6 +751,24 @@ run_repo() {
     gzip -9cf ChangeLog.txt > ChangeLog.txt.gz
   fi
 
+} # End run_repo()
+
+
+#
+# gen_checksums
+#
+gen_checksums() {
+  # Run through a repository tree, generating the checksum files.
+
+  # Change directory to the root of the repository, so all generated
+  # information is relative to here:
+  local RDIR=$1
+
+  cd $RDIR
+
+  # Create temporary CHECKSUMS.md5 file:
+  cat /dev/null > .CHECKSUMS.md5
+
   # Generate the overall CHECKSUMS.md5 for this (sub-)repo:
   cat << EOF > .CHECKSUMS.md5
 These are the MD5 message digests for the files in this directory.
@@ -719,7 +777,7 @@ the ones listed here.
 
 To test all these files, use this command:
 
-md5sum -c CHECKSUMS.md5 | less
+tail +13 CHECKSUMS.md5 | md5sum --check | less
 
 'md5sum' can be found in the GNU coreutils package on ftp.gnu.org in
 /pub/gnu, or at any GNU mirror site.
@@ -727,9 +785,9 @@ md5sum -c CHECKSUMS.md5 | less
 MD5 message digest                Filename
 EOF
   if [ $FOLLOW_SYMLINKS -eq 1 ]; then
-    find -L . -type f -print | grep -v CHECKSUMS | sort | xargs md5sum $1 2>/dev/null >> .CHECKSUMS.md5
+    find -L . -type f -print $PRUNES | grep -v CHECKSUMS | sort | xargs md5sum $1 2>/dev/null >> .CHECKSUMS.md5
   else
-    find . -type f -print | grep -v CHECKSUMS | sort | xargs md5sum $1 2>/dev/null >> .CHECKSUMS.md5
+    find . -type f -print $PRUNES | grep -v CHECKSUMS | sort | xargs md5sum $1 2>/dev/null >> .CHECKSUMS.md5
   fi
   cat .CHECKSUMS.md5 > CHECKSUMS.md5
   gzip -9cf CHECKSUMS.md5 > CHECKSUMS.md5.gz
@@ -742,7 +800,8 @@ EOF
     gpg_sign CHECKSUMS.md5.gz
   fi
 
-} # End run_repo()
+} # End gen_checksums()
+
 
 #
 # --- MAIN ------------------------------------------------------------------
@@ -766,7 +825,7 @@ echo ""
 #  you want to use for the repository owner, set the REPOSOWNERGPG variable.
 # If $REPOSOWNERGPG has an empty value we will use the value of $REPOSOWNER
 #  to search the GPG keyring.
-if [ "${REPOSOWNERGPG}" == "" ]; then
+if [ "x${REPOSOWNERGPG}" == "x" ]; then
   REPOSOWNERGPG="${REPOSOWNER}"
 fi
 
@@ -811,12 +870,25 @@ else
       echo "GPG test failed, incorrect GPG passphrase? Aborting the script."
       rm -f $TESTTMP
       exit 1
-    elif [ ! -r ${REPOSROOT}/GPG-KEY ]; then
-      echo "Generating a "GPG-KEY" file in '$REPOSROOT',"
-      echo "   containing the public key information for '$REPOSOWNERGPG'..."
-      $GPGBIN --list-keys "$REPOSOWNERGPG" > ${REPOSROOT}/GPG-KEY
-      $GPGBIN -a --export "$REPOSOWNERGPG" >> ${REPOSROOT}/GPG-KEY
-      chmod 444 ${REPOSROOT}/GPG-KEY
+    else
+      if [ ! -r ${REPOSROOT}/GPG-KEY ]; then
+        echo "Generating a "GPG-KEY" file in '$REPOSROOT',"
+        echo "  containing the public key information for '$REPOSOWNERGPG'..."
+        $GPGBIN --list-keys "$REPOSOWNERGPG" > ${REPOSROOT}/GPG-KEY
+        $GPGBIN -a --export "$REPOSOWNERGPG" >> ${REPOSROOT}/GPG-KEY
+        chmod 444 ${REPOSROOT}/GPG-KEY
+      fi
+      if [ -n "$REPO_SUBDIRS" ]; then
+        for SUBDIR in $REPO_SUBDIRS ; do
+          if [ ! -r ${REPOSROOT}/${SUBDIR}/GPG-KEY ]; then
+            echo "Generating a "GPG-KEY" file in '$REPOSROOT/$SUBDIR',"
+            echo "  containing the public key information for '$REPOSOWNERGPG'."
+            $GPGBIN --list-keys "$REPOSOWNERGPG" > $REPOSROOT/$SUBDIR/GPG-KEY
+            $GPGBIN -a --export "$REPOSOWNERGPG" >> $REPOSROOT/$SUBDIR/GPG-KEY
+            chmod 444 ${REPOSROOT}/${SUBDIR}/GPG-KEY
+          fi
+        done
+      fi
     fi
   fi
 
@@ -826,14 +898,16 @@ else
     for SUBDIR in $REPO_SUBDIRS ; do
       run_repo $REPOSROOT/$SUBDIR
       gen_filelist ${REPOSROOT}/$SUBDIR
+      gen_checksums ${REPOSROOT}/$SUBDIR
     done
   fi
   run_repo $REPOSROOT
 
 fi # end !RSSONLY
 
-# Finally, generate the FILELIST.TXT for the whole repo:
+# Finally, generate the FILELIST.TXT and CHECKSUMS.md5* for the whole repo:
 gen_filelist ${REPOSROOT}
+gen_checksums ${REPOSROOT}
 
 # Clean up:
 TRASK=""

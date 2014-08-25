@@ -1,0 +1,473 @@
+Thu May  8 10:02:58 CEST 2014
+profile/user-settings-mate-1.0-noarch-2_microlinux.txz: Rebuilt.
+  Fixed default desktop configuration.
++---------------------------+
+Sun May  4 07:27:15 CEST 2014
+	MLED is moving to MATE as main desktop environment, for a host of compelling
+	reasons. The MATE desktop environment has proven to be as rock-solid as Xfce.
+	The Caja file manager offers more functionality than Thunar while being
+	visually more appealing. Basic desktop applications like a simple text
+	editor, a document viewer or an archive manager are already shipping with the
+	base desktop. Multimedia hotkey support is perfect, as well as a number of
+	tiny details. With all this, MATE stays light on system resources and runs
+	perfectly even on very old hardware. We've been testing this for some time
+	now, and our choice has been motivated by merely technical and pragmatic
+	arguments. A warm *thank you* goes to Willy Sudiarto and Chess Griffin for
+	providing this excellent desktop environment for Slackware.  Check out
+	README_MATE.txt for a detailed explanation on how to manage today's huge
+	batch of updates and move MLED to MATE.
+profile/user-settings-console-1.0-noarch-2_microlinux.txz: Rebuilt.
+ap/sbopkg-0.37.0-noarch-2_microlinux.txz: Rebuilt.
+ap/recode-3.6-i486-2_microlinux.txz: Rebuilt.
+ap/unrar-5.0.13-i486-2_microlinux.txz: Rebuilt.
+ap/p7zip-9.20.1-i486-2_microlinux.txz: Rebuilt.
+ap/cdlabelgen-4.3.0-noarch-2_microlinux.txz: Rebuilt.
+n/fping-2.4b2_to-i486-1_microlinux.txz: Removed.
+d/acpica-20131115-i486-1_microlinux.txz: Upgraded.
+d/jdk-7u55-i586-1_microlinux.txz: Upgraded.
+d/lua-5.1.5-i486-2_microlinux.txz: Rebuilt.
+d/numpy-1.8.0-i486-2_microlinux.txz: Rebuilt.
+d/orc-0.4.19-i486-1_microlinux.txz: Upgraded.
+d/perl-cairo-1.104-i486-1_microlinux.txz: Removed.
+d/perl-event-1.21-i486-2_microlinux.txz: Removed.
+d/perl-extutils-depends-0.306-i486-1_microlinux.txz: Removed.
+d/perl-extutils-pkgconfig-1.15-i486-1_microlinux.txz: Removed.
+d/perl-glib-1.302-i486-1_microlinux.txz: Removed.
+d/perl-gtk2-1.248-i486-1_microlinux.txz: Removed.
+d/perl-libintl-1.23-i486-1_microlinux.txz: Removed.
+d/perl-pango-1.224-i486-1_microlinux.txz: Removed.
+d/scons-2.3.1-i486-1_microlinux.txz: Upgraded.
+gnome/libgnomecanvas-2.30.3-i486-2_microlinux.txz: Rebuilt.
+gnome/totem-pl-parser-3.4.5-i486-2_microlinux.txz: Rebuilt.
+gnome/goocanvas-0.15-i486-2_microlinux.txz: Rebuilt.
+gnome/pygoocanvas-0.14.1-i486-2_microlinux.txz: Rebuilt.
+gnome/libgnomecups-0.2.3-i486-1_microlinux.txz: Removed.
+gnome/libgnomeprint-2.18.8-i486-1_microlinux.txz: Removed.
+gnome/libgnomeprintui-2.18.6-i486-1_microlinux.txz: Removed.
+gnome/libsigc++-2.2.11-i486-1_microlinux.txz: Removed.
+gnome/glibmm-2.36.2-i486-1_microlinux.txz: Removed.
+gnome/cairomm-1.10.0-i486-1_microlinux.txz: Removed.
+gnome/pangomm-2.34.0-i486-1_microlinux.txz: Removed.
+gnome/atkmm-2.22.7-i486-1_microlinux.txz: Removed.
+gnome/mm-common-0.9.6-noarch-1_microlinux.txz: Removed.
+gnome/gtkmm-2.24.4-i486-1_microlinux.txz: Removed.
+gnome/libunique-1.1.6-i486-1_microlinux.txz: Removed.
+  All provided by MSB.
+l/cryptopp-5.6.2-i486-1_microlinux.txz: Upgraded.
+l/enca-1.15-i486-2_microlinux.txz: Rebuilt.
+l/jbig2dec-0.11-i486-2_microlinux.txz: Rebuilt.
+l/libburn-1.3.6-i486-1_microlinux.txz: Upgraded.
+l/libisofs-1.3.6-i486-1_microlinux.txz: Upgraded.
+l/libisoburn-1.3.6-i486-1_microlinux.txz: Upgraded.
+l/gsl-1.16-i486-2_microlinux.txz: Rebuilt.
+l/BeautifulSoup-3.2.1-i486-2_microlinux.txz: Rebuilt.
+l/lxml-3.3.4-i486-1_microlinux.txz: Upgraded.
+l/podofo-0.9.2-i486-2_microlinux.txz: Rebuilt.
+l/pysetuptools-3.4.4-i486-1_microlinux.txz: Upgraded.
+l/protobuf-2.5.0-i486-2_microlinux.txz: Rebuilt.
+l/pyxdg-0.25-i486-2_microlinux.txz: Rebuilt.
+l/imlib2-1.4.6-i486-1_microlinux.txz: Upgraded.
+l/tolua++-1.0.93-i486-2_microlinux.txz: Rebuilt.
+l/wxGTK-2.8.12-i486-2_microlinux.txz: Rebuilt.
+multimedia/a52dec-0.7.4-i486-2_microlinux.txz: Rebuilt.
+multimedia/cddb-py-1.4-i486-3_microlinux.txz: Rebuilt.
+multimedia/celt-0.11.3-i486-2_microlinux.txz: Rebuilt.
+multimedia/dirac-1.0.2-i486-2_microlinux.txz: Rebuilt.
+multimedia/faad2-2.7-i486-2_microlinux.txz: Rebuilt.
+multimedia/flashplayer-plugin-11.2.202.346-i386-1_microlinux.txz: Upgraded.
+multimedia/frei0r-1.4-i486-2_microlinux.txz: Rebuilt.
+multimedia/gsm-1.0.13-i486-2_microlinux.txz: Rebuilt.
+multimedia/gst-ffmpeg-0.10.13-i486-2_microlinux.txz: Rebuilt.
+multimedia/id3lib-3.8.3-i486-4_microlinux.txz: Rebuilt.
+multimedia/ladspa_sdk-1.13-i486-5_microlinux.txz: Rebuilt.
+multimedia/lame-3.99.5-i486-2_microlinux.txz: Rebuilt.
+multimedia/libavc1394-0.5.4-i486-2_microlinux.txz: Rebuilt.
+multimedia/libaacs-0.7.0-i486-1_microlinux.txz: Upgraded.
+multimedia/libbluray-0.5.0-i486-1_microlinux.txz: Upgraded.
+multimedia/libcdaudio-0.99.12p2-i486-3_microlinux.txz: Rebuilt.
+multimedia/libcuefile-r475-i486-2_microlinux.txz: Rebuilt.
+multimedia/libdc1394-2.2.1-i486-2_microlinux.txz: Rebuilt.
+multimedia/libdca-0.0.5-i486-2_microlinux.txz: Rebuilt.
+multimedia/libdv-1.0.0-i486-2_microlinux.txz: Rebuilt.
+multimedia/libdvdcss-1.2.13-i486-3_microlinux.txz: Rebuilt.
+multimedia/libdvdnav-4.2.0-i486-3_microlinux.txz: Rebuilt.
+multimedia/libiec61883-1.2.0-i486-2_microlinux.txz: Rebuilt.
+multimedia/libilbc-20131002-i486-2_microlinux.txz: Rebuilt.
+multimedia/libkate-0.4.1-i486-3_microlinux.txz: Rebuilt.
+multimedia/libmms-0.6.2-i486-2_microlinux.txz: Rebuilt.
+multimedia/libmodplug-0.8.8.5-i486-1_microlinux.txz: Upgraded.
+multimedia/libmp4v2-2.0.0-i486-2_microlinux.txz: Rebuilt.
+multimedia/libmusicbrainz-2.1.5-i486-2_microlinux.txz: Rebuilt.
+multimedia/libmusicbrainz3-3.0.3-i486-2_microlinux.txz: Rebuilt.
+multimedia/libreplaygain-r475-i486-2_microlinux.txz: Rebuilt.
+multimedia/libvpx-1.2.0-i486-2_microlinux.txz: Rebuilt.
+multimedia/live555-2011.12.23-i486-3_microlinux.txz: Rebuilt.
+multimedia/lsdvd-0.16-i486-2_microlinux.txz: Rebuilt.
+multimedia/mjpegtools-2.1.0-i486-2_microlinux.txz: Rebuilt.
+multimedia/mplayer-codecs-20110131-i486-2_microlinux.txz: Rebuilt.
+multimedia/ogmtools-1.5-i486-2_microlinux.txz: Rebuilt.
+multimedia/OpenAL-1.15.1-i486-2_microlinux.txz: Rebuilt.
+multimedia/opencore-amr-0.1.3-i486-2_microlinux.txz: Rebuilt.
+multimedia/openjpeg-1.5.1-i486-2_microlinux.txz: Rebuilt.
+multimedia/opus-1.1-i486-1_microlinux.txz: Upgraded.
+multimedia/rtmpdump-20131007_a9f353c-i486-2_microlinux.txz: Rebuilt.
+multimedia/soundtouch-1.7.1-i486-2_microlinux.txz: Rebuilt.
+multimedia/speex-1.2rc1-i486-2_microlinux.txz: Rebuilt.
+multimedia/subtitleripper-0.3_4-i486-1_microlinux.txz: Removed.
+multimedia/twolame-0.3.13-i486-2_microlinux.txz: Rebuilt.
+multimedia/vcdimager-0.7.24-i486-2_microlinux.txz: Rebuilt.
+multimedia/x264-20131101-i486-2_microlinux.txz: Rebuilt.
+multimedia/xvidcore-1.3.2-i486-2_microlinux.txz: Rebuilt.
+multimedia/xvid4conf-1.12-i486-1_microlinux.txz: Removed.
+multimedia/faac-1.28-i486-3_microlinux.txz: Rebuilt.
+multimedia/libass-0.10.2-i486-2_microlinux.txz: Rebuilt.
+multimedia/libshout-2.3.1-i486-3_microlinux.txz: Rebuilt.
+multimedia/schroedinger-1.0.11-i486-2_microlinux.txz: Rebuilt.
+multimedia/ffmpeg-2.1-i686_custom-2_microlinux.txz: Rebuilt.
+multimedia/libquicktime-1.2.4-i486-2_microlinux.txz: Rebuilt.
+multimedia/mlt-0.9.0-i486-2_microlinux.txz: Rebuilt.
+multimedia/musepack-tools-r475-i486-2_microlinux.txz: Rebuilt.
+multimedia/gst-plugins-bad-0.10.23-i486-2_microlinux.txz: Rebuilt.
+multimedia/gst-plugins-ugly-0.10.19-i486-2_microlinux.txz: Rebuilt.
+multimedia/gst-python-0.10.22-i486-1_microlinux.txz: Added.
+multimedia/libmpeg2-0.5.1-i486-2_microlinux.txz: Rebuilt.
+multimedia/transcode-1.1.7-i486-2_microlinux.txz: Rebuilt.
+multimedia/gstreamer1-1.2.2-i486-2_microlinux.txz: Rebuilt.
+multimedia/gst1-plugins-base-1.2.2-i486-2_microlinux.txz: Rebuilt.
+multimedia/gst1-plugins-good-1.2.2-i486-2_microlinux.txz: Rebuilt.
+multimedia/gst1-plugins-bad-1.2.2-i486-2_microlinux.txz: Rebuilt.
+multimedia/gst1-plugins-ugly-1.2.2-i486-2_microlinux.txz: Rebuilt.
+multimedia/gst1-libav-1.2.2-i486-2_microlinux.txz: Rebuilt.
+multimedia/mutagen-1.22-i486-1_microlinux.txz: Added.
+x/ccsm-0.8.4-i486-1_microlinux.txz: Removed.
+x/compiz-bcop-0.8.8-i486-1_microlinux.txz: Removed.
+x/compizconfig-python-0.8.4-i486-1_microlinux.txz: Removed.
+x/compiz-plugins-extra-0.8.8-i486-1_microlinux.txz: Removed.
+x/compiz-plugins-main-0.8.8-i486-1_microlinux.txz: Removed.
+x/emerald-0.8.8-i486-1_microlinux.txz: Removed.
+x/emerald-themes-0.6.0-i486-1_microlinux.txz: Removed.
+x/fusion-icon-20080213-i486-1_microlinux.txz: Removed.
+x/libcompizconfig-0.8.8-i486-1_microlinux.txz: Removed.
+  Compiz doesn't play well with MATE.
+xfce/aero-1.0-noarch-1_microlinux.txz: Removed.
+xfce/clearlooks-phenix-theme-20131129-noarch-1_microlinux.txz: Removed.
+xfce/faenza-icon-theme-1.3-noarch-1_microlinux.txz: Removed.
+xfce/gtk-engines-2.20.2-i486-1_microlinux.txz: Removed.
+  Provided by MSB.
+xfce/microlinux-wallpapers-1.0-noarch-3_microlinux.txz: Removed.
+xfce/slack-wallpapers-0.212-noarch-3_microlinux.txz: Removed.
+xfce/thunar-archive-plugin-0.3.0-i486-1_microlinux.txz: Removed.
+xfce/xarchiver-0.5.2-i486-1_microlinux.txz: Removed.
+xfce/xfce4-xkb-plugin-0.5.6-i486-1_microlinux.txz: Removed.
+xfce/xfwm4-theme-axe-1.0-noarch-1_microlinux.txz: Removed.
+x/google-droid-fonts-20100409-noarch-2_microlinux.txz: Rebuilt.
+x/webcore-fonts-3.0-noarch-2_microlinux.txz: Rebuilt.
+x/eurostile-fonts-1.0-noarch-2_microlinux.txz: Rebuilt.
+mate/gnome-colors-5.5.1-noarch-2_microlinux.txz: Added.
+mate/aero-1.0-noarch-1_microlinux.txz: Added.
+mate/clearlooks-phenix-theme-20131228-noarch-1_microlinux.txz: Added.
+mate/microlinux-wallpapers-1.0-noarch-3_microlinux.txz: Added.
+mate/slack-wallpapers-0.284-noarch-1_microlinux.txz: Added.
+gnome/gdm-2.20.11-i486-2_microlinux.txz: Rebuilt.
+mate/elementary-icon-theme-3.1-noarch-1_microlinux.txz: Added.
+mate/elementary-extras-1.0-noarch-1_microlinux.txz: Added.
+xap/openoffice-4.0.1_en_US-i586-1_microlinux.txz: Removed.
+xap/libreoffice-4.1.6-i586-1_microlinux.txz: Added.
+locale/mozilla-firefox-l10n-24.5.0-i486-1_microlinux.txz: Upgraded.
+locale/mozilla-thunderbird-l10n-24.5.0-i486-1_microlinux.txz: Upgraded.
+locale/openoffice-langpack-de-4.0.1-i486-1_microlinux.txz: Removed.
+locale/openoffice-langpack-fr-4.0.1-i486-1_microlinux.txz: Removed.
+locale/openoffice-langpack-hu-4.0.1-i486-1_microlinux.txz: Removed.
+locale/libreoffice-langpack-de-4.1.6-i586-1_microlinux.txz: Added.
+locale/libreoffice-langpack-fr-4.1.6-i586-1_microlinux.txz: Added.
+xap/MPlayer-1.1.1-i486-2_microlinux.txz: Rebuilt.
+xap/aMule-2.3.1-i486-3_microlinux.txz: Rebuilt.
+xap/asunder-2.4-i486-1_microlinux.txz: Upgraded.
+xap/audacious-3.4.2-i486-1_microlinux.txz: Removed.
+xap/audacious-plugins-3.4.2-i486-1_microlinux.txz: Removed.
+xap/audacity-2.0.5-i486-2_microlinux.txz: Rebuilt.
+gnome/brasero-3.11.3-i486-2_microlinux.txz: Rebuilt.
+xap/catfish-0.3.2-noarch-1_microlinux.txz: Removed.
+xap/conky-1.9.0-i486-2_microlinux.txz: Rebuilt.
+xap/dvdrip-0.98.11-i486-1_microlinux.txz: Removed.
+xap/easytag-2.1.10-i486-1_microlinux.txz: Upgraded.
+gnome/evince-3.8.3-i486-1_microlinux.txz: Removed.
+xap/filezilla-3.7.3-i486-3_microlinux.txz: Rebuilt.
+xap/galculator-2.1.2-i486-1_microlinux.txz: Removed.
+xap/gcolor2-0.4-i486-2_microlinux.txz: Rebuilt.
+xap/geany-1.23.1-i486-2_microlinux.txz: Rebuilt.
+xap/geany-plugins-1.23-i486-2_microlinux.txz: Rebuilt.
+gnome/gnote-0.7.6-i486-2_microlinux.txz: Rebuilt.
+gnome/gthumb-3.2.7-i486-1_microlinux.txz: Upgraded.
+xap/gtkcdlabel-1.15-noarch-2_microlinux.txz: Rebuilt.
+xap/inkscape-0.48.4-i486-5_microlinux.txz: Rebuilt.
+xap/leafpad-0.8.18.1-i486-1_microlinux.txz: Removed.
+xap/mupdf-1.2-i486-2_microlinux.txz: Rebuilt.
+xap/openshot-1.4.3-i486-2_microlinux.txz: Rebuilt.
+xap/poedit-1.4.6.1-i486-3_microlinux.txz: Rebuilt.
+xap/scribus-1.4.3-i486-2_microlinux.txz: Rebuilt.
+xap/simple-scan-2.32.0.2-i486-1_microlinux.txz: Removed.
+xap/smplayer-14.3.0-i486-1_microlinux.txz: Upgraded.
+xap/transmission-2.60-i486-2_microlinux.txz: Rebuilt.
+xap/virtualbox-4.2.24-i486-1_microlinux.txz: Upgraded.
+xap/virtualbox-extension-pack-4.2.24-i486-1_microlinux.txz: Upgraded.
+xap/virtualbox-kernel-4.2.24_3.10.17_smp-i486-1_microlinux.txz: Upgraded.
+xap/exaile-3.3.2-i486-1_microlinux.txz: Added.
+n/freerdp-20131115_ea18d2b-i486-2_microlinux.txz: Rebuilt.
+xap/remmina-20131008_26b814a-i486-2_microlinux.txz: Rebuilt.
+xap/winff-1.5.3-i486-1_microlinux.txz: Upgraded.
+profile/user-settings-xfce-1.0-noarch-1_microlinux.txz: Removed.
+profile/user-settings-mate-1.0-noarch-1_microlinux.txz: Added.
++--------------------------+
+Sat Mar 29 12:11:38 CET 2014
+multimedia/flashplayer-plugin-11.2.202.341-i386-1_microlinux.txz: Upgraded.
+d/jdk-7u51-i586-1_microlinux.txz: Upgraded.
+locale/mozilla-firefox-l10n-24.4.0-i486-1_microlinux.txz: Upgraded.
+locale/mozilla-thunderbird-l10n-24.3.0-i486-1_microlinux.txz: Upgraded.
++--------------------------+
+Thu Mar  6 06:58:31 CET 2014
+n/freerdp-20131115_ea18d2b-i486-1_microlinux.txz: Added.
+xap/remmina-20131008_26b814a-i486-_microlinux.txz: Added.
++--------------------------+
+Mon Feb 10 07:57:23 CET 2014
+locale/mozilla-firefox-l10n-24.3.0-i486-1_microlinux.txz: Upgraded.
+locale/mozilla-thunderbird-l10n-24.3.0-i486-1_microlinux.txz: Upgraded.
+multimedia/gstreamer1-1.2.2-i486-1_microlinux.txz: Added.
+multimedia/gst1-plugins-base-1.2.2-i486-1_microlinux.tgz: Added.
+multimedia/gst1-plugins-good-1.2.2-i486-1_microlinux.txz: Added.
+multimedia/gst1-plugins-bad-1.2.2-i486-1_microlinux.txz: Added.
+multimedia/gst1-plugins-ugly-1.2.2-i486-1_microlinux.txz: Added.
+multimedia/gst1-libav-1.2.2-i486-1_microlinux.txz: Added.
+	This batch of updated gstreamer-1.x packages are installed alongside the
+	stock gstreamer and gst-plugins-* packages included with Slackware.
+gnome/brasero-3.11.3-i486-1_microlinux.txz: Upgraded.
++--------------------------+
+Tue Jan 21 10:18:04 CET 2014
+xap/winff-1.5.2-i486-1_microlinux.txz: Added.
+	WinFF doesn't have any particular runtime dependencies except ffmpeg, but
+	it's written in Free Pascal, so you'll need a Free Pascal Compiler on your
+	machine. Make sure to install packages fpc, fpc-source and lazarus before
+	launching the build. They're all available on SlackBuilds.org.
+xap/geany-1.23.1-i486-1_microlinux.txz: Added.
+xap/geany-plugins-1.23-i486-1_microlinux.txz: Added.
++--------------------------+
+Mon Jan 13 20:32:25 CET 2014
+locale/openoffice-langpack-hu-4.0.1-i486-1_microlinux.txz: Added.
+  Request from user aszabo on LQ.
++--------------------------+
+Tue Jan  7 12:31:15 CET 2014
+n/broadcom-sta-6.30.223.141_3.10.17_smp-i486-1_microlinux.txz: Added.
++--------------------------+
+Thu Jan  2 15:32:04 CET 2014
+l/podofo-0.9.2-i486-1_microlinux.txz: Added.
+xap/scribus-1.4.3-i486-1_microlinux.txz: Added.
++--------------------------+
+Wed Jan  1 11:36:03 CET 2014
+xap/transmission-2.60-i486-1_microlinux.txz: Downgraded.
+	Transmission's GTK3 client keeps forgetting its preferences. Until this gets
+	sorted out, we're reverting to 2.60, the last know version to build the GTK2
+	client (--with-gtk=2), which isn't affected by this bug. 
++--------------------------+
+Mon Dec 30 14:27:32 CET 2013
+Microlinux Enterprise Desktop 14.1 32-bit released! This is an LTS release,
+which means packages will be maintained for as long as the underlying Slackware
+system is officially supported.
+
+MLED 14.1 32-bit provides the following extra software:
+
+AP
+|-- cdlabelgen
+|-- p7zip
+|-- recode
+|-- sbopkg
+`-- unrar
+
+D
+|-- acpica
+|-- jdk
+|-- lua
+|-- numpy
+|-- orc
+|-- perl-cairo
+|-- perl-event
+|-- perl-extutils-depends
+|-- perl-extutils-pkgconfig
+|-- perl-glib
+|-- perl-gtk2
+|-- perl-libintl
+|-- perl-pango
+`-- scons
+
+GNOME
+|-- atkmm
+|-- brasero
+|-- cairomm
+|-- evince
+|-- gdm
+|-- glibmm
+|-- gnote
+|-- goocanvas
+|-- gthumb
+|-- gtkmm
+|-- libgnomecanvas
+|-- libgnomecups
+|-- libgnomeprint
+|-- libgnomeprintui
+|-- libsigc++
+|-- libunique
+|-- mm-common
+|-- pangomm
+|-- pygoocanvas
+`-- totem-pl-parser
+
+L
+|-- BeautifulSoup
+|-- cryptopp
+|-- enca
+|-- gsl
+|-- imlib2
+|-- jbig2dec
+|-- libburn
+|-- libisoburn
+|-- libisofs
+|-- lxml
+|-- protobuf
+|-- pysetuptools
+|-- pyxdg
+|-- tolua++
+`-- wxGTK
+
+LOCALE
+|-- mozilla-firefox-l10n
+|-- mozilla-thunderbird-l10n
+`-- openoffice-langpack
+
+MULTIMEDIA
+|-- a52dec
+|-- cddb-py
+|-- celt
+|-- dirac
+|-- faac
+|-- faad2
+|-- ffmpeg
+|-- flashplayer-plugin
+|-- frei0r
+|-- gsm
+|-- gst-ffmpeg
+|-- gst-plugins-bad
+|-- gst-plugins-ugly
+|-- id3lib
+|-- ladspa_sdk
+|-- lame
+|-- libaacs
+|-- libass
+|-- libavc1394
+|-- libbluray
+|-- libcdaudio
+|-- libcuefile
+|-- libdc1394
+|-- libdca
+|-- libdv
+|-- libdvdcss
+|-- libdvdnav
+|-- libiec61883
+|-- libilbc
+|-- libkate
+|-- libmms
+|-- libmodplug
+|-- libmp4v2
+|-- libmpeg2
+|-- libmusicbrainz
+|-- libmusicbrainz3
+|-- libquicktime
+|-- libreplaygain
+|-- libshout
+|-- libvpx
+|-- live555
+|-- lsdvd
+|-- mjpegtools
+|-- mlt
+|-- mplayer-codecs
+|-- musepack-tools
+|-- ogmtools
+|-- OpenAL
+|-- opencore-amr
+|-- openjpeg
+|-- opus
+|-- rtmpdump
+|-- schroedinger
+|-- soundtouch
+|-- speex
+|-- subtitleripper
+|-- transcode
+|-- twolame
+|-- vcdimager
+|-- x264
+|-- xvid4conf
+`-- xvidcore
+
+N
+`-- fping
+
+PROFILE
+|-- user-settings-console
+`-- user-settings-xfce
+
+X
+|-- ccsm
+|-- compiz-bcop
+|-- compizconfig-python
+|-- compiz-plugins-extra
+|-- compiz-plugins-main
+|-- emerald
+|-- emerald-themes
+|-- eurostile-fonts
+|-- fusion-icon
+|-- google-droid-fonts
+|-- libcompizconfig
+`-- webcore-fonts
+
+XAP
+|-- aMule
+|-- asunder
+|-- audacious
+|-- audacious-plugins
+|-- audacity
+|-- catfish
+|-- conky
+|-- dvdrip
+|-- easytag
+|-- filezilla
+|-- galculator
+|-- gcolor2
+|-- gtkcdlabel
+|-- inkscape
+|-- leafpad
+|-- MPlayer
+|-- mupdf
+|-- openoffice
+|-- openshot
+|-- poedit
+|-- simple-scan
+|-- smplayer
+|-- transmission
+|-- virtualbox
+|-- virtualbox-extension-pack
+`-- virtualbox-kernel
+
+XFCE
+|-- aero
+|-- clearlooks-phenix-theme
+|-- faenza-icon-theme
+|-- gtk-engines
+|-- microlinux-wallpapers
+|-- slack-wallpapers
+|-- thunar-archive-plugin
+|-- xarchiver
+|-- xfce4-xkb-plugin
+`-- xfwm4-theme-axe
+
+Have fun,
+
+Niki Kovacs <info@microlinux.fr>
++---------------------------+

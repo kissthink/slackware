@@ -3,32 +3,32 @@
 #######################
 profile/user-settings-console
 
-#######
-# KDE #
-#######
-kde/kde-baseapps
-kde/kde-base-artwork
-kde/kde-workspace
-kde/kde-wallpapers
-
 ###################
 # Basic utilities #
 ###################
 ap/sbopkg
 ap/recode
-ap/unrar
-ap/p7zip
-ap/cdlabelgen
+#ap/unrar
+#ap/p7zip
+#ap/cdlabelgen
+
+#######
+# KDE #
+#######
+#kde/kde-baseapps
+#kde/kde-base-artwork
+#kde/kde-workspace
+#kde/kde-wallpapers
 
 ###############
 # Development #
 ###############
-d/acpica
-d/jdk
-d/lua
-d/numpy
-d/orc
-d/scons
+#d/acpica
+#d/jdk
+#d/lua
+#d/numpy
+#d/orc
+#d/scons
 
 ######################
 # GNOME dependencies #
@@ -39,14 +39,14 @@ d/scons
 #####################
 # Various libraries #
 #####################
-l/cryptopp
-l/enca
-l/goocanvas
-l/pygoocanvas
-l/jbig2dec
-l/gsl
-l/BeautifulSoup
-l/lxml
+#l/cryptopp
+#l/enca
+#l/goocanvas
+#l/pygoocanvas
+#l/jbig2dec
+#l/gsl
+#l/BeautifulSoup
+#l/lxml
 #l/podofo --> source download problem
 #l/pysetuptools
 #l/protobuf
@@ -58,42 +58,42 @@ l/lxml
 ##############
 # Multimedia #
 ##############
-multimedia/a52dec
-multimedia/cddb-py
-multimedia/celt
-multimedia/dirac
-multimedia/faad2
-multimedia/flashplayer-plugin
-multimedia/frei0r
-multimedia/gsm
-multimedia/gst-ffmpeg
-multimedia/id3lib
-multimedia/ladspa_sdk
-multimedia/lame
-multimedia/libavc1394
-multimedia/libaacs
-multimedia/libbluray
-multimedia/libcdaudio
-multimedia/libcuefile
-multimedia/libdc1394
-multimedia/libdca
-multimedia/libdv
-multimedia/libdvdcss
-multimedia/libdvdnav
-multimedia/libiec61883
-multimedia/libilbc
-multimedia/libkate
-multimedia/libmms
-multimedia/libmodplug
-multimedia/libmp4v2
-multimedia/libmusicbrainz
-multimedia/libmusicbrainz3
-multimedia/libreplaygain
-multimedia/libvpx
-multimedia/live555
-multimedia/lsdvd
-multimedia/mjpegtools
-multimedia/mplayer-codecs
+#multimedia/a52dec
+#multimedia/cddb-py
+#multimedia/celt
+#multimedia/dirac
+#multimedia/faad2
+#multimedia/flashplayer-plugin
+#multimedia/frei0r
+#multimedia/gsm
+#multimedia/gst-ffmpeg
+#multimedia/id3lib
+#multimedia/ladspa_sdk
+#multimedia/lame
+#multimedia/libavc1394
+#multimedia/libaacs
+#multimedia/libbluray
+#multimedia/libcdaudio
+#multimedia/libcuefile
+#multimedia/libdc1394
+#multimedia/libdca
+#multimedia/libdv
+#multimedia/libdvdcss
+#multimedia/libdvdnav
+#multimedia/libiec61883
+#multimedia/libilbc
+#multimedia/libkate
+#multimedia/libmms
+#multimedia/libmodplug
+#multimedia/libmp4v2
+#multimedia/libmusicbrainz
+#multimedia/libmusicbrainz3
+#multimedia/libreplaygain
+#multimedia/libvpx
+#multimedia/live555
+#multimedia/lsdvd
+#multimedia/mjpegtools
+#multimedia/mplayer-codecs
 #multimedia/ogmtools
 #multimedia/OpenAL
 #multimedia/opencore-amr
@@ -153,7 +153,7 @@ multimedia/mplayer-codecs
 ################
 # Applications #
 ################
-xap/libreoffice
+#xap/libreoffice
 #xap/MPlayer
 #xap/aMule
 #xap/asunder
@@ -194,7 +194,7 @@ xap/libreoffice
 #########################
 # Desktop configuration #
 #########################
-profile/user-settings-kde
+#profile/user-settings-kde
 
 ##########################
 # Post-release additions #
