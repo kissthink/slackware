@@ -3,7 +3,7 @@ LFTP=$(which lftp)
 CWD=$(pwd)
 LOCALDIR="$CWD/.."
 REMOTESERVER="ftp.microlinux.fr"
-REMOTEDIR="/html/unixgarden"
+REMOTEDIR="/html/testing"
 echo
 if [[ -z $FTPUSER ]]; then
   read -p "FTP username: " FTPUSER
