@@ -1,4 +1,14 @@
 Mon Aug 25 11:58:52 CEST 2014
 profile/user-settings-console-1.0-noarch-2_microlinux.txz: Added.
 ap/sbopkg-0.37.0-noarch-2_microlinux.txz: Added.
+xap/libreoffice-4.2.6-i586-1_microlinux.txz: Added.
+  KDE's default user profile in MLED includes launchers for LibreOffice, so we
+	build it first.
+kde/kde-baseapps-4.10.5-i486-2_microlinux.txz: Rebuilt.
+  Since we're using Firefox, this version comes without Konqueror.
+kde/kde-base-artwork-4.10.5-i486-2_microlinux.txz: Rebuilt.
+kde/kde-workspace-4.10.5-i486-3_microlinux.txz: Rebuilt.
+kde/kde-wallpapers-4.10.5-i486-2_microlinux.txz: Rebuilt.
+profile/user-settings-kde-4.10.5-noarch-1_microlinux.txz: Added.
+  Default KDE configuration with a sober and "corporate" look.
 +---------------------------+

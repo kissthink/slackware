@@ -1,6 +1,13 @@
 # Build order
 profile/user-settings-console
 ap/sbopkg
+xap/libreoffice
+kde/kde-baseapps
+kde/kde-base-artwork
+kde/kde-workspace
+kde/kde-wallpapers
+profile/user-settings-kde
+
 #ap/recode
 
 ###################
@@ -13,10 +20,6 @@ ap/sbopkg
 #######
 # KDE #
 #######
-#kde/kde-baseapps
-#kde/kde-base-artwork
-#kde/kde-workspace
-#kde/kde-wallpapers
 
 ###############
 # Development #
@@ -151,7 +154,6 @@ ap/sbopkg
 ################
 # Applications #
 ################
-#xap/libreoffice
 #xap/MPlayer
 #xap/aMule
 #xap/asunder
@@ -192,7 +194,6 @@ ap/sbopkg
 #########################
 # Desktop configuration #
 #########################
-#profile/user-settings-kde
 
 ##########################
 # Post-release additions #
