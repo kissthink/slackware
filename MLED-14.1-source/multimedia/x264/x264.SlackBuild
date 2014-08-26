@@ -31,7 +31,7 @@ VERSION=20131101
 BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j5}
+NUMJOBS=${NUMJOBS:--j3}
 
 if [ -z "$ARCH" ]; then
  case "$( uname -m )" in
@@ -62,11 +62,7 @@ fi
 
 set -e
 
-if [ ! -r $PRGNAM-snapshot-$VERSION-2245-stable.tar.bz2 ] ; then
-   wget -c ftp://ftp.videolan.org/pub/videolan/$PRGNAM/snapshots/$PRGNAM-snapshot-$VERSION-2245-stable.tar.bz2
-fi
-
-md5sum -c $PRGNAM-snapshot-$VERSION-2245-stable.tar.bz2.md5
+wget -c ftp://ftp.videolan.org/pub/videolan/$PRGNAM/snapshots/$PRGNAM-snapshot-$VERSION-2245-stable.tar.bz2
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

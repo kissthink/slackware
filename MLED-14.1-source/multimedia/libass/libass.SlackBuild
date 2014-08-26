@@ -30,7 +30,7 @@ VERSION=${VERSION:-0.10.2}
 BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j5}
+NUMJOBS=${NUMJOBS:--j3}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -61,11 +61,7 @@ fi
 
 set -e
 
-if [ ! -r $PRGNAM-$VERSION.tar.xz ] ; then
-   wget -c http://libass.googlecode.com/files/$PRGNAM-$VERSION.tar.xz
-fi
-
-md5sum -c $PRGNAM-$VERSION.tar.xz.md5
+wget -c http://libass.googlecode.com/files/$PRGNAM-$VERSION.tar.xz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
