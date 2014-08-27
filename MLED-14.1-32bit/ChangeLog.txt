@@ -1,3 +1,21 @@
+Wed Aug 27 06:22:43 CEST 2014
+l/pysetuptools-3.4.4-i486-1_microlinux.txz: Added.
+l/protobuf-2.5.0-i486-2_microlinux.txz: Added.
+multimedia/libcdaudio-0.99.12p2-i486-3_microlinux.txz: Added.
+multimedia/dirac-1.0.2-i486-2_microlinux.txz: Added.
+multimedia/libdca-0.0.5-i486-2_microlinux.txz: Added.
+multimedia/libdvdnav-4.2.0-i486-3_microlinux.txz: Added.
+multimedia/faad2-2.7-i486-2_microlinux.txz: Added.
+multimedia/libkate-0.4.1-i486-3_microlinux.txz: Added.
+multimedia/libmms-0.6.2-i486-2_microlinux.txz: Added.
+multimedia/libmusicbrainz-2.1.5-i486-2_microlinux.txz: Added.
+multimedia/soundtouch-1.7.1-i486-2_microlinux.txz: Added.
+multimedia/gst-plugins-bad-0.10.23-i486-2_microlinux.txz: Added.
+multimedia/a52dec-0.7.4-i486-2_microlinux.txz: Added.
+multimedia/libmpeg2-0.5.1-i486-2_microlinux.txz: Added.
+multimedia/gst-plugins-ugly-0.10.19-i486-2_microlinux.txz: Added.
+xap/clementine-1.2.1-i486-1_microlinux.txz: Added.
++---------------------------+
 Tue Aug 26 09:39:53 CEST 2014
 ap/recode-3.6-i486-2_microlinux.txz: Added.
 ap/unrar-5.0.13-i486-2_microlinux.txz: Added.

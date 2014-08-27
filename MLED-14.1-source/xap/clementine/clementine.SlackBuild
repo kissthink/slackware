@@ -1,8 +1,8 @@
 #!/bin/sh
 
-# Slackware build script for soundtouch
+# Slackware build script for clementine
 
-# Copyright 2008-2012 Heinz Wiesinger, Amsterdam, The Netherlands
+# Copyright 2010  David Woodfall <dave@dawoodfall.net>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -21,21 +21,23 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+# Modified by SlackBuilds.org
 #
 # Modified by Niki Kovacs <info@microlinux.fr>
 
-PRGNAM=soundtouch
-VERSION=1.7.1
-BUILD=${BUILD:-2}
+PRGNAM=clementine
+VERSION=${VERSION:-1.2.1}
+BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j3}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
-    i?86) ARCH=i486 ;;
-    arm*) ARCH=arm ;;
-       *) ARCH=$( uname -m ) ;;
+    i?86) export ARCH=i486 ;;
+    arm*) export ARCH=arm ;;
+       *) export ARCH=$( uname -m ) ;;
   esac
 fi
 
@@ -60,53 +62,55 @@ fi
 
 set -e
 
-wget -c http://www.surina.net/$PRGNAM/$PRGNAM-$VERSION.tar.gz
+wget -c https://clementine-player.googlecode.com/files/$PRGNAM-$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM
-tar xvzf $CWD/$PRGNAM-$VERSION.tar.gz
-cd $PRGNAM
+rm -rf $PRGNAM-$VERSION
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
+cd $PRGNAM-$VERSION
 chown -R root:root .
-find . \
- \( -perm 777 -o -perm 775 -o -perm 711 -o -perm 555 -o -perm 511 \) \
+find -L . \
+ \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 -o -perm 511 \) \
  -exec chmod 755 {} \; -o \
  \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
  -exec chmod 644 {} \;
 
-./bootstrap
+mkdir build
+cd build
+  cmake \
+	-DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
+	-DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
+	-DCMAKE_INSTALL_PREFIX=/usr \
+	-DLIB_SUFFIX=${LIBDIRSUFFIX} \
+	-DMAN_INSTALL_DIR=/usr/man \
+	-DCMAKE_BUILD_TYPE=Release \
+	..
 
-CFLAGS="$SLKCFLAGS" \
-CXXFLAGS="$SLKCFLAGS" \
-./configure \
-  --prefix=/usr \
-  --libdir=/usr/lib$LIBDIRSUFFIX \
-  --sysconfdir=/etc \
-  --enable-shared \
-  --disable-static \
-  --localstatedir=/var \
-  --build=$ARCH-slackware-linux
+  make $NUMJOBS all CFLAGS="-fPIC" PMFLAGS="-DNEWBUFFER"
+  make install DESTDIR=$PKG
+cd ..
 
-make $NUMJOBS \
-  pkgdocdir="/usr/doc/$PRGNAM-$VERSION"
+for i in 16 32 ; do
+  install -m 0644 -D dist/${PRGNAM}_${i}.png \
+    $PKG/usr/share/icons/hicolor/${i}x${i}/apps/application-x-clementine.png
+done
 
-make install \
-  pkgdocdir="/usr/doc/$PRGNAM-$VERSION" \
-  DESTDIR=$PKG
-
-find $PKG | xargs file | grep -e "executable" -e "shared object" | grep ELF \
+find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a COPYING Changelog $PKG/usr/doc/$PRGNAM-$VERSION/
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
+cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
 
 # Cleanup
 cd $TMP
-rm -rf $PRGNAM $PKG
+rm -rf $PRGNAM-$VERSION $PKG

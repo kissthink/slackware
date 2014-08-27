@@ -41,6 +41,22 @@ multimedia/twolame
 multimedia/libvpx
 multimedia/xvidcore
 multimedia/ffmpeg
+l/pysetuptools
+l/protobuf
+multimedia/libcdaudio
+multimedia/dirac
+multimedia/libdca
+multimedia/libdvdnav
+multimedia/faad2
+multimedia/libkate
+multimedia/libmms
+multimedia/libmusicbrainz
+multimedia/soundtouch
+multimedia/gst-plugins-bad
+multimedia/a52dec
+multimedia/libmpeg2
+multimedia/gst-plugins-ugly
+xap/clementine
 
 #######
 # KDE #
@@ -71,8 +87,6 @@ multimedia/ffmpeg
 #l/BeautifulSoup
 #l/lxml
 #l/podofo --> source download problem
-#l/pysetuptools
-#l/protobuf
 #l/pyxdg
 #l/imlib2
 #l/tolua++
@@ -81,22 +95,13 @@ multimedia/ffmpeg
 ##############
 # Multimedia #
 ##############
-#multimedia/a52dec
 #multimedia/cddb-py
-#multimedia/dirac
-#multimedia/faad2
 #multimedia/flashplayer-plugin
 #multimedia/gst-ffmpeg
 #multimedia/id3lib
-#multimedia/libcdaudio
 #multimedia/libcuefile
-#multimedia/libdca
 #multimedia/libdv
 #multimedia/libdvdcss
-#multimedia/libdvdnav
-#multimedia/libkate
-#multimedia/libmms
-#multimedia/libmusicbrainz
 #multimedia/libmusicbrainz3
 #multimedia/libreplaygain
 #multimedia/live555
@@ -104,16 +109,12 @@ multimedia/ffmpeg
 #multimedia/mjpegtools
 #multimedia/mplayer-codecs
 #multimedia/ogmtools
-#multimedia/soundtouch
 #multimedia/vcdimager
 #multimedia/libshout
 #multimedia/libquicktime
 #multimedia/mlt
 #multimedia/musepack-tools
-#multimedia/gst-plugins-bad
-#multimedia/gst-plugins-ugly
 #multimedia/gst-python
-#multimedia/libmpeg2
 #multimedia/transcode
 #multimedia/gstreamer1
 #multimedia/gst1-plugins-base
