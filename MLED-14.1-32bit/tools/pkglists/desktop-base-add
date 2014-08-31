@@ -238,18 +238,17 @@ subversion
 swig 
 yasm 
 
+# EXTRA
+mplayerplug-in
+
 # F
 linux-faqs 
 linux-howtos 
-
-# EXTRA
-mplayerplug-in
 
 # K
 kernel-source 
 
 # KDE
-amarok 
 ark 
 audiocd-kio 
 gwenview 
@@ -275,6 +274,7 @@ kdepimlibs
 kio-mtp 
 kmix 
 konsole 
+kplayer 
 ksaneplugin 
 ksnapshot 
 libkcddb 

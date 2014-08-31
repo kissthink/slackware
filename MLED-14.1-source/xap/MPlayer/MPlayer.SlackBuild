@@ -32,7 +32,7 @@ VERSION=${VERSION:-1.1.1}
 BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}		
 
-NUMJOBS=${NUMJOBS:--j5}
+NUMJOBS=${NUMJOBS:--j3}
 
 # Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
@@ -65,11 +65,7 @@ fi
 
 set -e 
 
-if [ ! -r $PRGNAM-$VERSION.tar.xz ] ; then
-   wget -c http://www.mplayerhq.hu/$PRGNAM/releases/$PRGNAM-$VERSION.tar.xz
-fi
-
-md5sum -c $PRGNAM-$VERSION.tar.xz.md5
+wget -c http://www.mplayerhq.hu/$PRGNAM/releases/$PRGNAM-$VERSION.tar.xz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
