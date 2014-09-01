@@ -32,7 +32,7 @@ VERSION=2.2.11
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j5}
+NUMJOBS=${NUMJOBS:--j3}
 
 # Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
@@ -67,11 +67,7 @@ fi
 
 set -e
 
-if [ ! -r $PRGNAM-$VERSION.tar.xz ] ; then
-   wget -c http://ftp.gnome.org/pub/gnome/sources/$PRGNAM/2.2/$PRGNAM-$VERSION.tar.xz
-fi
-
-md5sum -c $PRGNAM-$VERSION.tar.xz.md5
+wget -c http://ftp.gnome.org/pub/gnome/sources/$PRGNAM/2.2/$PRGNAM-$VERSION.tar.xz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

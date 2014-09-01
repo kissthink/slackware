@@ -56,11 +56,7 @@ fi
 
 set -e
 
-if [ ! -r $SRCNAM-$VERSION.tar.gz ] ; then
-   wget -c http://search.cpan.org/CPAN/authors/id/N/NL/NLNETLABS/$SRCNAM-$VERSION.tar.gz
-fi
-
-md5sum -c $SRCNAM-$VERSION.tar.gz.md5
+wget -c http://search.cpan.org/CPAN/authors/id/N/NL/NLNETLABS/$SRCNAM-$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

@@ -10,7 +10,7 @@ VERSION=${VERSION:-r475}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j5}
+NUMJOBS=${NUMJOBS:--j3}
 
 # Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
@@ -43,11 +43,7 @@ fi
 
 set -e
 
-if [ ! -r ${PRGNAM}_${VERSION}.tar.gz ] ; then
-   wget -c http://files.musepack.net/source/${PRGNAM}_${VERSION}.tar.gz
-fi
-
-md5sum -c ${PRGNAM}_${VERSION}.tar.gz.md5
+wget -c http://files.musepack.net/source/${PRGNAM}_${VERSION}.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

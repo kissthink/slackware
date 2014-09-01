@@ -29,7 +29,7 @@ VERSION=${VERSION:-2.7}
 BUILD=${BUILD:-4}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j5}
+NUMJOBS=${NUMJOBS:--j3}
 
 # Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
@@ -62,11 +62,7 @@ fi
 
 set -e
 
-if [ ! -r $PRGNAM-$VERSION.tar.bz2 ] ; then
-   wget -c http://downloads.sourceforge.net/faac/$PRGNAM-$VERSION.tar.bz2
-fi
-
-md5sum -c $PRGNAM-$VERSION.tar.bz2.md5
+wget -c http://downloads.sourceforge.net/faac/$PRGNAM-$VERSION.tar.bz2
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

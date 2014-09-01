@@ -18,7 +18,7 @@ VERSION=3.6
 BUILD=${BUILD:-5}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j5}
+NUMJOBS=${NUMJOBS:--j3}
 
 # Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
@@ -51,11 +51,7 @@ fi
 
 set -e
 
-if [ ! -r $PRGNAM-$VERSION.tar.gz ] ; then
-   wget -c http://fossies.org/unix/misc/$PRGNAM-$VERSION.tar.gz
-fi
-
-md5sum -c $PRGNAM-$VERSION.tar.gz.md5
+wget -c http://fossies.org/unix/misc/$PRGNAM-$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

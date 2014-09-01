@@ -1,20 +1,10 @@
-#######################
-# Shell configuration #
-#######################
+# Build order
 profile/user-settings-console
-
-###################
-# Basic utilities #
-###################
 ap/sbopkg
 ap/recode
 ap/unrar
 ap/p7zip
 ap/pwgen
-
-################
-# Perl modules #
-################
 d/perl-IO-Multiplex
 d/perl-digest-sha1
 d/perl-digest-hmac
@@ -22,10 +12,6 @@ d/perl-net-ip
 d/perl-net-dns
 d/perl-Net-Server
 d/perl-BerkeleyDB
-
-##############
-# Multimedia #
-##############
 multimedia/faad2
 multimedia/lame
 multimedia/libcuefile
@@ -38,19 +24,11 @@ multimedia/faac
 multimedia/ffmpeg
 multimedia/musepack-tools
 multimedia/libshout
- 
-#####################
-# Various libraries #
-#####################
 l/libmpdclient
 l/libsigc++
 l/libtorrent
 l/pysetuptools
 l/psutil
-
-###########################
-# Networking applications #
-###########################
 n/rtorrent
 n/squid
 n/squidGuard
@@ -60,8 +38,4 @@ n/postgrey
 n/mpd
 n/icecast
 n/ncmpc
-
-################
-# System tools #
-################
 ap/glances

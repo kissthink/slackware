@@ -44,11 +44,7 @@ OUTPUT=${OUTPUT:-/tmp}
 
 set -e
 
-if [ ! -r v$VERSION.tar.gz ] ; then
-   wget -c https://github.com/nicolargo/$PRGNAM/archive/v$VERSION.tar.gz
-fi
-
-md5sum -c v$VERSION.tar.gz.md5
+wget -c https://github.com/nicolargo/$PRGNAM/archive/v$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

@@ -44,11 +44,7 @@ OUTPUT=${OUTPUT:-/tmp}
 
 set -eu
 
-if [ ! -r $SRCNAM-$VERSION.tar.gz ] ; then
-   wget -c http://pypi.python.org/packages/source/s/$SRCNAM/$SRCNAM-$VERSION.tar.gz
-fi
-
-md5sum -c $SRCNAM-$VERSION.tar.gz.md5
+wget -c http://pypi.python.org/packages/source/s/$SRCNAM/$SRCNAM-$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
