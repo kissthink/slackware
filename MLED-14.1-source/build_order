@@ -68,6 +68,13 @@ multimedia/flashplayer-plugin
 l/wxGTK
 l/cryptopp
 xap/aMule
+x/google-droid-fonts
+x/webcore-fonts
+x/eurostile-fonts
+xap/audacity
+locale/mozilla-firefox-l10n
+locale/mozilla-thunderbird-l10n
+# locale/openoffice --> build manually
 
 ###############
 # Development #
@@ -124,9 +131,6 @@ xap/aMule
 #########
 # Fonts #
 #########
-#x/google-droid-fonts
-#x/webcore-fonts
-#x/eurostile-fonts
 
 ################
 # MATE desktop #
@@ -148,7 +152,6 @@ xap/aMule
 # Applications #
 ################
 #xap/asunder
-#xap/audacity
 #gnome/brasero
 #xap/conky
 #xap/easytag
@@ -178,7 +181,4 @@ xap/aMule
 ################
 # Translations #
 ################
-#locale/mozilla-firefox-l10n
-#locale/mozilla-thunderbird-l10n
-# locale/openoffice --> build manually
 

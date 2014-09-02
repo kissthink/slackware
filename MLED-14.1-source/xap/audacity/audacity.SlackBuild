@@ -35,7 +35,7 @@ VERSION=${VERSION:-2.0.5}
 BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}		
 
-NUMJOBS=${NUMJOBS:--j5}
+NUMJOBS=${NUMJOBS:--j3}
 
 # Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
@@ -68,11 +68,7 @@ fi
 
 set -e 
 
-if [ ! -r $PRGNAM-minsrc-$VERSION.tar.xz ] ; then
-   wget -c http://audacity.googlecode.com/files/$PRGNAM-minsrc-$VERSION.tar.xz
-fi
-
-md5sum -c $PRGNAM-minsrc-$VERSION.tar.xz.md5
+wget -c http://audacity.googlecode.com/files/$PRGNAM-minsrc-$VERSION.tar.xz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

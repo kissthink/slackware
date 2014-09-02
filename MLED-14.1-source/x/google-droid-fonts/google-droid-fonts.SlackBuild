@@ -39,11 +39,7 @@ OUTPUT=${OUTPUT:-/tmp}
 set -eu
 
 
-if [ ! -r $PRGNAM-$VERSION-2.fc15.src.rpm ] ; then
-   wget -c ftp://mirrors3.kernel.org/fedora-secondary/development/rawhide/source/SRPMS/$PRGNAM-$VERSION-2.fc15.src.rpm
-fi
-
-md5sum -c $PRGNAM-$VERSION-2.fc15.src.rpm.md5
+wget -c ftp://mirrors3.kernel.org/fedora-secondary/development/rawhide/source/SRPMS/$PRGNAM-$VERSION-2.fc15.src.rpm
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

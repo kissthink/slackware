@@ -35,11 +35,7 @@ TMP=${TMP:-/tmp/microlinux}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}	
 
-if [ ! -r Eurostile.zip ] ; then
-   wget -c http://www.microlinux.fr/download/Eurostile.zip
-fi
-
-md5sum -c Eurostile.zip.md5
+wget -c http://www.microlinux.fr/download/Eurostile.zip
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

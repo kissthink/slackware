@@ -1,3 +1,11 @@
+Tue Sep  2 15:51:39 CEST 2014
+x/google-droid-fonts-20100409-noarch-2_microlinux.txz: Added.
+x/webcore-fonts-3.0-noarch-2_microlinux.txz: Added.
+x/eurostile-fonts-1.0-noarch-2_microlinux.txz: Added.
+xap/audacity-2.0.5-i486-2_microlinux.txz: Added.
+locale/mozilla-firefox-l10n-24.7.0-i486-1_microlinux.txz: Added.
+locale/mozilla-thunderbird-l10n-24.7.0-i486-1_microlinux.txz: Added.
++---------------------------+
 Sun Aug 31 09:34:28 CEST 2014
 multimedia/libdv-1.0.0-i486-2_microlinux.txz: Added.
 multimedia/libcuefile-r475-i486-2_microlinux.txz: Added.
