@@ -30,7 +30,7 @@ VERSION=${VERSION:-5.0.13}
 BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j5}
+NUMJOBS=${NUMJOBS:--j3}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -61,11 +61,7 @@ fi
 
 set -e
 
-if [ ! -r $SRCNAM-$VERSION.tar.gz ] ; then
-   wget -c http://www.rarlab.com/rar/$SRCNAM-$VERSION.tar.gz
-fi
-
-md5sum -c $SRCNAM-$VERSION.tar.gz.md5
+wget -c http://www.rarlab.com/rar/$SRCNAM-$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

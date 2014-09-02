@@ -42,11 +42,7 @@ fi
 
 set -e
 
-if [ ! -r ${SRCNAM}_${VERSION}.tar.gz ] ; then
-   wget -c http://files.musepack.net/source/${SRCNAM}_${VERSION}.tar.gz
-fi
-
-md5sum -c ${SRCNAM}_${VERSION}.tar.gz.md5
+wget -c http://files.musepack.net/source/${SRCNAM}_${VERSION}.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

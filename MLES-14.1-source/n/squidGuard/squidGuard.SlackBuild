@@ -28,7 +28,7 @@ VERSION=${VERSION:-1.4}
 BUILD=${BUILD:-4}
 TAG=${TAG:-_microlinux}		
 
-NUMJOBS=${NUMJOBS:--j5}
+NUMJOBS=${NUMJOBS:--j3}
 
 # Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
@@ -61,13 +61,7 @@ fi
 
 set -e # Exit on most errors
 
-# Download tarball
-if [ ! -r $PRGNAM-$VERSION.tar.gz ] ; then
-   wget -c http://www.squidguard.org/Downloads/$PRGNAM-$VERSION.tar.gz
-fi
-
-# Check tarball
-md5sum -c $PRGNAM-$VERSION.tar.gz.md5
+wget -c http://www.squidguard.org/Downloads/$PRGNAM-$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
