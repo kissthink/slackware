@@ -4,6 +4,24 @@ locale/libreoffice-langpack-de-4.2.6-i586-1_microlinux.txz: Added.
 xap/transmission-2.60-i486-2_microlinux.txz: Added.
 n/freerdp-20131115_ea18d2b-i486-2_microlinux.txz: Added.
 xap/remmina-20131008_26b814a-i486-2_microlinux.txz: Added.
+l/BeautifulSoup-3.2.1-i486-2_microlinux.txz: Added.
+l/lxml-3.3.4-i486-1_microlinux.txz: Added.
+d/numpy-1.8.0-i486-2_microlinux.txz: Added.
+l/gsl-1.16-i486-2_microlinux.txz: Added.
+l/libsigc++-2.2.11-i486-1_microlinux.txz: Added.
+l/glibmm-2.36.2-i486-1_microlinux.txz: Added.
+l/cairomm-1.10.0-i486-1_microlinux.txz: Added.
+l/pangomm-2.34.0-i486-1_microlinux.txz: Added.
+l/atkmm-2.22.7-i486-1_microlinux.txz: Added.
+l/mm-common-0.9.6-noarch-1_microlinux.txz: Added.
+l/gtkmm-2.24.4-i486-1_microlinux.txz: Added.
+xap/inkscape-0.48.4-i486-5_microlinux.txz: Added.
+multimedia/libquicktime-1.2.4-i486-2_microlinux.txz: Added.
+multimedia/mlt-0.9.0-i486-2_microlinux.txz: Added.
+l/goocanvas-0.15-i486-2_microlinux.txz: Added.
+l/pygoocanvas-0.14.1-i486-2_microlinux.txz: Added.
+l/pyxdg-0.25-i486-2_microlinux.txz: Added.
+xap/openshot-1.4.3-i486-2_microlinux.txz: Added.
 +---------------------------+
 Tue Sep  2 15:51:39 CEST 2014
 x/google-droid-fonts-20100409-noarch-2_microlinux.txz: Added.
