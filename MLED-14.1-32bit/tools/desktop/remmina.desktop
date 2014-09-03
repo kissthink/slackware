@@ -1,12 +1,13 @@
 [Desktop Entry]
 Version=1.0
-Name=Remote Desktop
-Name[de]=Entfernter Rechner
-Name[fr]=Bureau distant
-Comment=Remmina
+GenericName=Remote Desktop
+GenericName[de]=Entfernter Rechner
+GenericName[fr]=Bureau distant
+Name=Remmina
 TryExec=remmina
 Exec=remmina
-Icon=remmina
+#Icon=remmina
+Icon=krdc
 Terminal=false
 Type=Application
 Actions=

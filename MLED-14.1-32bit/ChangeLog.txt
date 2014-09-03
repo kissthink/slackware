@@ -1,3 +1,10 @@
+Wed Sep  3 14:59:31 CEST 2014
+locale/libreoffice-langpack-fr-4.2.6-i586-1_microlinux.txz: Added.
+locale/libreoffice-langpack-de-4.2.6-i586-1_microlinux.txz: Added.
+xap/transmission-2.60-i486-2_microlinux.txz: Added.
+n/freerdp-20131115_ea18d2b-i486-2_microlinux.txz: Added.
+xap/remmina-20131008_26b814a-i486-2_microlinux.txz: Added.
++---------------------------+
 Tue Sep  2 15:51:39 CEST 2014
 x/google-droid-fonts-20100409-noarch-2_microlinux.txz: Added.
 x/webcore-fonts-3.0-noarch-2_microlinux.txz: Added.

@@ -1,8 +1,8 @@
 #!/bin/sh
 
-# Slackware build script for libquicktime
+# Slackware build script for atkmm
 
-# Copyright 2008-2011 Heinz Wiesinger, Amsterdam, The Netherlands
+# Copyright 2011  Robby Workman, Northport, Alabama, USA
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -11,22 +11,22 @@
 # 1. Redistributions of this script must retain the above copyright
 #    notice, this list of conditions and the following disclaimer.
 #
-# THIS SOFTWARE IS PROVIDED BY THE AUTHOR ''AS IS'' AND ANY EXPRESS OR IMPLIED
-# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
-# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
-# EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
-# OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
-# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
-# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
-# ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED
+#  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+#  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
+#  EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+#  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+#  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+#  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+#  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+#  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 # Modified by Niki Kovacs <info@microlinux.fr>
 
-PRGNAM=libquicktime
-VERSION=1.2.4
-BUILD=${BUILD:-2}
+PRGNAM=atkmm
+VERSION=${VERSION:-2.22.7}
+BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j3}
@@ -60,23 +60,23 @@ fi
 
 set -e
 
-wget -c http://downloads.sourceforge.net/$PRGNAM/$PRGNAM-$VERSION.tar.gz
+wget -c ftp://ftp.gnome.org/pub/gnome/sources/$PRGNAM/2.22/$PRGNAM-$VERSION.tar.xz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvzf $CWD/$PRGNAM-$VERSION.tar.gz
+tar xvf $CWD/$PRGNAM-$VERSION.tar.xz
 cd $PRGNAM-$VERSION
 chown -R root:root .
-chmod -R u+w,go+r-w,a-s .
-
-# BLFS patch 
-patch -Np1 -i $CWD/libquicktime-1.2.4-ffmpeg2-1.patch
+find . \
+ \( -perm 777 -o -perm 775 -o -perm 711 -o -perm 555 -o -perm 511 \) \
+ -exec chmod 755 {} \; -o \
+ \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
+ -exec chmod 644 {} \;
 
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
-LDFLAGS="-L/usr/lib${LIBDIRSUFFIX}" \
 ./configure \
   --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
@@ -84,19 +84,19 @@ LDFLAGS="-L/usr/lib${LIBDIRSUFFIX}" \
   --localstatedir=/var \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
-  --enable-gpl \
-  --with-libdv \
+  --disable-static \
   --build=$ARCH-slackware-linux
 
-make $NUMJOBS 
-make install-strip DESTDIR=$PKG || exit 1
+make $NUMJOBS libdocdir=/usr/doc/$PRGNAM-$VERSION
+make install libdocdir=/usr/doc/$PRGNAM-$VERSION DESTDIR=$PKG
 
-find $PKG/usr/man -type f -exec gzip -9 {} \;
+find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | \
+  grep ELF | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
-  ChangeLog COPYING INSTALL README TODO \
-    $PKG/usr/doc/$PRGNAM-$VERSION
+  AUTHORS COPYING* INSTALL NEWS README \
+  $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
@@ -106,6 +106,6 @@ cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
 
 # Cleanup
-cd $TMP          
+cd $TMP
 rm -rf $PRGNAM-$VERSION $PKG
 

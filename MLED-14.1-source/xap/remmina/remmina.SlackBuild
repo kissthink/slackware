@@ -12,7 +12,7 @@ VERSION=${VERSION:-20131008_26b814a}
 BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j5}
+NUMJOBS=${NUMJOBS:--j3}
 
 SRCNAM=Remmina
 #UNTARDIR=FreeRDP-$SRCNAM-356c033
@@ -50,11 +50,7 @@ fi
 
 set -e
 
-if [ ! -r $SRCNAM-$VERSION.tar.xz ] ; then
-   wget -c http://ponce.cc/slackware/sources/repo/$SRCNAM-$VERSION.tar.xz
-fi
-
-md5sum -c $SRCNAM-$VERSION.tar.xz.md5
+wget -c http://ponce.cc/slackware/sources/repo/$SRCNAM-$VERSION.tar.xz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

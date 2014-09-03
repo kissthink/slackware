@@ -1,8 +1,8 @@
 #!/bin/sh
 
-# Slackware build script for libquicktime
+# Slackware build script for glibmm
 
-# Copyright 2008-2011 Heinz Wiesinger, Amsterdam, The Netherlands
+# Copyright (C) 2006 paul wisehart wise@lupulin.net
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,9 +24,9 @@
 #
 # Modified by Niki Kovacs <info@microlinux.fr>
 
-PRGNAM=libquicktime
-VERSION=1.2.4
-BUILD=${BUILD:-2}
+PRGNAM=glibmm
+VERSION=2.36.2
+BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j3}
@@ -39,7 +39,7 @@ if [ -z "$ARCH" ]; then
   esac
 fi
 
-CWD=$(pwd)
+CWD=$(pwd)		
 TMP=${TMP:-/tmp/microlinux}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
@@ -60,44 +60,39 @@ fi
 
 set -e
 
-wget -c http://downloads.sourceforge.net/$PRGNAM/$PRGNAM-$VERSION.tar.gz
+wget -c ftp://ftp.gnome.org/pub/gnome/sources/$PRGNAM/2.36/$PRGNAM-$VERSION.tar.xz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvzf $CWD/$PRGNAM-$VERSION.tar.gz
+tar xvf $CWD/$PRGNAM-$VERSION.tar.xz
 cd $PRGNAM-$VERSION
 chown -R root:root .
-chmod -R u+w,go+r-w,a-s .
-
-# BLFS patch 
-patch -Np1 -i $CWD/libquicktime-1.2.4-ffmpeg2-1.patch
+chmod -R a-s,u+rw,go-w+r .
 
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
-LDFLAGS="-L/usr/lib${LIBDIRSUFFIX}" \
-./configure \
+  ./configure \
   --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
   --sysconfdir=/etc \
   --localstatedir=/var \
-  --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
-  --enable-gpl \
-  --with-libdv \
+  --disable-static \
   --build=$ARCH-slackware-linux
 
 make $NUMJOBS 
 make install-strip DESTDIR=$PKG || exit 1
 
-find $PKG/usr/man -type f -exec gzip -9 {} \;
-
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a \
-  ChangeLog COPYING INSTALL README TODO \
-    $PKG/usr/doc/$PRGNAM-$VERSION
+mv $PKG/usr/share/doc/glibmm-2.4/* $PKG/usr/doc/$PRGNAM-$VERSION
+rm -rf $PKG/usr/share/doc
+cp -a AUTHORS COPYING ChangeLog INSTALL NEWS README \
+  $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+# Remove the API docs
+rm -rf $PKG/usr/doc/$PRGNAM-$VERSION/docs
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
@@ -106,6 +101,6 @@ cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
 
 # Cleanup
-cd $TMP          
+cd $TMP
 rm -rf $PRGNAM-$VERSION $PKG
 

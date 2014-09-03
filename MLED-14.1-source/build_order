@@ -75,13 +75,33 @@ xap/audacity
 locale/mozilla-firefox-l10n
 locale/mozilla-thunderbird-l10n
 # locale/openoffice --> build manually
+xap/transmission
+n/freerdp
+xap/remmina
+l/BeautifulSoup
+l/lxml
+d/numpy
+l/gsl
+l/libsigc++
+l/glibmm
+l/cairomm
+l/pangomm
+l/atkmm
+l/mm-common
+l/gtkmm
+xap/inkscape
+multimedia/libquicktime
+multimedia/mlt
+l/goocanvas
+l/pygoocanvas
+l/pyxdg
+xap/openshot
 
 ###############
 # Development #
 ###############
 #d/acpica
 #d/lua
-#d/numpy
 #d/scons
 
 ######################
@@ -93,14 +113,8 @@ locale/mozilla-thunderbird-l10n
 #####################
 # Various libraries #
 #####################
-#l/goocanvas
-#l/pygoocanvas
 #l/jbig2dec
-#l/gsl
-#l/BeautifulSoup
-#l/lxml
 #l/podofo --> source download problem
-#l/pyxdg
 #l/imlib2
 #l/tolua++
 
@@ -116,8 +130,6 @@ locale/mozilla-thunderbird-l10n
 #multimedia/ogmtools
 #multimedia/vcdimager
 #multimedia/libshout
-#multimedia/libquicktime
-#multimedia/mlt
 #multimedia/gst-python
 #multimedia/transcode
 #multimedia/gstreamer1
@@ -164,17 +176,12 @@ locale/mozilla-thunderbird-l10n
 #xap/gtkcdlabel
 #xap/inkscape
 #xap/mupdf
-#xap/openshot
 #xap/poedit
 #xap/scribus
 #xap/smplayer
-#xap/transmission
 #xap/virtualbox
 #xap/virtualbox-kernel
 #xap/virtualbox-extension-pack
-#xap/exaile
-#n/freerdp
-#xap/remmina
 # External build dependencies for winff: fpc, fpc-source and lazarus
 #xap/winff
 

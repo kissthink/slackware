@@ -60,11 +60,7 @@ fi
 
 set -e
 
-if [ ! -r $PRGNAM-$VERSION.tar.gz ] ; then
-   wget -c http://pypi.python.org/packages/source/p/$PRGNAM/$PRGNAM-$VERSION.tar.gz
-fi
-
-md5sum -c $PRGNAM-$VERSION.tar.gz.md5
+wget -c http://pypi.python.org/packages/source/p/$PRGNAM/$PRGNAM-$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
