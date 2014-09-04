@@ -1,3 +1,10 @@
+Thu Sep  4 09:13:59 CEST 2014
+d/acpica-20131115-x86_64-1_microlinux.txz: Added.
+extra/virtualbox-4.2.26-x86_64-1_microlinux.txz: Added.
+extra/virtualbox-kernel-4.2.26_3.10.17-x86_64-1_microlinux.txz: Added.
+extra/virtualbox-extension-pack-4.2.26-x86_64-1_microlinux.txz: Added.
+extra/filezilla-3.7.3-x86_64-3_microlinux.txz: Added.
++---------------------------+
 Wed Sep  3 14:59:31 CEST 2014
 locale/libreoffice-langpack-fr-4.2.6-x86_64-1_microlinux.txz: Added.
 locale/libreoffice-langpack-de-4.2.6-x86_64-1_microlinux.txz: Added.
