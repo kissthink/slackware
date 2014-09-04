@@ -42,11 +42,7 @@ fi
 
 set -e
 
-if [ ! -r $PRGNAM-$VERSION.tar.bz2 ] ; then
-   wget -c http://ponce.cc/slackware/sources/repo/$PRGNAM-$VERSION.tar.bz2
-fi
-
-md5sum -c $PRGNAM-$VERSION.tar.bz2.md5
+wget -c http://ponce.cc/slackware/sources/repo/$PRGNAM-$VERSION.tar.bz2
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

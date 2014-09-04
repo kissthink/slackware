@@ -97,12 +97,17 @@ l/pygoocanvas
 l/pyxdg
 xap/openshot
 d/acpica
+d/lua
+d/scons
+l/jbig2dec
+l/imlib2
+l/tolua++
+l/podofo 
+xap/scribus
 
 ###############
 # Development #
 ###############
-#d/lua
-#d/scons
 
 ######################
 # GNOME dependencies #
@@ -113,10 +118,6 @@ d/acpica
 #####################
 # Various libraries #
 #####################
-#l/jbig2dec
-#l/podofo --> source download problem
-#l/imlib2
-#l/tolua++
 
 ##############
 # Multimedia #
@@ -167,7 +168,6 @@ d/acpica
 #gnome/brasero
 #xap/conky
 #xap/easytag
-#xap/filezilla 
 #xap/gcolor2
 #xap/geany
 #xap/geany-plugins
@@ -177,11 +177,7 @@ d/acpica
 #xap/inkscape
 #xap/mupdf
 #xap/poedit
-#xap/scribus
 #xap/smplayer
-#xap/virtualbox
-#xap/virtualbox-kernel
-#xap/virtualbox-extension-pack
 # External build dependencies for winff: fpc, fpc-source and lazarus
 #xap/winff
 
