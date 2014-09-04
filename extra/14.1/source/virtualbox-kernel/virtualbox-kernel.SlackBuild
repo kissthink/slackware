@@ -27,7 +27,7 @@
 # Modified by Niki Kovacs <info@microlinux.fr>
 
 PRGNAM=virtualbox-kernel
-VERSION=${VERSION:-4.2.24}
+VERSION=${VERSION:-4.2.26}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 

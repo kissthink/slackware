@@ -27,7 +27,7 @@
 
 PRGNAM=virtualbox
 SRCNAM=VirtualBox
-VERSION=4.2.24
+VERSION=4.2.26
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
@@ -45,7 +45,7 @@ PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
 # kmk doesn't support MAKEFLAGS, so we use JOBS here
-JOBS=${JOBS:-5}
+JOBS=${JOBS:-3}
 
 # Define Variable Names
 gui=""
@@ -102,10 +102,7 @@ SOURCE[3]=UserManual.pdf
 SOURCE[4]=SDKRef.pdf
 
 for X in `seq 1 4`; do
-  if [ ! -r ${SOURCE[X]} ] ; then
-    wget -c http://download.virtualbox.org/$PRGNAM/$VERSION/${SOURCE[X]}
-  fi
-	md5sum -c ${SOURCE[X]}.md5
+  wget -c http://download.virtualbox.org/$PRGNAM/$VERSION/${SOURCE[X]}
 done
 
 rm -rf $PKG

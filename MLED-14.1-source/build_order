@@ -96,11 +96,11 @@ l/goocanvas
 l/pygoocanvas
 l/pyxdg
 xap/openshot
+d/acpica
 
 ###############
 # Development #
 ###############
-#d/acpica
 #d/lua
 #d/scons
 

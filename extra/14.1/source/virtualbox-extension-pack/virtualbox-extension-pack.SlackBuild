@@ -13,7 +13,7 @@
 
 PRGNAM=virtualbox-extension-pack
 SRCNAM=Oracle_VM_VirtualBox_Extension_Pack
-VERSION=${VERSION:-4.2.24}
+VERSION=${VERSION:-4.2.26}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
@@ -46,11 +46,7 @@ fi
 
 set -e
 
-if [ ! -r $SRCNAM-$VERSION.vbox-extpack ] ; then
-   wget -c http://download.virtualbox.org/virtualbox/$VERSION/$SRCNAM-$VERSION.vbox-extpack
-fi
-
-md5sum -c $SRCNAM-$VERSION.vbox-extpack.md5
+wget -c http://download.virtualbox.org/virtualbox/$VERSION/$SRCNAM-$VERSION.vbox-extpack
 
 rm -rf $PKG
 mkdir -p $PKG/usr/lib$LIBDIRSUFFIX/virtualbox/ExtensionPacks/$SRCNAM $OUTPUT
