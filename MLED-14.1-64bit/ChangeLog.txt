@@ -4,6 +4,13 @@ extra/virtualbox-4.2.26-x86_64-1_microlinux.txz: Added.
 extra/virtualbox-kernel-4.2.26_3.10.17-x86_64-1_microlinux.txz: Added.
 extra/virtualbox-extension-pack-4.2.26-x86_64-1_microlinux.txz: Added.
 extra/filezilla-3.7.3-x86_64-3_microlinux.txz: Added.
+d/lua-5.1.5-x86_64-2_microlinux.txz: Added.
+d/scons-2.3.1-x86_64-1_microlinux.txz: Added.
+l/jbig2dec-0.11-x86_64-2_microlinux.txz: Added.
+l/imlib2-1.4.6-x86_64-1_microlinux.txz: Added.
+l/tolua++-1.0.93-x86_64-2_microlinux.txz: Added.
+l/podofo-0.9.2-x86_64-2_microlinux.txz: Added.
+xap/scribus-1.4.3-x86_64-2_microlinux.txz: Added.
 +---------------------------+
 Wed Sep  3 14:59:31 CEST 2014
 locale/libreoffice-langpack-fr-4.2.6-x86_64-1_microlinux.txz: Added.
