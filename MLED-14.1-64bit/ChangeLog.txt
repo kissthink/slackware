@@ -1,4 +1,27 @@
 Wed Sep  3 14:59:31 CEST 2014
+locale/libreoffice-langpack-fr-4.2.6-x86_64-1_microlinux.txz: Added.
+locale/libreoffice-langpack-de-4.2.6-x86_64-1_microlinux.txz: Added.
+xap/transmission-2.60-x86_64-2_microlinux.txz: Added.
+n/freerdp-20131115_ea18d2b-x86_64-2_microlinux.txz: Added.
+xap/remmina-20131008_26b814a-x86_64-2_microlinux.txz: Added.
+l/BeautifulSoup-3.2.1-x86_64-2_microlinux.txz: Added.
+l/lxml-3.3.4-x86_64-1_microlinux.txz: Added.
+d/numpy-1.8.0-x86_64-2_microlinux.txz: Added.
+l/gsl-1.16-x86_64-2_microlinux.txz: Added.
+l/libsigc++-2.2.11-x86_64-1_microlinux.txz: Added.
+l/glibmm-2.36.2-x86_64-1_microlinux.txz: Added.
+l/cairomm-1.10.0-x86_64-1_microlinux.txz: Added.
+l/pangomm-2.34.0-x86_64-1_microlinux.txz: Added.
+l/atkmm-2.22.7-x86_64-1_microlinux.txz: Added.
+l/mm-common-0.9.6-noarch-1_microlinux.txz: Added.
+l/gtkmm-2.24.4-x86_64-1_microlinux.txz: Added.
+xap/inkscape-0.48.4-x86_64-5_microlinux.txz: Added.
+multimedia/libquicktime-1.2.4-x86_64-2_microlinux.txz: Added.
+multimedia/mlt-0.9.0-x86_64-2_microlinux.txz: Added.
+l/goocanvas-0.15-x86_64-2_microlinux.txz: Added.
+l/pygoocanvas-0.14.1-x86_64-2_microlinux.txz: Added.
+l/pyxdg-0.25-x86_64-2_microlinux.txz: Added.
+xap/openshot-1.4.3-x86_64-2_microlinux.txz: Added.
 +---------------------------+
 Tue Sep  2 16:32:19 CEST 2014
 x/google-droid-fonts-20100409-noarch-2_microlinux.txz: Added.
