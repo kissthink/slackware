@@ -21,7 +21,7 @@ case $(uname -m) in
 esac  
 
 # Set the number of parallel make jobs
-NUMJOBS="-j3"
+NUMJOBS="-j5"
 export NUMJOBS="$NUMJOBS"
 
 BUILDPACKAGES=$(egrep -v '(^\#)|(^\s+$)' $CWD/build_order)
