@@ -9,7 +9,7 @@ VERSION=${VERSION:-2.1.5}
 BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j3}
+NUMJOBS=${NUMJOBS:--j5}
 
 # Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then

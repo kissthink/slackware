@@ -29,7 +29,7 @@ VERSION=${VERSION:-0.9.2}
 BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j3}
+NUMJOBS=${NUMJOBS:--j5}
 
 CWD=$(pwd)
 TMP=${TMP:-/tmp/microlinux}

@@ -28,7 +28,7 @@ VERSION=${VERSION:-4.10.5}
 BUILD=${BUILD:-3}
 TAG=${TAG:-_microlinux}   
 
-NUMJOBS=${NUMJOBS:--j3}
+NUMJOBS=${NUMJOBS:--j5}
 
 # Automatically determine the architecture we're building on:
 MARCH=$( uname -m )

@@ -32,7 +32,7 @@ VERSION=${VERSION:-20131115_ea18d2b}
 BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j3}
+NUMJOBS=${NUMJOBS:--j5}
 
 # This is a bit messy, but that's how upstream serves it...
 #TARNAME=FreeRDP-$VERSION.tar.gz
