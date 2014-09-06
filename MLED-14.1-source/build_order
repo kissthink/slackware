@@ -2,11 +2,11 @@
 profile/user-settings-console
 ap/sbopkg
 xap/libreoffice
-#kde/kde-baseapps
-#kde/kde-base-artwork
-#kde/kde-workspace
-#kde/kde-wallpapers
-#profile/user-settings-kde
+kde/kde-baseapps
+kde/kde-base-artwork
+kde/kde-workspace
+kde/kde-wallpapers
+profile/user-settings-kde
 #ap/recode
 #ap/unrar
 #ap/p7zip
