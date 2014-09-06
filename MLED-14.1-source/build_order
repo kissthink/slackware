@@ -7,11 +7,11 @@ kde/kde-base-artwork
 kde/kde-workspace
 kde/kde-wallpapers
 profile/user-settings-kde
-#ap/recode
-#ap/unrar
-#ap/p7zip
-#ap/cdlabelgen
-#d/jdk
+ap/recode
+ap/unrar
+ap/p7zip
+ap/cdlabelgen
+d/jdk
 #multimedia/lame
 #multimedia/x264
 #l/enca
