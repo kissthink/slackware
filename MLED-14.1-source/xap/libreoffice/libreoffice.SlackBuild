@@ -81,7 +81,7 @@ fi
 set -eu
 
 # We have all the variables, construct the name of the tarball
-TARNAME="LibreOffice_${SRCVERSION}_Linux_${SRCARCH}_rpm${TARJRE}.tar.gz"
+TARNAME="LibreOffice_${SRCVERSION}-secfix_Linux_${SRCARCH}_rpm${TARJRE}.tar.gz"
 
 # Download mirror
 MIRROR=download.documentfoundation.org/$PRGNAM/stable/$VERSION/rpm/$URLARCH
