@@ -74,7 +74,7 @@ x/eurostile-fonts
 xap/audacity
 locale/mozilla-firefox-l10n
 locale/mozilla-thunderbird-l10n
-## locale/libreoffice-langpack --> build manually
+# locale/libreoffice-langpack --> build manually
 xap/transmission
 n/freerdp
 xap/remmina
@@ -105,87 +105,4 @@ l/tolua++
 l/podofo 
 xap/scribus
 
-#########################################################################
-#########################################################################
-#########################################################################
-
-###############
-# Development #
-###############
-
-######################
-# GNOME dependencies #
-######################
-#gnome/libgnomecanvas
-#gnome/totem-pl-parser
-
-#####################
-# Various libraries #
-#####################
-
-##############
-# Multimedia #
-##############
-#multimedia/cddb-py
-#multimedia/gst-ffmpeg
-#multimedia/id3lib
-#multimedia/libmusicbrainz3
-#multimedia/lsdvd
-#multimedia/mjpegtools
-#multimedia/ogmtools
-#multimedia/vcdimager
-#multimedia/libshout
-#multimedia/gst-python
-#multimedia/transcode
-#multimedia/gstreamer1
-#multimedia/gst1-plugins-base
-#multimedia/gst1-plugins-good
-#multimedia/gst1-plugins-bad
-#multimedia/gst1-plugins-ugly
-#multimedia/gst1-libav
-#multimedia/mutagen
-
-#########
-# Fonts #
-#########
-
-################
-# MATE desktop #
-################
-#mate/gnome-colors
-#mate/elementary-icon-theme
-#mate/elementary-extras
-#mate/aero
-#mate/clearlooks-phenix-theme
-#mate/microlinux-wallpapers
-#mate/slack-wallpapers
-
-#################
-# Login manager #
-#################
-#gnome/gdm
-
-################
-# Applications #
-################
-#xap/asunder
-#gnome/brasero
-#xap/conky
-#xap/easytag
-#xap/gcolor2
-#xap/geany
-#xap/geany-plugins
-#gnome/gnote
-#gnome/gthumb
-#xap/gtkcdlabel
-#xap/inkscape
-#xap/mupdf
-#xap/poedit
-#xap/smplayer
-# External build dependencies for winff: fpc, fpc-source and lazarus
-#xap/winff
-
-################
-# Translations #
-################
 
