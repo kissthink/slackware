@@ -46,7 +46,7 @@ USERDEFS=${USERDEFS:-~/.genreprc}
 # Sane defaults:
 
 # The directory of the Slackware package repository:
-REPOSROOT=${REPOSROOT:-"/home/kikinovak/Web/slackware/MLES-14.1-32bit/"}
+REPOSROOT=${REPOSROOT:-"/home/kikinovak/Web/slackware/MLTC-14.1-32bit/"}
 
 # Repository maintainer
 REPOSOWNER=${REPOSOWNER:-"Niki Kovacs <info@microlinux.fr>"}
@@ -57,29 +57,29 @@ REPOSOWNER=${REPOSOWNER:-"Niki Kovacs <info@microlinux.fr>"}
 REPOSOWNERGPG=${REPOSOWNERGPG:-""}
 
 # Under what URL is the repository accessible:
-DL_URL=${DL_URL:-"http://www.microlinux.fr/slackware/MLES-14.1-32bit/"}
+DL_URL=${DL_URL:-"http://www.microlinux.fr/slackware/MLTC-14.1-32bit/"}
 
 # The title of the generated RSS feed:
-RSS_TITLE=${RSS_TITLE:-"Microlinux Enterprise Server 14.1 32-bit"}
+RSS_TITLE=${RSS_TITLE:-"Microlinux Thin Client 14.1 32-bit"}
 
 # The logo picture used for the RSS feed:
 RSS_ICON=${RSS_ICON:-"http://www.microlinux.fr/images/habillage/pingouin_ayo_small.png"}
 
 # The URL linked to when clicking on the logo:
-RSS_LINK=${RSS_LINK:-"http://www.microlinux.fr/slackware/MLES-14.1-32bit"}
+RSS_LINK=${RSS_LINK:-"http://www.microlinux.fr/slackware/MLTC-14.1-32bit"}
 
 # URL to the full changelog.txt:
-RSS_CLURL=${RSS_CLURL:-"http://www.microlinux.fr/slackware/MLES-14.1-32bit/ChangeLog.txt"}
+RSS_CLURL=${RSS_CLURL:-"http://www.microlinux.fr/slackware/MLTC-14.1-32bit/ChangeLog.txt"}
 
 # The descriptive text for the RSS feed:
-RSS_DESCRIPTION=${RSS_DESCRIPTION:-"Slackware packages for the Microlinux Enterprise Server 14.1 32-bit. The package directories include the SlackBuild script and sources."}
+RSS_DESCRIPTION=${RSS_DESCRIPTION:-"Slackware packages for the Microlinux Thin Client14.1 32-bit. The package directories include the SlackBuild script and sources."}
 
 # Maximum number of RSS feed entries to display:
 RSS_FEEDMAX=${RSS_FEEDMAX:-15}
 
 # The RSS generator must use a unique feed identifier.
 # Generate one for your feed by using the string returned by "uuidgen -t":
-RSS_UUID=${RSS_UUID:-"68db94f2-90b9-11e3-ba4c-080027240b34"}
+RSS_UUID=${RSS_UUID:-"57e3f95a-36b8-11e4-8e92-080027000000"}
 
 # Either use gpg or gpg2:
 GPGBIN=${GPGBIN:-"/usr/bin/gpg"}
