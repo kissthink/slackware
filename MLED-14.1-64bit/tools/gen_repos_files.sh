@@ -46,7 +46,7 @@ USERDEFS=${USERDEFS:-~/.genreprc}
 # Sane defaults:
 
 # The directory of the Slackware package repository:
-REPOSROOT=${REPOSROOT:-"/web/mirror/htdocs/microlinux/MLED-14.1-64bit/"}
+REPOSROOT=${REPOSROOT:-"/home/kikinovak/Web/slackware/MLED-14.1-64bit/"}
 
 # Repository maintainer
 REPOSOWNER=${REPOSOWNER:-"Niki Kovacs <info@microlinux.fr>"}

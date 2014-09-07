@@ -46,7 +46,7 @@ USERDEFS=${USERDEFS:-~/.genreprc}
 # Sane defaults:
 
 # The directory of the Slackware package repository:
-REPOSROOT=${REPOSROOT:-"/home/kikinovak/Public/slackware/MLED-14.1-32bit"}
+REPOSROOT=${REPOSROOT:-"/home/kikinovak/Web/slackware/MLED-14.1-32bit"}
 
 # Repository maintainer
 REPOSOWNER=${REPOSOWNER:-"Niki Kovacs <info@microlinux.fr>"}
@@ -57,7 +57,7 @@ REPOSOWNER=${REPOSOWNER:-"Niki Kovacs <info@microlinux.fr>"}
 REPOSOWNERGPG=${REPOSOWNERGPG:-""}
 
 # Under what URL is the repository accessible:
-DL_URL=${DL_URL:-"http://www.microlinux.fr/testing/MLED-14.1-32bit/"}
+DL_URL=${DL_URL:-"http://www.microlinux.fr/slackware/MLED-14.1-32bit/"}
 
 # The title of the generated RSS feed:
 RSS_TITLE=${RSS_TITLE:-"Microlinux Enterprise Desktop 14.1 32-bit"}
@@ -66,7 +66,7 @@ RSS_TITLE=${RSS_TITLE:-"Microlinux Enterprise Desktop 14.1 32-bit"}
 RSS_ICON=${RSS_ICON:-"http://www.microlinux.fr/images/habillage/pingouin_ayo_small.png"}
 
 # The URL linked to when clicking on the logo:
-RSS_LINK=${RSS_LINK:-"http://www.microlinux.fr/testing/MLED-14.1-32bit/"}
+RSS_LINK=${RSS_LINK:-"http://www.microlinux.fr/slackware/MLED-14.1-32bit/"}
 
 # URL to the full changelog.txt:
 RSS_CLURL=${RSS_CLURL:-"http://www.microlinux.fr/slackware/MLED-14.1-32bit/ChangeLog.txt"}
