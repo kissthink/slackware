@@ -46,10 +46,10 @@ USERDEFS=${USERDEFS:-~/.genreprc}
 # Sane defaults:
 
 # The directory of the Slackware package repository:
-REPOSROOT=${REPOSROOT:-"/home/kikinovak/Web/slackware/MLED-14.1-32bit"}
+REPOSROOT=${REPOSROOT:-"/home/kikinovak/Web/slackware/MLED-14.1-32bit/"}
 
 # Repository maintainer
-REPOSOWNER=${REPOSOWNER:-"Niki Kovacs <info@microlinux.fr>"}
+REPOSOWNER=${REPOSOWNER:-"Niki Kovacs <kikinovak@free.fr>"}
 
 # The GPG key for the repository owner can contain a different string than
 # the value of $REPOSOWNER . If you leave $REPOSOWNERGPG empty, the script will
@@ -57,7 +57,7 @@ REPOSOWNER=${REPOSOWNER:-"Niki Kovacs <info@microlinux.fr>"}
 REPOSOWNERGPG=${REPOSOWNERGPG:-""}
 
 # Under what URL is the repository accessible:
-DL_URL=${DL_URL:-"http://www.microlinux.fr/slackware/MLED-14.1-32bit/"}
+DL_URL=${DL_URL:-"http://www.microlinux.fr/slackware/MLED-14.1-32bit"}
 
 # The title of the generated RSS feed:
 RSS_TITLE=${RSS_TITLE:-"Microlinux Enterprise Desktop 14.1 32-bit"}
@@ -66,7 +66,7 @@ RSS_TITLE=${RSS_TITLE:-"Microlinux Enterprise Desktop 14.1 32-bit"}
 RSS_ICON=${RSS_ICON:-"http://www.microlinux.fr/images/habillage/pingouin_ayo_small.png"}
 
 # The URL linked to when clicking on the logo:
-RSS_LINK=${RSS_LINK:-"http://www.microlinux.fr/slackware/MLED-14.1-32bit/"}
+RSS_LINK=${RSS_LINK:-"http://www.microlinux.fr/slackware/MLED-14.1-32bit"}
 
 # URL to the full changelog.txt:
 RSS_CLURL=${RSS_CLURL:-"http://www.microlinux.fr/slackware/MLED-14.1-32bit/ChangeLog.txt"}
@@ -79,7 +79,7 @@ RSS_FEEDMAX=${RSS_FEEDMAX:-15}
 
 # The RSS generator must use a unique feed identifier.
 # Generate one for your feed by using the string returned by "uuidgen -t":
-RSS_UUID=${RSS_UUID:-"829132a6-2c15-11e4-a716-001ec942847b"}
+RSS_UUID=${RSS_UUID:-"1be15e8e-376c-11e4-a01f-001fd0aeecfe"}
 
 # Either use gpg or gpg2:
 GPGBIN=${GPGBIN:-"/usr/bin/gpg"}
