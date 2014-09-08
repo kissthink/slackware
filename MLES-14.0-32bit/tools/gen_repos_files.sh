@@ -54,7 +54,7 @@ REPOSOWNER=${REPOSOWNER:-"Niki Kovacs <info@microlinux.fr>"}
 # The GPG key for the repository owner can contain a different string than
 # the value of $REPOSOWNER . If you leave $REPOSOWNERGPG empty, the script will
 # use the value you've set for $REPOSOWNER instead to search the GPG keyfile.
-REPOSOWNERGPG=${REPOSOWNERGPG:-""}
+REPOSOWNERGPG=${REPOSOWNERGPG:-"Niki Kovacs <kikinovak@free.fr>"}
 
 # Under what URL is the repository accessible:
 DL_URL=${DL_URL:-"http://www.microlinux.fr/slackware/MLES-14.0-32bit/"}
