@@ -49,7 +49,7 @@ USERDEFS=${USERDEFS:-~/.genreprc}
 REPOSROOT=${REPOSROOT:-"/home/kikinovak/Web/slackware/MLES-14.0-32bit/"}
 
 # Repository maintainer
-REPOSOWNER=${REPOSOWNER:-"Niki Kovacs <info@microlinux.fr>"}
+REPOSOWNER=${REPOSOWNER:-"Niki Kovacs <kikinovak@free.fr>"}
 
 # The GPG key for the repository owner can contain a different string than
 # the value of $REPOSOWNER . If you leave $REPOSOWNERGPG empty, the script will
