@@ -31,7 +31,7 @@ done
 echo
 echo
 echo "+=============================================================================="
-echo "| Checking for packages to te removed from your system..."
+echo "| Checking for packages to be removed from your system..."
 echo "+=============================================================================="
 echo
 sleep 3
