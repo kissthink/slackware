@@ -2,12 +2,19 @@
 ProMAX HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
 ============
 
-Dernière révision : 23 janvier 2013
+Dernière révision : 9 septembre 2014
 
-Ce HOWTO décrit l'installation de ProMAX 2D et de SeisSpace sur Red Hat
-Enterprise Linux Workstation 5.8 64-bit.
+Ce HOWTO décrit l'installation de l'application de calcul géophysique
+ProMAX/SeisSpace sur une station de travail Red Hat Enterprise Linux
+Workstation 5.8 64-bit. Étant donné que RHEL 5.x commence à dater, il devient
+de plus en plus difficile d'installer cette distribution sur du matériel
+récent. La solution consiste donc à opter pour une installation virtualisée
+dans VirtualBox. Cette solution est plus ou moins obligatoire si l'on utilise
+un ordinateur portable.
+
 
   * Obtenir Red Hat Enterprise Linux Workstation 5.8 64-bit
+  * Préparer la machine virtuelle 64-bit
   * Installer Red Hat Enterprise Linux Workstation 5.8 64-bit
   * Installer les Additions Invité sur un système virtualisé
   * Configuration initiale de RHEL WS
@@ -36,6 +43,15 @@ Dans la liste des téléchargements disponibles, c'est 'Red Hat Enterprise
 Desktop (v. 5 for 64-bit x86_64) qui nous intéresse. Ne pas déplier ce lien,
 mais cliquer directement dessus. Ensuite, télécharger les deux images ISO
 'Binary DVD 1' et 'Binary DVD 2'.
+
+
+Préparer la machine virtuelle 64-bit
+------------------------------------
+
+Si VirtualBox propose uniquement la création d'hôtes virtuels 32-bit, il faut
+activer la virtualisation au niveau du BIOS. Sur un portable HP Elitebook, par
+exemple, il faut cocher la case 'Virtualization Technology (VTx)' dans la
+section 'Advanced > Device Configurations' du BIOS.
 
 
 Installer Red Hat Enterprise Linux Workstation 5.8 64-bit
@@ -74,7 +90,7 @@ Vérifier si l'on dispose des prérequis :
 
 Périphériques > Installer les Additions Invité.
 
-  # cd /media/VBOXADDITIONS_4.1.10_76795
+  # cd /media/VBOXADDITIONS_*
   # sh VBoxLinuxAdditions.run
 
 Redémarrer en mode Plein Écran.
