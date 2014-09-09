@@ -7,5 +7,11 @@ xfce/xfwm4-theme-axe
 xfce/gnome-colors
 ap/slackpkg+
 xfce/microlinux-wallpapers
+xap/libreoffice
+locale/mozilla-firefox-l10n
+locale/mozilla-thunderbird-l10n
+# locale/libreoffice-langpack --> build manually
+gnome/libgnomecanvas
+gnome/gdm
 
 

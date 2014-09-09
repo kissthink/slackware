@@ -1,12 +1,12 @@
 [Desktop Entry]
-GenericName=Database
-GenericName[de]=Datenbanken
-GenericName[fr]=Bases de données
-Name=Libre Office Base
+Name=Database
+Name[de]=Datenbanken
+Name[fr]=Bases de données
+Comment=Libre Office Base
 Version=1.0
 Terminal=false
 #Icon=libreoffice4.2-base
-Icon=application-vnd.ms-access
+Icon=ooo-base
 Type=Application
 Categories=Office;
 Exec=libreoffice4.2 --base %U
