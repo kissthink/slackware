@@ -105,5 +105,10 @@ l/tolua++
 l/podofo 
 xap/scribus
 ap/slackpkg+
+kde/k3b
+multimedia/mjpegtools
+multimedia/transcode
+multimedia/vcdimager
+
 
 

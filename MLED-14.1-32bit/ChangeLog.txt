@@ -1,6 +1,11 @@
 Tue Sep  9 05:36:36 CEST 2014
 ap/slackpkg+-1.3.2-noarch-1_microlinux.txz: Added.
   Preconfigured for MLED-14.1-32bit.
+kde/k3b-2.0.2-i486-1_microlinux.txz: Rebuilt.
+  This version comes with full multimedia capabilities.
+multimedia/mjpegtools-2.1.0-i486-2_microlinux.txz: Added.
+multimedia/transcode-1.1.7-i486-2_microlinux.txz: Added.
+multimedia/vcdimager-0.7.24-i486-2_microlinux.txz: Added.
 +---------------------------+
 Sun Sep  7 05:44:49 CEST 2014
 locale/mozilla-firefox-l10n-24.8.0-i486-1_microlinux.txz: Upgraded.
