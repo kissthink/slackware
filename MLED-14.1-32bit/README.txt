@@ -1,40 +1,49 @@
 Microlinux Enterprise Desktop
 =============================
 
-Welcome to the Microlinux Enterprise Desktop. MLED is a full-blown production
-desktop based on Slackware Linux and the KDE desktop environment, with many
-enhancements. It aims to provide a fully functional and reliable working
-environment where everything just works, out of the box. It is currently used
-by various small town halls, public libraries, schools and local radio
-stations in South France. 
+The Microlinux Enterprise Desktop (MLED) is a full-blown production desktop
+based on Slackware Linux and the KDE desktop environment, with many
+enhancements. It is currently used by various small town halls, public
+libraries, schools and local radio stations in South France. 
 
 MLED is not some derivative Linux distribution. It consists of a collection of
-custom packages installed on top of a slightly reduced but otherwise unaltered
-Slackware base system. A handful of KDE-related packages have been rebuilt
-though, either for enhanced functionality or for a nice default configuration. 
+over 100 custom packages installed on top of a trimmed-down Slackware base
+system. A handful of KDE-related packages have been rebuilt for enhanced
+functionality or visual consistency.
 
-The KDE desktop has been trimmed down to a functional minimum, while the
-default user profile deactivates some resource hogs like indexation and
-graphic effects, which allows MLED to perform well even on relatively modest
-hardware. If your PC is more than ten years old, you might want to consider
-the Microlinux Thin Client (MLTC). In its default configuration, MLED consumes
-roughly 200 MB RAM with a loaded desktop on a 32-bit system.
+Despite the use of KDE, MLED tries to stay light on resources. The basic KDE
+desktop has been reduced to a functional minimum, while resource hogs like
+indexation or graphical effects are deactivated in the default user
+configuration. This allows MLED to run satisfyingly even on older hardware,
+consuming roughly 200 MB RAM with a loaded desktop on a 32-bit system.
 
 Some KDE-specific applications like Konqueror, KMail, Calligra, KTorrent,
-Kopete or Amarok are replaced by more functional and/or lightweight
+Kopete or Amarok are replaced by more lightweight and/or intuitive
 counterparts like Mozilla Firefox, Mozilla Thunderbird, LibreOffice,
 Transmission, Pidgin or Clementine. MLED follows a one-app-per-task policy and
-strives to find a good balance between stability and functionality. 
+strives to find a good balance between stability and functionality. All
+non-KDE applications are visually integrated using the Oxygen-GTK theme.
 
-Our choice of KDE has been motivated by several factors. Some of KDE's native
-applications like Dolphin, Okular, K3B or Gwenview remain unrivalled. A
-default KDE desktop includes many more applications than Xfce or MATE, which
-means less additional packages to take care of. It includes the KDM login
-manager, so no hassle with GDM or SLIM. KWin has some powerful graphical
-effects included, so no need to rely on Compiz and the likes. The default
-Oxygen theme already looks professional and doesn't have that "east german
-look" that most GTK environments default to. Last but not least, KDE's
-perennity seems safe compared to other desktop environments. 
+Over the past year, MLED development has gone through many changes with a lot
+of trial and error involved. Various desktop environments have been tested,
+with varying results. The choice of KDE as main desktop environment is now
+motivated by several factors. 
+
+  * Some of KDE's native applications like Dolphin, Okular, K3B, Gwenview or
+    Digikam remain unrivalled. 
+  
+  * KDE includes many more applications than Xfce or MATE, which means less
+    additional packages to take care of. 
+
+  * The included KDM login manager avoids the hassle with GDM or SLIM. 
+  
+  * KWin has some powerful graphical effects included, so no need to rely on
+    Compiz and the likes for that.
+  
+  * The default Oxygen theme offers a sober and corporate look while managing
+    to avoid the "east german touch" that most GTK environments default to.
+
+  * KDE's perennity seems safe compared to other desktop environments. 
 
 
 Installation Guide
@@ -229,7 +238,7 @@ the 'cleanmenu.sh' utility.
 
 Have fun!
 
-Niki Kovacs <info@microlinux.fr>
+Niki Kovacs <info@microlinux.fr> Tue Sep  9 21:01:54 CEST 2014
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
