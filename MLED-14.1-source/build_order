@@ -104,5 +104,6 @@ l/imlib2
 l/tolua++
 l/podofo 
 xap/scribus
+ap/slackpkg+
 
 
