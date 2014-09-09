@@ -36,6 +36,7 @@ n/postfix
 n/dovecot
 n/postgrey
 ap/glances
+ap/slackpkg+
 #n/mpd
 #n/icecast
 #n/ncmpc
