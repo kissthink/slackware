@@ -47,7 +47,7 @@ PKGS_PRIORITY=( microlinux:.* )
 REPOPLUS=( microlinux )
 
 # Define mirrors (uncomment one or more mirror; remember to add it to REPOPLUS)
-#MIRRORPLUS['multilib']=http://taper.alienbase.nl/mirrors/people/alien/multilib/14.1/
+#MIRRORPLUS['multilib']=http://taper.alienbase.nl/mirrors/people/alien/multilib/14.0/
 MIRRORPLUS['microlinux']=http://www.microlinux.fr/slackware/MLES-14.0-64bit/
 
 #
