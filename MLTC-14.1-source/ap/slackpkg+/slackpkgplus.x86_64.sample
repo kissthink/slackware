@@ -1,0 +1,4 @@
+# /etc/slackpkg/slackpkgplus.conf
+
+# MLTC only ships a 32-bit version.
+
