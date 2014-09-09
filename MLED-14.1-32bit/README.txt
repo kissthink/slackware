@@ -1,5 +1,5 @@
-Microlinux Enterprise Desktop
-=============================
+Microlinux Enterprise Desktop 14.1 32-bit
+=========================================
 
 The Microlinux Enterprise Desktop (MLED) is a full-blown production desktop
 based on Slackware Linux and the KDE desktop environment, with many
@@ -24,15 +24,15 @@ Transmission, Pidgin or Clementine. MLED follows a one-app-per-task policy and
 strives to find a good balance between stability and functionality. All
 non-KDE applications are visually integrated using the Oxygen-GTK theme.
 
-Over the past year, MLED development has gone through many changes with a lot
-of trial and error involved. Various desktop environments have been tested,
-with varying results. The choice of KDE as main desktop environment is now
-motivated by several factors. 
+Over the past year, MLED development has gone through many changes and
+iterations with a lot of trial and error involved. Various desktop
+environments have been tested, with varying results. The choice of KDE as main
+desktop environment is now motivated by several factors. 
 
   * Some of KDE's native applications like Dolphin, Okular, K3B, Gwenview or
     Digikam remain unrivalled. 
   
-  * KDE includes many more applications than Xfce or MATE, which means less
+  * KDE ships many more applications than Xfce or MATE, which means less
     additional packages to take care of. 
 
   * The included KDM login manager avoids the hassle with GDM or SLIM. 
@@ -71,17 +71,14 @@ Bring up your network interface, for example:
 
   root@slackware:/# dhcpcd eth0 
 
-The Slackware installation environment already sports an empty /tag directory
-for a set of tagfiles, so let's use it.
+The Slackware installation environment already sports an empty '/tag'
+directory for a set of tagfiles, so let's use it.
 
   # cd /tag 
 
 Grab the set of tagfiles from the server:
 
   # wget http://www.microlinux.fr/slackware/MLED-14.1-32bit/tagfiles.tar.gz 
-
-The sets of tagfiles in the 32-bit and 64-bit subdirectories are symlinked and
-thus identical.
 
 Unpack the downloaded archive:
 
@@ -127,12 +124,12 @@ the following command:
   # cd 
   # git clone https://github.com/kikinovak/slackware 
 
-Download and install the slackpkg+ plugin for slackpkg. It's very convenient
-for handling third-party repositories like MLED.
+Download and install the 'slackpkg+' plugin for 'slackpkg'. It's very
+convenient for handling third-party repositories like MLED. 
 
   # links http://www.microlinux.fr/slackware/MLED-14.1-32bit/slackware
 
-Grab the package from the ap/ directory and install it. It already comes
+Grab the package from the 'ap/' directory and install it. It already comes
 preconfigured for MLED.
 
 Edit '/etc/slackpkg/mirrors' and choose a Slackware mirror according to your
@@ -145,6 +142,10 @@ ftp://ftp.fu-berlin.de/unix/linux/slackware/slackware-14.1/
 ...
 --8<--------------------------------------------------------------------------
 
+  /!\ You might wonder why I use a german mirror even if I reside in France.
+  That's because the admins of the french OVH mirror can't seem to get their
+  act together. 
+
 Update GPG keys:
 
   # slackpkg update gpg 
@@ -154,17 +155,17 @@ Update information about available packages:
   # slackpkg update 
 
 In case you didn't use the set of tagfiles during the initial installation,
-now's the time to eventually catch up on it. The 'MLED-14.1-32bit/tools'
+now's the time to eventually catch up on it. The 'MLED-14.1-32bit/tools/'
 subdirectory provides a basic 'trim_desktop_base.sh' script that takes care of
 two things:
 
   1. install needed packages
   2. get rid of unneeded packages
 
-The script makes use of slackpkg, so make sure it's configured correctly.
+The script makes use of 'slackpkg', so make sure it's configured correctly.
 
-# cd slackware/MLED-14.1-32bit/tools/ 
-# ./trim_desktop_base.sh 
+  # cd slackware/MLED-14.1-32bit/tools/ 
+  # ./trim_desktop_base.sh 
 
 If you don't use the 'trim_desktop_base.sh' script, then you still have to
 install the MPlayer plugin from 'extra/' manually:
@@ -175,25 +176,32 @@ Now upgrade the base Slackware packages:
 
   # slackpkg upgrade-all 
 
-You'll notice that some packages like kde-baseapps, k3b, MPlayer and some
-others will be "upgraded", e. g. replaced by an MLED package. Don't worry,
-this is normal. They have been rebuilt to offer extra functionality.
+You'll notice that some packages like kde-baseapps, kde-workspace,
+kde-base-artwork, kde-wallpapers, k3b and MPlayer will be "upgraded", e. g.
+replaced by an MLED package. Don't worry, this is normal. They have been
+rebuilt either to strip some cruft or to offer extra functionality.
 
-Install the MLED package collection:
+Now install the MLED package collection:
 
   # slackpkg install microlinux
 
-Now you'll probably have to adjust your environment variables in
+You'll probably have to adjust your environment variables in
 '/etc/profile.d/lang.sh'. Default variables are set to fr_FR.UTF8, since
 MLED's main use is in France:
 
-  export LANG=fr_FR.utf8
-  export LC_COLLATE=fr_FR.utf8
+--8<---------- /etc/profile.d/lang.sh ----------------------------------------
+...
+export LANG=fr_FR.utf8
+export LC_COLLATE=fr_FR.utf8
+--8<--------------------------------------------------------------------------
 
 English-speaking Slackware users will use something like this:
 
-  export LANG=en_US.utf8
-  export LC_COLLATE=en_US.utf8
+--8<---------- /etc/profile.d/lang.sh ----------------------------------------
+...
+export LANG=en_US.utf8
+export LC_COLLATE=en_US.utf8
+--8<--------------------------------------------------------------------------
 
 The 'MLED-14.1-32bit/tools/' directory features the 'cleanmenu.sh' utility, a
 small Bash script to clean up various desktop menu entries and make them
@@ -223,11 +231,11 @@ Maintenance
 
 Here's a few tips & tricks to keep your MLED installation up-to-date.
 
-Check out ChangeLog.txt for new additions and/or updates.
+Check out 'ChangeLog.txt' for new additions and/or updates.
 
 If you want to know the state of your system, what's installed, what's not
-installed, what updates are available, etc., you can do all this in one single
-command:
+installed, what updates are available, etc., you can do all this using one
+single command:
 
   # slackpkg search microlinux | less 
 
