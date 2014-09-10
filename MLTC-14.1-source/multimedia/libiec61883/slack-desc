@@ -1,0 +1,12 @@
+           |-----handy-ruler------------------------------------------------------|
+libiec61883: libiec61883 (implementation of IEC 61883, part 1)
+libiec61883:
+libiec61883: This library is an implementation of IEC 61883, part 1 (CIP,
+libiec61883: plug registers, and CMP), part 2 (DV-SD), part 4 (MPEG2-TS),
+libiec61883: and part 6 (AMDTP). Outside of IIDC, nearly all FireWire
+libiec61883: multimedia devices use IEC 61883 protocols.
+libiec61883: 
+libiec61883: 
+libiec61883: 
+libiec61883: 
+libiec61883: Package created by Niki Kovacs <info@microlinux.fr>
