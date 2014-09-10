@@ -1,5 +1,7 @@
 # Add
 MPlayer:ADD
+audacious:ADD
+audacious-plugins:ADD
 fluxbox:ADD
 gftp:ADD
 gimp:ADD
@@ -11,11 +13,10 @@ pidgin:ADD
 sane:ADD
 windowmaker:ADD
 xine-lib:ADD
+xsane:ADD
 xscreensaver:ADD
 
 # Skip
-audacious:SKP
-audacious-plugins:SKP
 blackbox:SKP
 blueman:SKP
 ddd:SKP
@@ -44,5 +45,4 @@ xlockmore:SKP
 xmms:SKP
 xpaint:SKP
 xpdf:SKP
-xsane:SKP
 xv:SKP

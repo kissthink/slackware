@@ -1,0 +1,66 @@
+expect: expect (program that talks to other interactive programs)
+expect:
+expect: Expect is a program that talks to other interactive programs according
+expect: to a script.  Following the script, Expect knows what can be expected
+expect: from a program and what the correct response should be.  An
+expect: interpreted language provides branching and high-level control
+expect: structures to direct the dialogue. 
+expect:
+expect: Expect was written by Don Libes of the National Institute of Standards
+expect: and Technology.
+expect:
+hfsutils: hfsutils (HFS volume utilities)
+hfsutils:
+hfsutils: hfsutils is a collection of tools for reading and writing Macintosh
+hfsutils: HFS volumes.  These utilities can manipulate HFS volumes on nearly any
+hfsutils: medium.  Since hfs and xhfs are linked with Tcl/Tk shared libraries,
+hfsutils: the hfsutils package is included here in the TCL software series.
+hfsutils:
+hfsutils: hfsutils was written by Robert Leslie <rob@mars.org>
+hfsutils:
+hfsutils:
+hfsutils:
+tcl: tcl (Tool Command Language)
+tcl:
+tcl: Tcl, developed by Dr. John Ousterhout, is a simple to use text-based
+tcl: script language with many built-in features which make it especially
+tcl: nice for writing interactive scripts.
+tcl:
+tcl:
+tcl:
+tcl:
+tcl:
+tcl:
+tclx: tclx (Extended Tcl)
+tclx:
+tclx: Extended Tcl (TclX), is a set of extensions to Tcl, the Tool Command
+tclx: Language invented by Dr. John Ousterhout. Extended Tcl is oriented
+tclx: towards Unix system programming tasks and large application
+tclx: development. Many additional interfaces to the Unix operating system
+tclx: are provided. Extended Tcl was designed and implemented by Karl
+tclx: Lehenbauer (karl@NeoSoft.com) and Mark Diekhans (markd@Grizzly.com),
+tclx: with help in the early stages from Peter da Silva (peter@NeoSoft.com).
+tclx:
+tclx:
+tix: tix (an extension to the Tk toolkit)
+tix:
+tix: Tix, which stands for Tk Interface Extension, is an extension library
+tix: for Tcl/Tk. Tix adds many new widgets, image types and other commands
+tix: that allows you to create compelling Tcl/Tk-based GUI applications.
+tix: With these new widgets, your applications will look great and interact
+tix: with your users in intuitive ways.
+tix:
+tix:
+tix:
+tix:
+tk: tk (Tk toolkit for Tcl)
+tk:
+tk: Tk is an extension to Tcl that allows you to quickly and easily build
+tk: X11 applications that have the look and feel of Motif apps.
+tk:
+tk:
+tk:
+tk:
+tk:
+tk:
+tk:
