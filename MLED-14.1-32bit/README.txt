@@ -9,7 +9,8 @@ libraries, schools and local radio stations in South France.
 MLED is not some derivative Linux distribution. It consists of a collection of
 over 100 custom packages installed on top of a trimmed-down Slackware base
 system. A handful of KDE-related packages have been rebuilt for enhanced
-functionality or visual consistency.
+functionality or visual consistency. A complete collection of codecs, plugins
+and fonts provide a seamless desktop experience.
 
 Despite the use of KDE, MLED tries to stay light on resources. The basic KDE
 desktop has been reduced to a functional minimum, while resource hogs like
@@ -23,6 +24,10 @@ counterparts like Mozilla Firefox, Mozilla Thunderbird, LibreOffice,
 Transmission, Pidgin or Clementine. MLED follows a one-app-per-task policy and
 strives to find a good balance between stability and functionality. All
 non-KDE applications are visually integrated using the Oxygen-GTK theme.
+
+
+Why MLED is based on KDE
+------------------------
 
 Over the past year, MLED development has gone through many changes and
 iterations with a lot of trial and error involved. Various desktop
@@ -44,6 +49,35 @@ desktop environment is now motivated by several factors.
     to avoid the "east german touch" that most GTK environments default to.
 
   * KDE's perennity seems safe compared to other desktop environments. 
+
+
+Target audience
+---------------
+
+As far as the installation itself is concerned, MLED's main audience are users
+with a bit of Linux and Slackware experience who want a rock-solid desktop
+with a full set of applications where everything works out of the box, so they
+can be immediately productive. Once MLED is installed, even Joe Sixpack or his
+french counterpart Madame Michu can use it without even giving it a second
+thought.
+
+
+Hardware requirements
+---------------------
+
+The Microlinux Enterprise Desktop runs reasonably fast on seven year old
+hardware. A dual-core processor with 1 GB RAM and a 40 GB hard disk will be
+sufficient for the job.
+
+
+Processor architectures and support cycles
+------------------------------------------
+
+MLED packages are available in binary form for both 32-bit and 64-bit
+architectures. The package repositories also include a full set of sources and
+build scripts. Starting with Slackware 14.1, MLED will do its best to follow
+the Slackware support cycle of roughly five years per release. Hence the "E"
+in "MLED" :o)
 
 
 Installation Guide
@@ -242,6 +276,40 @@ single command:
 Last but not least, application updates may sometimes overwrite the custom
 menu entries with a default '*.desktop' file. If that is the case, simply rerun
 the 'cleanmenu.sh' utility.
+
+
+Support
+-------
+
+MLED is basically Slackware, with a bunch of extra packages and a few minor
+configuration tweaks. The Slackware forum on LinuxQuestions.org is by far the
+best place to get help on Slackware. Folks on LQ are a nice and competent
+crowd. Just describe your ignorance, and there's a good chance your questions
+will be answered. By the way, I'm user 'kikinovak' on LQ.
+
+
+Credits
+-------
+
+Much of this work is based on great work that's been done before by some
+excellent folks, and here's the place to give them credit :
+
+  * Eric Hameleers for kindly mirroring the MLED project 
+
+  * All the crew from SlackBuilds.org for their really precious work 
+
+  * Daniel de Kok, who worked on what we called "Slick Linux" back in 2006 
+
+  * Matteo Rossini for the great 'slackpkg+' tool 
+
+  * And of course, Patrick Volkerding for creating the "Finest Linux Anywhere"
+
+
+Support MLED development
+------------------------
+
+MLED is basically a one-man-project. If you want to support it, read more
+about it on http://www.microlinux.fr/mled.php
 
 
 Have fun!
