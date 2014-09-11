@@ -68,6 +68,16 @@ multimedia/musepack-tools
 multimedia/mplayer-codecs
 multimedia/libdvdcss
 multimedia/flashplayer-plugin
+gnome/evince
+xap/MPlayer
+l/gmtk
+gnome/gnome-mplayer
+xfce/ristretto
+xap/audacious
+xap/audacious-plugins
+profile/user-settings-xfce
+
+
 
 
 

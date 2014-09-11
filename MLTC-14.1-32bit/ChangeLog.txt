@@ -1,3 +1,13 @@
+Thu Sep 11 09:32:16 CEST 2014
+gnome/evince-3.8.3-i486-1_microlinux.txz: Added.
+xap/MPlayer-1.1.1-i486-2_microlinux.txz: Added.
+l/gmtk-1.0.8-i486-1_microlinux.txz: Added.
+gnome/gnome-mplayer-1.0.8-i486-1_microlinux.txz: Added.
+xfce/ristretto-0.6.3-i486-1_microlinux.txz: Added.
+xap/audacious-3.4.2-i486-1_microlinux.txz: Added.
+xap/audacious-plugins-3.4.2-i486-1_microlinux.txz: Added.
+profile/user-settings-xfce-1.0-noarch-1_microlinux.txz: Added.
++---------------------------+
 Wed Sep 10 15:15:59 CEST 2014
 ap/sbopkg-0.37.0-noarch-2_microlinux.txz: Added.
 ap/recode-3.6-i486-2_microlinux.txz: Added.
