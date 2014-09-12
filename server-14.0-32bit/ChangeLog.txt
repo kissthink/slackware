@@ -1,8 +1,4 @@
-Tue Sep  9 05:13:27 CEST 2014
-ap/slackpkg+-1.3.2-noarch-1_microlinux.txz: Added.
-  Preconfigured for MLES-14.0-32bit.
-+--------------------------+
-Mon Sep  1 18:04:41 CEST 2014
+Fri Sep 12 07:28:51 CEST 2014
 profile/user-settings-console-1.0-noarch-5_microlinux.txz: Added.
 ap/sbopkg-0.36.0-noarch-4_microlinux.txz: Added.
 ap/recode-3.6-i486-5_microlinux.txz: Added.
@@ -43,4 +39,5 @@ n/mpd-0.17.1-i486-4_microlinux.txz: Added.
 n/icecast-2.3.3-i486-1_microlinux.txz: Added.
 n/ncmpc-0.16-i486-4_microlinux.txz: Added.
 ap/glances-1.7.6-i486-1_microlinux.txz: Added.
+ap/slackpkg+-1.3.2-noarch-1_microlinux.txz: Added.
 +--------------------------+

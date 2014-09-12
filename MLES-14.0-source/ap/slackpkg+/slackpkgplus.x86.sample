@@ -35,7 +35,7 @@ PKGS_PRIORITY=( microlinux:.* )
 REPOPLUS=( microlinux )
 
 # Define mirrors (uncomment one or more mirror; remember to add it to REPOPLUS)
-MIRRORPLUS['microlinux']=http://www.microlinux.fr/slackware/MLES-14.0-32bit/
+MIRRORPLUS['microlinux']=http://www.microlinux.fr/slackware/server-14.0-32bit/
 
 #
 # Supported Repositories (see /usr/doc/slackpkg+-* for details):

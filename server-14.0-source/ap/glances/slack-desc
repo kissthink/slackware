@@ -1,0 +1,12 @@
+       |-----handy-ruler------------------------------------------------------|
+glances: glances (a cross-platform curses-based monitoring tool)
+glances:
+glances: glances is a cross-platform curses-based monitoring tool written in
+glances: Python, which can adapt the displayed information depending on the
+glances: terminal size. It can also work in a client/server mode for remote
+glances: monitoring. It uses the psutil library to get information from your
+glances: system.
+glances:
+glances: 
+glances:
+glances: Package created by Niki Kovacs <info@microlinux.fr>

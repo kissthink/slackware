@@ -59,6 +59,10 @@ AddDefaultCharset uft-8
   AddDescription "Microlinux Enterprise Desktop 14.1 source" MLED-14.1-source
   AddDescription "Microlinux Thin Client 14.1 source" MLTC-14.1-source
   AddDescription "Microlinux Thin Client 14.1 32-bit" MLTC-14.1-32bit
+  AddDescription "Microlinux 14.0 Server 32-bit" server-14.0-32bit
+  AddDescription "Microlinux 14.0 Server 64-bit" server-14.0-64bit
+  AddDescription "Microlinux 14.1 Server 32-bit" server-14.1-32bit
+  AddDescription "Microlinux 14.1 Server 64-bit" server-14.1-64bit
   AddDescription "Plain text file" .txt README
   AddDescription "Slackware build script" .SlackBuild
   AddDescription "Slackware package" .txz
