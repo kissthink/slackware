@@ -1,1 +1,0 @@
-../../MLES-14.0-32bit/tools/trim_server_base.sh
