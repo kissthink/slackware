@@ -1,8 +1,4 @@
-Tue Sep  9 05:30:54 CEST 2014
-ap/slackpkg+-1.3.2-noarch-1_microlinux.txz: Added.
-  Preconfigured for MLES-14.1-64bit.
-+--------------------------+
-Tue Sep  2 09:35:53 CEST 2014
+Fri Sep 12 11:51:13 CEST 2014
 profile/user-settings-console-1.0-noarch-2_microlinux.txz: Added.
 ap/sbopkg-0.37.0-noarch-2_microlinux.txz: Added.
 ap/recode-3.6-x86_64-5_microlinux.txz: Added.
@@ -40,4 +36,5 @@ n/postfix-2.9.9-x86_64-1_microlinux.txz: Added.
 n/dovecot-2.1.17-x86_64-4_microlinux.txz: Added.
 n/postgrey-1.34-x86_64-4_microlinux.txz: Added.
 ap/glances-1.7.6-x86_64-1_microlinux.txz: Added.
+ap/slackpkg+-1.3.2-noarch-1_microlinux.txz: Added.
 +--------------------------+
