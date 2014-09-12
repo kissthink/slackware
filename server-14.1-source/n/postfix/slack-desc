@@ -1,0 +1,12 @@
+       |-----handy-ruler------------------------------------------------------|
+postfix: postfix (alternative to the widely-used Sendmail program)
+postfix: 
+postfix: Postfix attempts to be fast, easy to administer, and secure, while at
+postfix: the same time being sendmail compatible enough to not upset existing
+postfix: users. Thus, the outside has a sendmail-ish flavor, but the inside is
+postfix: completely different. 
+postfix: 
+postfix: 
+postfix: 
+postfix: 
+postfix: Package created by Niki Kovacs <info@microlinux.fr> 

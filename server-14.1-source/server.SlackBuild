@@ -1,0 +1,57 @@
+#!/bin/sh
+# Copyright (c) 2014 Niki Kovacs <info@microlinux.fr>
+# -----------------------------------------------------------------------------
+#
+# This script builds all Slackware packages listed in the 'build_order' file. 
+#
+# It puts them in the according package directory. 
+#
+# If the package already exists inthe package directory AND if it's already
+# installed, the script skips to the next package.
+#
+# Otherwise it builds and installs the package, until all packages listed in
+# the 'build_order' file are built.
+#
+
+CWD=$(pwd)
+SOURCEDIR=${CWD}
+case $(uname -m) in 
+  x86_64) TXZDIR=$CWD/../server-14.1-64bit/slackware64 ;;
+  *     ) TXZDIR=$CWD/../server-14.1-32bit/slackware ;;
+esac  
+
+# Set the number of parallel make jobs
+NUMJOBS="-j5"
+export NUMJOBS="$NUMJOBS"
+
+BUILDPACKAGES=$(egrep -v '(^\#)|(^\s+$)' $CWD/build_order)
+
+for BUILDPACKAGE in $BUILDPACKAGES; do
+  CATEGORY=$(dirname $BUILDPACKAGE)
+  PACKAGE=$(basename $BUILDPACKAGE)
+  if [ -r ${TXZDIR}/${CATEGORY}/${PACKAGE}-[r0-9]*.txz ] ; then
+    if [ -r /var/log/packages/${PACKAGE}-[r0-9]* ] ; then
+      continue
+    fi
+  fi
+  echo
+  echo "+=============================================================================="
+  echo "| Building package ${PACKAGE}..."
+  echo "+=============================================================================="
+  echo 
+  sleep 3
+
+  (
+    OUTPUT=${TXZDIR}/${CATEGORY}
+    export OUTPUT
+    cd ${SOURCEDIR}/${CATEGORY}/${PACKAGE} || exit 1
+    ./${PACKAGE}.SlackBuild || exit 1
+  )
+  upgradepkg --install-new ${TXZDIR}/${CATEGORY}/${PACKAGE}-[r0-9]*.txz || exit 1
+done
+
+echo 
+echo "+=============================================================================="
+echo "| Successfully built and installed all packages !"
+echo "+=============================================================================="
+echo

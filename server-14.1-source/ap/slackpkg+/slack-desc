@@ -1,0 +1,12 @@
+         |-handy-ruler------------------------------------------------------|
+slackpkg+: slackpkg+ plugin for third-party repositories
+slackpkg+:
+slackpkg+: Slackpkg is a package manager for Slackware. 
+slackpkg+:
+slackpkg+: Slackpkg+ is a plugin for slackpkg.
+slackpkg+:   It adds support for third-party repositories.
+slackpkg+:   You can install, upgrade and search from multiple repositories.
+slackpkg+:
+slackpkg+: This version comes preconfigured for MLES 14.1.
+slackpkg+:
+slackpkg+: Package created by Niki Kovacs <info@microlinux.fr>
