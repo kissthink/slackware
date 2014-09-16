@@ -56,4 +56,5 @@ multimedia/mplayer-codecs-20110131-i486-2_microlinux.txz: Added.
 xap/MPlayer-1.1.1-i486-2_microlinux.txz: Rebuilt.
 multimedia/libdvdcss-1.2.13-i486-3_microlinux.txz: Added.
 multimedia/flashplayer-plugin-11.2.202.394-i386-1_microlinux.txz: Added.
+xap/libreoffice-4.2.6-i586-1_microlinux.txz: Added.
 +--------------------------+

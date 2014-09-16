@@ -1,0 +1,23 @@
+[Desktop Entry]
+Name=Word Processor
+Name[de]=Textverarbeitung
+Name[fr]=Traitement de texte
+Comment=LibreOffice Writer
+Version=1.0
+Terminal=false
+Icon=libreoffice4.1-writer
+Type=Application
+Categories=Office;WordProcessor;X-Red-Hat-Base;X-MandrivaLinux-Office-Wordprocessors;
+Exec=libreoffice4.1 --writer %U
+MimeType=application/vnd.oasis.opendocument.text;application/vnd.oasis.opendocument.text-template;application/vnd.oasis.opendocument.text-web;application/vnd.oasis.opendocument.text-master;application/vnd.sun.xml.writer;application/vnd.sun.xml.writer.template;application/vnd.sun.xml.writer.global;application/msword;application/vnd.ms-word;application/x-doc;application/x-hwp;application/rtf;text/rtf;application/vnd.wordperfect;application/wordperfect;application/vnd.lotus-wordpro;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.ms-word.document.macroenabled.12;application/vnd.openxmlformats-officedocument.wordprocessingml.template;application/vnd.ms-word.template.macroenabled.12;application/vnd.ms-works;application/vnd.stardivision.writer-global;application/x-extension-txt;application/x-t602;text/plain;
+StartupNotify=true
+X-GIO-NoFuse=true
+Keywords=Text;Letter;Fax;Document;OpenDocument Text;Microsoft Word;Microsoft Works;Lotus WordPro;OpenOffice Writer;CV;odt;doc;docx;rtf;
+InitialPreference=5
+X-Ayatana-Desktop-Shortcuts=X-New
+StartupWMClass=libreoffice-writer
+X-KDE-Protocols=file,http,smb,ftp,webdav
+[X-New Shortcut Group]
+UnityQuicklist=New Document
+Exec=/opt/libreoffice4.1/program/s-writer %U
+TargetEnvironment=Unity
