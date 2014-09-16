@@ -1,0 +1,12 @@
+                  |-----handy-ruler------------------------------------------------------|
+flashplayer-plugin: flashplayer-plugin (flash plugin for web browsers)
+flashplayer-plugin:
+flashplayer-plugin: Provides Adobe Flash plugin for browsers that recognize
+flashplayer-plugin: /usr/lib(64)/mozilla/plugins as a valid plugin directory.
+flashplayer-plugin:
+flashplayer-plugin: 
+flashplayer-plugin: 
+flashplayer-plugin:
+flashplayer-plugin:
+flashplayer-plugin:
+flashplayer-plugin: Package created by Niki Kovacs <info@microlinux.fr>

@@ -35,4 +35,25 @@ multimedia/twolame-0.3.13-i486-2_microlinux.txz: Added.
 multimedia/libvpx-1.2.0-i486-2_microlinux.txz: Added.
 multimedia/xvidcore-1.3.2-i486-2_microlinux.txz: Added.
 multimedia/ffmpeg-2.1-i686_custom-2_microlinux.txz: Added.
+multimedia/libcdaudio-0.99.12p2-i486-3_microlinux.txz: Added.
+multimedia/dirac-1.0.2-i486-2_microlinux.txz: Added.
+multimedia/libdca-0.0.5-i486-2_microlinux.txz: Added.
+multimedia/libdvdnav-4.2.0-i486-3_microlinux.txz: Added.
+multimedia/faad2-2.7-i486-2_microlinux.txz: Added.
+multimedia/libkate-0.4.1-i486-3_microlinux.txz: Added.
+multimedia/libmms-0.6.2-i486-2_microlinux.txz: Added.
+multimedia/libmusicbrainz-2.1.5-i486-2_microlinux.txz: Added.
+multimedia/soundtouch-1.7.1-i486-2_microlinux.txz: Added.
+multimedia/gst-plugins-bad-0.10.23-i486-2_microlinux.txz: Added.
+multimedia/a52dec-0.7.4-i486-2_microlinux.txz: Added.
+multimedia/libmpeg2-0.5.1-i486-2_microlinux.txz: Added.
+multimedia/gst-plugins-ugly-0.10.19-i486-2_microlinux.txz: Added.
+multimedia/libdv-1.0.0-i486-2_microlinux.txz: Added.
+multimedia/libcuefile-r475-i486-2_microlinux.txz: Added.
+multimedia/libreplaygain-r475-i486-2_microlinux.txz: Added.
+multimedia/musepack-tools-r475-i486-2_microlinux.txz: Added.
+multimedia/mplayer-codecs-20110131-i486-2_microlinux.txz: Added.
+xap/MPlayer-1.1.1-i486-2_microlinux.txz: Rebuilt.
+multimedia/libdvdcss-1.2.13-i486-3_microlinux.txz: Added.
+multimedia/flashplayer-plugin-11.2.202.394-i386-1_microlinux.txz: Added.
 +--------------------------+
