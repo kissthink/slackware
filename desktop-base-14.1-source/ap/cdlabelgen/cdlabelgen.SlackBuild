@@ -37,7 +37,7 @@ OUTPUT=${OUTPUT:-/tmp}
 
 set -e 
 
-#wget -c http://www.aczoom.com/pub/tools/$PRGNAM-$VERSION.tgz
+wget -c http://www.aczoom.com/pub/tools/$PRGNAM-$VERSION.tgz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
