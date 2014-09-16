@@ -1,0 +1,12 @@
+       |-----handy-ruler------------------------------------------------------|
+libilbc: libilbc ( iLBC codec from WebRTC )
+libilbc:
+libilbc: iLBC codec from the WebRTC project. It provides a base for
+libilbc: distribution packages and can be used as drop-in replacement for the
+libilbc: non-free code from RFC 3591.
+libilbc:
+libilbc: 
+libilbc:
+libilbc:
+libilbc:
+libilbc: Package created by Niki Kovacs <info@microlinux.fr>
