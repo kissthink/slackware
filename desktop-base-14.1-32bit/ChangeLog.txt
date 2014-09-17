@@ -1,3 +1,20 @@
+Wed Sep 17 06:08:46 CEST 2014
+multimedia/gst-ffmpeg-0.10.13-i486-2_microlinux.txz: Added.
+multimedia/libquicktime-1.2.4-i486-2_microlinux.txz: Added.
+multimedia/mlt-0.9.0-i486-2_microlinux.txz: Added.
+multimedia/mjpegtools-2.1.0-i486-2_microlinux.txz: Added.
+multimedia/transcode-1.1.7-i486-2_microlinux.txz: Added.
+multimedia/vcdimager-0.7.24-i486-2_microlinux.txz: Added.
+multimedia/cddb-py-1.4-i486-3_microlinux.txz: Added.
+multimedia/id3lib-3.8.3-i486-3_microlinux.txz: Added.
+multimedia/libmusicbrainz3-3.0.3-i486-2_microlinux.txz: Added.
+multimedia/gstreamer1-1.2.2-i486-2_microlinux.txz: Added.
+multimedia/gst1-plugins-base-1.2.2-i486-2_microlinux.txz: Added.
+multimedia/gst1-plugins-good-1.2.2-i486-2_microlinux.txz: Added.
+multimedia/gst1-plugins-bad-1.2.2-i486-2_microlinux.txz: Added.
+multimedia/gst1-plugins-ugly-1.2.2-i486-2_microlinux.txz: Added.
+multimedia/gst1-libav-1.2.2-i486-2_microlinux.txz: Added.
++--------------------------+
 Tue Sep 16 07:45:00 CEST 2014
 profile/user-settings-console-1.0-noarch-2_microlinux.txz: Added.
 ap/sbopkg-0.37.0-noarch-2_microlinux.txz: Added.
