@@ -1,0 +1,3245 @@
+anthy: anthy (a system for Japanese input method)
+anthy:
+anthy: Anthy is a library for Japanese text input.  It converts Hiragana text
+anthy: to Kana Kanji mixed text.
+anthy:
+anthy: anthy home: http://anthy.sourceforge.jp/
+anthy:
+anthy:
+anthy:
+anthy:
+anthy:
+appres: appres (X resource inspection utility)
+appres:
+appres: The appres program prints the resources seen by an application
+appres: (or subhierarchy of an application) with the specified class and
+appres: instance names.  It can be used to determine which resources a
+appres: particular program will load.
+appres:
+appres:
+appres:
+appres:
+appres:
+bdftopcf: bdftopcf (font compiler for the X server and font server)
+bdftopcf:
+bdftopcf: Fonts in Portable Compiled Format can be read by any architecture,
+bdftopcf: although the file is structured to allow one particular architecture
+bdftopcf: to read them directly without reformatting.  This allows fast reading
+bdftopcf: on the appropriate machine, but the files are still portable (but
+bdftopcf: read more slowly) on other machines.
+bdftopcf:
+bdftopcf:
+bdftopcf:
+bdftopcf:
+beforelight: beforelight (X11 screensaver)
+beforelight:
+beforelight: The beforelight program is a sample implementation of a screen saver
+beforelight: for X servers supporting the MIT-SCREEN-SAVER extension.   It is only
+beforelight: recommended for use as a code sample, as it does not include features
+beforelight: such as screen locking or configurability, and relies on the legacy
+beforelight: Xaw toolkit.
+beforelight:
+beforelight:
+beforelight:
+beforelight:
+bigreqsproto: bigreqsproto (C prototypes for X11 Big Requests Extension)
+bigreqsproto:
+bigreqsproto: bigreqsproto is part of X11.
+bigreqsproto:
+bigreqsproto: For more information about the X.Org Foundation (the providers of the
+bigreqsproto: X.Org implementation of the X Window System), see their website:
+bigreqsproto:
+bigreqsproto: http://www.x.org
+bigreqsproto:
+bigreqsproto:
+bigreqsproto:
+bitmap: bitmap (X bitmap (XBM) editor and converter utilities)
+bitmap:
+bitmap: The bitmap package includes the bitmap, bmtoa, and atobm programs.
+bitmap:
+bitmap:
+bitmap:
+bitmap:
+bitmap:
+bitmap:
+bitmap:
+bitmap:
+compiz: compiz
+compiz:
+compiz: compiz is part of X11.
+compiz:
+compiz: For more information about the X.Org Foundation (the providers of the
+compiz: X.Org implementation of the X Window System), see their website:
+compiz:
+compiz: http://www.x.org
+compiz:
+compiz:
+compiz:
+compositeproto: compositeproto
+compositeproto:
+compositeproto: compositeproto is part of X11.
+compositeproto:
+compositeproto: For more information about the X.Org Foundation (the providers of the
+compositeproto: X.Org implementation of the X Window System), see their website:
+compositeproto:
+compositeproto: http://www.x.org
+compositeproto:
+compositeproto:
+compositeproto:
+damageproto: damageproto
+damageproto:
+damageproto: damageproto is part of X11.
+damageproto:
+damageproto: For more information about the X.Org Foundation (the providers of the
+damageproto: X.Org implementation of the X Window System), see their website:
+damageproto:
+damageproto: http://www.x.org
+damageproto:
+damageproto:
+damageproto:
+dejavu-fonts-ttf: dejavu-fonts-ttf (DejaVu fonts)
+dejavu-fonts-ttf:
+dejavu-fonts-ttf: The DejaVu fonts are a font family based on the Bitstream Vera Fonts
+dejavu-fonts-ttf: (http://gnome.org/fonts/).  Its purpose is to provide a wider range
+dejavu-fonts-ttf: of characters (see http://dejavu.sf.net for more information) while
+dejavu-fonts-ttf: maintaining the original look and feel.
+dejavu-fonts-ttf:
+dejavu-fonts-ttf: DejaVu fonts are based on Bitstream Vera fonts version 1.10.
+dejavu-fonts-ttf:
+dejavu-fonts-ttf:
+dejavu-fonts-ttf:
+dmxproto: dmxproto
+dmxproto:
+dmxproto: dmxproto is part of X11.
+dmxproto:
+dmxproto: For more information about the X.Org Foundation (the providers of the
+dmxproto: X.Org implementation of the X Window System), see their website:
+dmxproto:
+dmxproto: http://www.x.org
+dmxproto:
+dmxproto:
+dmxproto:
+dri2proto: dri2proto (C prototypes for X11 Direct Rendering Infrastructure 2)
+dri2proto:
+dri2proto: dri2proto is part of X11.
+dri2proto:
+dri2proto: For more information about the X.Org Foundation (the providers of the
+dri2proto: X.Org implementation of the X Window System), see their website:
+dri2proto:
+dri2proto: http://www.x.org
+dri2proto:
+dri2proto:
+dri2proto:
+editres: editres (X11 resource editor)
+editres:
+editres: editres is part of X11.
+editres:
+editres: For more information about the X.Org Foundation (the providers of the
+editres: X.Org implementation of the X Window System), see their website:
+editres:
+editres: http://www.x.org
+editres:
+editres:
+editres:
+encodings: encodings
+encodings:
+encodings: encodings is part of X11.
+encodings:
+encodings: For more information about the X.Org Foundation (the providers of the
+encodings: X.Org implementation of the X Window System), see their website:
+encodings:
+encodings: http://www.x.org
+encodings:
+encodings:
+encodings:
+evieext: evieext
+evieext:
+evieext: evieext is part of X11.
+evieext:
+evieext: For more information about the X.Org Foundation (the providers of the
+evieext: X.Org implementation of the X Window System), see their website:
+evieext:
+evieext: http://www.x.org
+evieext:
+evieext:
+evieext:
+fixesproto: fixesproto
+fixesproto:
+fixesproto: fixesproto is part of X11.
+fixesproto:
+fixesproto: For more information about the X.Org Foundation (the providers of the
+fixesproto: X.Org implementation of the X Window System), see their website:
+fixesproto:
+fixesproto: http://www.x.org
+fixesproto:
+fixesproto:
+fixesproto:
+font-adobe-100dpi: font-adobe-100dpi
+font-adobe-100dpi:
+font-adobe-100dpi: font-adobe-100dpi is part of X11.
+font-adobe-100dpi:
+font-adobe-100dpi: For more information about the X.Org Foundation (the providers of the
+font-adobe-100dpi: X.Org implementation of the X Window System), see their website:
+font-adobe-100dpi:
+font-adobe-100dpi: http://www.x.org
+font-adobe-100dpi:
+font-adobe-100dpi:
+font-adobe-100dpi:
+font-adobe-75dpi: font-adobe-75dpi
+font-adobe-75dpi:
+font-adobe-75dpi: font-adobe-75dpi is part of X11.
+font-adobe-75dpi:
+font-adobe-75dpi: For more information about the X.Org Foundation (the providers of the
+font-adobe-75dpi: X.Org implementation of the X Window System), see their website:
+font-adobe-75dpi:
+font-adobe-75dpi: http://www.x.org
+font-adobe-75dpi:
+font-adobe-75dpi:
+font-adobe-75dpi:
+font-adobe-utopia-100dpi: font-adobe-utopia-100dpi
+font-adobe-utopia-100dpi:
+font-adobe-utopia-100dpi: font-adobe-utopia-100dpi is part of X11.
+font-adobe-utopia-100dpi:
+font-adobe-utopia-100dpi: For more information about the X.Org Foundation (the providers of the
+font-adobe-utopia-100dpi: X.Org implementation of the X Window System), see their website:
+font-adobe-utopia-100dpi:
+font-adobe-utopia-100dpi: http://www.x.org
+font-adobe-utopia-100dpi:
+font-adobe-utopia-100dpi:
+font-adobe-utopia-100dpi:
+font-adobe-utopia-75dpi: font-adobe-utopia-75dpi
+font-adobe-utopia-75dpi:
+font-adobe-utopia-75dpi: font-adobe-utopia-75dpi is part of X11.
+font-adobe-utopia-75dpi:
+font-adobe-utopia-75dpi: For more information about the X.Org Foundation (the providers of the
+font-adobe-utopia-75dpi: X.Org implementation of the X Window System), see their website:
+font-adobe-utopia-75dpi:
+font-adobe-utopia-75dpi: http://www.x.org
+font-adobe-utopia-75dpi:
+font-adobe-utopia-75dpi:
+font-adobe-utopia-75dpi:
+font-adobe-utopia-type1: font-adobe-utopia-type1
+font-adobe-utopia-type1:
+font-adobe-utopia-type1: font-adobe-utopia-type1 is part of X11.
+font-adobe-utopia-type1:
+font-adobe-utopia-type1: For more information about the X.Org Foundation (the providers of the
+font-adobe-utopia-type1: X.Org implementation of the X Window System), see their website:
+font-adobe-utopia-type1:
+font-adobe-utopia-type1: http://www.x.org
+font-adobe-utopia-type1:
+font-adobe-utopia-type1:
+font-adobe-utopia-type1:
+font-alias: font-alias
+font-alias:
+font-alias: font-alias is part of X11.
+font-alias:
+font-alias: For more information about the X.Org Foundation (the providers of the
+font-alias: X.Org implementation of the X Window System), see their website:
+font-alias:
+font-alias: http://www.x.org
+font-alias:
+font-alias:
+font-alias:
+font-arabic-misc: font-arabic-misc
+font-arabic-misc:
+font-arabic-misc: font-arabic-misc is part of X11.
+font-arabic-misc:
+font-arabic-misc: For more information about the X.Org Foundation (the providers of the
+font-arabic-misc: X.Org implementation of the X Window System), see their website:
+font-arabic-misc:
+font-arabic-misc: http://www.x.org
+font-arabic-misc:
+font-arabic-misc:
+font-arabic-misc:
+font-bh-100dpi: font-bh-100dpi
+font-bh-100dpi:
+font-bh-100dpi: font-bh-100dpi is part of X11.
+font-bh-100dpi:
+font-bh-100dpi: For more information about the X.Org Foundation (the providers of the
+font-bh-100dpi: X.Org implementation of the X Window System), see their website:
+font-bh-100dpi:
+font-bh-100dpi: http://www.x.org
+font-bh-100dpi:
+font-bh-100dpi:
+font-bh-100dpi:
+font-bh-75dpi: font-bh-75dpi
+font-bh-75dpi:
+font-bh-75dpi: font-bh-75dpi is part of X11.
+font-bh-75dpi:
+font-bh-75dpi: For more information about the X.Org Foundation (the providers of the
+font-bh-75dpi: X.Org implementation of the X Window System), see their website:
+font-bh-75dpi:
+font-bh-75dpi: http://www.x.org
+font-bh-75dpi:
+font-bh-75dpi:
+font-bh-75dpi:
+font-bh-lucidatypewriter-100dpi: font-bh-lucidatypewriter-100dpi
+font-bh-lucidatypewriter-100dpi:
+font-bh-lucidatypewriter-100dpi: font-bh-lucidatypewriter-100dpi is part of X11.
+font-bh-lucidatypewriter-100dpi:
+font-bh-lucidatypewriter-100dpi: For more information about the X.Org Foundation (the providers of the
+font-bh-lucidatypewriter-100dpi: X.Org implementation of the X Window System), see their website:
+font-bh-lucidatypewriter-100dpi:
+font-bh-lucidatypewriter-100dpi: http://www.x.org
+font-bh-lucidatypewriter-100dpi:
+font-bh-lucidatypewriter-100dpi:
+font-bh-lucidatypewriter-100dpi:
+font-bh-lucidatypewriter-75dpi: font-bh-lucidatypewriter-75dpi
+font-bh-lucidatypewriter-75dpi:
+font-bh-lucidatypewriter-75dpi: font-bh-lucidatypewriter-75dpi is part of X11.
+font-bh-lucidatypewriter-75dpi:
+font-bh-lucidatypewriter-75dpi: For more information about the X.Org Foundation (the providers of the
+font-bh-lucidatypewriter-75dpi: X.Org implementation of the X Window System), see their website:
+font-bh-lucidatypewriter-75dpi:
+font-bh-lucidatypewriter-75dpi: http://www.x.org
+font-bh-lucidatypewriter-75dpi:
+font-bh-lucidatypewriter-75dpi:
+font-bh-lucidatypewriter-75dpi:
+font-bh-ttf: font-bh-ttf
+font-bh-ttf:
+font-bh-ttf: font-bh-ttf is part of X11.
+font-bh-ttf:
+font-bh-ttf: For more information about the X.Org Foundation (the providers of the
+font-bh-ttf: X.Org implementation of the X Window System), see their website:
+font-bh-ttf:
+font-bh-ttf: http://www.x.org
+font-bh-ttf:
+font-bh-ttf:
+font-bh-ttf:
+font-bh-type1: font-bh-type1
+font-bh-type1:
+font-bh-type1: font-bh-type1 is part of X11.
+font-bh-type1:
+font-bh-type1: For more information about the X.Org Foundation (the providers of the
+font-bh-type1: X.Org implementation of the X Window System), see their website:
+font-bh-type1:
+font-bh-type1: http://www.x.org
+font-bh-type1:
+font-bh-type1:
+font-bh-type1:
+font-bitstream-100dpi: font-bitstream-100dpi
+font-bitstream-100dpi:
+font-bitstream-100dpi: font-bitstream-100dpi is part of X11.
+font-bitstream-100dpi:
+font-bitstream-100dpi: For more information about the X.Org Foundation (the providers of the
+font-bitstream-100dpi: X.Org implementation of the X Window System), see their website:
+font-bitstream-100dpi:
+font-bitstream-100dpi: http://www.x.org
+font-bitstream-100dpi:
+font-bitstream-100dpi:
+font-bitstream-100dpi:
+font-bitstream-75dpi: font-bitstream-75dpi
+font-bitstream-75dpi:
+font-bitstream-75dpi: font-bitstream-75dpi is part of X11.
+font-bitstream-75dpi:
+font-bitstream-75dpi: For more information about the X.Org Foundation (the providers of the
+font-bitstream-75dpi: X.Org implementation of the X Window System), see their website:
+font-bitstream-75dpi:
+font-bitstream-75dpi: http://www.x.org
+font-bitstream-75dpi:
+font-bitstream-75dpi:
+font-bitstream-75dpi:
+font-bitstream-speedo: font-bitstream-speedo
+font-bitstream-speedo:
+font-bitstream-speedo: font-bitstream-speedo is part of X11.
+font-bitstream-speedo:
+font-bitstream-speedo: For more information about the X.Org Foundation (the providers of the
+font-bitstream-speedo: X.Org implementation of the X Window System), see their website:
+font-bitstream-speedo:
+font-bitstream-speedo: http://www.x.org
+font-bitstream-speedo:
+font-bitstream-speedo:
+font-bitstream-speedo:
+font-bitstream-type1: font-bitstream-type1
+font-bitstream-type1:
+font-bitstream-type1: font-bitstream-type1 is part of X11.
+font-bitstream-type1:
+font-bitstream-type1: For more information about the X.Org Foundation (the providers of the
+font-bitstream-type1: X.Org implementation of the X Window System), see their website:
+font-bitstream-type1:
+font-bitstream-type1: http://www.x.org
+font-bitstream-type1:
+font-bitstream-type1:
+font-bitstream-type1:
+fontcacheproto: fontcacheproto
+fontcacheproto:
+fontcacheproto: fontcacheproto is part of X11.
+fontcacheproto:
+fontcacheproto: For more information about the X.Org Foundation (the providers of the
+fontcacheproto: X.Org implementation of the X Window System), see their website:
+fontcacheproto:
+fontcacheproto: http://www.x.org
+fontcacheproto:
+fontcacheproto:
+fontcacheproto:
+fontconfig: fontconfig (Font library and tools)
+fontconfig:
+fontconfig: Fontconfig is a library and tools designed to provide system-wide
+fontconfig: font configuration, customization, and application access.
+fontconfig:
+fontconfig: Fontconfig is written and maintained by Keith Packard.
+fontconfig:
+fontconfig:
+fontconfig:
+fontconfig:
+fontconfig:
+font-cronyx-cyrillic: font-cronyx-cyrillic
+font-cronyx-cyrillic:
+font-cronyx-cyrillic: font-cronyx-cyrillic is part of X11.
+font-cronyx-cyrillic:
+font-cronyx-cyrillic: For more information about the X.Org Foundation (the providers of the
+font-cronyx-cyrillic: X.Org implementation of the X Window System), see their website:
+font-cronyx-cyrillic:
+font-cronyx-cyrillic: http://www.x.org
+font-cronyx-cyrillic:
+font-cronyx-cyrillic:
+font-cronyx-cyrillic:
+font-cursor-misc: font-cursor-misc
+font-cursor-misc:
+font-cursor-misc: font-cursor-misc is part of X11.
+font-cursor-misc:
+font-cursor-misc: For more information about the X.Org Foundation (the providers of the
+font-cursor-misc: X.Org implementation of the X Window System), see their website:
+font-cursor-misc:
+font-cursor-misc: http://www.x.org
+font-cursor-misc:
+font-cursor-misc:
+font-cursor-misc:
+font-daewoo-misc: font-daewoo-misc
+font-daewoo-misc:
+font-daewoo-misc: font-daewoo-misc is part of X11.
+font-daewoo-misc:
+font-daewoo-misc: For more information about the X.Org Foundation (the providers of the
+font-daewoo-misc: X.Org implementation of the X Window System), see their website:
+font-daewoo-misc:
+font-daewoo-misc: http://www.x.org
+font-daewoo-misc:
+font-daewoo-misc:
+font-daewoo-misc:
+font-dec-misc: font-dec-misc
+font-dec-misc:
+font-dec-misc: font-dec-misc is part of X11.
+font-dec-misc:
+font-dec-misc: For more information about the X.Org Foundation (the providers of the
+font-dec-misc: X.Org implementation of the X Window System), see their website:
+font-dec-misc:
+font-dec-misc: http://www.x.org
+font-dec-misc:
+font-dec-misc:
+font-dec-misc:
+font-ibm-type1: font-ibm-type1
+font-ibm-type1:
+font-ibm-type1: font-ibm-type1 is part of X11.
+font-ibm-type1:
+font-ibm-type1: For more information about the X.Org Foundation (the providers of the
+font-ibm-type1: X.Org implementation of the X Window System), see their website:
+font-ibm-type1:
+font-ibm-type1: http://www.x.org
+font-ibm-type1:
+font-ibm-type1:
+font-ibm-type1:
+font-isas-misc: font-isas-misc
+font-isas-misc:
+font-isas-misc: font-isas-misc is part of X11.
+font-isas-misc:
+font-isas-misc: For more information about the X.Org Foundation (the providers of the
+font-isas-misc: X.Org implementation of the X Window System), see their website:
+font-isas-misc:
+font-isas-misc: http://www.x.org
+font-isas-misc:
+font-isas-misc:
+font-isas-misc:
+font-jis-misc: font-jis-misc
+font-jis-misc:
+font-jis-misc: font-jis-misc is part of X11.
+font-jis-misc:
+font-jis-misc: For more information about the X.Org Foundation (the providers of the
+font-jis-misc: X.Org implementation of the X Window System), see their website:
+font-jis-misc:
+font-jis-misc: http://www.x.org
+font-jis-misc:
+font-jis-misc:
+font-jis-misc:
+font-micro-misc: font-micro-misc
+font-micro-misc:
+font-micro-misc: font-micro-misc is part of X11.
+font-micro-misc:
+font-micro-misc: For more information about the X.Org Foundation (the providers of the
+font-micro-misc: X.Org implementation of the X Window System), see their website:
+font-micro-misc:
+font-micro-misc: http://www.x.org
+font-micro-misc:
+font-micro-misc:
+font-micro-misc:
+font-misc-cyrillic: font-misc-cyrillic
+font-misc-cyrillic:
+font-misc-cyrillic: font-misc-cyrillic is part of X11.
+font-misc-cyrillic:
+font-misc-cyrillic: For more information about the X.Org Foundation (the providers of the
+font-misc-cyrillic: X.Org implementation of the X Window System), see their website:
+font-misc-cyrillic:
+font-misc-cyrillic: http://www.x.org
+font-misc-cyrillic:
+font-misc-cyrillic:
+font-misc-cyrillic:
+font-misc-ethiopic: font-misc-ethiopic
+font-misc-ethiopic:
+font-misc-ethiopic: font-misc-ethiopic is part of X11.
+font-misc-ethiopic:
+font-misc-ethiopic: For more information about the X.Org Foundation (the providers of the
+font-misc-ethiopic: X.Org implementation of the X Window System), see their website:
+font-misc-ethiopic:
+font-misc-ethiopic: http://www.x.org
+font-misc-ethiopic:
+font-misc-ethiopic:
+font-misc-ethiopic:
+font-misc-meltho: font-misc-meltho
+font-misc-meltho:
+font-misc-meltho: font-misc-meltho is part of X11.
+font-misc-meltho:
+font-misc-meltho: For more information about the X.Org Foundation (the providers of the
+font-misc-meltho: X.Org implementation of the X Window System), see their website:
+font-misc-meltho:
+font-misc-meltho: http://www.x.org
+font-misc-meltho:
+font-misc-meltho:
+font-misc-meltho:
+font-misc-misc: font-misc-misc
+font-misc-misc:
+font-misc-misc: font-misc-misc is part of X11.
+font-misc-misc:
+font-misc-misc: For more information about the X.Org Foundation (the providers of the
+font-misc-misc: X.Org implementation of the X Window System), see their website:
+font-misc-misc:
+font-misc-misc: http://www.x.org
+font-misc-misc:
+font-misc-misc:
+font-misc-misc:
+font-mutt-misc: font-mutt-misc
+font-mutt-misc:
+font-mutt-misc: font-mutt-misc is part of X11.
+font-mutt-misc:
+font-mutt-misc: For more information about the X.Org Foundation (the providers of the
+font-mutt-misc: X.Org implementation of the X Window System), see their website:
+font-mutt-misc:
+font-mutt-misc: http://www.x.org
+font-mutt-misc:
+font-mutt-misc:
+font-mutt-misc:
+font-schumacher-misc: font-schumacher-misc
+font-schumacher-misc:
+font-schumacher-misc: font-schumacher-misc is part of X11.
+font-schumacher-misc:
+font-schumacher-misc: For more information about the X.Org Foundation (the providers of the
+font-schumacher-misc: X.Org implementation of the X Window System), see their website:
+font-schumacher-misc:
+font-schumacher-misc: http://www.x.org
+font-schumacher-misc:
+font-schumacher-misc:
+font-schumacher-misc:
+font-screen-cyrillic: font-screen-cyrillic
+font-screen-cyrillic:
+font-screen-cyrillic: font-screen-cyrillic is part of X11.
+font-screen-cyrillic:
+font-screen-cyrillic: For more information about the X.Org Foundation (the providers of the
+font-screen-cyrillic: X.Org implementation of the X Window System), see their website:
+font-screen-cyrillic:
+font-screen-cyrillic: http://www.x.org
+font-screen-cyrillic:
+font-screen-cyrillic:
+font-screen-cyrillic:
+font-sony-misc: font-sony-misc
+font-sony-misc:
+font-sony-misc: font-sony-misc is part of X11.
+font-sony-misc:
+font-sony-misc: For more information about the X.Org Foundation (the providers of the
+font-sony-misc: X.Org implementation of the X Window System), see their website:
+font-sony-misc:
+font-sony-misc: http://www.x.org
+font-sony-misc:
+font-sony-misc:
+font-sony-misc:
+fontsproto: fontsproto (C prototypes for X11 X Fonts Extension)
+fontsproto:
+fontsproto: fontsproto is part of X11.
+fontsproto:
+fontsproto: For more information about the X.Org Foundation (the providers of the
+fontsproto: X.Org implementation of the X Window System), see their website:
+fontsproto:
+fontsproto: http://www.x.org
+fontsproto:
+fontsproto:
+fontsproto:
+font-sun-misc: font-sun-misc
+font-sun-misc:
+font-sun-misc: font-sun-misc is part of X11.
+font-sun-misc:
+font-sun-misc: For more information about the X.Org Foundation (the providers of the
+font-sun-misc: X.Org implementation of the X Window System), see their website:
+font-sun-misc:
+font-sun-misc: http://www.x.org
+font-sun-misc:
+font-sun-misc:
+font-sun-misc:
+fonttosfnt: fonttosfnt
+fonttosfnt:
+fonttosfnt: fonttosfnt is part of X11.
+fonttosfnt:
+fonttosfnt: For more information about the X.Org Foundation (the providers of the
+fonttosfnt: X.Org implementation of the X Window System), see their website:
+fonttosfnt:
+fonttosfnt: http://www.x.org
+fonttosfnt:
+fonttosfnt:
+fonttosfnt:
+font-util: font-util (X.Org font package creation/installation utilities)
+font-util:
+font-util: font-util is part of X11.
+font-util:
+font-util: For more information about the X.Org Foundation (the providers of the
+font-util: X.Org implementation of the X Window System), see their website:
+font-util:
+font-util: http://www.x.org
+font-util:
+font-util:
+font-util:
+font-winitzki-cyrillic: font-winitzki-cyrillic
+font-winitzki-cyrillic:
+font-winitzki-cyrillic: font-winitzki-cyrillic is part of X11.
+font-winitzki-cyrillic:
+font-winitzki-cyrillic: For more information about the X.Org Foundation (the providers of the
+font-winitzki-cyrillic: X.Org implementation of the X Window System), see their website:
+font-winitzki-cyrillic:
+font-winitzki-cyrillic: http://www.x.org
+font-winitzki-cyrillic:
+font-winitzki-cyrillic:
+font-winitzki-cyrillic:
+font-xfree86-type1: font-xfree86-type1
+font-xfree86-type1:
+font-xfree86-type1: font-xfree86-type1 is part of X11.
+font-xfree86-type1:
+font-xfree86-type1: For more information about the X.Org Foundation (the providers of the
+font-xfree86-type1: X.Org implementation of the X Window System), see their website:
+font-xfree86-type1:
+font-xfree86-type1: http://www.x.org
+font-xfree86-type1:
+font-xfree86-type1:
+font-xfree86-type1:
+freeglut: freeglut (alternative GLUT library)
+freeglut:
+freeglut: freeglut is a completely OpenSourced alternative to the OpenGL 
+freeglut: Utility Toolkit (GLUT) library.  GLUT (and hence freeglut) allows 
+freeglut: the user to create and manage windows containing OpenGL contexts 
+freeglut: on a wide range of platforms and also read the mouse, keyboard, and 
+freeglut: joystick functions.
+freeglut:
+freeglut: Homepage: http://freeglut.sourceforge.net/
+freeglut:
+freeglut:
+fslsfonts: fslsfonts (produces a list of fonts served by an X font server)
+fslsfonts:
+fslsfonts: fslsfonts is part of X11.
+fslsfonts:
+fslsfonts: For more information about the X.Org Foundation (the providers of the
+fslsfonts: X.Org implementation of the X Window System), see their website:
+fslsfonts:
+fslsfonts: http://www.x.org
+fslsfonts:
+fslsfonts:
+fslsfonts:
+fstobdf: fstobdf (copy fonts from an X11 font server)
+fstobdf:
+fstobdf: The fstobdf program reads a font from a font server and prints a BDF
+fstobdf: file on the standard output that may be used to recreate the font.
+fstobdf: This is useful in testing servers, debugging font metrics, and
+fstobdf: reproducing lost BDF files.
+fstobdf:
+fstobdf:
+fstobdf:
+fstobdf:
+fstobdf:
+gccmakedep: gccmakedep
+gccmakedep:
+gccmakedep: gccmakedep is part of X11.
+gccmakedep:
+gccmakedep: For more information about the X.Org Foundation (the providers of the
+gccmakedep: X.Org implementation of the X Window System), see their website:
+gccmakedep:
+gccmakedep: http://www.x.org
+gccmakedep:
+gccmakedep:
+gccmakedep:
+glew: glew (the OpenGL Extension Wrangler Library)
+glew:
+glew: The OpenGL Extension Wrangler Library (GLEW) is a cross-platform 
+glew: open-source C/C++ extension loading library. GLEW provides efficient 
+glew: run-time mechanisms for determining which OpenGL extensions are 
+glew: supported on the target platform.
+glew:
+glew: Homepage: http://glew.sourceforge.net/
+glew:
+glew:
+glew:
+glproto: glproto (C prototypes for X11 OpenGL Extension)
+glproto:
+glproto: glproto is part of X11.
+glproto:
+glproto: For more information about the X.Org Foundation (the providers of the
+glproto: X.Org implementation of the X Window System), see their website:
+glproto:
+glproto: http://www.x.org
+glproto:
+glproto:
+glproto:
+glu: glu (Mesa OpenGL utility library)
+glu:
+glu: glu is the Mesa OpenGL utility library (libGLU).
+glu:
+glu:
+glu:
+glu:
+glu:
+glu:
+glu:
+glu:
+iceauth: iceauth (display/edit ICE authorization information)
+iceauth:
+iceauth: The iceauth program is used to edit and display the authorization
+iceauth: information used in connecting with ICE.  It operates very much like
+iceauth: the xauth program for X11 connection authentication records.
+iceauth:
+iceauth:
+iceauth:
+iceauth:
+iceauth:
+iceauth:
+ico: ico (X11 test client)
+ico:
+ico: ico is a simple animation program that may be used for testing various
+ico: X11 operations and extensions.  It displays a wire-frame rotating
+ico: polyhedron, with hidden lines removed, or a solid-fill polyhedron
+ico: with hidden faces removed.
+ico:
+ico:
+ico:
+ico:
+ico:
+imake: imake (C preprocessor interface to the make utility)
+imake:
+imake: The imake package contains the imake utility, plus the following
+imake: support programs: ccmakedep, mergelib, revpath, mkdirhier, makeg,
+imake: cleanlinks, mkhtmlindex, xmkmf
+imake:
+imake:
+imake:
+imake:
+imake:
+imake:
+inputproto: inputproto (C prototypes for X Input extension)
+inputproto:
+inputproto: inputproto is part of X11.
+inputproto:
+inputproto: For more information about the X.Org Foundation (the providers of the
+inputproto: X.Org implementation of the X Window System), see their website:
+inputproto:
+inputproto: http://www.x.org
+inputproto:
+inputproto:
+inputproto:
+intel-gpu-tools: intel-gpu-tools (Intel DRM Driver Testing Tools)
+intel-gpu-tools:
+intel-gpu-tools: This is a collection of tools for development and testing of the
+intel-gpu-tools: Intel DRM driver.  There are many macro-level test suites including
+intel-gpu-tools: xtest, rendercheck, piglit, and oglconform.
+intel-gpu-tools:
+intel-gpu-tools:
+intel-gpu-tools:
+intel-gpu-tools:
+intel-gpu-tools:
+intel-gpu-tools:
+kbproto: kbproto (C prototypes for X11 X Keyboard Extension)
+kbproto:
+kbproto: kbproto is part of X11.
+kbproto:
+kbproto: For more information about the X.Org Foundation (the providers of the
+kbproto: X.Org implementation of the X Window System), see their website:
+kbproto:
+kbproto: http://www.x.org
+kbproto:
+kbproto:
+kbproto:
+libdmx: libdmx (DMX (Distributed Multihead X) extension library)
+libdmx:
+libdmx: libdmx is part of X11.
+libdmx:
+libdmx: For more information about the X.Org Foundation (the providers of the
+libdmx: X.Org implementation of the X Window System), see their website:
+libdmx:
+libdmx: http://www.x.org
+libdmx:
+libdmx:
+libdmx:
+libdrm: libdrm (A library to support Direct Rendering)
+libdrm:
+libdrm: This library implements an interface to the kernel's DRM services.
+libdrm: It is used to support hardware accelerated 3-D rendering.
+libdrm:
+libdrm:
+libdrm:
+libdrm:
+libdrm:
+libdrm:
+libdrm:
+liberation-fonts-ttf: liberation-fonts-ttf (Liberation TTF Fonts)
+liberation-fonts-ttf:
+liberation-fonts-ttf: Liberation is the collective name of three TrueType font
+liberation-fonts-ttf: families: Liberation Sans, Liberation Serif and Liberation
+liberation-fonts-ttf: Mono.  These fonts are metric-compatible with Arial, Times
+liberation-fonts-ttf: New Roman, and Courier New respectively.
+liberation-fonts-ttf:
+liberation-fonts-ttf: The fonts were developed by Steve Matteson of Ascender Corp.
+liberation-fonts-ttf: for Red Hat, Inc.
+liberation-fonts-ttf:
+liberation-fonts-ttf:
+libfontenc: libfontenc (font encoding library)
+libfontenc:
+libfontenc: libfontenc is part of X11.
+libfontenc:
+libfontenc: For more information about the X.Org Foundation (the providers of the
+libfontenc: X.Org implementation of the X Window System), see their website:
+libfontenc:
+libfontenc: http://www.x.org
+libfontenc:
+libfontenc:
+libfontenc:
+libFS: libFS (X Font Service client library)
+libFS:
+libFS: libFS is part of X11.
+libFS:
+libFS: For more information about the X.Org Foundation (the providers of the
+libFS: X.Org implementation of the X Window System), see their website:
+libFS:
+libFS: http://www.x.org
+libFS:
+libFS:
+libFS:
+libhangul: libhangul (Hangul keyboard input library)
+libhangul:
+libhangul: This library implements Hangul keyboard input with various types of
+libhangul: Korean keyboards. It is intended to be a base library of Korean
+libhangul: input methods on multiple platforms.
+libhangul:
+libhangul: libhangul home: http://code.google.com/p/libhangul/
+libhangul:
+libhangul:
+libhangul:
+libhangul:
+libICE: libICE (X Inter-Client Exchange Library)
+libICE:
+libICE: libICE is part of X11.
+libICE:
+libICE: For more information about the X.Org Foundation (the providers of the
+libICE: X.Org implementation of the X Window System), see their website:
+libICE:
+libICE: http://www.x.org
+libICE:
+libICE:
+libICE:
+libpciaccess: libpciaccess (Generic PCI access library)
+libpciaccess:
+libpciaccess: libpciaccess is part of X11.
+libpciaccess:
+libpciaccess: For more information about the X.Org Foundation (the providers of the
+libpciaccess: X.Org implementation of the X Window System), see their website:
+libpciaccess:
+libpciaccess: http://www.x.org
+libpciaccess:
+libpciaccess:
+libpciaccess:
+libpthread-stubs: libpthread-stubs
+libpthread-stubs:
+libpthread-stubs: libpthread-stubs is part of X11.
+libpthread-stubs:
+libpthread-stubs: For more information about the X.Org Foundation (the providers of the
+libpthread-stubs: X.Org implementation of the X Window System), see their website:
+libpthread-stubs:
+libpthread-stubs: http://www.x.org
+libpthread-stubs:
+libpthread-stubs:
+libpthread-stubs:
+libSM: libSM (X Session Management Library)
+libSM:
+libSM: libSM is part of X11.
+libSM:
+libSM: For more information about the X.Org Foundation (the providers of the
+libSM: X.Org implementation of the X Window System), see their website:
+libSM:
+libSM: http://www.x.org
+libSM:
+libSM:
+libSM:
+libX11: libX11 (Core X11 protocol client library)
+libX11:
+libX11: libX11 is part of X11.
+libX11:
+libX11: For more information about the X.Org Foundation (the providers of the
+libX11: X.Org implementation of the X Window System), see their website:
+libX11:
+libX11: http://www.x.org
+libX11:
+libX11:
+libX11:
+libXau: libXau (Sample Authorization Protocol for X)
+libXau:
+libXau: This is a very simple mechanism for providing individual access to 
+libXau: an X Window System display.It uses existing core protocol and library 
+libXau: hooks for specifying authorization data in the connection setup block 
+libXau: to restrict use of the display to only those clients that show that 
+libXau: they know a server-specific key called a "magic cookie."
+libXau:
+libXau:
+libXau:
+libXau:
+libXaw: libXaw (client library for the X Athena Widget Set)
+libXaw:
+libXaw: Xaw is a widget set based on the X Toolkit Intrinsics (Xt) Library.
+libXaw:
+libXaw:
+libXaw:
+libXaw:
+libXaw:
+libXaw:
+libXaw:
+libXaw:
+libXaw3d: libXaw3d (3D enhanced version of the MIT Athena widget set)
+libXaw3d:
+libXaw3d: Xaw3d is an enhanced version of the MIT Athena Widget set for
+libXaw3d: the X Window System.  Xaw3d adds a three-dimensional look to
+libXaw3d: applications with minimal or no source code changes.
+libXaw3d:
+libXaw3d: You should install Xaw3d if you are using applications which 
+libXaw3d: incorporate the MIT Athena widget set and you'd like to 
+libXaw3d: incorporate a 3D look into those applications.
+libXaw3d:
+libXaw3d:
+libxcb: libxcb (X protocol C-language Binding)
+libxcb:
+libxcb: The XCB library provides an interface to the X Window System protocol
+libxcb: which is fully capable of replacing Xlib.  In fact, libX11 makes use
+libxcb: of libxcb as much as possible.  :-)  Porting to XCB has several
+libxcb: advantages such as a smaller memory footprint, latency hiding, direct
+libxcb: protocol access, and improved thread support.
+libxcb:
+libxcb:
+libxcb:
+libxcb:
+libXcm: libXcm (reference implementation of the net-color specification)
+libXcm:
+libXcm: The libXcm library is a reference implementation of the net-color 
+libXcm: spec.  It allows to attach color regions to X windows to communicate 
+libXcm: with color servers.
+libXcm:
+libXcm:
+libXcm:
+libXcm:
+libXcm:
+libXcm:
+libXcomposite: libXcomposite (client library for the X Composite extension)
+libXcomposite:
+libXcomposite: libXcomposite is part of X11.
+libXcomposite:
+libXcomposite: For more information about the X.Org Foundation (the providers of the
+libXcomposite: X.Org implementation of the X Window System), see their website:
+libXcomposite:
+libXcomposite: http://www.x.org
+libXcomposite:
+libXcomposite:
+libXcomposite:
+libXcursor: libXcursor (X Window System Cursor management library)
+libXcursor:
+libXcursor: libXcursor is part of X11.
+libXcursor:
+libXcursor: For more information about the X.Org Foundation (the providers of the
+libXcursor: X.Org implementation of the X Window System), see their website:
+libXcursor:
+libXcursor: http://www.x.org
+libXcursor:
+libXcursor:
+libXcursor:
+libXdamage: libXdamage (client library for the X Damage Extension)
+libXdamage:
+libXdamage: libXdamage is part of X11.
+libXdamage:
+libXdamage: For more information about the X.Org Foundation (the providers of the
+libXdamage: X.Org implementation of the X Window System), see their website:
+libXdamage:
+libXdamage: http://www.x.org
+libXdamage:
+libXdamage:
+libXdamage:
+libXdmcp: libXdmcp (X Display Manager Control Protocol library)
+libXdmcp:
+libXdmcp: libXdmcp is part of X11.
+libXdmcp:
+libXdmcp: For more information about the X.Org Foundation (the providers of the
+libXdmcp: X.Org implementation of the X Window System), see their website:
+libXdmcp:
+libXdmcp: http://www.x.org
+libXdmcp:
+libXdmcp:
+libXdmcp:
+libXevie: libXevie
+libXevie:
+libXevie: libXevie is part of X11.
+libXevie:
+libXevie: For more information about the X.Org Foundation (the providers of the
+libXevie: X.Org implementation of the X Window System), see their website:
+libXevie:
+libXevie: http://www.x.org
+libXevie:
+libXevie:
+libXevie:
+libXext: libXext (library for common extensions to the X11 protocol)
+libXext:
+libXext: libXext is part of X11.
+libXext:
+libXext: For more information about the X.Org Foundation (the providers of the
+libXext: X.Org implementation of the X Window System), see their website:
+libXext:
+libXext: http://www.x.org
+libXext:
+libXext:
+libXext:
+libXfixes: libXfixes (client library for the Xfixes extension)
+libXfixes:
+libXfixes: libXfixes is part of X11.
+libXfixes:
+libXfixes: For more information about the X.Org Foundation (the providers of the
+libXfixes: X.Org implementation of the X Window System), see their website:
+libXfixes:
+libXfixes: http://www.x.org
+libXfixes:
+libXfixes:
+libXfixes:
+libXfont: libXfont (library for legacy X11 font system)
+libXfont:
+libXfont: libXfont provides the core of the legacy X11 font system, handling the
+libXfont: index files (fonts.dir, fonts.alias, fonts.scale), the various font
+libXfont: file formats, and rasterizing them.   It is used by the X servers, the
+libXfont: X Font Server (xfs), and some font utilities (bdftopcf for instance),
+libXfont: but should not be used by normal X11 clients.  X11 clients access fonts
+libXfont: via either the new API's in libXft, or the legacy API's in libX11.
+libXfont:
+libXfont:
+libXfont:
+libXfontcache: libXfontcache
+libXfontcache:
+libXfontcache: libXfontcache is part of X11.
+libXfontcache:
+libXfontcache: For more information about the X.Org Foundation (the providers of the
+libXfontcache: X.Org implementation of the X Window System), see their website:
+libXfontcache:
+libXfontcache: http://www.x.org
+libXfontcache:
+libXfontcache:
+libXfontcache:
+libXft: libXft (X FreeType library)
+libXft:
+libXft: libXft is part of X11.
+libXft:
+libXft: For more information about the X.Org Foundation (the providers of the
+libXft: X.Org implementation of the X Window System), see their website:
+libXft:
+libXft: http://www.x.org
+libXft:
+libXft:
+libXft:
+libXi: libXi (library for the X Input Extension)
+libXi:
+libXi: libXi is part of X11.
+libXi:
+libXi: For more information about the X.Org Foundation (the providers of the
+libXi: X.Org implementation of the X Window System), see their website:
+libXi:
+libXi: http://www.x.org
+libXi:
+libXi:
+libXi:
+libXinerama: libXinerama (library for Xinerama extension to X11 Protocol)
+libXinerama:
+libXinerama: libXinerama is part of X11.
+libXinerama:
+libXinerama: For more information about the X.Org Foundation (the providers of the
+libXinerama: X.Org implementation of the X Window System), see their website:
+libXinerama:
+libXinerama: http://www.x.org
+libXinerama:
+libXinerama:
+libXinerama:
+libxkbfile: libxkbfile (X11 keyboard file manipulation library)
+libxkbfile:
+libxkbfile: libxkbfile is part of X11.
+libxkbfile:
+libxkbfile: For more information about the X.Org Foundation (the providers of the
+libxkbfile: X.Org implementation of the X Window System), see their website:
+libxkbfile:
+libxkbfile: http://www.x.org
+libxkbfile:
+libxkbfile:
+libxkbfile:
+libXmu: libXmu (X miscellaneous utility library)
+libXmu:
+libXmu: This library contains miscellaneous utilities and is not part of the
+libXmu: Xlib standard.  It contains routines which only use public interfaces
+libXmu: so that it may be layered on top of any proprietary implementation
+libXmu: of Xlib or Xt.
+libXmu:
+libXmu:
+libXmu:
+libXmu:
+libXmu:
+libXp: libXp (X Print Client Library)
+libXp:
+libXp: libXp is part of X11.
+libXp:
+libXp: For more information about the X.Org Foundation (the providers of the
+libXp: X.Org implementation of the X Window System), see their website:
+libXp:
+libXp: http://www.x.org
+libXp:
+libXp:
+libXp:
+libXpm: libXpm (X Pixmap (XPM) image file format library)
+libXpm:
+libXpm: libXpm is part of X11.
+libXpm:
+libXpm: For more information about the X.Org Foundation (the providers of the
+libXpm: X.Org implementation of the X Window System), see their website:
+libXpm:
+libXpm: http://www.x.org
+libXpm:
+libXpm:
+libXpm:
+libXrandr: libXrandr (X Resize, Rotate and Reflection extension library)
+libXrandr:
+libXrandr: libXrandr is part of X11.
+libXrandr:
+libXrandr: For more information about the X.Org Foundation (the providers of the
+libXrandr: X.Org implementation of the X Window System), see their website:
+libXrandr:
+libXrandr: http://www.x.org
+libXrandr:
+libXrandr:
+libXrandr:
+libXrender: libXrender (library for the Render Extension to the X11 protocol)
+libXrender:
+libXrender: libXrender is part of X11.
+libXrender:
+libXrender: For more information about the X.Org Foundation (the providers of the
+libXrender: X.Org implementation of the X Window System), see their website:
+libXrender:
+libXrender: http://www.x.org
+libXrender:
+libXrender:
+libXrender:
+libXres: libXres (X-Resource extension client library)
+libXres:
+libXres: libXres is part of X11.
+libXres:
+libXres: For more information about the X.Org Foundation (the providers of the
+libXres: X.Org implementation of the X Window System), see their website:
+libXres:
+libXres: http://www.x.org
+libXres:
+libXres:
+libXres:
+libXScrnSaver: libXScrnSaver (X11 Screen Saver extension client library)
+libXScrnSaver:
+libXScrnSaver: libXScrnSaver is part of X11.
+libXScrnSaver:
+libXScrnSaver: For more information about the X.Org Foundation (the providers of the
+libXScrnSaver: X.Org implementation of the X Window System), see their website:
+libXScrnSaver:
+libXScrnSaver: http://www.x.org
+libXScrnSaver:
+libXScrnSaver:
+libXScrnSaver:
+libXt: libXt (X Toolkit Intrinsics library)
+libXt:
+libXt: libXt is part of X11.
+libXt:
+libXt: For more information about the X.Org Foundation (the providers of the
+libXt: X.Org implementation of the X Window System), see their website:
+libXt:
+libXt: http://www.x.org
+libXt:
+libXt:
+libXt:
+libXtst: libXtst (client library for the XTEST & RECORD extensions)
+libXtst:
+libXtst: libXtst is part of X11.
+libXtst:
+libXtst: For more information about the X.Org Foundation (the providers of the
+libXtst: X.Org implementation of the X Window System), see their website:
+libXtst:
+libXtst: http://www.x.org
+libXtst:
+libXtst:
+libXtst:
+libXv: libXv (library for the X Video (Xv) extension to the X Window System)
+libXv:
+libXv: libXv is part of X11.
+libXv:
+libXv: For more information about the X.Org Foundation (the providers of the
+libXv: X.Org implementation of the X Window System), see their website:
+libXv:
+libXv: http://www.x.org
+libXv:
+libXv:
+libXv:
+libXvMC: libXvMC (X.Org X11 libXvMC runtime library)
+libXvMC:
+libXvMC: libXvMC is part of X11.
+libXvMC:
+libXvMC: For more information about the X.Org Foundation (the providers of the
+libXvMC: X.Org implementation of the X Window System), see their website:
+libXvMC:
+libXvMC: http://www.x.org
+libXvMC:
+libXvMC:
+libXvMC:
+libXxf86dga: libXxf86dga (client library for the XFree86-DGA extension)
+libXxf86dga:
+libXxf86dga: libXxf86dga is part of X11.
+libXxf86dga:
+libXxf86dga: For more information about the X.Org Foundation (the providers of the
+libXxf86dga: X.Org implementation of the X Window System), see their website:
+libXxf86dga:
+libXxf86dga: http://www.x.org
+libXxf86dga:
+libXxf86dga:
+libXxf86dga:
+libXxf86misc: libXxf86misc
+libXxf86misc:
+libXxf86misc: libXxf86misc is part of X11.
+libXxf86misc:
+libXxf86misc: For more information about the X.Org Foundation (the providers of the
+libXxf86misc: X.Org implementation of the X Window System), see their website:
+libXxf86misc:
+libXxf86misc: http://www.x.org
+libXxf86misc:
+libXxf86misc:
+libXxf86misc:
+libXxf86vm: libXxf86vm (library for the XFree86-VidMode X extension)
+libXxf86vm:
+libXxf86vm: libXxf86vm is part of X11.
+libXxf86vm:
+libXxf86vm: For more information about the X.Org Foundation (the providers of the
+libXxf86vm: X.Org implementation of the X Window System), see their website:
+libXxf86vm:
+libXxf86vm: http://www.x.org
+libXxf86vm:
+libXxf86vm:
+libXxf86vm:
+listres: listres (X11 resource lister)
+listres:
+listres: The listres program generates a list of X resources for a widget in
+listres: an X client written using a toolkit based on libXt.
+listres:
+listres:
+listres:
+listres:
+listres:
+listres:
+listres:
+lndir: lndir (create shadow directory of symbolic links to another directory)
+lndir:
+lndir: lndir is part of X11.
+lndir:
+lndir: For more information about the X.Org Foundation (the providers of the
+lndir: X.Org implementation of the X Window System), see their website:
+lndir:
+lndir: http://www.x.org
+lndir:
+lndir:
+lndir:
+luit: luit (character encoding convertor for X11 terminals)
+luit:
+luit: Luit is a filter that can be run between an arbitrary application and
+luit: a UTF-8 terminal emulator such as xterm.  It will convert application
+luit: output from the locale's encoding into UTF-8, and convert terminal
+luit: input from UTF-8 into the locale's encoding.
+luit:
+luit:
+luit:
+luit:
+luit:
+m17n-lib: m17n-lib (application multilingualization library)
+m17n-lib:
+m17n-lib: M17n is an abbreviation of Multilingualization.  The m17n library
+m17n-lib: implements multilingualization for many applications.  The m17n
+m17n-lib: library supports functions to handle M-texts.  This package also
+m17n-lib: contains the m17n database.
+m17n-lib:
+m17n-lib: m17n-lib home: http://m17n.org/
+m17n-lib:
+m17n-lib:
+m17n-lib:
+makedepend: makedepend (create dependencies in makefiles)
+makedepend:
+makedepend: makedepend is part of X11.
+makedepend:
+makedepend: For more information about the X.Org Foundation (the providers of the
+makedepend: X.Org implementation of the X Window System), see their website:
+makedepend:
+makedepend: http://www.x.org
+makedepend:
+makedepend:
+makedepend:
+mesa: mesa (a 3-D graphics library)
+mesa:
+mesa: Mesa is a 3-D graphics library with an API very similar to that of
+mesa: another well-known 3-D graphics library.  :-)  The Mesa libraries are
+mesa: used by X to provide both software and hardware accelerated graphics.
+mesa:
+mesa: Mesa was written by Brian Paul.
+mesa:
+mesa:
+mesa:
+mesa:
+mkcomposecache: mkcomposecache
+mkcomposecache:
+mkcomposecache: mkcomposecache is part of X11.
+mkcomposecache:
+mkcomposecache: For more information about the X.Org Foundation (the providers of the
+mkcomposecache: X.Org implementation of the X Window System), see their website:
+mkcomposecache:
+mkcomposecache: http://www.x.org
+mkcomposecache:
+mkcomposecache:
+mkcomposecache:
+mkfontdir: mkfontdir (X11 font utility)
+mkfontdir:
+mkfontdir: mkfontdir creates the fonts.dir files needed by the legacy X server
+mkfontdir: core font system. The current implementation is a simple wrapper
+mkfontdir: script around the mkfontscale program, which must be built and
+mkfontdir: installed first.
+mkfontdir:
+mkfontdir:
+mkfontdir:
+mkfontdir:
+mkfontdir:
+mkfontscale: mkfontscale (X11 font utility)
+mkfontscale:
+mkfontscale: mkfontscale creates the fonts.scale and fonts.dir index files used
+mkfontscale: by the legacy X11 font system.
+mkfontscale:
+mkfontscale:
+mkfontscale:
+mkfontscale:
+mkfontscale:
+mkfontscale:
+mkfontscale:
+mtdev: mtdev (multitouch device library)
+mtdev:
+mtdev: mtdev is a stand-alone library which transforms all variants of
+mtdev: kernel MT events to the slotted type B protocol.  The events put
+mtdev: into mtdev may be from any MT device, specifically type A without
+mtdev: contact tracking, type A with contact tracking, or type B with
+mtdev: contact tracking.
+mtdev: The bulk of the mtdev code has been out there since 2008 as part of
+mtdev: the Multitouch X Driver.  With this package, finger tracking and 
+mtdev: seamless MT protocol handling is available under a free license. 
+mtdev:
+oclock: oclock (X11 on-screen clock)
+oclock:
+oclock: oclock is a simple analog clock using the SHAPE extension to make a
+oclock: round (possibly transparent) window.
+oclock:
+oclock:
+oclock:
+oclock:
+oclock:
+oclock:
+oclock:
+pixman: pixman (pixel manipulation library)
+pixman:
+pixman: pixman contains low-level pixel manipulation routines and is used by
+pixman: both xorg and cairo.
+pixman:
+pixman: For more information about the X.Org Foundation (the providers of the
+pixman: X.Org implementation of the X Window System), see their website:
+pixman:
+pixman: http://www.x.org
+pixman:
+pixman:
+printproto: printproto
+printproto:
+printproto: printproto is part of X11.
+printproto:
+printproto: For more information about the X.Org Foundation (the providers of the
+printproto: X.Org implementation of the X Window System), see their website:
+printproto:
+printproto: http://www.x.org
+printproto:
+printproto:
+printproto:
+randrproto: randrproto (C prototypes for RandR)
+randrproto:
+randrproto: RandR is the X11 Resize and Rotate Extension
+randrproto:
+randrproto:
+randrproto:
+randrproto:
+randrproto:
+randrproto:
+randrproto:
+randrproto:
+recordproto: recordproto (C prototypes for X Record Extension)
+recordproto:
+recordproto: recordproto is part of X11.
+recordproto:
+recordproto: For more information about the X.Org Foundation (the providers of the
+recordproto: X.Org implementation of the X Window System), see their website:
+recordproto:
+recordproto: http://www.x.org
+recordproto:
+recordproto:
+recordproto:
+rendercheck: rendercheck
+rendercheck:
+rendercheck: rendercheck is part of X11.
+rendercheck:
+rendercheck: For more information about the X.Org Foundation (the providers of the
+rendercheck: X.Org implementation of the X Window System), see their website:
+rendercheck:
+rendercheck: http://www.x.org
+rendercheck:
+rendercheck:
+rendercheck:
+renderproto: renderproto
+renderproto:
+renderproto: renderproto is part of X11.
+renderproto:
+renderproto: For more information about the X.Org Foundation (the providers of the
+renderproto: X.Org implementation of the X Window System), see their website:
+renderproto:
+renderproto: http://www.x.org
+renderproto:
+renderproto:
+renderproto:
+resourceproto: resourceproto (C prototypes for X Resource Extension)
+resourceproto:
+resourceproto: resourceproto is part of X11.
+resourceproto:
+resourceproto: For more information about the X.Org Foundation (the providers of the
+resourceproto: X.Org implementation of the X Window System), see their website:
+resourceproto:
+resourceproto: http://www.x.org
+resourceproto:
+resourceproto:
+resourceproto:
+rgb: rgb (X color name database)
+rgb:
+rgb: rgb is part of X11.
+rgb:
+rgb: For more information about the X.Org Foundation (the providers of the
+rgb: X.Org implementation of the X Window System), see their website:
+rgb:
+rgb: http://www.x.org
+rgb:
+rgb:
+rgb:
+sazanami-fonts-ttf: sazanami-fonts-ttf (Japanese TrueType Unicode fonts)
+sazanami-fonts-ttf:
+sazanami-fonts-ttf: The Sazanami fonts contain Hiragana, Katakana, and Kanji/Han
+sazanami-fonts-ttf: Ideographs.
+sazanami-fonts-ttf:
+sazanami-fonts-ttf: Homepage of efont: http://sourceforge.jp/projects/efont/
+sazanami-fonts-ttf:
+sazanami-fonts-ttf:
+sazanami-fonts-ttf:
+sazanami-fonts-ttf:
+sazanami-fonts-ttf:
+scim: scim (Smart Common Input Method platform)
+scim:
+scim: SCIM is an input platform for CJK and other languages.
+scim: It aims to significantly reduce the difficulty of input method
+scim: development.
+scim:
+scim: See the scim scripts in /etc/profile.d/ for setup info.
+scim:
+scim: scim home: http://www.scim-im.org/
+scim:
+scim:
+scim-anthy: scim-anthy (a SCIM IMEngine module for anthy)
+scim-anthy:
+scim-anthy: SCIM is Smart Common Input Method platform, it provides a user
+scim-anthy: friendly and full featured user interface and development platform to
+scim-anthy: make input method developer's lives easier.  Anthy is a system for
+scim-anthy: Japanese input method.  It converts Hiragana text to Kana Kanji
+scim-anthy: mixed text.
+scim-anthy:
+scim-anthy: scim-anthy home: http://scim-imengine.sourceforge.jp/
+scim-anthy:
+scim-anthy:
+scim-hangul: scim-hangul (SCIM IMengine for Hangul)
+scim-hangul:
+scim-hangul: Scim-hangul is a SCIM IMEngine module for inputing korean scripts.
+scim-hangul: Scim-hangul is for native speakers, not for foreigners.
+scim-hangul: If you don't want to learn korean keyboard layout, use scim-tables.
+scim-hangul: This engine supports 2 beolsik, 3 beolsik final, 3 beolsik 390,
+scim-hangul: 3 beolsik, no-shift and etc. You can input chinese characters
+scim-hangul: (hanja) with F9 key when you a have preedit string.
+scim-hangul:
+scim-hangul: scim-hangul home: http://www.scim-im.org/projects/imengines
+scim-hangul:
+scim-input-pad: scim-input-pad (on-screen input pad for scim)
+scim-input-pad:
+scim-input-pad: This is scim-input-pad, which provides an on-screen input pad
+scim-input-pad: to enter symbols and chinese characters.
+scim-input-pad:
+scim-input-pad:
+scim-input-pad:
+scim-input-pad:
+scim-input-pad:
+scim-input-pad: scim home: http://scim-im.org/
+scim-input-pad:
+scim-m17n: scim-m17n (bridge IMengine to support m17n input methods in SCIM)
+scim-m17n:
+scim-m17n: SCIM is a developing platform to significantly reduce the difficulty
+scim-m17n: of input method development.  scim-m17n is a SCIM IMEngine module
+scim-m17n: which uses the m17n library as the backend.
+scim-m17n:
+scim-m17n: scim-m17n home: http://scim-im.org/
+scim-m17n:
+scim-m17n:
+scim-m17n:
+scim-m17n:
+scim-pinyin: scim-pinyin (smart pinyin IM engine)
+scim-pinyin:
+scim-pinyin: This package provides a smart pinyin IM engine for SCIM.  It includes
+scim-pinyin: the plugin modules and the data files to use the smart pinyin input
+scim-pinyin: input method for Chinese.
+scim-pinyin:
+scim-pinyin: scim-pinyin home: http://www.scim-im.org/
+scim-pinyin:
+scim-pinyin:
+scim-pinyin:
+scim-pinyin:
+scim-tables: scim-tables (tables IMEngine for scim)
+scim-tables:
+scim-tables: This is scim-tables IMEngine, which provides many CJK input methods.
+scim-tables:
+scim-tables: scim-tables home: http://scim-im.org/
+scim-tables:
+scim-tables:
+scim-tables:
+scim-tables:
+scim-tables:
+scim-tables:
+scrnsaverproto: scrnsaverproto (C prototypes for X11 MIT Screen Saver Extension)
+scrnsaverproto:
+scrnsaverproto: scrnsaverproto is part of X11.
+scrnsaverproto:
+scrnsaverproto: For more information about the X.Org Foundation (the providers of the
+scrnsaverproto: X.Org implementation of the X Window System), see their website:
+scrnsaverproto:
+scrnsaverproto: http://www.x.org
+scrnsaverproto:
+scrnsaverproto:
+scrnsaverproto:
+sessreg: sessreg (simple program for managing utmp/wtmp entries for X sessions)
+sessreg:
+sessreg: sessreg was originally written for use with xdm, but it may also be 
+sessreg: used with other display managers such as gdm or kdm.
+sessreg:
+sessreg:
+sessreg:
+sessreg:
+sessreg:
+sessreg:
+sessreg:
+setxkbmap: setxkbmap (change X11 keyboard layout)
+setxkbmap:
+setxkbmap: setxkbmap is part of X11.
+setxkbmap:
+setxkbmap: For more information about the X.Org Foundation (the providers of the
+setxkbmap: X.Org implementation of the X Window System), see their website:
+setxkbmap:
+setxkbmap: http://www.x.org
+setxkbmap:
+setxkbmap:
+setxkbmap:
+showfont: showfont (displays data about a font from an X font server)
+showfont:
+showfont: The information shown includes font information, font properties,
+showfont: character metrics, and character bitmaps.
+showfont:
+showfont:
+showfont:
+showfont:
+showfont:
+showfont:
+showfont:
+sinhala_lklug-font-ttf: sinhala_lklug-font-ttf (Sinhala Unicode TrueType font)
+sinhala_lklug-font-ttf:
+sinhala_lklug-font-ttf: This is a free Sri Lankan 'Sinhala' Unicode font.  Its development was
+sinhala_lklug-font-ttf: initiated by the LK LUG in 2003.
+sinhala_lklug-font-ttf:
+sinhala_lklug-font-ttf: Development home: http://sinhala.sourceforge.net/
+sinhala_lklug-font-ttf:
+sinhala_lklug-font-ttf:
+sinhala_lklug-font-ttf:
+sinhala_lklug-font-ttf:
+sinhala_lklug-font-ttf:
+smproxy: smproxy (X11 session management proxy)
+smproxy:
+smproxy: smproxy allows X applications that do not support X11R6 session
+smproxy: management to participate in an X11R6 session.
+smproxy:
+smproxy:
+smproxy:
+smproxy:
+smproxy:
+smproxy:
+smproxy:
+tibmachuni-font-ttf: tibmachuni-font-ttf (Tibetan Machine Unicode font)
+tibmachuni-font-ttf:
+tibmachuni-font-ttf: The Tibetan & Himalayan Digital Library's Unicode character based
+tibmachuni-font-ttf: "Tibetan Machine Uni" OpenType font for writing Tibetan, Dzongkha and
+tibmachuni-font-ttf: Ladakhi in dbu can script with full support for the Sanskrit
+tibmachuni-font-ttf: combinations found in chos-skad texts.
+tibmachuni-font-ttf:
+tibmachuni-font-ttf:
+tibmachuni-font-ttf: tibmachuni-font-ttf home: http://thdl.org/
+tibmachuni-font-ttf:
+tibmachuni-font-ttf:
+transset: transset (utility for setting opacity property)
+transset:
+transset: transset is a utility for setting opacity property.
+transset:
+transset: Some of the features:
+transset:   * select window by clicking (as transset)
+transset:   * select actual focused X11 window
+transset:   * select window by pointing
+transset:   * select by window name or id
+transset:   * force toggle
+transset:   * increase or decrease opacity
+ttf-indic-fonts: ttf-indic-fonts (Fonts for Indic scripts)
+ttf-indic-fonts:
+ttf-indic-fonts: This is a collection of free fonts that support some of the more
+ttf-indic-fonts: widely used Indic scripts.  Included are TTF fonts for Bengali,
+ttf-indic-fonts: Devanagari, Gujarati, Kannada, Malayalam, Oriya, Punjabi, Tamil,
+ttf-indic-fonts: and Telugu.
+ttf-indic-fonts:
+ttf-indic-fonts: For more information about enabling full Indic support (this package
+ttf-indic-fonts: will enable display, but probably not input), see the
+ttf-indic-fonts: Indic-Fonts-HOWTO which can be found in /usr/doc/Linux-HOWTOs.
+ttf-indic-fonts:
+twm: twm (Tab Window Manager for the X Window System)
+twm:
+twm: twm is part of X11.
+twm:
+twm: For more information about the X.Org Foundation (the providers of the
+twm: X.Org implementation of the X Window System), see their website:
+twm:
+twm: http://www.x.org
+twm:
+twm:
+twm:
+util-macros: util-macros (autoconf support for X11)
+util-macros:
+util-macros: This is a set of autoconf macros used by the configure.ac scripts in
+util-macros: other Xorg modular packages, and is needed to generate new versions
+util-macros: of their configure scripts with autoconf.
+util-macros:
+util-macros:
+util-macros:
+util-macros:
+util-macros:
+util-macros:
+videoproto: videoproto (C prototypes for X Video Extension)
+videoproto:
+videoproto: videoproto is part of X11.
+videoproto:
+videoproto: For more information about the X.Org Foundation (the providers of the
+videoproto: X.Org implementation of the X Window System), see their website:
+videoproto:
+videoproto: http://www.x.org
+videoproto:
+videoproto:
+videoproto:
+viewres: viewres (view widget class hierarchy of the Athena Widget Set)
+viewres:
+viewres: viewres is part of X11.
+viewres:
+viewres: For more information about the X.Org Foundation (the providers of the
+viewres: X.Org implementation of the X Window System), see their website:
+viewres:
+viewres: http://www.x.org
+viewres:
+viewres:
+viewres:
+wqy-zenhei-font-ttf: wqy-zenhei-font-ttf (Wen Quan Yi Zen Hei CJK Font)
+wqy-zenhei-font-ttf:
+wqy-zenhei-font-ttf: The WenQuanYi Zen Hei font is a Chinese (or CJK) outline font with
+wqy-zenhei-font-ttf: Hei Ti style (a sans-serif style) Hanzi glyphs.  This font is
+wqy-zenhei-font-ttf: developed for general purpose use of Chinese for formating, printing
+wqy-zenhei-font-ttf: and on-screen display.  This font is also targeted at platform
+wqy-zenhei-font-ttf: independence and the utility for document exchange between various
+wqy-zenhei-font-ttf: operating systems.
+wqy-zenhei-font-ttf:
+wqy-zenhei-font-ttf: wqy-zenhei-font-ttf home: http://wqy.sourceforge.net/en/
+wqy-zenhei-font-ttf:
+x11perf: x11perf (X11 server performance test program)
+x11perf:
+x11perf: x11perf is part of X11.
+x11perf:
+x11perf: For more information about the X.Org Foundation (the providers of the
+x11perf: X.Org implementation of the X Window System), see their website:
+x11perf:
+x11perf: http://www.x.org
+x11perf:
+x11perf:
+x11perf:
+x11-skel: x11-skel (Miscellaneous things required for X)
+x11-skel:
+x11-skel: These are some symlinks needed by X11 after moving some files and
+x11-skel: directories to conform with the Linux FHS.  For example, the fonts
+x11-skel: are now in the /usr/share/fonts directory, and this package makes
+x11-skel: a symlink to there from /usr/lib/X11/fonts (the default location).
+x11-skel: An /etc/xdg directory (the default for XDG_CONFIG_DIRS in the
+x11-skel: XDG Base Directory Specification) is also contained in this package,
+x11-skel: as well as sample xorg.conf files and other scripts.
+x11-skel:
+x11-skel:
+xauth: xauth (X11 authorization utility)
+xauth:
+xauth: The xauth program is used to edit and display the authorization
+xauth: information used in connecting to the X server.
+xauth:
+xauth:
+xauth:
+xauth:
+xauth:
+xauth:
+xauth:
+xbacklight: xbacklight (adjust the backlight brightness where supported)
+xbacklight:
+xbacklight: It uses the RandR extension to find all outputs on the X server
+xbacklight: supporting backlight brightness control and changes them all in the
+xbacklight: same way.
+xbacklight:
+xbacklight:
+xbacklight:
+xbacklight:
+xbacklight:
+xbacklight:
+xbiff: xbiff
+xbiff:
+xbiff: xbiff is part of X11.
+xbiff:
+xbiff: For more information about the X.Org Foundation (the providers of the
+xbiff: X.Org implementation of the X Window System), see their website:
+xbiff:
+xbiff: http://www.x.org
+xbiff:
+xbiff:
+xbiff:
+xbitmaps: xbitmaps
+xbitmaps:
+xbitmaps: xbitmaps is part of X11.
+xbitmaps:
+xbitmaps: For more information about the X.Org Foundation (the providers of the
+xbitmaps: X.Org implementation of the X Window System), see their website:
+xbitmaps:
+xbitmaps: http://www.x.org
+xbitmaps:
+xbitmaps:
+xbitmaps:
+xcalc: xcalc (X11 calculator)
+xcalc:
+xcalc: xcalc is a scientific calculator X11 client that can emulate a TI-30
+xcalc: or an HP-10C.
+xcalc:
+xcalc:
+xcalc:
+xcalc:
+xcalc:
+xcalc:
+xcalc:
+xcb-proto: xcb-proto (X protocol C-language Binding protocol descriptions)
+xcb-proto:
+xcb-proto: xcb-proto provides the XML-XCB protocol descriptions that libxcb
+xcb-proto: uses to generate the majority of its code and API. We provide them
+xcb-proto: separately from libxcb to allow reuse by other projects, such as
+xcb-proto: additional language bindings, protocol dissectors, or documentation
+xcb-proto: generators.
+xcb-proto:
+xcb-proto:
+xcb-proto:
+xcb-proto:
+xcb-util: xcb-util (utility libraries for X protocol C-language Binding)
+xcb-util:
+xcb-util: xcb-util is part of X11.
+xcb-util:
+xcb-util: For more information about the X.Org Foundation (the providers of the
+xcb-util: X.Org implementation of the X Window System), see their website:
+xcb-util:
+xcb-util: http://www.x.org
+xcb-util:
+xcb-util:
+xcb-util:
+xcb-util-cursor: xcb-util-cursor (XCB cursor management library)
+xcb-util-cursor:
+xcb-util-cursor: The xcb-util-cursor module implements the XCB cursor library, which
+xcb-util-cursor: is the XCB replacement for libXcursor.
+xcb-util-cursor:
+xcb-util-cursor:
+xcb-util-cursor:
+xcb-util-cursor:
+xcb-util-cursor:
+xcb-util-cursor:
+xcb-util-cursor:
+xcb-util-image: xcb-util-image (port of Xlib's XImage and XShmImage functions)
+xcb-util-image:
+xcb-util-image: xcb-util-image provides a port of Xlib's XImage and XShmImage 
+xcb-util-image: functions.
+xcb-util-image:
+xcb-util-image:
+xcb-util-image:
+xcb-util-image:
+xcb-util-image:
+xcb-util-image:
+xcb-util-image:
+xcb-util-keysyms: xcb-util-keysyms (keysyms library for XCB)
+xcb-util-keysyms:
+xcb-util-keysyms: xcb-util-keysyms provides the keysyms library, which handles
+xcb-util-keysyms: standard X key constants and conversion to/from keycodes.
+xcb-util-keysyms:
+xcb-util-keysyms:
+xcb-util-keysyms:
+xcb-util-keysyms:
+xcb-util-keysyms:
+xcb-util-keysyms:
+xcb-util-keysyms:
+xcb-util-renderutil: xcb-util-renderutil (XCB renderutil library)
+xcb-util-renderutil:
+xcb-util-renderutil: xcb-util-renderutil provides the XCB renderutil library, which
+xcb-util-renderutil: includes some convenience functions for the Render extension.
+xcb-util-renderutil:
+xcb-util-renderutil:
+xcb-util-renderutil:
+xcb-util-renderutil:
+xcb-util-renderutil:
+xcb-util-renderutil:
+xcb-util-renderutil:
+xcb-util-wm: xcb-util-wm (XCB libraries for EWMH and ICCCM)
+xcb-util-wm:
+xcb-util-wm: xcb-util-wm provides the XCB ewmh and iccm libraries, which include
+xcb-util-wm: client and window manager helpers for EWMH and ICCCM.
+xcb-util-wm:
+xcb-util-wm:
+xcb-util-wm:
+xcb-util-wm:
+xcb-util-wm:
+xcb-util-wm:
+xcb-util-wm:
+xclipboard: xclipboard (X11 clipboard utility)
+xclipboard:
+xclipboard: xclipboard is used to collect and display text selections that are
+xclipboard: sent to the CLIPBOARD by other clients.  It is typically used to
+xclipboard: save CLIPBOARD selections for later use.  It stores each CLIPBOARD
+xclipboard: selection as a separate string, each of which can be selected.
+xclipboard:
+xclipboard:
+xclipboard:
+xclipboard:
+xclipboard:
+xclock: xclock (X11 on-screen clock)
+xclock:
+xclock: xclock is the classic X Window System clock utility.  It displays the
+xclock: time in analog or digital form, continuously updated at a frequency
+xclock: which may be specified by the user.
+xclock:
+xclock:
+xclock:
+xclock:
+xclock:
+xclock:
+xcm: xcm (X color management tools)
+xcm:
+xcm: Tools based on libXcm, a library for colour management on X.
+xcm: xcmddc requests EDID from a monitor over the i2c bus.
+xcm: xcmedid is for parsing EDID data blocks. 
+xcm: xcmevents observes X11 colour management events.
+xcm:
+xcm:
+xcm:
+xcm:
+xcm:
+xcmiscproto: xcmiscproto (C prototypes for X11 XC-MISC Extension)
+xcmiscproto:
+xcmiscproto: xcmiscproto is part of X11.
+xcmiscproto:
+xcmiscproto: For more information about the X.Org Foundation (the providers of the
+xcmiscproto: X.Org implementation of the X Window System), see their website:
+xcmiscproto:
+xcmiscproto: http://www.x.org
+xcmiscproto:
+xcmiscproto:
+xcmiscproto:
+xcmsdb: xcmsdb (X11 color utility)
+xcmsdb:
+xcmsdb: xcmsdb is used to load, query, or remove Device Color Characterization
+xcmsdb: data stored in properties on the root window of a screen as specified
+xcmsdb: in section 7, Device Color Characterization, of the X11 Inter-Client
+xcmsdb: Communication Conventions Manual (ICCCM).
+xcmsdb:
+xcmsdb:
+xcmsdb:
+xcmsdb:
+xcmsdb:
+xcompmgr: xcompmgr (X11 compositing manager)
+xcompmgr:
+xcompmgr: xcompmgr is a sample compositing manager for X servers supporting the
+xcompmgr: XFIXES, DAMAGE, RENDER, and COMPOSITE extensions.  It enables basic
+xcompmgr: eye-candy effects.
+xcompmgr:
+xcompmgr:
+xcompmgr:
+xcompmgr:
+xcompmgr:
+xcompmgr:
+xconsole: xconsole (X11 console)
+xconsole:
+xconsole: xconsole displays in a X11 window the messages which are usually sent
+xconsole: to /dev/console
+xconsole:
+xconsole:
+xconsole:
+xconsole:
+xconsole:
+xconsole:
+xconsole:
+xcursorgen: xcursorgen (prepares X11 cursor sets for use with libXcursor)
+xcursorgen:
+xcursorgen: xcursorgen is part of X11.
+xcursorgen:
+xcursorgen: For more information about the X.Org Foundation (the providers of the
+xcursorgen: X.Org implementation of the X Window System), see their website:
+xcursorgen:
+xcursorgen: http://www.x.org
+xcursorgen:
+xcursorgen:
+xcursorgen:
+xcursor-themes: xcursor-themes (X11 cursor themes)
+xcursor-themes:
+xcursor-themes: This is a default set of cursor themes for use with libXcursor,
+xcursor-themes: originally created for the XFree86 Project, and now shipped as part
+xcursor-themes: of the X.Org software distribution.
+xcursor-themes:
+xcursor-themes:
+xcursor-themes:
+xcursor-themes:
+xcursor-themes:
+xcursor-themes:
+xdbedizzy: xdbedizzy
+xdbedizzy:
+xdbedizzy: xdbedizzy is part of X11.
+xdbedizzy:
+xdbedizzy: For more information about the X.Org Foundation (the providers of the
+xdbedizzy: X.Org implementation of the X Window System), see their website:
+xdbedizzy:
+xdbedizzy: http://www.x.org
+xdbedizzy:
+xdbedizzy:
+xdbedizzy:
+xdg-user-dirs: xdg-user-dirs (manage XDG user directories)
+xdg-user-dirs:
+xdg-user-dirs: xdg-user-dirs is a tool used by various XDG compliant desktop
+xdg-user-dirs: environments to locate user well-known user directories such as
+xdg-user-dirs: the Desktop folder.  It also handles localization/translation of the
+xdg-user-dirs: filenames.
+xdg-user-dirs:
+xdg-user-dirs: Homepage: http://freedesktop.org/wiki/Software/xdg-user-dirs
+xdg-user-dirs:
+xdg-user-dirs:
+xdg-user-dirs:
+xdg-utils: xdg-utils (command line tools that assist applications)
+xdg-utils: 
+xdg-utils: Xdg-utils is a set of command line tools that assist applications
+xdg-utils: with a variety of desktop integration tasks.  About half of the
+xdg-utils: tools focus on tasks commonly required during the installation of
+xdg-utils: a desktop application and the other half focuses on integration
+xdg-utils: with the desktop environment while the application is running.
+xdg-utils:
+xdg-utils: Homepage:  http://portland.freedesktop.org/wiki/
+xdg-utils:
+xdg-utils:
+xditview: xditview (displays ditroff output on an X display)
+xditview:
+xditview: xditview is part of X11.
+xditview:
+xditview: For more information about the X.Org Foundation (the providers of the
+xditview: X.Org implementation of the X Window System), see their website:
+xditview:
+xditview: http://www.x.org
+xditview:
+xditview:
+xditview:
+xdm: xdm (X11 display manager)
+xdm:
+xdm: xdm is part of X11.
+xdm:
+xdm: For more information about the X.Org Foundation (the providers of the
+xdm: X.Org implementation of the X Window System), see their website:
+xdm:
+xdm: http://www.x.org
+xdm:
+xdm:
+xdm:
+xdpyinfo: xdpyinfo (utility for displaying information about an X server)
+xdpyinfo:
+xdpyinfo: xdpyinfo is part of X11.
+xdpyinfo:
+xdpyinfo: For more information about the X.Org Foundation (the providers of the
+xdpyinfo: X.Org implementation of the X Window System), see their website:
+xdpyinfo:
+xdpyinfo: http://www.x.org
+xdpyinfo:
+xdpyinfo:
+xdpyinfo:
+xdriinfo: xdriinfo
+xdriinfo:
+xdriinfo: xdriinfo is part of X11.
+xdriinfo:
+xdriinfo: For more information about the X.Org Foundation (the providers of the
+xdriinfo: X.Org implementation of the X Window System), see their website:
+xdriinfo:
+xdriinfo: http://www.x.org
+xdriinfo:
+xdriinfo:
+xdriinfo:
+xedit: xedit (simple text editor for X)
+xedit:
+xedit: xedit is part of X11.
+xedit:
+xedit: For more information about the X.Org Foundation (the providers of the
+xedit: X.Org implementation of the X Window System), see their website:
+xedit:
+xedit: http://www.x.org
+xedit:
+xedit:
+xedit:
+xev: xev (X11 event viewer)
+xev:
+xev: xev creates a window and then asks the X server to send it X11 events
+xev: whenever anything happens to the window (such as it being moved,
+xev: resized, typed in, clicked in, etc.).  You can also attach it to an
+xev: existing window.  It is useful for seeing what causes events to occur
+xev: and to display the information that they contain; it is essentially
+xev: a debugging and development tool, and should not be needed in normal
+xev: usage.
+xev:
+xev:
+xextproto: xextproto (C prototypes for X Protocol Extensions)
+xextproto:
+xextproto: xextproto is part of X11.
+xextproto:
+xextproto: For more information about the X.Org Foundation (the providers of the
+xextproto: X.Org implementation of the X Window System), see their website:
+xextproto:
+xextproto: http://www.x.org
+xextproto:
+xextproto:
+xextproto:
+xeyes: xeyes
+xeyes:
+xeyes: xeyes is part of X11.
+xeyes:
+xeyes: For more information about the X.Org Foundation (the providers of the
+xeyes: X.Org implementation of the X Window System), see their website:
+xeyes:
+xeyes: http://www.x.org
+xeyes:
+xeyes:
+xeyes:
+xf86bigfontproto: xf86bigfontproto
+xf86bigfontproto:
+xf86bigfontproto: xf86bigfontproto is part of X11.
+xf86bigfontproto:
+xf86bigfontproto: For more information about the X.Org Foundation (the providers of the
+xf86bigfontproto: X.Org implementation of the X Window System), see their website:
+xf86bigfontproto:
+xf86bigfontproto: http://www.x.org
+xf86bigfontproto:
+xf86bigfontproto:
+xf86bigfontproto:
+xf86dga: xf86dga
+xf86dga:
+xf86dga: xf86dga is part of X11.
+xf86dga:
+xf86dga: For more information about the X.Org Foundation (the providers of the
+xf86dga: X.Org implementation of the X Window System), see their website:
+xf86dga:
+xf86dga: http://www.x.org
+xf86dga:
+xf86dga:
+xf86dga:
+xf86dgaproto: xf86dgaproto
+xf86dgaproto:
+xf86dgaproto: xf86dgaproto is part of X11.
+xf86dgaproto:
+xf86dgaproto: For more information about the X.Org Foundation (the providers of the
+xf86dgaproto: X.Org implementation of the X Window System), see their website:
+xf86dgaproto:
+xf86dgaproto: http://www.x.org
+xf86dgaproto:
+xf86dgaproto:
+xf86dgaproto:
+xf86driproto: xf86driproto
+xf86driproto:
+xf86driproto: xf86driproto is part of X11.
+xf86driproto:
+xf86driproto: For more information about the X.Org Foundation (the providers of the
+xf86driproto: X.Org implementation of the X Window System), see their website:
+xf86driproto:
+xf86driproto: http://www.x.org
+xf86driproto:
+xf86driproto:
+xf86driproto:
+xf86-input-acecad: xf86-input-acecad (Acecad Flair input driver for the Xorg X server)
+xf86-input-acecad:
+xf86-input-acecad: xf86-input-acecad is part of X11.
+xf86-input-acecad:
+xf86-input-acecad: For more information about the X.Org Foundation (the providers of the
+xf86-input-acecad: X.Org implementation of the X Window System), see their website:
+xf86-input-acecad:
+xf86-input-acecad: http://www.x.org
+xf86-input-acecad:
+xf86-input-acecad:
+xf86-input-acecad:
+xf86-input-aiptek: xf86-input-aiptek (Aiptek USB Digital Tablet Input Driver for Linux)
+xf86-input-aiptek:
+xf86-input-aiptek: xf86-input-aiptek is part of X11.
+xf86-input-aiptek:
+xf86-input-aiptek: For more information about the X.Org Foundation (the providers of the
+xf86-input-aiptek: X.Org implementation of the X Window System), see their website:
+xf86-input-aiptek:
+xf86-input-aiptek: http://www.x.org
+xf86-input-aiptek:
+xf86-input-aiptek:
+xf86-input-aiptek:
+xf86-input-evdev: xf86-input-evdev (Generic Linux input driver for the Xorg X server)
+xf86-input-evdev:
+xf86-input-evdev: xf86-input-evdev is part of X11.
+xf86-input-evdev:
+xf86-input-evdev: For more information about the X.Org Foundation (the providers of the
+xf86-input-evdev: X.Org implementation of the X Window System), see their website:
+xf86-input-evdev:
+xf86-input-evdev: http://www.x.org
+xf86-input-evdev:
+xf86-input-evdev:
+xf86-input-evdev:
+xf86-input-joystick: xf86-input-joystick (Joystick input driver for the Xorg X server)
+xf86-input-joystick:
+xf86-input-joystick: xf86-input-joystick is part of X11.
+xf86-input-joystick:
+xf86-input-joystick: For more information about the X.Org Foundation (the providers of the
+xf86-input-joystick: X.Org implementation of the X Window System), see their website:
+xf86-input-joystick:
+xf86-input-joystick: http://www.x.org
+xf86-input-joystick:
+xf86-input-joystick:
+xf86-input-joystick:
+xf86-input-keyboard: kbd (Keyboard input driver for the Xorg X server)
+xf86-input-keyboard:
+xf86-input-keyboard: This is the non-evdev keyboard driver for X.  Most Linux systems
+xf86-input-keyboard: should be using the evdev driver to handle input devices such as
+xf86-input-keyboard: keyboards and mice, but this driver may be useful as a fallback.
+xf86-input-keyboard:
+xf86-input-keyboard:
+xf86-input-keyboard:
+xf86-input-keyboard:
+xf86-input-keyboard:
+xf86-input-keyboard:
+xf86-input-mouse: xf86-input-mouse (Mouse Support for X)
+xf86-input-mouse:
+xf86-input-mouse: This is the non-evdev mouse driver for X.  Most Linux systems should
+xf86-input-mouse: be using the evdev driver to handle input devices such as keyboards
+xf86-input-mouse: and mice, but this driver may be useful as a fallback.
+xf86-input-mouse:
+xf86-input-mouse:
+xf86-input-mouse:
+xf86-input-mouse:
+xf86-input-mouse:
+xf86-input-mouse:
+xf86-input-penmount: xf86-input-penmount (PenMount input driver for the Xorg X server)
+xf86-input-penmount:
+xf86-input-penmount: xf86-input-penmount is part of X11.
+xf86-input-penmount:
+xf86-input-penmount: For more information about the X.Org Foundation (the providers of the
+xf86-input-penmount: X.Org implementation of the X Window System), see their website:
+xf86-input-penmount:
+xf86-input-penmount: http://www.x.org
+xf86-input-penmount:
+xf86-input-penmount:
+xf86-input-penmount:
+xf86-input-synaptics: xf86-input-synaptics (Synaptics touchpad driver for X.Org)
+xf86-input-synaptics:
+xf86-input-synaptics: xf86-input-synaptics is part of X11.
+xf86-input-synaptics:
+xf86-input-synaptics: For more information about the X.Org Foundation (the providers of the
+xf86-input-synaptics: X.Org implementation of the X Window System), see their website:
+xf86-input-synaptics:
+xf86-input-synaptics: http://www.x.org
+xf86-input-synaptics:
+xf86-input-synaptics:
+xf86-input-synaptics:
+xf86-input-vmmouse: xf86-input-vmmouse (support for VMWare's VMMouse guest mouse device)
+xf86-input-vmmouse:
+xf86-input-vmmouse: xf86-input-vmmouse is part of X11.
+xf86-input-vmmouse:
+xf86-input-vmmouse: For more information about the X.Org Foundation (the providers of the
+xf86-input-vmmouse: X.Org implementation of the X Window System), see their website:
+xf86-input-vmmouse:
+xf86-input-vmmouse: http://www.x.org
+xf86-input-vmmouse:
+xf86-input-vmmouse:
+xf86-input-vmmouse:
+xf86-input-void: xf86-input-void (null input driver for Xorg server)
+xf86-input-void:
+xf86-input-void: xf86-input-void is part of X11.
+xf86-input-void:
+xf86-input-void: For more information about the X.Org Foundation (the providers of the
+xf86-input-void: X.Org implementation of the X Window System), see their website:
+xf86-input-void:
+xf86-input-void: http://www.x.org
+xf86-input-void:
+xf86-input-void:
+xf86-input-void:
+xf86-input-wacom: xf86-input-wacom (driver for Wacom tablets)
+xf86-input-wacom:
+xf86-input-wacom: This package provides the X.Org X11 driver for Wacom and Wacom-like
+xf86-input-wacom: tablets.  It obsoletes the linuxwacom driver and supports X server
+xf86-input-wacom: versions 1.7 and higher. Server versions lower than 1.7 may be
+xf86-input-wacom: supported by this driver, but users are encouraged to use the old
+xf86-input-wacom: linuxwacom driver instead.
+xf86-input-wacom:
+xf86-input-wacom:
+xf86-input-wacom:
+xf86-input-wacom:
+xf86miscproto: xf86miscproto
+xf86miscproto:
+xf86miscproto: xf86miscproto is part of X11.
+xf86miscproto:
+xf86miscproto: For more information about the X.Org Foundation (the providers of the
+xf86miscproto: X.Org implementation of the X Window System), see their website:
+xf86miscproto:
+xf86miscproto: http://www.x.org
+xf86miscproto:
+xf86miscproto:
+xf86miscproto:
+xf86-video-apm: xf86-video-apm (driver for Alliance Promotion graphics chipsets)
+xf86-video-apm:
+xf86-video-apm: xf86-video-apm is part of X11.
+xf86-video-apm:
+xf86-video-apm: For more information about the X.Org Foundation (the providers of the
+xf86-video-apm: X.Org implementation of the X Window System), see their website:
+xf86-video-apm:
+xf86-video-apm: http://www.x.org
+xf86-video-apm:
+xf86-video-apm:
+xf86-video-apm:
+xf86-video-ark: xf86-video-ark (Ark Logic video driver for Xorg X server)
+xf86-video-ark:
+xf86-video-ark: xf86-video-ark is part of X11.
+xf86-video-ark:
+xf86-video-ark: For more information about the X.Org Foundation (the providers of the
+xf86-video-ark: X.Org implementation of the X Window System), see their website:
+xf86-video-ark:
+xf86-video-ark: http://www.x.org
+xf86-video-ark:
+xf86-video-ark:
+xf86-video-ark:
+xf86-video-ast: xf86-video-ast (ASpeed Technologies graphics driver for Xorg X server)
+xf86-video-ast:
+xf86-video-ast: xf86-video-ast is part of X11.
+xf86-video-ast:
+xf86-video-ast: For more information about the X.Org Foundation (the providers of the
+xf86-video-ast: X.Org implementation of the X Window System), see their website:
+xf86-video-ast:
+xf86-video-ast: http://www.x.org
+xf86-video-ast:
+xf86-video-ast:
+xf86-video-ast:
+xf86-video-ati: xf86-video-ati (ATI Radeon video driver for the Xorg X server)
+xf86-video-ati:
+xf86-video-ati: xf86-video-ati is part of X11.
+xf86-video-ati:
+xf86-video-ati: For more information about the X.Org Foundation (the providers of the
+xf86-video-ati: X.Org implementation of the X Window System), see their website:
+xf86-video-ati:
+xf86-video-ati: http://www.x.org
+xf86-video-ati:
+xf86-video-ati:
+xf86-video-ati:
+xf86-video-chips: xf86-video-chips (Chips and Technologies video driver for Xorg)
+xf86-video-chips:
+xf86-video-chips: xf86-video-chips is part of X11.
+xf86-video-chips:
+xf86-video-chips: For more information about the X.Org Foundation (the providers of the
+xf86-video-chips: X.Org implementation of the X Window System), see their website:
+xf86-video-chips:
+xf86-video-chips: http://www.x.org
+xf86-video-chips:
+xf86-video-chips:
+xf86-video-chips:
+xf86-video-cirrus: xf86-video-cirrus (Cirrus Logic video driver for the Xorg X server)
+xf86-video-cirrus:
+xf86-video-cirrus: xf86-video-cirrus is part of X11.
+xf86-video-cirrus:
+xf86-video-cirrus: For more information about the X.Org Foundation (the providers of the
+xf86-video-cirrus: X.Org implementation of the X Window System), see their website:
+xf86-video-cirrus:
+xf86-video-cirrus: http://www.x.org
+xf86-video-cirrus:
+xf86-video-cirrus:
+xf86-video-cirrus:
+xf86-video-dummy: xf86-video-dummy (virtual frame buffer driver for the Xorg X server)
+xf86-video-dummy:
+xf86-video-dummy: xf86-video-dummy is part of X11.
+xf86-video-dummy:
+xf86-video-dummy: For more information about the X.Org Foundation (the providers of the
+xf86-video-dummy: X.Org implementation of the X Window System), see their website:
+xf86-video-dummy:
+xf86-video-dummy: http://www.x.org
+xf86-video-dummy:
+xf86-video-dummy:
+xf86-video-dummy:
+xf86-video-geode: xf86-video-geode (AMD Geode GX and LX graphics driver for X.org)
+xf86-video-geode:
+xf86-video-geode: xf86-video-geode is part of X11.
+xf86-video-geode:
+xf86-video-geode: For more information about the X.Org Foundation (the providers of the
+xf86-video-geode: X.Org implementation of the X Window System), see their website:
+xf86-video-geode:
+xf86-video-geode: http://www.x.org
+xf86-video-geode:
+xf86-video-geode:
+xf86-video-geode:
+xf86-video-glint: xf86-video-glint (GLINT/Permedia video driver for the Xorg X server)
+xf86-video-glint:
+xf86-video-glint: xf86-video-glint is part of X11.
+xf86-video-glint:
+xf86-video-glint: For more information about the X.Org Foundation (the providers of the
+xf86-video-glint: X.Org implementation of the X Window System), see their website:
+xf86-video-glint:
+xf86-video-glint: http://www.x.org
+xf86-video-glint:
+xf86-video-glint:
+xf86-video-glint:
+xf86-video-i128: xf86-video-i128 (Number Nine I128 video driver for the Xorg X server)
+xf86-video-i128:
+xf86-video-i128: xf86-video-i128 is part of X11.
+xf86-video-i128:
+xf86-video-i128: For more information about the X.Org Foundation (the providers of the
+xf86-video-i128: X.Org implementation of the X Window System), see their website:
+xf86-video-i128:
+xf86-video-i128: http://www.x.org
+xf86-video-i128:
+xf86-video-i128:
+xf86-video-i128:
+xf86-video-i740: xf86-video-i740 (Intel i740 video driver for the Xorg X server)
+xf86-video-i740:
+xf86-video-i740: xf86-video-i740 is part of X11.
+xf86-video-i740:
+xf86-video-i740: For more information about the X.Org Foundation (the providers of the
+xf86-video-i740: X.Org implementation of the X Window System), see their website:
+xf86-video-i740:
+xf86-video-i740: http://www.x.org
+xf86-video-i740:
+xf86-video-i740:
+xf86-video-i740:
+xf86-video-intel: xf86-video-intel (X.org graphics driver for Intel graphics)
+xf86-video-intel:
+xf86-video-intel: xf86-video-intel is part of X11.
+xf86-video-intel:
+xf86-video-intel: For more information about the X.Org Foundation (the providers of the
+xf86-video-intel: X.Org implementation of the X Window System), see their website:
+xf86-video-intel:
+xf86-video-intel: http://www.x.org
+xf86-video-intel:
+xf86-video-intel:
+xf86-video-intel:
+xf86-video-mach64: xf86-video-mach64 (ATI Mach64 driver for the Xorg X server)
+xf86-video-mach64:
+xf86-video-mach64: xf86-video-mach64 is part of X11.
+xf86-video-mach64:
+xf86-video-mach64: For more information about the X.Org Foundation (the providers of the
+xf86-video-mach64: X.Org implementation of the X Window System), see their website:
+xf86-video-mach64:
+xf86-video-mach64: http://www.x.org
+xf86-video-mach64:
+xf86-video-mach64:
+xf86-video-mach64:
+xf86-video-mga: xf86-video-mga (Matrox video driver for the Xorg X server)
+xf86-video-mga:
+xf86-video-mga: xf86-video-mga is part of X11.
+xf86-video-mga:
+xf86-video-mga: For more information about the X.Org Foundation (the providers of the
+xf86-video-mga: X.Org implementation of the X Window System), see their website:
+xf86-video-mga:
+xf86-video-mga: http://www.x.org
+xf86-video-mga:
+xf86-video-mga:
+xf86-video-mga:
+xf86-video-modesetting: xf86-video-modesetting (X.org modesetting fallback driver)
+xf86-video-modesetting:
+xf86-video-modesetting: xf86-video-modesetting is part of X11.
+xf86-video-modesetting:
+xf86-video-modesetting: For more information about the X.Org Foundation (the providers of the
+xf86-video-modesetting: X.Org implementation of the X Window System), see their website:
+xf86-video-modesetting:
+xf86-video-modesetting: http://www.x.org
+xf86-video-modesetting:
+xf86-video-modesetting:
+xf86-video-modesetting:
+xf86-video-neomagic: xf86-video-neomagic (NeoMagic video driver for the Xorg X server)
+xf86-video-neomagic:
+xf86-video-neomagic: xf86-video-neomagic is part of X11.
+xf86-video-neomagic:
+xf86-video-neomagic: For more information about the X.Org Foundation (the providers of the
+xf86-video-neomagic: X.Org implementation of the X Window System), see their website:
+xf86-video-neomagic:
+xf86-video-neomagic: http://www.x.org
+xf86-video-neomagic:
+xf86-video-neomagic:
+xf86-video-neomagic:
+xf86-video-nouveau: xf86-video-nouveau (accelerated open source driver for nVidia cards)
+xf86-video-nouveau:
+xf86-video-nouveau: xf86-video-nouveau is part of X11.
+xf86-video-nouveau:
+xf86-video-nouveau: For more information about the X.Org Foundation (the providers of the
+xf86-video-nouveau: X.Org implementation of the X Window System), see their website:
+xf86-video-nouveau:
+xf86-video-nouveau: http://www.x.org
+xf86-video-nouveau:
+xf86-video-nouveau:
+xf86-video-nouveau:
+xf86-video-nv: xf86-video-nv (old NVIDIA video driver for the Xorg X server)
+xf86-video-nv:
+xf86-video-nv: xf86-video-nv is part of X11.
+xf86-video-nv:
+xf86-video-nv: For more information about the X.Org Foundation (the providers of the
+xf86-video-nv: X.Org implementation of the X Window System), see their website:
+xf86-video-nv:
+xf86-video-nv: http://www.x.org
+xf86-video-nv:
+xf86-video-nv:
+xf86-video-nv:
+xf86-video-openchrome: xf86-video-openchrome (VIA video driver for the Xorg X server)
+xf86-video-openchrome:
+xf86-video-openchrome: xf86-video-openchrome is part of X11.
+xf86-video-openchrome:
+xf86-video-openchrome: For more information about the X.Org Foundation (the providers of the
+xf86-video-openchrome: X.Org implementation of the X Window System), see their website:
+xf86-video-openchrome:
+xf86-video-openchrome: http://www.x.org
+xf86-video-openchrome:
+xf86-video-openchrome:
+xf86-video-openchrome:
+xf86-video-r128: xf86-video-r128 (ATI Rage 128 video driver for the Xorg X server)
+xf86-video-r128:
+xf86-video-r128: xf86-video-r128 is part of X11.
+xf86-video-r128:
+xf86-video-r128: For more information about the X.Org Foundation (the providers of the
+xf86-video-r128: X.Org implementation of the X Window System), see their website:
+xf86-video-r128:
+xf86-video-r128: http://www.x.org
+xf86-video-r128:
+xf86-video-r128:
+xf86-video-r128:
+xf86-video-rendition: xf86-video-rendition (Rendition video driver for the Xorg X server)
+xf86-video-rendition:
+xf86-video-rendition: xf86-video-rendition is part of X11.
+xf86-video-rendition:
+xf86-video-rendition: For more information about the X.Org Foundation (the providers of the
+xf86-video-rendition: X.Org implementation of the X Window System), see their website:
+xf86-video-rendition:
+xf86-video-rendition: http://www.x.org
+xf86-video-rendition:
+xf86-video-rendition:
+xf86-video-rendition:
+xf86-video-s3: xf86-video-s3 (Xorg driver for S3 chipsets other than ViRGE or Savage)
+xf86-video-s3:
+xf86-video-s3: xf86-video-s3 is part of X11.
+xf86-video-s3:
+xf86-video-s3: For more information about the X.Org Foundation (the providers of the
+xf86-video-s3: X.Org implementation of the X Window System), see their website:
+xf86-video-s3:
+xf86-video-s3: http://www.x.org
+xf86-video-s3:
+xf86-video-s3:
+xf86-video-s3:
+xf86-video-s3virge: xf86-video-s3virge (S3 ViRGE video driver for the Xorg X server)
+xf86-video-s3virge:
+xf86-video-s3virge: xf86-video-s3virge is part of X11.
+xf86-video-s3virge:
+xf86-video-s3virge: For more information about the X.Org Foundation (the providers of the
+xf86-video-s3virge: X.Org implementation of the X Window System), see their website:
+xf86-video-s3virge:
+xf86-video-s3virge: http://www.x.org
+xf86-video-s3virge:
+xf86-video-s3virge:
+xf86-video-s3virge:
+xf86-video-savage: xf86-video-savage (S3 Savage video driver for the Xorg X server)
+xf86-video-savage:
+xf86-video-savage: xf86-video-savage is part of X11.
+xf86-video-savage:
+xf86-video-savage: For more information about the X.Org Foundation (the providers of the
+xf86-video-savage: X.Org implementation of the X Window System), see their website:
+xf86-video-savage:
+xf86-video-savage: http://www.x.org
+xf86-video-savage:
+xf86-video-savage:
+xf86-video-savage:
+xf86-video-siliconmotion: xf86-video-siliconmotion (Silicon Motion video driver for Xorg)
+xf86-video-siliconmotion:
+xf86-video-siliconmotion: xf86-video-siliconmotion is part of X11.
+xf86-video-siliconmotion:
+xf86-video-siliconmotion: For more information about the X.Org Foundation (the providers of the
+xf86-video-siliconmotion: X.Org implementation of the X Window System), see their website:
+xf86-video-siliconmotion:
+xf86-video-siliconmotion: http://www.x.org
+xf86-video-siliconmotion:
+xf86-video-siliconmotion:
+xf86-video-siliconmotion:
+xf86-video-sis: xf86-video-sis (SiS and XGI video driver for the Xorg X server)
+xf86-video-sis:
+xf86-video-sis: xf86-video-sis is part of X11.
+xf86-video-sis:
+xf86-video-sis: For more information about the X.Org Foundation (the providers of the
+xf86-video-sis: X.Org implementation of the X Window System), see their website:
+xf86-video-sis:
+xf86-video-sis: http://www.x.org
+xf86-video-sis:
+xf86-video-sis:
+xf86-video-sis:
+xf86-video-sisusb: xf86-video-sisusb (SiS Net2280-based USB video driver for Xorg)
+xf86-video-sisusb:
+xf86-video-sisusb: xf86-video-sisusb is part of X11.
+xf86-video-sisusb:
+xf86-video-sisusb: For more information about the X.Org Foundation (the providers of the
+xf86-video-sisusb: X.Org implementation of the X Window System), see their website:
+xf86-video-sisusb:
+xf86-video-sisusb: http://www.x.org
+xf86-video-sisusb:
+xf86-video-sisusb:
+xf86-video-sisusb:
+xf86-video-tdfx: xf86-video-tdfx (3Dfx video driver for the Xorg X server)
+xf86-video-tdfx:
+xf86-video-tdfx: xf86-video-tdfx is part of X11.
+xf86-video-tdfx:
+xf86-video-tdfx: For more information about the X.Org Foundation (the providers of the
+xf86-video-tdfx: X.Org implementation of the X Window System), see their website:
+xf86-video-tdfx:
+xf86-video-tdfx: http://www.x.org
+xf86-video-tdfx:
+xf86-video-tdfx:
+xf86-video-tdfx:
+xf86-video-tga: xf86-video-tga (DEC21030/TGA video driver for the Xorg X server)
+xf86-video-tga:
+xf86-video-tga: xf86-video-tga is part of X11.
+xf86-video-tga:
+xf86-video-tga: For more information about the X.Org Foundation (the providers of the
+xf86-video-tga: X.Org implementation of the X Window System), see their website:
+xf86-video-tga:
+xf86-video-tga: http://www.x.org
+xf86-video-tga:
+xf86-video-tga:
+xf86-video-tga:
+xf86-video-trident: xf86-video-trident (Trident video driver for the Xorg X server)
+xf86-video-trident:
+xf86-video-trident: xf86-video-trident is part of X11.
+xf86-video-trident:
+xf86-video-trident: For more information about the X.Org Foundation (the providers of the
+xf86-video-trident: X.Org implementation of the X Window System), see their website:
+xf86-video-trident:
+xf86-video-trident: http://www.x.org
+xf86-video-trident:
+xf86-video-trident:
+xf86-video-trident:
+xf86-video-tseng: xf86-video-tseng (Tseng Labs video driver for the Xorg X server)
+xf86-video-tseng:
+xf86-video-tseng: xf86-video-tseng is part of X11.
+xf86-video-tseng:
+xf86-video-tseng: For more information about the X.Org Foundation (the providers of the
+xf86-video-tseng: X.Org implementation of the X Window System), see their website:
+xf86-video-tseng:
+xf86-video-tseng: http://www.x.org
+xf86-video-tseng:
+xf86-video-tseng:
+xf86-video-tseng:
+xf86-video-v4l: xf86-video-v4l (Video 4 Linux adaptor driver for X)
+xf86-video-v4l:
+xf86-video-v4l: xf86-video-v4l is part of X11.
+xf86-video-v4l:
+xf86-video-v4l: For more information about the X.Org Foundation (the providers of the
+xf86-video-v4l: X.Org implementation of the X Window System), see their website:
+xf86-video-v4l:
+xf86-video-v4l: http://www.x.org
+xf86-video-v4l:
+xf86-video-v4l:
+xf86-video-v4l:
+xf86-video-vesa: xf86-video-vesa (Generic VESA video driver for the Xorg X server)
+xf86-video-vesa:
+xf86-video-vesa: xf86-video-vesa is part of X11.
+xf86-video-vesa:
+xf86-video-vesa: For more information about the X.Org Foundation (the providers of the
+xf86-video-vesa: X.Org implementation of the X Window System), see their website:
+xf86-video-vesa:
+xf86-video-vesa: http://www.x.org
+xf86-video-vesa:
+xf86-video-vesa:
+xf86-video-vesa:
+xf86-video-vmware: xf86-video-vmware (VMWare SVGA video driver for the Xorg X server)
+xf86-video-vmware:
+xf86-video-vmware: xf86-video-vmware is part of X11.
+xf86-video-vmware:
+xf86-video-vmware: For more information about the X.Org Foundation (the providers of the
+xf86-video-vmware: X.Org implementation of the X Window System), see their website:
+xf86-video-vmware:
+xf86-video-vmware: http://www.x.org
+xf86-video-vmware:
+xf86-video-vmware:
+xf86-video-vmware:
+xf86-video-voodoo: xf86-video-voodoo (3DFX Voodoo/Voodoo2 video driver for Xorg)
+xf86-video-voodoo:
+xf86-video-voodoo: xf86-video-voodoo is part of X11.
+xf86-video-voodoo:
+xf86-video-voodoo: For more information about the X.Org Foundation (the providers of the
+xf86-video-voodoo: X.Org implementation of the X Window System), see their website:
+xf86-video-voodoo:
+xf86-video-voodoo: http://www.x.org
+xf86-video-voodoo:
+xf86-video-voodoo:
+xf86-video-voodoo:
+xf86-video-xgi: xf86-video-xgi (XGI video driver for the Xorg X server)
+xf86-video-xgi:
+xf86-video-xgi: xf86-video-xgi is part of X11.
+xf86-video-xgi:
+xf86-video-xgi: For more information about the X.Org Foundation (the providers of the
+xf86-video-xgi: X.Org implementation of the X Window System), see their website:
+xf86-video-xgi:
+xf86-video-xgi: http://www.x.org
+xf86-video-xgi:
+xf86-video-xgi:
+xf86-video-xgi:
+xf86-video-xgixp: xf86-video-xgixp (XGI XGI Volari 8300 video driver)
+xf86-video-xgixp:
+xf86-video-xgixp: xf86-video-xgixp is part of X11.
+xf86-video-xgixp:
+xf86-video-xgixp: For more information about the X.Org Foundation (the providers of the
+xf86-video-xgixp: X.Org implementation of the X Window System), see their website:
+xf86-video-xgixp:
+xf86-video-xgixp: http://www.x.org
+xf86-video-xgixp:
+xf86-video-xgixp:
+xf86-video-xgixp:
+xf86vidmodeproto: xf86vidmodeproto
+xf86vidmodeproto:
+xf86vidmodeproto: xf86vidmodeproto is part of X11.
+xf86vidmodeproto:
+xf86vidmodeproto: For more information about the X.Org Foundation (the providers of the
+xf86vidmodeproto: X.Org implementation of the X Window System), see their website:
+xf86vidmodeproto:
+xf86vidmodeproto: http://www.x.org
+xf86vidmodeproto:
+xf86vidmodeproto:
+xf86vidmodeproto:
+xfd: xfd (X11 font utility)
+xfd:
+xfd: xfd displays all the characters in a font using either the X11 core
+xfd: protocol or libXft2.
+xfd:
+xfd:
+xfd:
+xfd:
+xfd:
+xfd:
+xfd:
+xfontsel: xfontsel (X11 font selector)
+xfontsel:
+xfontsel: xfontsel application provides a simple way to display the X11 core
+xfontsel: protocol fonts known to your X server, examine samples of each, and
+xfontsel: retrieve the X Logical Font Description ("XLFD") full name for a font.
+xfontsel:
+xfontsel:
+xfontsel:
+xfontsel:
+xfontsel:
+xfontsel:
+xfs: xfs (font server for X11)
+xfs:
+xfs: xfs is part of X11.
+xfs:
+xfs: For more information about the X.Org Foundation (the providers of the
+xfs: X.Org implementation of the X Window System), see their website:
+xfs:
+xfs: http://www.x.org
+xfs:
+xfs:
+xfs:
+xfsinfo: xfsinfo (X11 font server utility)
+xfsinfo:
+xfsinfo: xfsinfo is a utility for displaying information about an X font server.
+xfsinfo: It is used to examine the capabilities of a server, the predefined
+xfsinfo: values for various parameters used in communicating between clients
+xfsinfo: and the server, and the font catalogues and alternate servers that
+xfsinfo: are available.
+xfsinfo:
+xfsinfo:
+xfsinfo:
+xfsinfo:
+xgamma: xgamma (X11 gamma utility)
+xgamma:
+xgamma: xgamma allows X users to query and alter the gamma correction of a
+xgamma: monitor via the X video mode extension (XFree86-VidModeExtension).
+xgamma:
+xgamma:
+xgamma:
+xgamma:
+xgamma:
+xgamma:
+xgamma:
+xgc: xgc
+xgc:
+xgc: xgc is part of X11.
+xgc:
+xgc: For more information about the X.Org Foundation (the providers of the
+xgc: X.Org implementation of the X Window System), see their website:
+xgc:
+xgc: http://www.x.org
+xgc:
+xgc:
+xgc:
+xhost: xhost (X11 authorization utility)
+xhost:
+xhost: xhost is used to manage the list of host names or user names allowed
+xhost: to make connections to the X server.
+xhost:
+xhost:
+xhost:
+xhost:
+xhost:
+xhost:
+xhost:
+xineramaproto: xineramaproto
+xineramaproto:
+xineramaproto: xineramaproto is part of X11.
+xineramaproto:
+xineramaproto: For more information about the X.Org Foundation (the providers of the
+xineramaproto: X.Org implementation of the X Window System), see their website:
+xineramaproto:
+xineramaproto: http://www.x.org
+xineramaproto:
+xineramaproto:
+xineramaproto:
+xinit: xinit (scripts to start X11 servers)
+xinit:
+xinit: xinit is not intended for naive users.  Instead, site administrators 
+xinit: should design user-friendly scripts that present the desired interface
+xinit: when starting up X.  The startx script is one such example.
+xinit:
+xinit:
+xinit:
+xinit:
+xinit:
+xinit:
+xinput: xinput (utility to configure and test X11 input devices)
+xinput:
+xinput: xinput is a utility to configure and test XInput devices. It wasn't
+xinput: originally designed to be the primary tool for doing this but it's
+xinput: still pretty much the only program out there for doing it. :-)
+xinput:
+xinput: For more information about the X.Org Foundation (the providers of the
+xinput: X.Org implementation of the X Window System), see their website:
+xinput: http://www.x.org
+xinput:
+xinput:
+xkbcomp: xkbcomp (X Keyboard Extension)
+xkbcomp:
+xkbcomp: xkbcomp is part of X11.
+xkbcomp:
+xkbcomp: For more information about the X.Org Foundation (the providers of the
+xkbcomp: X.Org implementation of the X Window System), see their website:
+xkbcomp:
+xkbcomp: http://www.x.org
+xkbcomp:
+xkbcomp:
+xkbcomp:
+xkbevd: xkbevd (X11 keyboard event daemon)
+xkbevd:
+xkbevd: xkbevd is part of X11.
+xkbevd:
+xkbevd: For more information about the X.Org Foundation (the providers of the
+xkbevd: X.Org implementation of the X Window System), see their website:
+xkbevd:
+xkbevd: http://www.x.org
+xkbevd:
+xkbevd:
+xkbevd:
+xkbprint: xkbprint
+xkbprint:
+xkbprint: xkbprint is part of X11.
+xkbprint:
+xkbprint: For more information about the X.Org Foundation (the providers of the
+xkbprint: X.Org implementation of the X Window System), see their website:
+xkbprint:
+xkbprint: http://www.x.org
+xkbprint:
+xkbprint:
+xkbprint:
+xkbutils: xkbutils (X11 keyboard utilities)
+xkbutils:
+xkbutils: xkbutils is a collection of small utilities utilizing the XKeyboard
+xkbutils: (XKB) extension to the X11 protocol.
+xkbutils:
+xkbutils:
+xkbutils:
+xkbutils:
+xkbutils:
+xkbutils:
+xkbutils:
+xkeyboard-config: xkeyboard-config (X Keyboard Extension config files)
+xkeyboard-config:
+xkeyboard-config: The X Keyboard Extension essentially replaces the core protocol
+xkeyboard-config: definition of keyboard. The extension makes possible to clearly and
+xkeyboard-config: explicitly specify most aspects of keyboard behaviour on per-key
+xkeyboard-config: basis and to more closely track the logical and physical state of the
+xkeyboard-config: keyboard. It also includes a number of keyboard controls designed to
+xkeyboard-config: make keyboards more accessible to people with physical impairments.
+xkeyboard-config:
+xkeyboard-config:
+xkeyboard-config:
+xkill: xkill (X11 utility)
+xkill:
+xkill: xkill is a utility for forcing the X server to close connections to
+xkill: clients.  This program is very dangerous, but is useful for aborting
+xkill: programs that have displayed undesired windows on a user's screen.
+xkill:
+xkill:
+xkill:
+xkill:
+xkill:
+xkill:
+xload: xload (displays a histogram of the system load average)
+xload:
+xload: xload is part of X11.
+xload:
+xload: For more information about the X.Org Foundation (the providers of the
+xload: X.Org implementation of the X Window System), see their website:
+xload:
+xload: http://www.x.org
+xload:
+xload:
+xload:
+xlogo: xlogo (displays the X Window System logo)
+xlogo:
+xlogo: xlogo is part of X11.
+xlogo:
+xlogo: For more information about the X.Org Foundation (the providers of the
+xlogo: X.Org implementation of the X Window System), see their website:
+xlogo:
+xlogo: http://www.x.org
+xlogo:
+xlogo:
+xlogo:
+xlsatoms: xlsatoms (lists the interned atoms defined on an X11 server)
+xlsatoms:
+xlsatoms: xlsatoms is part of X11.
+xlsatoms:
+xlsatoms: For more information about the X.Org Foundation (the providers of the
+xlsatoms: X.Org implementation of the X Window System), see their website:
+xlsatoms:
+xlsatoms: http://www.x.org
+xlsatoms:
+xlsatoms:
+xlsatoms:
+xlsclients: xlsclients (X11 utility for listing X client info)
+xlsclients:
+xlsclients: xlsclients is a utility for listing information about the client
+xlsclients: applications running on a X11 server.
+xlsclients:
+xlsclients:
+xlsclients:
+xlsclients:
+xlsclients:
+xlsclients:
+xlsclients:
+xlsfonts: xlsfonts (X11 font utility to list available fonts)
+xlsfonts:
+xlsfonts: xlsfonts lists fonts available from an X server via the X11 core
+xlsfonts: protocol.
+xlsfonts:
+xlsfonts:
+xlsfonts:
+xlsfonts:
+xlsfonts:
+xlsfonts:
+xlsfonts:
+xmag: xmag (X11 accessibility utility)
+xmag:
+xmag: xmag displays a magnified snapshot of a portion of an X11 screen.
+xmag:
+xmag:
+xmag:
+xmag:
+xmag:
+xmag:
+xmag:
+xmag:
+xman: xman (graphical manual page browser using the Xaw toolkit)
+xman:
+xman: xman is part of X11.
+xman:
+xman: For more information about the X.Org Foundation (the providers of the
+xman: X.Org implementation of the X Window System), see their website:
+xman:
+xman: http://www.x.org
+xman:
+xman:
+xman:
+xmessage: xmessage (displays a message or query in a window)
+xmessage:
+xmessage: The user can click on an "okay" button to dismiss it or can select
+xmessage: one of several buttons to answer a question.  xmessage can also exit
+xmessage: after a specified time.
+xmessage:
+xmessage:
+xmessage:
+xmessage:
+xmessage:
+xmessage:
+xmh: xmh
+xmh:
+xmh: xmh is part of X11.
+xmh:
+xmh: For more information about the X.Org Foundation (the providers of the
+xmh: X.Org implementation of the X Window System), see their website:
+xmh:
+xmh: http://www.x.org
+xmh:
+xmh:
+xmh:
+xmodmap: xmodmap (X11 keyboard utility)
+xmodmap:
+xmodmap: The xmodmap program is used to edit and display the keyboard modifier
+xmodmap: map and keymap table that are used by client applications to convert
+xmodmap: event keycodes into keysyms.  It is usually run from a user's session
+xmodmap: startup script to configure the keyboard according to personal tastes.
+xmodmap:
+xmodmap:
+xmodmap:
+xmodmap:
+xmodmap:
+xmore: xmore
+xmore:
+xmore: xmore is part of X11.
+xmore:
+xmore: For more information about the X.Org Foundation (the providers of the
+xmore: X.Org implementation of the X Window System), see their website:
+xmore:
+xmore: http://www.x.org
+xmore:
+xmore:
+xmore:
+xorg-cf-files: xorg-cf-files
+xorg-cf-files:
+xorg-cf-files: xorg-cf-files is part of X11.
+xorg-cf-files:
+xorg-cf-files: For more information about the X.Org Foundation (the providers of the
+xorg-cf-files: X.Org implementation of the X Window System), see their website:
+xorg-cf-files:
+xorg-cf-files: http://www.x.org
+xorg-cf-files:
+xorg-cf-files:
+xorg-cf-files:
+xorg-docs: xorg-docs (documentation for X11)
+xorg-docs:
+xorg-docs: This package provides miscellaneous documentation for the X Window
+xorg-docs: System that doesn't better fit into other packages.
+xorg-docs:
+xorg-docs: The preferred documentation format for these documents is DocBook XML.
+xorg-docs:
+xorg-docs:
+xorg-docs:
+xorg-docs:
+xorg-docs:
+xorg-server: xorg-server (The Xorg server, the core of the X Window System)
+xorg-server:
+xorg-server: Xorg is a full featured X server that was originally designed for UNIX
+xorg-server: and UNIX-like operating systems running on Intel x86 hardware.  It now
+xorg-server: runs on a wider range of hardware and OS platforms.  This work was
+xorg-server: derived by the X.Org Foundation from the XFree86 Project's XFree86
+xorg-server: 4.4rc2  release.  The XFree86 release was originally derived from X386
+xorg-server: 1.2 by Thomas Roell which was contributed to X11R5 by Snitily Graphics
+xorg-server: Consulting Service.
+xorg-server:
+xorg-server: The home page for the X project is:  http://www.x.org
+xorg-server-xephyr: xorg-server-xephyr (Improved nested X server/client)
+xorg-server-xephyr:
+xorg-server-xephyr: Xephyr is a nested X-Client like Xnest, but with some additional
+xorg-server-xephyr: features like XRender support. 
+xorg-server-xephyr:
+xorg-server-xephyr:
+xorg-server-xephyr:
+xorg-server-xephyr:
+xorg-server-xephyr:
+xorg-server-xephyr:
+xorg-server-xephyr:
+xorg-server-xnest: xorg-server-xnest (a nested X server)
+xorg-server-xnest:
+xorg-server-xnest: Xnest is an experimental nested server for X that acts as both a 
+xorg-server-xnest: client and a server.  Xnest is a client of the real server which
+xorg-server-xnest: manages windows and graphics requests on its behalf.  Xnest is a
+xorg-server-xnest: server to its own clients.  Xnest manages windows and graphics 
+xorg-server-xnest: requests on their behalf.  To these clients Xnest appears to be a 
+xorg-server-xnest: conventional server.
+xorg-server-xnest:
+xorg-server-xnest:
+xorg-server-xnest:
+xorg-server-xvfb: xorg-server-xvfb (virtual framebuffer X server)
+xorg-server-xvfb:
+xorg-server-xvfb: Xvfb is an X server that can run on machines with no display hardware
+xorg-server-xvfb: and no physical input devices.  It emulates a dumb framebuffer using 
+xorg-server-xvfb: virtual memory.  The primary use of this server is intended to be 
+xorg-server-xvfb: server testing.  The mfb or cfb code for any depth can be exercised
+xorg-server-xvfb: with this server without the need for real hardware that supports the
+xorg-server-xvfb: desired depths.  A secondary use is testing clients against unusual
+xorg-server-xvfb: depths and screen configurations.
+xorg-server-xvfb:
+xorg-server-xvfb:
+xorg-sgml-doctools: xorg-sgml-doctools (X.org documentation tools)
+xorg-sgml-doctools:
+xorg-sgml-doctools: This package provides a common set of SGML entities and XML/CSS style
+xorg-sgml-doctools: sheets used in building/formatting the documentation provided in other
+xorg-sgml-doctools: X.Org packages.   It's typically only needed by people building from
+xorg-sgml-doctools: source who want to produce formatted documentation from their builds,
+xorg-sgml-doctools: or those who have installed the HTML version of the documentation,
+xorg-sgml-doctools: which refers to the included common xorg.css stylesheet.
+xorg-sgml-doctools:
+xorg-sgml-doctools:
+xorg-sgml-doctools:
+xpr: xpr (dump an X window directly to a printer)
+xpr:
+xpr: xpr takes as input a window dump file produced by xwd
+xpr: and formats it for output on various types of printers.
+xpr:
+xpr:
+xpr:
+xpr:
+xpr:
+xpr:
+xpr:
+xprop: xprop (displays window and font properties of an X server)
+xprop:
+xprop: xprop is part of X11.
+xprop:
+xprop: For more information about the X.Org Foundation (the providers of the
+xprop: X.Org implementation of the X Window System), see their website:
+xprop:
+xprop: http://www.x.org
+xprop:
+xprop:
+xprop:
+xproto: xproto (C prototypes for X Window System Core Protocol)
+xproto:
+xproto: xproto is part of X11.
+xproto:
+xproto: For more information about the X.Org Foundation (the providers of the
+xproto: X.Org implementation of the X Window System), see their website:
+xproto:
+xproto: http://www.x.org
+xproto:
+xproto:
+xproto:
+xpyb: xpyb (Python bindings for X)
+xpyb:
+xpyb: xpyb provides a Python binding to the X Window System protocol
+xpyb: via libxcb.
+xpyb:
+xpyb:
+xpyb:
+xpyb:
+xpyb:
+xpyb:
+xpyb:
+xrandr: xrandr (X11 RandR utility)
+xrandr:
+xrandr: Primitive command line interface to X11 Resize, Rotate, and Reflect
+xrandr: (RandR) extension
+xrandr:
+xrandr:
+xrandr:
+xrandr:
+xrandr:
+xrandr:
+xrandr:
+xrdb: xrdb (X server resource database utility)
+xrdb:
+xrdb: xrdb is part of X11.
+xrdb:
+xrdb: For more information about the X.Org Foundation (the providers of the
+xrdb: X.Org implementation of the X Window System), see their website:
+xrdb:
+xrdb: http://www.x.org
+xrdb:
+xrdb:
+xrdb:
+xrefresh: xrefresh (refresh all or part of an X screen)
+xrefresh:
+xrefresh: xrefresh is part of X11.
+xrefresh:
+xrefresh: For more information about the X.Org Foundation (the providers of the
+xrefresh: X.Org implementation of the X Window System), see their website:
+xrefresh:
+xrefresh: http://www.x.org
+xrefresh:
+xrefresh:
+xrefresh:
+xscope: xscope (program to monitor X11/Client conversations)
+xscope:
+xscope: xscope is part of X11.
+xscope:
+xscope: For more information about the X.Org Foundation (the providers of the
+xscope: X.Org implementation of the X Window System), see their website:
+xscope:
+xscope: http://www.x.org
+xscope:
+xscope:
+xscope:
+xset: xset (get and set various preferences and properties)
+xset:
+xset: xset is a command line utility to get and set various preferences
+xset: and properties for the current session.
+xset:
+xset:
+xset:
+xset:
+xset:
+xset:
+xset:
+xsetroot: xsetroot (root window parameter setting utility for X)
+xsetroot:
+xsetroot: xsetroot is part of X11.
+xsetroot:
+xsetroot: For more information about the X.Org Foundation (the providers of the
+xsetroot: X.Org implementation of the X Window System), see their website:
+xsetroot:
+xsetroot: http://www.x.org
+xsetroot:
+xsetroot:
+xsetroot:
+xsm: xsm (X11 Session Manager)
+xsm:
+xsm: xsm is part of X11.
+xsm:
+xsm: For more information about the X.Org Foundation (the providers of the
+xsm: X.Org implementation of the X Window System), see their website:
+xsm:
+xsm: http://www.x.org
+xsm:
+xsm:
+xsm:
+xstdcmap: xstdcmap (X11 color utility)
+xstdcmap:
+xstdcmap: The xstdcmap utility can be used to selectively define standard
+xstdcmap: colormap properties.  It is intended to be run from a user's X
+xstdcmap: startup script to create standard colormap definitions in order to
+xstdcmap: facilitate sharing of scarce colormap resources among clients using
+xstdcmap: PseudoColor visuals.
+xstdcmap:
+xstdcmap:
+xstdcmap:
+xstdcmap:
+xterm: xterm (terminal emulator for X)
+xterm:
+xterm: The xterm program is a terminal emulator for the X Window System.
+xterm: It provides DEC VT102/VT220 (VTxxx) and Tektronix 4014 compatible
+xterm: terminals for programs that cannot use the window system directly.
+xterm:
+xterm:
+xterm:
+xterm:
+xterm:
+xterm:
+xtrans: xtrans (X network transport library)
+xtrans:
+xtrans: xtrans is a library of code that is shared among various X packages
+xtrans: to handle network protocol transport in a modular fashion, allowing a
+xtrans: single place to add new transport types.  It is used by the X server,
+xtrans: libX11, libICE, the X font server, and related components.
+xtrans:
+xtrans:
+xtrans:
+xtrans:
+xtrans:
+xvidtune: xvidtune (X11 video utility)
+xvidtune:
+xvidtune: xvidtune is a client interface to the X server video mode extension
+xvidtune: (XFree86-VidModeExtension).
+xvidtune:
+xvidtune:
+xvidtune:
+xvidtune:
+xvidtune:
+xvidtune:
+xvidtune:
+xvinfo: xvinfo (X11 X-Video utility)
+xvinfo:
+xvinfo: xvinfo prints out the capabilities of any video adaptors associated
+xvinfo: with the display that are accessible through the X-Video extension.
+xvinfo:
+xvinfo:
+xvinfo:
+xvinfo:
+xvinfo:
+xvinfo:
+xvinfo:
+xwd: xwd (dump an image of an X window)
+xwd:
+xwd: xwd is part of X11.
+xwd:
+xwd: For more information about the X.Org Foundation (the providers of the
+xwd: X.Org implementation of the X Window System), see their website:
+xwd:
+xwd: http://www.x.org
+xwd:
+xwd:
+xwd:
+xwininfo: xwininfo (prints information about windows on an X server)
+xwininfo:
+xwininfo: Various information is displayed depending on which options are
+xwininfo: selected.
+xwininfo:
+xwininfo:
+xwininfo:
+xwininfo:
+xwininfo:
+xwininfo:
+xwininfo:
+xwud: xwud (X screen dump viewer)
+xwud:
+xwud: xwud allows X users to display in a window an image saved in a
+xwud: specially formatted dump file, such as produced by xwd.
+xwud:
+xwud:
+xwud:
+xwud:
+xwud:
+xwud:
+xwud:

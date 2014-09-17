@@ -1,0 +1,12 @@
+            |-----handy-ruler------------------------------------------------------|
+kde-baseapps: kde-baseapps (KDE core applications and files)
+kde-baseapps:
+kde-baseapps: This package provides the core applications and infrastructure files
+kde-baseapps: for the KDE Plasma Desktop.
+kde-baseapps:
+kde-baseapps: Modified version shipping without the Konqueror web browser.
+kde-baseapps:
+kde-baseapps:
+kde-baseapps:
+kde-baseapps:
+kde-baseapps: Package created by Niki Kovacs <info@microlinux.fr>

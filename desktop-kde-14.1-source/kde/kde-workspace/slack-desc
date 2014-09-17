@@ -1,0 +1,12 @@
+             |-----handy-ruler------------------------------------------------------|
+kde-workspace: kde-workspace (KDE Plasma Desktop)
+kde-workspace:
+kde-workspace: This package provides the essential parts of the KDE Plasma Desktop
+kde-workspace: that are presented to the user.
+kde-workspace:
+kde-workspace: Modified version with a custom default configuration.
+kde-workspace:
+kde-workspace:
+kde-workspace:
+kde-workspace:
+kde-workspace: Package created by Niki Kovacs <info@microlinux.fr>

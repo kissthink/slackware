@@ -1,0 +1,9 @@
+Wed Sep 17 17:44:14 CEST 2014
+kde/kde-baseapps-4.10.5-i486-2_microlinux.txz: Rebuilt.
+  Since we're using Firefox, this version comes without Konqueror.
+kde/kde-base-artwork-4.10.5-i486-2_microlinux.txz: Rebuilt.
+kde/kde-workspace-4.10.5-i486-3_microlinux.txz: Rebuilt.
+kde/kde-wallpapers-4.10.5-i486-2_microlinux.txz: Rebuilt.
+profile/user-settings-kde-4.10.5-noarch-1_microlinux.txz: Added.
+  Default KDE configuration with a sober and "corporate" look.
++--------------------------+

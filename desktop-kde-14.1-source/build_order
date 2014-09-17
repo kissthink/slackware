@@ -1,0 +1,6 @@
+# Build order
+kde/kde-baseapps
+kde/kde-base-artwork
+kde/kde-workspace
+kde/kde-wallpapers
+profile/user-settings-kde
