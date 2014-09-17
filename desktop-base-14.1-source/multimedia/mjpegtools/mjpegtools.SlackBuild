@@ -62,7 +62,7 @@ fi
 
 set -e
 
-#wget -c http://downloads.sourceforge.net/mjpeg/$PRGNAM-$VERSION.tar.gz
+wget -c http://downloads.sourceforge.net/mjpeg/$PRGNAM-$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
