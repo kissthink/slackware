@@ -77,6 +77,32 @@ x/webcore-fonts
 x/eurostile-fonts
 locale/mozilla-firefox-l10n
 locale/mozilla-thunderbird-l10n
+l/pysetuptools
+l/protobuf
+l/wxGTK
+l/cryptopp
+l/BeautifulSoup
+l/lxml
+d/numpy
+l/gsl
+l/libsigc++
+l/glibmm
+l/cairomm
+l/pangomm
+l/atkmm
+l/mm-common
+l/gtkmm
+l/goocanvas
+l/pygoocanvas
+l/pyxdg
+d/acpica
+d/lua
+d/scons
+l/jbig2dec
+l/imlib2
+l/tolua++
+l/podofo
+
 
 
 
