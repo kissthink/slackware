@@ -14,6 +14,13 @@ multimedia/gst1-plugins-good-1.2.2-x86_64-2_microlinux.txz: Added.
 multimedia/gst1-plugins-bad-1.2.2-x86_64-2_microlinux.txz: Added.
 multimedia/gst1-plugins-ugly-1.2.2-x86_64-2_microlinux.txz: Added.
 multimedia/gst1-libav-1.2.2-x86_64-2_microlinux.txz: Added.
+x/google-droid-fonts-20100409-noarch-2_microlinux.txz: Added.
+x/webcore-fonts-3.0-noarch-2_microlinux.txz: Added.
+x/eurostile-fonts-1.0-noarch-2_microlinux.txz: Added.
+locale/mozilla-firefox-l10n-24.8.0-x86_64-1_microlinux.txz: Added.
+locale/mozilla-thunderbird-l10n-24.8.0-x86_64-1_microlinux.txz: Added.
+locale/libreoffice-langpack-fr-4.2.6-x86_64-1_microlinux.txz: Added.
+locale/libreoffice-langpack-de-4.2.6-x86_64-1_microlinux.txz: Added.
 +--------------------------+
 Tue Sep 16 07:45:00 CEST 2014
 profile/user-settings-console-1.0-noarch-2_microlinux.txz: Added.
