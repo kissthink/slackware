@@ -3,7 +3,7 @@ Options +Indexes
 Options +FollowSymlinks
 
 # Encoding
-AddDefaultCharset uft-8
+AddDefaultCharset utf-8
 
 # STRONG HTACCESS PROTECTION
 <Files ~ "^.*\.([Hh][Tt][Aa])">
@@ -49,6 +49,12 @@ AddDefaultCharset uft-8
   AddIcon       /slackware/repository-layout/xorg.png desktop-base-14.1-32bit
   AddIcon       /slackware/repository-layout/xorg.png desktop-base-14.1-64bit
   AddIcon       /slackware/repository-layout/xorg.png desktop-base-14.1-source
+  AddIcon       /slackware/repository-layout/kde.png desktop-kde-14.1-32bit
+  AddIcon       /slackware/repository-layout/kde.png desktop-kde-14.1-64bit
+  AddIcon       /slackware/repository-layout/kde.png desktop-kde-14.1-source
+  AddIcon       /slackware/repository-layout/xfce.png desktop-xfce-14.1-32bit
+  AddIcon       /slackware/repository-layout/xfce.png desktop-xfce-14.1-64bit
+  AddIcon       /slackware/repository-layout/xfce.png desktop-xfce-14.1-source
   AddIconByType /slackware/repository-layout/image-x-generic.png image/*
 
   # DESCRIPTIONS
