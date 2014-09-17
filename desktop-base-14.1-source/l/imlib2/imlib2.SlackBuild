@@ -60,7 +60,7 @@ DOCS="AUTHORS COPYING COPYING-PLAIN ChangeLog INSTALL README TODO"
 
 set -e
 
-#wget -c http://downloads.sourceforge.net/enlightenment/$PRGNAM-$VERSION.tar.gz
+wget -c http://downloads.sourceforge.net/enlightenment/$PRGNAM-$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
