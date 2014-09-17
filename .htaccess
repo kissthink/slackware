@@ -40,7 +40,9 @@ AddDefaultCharset uft-8
   AddIcon       /slackware/repository-layout/slackware.png .SlackBuild
   AddIcon       /slackware/repository-layout/package-x-generic.png .tgz .gz .bz2 .7z .zip .rpm .deb
   AddIcon       /slackware/repository-layout/system-installer.png .txz 
-  AddIcon       /slackware/repository-layout/server.png server-14.1
+  AddIcon       /slackware/repository-layout/server.png server-14.1-32bit
+  AddIcon       /slackware/repository-layout/server.png server-14.1-64bit
+  AddIcon       /slackware/repository-layout/server.png server-14.1-source
   AddIconByType /slackware/repository-layout/image-x-generic.png image/*
 
   # DESCRIPTIONS
@@ -60,6 +62,9 @@ AddDefaultCharset uft-8
   AddDescription "Microlinux 14.1 Server 32-bit" server-14.1-32bit
   AddDescription "Microlinux 14.1 Server 64-bit" server-14.1-64bit
   AddDescription "Microlinux 14.1 Server source" server-14.1-source
+  AddDescription "Microlinux 14.1 Desktop Base 32-bit" desktop-14.1-32bit
+  AddDescription "Microlinux 14.1 Desktop Base 64-bit" desktop-14.1-64bit
+  AddDescription "Microlinux 14.1 Desktop Base source" desktop-14.1-source
   AddDescription "Plain text file" .txt README
   AddDescription "Slackware build script" .SlackBuild
   AddDescription "Slackware package" .txz
