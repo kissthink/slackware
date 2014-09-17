@@ -72,6 +72,11 @@ multimedia/gst1-plugins-good
 multimedia/gst1-plugins-bad
 multimedia/gst1-plugins-ugly
 multimedia/gst1-libav
+x/google-droid-fonts
+x/webcore-fonts
+x/eurostile-fonts
+locale/mozilla-firefox-l10n
+locale/mozilla-thunderbird-l10n
 
 
 
