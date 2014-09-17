@@ -40,9 +40,15 @@ AddDefaultCharset uft-8
   AddIcon       /slackware/repository-layout/slackware.png .SlackBuild
   AddIcon       /slackware/repository-layout/package-x-generic.png .tgz .gz .bz2 .7z .zip .rpm .deb
   AddIcon       /slackware/repository-layout/system-installer.png .txz 
+  AddIcon       /slackware/repository-layout/server.png server-14.0-32bit
+  AddIcon       /slackware/repository-layout/server.png server-14.0-64bit
+  AddIcon       /slackware/repository-layout/server.png server-14.0-source
   AddIcon       /slackware/repository-layout/server.png server-14.1-32bit
   AddIcon       /slackware/repository-layout/server.png server-14.1-64bit
   AddIcon       /slackware/repository-layout/server.png server-14.1-source
+  AddIcon       /slackware/repository-layout/xorg.png desktop-base-14.1-32bit
+  AddIcon       /slackware/repository-layout/xorg.png desktop-base-14.1-64bit
+  AddIcon       /slackware/repository-layout/xorg.png desktop-base-14.1-source
   AddIconByType /slackware/repository-layout/image-x-generic.png image/*
 
   # DESCRIPTIONS
