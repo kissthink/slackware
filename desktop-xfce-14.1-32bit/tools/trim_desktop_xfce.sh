@@ -2,16 +2,16 @@
 #
 # trim_server_base.sh
 #
-# This script prepares the system before building or installing Microlinux
-# Desktop KDE It removes unneeded packages and installs needed ones. 
+# This script prepares the system before building or installing the Microlinux
+# Thin Client. It removes unneeded packages and installs needed ones. 
 #
 # You should configure slackpkg and run 'slackpkg update' before calling it.
 #
 
 CWD=$(pwd)
 PKGINFO=/tmp/pkg_database
-CRUFT=$(egrep -v '(^\#)|(^\s+$)' $CWD/pkglists/desktop-kde-remove)
-INSTALL=$(egrep -v '(^\#)|(^\s+$)' $CWD/pkglists/desktop-kde-add)
+CRUFT=$(egrep -v '(^\#)|(^\s+$)' $CWD/pkglists/desktop-xfce-remove)
+INSTALL=$(egrep -v '(^\#)|(^\s+$)' $CWD/pkglists/desktop-xfce-add)
 
 rm -rf $PKGINFO
 mkdir $PKGINFO
@@ -31,7 +31,7 @@ done
 echo
 echo
 echo "+=============================================================================="
-echo "| Checking for packages to te removed from your system..."
+echo "| Checking for packages to be removed from your system..."
 echo "+=============================================================================="
 echo
 sleep 3
@@ -65,7 +65,7 @@ rm -rf $PKGINFO
 
 echo
 echo "+=============================================================================="
-echo "| Your system is ready for building/installing MLED KDE 14.1."
+echo "| Your system is ready for building/installing MLED Xfce 14.1."
 echo "+=============================================================================="
 echo
 echo 

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Scanner Tool
+Name[de]=Scannersoftware
+Name[fr]=Acquisition d'images
+Comment=XSane
+Exec=xsane
+Icon=scanner
+Terminal=false
+Type=Application
+Categories=Graphics;
+StartupNotify=true

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Image Viewer
+Name[de]=Bildbetrachter
+Name[fr]=Visionneuse d'images
+Comment=Ristretto
+Version=1.0
+Exec=ristretto %F
+Icon=ristretto
+Terminal=false
+Type=Application
+X-MultipleArgs=false
+Categories=Graphics;
+StartupNotify=true
+MimeType=image/png;image/gif;image/jpeg;image/bmp;image/x-pixmap;image/tiff;image/svg+xml;image/x-xpixmap;

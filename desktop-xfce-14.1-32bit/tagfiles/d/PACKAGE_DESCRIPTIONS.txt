@@ -1,0 +1,539 @@
+autoconf: autoconf (generate configuration scripts)
+autoconf:
+autoconf: GNU autoconf is an extensible package of m4 macros that produce shell
+autoconf: scripts to automatically configure software source code packages.
+autoconf: These scripts can adapt the packages to many kinds of UNIX-like
+autoconf: systems without manual user intervention.  Autoconf creates a
+autoconf: configuration script for a package from a template file that lists the
+autoconf: operating system features that the package can use, in the form of m4
+autoconf: macro calls.  You must install the "m4" package to be able to use
+autoconf: autoconf.
+autoconf:
+automake: automake (a Makefile generator)
+automake:
+automake: This is Automake, a Makefile generator.  It was inspired by the 4.4BSD
+automake: make and include files, but aims to be portable and to conform to the
+automake: GNU standards for Makefile variables and targets.  Automake is a Perl
+automake: script.  The input files are called Makefile.am.  The output files are
+automake: called Makefile.in; they are intended for use with Autoconf.  Automake
+automake: requires certain things to be done in your configure.in.  You must
+automake: install the "m4" and "perl" packages to be able to use automake.
+automake:
+automake:
+binutils: binutils (GNU binary development tools)
+binutils:
+binutils: Binutils is a collection of binary utilities.  It includes "as" (the 
+binutils: portable GNU assembler), "ld" (the GNU linker), and other utilities
+binutils: for creating and working with binary programs.
+binutils:
+binutils: These utilities are REQUIRED to compile C, C++, Objective-C, Fortran,
+binutils: and most other programming languages.
+binutils:
+binutils:
+binutils:
+bison: bison (parser generator similar to yacc)
+bison:
+bison: GNU "Bison" is a general-purpose parser generator that converts a
+bison: grammar description for an LALR(1) context-free grammar into a C
+bison: program to parse that grammar.
+bison:
+bison: Bison is upward compatible with Yacc:  all properly-written Yacc
+bison: grammars ought to work with Bison with no change.  Anyone familiar
+bison: with Yacc should be able to use Bison with little trouble.
+bison:
+bison:
+ccache: ccache (a fast compiler cache)
+ccache:
+ccache: ccache is a compiler cache. It speeds up re-compilation of C/C++ code
+ccache: by caching previous compiles and detecting when the same compile is
+ccache: being done again.
+ccache:
+ccache: ccache was written by Andrew Tridgell.
+ccache:
+ccache:
+ccache:
+ccache:
+clisp: clisp (a Common Lisp implementation)
+clisp:
+clisp: Common Lisp is a high-level, general-purpose programming language.
+clisp: GNU CLISP is a Common Lisp implementation by Bruno Haible of Karlsruhe
+clisp: University and Michael Stoll of Munich University, both in Germany.
+clisp: It mostly supports the Lisp described in the ANSI Common Lisp standard.
+clisp: The user interface comes in German, English, French, Spanish, Dutch
+clisp: and Russian.  GNU CLISP includes an interpreter, a compiler, a
+clisp: debugger, a large subset of CLOS, a foreign language interface and a
+clisp: socket interface.  An X11 interface is available through CLX and
+clisp: Garnet.
+cmake: CMake (cross-platform, open-source make system)
+cmake:
+cmake: CMake is used to control the software process using simple platform
+cmake: and compiler independent configuration files. CMake generates
+cmake: native makefiles and workspaces that can be used in the
+cmake: compiler environment of your choice.
+cmake:
+cmake: CMake's home on the web is:  http://www.cmake.org
+cmake:
+cmake:
+cmake:
+cscope: cscope (source code browsing tool)
+cscope:
+cscope: Cscope is a text screen based source browsing tool.  Although it is
+cscope: primarily designed to search C code (including lex and yacc files),
+cscope: it can also be used for C++ code.
+cscope:
+cscope: For more information, see http://cscope.sourceforge.net.
+cscope:
+cscope:
+cscope:
+cscope:
+cvs: cvs (Concurrent Versions System)
+cvs:
+cvs: CVS is a version control system, which allows you to keep old versions
+cvs: of files (usually source code), keep a log of who, when, and why
+cvs: changes occurred, etc., like RCS or SCCS.  It handles multiple
+cvs: developers, multiple directories, triggers to enable/log/control
+cvs: various operations, and can work over a wide area network.
+cvs:
+cvs: Some of the people who have worked on CVS include:  Dick Grune,
+cvs: Brian Berliner, Jeff Polk, and others too numerous to mention.
+cvs:
+dev86: dev86 (8086 development utilities)
+dev86:
+dev86: This is a complete 8086 assembler and loader which can make 32-bit
+dev86: code for the 386+ processors.  In the past it was used to compile the
+dev86: 16-bit bootsector and setup binaries for the kernel, but modern
+dev86: (2.4.x or newer) kernels use GNU ld instead.
+dev86:
+dev86: Homepage: http://homepage.ntlworld.com/robert.debath/
+dev86:
+dev86:
+dev86:
+distcc: distcc (distributed C/C++ compiler/daemon)
+distcc:
+distcc: distcc allows compilation of C code to be distributed across several
+distcc: machines on a network.  distcc should always generate the same results
+distcc: as a local compile, is simple to install and use, and is often
+distcc: significantly faster than a local compile.
+distcc:
+distcc: IMPORTANT SECURITY NOTE:  distccd should only run on trusted networks.
+distcc:
+distcc: distcc was written by Martin Pool.
+distcc:
+doxygen: doxygen (documentation generator)
+doxygen:
+doxygen: Doxygen is a documentation system for C++, C, Java, IDL, and to some
+doxygen: extent PHP and C#.  Doxygen generates project documentation using
+doxygen: special documentation blocks in the source code, easing the process of
+doxygen: keeping docs and code in sync.  Doxygen produces documentation in
+doxygen: several output formats, including HTML, LaTeX, man pages, RTF, XML,
+doxygen: compressed HTML, PostScript, and PDF.
+doxygen:
+doxygen:
+doxygen:
+flex: flex (fast lexical analyzer generator)
+flex:
+flex: flex is a tool for generating programs that perform pattern matching
+flex: on text.  flex is a rewrite of the AT&T Unix lex tool (the two
+flex: implementations do not share any code, though), with some extensions
+flex: (and incompatibilities).
+flex:
+flex:
+flex:
+flex:
+flex:
+gcc: gcc (Base GCC package with C support)
+gcc:
+gcc: GCC is the GNU Compiler Collection.
+gcc:
+gcc: This package contains those parts of the compiler collection needed to
+gcc: compile C code.  Other packages add C++, Fortran, Objective-C, and
+gcc: Java support to the compiler core.
+gcc:
+gcc:
+gcc:
+gcc:
+gcc-g++: gcc-g++ (C++ for GCC)
+gcc-g++:
+gcc-g++: C++ support for the GNU Compiler Collection.
+gcc-g++:
+gcc-g++: This package contains those parts of the compiler collection needed to
+gcc-g++: compile C++ code.  The base gcc package is also required.
+gcc-g++:
+gcc-g++:
+gcc-g++:
+gcc-g++:
+gcc-g++:
+gcc-gfortran: gcc-gfortran (Fortran support for GCC)
+gcc-gfortran:
+gcc-gfortran: The GNU Fortran compiler is fully compliant with the Fortran 95
+gcc-gfortran: Standard and includes legacy F77 support.  In addition, a significant
+gcc-gfortran: number of Fortran 2003 and Fortran 2008 features are implemented.
+gcc-gfortran: GNU Fortran also contains many standard and extensions and can be
+gcc-gfortran: used to run real-world programs.
+gcc-gfortran:
+gcc-gfortran: This package contains those parts of the compiler collection
+gcc-gfortran: needed to compile Fortran code.  The gcc package is also required.
+gcc-gfortran:
+gcc-gnat: gcc-gnat (Ada support for GCC)
+gcc-gnat:
+gcc-gnat: Ada 95 support for the GNU Compiler Collection.
+gcc-gnat:
+gcc-gnat: This package contains those parts of the compiler collection needed to
+gcc-gnat: compile Ada 95 code.  Ada95 is the object oriented successor to the
+gcc-gnat: Ada83 language.  The base gcc package is also required.
+gcc-gnat:
+gcc-gnat:
+gcc-gnat:
+gcc-gnat:
+gcc-go: gcc-go (Go support for GCC)
+gcc-go:
+gcc-go: Go is a compiled, garbage-collected, concurrent programming language
+gcc-go: developed by Google Inc.  The initial design of Go was started in
+gcc-go: September 2007 by Robert Griesemer, Rob Pike, and Ken Thompson.
+gcc-go: Rob Pike has stated that Go is being used "for real stuff" at Google.
+gcc-go: Go's "gc" compiler targets the Linux, Mac OS X, FreeBSD, OpenBSD and
+gcc-go: Microsoft Windows operating systems, and the i386, amd64, and ARM
+gcc-go: processor architectures.
+gcc-go:
+gcc-go: Homepage:  http://golang.org
+gcc-java: gcc-java (Java support for GCC)
+gcc-java:
+gcc-java: Java support for the GNU Compiler Collection.
+gcc-java:
+gcc-java: This package contains those parts of the compiler collection needed to
+gcc-java: compile programs written in the Java programming language.  The base
+gcc-java: gcc package is also required.
+gcc-java:
+gcc-java:
+gcc-java:
+gcc-java:
+gcc-objc: gcc-objc (Objective-C support for GCC)
+gcc-objc:
+gcc-objc: Objective-C support for the GNU Compiler Collection.
+gcc-objc:
+gcc-objc: This package contains those parts of the compiler collection needed to
+gcc-objc: compile code written in Objective-C.  Objective-C was originally
+gcc-objc: developed to add object-oriented extensions to the C language, and is
+gcc-objc: best known as the native language of the NeXT computer.
+gcc-objc:
+gcc-objc: The base gcc package is also required.
+gcc-objc:
+gdb: gdb (the GNU symbolic debugger)
+gdb: GDB, the GNU Project debugger, allows you to see what is going on 
+gdb: inside another program while it executes -- or what another program
+gdb: was doing at the moment it crashed.  GDB can do four main kinds of
+gdb: things to help you catch bugs in the act:   1) Start your program,
+gdb: specifying anything that might affect its behavior.  2) Make your
+gdb: program stop on specified conditions.  3) Examine what has happened,
+gdb: when your program has stopped.  4) Change things in your program, so
+gdb: you can experiment with correcting the effects of one bug and go on
+gdb: to learn about another.  The program being debugged can be written in
+gdb: Ada, C, C++, Objective-C, Pascal and many other languages.
+gettext-tools: gettext-tools (internationalization framework tools)
+gettext-tools:
+gettext-tools: The GNU gettext-tools package is useful for authors and maintainers of
+gettext-tools: internationalized software, or for anyone compiling programs that
+gettext-tools: use the gettext functions.  This package provides the needed tools and
+gettext-tools: library functions for the handling of messages in different languages.
+gettext-tools: Some other GNU packages use the gettext program (included in this
+gettext-tools: package) to internationalize the messages given by shell scripts.
+gettext-tools:
+gettext-tools:
+gettext-tools:
+git: git (the stupid content tracker)
+git:
+git: Git is a fast, scalable, distributed revision control system with an
+git: unusually rich command set that provides both high-level operations
+git: and full access to internals.
+git:
+git: "git" can mean anything, depending on your mood.
+git:
+git: Git was originally written by Linus Torvalds and is currently
+git: maintained by Junio C. Hamano.
+git:
+gperf: gperf (a perfect hash function generator)
+gperf:
+gperf: gperf is a perfect hash function generator written in C++.
+gperf: It transforms an n element user-specified keyword set W into a
+gperf: perfect hash function F.  gperf currently generates the reserved
+gperf: keyword recognizer for lexical analyzers in several production and
+gperf: research compilers and language processing tools, including GNU C,
+gperf: GNU C++, GNU Java, GNU Pascal, GNU Modula 3, and GNU indent.
+gperf:
+gperf: gperf was written by by Douglas C. Schmidt and Bruno Haible.
+gperf:
+guile: guile (GNU extension language library)
+guile:
+guile: This is Guile, Project GNU's extension language library.  Guile is an
+guile: interpreter for Scheme, packaged as a library that you can link into
+guile: your applications to give them their own scripting language.  Guile
+guile: will eventually support other languages as well, giving users of
+guile: Guile-based applications a choice of languages.
+guile:
+guile:
+guile:
+guile:
+help2man: help2man (automatic man page generator) 
+help2man:
+help2man: help2man is a tool for automatically generating simple manual pages
+help2man: from program output.
+help2man:
+help2man: Homepage:  http://www.gnu.org/software/help2man
+help2man:
+help2man:
+help2man:
+help2man:
+help2man:
+indent: indent (changes the appearance of a C program)
+indent:
+indent: GNU indent changes the appearance of a C program by inserting or
+indent: deleting whitespace according to a plethora of options.  Some canned
+indent: styles of formatting (like the GNU style, Kernighan & Ritchie style,
+indent: and original Berkeley style) are supported as well.
+indent:
+indent: GNU indent is a descendant of BSD indent.
+indent:
+indent:
+indent:
+intltool: intltool (Utilities for translation support)
+intltool:
+intltool: This package contains scripts and autoconf files for
+intltool: internationalizing data.
+intltool:
+intltool:
+intltool:
+intltool:
+intltool:
+intltool:
+intltool:
+kernel-headers: kernel-headers (Linux kernel include files)
+kernel-headers:
+kernel-headers: These are the include files from the Linux kernel.
+kernel-headers:
+kernel-headers: You'll need these to compile most system software for Linux.
+kernel-headers:
+kernel-headers:
+kernel-headers:
+kernel-headers:
+kernel-headers:
+kernel-headers:
+libtool: libtool (a generic library support script)
+libtool:
+libtool: This is GNU Libtool, a generic library support script. Libtool hides
+libtool: the complexity of using shared libraries behind a consistent, portable
+libtool: interface.  To use libtool, add the new generic library building
+libtool: commands to your Makefile, Makefile.in, or Makefile.am.  See the
+libtool: documentation for details.
+libtool:
+libtool: You must install the "m4" package to be able to use libtool.
+libtool:
+libtool:
+llvm: llvm (LLVM compiler toolkit)
+llvm:
+llvm: Low Level Virtual Machine is a toolkit for the construction of highly
+llvm: optimized compilers, optimizers, and runtime environments.
+llvm:
+llvm: This package also includes the clang frontend for the C family of
+llvm: languages:  C, C++, Objective-C, and Objective-C++
+llvm:
+llvm:
+llvm: Homepage: http://llvm.org/
+llvm:
+m4: m4 (an implementation of the UNIX macro processor)
+m4:
+m4: This is GNU m4, a program which copies its input to the output,
+m4: expanding macros as it goes.  m4 has built-in functions for including
+m4: named files, running commands, doing integer arithmetic, manipulating
+m4: text in various ways, recursion, etc...  Macros can also be user-
+m4: defined, and can take any number of arguments.
+m4:
+m4: GNU 'm4' was originally written by Rene Seindal, from Denmark.
+m4:
+m4:
+make: make (GNU make utility to maintain groups of programs)
+make:
+make: This is the GNU implementation of make, which was written by Richard
+make: Stallman and Roland McGrath.  The purpose of the make utility is to
+make: determine automatically which pieces of a large program need to be 
+make: recompiled, and issue the commands to recompile them.  
+make:
+make: This is needed to compile just about any major C program, including
+make: the Linux kernel.
+make:
+make:
+mercurial: mercurial (a distributed source management system)
+mercurial:
+mercurial: Mercurial is a cross-platform, distributed source management tool for
+mercurial: software developers.  It is written in Python, with a binary diff
+mercurial: implementation written in C.  Its major features include high-
+mercurial: performance;  serverless, fully distributed collaborative development;
+mercurial: robust handling of both plain text and binary files;  advanced
+mercurial: branching and merging capabilities;  and full source code available
+mercurial: under the terms of the LGPL.
+mercurial:
+mercurial: Mercurial was written by Matt Mackall and other contributors.
+nasm: nasm (NASM assembler)
+nasm:
+nasm: NASM is the Netwide Assembler, a free portable assembler for the Intel
+nasm: 80x86 microprocessor series, using primarily the traditional Intel
+nasm: instruction mnemonics and syntax.
+nasm:
+nasm: NASM was written by Simon Tatham and Julian Hall.
+nasm:
+nasm:
+nasm:
+nasm:
+open-cobol: open-cobol (open source COBOL compiler)
+open-cobol:
+open-cobol: OpenCOBOL is an open-source COBOL compiler.  OpenCOBOL implements a
+open-cobol: substantial part of the COBOL 85 and COBOL 2002 standards, as well as
+open-cobol: many extensions of the existent COBOL compilers.  OpenCOBOL translates
+open-cobol: COBOL into C and compiles the translated code using the native C
+open-cobol: compiler.  OpenCOBOL was written by Roger While and Keisuke Nishida,
+open-cobol: with the invaluable assistance of many others.
+open-cobol:
+open-cobol: Homepage:  http://opencobol.add1tocobol.com
+open-cobol:
+oprofile: oprofile (system profiling tool)
+oprofile:
+oprofile: OProfile is a profiling system for Linux.  Profiling runs
+oprofile: transparently in the background and profile data can be collected
+oprofile: at any time.  OProfile makes use of the hardware performance
+oprofile: counters provided on Intel, AMD, and other processors, and uses a
+oprofile: timer-interrupt based mechanism on CPUs without counters.
+oprofile: OProfile can profile the whole system in high detail.
+oprofile:
+oprofile:
+oprofile:
+p2c: p2c (Pascal to C translator)
+p2c:
+p2c: P2c is a tool for translating Pascal programs into C.  The input
+p2c: consists of a set of source files in any of the following Pascal
+p2c: dialects:  HP Pascal, Turbo/UCSD Pascal, DEC VAX Pascal, Oregon
+p2c: Software Pascal/2, Macintosh Programmer's Workshop Pascal,
+p2c: Sun/Berkeley Pascal, Texas Instruments Pascal, Apollo Domain Pascal.
+p2c: Modula-2 syntax is also supported.  Output is a set of .c and .h
+p2c: files that comprise an equivalent program in any of several dialects
+p2c: of C.
+p2c:
+perl: perl (Practical Extraction and Report Language)
+perl:
+perl: Larry Wall's "Practical Extraction and Report Language".  Perl is a
+perl: language optimized for scanning arbitrary text files, extracting
+perl: information from those text files, and printing reports based on that
+perl: information.  It's also a good language for many system management
+perl: tasks.  The language is intended to be practical (easy to use,
+perl: efficient, complete) rather than beautiful (tiny, elegant, minimal).
+perl:
+perl:
+perl:
+pkg-config: pkg-config (system for managing library compile/link flags)
+pkg-config:
+pkg-config: pkg-config is a system for managing library compile/link flags
+pkg-config: that works with automake and autoconf.  It replaces the ubiquitous
+pkg-config: *-config scripts you may have seen with a single tool.  See the man
+pkg-config: page that comes with pkg-config for full documentation.
+pkg-config:
+pkg-config:
+pkg-config:
+pkg-config:
+pkg-config:
+pmake: pmake (BSD parallel make)
+pmake:
+pmake: This is PMake -- a parallel Make program originally written for the
+pmake: Sprite operating system, ported from BSD Unix.  This may be useful if
+pmake: you're going to port software with Makefiles designed for BSD.
+pmake:
+pmake: PMake was written by Adam de Boor.
+pmake:
+pmake:
+pmake:
+pmake:
+python: python (object-oriented interpreted programming language)
+python:
+python: Python is an interpreted, interactive, object-oriented programming
+python: language that combines remarkable power with very clear syntax.  
+python: Python's basic power can be extended with your own modules written in
+python: C or C++.  Python is also adaptable as an extension language for
+python: existing applications. 
+python:
+python:
+python:
+python:
+rcs: rcs (Revision Control System)
+rcs:
+rcs: RCS, the Revision Control System, manages multiple revisions of files.
+rcs:
+rcs: RCS can store, retrieve, log, identify, and merge revisions.  It is
+rcs: useful for files that are revised frequently, e.g. programs,
+rcs: documentation, graphics, and papers.
+rcs:
+rcs:
+rcs:
+rcs:
+ruby: ruby (Interpreted object-oriented scripting language)
+ruby:
+ruby: Ruby is an interpreted scripting language for quick and easy
+ruby: object-oriented programming.  It has many features to process text
+ruby: files and to do system management tasks (as in Perl).  It is simple,
+ruby: straight-forward, and extensible.
+ruby:
+ruby: Visit the Ruby project online at http://www.ruby-lang.org/
+ruby:
+ruby:
+ruby:
+slacktrack: slacktrack (Slackware package building utilities)
+slacktrack:
+slacktrack: slacktrack tracks the installation of a 'make install' (or similar) 
+slacktrack: and produces a Slackware compliant package from the results.
+slacktrack:
+slacktrack: slacktrack can be used to build packages from Slackware's '.build'
+slacktrack: scripts or your own.
+slacktrack:
+slacktrack: slacktrack tracks installations directly on the host's filesystem.
+slacktrack:
+slacktrack:
+strace: strace (trace system calls and signals)
+strace:
+strace: Strace allows you to trace the execution of a command.  It runs the
+strace: specified command until it exits, intercepting signals and system
+strace: calls and dumping the information to the standard error.  System
+strace: administrators, diagnosticians and trouble-shooters will find it
+strace: invaluable for solving problems with programs for which the source
+strace: is not readily available since they do not need to be recompiled in
+strace: order to trace them.  
+strace:
+strace:
+subversion: subversion (a version control system)
+subversion:
+subversion: Subversion is a version control system which allows you to keep old
+subversion: versions of files and directories (usually source code), and keep a
+subversion: log of who, when, and why changes occurred, similar to other such
+subversion: systems like CVS, RCS or SCCS.  Subversion keeps all the information
+subversion: to permit extracting previous versions of those files at any time.
+subversion:
+subversion: For more information about the Subversion project, visit:
+subversion:   http://subversion.apache.org
+subversion:
+swig: swig (Simplified Wrapper and Interface Generator)
+swig:
+swig: SWIG is an interface compiler that connects programs written in C and
+swig: C++ with scripting languages such as Perl, Python, Ruby, and Tcl.  It
+swig: works by taking the declarations found in C/C++ header files and using
+swig: them to generate the wrapper code that scripting languages need to
+swig: access the underlying C/C++ code.  In addition, SWIG provides a variety
+swig: of customization features that let you tailor the wrapping process to
+swig: suit your application.
+swig: 
+swig: 
+yasm: yasm (complete rewrite of the NASM assembler)
+yasm:
+yasm: Yasm is a complete rewrite of the NASM assembler under the "new" BSD
+yasm: License (some portions are under other licenses, see COPYING for
+yasm: details).  Yasm currently supports the x86 and AMD64 instruction sets,
+yasm: accepts NASM and GAS assembler syntaxes, outputs binary, ELF32, ELF64,
+yasm: 32 and 64-bit Mach-O, RDOFF2, COFF, Win32, and Win64 object formats,
+yasm: and generates source debugging information in STABS, DWARF 2, and
+yasm: CodeView 8 formats.
+yasm:
+yasm: yasm home: http://www.tortall.net/projects/yasm/
