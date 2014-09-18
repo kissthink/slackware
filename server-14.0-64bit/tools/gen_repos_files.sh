@@ -60,7 +60,7 @@ REPOSOWNERGPG=${REPOSOWNERGPG:-""}
 DL_URL=${DL_URL:-"http://www.microlinux.fr/slackware/server-14.0-64bit"}
 
 # The title of the generated RSS feed:
-RSS_TITLE=${RSS_TITLE:-"Microlinux 14.0 Server 64-bit"}
+RSS_TITLE=${RSS_TITLE:-"Microlinux Enterprise Server 14.0 64-bit"}
 
 # The logo picture used for the RSS feed:
 RSS_ICON=${RSS_ICON:-"http://www.microlinux.fr/images/habillage/pingouin_ayo_small.png"}
@@ -72,7 +72,7 @@ RSS_LINK=${RSS_LINK:-"http://www.microlinux.fr/slackware/server-14.0-64bit"}
 RSS_CLURL=${RSS_CLURL:-"http://www.microlinux.fr/slackware/server-14.0-64bit/ChangeLog.txt"}
 
 # The descriptive text for the RSS feed:
-RSS_DESCRIPTION=${RSS_DESCRIPTION:-"Slackware packages for Microlinux 14.0 Server 64-bit. The package directories include the SlackBuild script and sources."}
+RSS_DESCRIPTION=${RSS_DESCRIPTION:-"Slackware packages for the Microlinux Enterprise Server 14.0 64-bit. The package directories include the SlackBuild script and sources."}
 
 # Maximum number of RSS feed entries to display:
 RSS_FEEDMAX=${RSS_FEEDMAX:-15}

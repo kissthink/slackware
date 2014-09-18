@@ -58,25 +58,25 @@ AddDefaultCharset utf-8
   AddIconByType /slackware/repository-layout/image-x-generic.png image/*
 
   # DESCRIPTIONS
-  AddDescription "Microlinux documentation in French" Linux-HOWTOs -HOWTO.txt
-  AddDescription "Extra packages with sources and build scripts" extra
+  AddDescription "Microlinux documentation" Linux-HOWTOs -HOWTO.txt
   AddDescription "Template configuration files" template
   AddDescription "Helper scripts" tools
   AddDescription "Obsolete software" pasture
-  AddDescription "Microlinux Enterprise Desktop 14.1 32-bit" MLED-14.1-32bit
-  AddDescription "Microlinux Enterprise Desktop 14.1 64-bit" MLED-14.1-64bit
-  AddDescription "Microlinux Enterprise Desktop 14.1 source" MLED-14.1-source
-  AddDescription "Microlinux Thin Client 14.1 source" MLTC-14.1-source
-  AddDescription "Microlinux Thin Client 14.1 32-bit" MLTC-14.1-32bit
-  AddDescription "Microlinux 14.0 Server 32-bit" server-14.0-32bit
-  AddDescription "Microlinux 14.0 Server 64-bit" server-14.0-64bit
-  AddDescription "Microlinux 14.0 Server source" server-14.0-source
-  AddDescription "Microlinux 14.1 Server 32-bit" server-14.1-32bit
-  AddDescription "Microlinux 14.1 Server 64-bit" server-14.1-64bit
-  AddDescription "Microlinux 14.1 Server source" server-14.1-source
-  AddDescription "Microlinux 14.1 Desktop Base 32-bit" desktop-base-14.1-32bit
-  AddDescription "Microlinux 14.1 Desktop Base 64-bit" desktop-base-14.1-64bit
-  AddDescription "Microlinux 14.1 Desktop Base source" desktop-base-14.1-source
+  AddDescription "Microlinux Enterprise Desktop Base 14.1 32-bit" desktop-base-14.1-32bit
+  AddDescription "Microlinux Enterprise Desktop Base 14.1 64-bit" desktop-base-14.1-64bit
+  AddDescription "Microlinux Enterprise Desktop Base 14.1 source" desktop-base-14.1-source
+  AddDescription "Microlinux Enterprise Desktop KDE  14.1 32-bit" desktop-kde-14.1-32bit
+  AddDescription "Microlinux Enterprise Desktop KDE  14.1 64-bit" desktop-kde-14.1-64bit
+  AddDescription "Microlinux Enterprise Desktop KDE  14.1 source" desktop-kde-14.1-source
+  AddDescription "Microlinux Enterprise Desktop Xfce 14.1 32-bit" desktop-xfce-14.1-32bit
+  AddDescription "Microlinux Enterprise Desktop Xfce 14.1 64-bit" desktop-xfce-14.1-64bit
+  AddDescription "Microlinux Enterprise Desktop Xfce 14.1 source" desktop-xfce-14.1-source
+  AddDescription "Microlinux Enterprise Server 14.0 32-bit" server-14.0-32bit
+  AddDescription "Microlinux Enterprise Server 14.0 64-bit" server-14.0-64bit
+  AddDescription "Microlinux Enterprise Server 14.0 source" server-14.0-source
+  AddDescription "Microlinux Enterprise Server 14.1 32-bit" server-14.1-32bit
+  AddDescription "Microlinux Enterprise Server 14.1 64-bit" server-14.1-64bit
+  AddDescription "Microlinux Enterprise Server 14.1 source" server-14.1-source
   AddDescription "Plain text file" .txt README
   AddDescription "Slackware build script" .SlackBuild
   AddDescription "Slackware package" .txz
