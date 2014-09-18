@@ -1,1 +1,0 @@
-../../MLED-14.1-32bit/tools/cleanmenu.sh
