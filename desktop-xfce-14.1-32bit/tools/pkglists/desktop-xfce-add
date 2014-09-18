@@ -238,6 +238,9 @@ subversion
 swig 
 yasm 
 
+# EXTRA
+mplayerplug-in
+
 # F
 linux-faqs 
 linux-howtos 

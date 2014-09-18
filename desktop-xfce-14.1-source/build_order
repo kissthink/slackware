@@ -1,1 +1,7 @@
 # Build order
+xfce/aero
+xfce/gtk-engines
+xfce/clearlooks-phenix-theme
+xfce/xfwm4-theme-axe
+profile/user-settings-xfce
+
