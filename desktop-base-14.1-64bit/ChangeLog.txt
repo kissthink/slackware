@@ -1,6 +1,12 @@
 Fri Sep 19 13:01:06 CEST 2014
 ap/slackpkg+-1.3.2-noarch-2_microlinux.txz: Rebuilt.
   Preconfigured for all MLED repositories.
+xap/transmission-2.60-x86_64-2_microlinux.txz: Added.
+n/freerdp-20131115_ea18d2b-x86_64-2_microlinux.txz: Added.
+xap/remmina-20131008_26b814a-x86_64-2_microlinux.txz: Added.
+xap/audacity-2.0.5-x86_64-2_microlinux.txz: Added.
+xap/inkscape-0.48.4-x86_64-5_microlinux.txz: Added.
+xap/scribus-1.4.3-x86_64-2_microlinux.txz: Added.
 +--------------------------+
 Thu Sep 18 17:28:42 CEST 2014
 x/microlinux-wallpapers-1.0-noarch-1_microlinux.txz: Added.
