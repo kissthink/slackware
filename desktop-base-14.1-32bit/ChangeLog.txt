@@ -1,3 +1,7 @@
+Fri Sep 19 13:01:06 CEST 2014
+ap/slackpkg+-1.3.2-noarch-2_microlinux.txz: Rebuilt.
+  Preconfigured for all MLED repositories.
++--------------------------+
 Thu Sep 18 17:25:57 CEST 2014
 x/microlinux-wallpapers-1.0-noarch-1_microlinux.txz: Added.
 +--------------------------+

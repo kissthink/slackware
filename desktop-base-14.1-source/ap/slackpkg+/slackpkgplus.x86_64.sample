@@ -36,19 +36,15 @@ GREYLIST=off
 # The syntax is "<repository_name>:<package_name>"
 # Accepts regular expressions. To give priority to an entire repository use "<repository_name>:.*"
 PKGS_PRIORITY=( multilib:.* desktop-base:.* desktop-kde:.* desktop-xfce:.* )
-#
-# If you want a multilib system, uncomment the multilib repository and set:
-#PKGS_PRIORITY=( multilib:.* )
-#
-# (Use /usr/doc/slackpkg+-*/setupmultilib.sh to setup a multilib configuration)
 
 # List repositories you want to use (defined below)
 # remember to launch 'slackpkg update' if you modify that row.
-REPOPLUS=( desktop-base )
+REPOPLUS=( multilib desktop-base desktop-extra desktop-kde desktop-xfce )
 
 # Define mirrors (uncomment one or more mirror; remember to add it to REPOPLUS)
 MIRRORPLUS['multilib']=http://taper.alienbase.nl/mirrors/people/alien/multilib/14.1/
 MIRRORPLUS['desktop-base']=http://www.microlinux.fr/slackware/desktop-base-14.1-64bit/
+MIRRORPLUS['desktop-extra']=http://www.microlinux.fr/slackware/desktop-extra-14.1-64bit/
 MIRRORPLUS['desktop-kde']=http://www.microlinux.fr/slackware/desktop-kde-14.1-64bit/
 MIRRORPLUS['desktop-xfce']=http://www.microlinux.fr/slackware/desktop-xfce-14.1-64bit/
 
