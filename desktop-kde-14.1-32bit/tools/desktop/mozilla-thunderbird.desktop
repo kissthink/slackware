@@ -1,0 +1,12 @@
+[Desktop Entry]
+GenericName=Electronic Mail
+GenericName[de]=Elektronische Post
+GenericName[fr]=Courrier électronique
+Name=Mozilla Thunderbird
+Encoding=UTF-8
+Exec=thunderbird
+#Icon=/usr/share/pixmaps/thunderbird.png
+Icon=internet-mail
+Type=Application
+Categories=Application;Network;
+X-KDE-StartupNotify=true

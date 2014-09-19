@@ -1,0 +1,15 @@
+[Desktop Entry]
+GenericName=Document Viewer
+GenericName[de]=Dokumentenbetrachter
+GenericName[fr]=Visionneuse de documents
+Name=Okular
+Terminal=false
+Exec=okular %U %i -caption "%c"
+#Icon=okular
+Icon=acroread
+Type=Application
+X-DocPath=okular/index.html
+InitialPreference=7
+Categories=Graphics;Office;
+MimeType=application/vnd.kde.okular-archive;
+StartupNotify=true
