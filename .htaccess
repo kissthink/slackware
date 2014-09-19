@@ -52,6 +52,9 @@ AddDefaultCharset utf-8
   AddIcon       /slackware/repository-layout/xorg.png desktop-base-14.1-32bit
   AddIcon       /slackware/repository-layout/xorg.png desktop-base-14.1-64bit
   AddIcon       /slackware/repository-layout/xorg.png desktop-base-14.1-source
+  AddIcon       /slackware/repository-layout/xorg.png desktop-extra-14.1-32bit
+  AddIcon       /slackware/repository-layout/xorg.png desktop-extra-14.1-64bit
+  AddIcon       /slackware/repository-layout/xorg.png desktop-extra-14.1-source
   AddIcon       /slackware/repository-layout/kde.png desktop-kde-14.1-32bit
   AddIcon       /slackware/repository-layout/kde.png desktop-kde-14.1-64bit
   AddIcon       /slackware/repository-layout/kde.png desktop-kde-14.1-source
@@ -68,9 +71,12 @@ AddDefaultCharset utf-8
   AddDescription "Microlinux Enterprise Desktop Base 14.1 32-bit" desktop-base-14.1-32bit
   AddDescription "Microlinux Enterprise Desktop Base 14.1 64-bit" desktop-base-14.1-64bit
   AddDescription "Microlinux Enterprise Desktop Base 14.1 source" desktop-base-14.1-source
-  AddDescription "Microlinux Enterprise Desktop KDE  14.1 32-bit" desktop-kde-14.1-32bit
-  AddDescription "Microlinux Enterprise Desktop KDE  14.1 64-bit" desktop-kde-14.1-64bit
-  AddDescription "Microlinux Enterprise Desktop KDE  14.1 source" desktop-kde-14.1-source
+  AddDescription "Microlinux Enterprise Desktop Extra 14.1 32-bit" desktop-extra-14.1-32bit
+  AddDescription "Microlinux Enterprise Desktop Extra 14.1 64-bit" desktop-extra-14.1-64bit
+  AddDescription "Microlinux Enterprise Desktop Extra 14.1 source" desktop-extra-14.1-source
+  AddDescription "Microlinux Enterprise Desktop KDE 14.1 32-bit" desktop-kde-14.1-32bit
+  AddDescription "Microlinux Enterprise Desktop KDE 14.1 64-bit" desktop-kde-14.1-64bit
+  AddDescription "Microlinux Enterprise Desktop KDE 14.1 source" desktop-kde-14.1-source
   AddDescription "Microlinux Enterprise Desktop Xfce 14.1 32-bit" desktop-xfce-14.1-32bit
   AddDescription "Microlinux Enterprise Desktop Xfce 14.1 64-bit" desktop-xfce-14.1-64bit
   AddDescription "Microlinux Enterprise Desktop Xfce 14.1 source" desktop-xfce-14.1-source
