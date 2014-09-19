@@ -1,3 +1,6 @@
 Fri Sep 19 09:01:40 CEST 2014
 xap/filezilla-3.7.3-i486-3_microlinux.txz: Added.
+xap/virtualbox-4.2.26-i486-1_microlinux.txz: Added.
+xap/virtualbox-kernel-4.2.26_3.10.17_smp-i486-1_microlinux.txz: Added.
+xap/virtualbox-extension-pack-4.2.26-i486-1_microlinux.txz: Added.
 +--------------------------+
