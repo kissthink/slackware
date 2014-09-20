@@ -1,6 +1,7 @@
 Sat Sep 20 10:09:44 CEST 2014
 xap/clementine-1.2.1-i486-1_microlinux.txz: Added.
-kde/k3b-2.0.2-i486-1_microlinux.txz: Added.
+kde/k3b-2.0.2-i486-1_microlinux.txz: Rebuilt.
+  This version comes with full multimedia capabilities and translations.
 kde/kscd-4.10.5-i486-1_microlinux.txz: Added.
 +--------------------------+
 Wed Sep 17 17:44:14 CEST 2014
