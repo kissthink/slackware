@@ -1,3 +1,9 @@
+Sat Sep 20 08:30:37 CEST 2014
+xap/aMule-2.3.1-i486-3_microlinux.txz: Added.
+xap/gtkcdlabel-1.15-noarch-2_microlinux.txz: Added.
+xap/easytag-2.1.10-i486-1_microlinux.txz: Added.
+xap/poedit-1.4.6.1-i486-3_microlinux.txz: Added.
++--------------------------+
 Fri Sep 19 09:01:40 CEST 2014
 xap/filezilla-3.7.3-i486-3_microlinux.txz: Added.
 xap/virtualbox-4.2.26-i486-1_microlinux.txz: Added.
