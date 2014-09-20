@@ -110,6 +110,12 @@ xap/remmina
 xap/audacity
 xap/inkscape
 xap/scribus
+xap/conky
+l/libburn
+l/libisofs
+l/libisoburn
+l/gmtk
+l/totem-pl-parser
 
 
 
