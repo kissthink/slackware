@@ -45,7 +45,7 @@ fi
 
 set -e
 
-#wget -c http://downloads.sourceforge.net/project/openjpeg.mirror/$VERSION/$TARNAM-$VERSION.tar.gz
+wget -c http://downloads.sourceforge.net/project/openjpeg.mirror/$VERSION/$TARNAM-$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
