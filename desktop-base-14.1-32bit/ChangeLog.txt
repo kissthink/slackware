@@ -1,3 +1,7 @@
+Wed Sep 24 14:15:56 CEST 2014
+ap/hplip-3.13.11-i486-1_microlinux.txz: Upgraded.
+  This version supports the HP Laserjet Pro MFP-m127fn printer.
++--------------------------+
 Tue Sep 23 08:55:41 CEST 2014
 multimedia/openjpeg2-2.1.0-i486-1_microlinux.txz: Added.
 xap/mupdf-1.5-i486-4_microlinux.txz: Added.
