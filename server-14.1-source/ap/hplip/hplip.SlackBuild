@@ -63,7 +63,7 @@ OUTPUT=${OUTPUT:-/tmp}
 
 set -e 
 
-#wget -c http://prdownloads.sourceforge.net/$PRGNAM/$PRGNAM-$VERSION.tar.gz
+wget -c http://prdownloads.sourceforge.net/$PRGNAM/$PRGNAM-$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG
