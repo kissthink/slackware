@@ -1,0 +1,148 @@
+================
+Yum-Config-HOWTO (c) Niki Kovacs, 2009
+================
+
+Synopsis des archives de Yum
+----------------------------
+
+	* [base]
+
+Les paquetages de base de CentOS, tels qu´on les trouve sur les ISOs.
+
+Activée : oui
+Priorité : 1
+
+	* [updates]
+
+Mises à jour de [base] publiées après les ISOs de CentOS. Il s´agit de mises à
+jour de sécurité, de corrections de bogues ou d´améliorations des paquetages de
+[base].
+
+Activée : oui
+Priorité : 1
+
+	* [addons]
+
+Paquetages requis pour la compilation des paquetages de [base], même s´ils ne
+font pas partie de ce groupe. On peut considérer qu´il s´agit d´une extension
+de [base]. Cette archive peut être désactivée, étant donné qu´elle ne contient
+pas de paquetages pour CentOS 5.
+
+Activée : non
+
+	* [extras]
+
+Paquetages compilés et gérés par les développeurs de CentOS, qui ajoutent
+certaines fonctionnalités à la distribution de base. Paquetages dûment testés,
+et qui n´interfèrent pas avec la distribution de base.
+
+Activée : oui
+Priorité : 1
+
+	* [centosplus]
+
+Paquetages contribués par les développeurs et les utilisateurs de CentOS, mais
+susceptibles de remplacer des paquetages de [base].
+
+Activée : non
+
+	* [rpmforge]
+
+L´archive de Dag Wieers, constituée majoritairement de paquetages provenant de
+Fedora Core 6, et recompilés pour CentOS 5.
+
+Activée : oui
+Priorité : 10
+
+	* [kikinovak]
+
+Mes propres paquetages pour CentOS.
+
+Activée : oui
+Priorité : 1
+
+
+Configuration des archives de base
+----------------------------------
+
+# yum install yum-priorities
+
+Editer /etc/yum.repos.d/CentOS-Base.repo. Chaque stance correspond à une
+archive :
+
+--8<---------- /etc/yum.repos.d/CentOS-Base.repo -----------------------------
+...
+[base]
+enabled=1
+priority=1
+name=CentOS-$releasever - Base
+mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os
+gpgcheck=1
+gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-5
+
+[updates]
+enabled=1
+priority=1
+name=CentOS-$releasever - Updates
+mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates
+gpgcheck=1
+gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-5
+
+[extras]
+enabled=1
+priority=1
+name=CentOS-$releasever - Extras
+mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=extras
+gpgcheck=1
+gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-5
+...
+--8<--------------------------------------------------------------------------
+
+
+Configuration de l´archive RPMForge
+-----------------------------------
+
+# yum install lynx
+# cd
+# lynx apt.sw.be
+
+Aller sur http://apt.sw.be/redhat/el5/en/i386/RPMS.rpmforge et chercher le
+paquetage rpmforge-release, puis :
+
+# rpm -ivh rpmforge-release-*.rpm
+
+Editer /etc/yum.repos.d/rpmforge.repo :
+
+--8<---------- /etc/yum.repos.d/rpmforge.repo --------------------------------
+[rpmforge]
+name = Red Hat Enterprise $releasever - RPMforge.net - dag
+#baseurl = http://apt.sw.be/redhat/el5/en/$basearch/dag
+mirrorlist = http://apt.sw.be/redhat/el5/en/mirrors-rpmforge
+#mirrorlist = file:///etc/yum.repos.d/mirrors-rpmforge
+enabled = 1
+priority = 10
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmforge-dag
+gpgcheck = 1
+--8<--------------------------------------------------------------------------
+
+# yum check-update
+
+
+Configuration de l´archive [kikinovak]
+--------------------------------------
+
+Editer /etc/yum.repos.d/kikinovak.repo comme ceci :
+
+--8<---------- /etc/yum.repos.d/kikinovak.repo -------------------------------
+[kikinovak]
+enabled=1
+priority=1
+name=CentOS-$releasever - kikinovak
+baseurl=http://download.tuxfamily.org/centos/$releasever/os/$basearch
+gpgcheck=0
+--8<--------------------------------------------------------------------------
+
+# yum check-update
+
+
+

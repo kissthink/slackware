@@ -1,0 +1,373 @@
+=========
+Yum-HOWTO (c) Niki Kovacs, 2009
+=========
+
+
+Installer des paquetages RPM
+----------------------------
+
+Installer le paquetage tsclient :
+
+# yum install tsclient
+
+Yum recherche les dépendances du paquetage et affiche ceci :
+
+Dependencies Resolved
+
+=============================================================================
+Package                 Arch       Version          Repository        Size
+=============================================================================
+Installing:
+tsclient                i386       0.148-6.el5      base              326 k
+Installing for dependencies:
+rdesktop                i386       1.4.1-4          base              117 k
+
+Transaction Summary
+=============================================================================
+Install      2 Package(s)        
+Update       0 Package(s)        
+Remove       0 Package(s)        
+
+Total download size: 443 k
+Is this ok [y/N]:
+
+L´option -y évite la demande de confirmation :
+
+# yum -y install tsclient
+
+Dans ce cas, Yum installe directement le paquetage et ses dépendances :
+...
+Total download size: 443 k
+Downloading Packages:
+(1/2): rdesktop-1.4.1-4.i 100% |=========================| 117 kB    00:01    
+(2/2): tsclient-0.148-6.e 100% |=========================| 326 kB    00:05    
+Running Transaction Test
+Finished Transaction Test
+Transaction Test Succeeded
+Running Transaction
+Installing: rdesktop                     ######################### [1/2]
+Installing: tsclient                     ######################### [2/2]
+
+Installed: tsclient.i386 0:0.148-6.el5
+Dependency Installed: rdesktop.i386 0:1.4.1-4
+Complete!
+
+Installer un groupe de paquetages, par exemple tout ce qu´il faut pour un
+serveur de bases de données MySQL :
+
+# yum groupinstall "MySQL Database"
+...
+Dependencies Resolved
+
+=============================================================================
+Package                 Arch       Version          Repository        Size
+=============================================================================
+Installing:
+MySQL-python            i386       1.2.1-1          base               82 k
+libdbi-dbd-mysql        i386       0.8.1a-1.2.2     base               17 k
+mysql                   i386       5.0.22-2.1       base              3.0 M
+mysql-connector-odbc    i386       3.51.12-2.2      base              142 k
+mysql-server            i386       5.0.22-2.1       base               10 M
+perl-DBD-MySQL          i386       3.0007-1.fc6     base              147 k
+unixODBC                i386       2.2.11-7.1       base              832 k
+Installing for dependencies:
+libdbi                  i386       0.8.1-2.1        base               35 k
+libdbi-drivers          i386       0.8.1a-1.2.2     base               14 k
+mx                      i386       2.0.6-2.2.2      base              558 k
+perl-DBI                i386       1.52-1.fc6       base              605 k
+
+Transaction Summary
+=============================================================================
+Install     11 Package(s)        
+Update       0 Package(s)        
+Remove       0 Package(s)        
+
+Total download size: 15 M
+Is this ok [y/N]:
+
+
+Mettre à jour des paquetages RPM
+--------------------------------
+
+Mettre à jour le paquetage vim-minimal :
+
+# yum update vim-minimal
+...
+Dependencies Resolved
+
+=============================================================================
+Package                 Arch       Version          Repository        Size
+=============================================================================
+Updating:
+vim-minimal             i386       2:7.0.109-3.el5.3  updates           312 k
+
+Transaction Summary
+=============================================================================
+Install      0 Package(s)        
+Update       1 Package(s)        
+Remove       0 Package(s)        
+
+Total download size: 312 k
+Is this ok [y/N]:
+
+Invoquée sans arguments, la commande suivante permet de mettre à jour
+l´intégralité du système :
+
+# yum update
+
+On peut également mettre à jour un groupe de paquetages :
+
+# yum groupupdate "Office/Productivity"
+...
+Dependencies Resolved
+
+=============================================================================
+Package                 Arch       Version          Repository        Size
+=============================================================================
+Updating:
+evolution               i386       2.8.0-33.0.1.el5  updates            13 M
+openoffice.org-calc     i386       1:2.0.4-5.4.17.1  updates           7.6 M
+openoffice.org-draw     i386       1:2.0.4-5.4.17.1  updates           1.1 M
+openoffice.org-graphicfilter  i386       1:2.0.4-5.4.17.1  updates
+205 k
+openoffice.org-impress  i386       1:2.0.4-5.4.17.1  updates           1.6 M
+openoffice.org-math     i386       1:2.0.4-5.4.17.1  updates           1.3 M
+openoffice.org-writer   i386       1:2.0.4-5.4.17.1  updates           3.0 M
+openoffice.org-xsltfilter  i386       1:2.0.4-5.4.17.1  updates            96 k
+Updating for dependencies:
+openoffice.org-core     i386       1:2.0.4-5.4.17.1  updates            88 M
+openoffice.org-langpack-fr  i386       1:2.0.4-5.4.17.1  updates            16
+M
+
+Transaction Summary
+=============================================================================
+Install      0 Package(s)        
+Update      10 Package(s)        
+Remove       0 Package(s)        
+
+Total download size: 132 M
+Is this ok [y/N]:
+
+
+Supprimer des paquetages RPM
+----------------------------
+
+Supprimer le paquetage rdesktop :
+
+# yum remove rdesktop
+
+Cette commande supprimera également les paquetages dépendants :
+Dependencies Resolved
+
+=============================================================================
+Package                 Arch       Version          Repository        Size
+=============================================================================
+Removing:
+rdesktop                i386       1.4.1-4          installed         273 k
+Removing for dependencies:
+tsclient                i386       0.148-6.el5      installed         526 k
+
+Transaction Summary
+=============================================================================
+Install      0 Package(s)        
+Update       0 Package(s)        
+Remove       2 Package(s)        
+
+Is this ok [y/N]:
+
+On peut également supprimer un groupe de paquetages entier :
+
+# yum groupremove "MySQL Database"
+
+Cette commande supprimera tout le groupe de paquetages, comme ceci :
+Dependencies Resolved
+
+=============================================================================
+Package                 Arch       Version          Repository        Size
+=============================================================================
+Removing:
+MySQL-python            i386       1.2.1-1          installed         277 k
+libdbi-dbd-mysql        i386       0.8.1a-1.2.2     installed          37 k
+mysql                   i386       5.0.22-2.1       installed         5.5 M
+mysql-connector-odbc    i386       3.51.12-2.2      installed         387 k
+mysql-server            i386       5.0.22-2.1       installed          22 M
+perl-DBD-MySQL          i386       3.0007-1.fc6     installed         325 k
+unixODBC                i386       2.2.11-7.1       installed         1.8 M
+
+Transaction Summary
+=============================================================================
+Install      0 Package(s)        
+Update       0 Package(s)        
+Remove       7 Package(s)        
+
+Is this ok [y/N]:
+...
+Running Transaction
+Removing  : mysql                        ######################### [1/7]
+Removing  : mysql-connector-odbc         ######################### [2/7]
+Removing  : unixODBC                     ######################### [3/7]
+Removing  : MySQL-python                 ######################### [4/7]
+Removing  : mysql-server                 ######################### [5/7]
+Removing  : libdbi-dbd-mysql             ######################### [6/7]
+Removing  : perl-DBD-MySQL               ######################### [7/7]
+
+
+Obtenir des informations sur des paquetages RPM
+-----------------------------------------------
+
+Afficher la liste des paquetages installés :
+
+# yum list installed
+
+Afficher la liste des paquetages disponibles :
+
+# yum list available
+
+Afficher la liste des mises à jour disponibles :
+
+# yum list updates
+
+Afficher la liste des nouveautés disponibles dans les archives :
+
+# yum list recent
+
+Afficher la liste des paquetages installés sur le système qui ne sont présents
+dans aucune archive :
+
+# yum list extras
+
+Afficher tout (!) ce qu´il y a :
+
+# yum list all
+
+L´option list peut également servir à des recherches sur des paquetages. Un
+exemple :
+
+# yum list vim-enhanced
+...
+Installed Packages
+vim-enhanced.i386                        2:7.0.109-3            installed      
+Available Packages
+vim-enhanced.i386                        2:7.0.109-3.el5.3      updates
+
+Un autre exemple, avec un joker dans le terme recherché :
+# yum list vim*
+...
+Installed Packages
+vim-common.i386                          2:7.0.109-3            installed      
+vim-enhanced.i386                        2:7.0.109-3            installed      
+vim-minimal.i386                         2:7.0.109-3            installed      
+Available Packages
+vim-X11.i386                             2:7.0.109-3.el5.3      updates        
+vim-common.i386                          2:7.0.109-3.el5.3      updates        
+vim-enhanced.i386                        2:7.0.109-3.el5.3      updates        
+vim-minimal.i386                         2:7.0.109-3.el5.3      updates
+
+L´option search permet de rechercher un ou plusieurs paquetages d´après le nom
+du paquetage, la description, le résumé ou même le nom du responsable du
+paquetage.
+
+Premier exemple. On affiche tous les paquetages concernant mplayer :
+
+# yum search mplayer
+
+Deuxième exemple. On affiche tous les paquetages maintenus par Johnny Hughes :
+# yum search "Johnny Hughes"
+...
+yum-skip-broken.noarch                   1.0.3-1.el5.centos     extras          
+Matched from:
+Johnny Hughes <johnny@centos.org>
+
+yum-utils.noarch                         1.0.4-1.el5.centos     extras          
+Matched from:
+Johnny Hughes <johnny@centos.org>
+
+yum-fastestmirror.noarch                 1.0.4-1.el5.centos     extras          
+Matched from:
+Johnny Hughes <johnny@centos.org>
+
+yum-downloadonly.noarch                  1.0.4-1.el5.centos     extras          
+Matched from:
+Johnny Hughes <johnny@centos.org>
+
+pango.i386                               1.14.9-3.el5.centos    installed      
+Matched from:
+Johnny Hughes <johnny@centos.org>
+
+Afficher les informations sur un certain paquetage :
+
+# yum info mplayer
+...
+Available Packages
+Name   : mplayer
+Arch   : i386
+Version: 1.0
+Release: 0.34.rc1try2.el5.rf
+Size   : 5.2 M
+Repo   : rpmforge
+Summary: MPlayer, the Movie Player for Linux
+Description:
+MPlayer is a multimedia player. It plays most video formats as well as DVDs.
+Its big feature is the wide range of supported output drivers. There are also
+nice antialiased shaded subtitles and OSD.
+...
+
+L´option info accepte les mêmes arguments que l´option list. En l´occurrence,
+on peut très bien afficher les infos sur tous les paquetages dont le nom
+commence par mplayer :
+
+# yum info mplayer*
+
+Afficher la liste des groupes de paquetages disponibles :
+
+# yum grouplist
+...
+Installed Groups:
+ Office/Productivity
+ Editors
+ System Tools
+ Text-based Internet
+ GNOME Desktop Environment
+...
+Available Groups:
+ Engineering and Scientific
+ MySQL Database
+ Development Libraries
+ GNOME Software Development
+ X Software Development
+ Virtualization
+...
+
+Chercher un paquetage qui contient un certain fichier :
+
+# yum provides /etc/vimrc
+...
+vim-common.i386                          2:7.0.109-3            base            
+Matched from:
+/etc/vimrc
+
+vim-common.i386                          2:7.0.109-3.el5.3      updates        
+Matched from:
+/etc/vimrc
+
+vim-common.i386                          2:7.0.109-3.el5.3      installed      
+Matched from:
+/etc/vimrc
+
+
+Effectuer des opérations de maintenance
+---------------------------------------
+
+Effacer les fichiers d´en-tête que Yum utilise pour la résolution de
+dépendances :
+
+# yum clean headers
+
+Vider le cache de paquetages :
+
+# yum clean packages
+
+Tout nettoyer :
+
+# yum clean all
+

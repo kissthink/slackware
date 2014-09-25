@@ -1,0 +1,114 @@
+==============
+Cdrecord-HOWTO (c) Niki Kovacs, 2009
+==============
+
+
+Créer un CD de données
+----------------------
+
+Dans un premier temps, on crée une image ISO.
+
+$ mkisofs -J -r -v -V "Sauvegarde 15 avril 2009" -o sauvegarde.iso sauvegarde/
+
+-J     
+
+Convention de nommage Joliet pour la compatibilité Windows.
+
+-r     
+
+Convention de nommage Rock Ridge pour la compatibilité Unix/Linux et pour
+rendre tous les fichiers lisibles par tout le monde.
+
+-V "Sauvegarde 15 avril 2009" 
+
+Crée un identifiant de volume. 
+
+-o sauvegarde.iso 
+
+Le nom de la nouvelle image .iso.
+
+Le dernier argument, sauvegarde/, c'est tout ce qu'il faut mettre dans le .iso.
+Le répertoire sauvegarde/ n'est pas copié dans l'iso, on y trouvera uniquement
+son contenu.
+
+Il ne reste plus qu'à graver l'image :
+
+$ cdrecord -v [-eject] [-speed=4] dev=/dev/cdrom sauvegarde.iso
+
+
+Vérifier un fichier .iso
+------------------------
+
+Le montage requiert des privilèges d'administrateur.
+
+# cd /home/kikinovak
+# mkdir test
+# mount -t iso9660 -o ro,loop sauvegarde.iso test/
+
+-o ro,loop
+
+Options de montage pour le fichier .iso : en lecture seule avec le périphérique
+loop, qui permet de monter des systèmes de fichiers embarqués dans des
+fichiers.
+
+
+Copier un CD
+------------
+
+Effectuer une copie conforme du CD sur le disque dur :
+
+$ dd if=/dev/cdrom of=copie.iso
+1277708+0 enregistrements lus
+1277708+0 enregistrements écrits
+654186496 octets (654 MB) copiés, 147,204 seconde, 4,4 MB/s
+
+Graver le fichier .iso :
+
+$ cdrecord -v dev=/dev/cdrom copie.iso
+
+Remarque : théoriquement ça devrait fonctionner pour les CD audio. Mais en
+pratique, ça ne veut pas. Curieux.
+
+
+Effacer un CD/RW
+----------------
+
+Avant d'effacer un CD/RW, s'assurer qu'il n'est pas monté.
+
+Rapide :
+
+$ cdrecord -v dev=/dev/cdrom blank=fast 
+...
+Performing OPC...
+Blanking PMA, TOC, pregap
+Blanking time:   18.116s
+
+L'effacement rapide n'efface que certaines zones du disque, mais il est tout à
+fait adapté pour la routine quotidienne. En plus, le CD/RW durera plus
+longtemps.
+
+Complet :
+
+$ cdrecord -v dev=/dev/cdrom blank=all
+...
+Performing OPC...
+Blanking entire disk
+Blanking time:  508.782s
+
+
+Root ou simple utilisateur ?
+----------------------------
+
+Lorsqu'on grave en tant que simple utilisateur, cdrecord affiche le message
+suivant :
+
+cdrecord: Cannot allocate memory. WARNING: Cannot do mlockall(2).
+cdrecord: WARNING: This causes a high risk for buffer underruns.
+cdrecord: Operation not permitted. WARNING: Cannot set RR-scheduler
+cdrecord: Permission denied. WARNING: Cannot set priority using setpriority().
+cdrecord: WARNING: This causes a high risk for buffer underruns.
+
+Il suffit de graver en tant que root pour ne plus avoir ce genre de message.
+
+------------------------------------------------------------------------------
+# vim: syntax=txt

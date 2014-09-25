@@ -1,0 +1,246 @@
+=========
+RPM-HOWTO (c) Niki Kovacs, 2009
+=========
+
+
+Installer des paquetages RPM
+----------------------------
+
+Syntaxe de la commande d´installation : rpm -i
+
+Installer le paquetage vim-common-7.0.109-3.i386.rpm :
+
+# rpm -ivh vim-common-7.0.109-3.i386.rpm
+attention: vim-common-7.0.109-3.i386.rpm: Entête V3 DSA signature: NOKEY, key
+ID e8562897
+Préparation...              ########################################### [100%]
+ 1:vim-common             ########################################### [100%]
+
+    * -v : mode "bavard"
+    * -h : dessine les barres de progression avec le signe dièse.
+
+Tester l´installation avant d´installer quoi que ce soit :
+
+# rpm -ivh --test vim-common-7.0.109-3.i386.rpm
+attention: vim-common-7.0.109-3.i386.rpm: Entête V3 DSA signature: NOKEY, key
+ID e8562897
+Préparation...              ########################################### [100%]
+
+
+Mettre à jour des paquetages RPM
+--------------------------------
+
+La mise à jour se fait avec l´option -U.
+
+Mettre à jour le paquetage vim-minimal :
+
+# rpm -Uvh vim-minimal-7.0.109-3.el5.3.i386.rpm
+attention: vim-minimal-7.0.109-3.el5.3.i386.rpm: Entête V3 DSA signature:
+NOKEY, key ID e8562897
+Préparation...              ########################################### [100%]
+ 1:vim-minimal            ########################################### [100%]
+
+Remarque : on peut aussi utiliser -U à la place de -i pour l´installation.
+
+Attention : éviter l´option -U pour tout ce qui concerne le kernel, et préférer
+l´option -i.
+
+Tester la commande de mise à jour :
+
+# rpm -Uvh --test vim-minimal-7.0.109-3.el5.3.i386.rpm
+
+
+Supprimer des paquetages RPM
+----------------------------
+
+La suppression de logiciels se fait avec l´option -e.
+
+Pour supprimer un paquetage, il n´est pas nécessaire d´invoquer le nom entier
+du paquetage :
+
+# rpm -e vim-enhanced
+
+Pour désinstaller plusieurs programmes à la fois, utiliser une liste d´éléments
+séparés par des espaces :
+
+# rpm -e vim-common vim-enhanced
+
+Un paquetage peut être nécessaire pour le bon fonctionnement d´un autre
+paquetage installé :
+
+# rpm -e vim-common
+erreur: Dépendances requises:
+      vim-common = 2:7.0.109-3 est nécessaire pour (déjà installé)
+vim-enhanced-7.0.109-3.i386
+
+Pour supprimer un paquetage sans vérifier les dépendances, utiliser l´option
+-nodeps, à manier avec précaution :
+
+# rpm -e --nodeps vim-common
+
+Là aussi, on peut tester la commande avant de l´exécuter pour de bon :
+
+# rpm -e --test vim-common
+erreur: Dépendances requises:
+      vim-common = 2:7.0.109-3 est nécessaire pour (déjà installé)
+vim-enhanced-7.0.109-3.i386
+
+
+Obtenir des informations sur des paquetages RPM installés
+---------------------------------------------------------
+
+Les fonctions de requête de RPM commencent par l´option -q.
+
+Demander à la base de données RPM si le paquetage vim-common est installé :
+
+# rpm -q vim-common
+vim-common-7.0.109-3
+
+Afficher la liste de tous les paquetages installés :
+
+# rpm -qa
+
+La même chose, mais présenté par ordre alphabétique :
+
+# rpm -qa | sort
+
+On enregistre le résultat de la requête dans un fichier, tout en gardant
+l´affichage à l´écran :
+
+# rpm -qa | sort | tee rpmlist.txt
+
+Effectuer une recherche insensible à la casse avec un nom de paquetage partiel :
+
+# rpm -qa | grep -i vim
+vim-minimal-7.0.109-3.el5.3
+vim-common-7.0.109-3
+vim-enhanced-7.0.109-3
+
+L´option --last affiche la liste de tous les RPM installés par ordre décroissant
+de date d´installation :
+
+# rpm -qa --last | less
+
+Afficher la liste des 10 derniers paquetages installés :
+
+# rpm -qa --last | head -n 10
+tsclient-0.148-6.el5                          dim 20 mai 2007 06:16:50 CEST
+rdesktop-1.4.1-4                              dim 20 mai 2007 06:16:37 CEST
+gpg-pubkey-e8562897-459f07a4                  dim 20 mai 2007 06:12:48 CEST
+vim-enhanced-7.0.109-3                        dim 20 mai 2007 06:04:24 CEST
+vim-common-7.0.109-3                          dim 20 mai 2007 06:04:20 CEST
+vim-minimal-7.0.109-3.el5.3                   dim 20 mai 2007 05:43:05 CEST
+openoffice.org-langpack-fr-2.0.4-5.4.17       sam 19 mai 2007 17:03:28 CEST
+minicom-2.1-3                                 sam 19 mai 2007 17:02:45 CEST
+Deployment_Guide-fr-FR-5.0.0-19.el5.centos    sam 19 mai 2007 17:02:44 CEST
+man-pages-fr-2.39-4.fc6                       sam 19 mai 2007 17:00:59 CEST
+
+Afficher la liste des fichiers installés par un paquetage :
+
+# rpm -ql vim-enhanced
+/etc/profile.d/vim.csh
+/etc/profile.d/vim.sh
+/usr/bin/ex
+/usr/bin/rvim
+/usr/bin/vim
+/usr/bin/vimdiff
+/usr/bin/vimtutor
+/usr/share/man/man1/rvim.1.gz
+/usr/share/man/man1/vimdiff.1.gz
+/usr/share/man/man1/vimtutor.1.gz
+
+Afficher la liste des fichiers de documentation d´un paquetage installé :
+
+# rpm -qd vim-enhanced
+/usr/share/man/man1/rvim.1.gz
+/usr/share/man/man1/vimdiff.1.gz
+/usr/share/man/man1/vimtutor.1.gz
+
+Afficher la liste des fichiers de configuration d´un paquetage installé :
+
+# rpm -qc vim-common
+/etc/vimrc
+
+L´option -f permet de savoir à quel paquetage appartient un fichier :
+# rpm -qf /usr/bin/vim
+vim-enhanced-7.0.109-3
+
+Afficher les informations à propos d´un paquetage :
+
+# rpm -qi vim-enhanced
+Name        : vim-enhanced                 Relocations: (not relocatable)
+Version     : 7.0.109                           Vendor: CentOS
+Release     : 3                             Build Date: dim 07 jan 2007
+23:46:33 CET
+Install Date: dim 20 mai 2007 06:04:24 CEST      Build Host:
+builder1.centos.org
+Group       : Applications/Editors          Source RPM: vim-7.0.109-3.src.rpm
+Size        : 2724806                          License: freeware
+Signature   : DSA/SHA1, mer 04 avr 2007 02:28:20 CEST, Key ID a8a447dce8562897
+Summary     : Version de l'éditeur VIM comprenant des améliorations récentes.
+Description :
+VIM (Vi IMproved) est une version mise à jour et améliorée de l'éditeur vi. Vi
+a été le premier véritable éditeur de type écran pour UNIX et il est encore
+très utilisé. VIM constitue une amélioration par rapport à vi grâce à l'ajout
+de nouvelles fonctions : fenêtres multiples, annulation multi-niveaux, mise en
+surbrillance de blocs, etc. Le paquetage vim-enhanced contient une version de
+VIM comprenant des fonctions supplémentaires développées récemment, telles que
+les interpréteurs Python et Perl.
+
+Afficher les informations à propos d´un fichier ou d´une commande :
+
+# rpm -qif /etc/vimrc
+Name        : vim-common                   Relocations: (not relocatable)
+Version     : 7.0.109                           Vendor: CentOS
+Release     : 3                             Build Date: dim 07 jan 2007
+23:46:33 CET
+Install Date: dim 20 mai 2007 06:04:20 CEST      Build Host:
+builder1.centos.org
+Group       : Applications/Editors          Source RPM: vim-7.0.109-3.src.rpm
+Size        : 15593881                         License: freeware
+Signature   : DSA/SHA1, mer 04 avr 2007 02:28:19 CEST, Key ID a8a447dce8562897
+...
+
+Afficher la liste des fichiers de configuration d´une commande :
+
+# rpm -qcf /usr/bin/vim
+/etc/profile.d/vim.csh
+/etc/profile.d/vim.sh
+
+Afficher la liste des fichiers de documentation d´une commande :
+
+# rpm -qdf /usr/bin/yum
+/usr/share/doc/yum-3.0.5/AUTHORS
+/usr/share/doc/yum-3.0.5/COPYING
+/usr/share/doc/yum-3.0.5/ChangeLog
+/usr/share/doc/yum-3.0.5/INSTALL
+/usr/share/doc/yum-3.0.5/PLUGINS
+/usr/share/doc/yum-3.0.5/README
+/usr/share/doc/yum-3.0.5/TODO
+/usr/share/man/man5/yum.conf.5.gz
+/usr/share/man/man8/yum-shell.8.gz
+/usr/share/man/man8/yum.8.gz
+
+
+Obtenir des informations sur des paquetages RPM non installés
+-------------------------------------------------------------
+
+L´option -p effectue des requêtes sur des RPM non installés.
+
+Afficher la liste des fichiers installés par un paquetage :
+# rpm -qpl vim-enhanced-7.0.109-3.i386.rpm
+/etc/profile.d/vim.csh
+/etc/profile.d/vim.sh
+/usr/bin/ex
+/usr/bin/rvim
+/usr/bin/vim
+/usr/bin/vimdiff
+/usr/bin/vimtutor
+/usr/share/man/man1/rvim.1.gz
+/usr/share/man/man1/vimdiff.1.gz
+/usr/share/man/man1/vimtutor.1.gz
+
+Là aussi, on pourra effectuer des requêtes sur les fichiers de configuration
+(-qpc) ou de documentation (-qpd).
+
+
