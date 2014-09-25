@@ -8,6 +8,9 @@ multimedia/dvdauthor-0.7.1-i486-1_microlinux.txz: Added.
 multimedia/dvgrab-3.5-i486-1_microlinux.txz: Added.
 multimedia/amrnb-11.0.0.0-i486-1_microlinux.txz: Added.
 xap/openshot-1.4.3-i486-1_microlinux.txz: Added.
+l/libgnomecups-0.2.3-i486-1_microlinux.txz: Added.
+l/libgnomeprint-2.18.8-i486-1_microlinux.txz: Added.
+l/libgnomeprintui-2.18.6-i486-1_microlinux.txz: Added.
 +--------------------------+
 Wed Sep 24 14:15:56 CEST 2014
 ap/hplip-3.13.11-i486-1_microlinux.txz: Upgraded.

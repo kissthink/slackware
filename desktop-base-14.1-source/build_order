@@ -122,7 +122,9 @@ multimedia/dvdauthor
 multimedia/dvgrab
 multimedia/amrnb
 xap/openshot
-
+l/libgnomecups
+l/libgnomeprint
+l/libgnomeprintui
 
 
 
