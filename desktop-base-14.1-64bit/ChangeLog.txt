@@ -1,3 +1,10 @@
+Thu Sep 25 06:17:55 CEST 2014
+multimedia/openjpeg2-2.1.0-x86_64-1_microlinux.txz: Removed.
+xap/mupdf-1.5-x86_64-4_microlinux.txz: Removed.
+  We already have Okular and Evince, and Firefox doesn't need MuPDF to display
+	PDF files. Thanks to fsLeg, gegechris99 and Didier Spaier on LQ for the
+	heads-up. 
++--------------------------+
 Wed Sep 24 14:15:56 CEST 2014
 ap/hplip-3.13.11-x86_64-1_microlinux.txz: Upgraded.
   This version supports the HP Laserjet Pro MFP-m127fn printer.
