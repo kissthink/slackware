@@ -23,7 +23,7 @@
 
 PRGNAM=leafpad
 VERSION=${VERSION:-0.8.18.1}
-BUILD=${BUILD:-1}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}

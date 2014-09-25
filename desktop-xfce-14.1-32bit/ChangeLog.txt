@@ -1,6 +1,9 @@
 Thu Sep 25 10:03:30 CEST 2014
 xap/openshot-1.4.3-i486-1_microlinux.txz: Removed.
   Moving to MLED 14.1 Base repository.
+xap/leafpad-0.8.18.1-i486-2_microlinux.txz: Rebuilt.
+  Added libgnomeprint support.
+xap/simple-scan-2.32.0.2-i486-1_microlinux.txz: Added.
 +--------------------------+
 Sat Sep 20 13:02:39 CEST 2014
 x/gdm-2.20.11-i486-1_microlinux.txz: Added.
