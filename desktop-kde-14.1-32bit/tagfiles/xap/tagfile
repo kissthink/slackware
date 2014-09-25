@@ -11,6 +11,7 @@ pidgin:ADD
 sane:ADD
 windowmaker:ADD
 xine-lib:ADD
+xine-ui:ADD
 xscreensaver:ADD
 
 # Skip
@@ -39,7 +40,6 @@ xaos:SKP
 xchat:SKP
 xfractint:SKP
 xgames:SKP
-xine-ui:SKP
 xlockmore:SKP
 xmms:SKP
 xpaint:SKP

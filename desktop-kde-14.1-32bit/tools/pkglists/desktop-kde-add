@@ -240,6 +240,7 @@ yasm
 
 # EXTRA
 mplayerplug-in
+recordmydesktop
 
 # F
 linux-faqs 
@@ -1006,6 +1007,7 @@ pidgin
 sane 
 windowmaker 
 xine-lib 
+xine-ui 
 xscreensaver 
 
 # Y

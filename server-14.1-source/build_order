@@ -37,6 +37,7 @@ n/dovecot
 n/postgrey
 ap/glances
 ap/slackpkg+
+ap/hplip
 #n/mpd
 #n/icecast
 #n/ncmpc

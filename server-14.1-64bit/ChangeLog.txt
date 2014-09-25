@@ -1,3 +1,7 @@
+Wed Sep 24 14:15:56 CEST 2014
+ap/hplip-3.13.11-x86_64-1_microlinux.txz: Upgraded.
+  This version supports the HP Laserjet Pro MFP-m127fn printer.
++--------------------------+
 Fri Sep 12 11:51:13 CEST 2014
 profile/user-settings-console-1.0-noarch-2_microlinux.txz: Added.
 ap/sbopkg-0.37.0-noarch-2_microlinux.txz: Added.
