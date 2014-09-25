@@ -4,6 +4,9 @@ xap/mupdf-1.5-i486-4_microlinux.txz: Removed.
   We already have Okular and Evince, and Firefox doesn't need MuPDF to display
 	PDF files. Thanks to fsLeg, gegechris99 and Didier Spaier on LQ for the
 	heads-up. 
+multimedia/dvdauthor-0.7.1-i486-1_microlinux.txz: Added.
+multimedia/dvgrab-3.5-i486-1_microlinux.txz: Added.
+multimedia/amrnb-11.0.0.0-i486-1_microlinux.txz: Added.
 +--------------------------+
 Wed Sep 24 14:15:56 CEST 2014
 ap/hplip-3.13.11-i486-1_microlinux.txz: Upgraded.
