@@ -5,6 +5,7 @@ audacious-plugins:ADD
 fluxbox:ADD
 gftp:ADD
 gimp:ADD
+gucharmap:ADD
 imagemagick:ADD
 mozilla-firefox:ADD
 mozilla-thunderbird:ADD
@@ -26,7 +27,6 @@ geeqie:SKP
 gkrellm:SKP
 gnuchess:SKP
 gnuplot:SKP
-gucharmap:SKP
 gv:SKP
 pan:SKP
 rdesktop:SKP
