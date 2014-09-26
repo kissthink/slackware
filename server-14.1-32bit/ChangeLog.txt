@@ -1,3 +1,7 @@
+Fri Sep 26 15:43:22 CEST 2014
+ap/slackpkg+-1.3.2-noarch-2_microlinux.txz: Rebuilt.
+  Fixed ready-to-use slackpkgplus.conf.
++--------------------------+
 Wed Sep 24 14:15:56 CEST 2014
 ap/hplip-3.13.11-i486-1_microlinux.txz: Upgraded.
   This version supports the HP Laserjet Pro MFP-m127fn printer.

@@ -35,7 +35,7 @@ GREYLIST=off
 # from which repository you prefer to search it.
 # The syntax is "<repository_name>:<package_name>"
 # Accepts regular expressions. To give priority to an entire repository use "<repository_name>:.*"
-PKGS_PRIORITY=( microlinux:.* )
+PKGS_PRIORITY=( microlinux-server:.* )
 #
 # If you want a multilib system, uncomment the multilib repository and set:
 #PKGS_PRIORITY=( multilib:.* )
@@ -44,11 +44,11 @@ PKGS_PRIORITY=( microlinux:.* )
 
 # List repositories you want to use (defined below)
 # remember to launch 'slackpkg update' if you modify that row.
-REPOPLUS=( microlinux )
+REPOPLUS=( microlinux-server )
 
 # Define mirrors (uncomment one or more mirror; remember to add it to REPOPLUS)
 #MIRRORPLUS['multilib']=http://taper.alienbase.nl/mirrors/people/alien/multilib/14.1/
-MIRRORPLUS['microlinux']=http://www.microlinux.fr/slackware/MLES-14.1-64bit/
+MIRRORPLUS['microlinux-server']=http://www.microlinux.fr/slackware/server-14.1-64bit/
 
 #
 # Supported Repositories (see /usr/doc/slackpkg+-* for details):
