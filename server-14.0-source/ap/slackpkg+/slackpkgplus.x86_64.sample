@@ -48,7 +48,7 @@ REPOPLUS=( microlinux )
 
 # Define mirrors (uncomment one or more mirror; remember to add it to REPOPLUS)
 #MIRRORPLUS['multilib']=http://taper.alienbase.nl/mirrors/people/alien/multilib/14.0/
-MIRRORPLUS['microlinux']=http://www.microlinux.fr/slackware/MLES-14.0-64bit/
+MIRRORPLUS['microlinux']=http://www.microlinux.fr/slackware/server-14.0-64bit/
 
 #
 # Supported Repositories (see /usr/doc/slackpkg+-* for details):
