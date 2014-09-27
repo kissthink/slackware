@@ -36,4 +36,3 @@ l'option suivante :
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

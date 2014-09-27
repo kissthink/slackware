@@ -266,4 +266,3 @@ utilisé par les postes clients.
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

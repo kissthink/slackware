@@ -273,4 +273,3 @@ Confirmer la suppression en tapant le nom du dépôt.
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

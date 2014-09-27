@@ -209,4 +209,3 @@ Si l'on souhaite supprimer cette base de données :
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

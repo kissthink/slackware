@@ -62,4 +62,3 @@ Tester la configuration dans un terminal graphique :
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

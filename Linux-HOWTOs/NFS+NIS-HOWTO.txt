@@ -235,4 +235,3 @@ Redémarrer et vérifier si les utilisateurs peuvent se connecter en init 3.
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

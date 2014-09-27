@@ -577,4 +577,3 @@ Pour se connecter, on utilisera VNC Viewer :
 
 ----------------------------------------------------------------------------- 
 # vim: syntax=txt
-# vim: set encoding=latin1

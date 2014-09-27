@@ -110,4 +110,3 @@ Une station de travail AMD Phenom :
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

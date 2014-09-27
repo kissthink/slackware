@@ -747,4 +747,3 @@ Enregistrer les paquets rejetés :
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

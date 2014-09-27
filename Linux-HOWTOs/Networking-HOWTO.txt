@@ -272,4 +272,3 @@ avec le serveur DHCP pour obtenir ses paramètres réseau.
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

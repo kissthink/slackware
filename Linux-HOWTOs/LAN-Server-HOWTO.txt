@@ -492,4 +492,3 @@ Installer les services
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

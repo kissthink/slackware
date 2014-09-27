@@ -55,4 +55,3 @@ Première connexion à GEPI : admin/azerty
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

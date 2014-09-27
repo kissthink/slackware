@@ -172,4 +172,3 @@ ci-dessous, on bloque Facebook du lundi au vendredi de 8h00 à 18h00 :
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

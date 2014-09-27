@@ -160,4 +160,3 @@ comportement déplacé.
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

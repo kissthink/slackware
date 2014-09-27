@@ -129,4 +129,3 @@ Si l'on veut enregistrer l'écran de droite, on invoquera la commande suivante :
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

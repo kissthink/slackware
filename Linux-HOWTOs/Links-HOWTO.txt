@@ -103,4 +103,3 @@ distinguer les liens :
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

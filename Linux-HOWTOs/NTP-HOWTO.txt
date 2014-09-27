@@ -189,4 +189,3 @@ Vérifier si l'on est bien synchronisé avec le serveur local :
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

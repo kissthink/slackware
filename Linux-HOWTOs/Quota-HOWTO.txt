@@ -78,4 +78,3 @@ Afficher un résumé des quotas :
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

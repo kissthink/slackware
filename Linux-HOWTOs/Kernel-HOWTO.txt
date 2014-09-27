@@ -62,4 +62,3 @@ Compiler et installer le kernel et les modules :
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

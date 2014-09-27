@@ -71,4 +71,3 @@ Copier '~/.config' vers '/etc/skel' et conserver les répertoires 'dconf',
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

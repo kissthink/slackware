@@ -152,4 +152,3 @@ Vérifier si 'fdisk' ne détecte pas des résidus de table GPT :
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

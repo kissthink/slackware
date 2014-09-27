@@ -621,4 +621,3 @@ utilisateur sera '/dev/null', et son shell de connexion '/bin/false' :
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

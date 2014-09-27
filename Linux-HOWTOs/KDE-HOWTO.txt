@@ -181,4 +181,3 @@ ${top_mem name 9}${top_mem mem 9}$color
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

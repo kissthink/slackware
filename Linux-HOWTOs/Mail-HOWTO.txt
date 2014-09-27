@@ -1029,4 +1029,3 @@ Supprimer les utilisateurs et les groupes système correspondants :
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

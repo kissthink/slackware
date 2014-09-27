@@ -350,4 +350,3 @@ Redémarrer et faire un peu de ménage :
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

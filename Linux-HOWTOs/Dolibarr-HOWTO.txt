@@ -167,4 +167,3 @@ Régler les droits d'accès :
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

@@ -157,4 +157,3 @@ Redémarrer Apache et Nagios, et le problème est réglé :
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

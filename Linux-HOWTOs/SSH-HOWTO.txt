@@ -140,4 +140,3 @@ Voici à quoi cela peut ressembler :
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1

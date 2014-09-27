@@ -96,4 +96,3 @@ sera donc '/disk/tagfiles'.
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
-# vim: set encoding=latin1
