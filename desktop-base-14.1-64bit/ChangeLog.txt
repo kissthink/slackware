@@ -1,3 +1,7 @@
+Mon Sep 29 17:58:07 CEST 2014
+locale/mozilla-firefox-l10n-24.8.1-x86_64-1_microlinux.txz: Upgraded.
+locale/mozilla-thunderbird-l10n-24.8.1-x86_64-1_microlinux.txz: Upgraded.
++--------------------------+
 Thu Sep 25 06:17:55 CEST 2014
 multimedia/openjpeg2-2.1.0-x86_64-1_microlinux.txz: Removed.
 xap/mupdf-1.5-x86_64-4_microlinux.txz: Removed.
