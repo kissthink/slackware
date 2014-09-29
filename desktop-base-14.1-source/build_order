@@ -125,6 +125,9 @@ xap/openshot
 l/libgnomecups
 l/libgnomeprint
 l/libgnomeprintui
+l/liblqr
+l/lensfun
+l/opencv
 
 
 
