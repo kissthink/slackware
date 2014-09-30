@@ -1,0 +1,13 @@
+# KDE Config File
+[Desktop Entry]
+GenericName=Photo Management
+GenericName[de]=Fotoverwaltung
+GenericName[fr]=Gestionnaire de photos
+Name=Digikam
+Type=Application
+Categories=Qt;KDE;Graphics;Photography;
+Exec=digikam -caption %c %i
+Icon=digikam
+X-DocPath=digikam/index.html
+MimeType=x-content/image-dcf;x-content/image-picturecd;
+Terminal=false
