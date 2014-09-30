@@ -60,7 +60,7 @@ fi
 
 set -e
 
-#wget -c http://downloads.sourceforge.net/gphoto/$PRGNAM-$VERSION.tar.bz2
+wget -c http://downloads.sourceforge.net/gphoto/$PRGNAM-$VERSION.tar.bz2
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
