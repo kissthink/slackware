@@ -83,6 +83,9 @@ cd build
     -DSYSCONF_INSTALL_DIR=/etc/kde \
     -DCMAKE_VERBOSE_MAKEFILE:BOOL="TRUE" \
     -DCMAKE_BUILD_TYPE=Release ..
+
+  exit 1
+
   make $NUMJOBS
   make install DESTDIR=$PKG
 cd ..
