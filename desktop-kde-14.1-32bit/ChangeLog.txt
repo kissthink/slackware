@@ -1,3 +1,6 @@
+Tue Sep 30 08:37:19 CEST 2014
+kde/digikam-4.3.0-i486-1_microlinux.txz: Added.
++--------------------------+
 Sat Sep 20 10:09:44 CEST 2014
 xap/clementine-1.2.1-i486-1_microlinux.txz: Added.
 kde/k3b-2.0.2-i486-1_microlinux.txz: Rebuilt.
