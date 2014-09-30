@@ -1,3 +1,7 @@
+# Add
+kde-l10n-de:ADD
+kde-l10n-fr:ADD
+
 # Skip
 calligra-l10n-bs:SKP
 calligra-l10n-ca:SKP
@@ -36,7 +40,6 @@ kde-l10n-ca:SKP
 kde-l10n-ca@valencia:SKP
 kde-l10n-cs:SKP
 kde-l10n-da:SKP
-kde-l10n-de:SKP
 kde-l10n-el:SKP
 kde-l10n-en_GB:SKP
 kde-l10n-es:SKP
@@ -44,7 +47,6 @@ kde-l10n-et:SKP
 kde-l10n-eu:SKP
 kde-l10n-fa:SKP
 kde-l10n-fi:SKP
-kde-l10n-fr:SKP
 kde-l10n-ga:SKP
 kde-l10n-gl:SKP
 kde-l10n-he:SKP
