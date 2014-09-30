@@ -1,0 +1,12 @@
+     |-----handy-ruler------------------------------------------------------|
+gtkam: gtkam (GTK2 graphical front-end to libgphoto2)
+gtkam:
+gtkam: libgphoto2 is a portable library which gives access to literally
+gtkam: hundreds of digital cameras. This package includes a graphical GTK2
+gtkam: frontend and a GIMP plugin.
+gtkam:
+gtkam: 
+gtkam:
+gtkam:
+gtkam:
+gtkam: Package created by Niki Kovacs <info@microlinux.fr>
