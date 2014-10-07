@@ -36,11 +36,12 @@ montage respectifs, par exemple :
 
   # mount -v /dev/sda1 /mnt/boot
 
-Lier les systèmes de fichiers '/proc' et '/dev' du système de restauration et
-du système installé :
+Lier les systèmes de fichiers '/proc', '/dev' et '/sys' du système de
+restauration et du système installé :
 
-  # mount -t proc /proc /mnt/proc
+  # mount --bind /proc /mnt/proc
   # mount --bind /dev /mnt/dev
+  # mount --bind /sys /mnt/sys
 
 Chrooter dans le système installé :
 
@@ -55,6 +56,7 @@ Une fois qu'on a terminé, il faut revenir vers le système du LiveCD :
 
 Démonter un par un les systèmes de fichiers montés, dans un ordre cohérent :
 
+  # umount /mnt/sys
   # umount /mnt/proc
   # umount /mnt/dev
   # umount /mnt/boot
