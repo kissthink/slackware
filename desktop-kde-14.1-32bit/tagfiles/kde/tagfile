@@ -6,7 +6,6 @@ k3b:ADD
 kactivities:ADD
 kamera:ADD
 kate:ADD
-kaudiocreator:ADD
 kcalc:ADD
 kcharselect:ADD
 kcolorchooser:ADD
@@ -68,6 +67,7 @@ kalzium:SKP
 kanagram:SKP
 kapman:SKP
 katomic:SKP
+kaudiocreator:SKP
 kblackbox:SKP
 kblocks:SKP
 kbounce:SKP
