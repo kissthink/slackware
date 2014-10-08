@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Solitaire
+Comment=Aisleriot
+Exec=sol
+Icon=gnome-aisleriot
+Terminal=false
+Type=Application
+Categories=Game;
+StartupNotify=true

@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Bootable USB disk creator
+Name[de]=USB-Installationsdisk erstellen
+Name[fr]=Créateur de disque USB amorçable
+Comment=UNetbootin
+Version=1.0
+Categories=Application;System;
+Exec=/usr/bin/unetbootin
+Terminal=false
+Type=Application
+Name[en_US]=UNetbootin
+GenericName[en_US]=UNetbootin
+Comment[en_US]=Tool for creating Live USB drives
+#Icon=unetbootin
+Icon=rip
