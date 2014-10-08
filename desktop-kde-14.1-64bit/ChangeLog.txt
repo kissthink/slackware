@@ -1,3 +1,7 @@
+Wed Oct  8 17:40:12 CEST 2014
+kde/kscd-4.10.5-x86_64-1_microlinux.txz: Removed.
+  Clementine handles Audio CDs perfectly.
++---------------------------+
 Tue Sep 30 09:15:18 CEST 2014
 kde/digikam-4.3.0-x86_64-1_microlinux.txz: Added.
 +---------------------------+
