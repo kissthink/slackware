@@ -10,3 +10,4 @@ StartupNotify=true
 Terminal=false
 Type=Application
 Categories=X-XFCE;Utility;
+NoDisplay=true
