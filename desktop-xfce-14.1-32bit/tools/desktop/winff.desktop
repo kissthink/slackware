@@ -1,8 +1,8 @@
 [Desktop Entry]
 Version=1.0
-Name=Video Converter
-Name[de]=Video-Konvertierer
-Name[fr]=Convertisseur vidéo
+Name=Multimedia Converter
+Name[de]=Multimedia-Konvertierer
+Name[fr]=Convertisseur multimédia
 Comment=WinFF
 MimeType=application/winff;
 Exec=winff
