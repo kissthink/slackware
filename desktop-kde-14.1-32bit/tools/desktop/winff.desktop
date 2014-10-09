@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+GenericName=Multimedia Converter
+GenericName[de]=Multimedia-Konvertierer
+GenericName[fr]=Convertisseur multimédia
+Name=WinFF
+MimeType=application/winff;
+Exec=winff
+Icon=winff
+Terminal=false
+Type=Application
+Categories=AudioVideo;AudioVideoEditing;GTK;
+StartupNotify=true
+
