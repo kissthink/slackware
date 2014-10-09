@@ -1,3 +1,12 @@
+Thu Oct  9 07:27:00 CEST 2014
+xap/gnote-0.7.6-i486-2_microlinux.txz: Added.
+xap/winff-1.5.3-i486-1_microlinux.txz: Added.
+  WinFF doesn't have any particular runtime dependencies except ffmpeg, but
+	it's written in Free Pascal, so you'll need a Free Pascal Compiler on your
+	machine if you want to build it from source. Make sure to install packages
+	fpc, fpc-source and lazarus before launching the build. They're all available
+	on SlackBuilds.org.
++--------------------------+
 Mon Sep 29 17:54:00 CEST 2014
 locale/mozilla-firefox-l10n-24.8.1-i486-1_microlinux.txz: Upgraded.
 locale/mozilla-thunderbird-l10n-24.8.1-i486-1_microlinux.txz: Upgraded.
