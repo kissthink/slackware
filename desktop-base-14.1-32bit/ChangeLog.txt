@@ -6,6 +6,7 @@ xap/winff-1.5.3-i486-1_microlinux.txz: Added.
 	machine if you want to build it from source. Make sure to install packages
 	fpc, fpc-source and lazarus before launching the build. They're all available
 	on SlackBuilds.org.
+x/slack-wallpapers-0.341-noarch-1_microlinux.txz: Added.
 +--------------------------+
 Mon Sep 29 17:54:00 CEST 2014
 locale/mozilla-firefox-l10n-24.8.1-i486-1_microlinux.txz: Upgraded.
