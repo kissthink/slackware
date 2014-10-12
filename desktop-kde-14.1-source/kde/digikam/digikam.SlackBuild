@@ -26,7 +26,7 @@
 # Modified by Niki Kovacs <info@microlinux.fr>
 
 PRGNAM=digikam
-VERSION=${VERSION:-4.3.0}
+VERSION=${VERSION:-4.4.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
@@ -83,8 +83,6 @@ cd build
     -DSYSCONF_INSTALL_DIR=/etc/kde \
     -DCMAKE_VERBOSE_MAKEFILE:BOOL="TRUE" \
     -DCMAKE_BUILD_TYPE=Release ..
-
-  exit 1
 
   make $NUMJOBS
   make install DESTDIR=$PKG
