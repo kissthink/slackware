@@ -1,3 +1,7 @@
+Sun Oct 12 10:55:28 CEST 2014
+xap/aMule-2.3.1-x86_64-4_microlinux.txz: Rebuilt.
+  This update provides UPnP support upon request from user fsLeg on LQ.
++--------------------------+
 Sun Oct  5 17:52:23 CEST 2014
 y/aisleriot-3.6.2-x86_64-1_microlinux.txz: Added.
 +--------------------------+
