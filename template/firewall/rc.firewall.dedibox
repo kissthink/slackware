@@ -2,18 +2,21 @@
 #
 # /etc/rc.d/rc.firewall
 
+# Commandes
 IPT=$(which iptables)
 MOD=$(which modprobe)
+
+# Internet
 IFACE_INET=eth0
 
 function start {
   
-  # Default policies
+  # Politique par défaut
   $IPT -P INPUT DROP
   $IPT -P FORWARD DROP
   $IPT -P OUTPUT ACCEPT
 
-  # Trust ourselves
+  # Faire confiance à nous-mêmes ;o)
   $IPT -A INPUT -i lo -j ACCEPT
 
   # Ping
@@ -21,22 +24,22 @@ function start {
   $IPT -A INPUT -p icmp --icmp-type time-exceeded -j ACCEPT
   $IPT -A INPUT -p icmp --icmp-type destination-unreachable -j ACCEPT
 
-  # Established connections 
+  # Connexions établies
   $IPT -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
 
   # FTP 
   # $MOD ip_conntrack_ftp
   # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 21 -j ACCEPT
 
-  # Unlimited SSH
-  $IPT -A INPUT -p tcp -i $IFACE_INET --dport 22 -j ACCEPT
-
-  # Limited SSH
-  # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 22 -m state --state NEW \
-  #  -m recent --set --name SSH
-  # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 22 -m state --state NEW \
-  #  -m recent --update --seconds 60 --hitcount 2 --rttl --name SSH -j DROP
+  # SSH illimité
   # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 22 -j ACCEPT
+
+  # SSH limité
+  $IPT -A INPUT -p tcp -i $IFACE_INET --dport 22 -m state --state NEW \
+   -m recent --set --name SSH
+  $IPT -A INPUT -p tcp -i $IFACE_INET --dport 22 -m state --state NEW \
+   -m recent --update --seconds 60 --hitcount 2 --rttl --name SSH -j DROP
+  $IPT -A INPUT -p tcp -i $IFACE_INET --dport 22 -j ACCEPT
 
   # SMTP 
   # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 25 -j ACCEPT
@@ -69,7 +72,7 @@ function start {
   # Icecast 
   # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 8000 -j ACCEPT
 
-  # Log rejected connections
+  # Enregistrer les connexions refusées
   $IPT -A INPUT -j LOG --log-prefix "+++ IPv4 packet rejected +++"
   $IPT -A INPUT -j REJECT
   
@@ -77,7 +80,7 @@ function start {
 
 function stop {
 
-  # Set default policies to ACCEPT everything
+  # Politique ACCEPT par défaut
   $IPT -t filter -P INPUT ACCEPT
   $IPT -t filter -P FORWARD ACCEPT
   $IPT -t filter -P OUTPUT ACCEPT
@@ -91,12 +94,12 @@ function stop {
   $IPT -t mangle -P OUTPUT ACCEPT
   $IPT -t mangle -P POSTROUTING ACCEPT
 
-  # Zero out all counters
+  # Remettre les compteurs à zéro
   $IPT -t filter -Z
   $IPT -t nat -Z
   $IPT -t mangle -Z
   
-  # Flush all active rules and delete all custom chains
+  # Supprimer toutes les règles actives et les chaînes personnalisées
   $IPT -t filter -F
   $IPT -t filter -X
   $IPT -t nat -F

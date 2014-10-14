@@ -5,9 +5,17 @@
 # Commandes
 IPT=$(which iptables)
 MOD=$(which modprobe)
+SYS=$(which sysctl)
+
+# Internet
+IFACE_INET=eth0
 
 # Réseau local
-IFACE_LAN=eth0
+IFACE_LAN=eth1
+IFACE_LAN_IP=192.168.2.0/24
+
+# Relais des paquets (yes/no)
+MASQ=yes
 
 function start {
   
@@ -33,6 +41,13 @@ function start {
 
   # SSH local
   $IPT -A INPUT -p tcp -i $IFACE_LAN --dport 22 -j ACCEPT
+
+  # SSH limité en provenance de l'extérieur
+  # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 22 -m state --state NEW \
+  #         -m recent --set --name SSH
+  # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 22 -m state --state NEW \
+  #         -m recent --update --seconds 60 --hitcount 2 --rttl --name SSH -j DROP
+  # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 22 -j ACCEPT
 
   # DNS 
   # $IPT -A INPUT -p tcp -i $IFACE_LAN --dport 53 -j ACCEPT
@@ -75,8 +90,18 @@ function start {
   #$IPT -A INPUT -p tcp -i $IFACE_LAN --dport 3128 -j ACCEPT
   #$IPT -A INPUT -p udp -i $IFACE_LAN --dport 3128 -j ACCEPT
 
+  # Squid transparent
+  # $IPT -A PREROUTING -t nat -i $IFACE_LAN -p tcp ! -d 192.168.2.1 \
+  #               --dport 80 -j REDIRECT --to-port 3128
+
   # Icecast
   # $IPT -A INPUT -p tcp -i $IFACE_LAN --dport 8000 -j ACCEPT
+
+  # Activer le relais des paquets
+  if [ $MASQ = 'yes' ]; then
+    $IPT -t nat -A POSTROUTING -o $IFACE_INET -s $IFACE_LAN_IP -j MASQUERADE
+    $SYS -q -w net.ipv4.ip_forward=1
+  fi
 
   # Enregistrer les connexions refusées
   $IPT -A INPUT -j LOG --log-prefix "+++ IPv4 packet rejected +++"
@@ -113,6 +138,8 @@ function stop {
   $IPT -t mangle -F
   $IPT -t mangle -X
 
+  # Désactiver le relais des paquets
+  $SYS -q -w net.ipv4.ip_forward=1
 }
 
 # rc.firewall { start | restart | stop | status }
