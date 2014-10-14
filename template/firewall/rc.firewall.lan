@@ -2,19 +2,29 @@
 #
 # /etc/rc.d/rc.firewall
 
+# Commandes
 IPT=$(which iptables)
 MOD=$(which modprobe)
+SYS=$(which sysctl)
+
+# Internet
 IFACE_INET=eth0
+
+# Réseau local
 IFACE_LAN=eth1
+IFACE_LAN_IP=192.168.2.0/24
+
+# Relais des paquets (yes/no)
+MASQ=yes
 
 function start {
   
-  # Default policies
+  # Politique par défaut
   $IPT -P INPUT DROP
   $IPT -P FORWARD ACCEPT
   $IPT -P OUTPUT ACCEPT
 
-  # Trust ourselves
+  # Faire confiance à nous-mêmes ;o)
   $IPT -A INPUT -i lo -j ACCEPT
 
   # Ping
@@ -22,17 +32,17 @@ function start {
   $IPT -A INPUT -p icmp --icmp-type time-exceeded -j ACCEPT
   $IPT -A INPUT -p icmp --icmp-type destination-unreachable -j ACCEPT
 
-  # Established connections
+  # Connexions établies
   $IPT -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
 
-  # Local FTP 
+  # FTP local
   # $MOD ip_conntrack_ftp
   # $IPT -A INPUT -p tcp -i $IFACE_LAN --dport 21 -j ACCEPT
 
-  # Local SSH 
+  # SSH local
   $IPT -A INPUT -p tcp -i $IFACE_LAN --dport 22 -j ACCEPT
 
-  # Limited SSH from the outside
+  # SSH limité en provenance de l'extérieur
   # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 22 -m state --state NEW \
   #         -m recent --set --name SSH
   # $IPT -A INPUT -p tcp -i $IFACE_INET --dport 22 -m state --state NEW \
@@ -80,15 +90,20 @@ function start {
   #$IPT -A INPUT -p tcp -i $IFACE_LAN --dport 3128 -j ACCEPT
   #$IPT -A INPUT -p udp -i $IFACE_LAN --dport 3128 -j ACCEPT
 
-  # Transparent proxy : redirect all HTTP requests except those for the server
-  # itself to port 3128
+  # Squid transparent
   # $IPT -A PREROUTING -t nat -i $IFACE_LAN -p tcp ! -d 192.168.2.1 \
   #               --dport 80 -j REDIRECT --to-port 3128
 
   # MPD 
   # $IPT -A INPUT -p tcp -i $IFACE_LAN --dport 8000 -j ACCEPT
 
-  # Log rejected connections
+  # Activer le relais des paquets
+  if [ $MASQ = 'yes' ]; then
+    $IPT -t nat -A POSTROUTING -o $IFACE_INET -s $IFACE_LAN_IP -j MASQUERADE
+    $SYS -q -w net.ipv4.ip_forward=1
+  fi
+
+  # Enregistrer les connexions refusées
   $IPT -A INPUT -j LOG --log-prefix "+++ IPv4 packet rejected +++"
   $IPT -A INPUT -j REJECT
   
@@ -96,7 +111,7 @@ function start {
 
 function stop {
 
-  # Set default policies to ACCEPT everything
+  # Politique ACCEPT par défaut
   $IPT -t filter -P INPUT ACCEPT
   $IPT -t filter -P FORWARD ACCEPT
   $IPT -t filter -P OUTPUT ACCEPT
@@ -110,12 +125,12 @@ function stop {
   $IPT -t mangle -P OUTPUT ACCEPT
   $IPT -t mangle -P POSTROUTING ACCEPT
 
-  # Zero out all counters
+  # Remettre les compteurs à zéro
   $IPT -t filter -Z
   $IPT -t nat -Z
   $IPT -t mangle -Z
   
-  # Flush all active rules and delete all custom chains
+  # Supprimer toutes les règles actives et les chaînes personnalisées
   $IPT -t filter -F
   $IPT -t filter -X
   $IPT -t nat -F
@@ -123,6 +138,8 @@ function stop {
   $IPT -t mangle -F
   $IPT -t mangle -X
 
+  # Désactiver le relais des paquets
+  $SYS -q -w net.ipv4.ip_forward=1
 }
 
 # rc.firewall { start | restart | stop | status }
