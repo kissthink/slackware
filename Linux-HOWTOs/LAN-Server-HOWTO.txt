@@ -2,9 +2,9 @@
 LAN Server HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
 ================
 
-Dernière révision : 28 janvier 2014
+Dernière révision : 14 octobre 2014
 
-Ce HOWTO décrit l'installation d'un serveur de réseau local sous Slackware.
+Ce HOWTO décrit l'installation d'un serveur de réseau local Slackware 14.1.
 
   * HP Proliant Microserver
   * Démarrer sur le support d'installation
@@ -22,18 +22,6 @@ Ce HOWTO décrit l'installation d'un serveur de réseau local sous Slackware.
 HP Proliant Microserver
 -----------------------
 
-Réglage du BIOS :
-
-Appuyer sur [F10] pour entrer dans le BIOS > onglet 'Advanced'.
-
-  > 'CPU Configuration' :
-  * 'Secure Virtual Machine Mode' : disabled
-
-  > 'IDE Configuration' :
-  * 'SATA Controller Mode'        : AHCI
-  * 'Embedded SATA Link Rate'     : 3.0 Gbps max
-  * 'Drive Write Cache'           : disabled
-
 Le HP Proliant Microserver ne contient pas de lecteur optique. Il faut donc
 confectionner une clé USB bootable. Pour plus de détails, voir le
 'USB-Install-HOWTO'.
@@ -44,21 +32,12 @@ Démarrer sur le support d'installation
 
 Options de démarrage :
 
-  * 'huge.s'    -> 64bit
-  * 'hugesmp.s' -> 32bit
+  * 'huge.s'    -> 64-bit
+  * 'hugesmp.s' -> 32-bit
   * 'vga=788'   -> affichage 800x600
   * 'vga=791'   -> affichage 1024x768
 
 Choix du clavier : 'azerty/fr-latin1.map' pour un clavier AZERTY français.
-
-Si l'on utilise une clé USB, créer un point de montage :
-
-  # mkdir /disk
-
-Identifier et monter la clé :
-
-  # ls -l /dev/sd*
-  # mount /dev/sdX1 /disk
 
 
 Faire le ménage sur les disques
@@ -138,10 +117,6 @@ Lancer l'installation :
   # setup
 
 L'installateur proposera les disques RAID '/dev/mdX' au formatage.
-
-SOURCE MEDIA SELCTION : Si l'on installe à partir de la clé, il faudra choisir
-'Install from a pre-mounted directory' et indiquer '/disk/slackware' pour
-Slackware et '/disk/slackware64' pour Slackware64 dans l'écran subséquent.
 
 Sélectionner les séries de paquets :
 
@@ -365,7 +340,13 @@ Procéder à un réglage initial de l'horloge système :
 
   # ntpdate pool.ntp.org
 
-Récupérer mes scripts et mes fichiers de configuration :
+
+Télécharger les scripts Microlinux
+----------------------------------
+
+Je fournis une collection de scripts et de fichiers de configuration prêts à
+l'emploi pour accélérer le processus d'installation. Récupérez toute cette
+arborescence en utilisant la commande suivante :
 
   # cd 
   # git clone https://github.com/kikinovak/slackware
@@ -374,11 +355,30 @@ Récupérer mes scripts et mes fichiers de configuration :
 Configurer slackpkg
 -------------------
 
-Télécharger et installer le plug-in slackpkg+ pour slackpkg :
+Dans la configuration par défaut, le gestionnaire de paquets 'slackpkg' ne
+fonctionne qu'avec les dépôts officiels de Slackware. Nous devons installer le
+plugin 'slackpkg+' de Matteo Rossini pour activer l'utilisation de dépôts de
+paquets tiers. Microlinux vous évite la corvée en fournissant des paquets
+'slackpkg+' préconfigurés pour l'utilisation des dépôts MLES.
 
-  # links http://slakfinder.org/slackpkg+
+En ligne de commande, utilisez le navigateur Links pour accéder aux dépôts
+distants :
 
-Sélectionner un miroir de téléchargement, par exemple :
+  # links http://www.microlinux.fr/slackware
+
+Repérez les dépôts 'server-14.1-*' et naviguez vers le sous-répertoire 'ap/'
+correspondant à l'architecture de votre processeur :
+
+  * systèmes 32-bits : server-14.1-32bit/slackware/ap/
+  * systèmes 64-bits : server-14.1-64bit/slackware64/ap/
+
+Téléchargez le paquet 'slackpkg+' depuis le dépôt (en utilisant la touche [D]
+comme "Download" dans le navigateur Links) et installez-le :
+
+  # installpkg slackpkg+-1.3.2-noarch-2_microlinux.txz
+
+Éditez '/etc/slackpkg/mirrors' et sélectionnez un miroir Slackware en fonction
+de votre pays, par exemple :
 
 --8<---------- /etc/slackpkg/mirrors -----------------------------------------
 ...
@@ -387,39 +387,44 @@ ftp://ftp.fu-berlin.de/unix/linux/slackware/slackware64-14.1/
 ...
 --8<--------------------------------------------------------------------------
 
-Éditer '/etc/slackpkg/slackpkgplus.conf'. Sur Slackware64 :
+Assurez-vous de ne choisir qu'un seul miroir pour Slackware stable. Si vous
+utilisez MLES en France, optez pour le miroir ftp.fu-berlin.de ou
+mirror.switch.ch. Le miroir OVH est inutilisable comme à peu près tout ce qui
+vient de chez OVH.
 
---8<---------- /etc/slackpkg/slackpkgplus.conf -------------------------------
-# /etc/slackpkg/slackpkgplus.conf
-SLACKPKGPLUS=on
-VERBOSE=1
-ALLOW32BIT=off
-USEBL=1
-WGETOPTS="--timeout=5 --tries=1"
-GREYLIST=on
-PKGS_PRIORITY=( microlinux:.* )
-REPOPLUS=( microlinux slackpkgplus )
-MIRRORPLUS['microlinux']=http://www.microlinux.fr/slackware/MLES-14.0-64bit/
-MIRRORPLUS['slackpkgplus']=http://slakfinder.org/slackpkg+/
---8<--------------------------------------------------------------------------
-
-Mettre à jour les clés GPG et les infos sur les paquets disponibles :
+Récupérez les clés GPG :
 
   # slackpkg update gpg
+
+Mettez à jour les informations sur les paquets disponibles :
+
   # slackpkg update
 
-Élaguer le système de base :
 
-  # cd tools
+Élaguer et installer les paquets MLES
+-------------------------------------
+
+Chaque sous-répertoire 'server-$VERSION-$ARCH/tools/' fournit un script
+'trim_server_base.sh' qui se charge de deux choses :
+
+  1. supprimer quelques paquets superflus
+  2. installer quelques paquets supplémentaires
+
+Élaguez votre système Slackware de base :
+
+  # cd slackware/server-$VERSION-$ARCH/tools/
   # ./trim_server_base.sh
 
-Lancer la mise à jour initiale :
+Le script dans l'arborescence 64-bit n'est qu'un lien symbolique vers la
+version 32-bit.
+
+Lancer la mise à jour du système de base Slackware :
 
   # slackpkg upgrade-all
 
-Installer la collection de paquets MLES :
+À partir de là, les paquets MLES peuvent être installés comme ceci :
 
-  # ./install_MLES.sh
+  # slackpkg install microlinux-server
 
 
 Peaufiner la configuration du réseau
@@ -451,6 +456,7 @@ Corriger la configuration de l'installateur dans '/etc/hosts'. Par exemple :
 192.168.2.1   nestor.microlinux.montpezat nestor
 --8<--------------------------------------------------------------------------
 
+**********************************************
 
 Activer le relais des paquets
 -----------------------------
