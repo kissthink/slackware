@@ -132,6 +132,9 @@ xap/gnote
 xap/winff
 x/slack-wallpapers
 l/libupnp
+l/eigen3
+l/vigra
+xap/enblend-enfuse
 
 
 
