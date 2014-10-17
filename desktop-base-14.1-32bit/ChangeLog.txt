@@ -1,3 +1,9 @@
+Thu Oct 16 13:29:41 CEST 2014
+d/jdk-7u71-i586-1_microlinux.txz: Upgraded.
+l/eigen3-3.1.2-i486-1_microlinux.txz: Added.
+l/vigra-1.10.0-i486-1_microlinux.txz: Added.
+xap/enblend-enfuse-4.1.2-i486-1_microlinux.txz: Added.
++--------------------------+
 Sun Oct 12 10:48:37 CEST 2014
 l/libupnp-1.6.17-i486-1_microlinux.txz: Added.
 +--------------------------+
