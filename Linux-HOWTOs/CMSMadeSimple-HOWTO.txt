@@ -240,9 +240,9 @@ Procéder de même pour le gabarit des News :
 
 Sauvegarder le gabarit par défaut 'Sample' vers une copie 'SampleOrig'.
 
-Et de même pour la feuille de style :
+De même pour les feuilles de style 'NCleanBlue' et 'ncleanblueutils' :
 
-  Disposition > Feuilles de style > Layout: NCleanBlue
+  Disposition > Feuilles de style > Layout: NCleanBlue/ncleanblueutils
 
 
 Rendre le site plus lisible
@@ -509,6 +509,8 @@ L'interface d'édition des articles propose deux champs :
 
 Pour un affichage correct des News, il faut laisser vide le champ 'Sommaire' et
 éditer uniquement le champ 'Contenu'.
+
+
 
 
 ------------------------------------------------------------------------------
