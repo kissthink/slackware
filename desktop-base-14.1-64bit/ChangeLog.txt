@@ -1,3 +1,9 @@
+Fri Oct 17 18:13:58 CEST 2014
+l/libpano13-2.9.18-x86_64-1_microlinux.txz: Added.
+l/tclap-1.2.1-x86_64-1_microlinux.txz: Added.
+l/exiftool-9.70-x86_64-1_microlinux.txz: Added.
+xap/hugin-2013.0.0-x86_64-1_microlinux.txz: Added.
++--------------------------+
 Thu Oct 16 13:29:41 CEST 2014
 d/jdk-7u71-x86_64-1_microlinux.txz: Upgraded.
 l/eigen3-3.1.2-x86_64-1_microlinux.txz: Added.
