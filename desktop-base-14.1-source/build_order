@@ -135,6 +135,11 @@ l/libupnp
 l/eigen3
 l/vigra
 xap/enblend-enfuse
+l/libpano13
+l/tclap
+l/exiftool
+xap/hugin
+
 
 
 

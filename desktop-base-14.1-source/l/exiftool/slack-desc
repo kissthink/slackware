@@ -1,0 +1,12 @@
+        |-----handy-ruler------------------------------------------------------|
+exiftool: exiftool (read, write, and edit EXIF and other meta information)
+exiftool:
+exiftool: ExifTool is a platform-independent Perl library (Image::ExifTool)
+exiftool: plus a command-line application (exiftool) for reading, writing,
+exiftool: and editing meta information in image, audio, and video files.
+exiftool: ExifTool supports many different types of metadata including EXIF,
+exiftool: GPS, IPTC, XMP, JFIF, GeoTIFF, ICC Profile, Photoshop IRB, AFCP,
+exiftool: FlashPix, AFCP, and ID3, and maker notes of many digital cameras.
+exiftool:
+exiftool: 
+exiftool: Package created by Niki Kovacs <info@microlinux.fr>
