@@ -113,7 +113,8 @@ cmsms.nestor     IN A 192.168.2.1
 ...
 --8<--------------------------------------------------------------------------
 
-Redémarrer Bind et Apache pour prendre en compte les modifications.
+Si l'on utilise Dnsmasq, ajouter une entrée correspondante dans le fichier
+'/etc/hosts' du serveur.
 
 Lancer l'installation avec Firefox, en l'ouvrant à l'adresse configurée.
 
