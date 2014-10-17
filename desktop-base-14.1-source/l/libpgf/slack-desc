@@ -1,0 +1,12 @@
+      |-----handy-ruler------------------------------------------------------|
+libpgf: libpgf (Image file format)
+libpgf:
+libpgf: libpgf is a new image file format, based on discrete, fast wavelet
+libpgf: transform with progressive coding features that provides lossless
+libpgf: and lossy compression.
+libpgf:
+libpgf: It's considered as one of the best algorithms available these days
+libpgf: for compression of natural images
+libpgf:
+libpgf: 
+libpgf: Package created by Niki Kovacs <info@microlinux.fr>

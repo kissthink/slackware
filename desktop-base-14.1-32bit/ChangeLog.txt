@@ -3,6 +3,7 @@ l/libpano13-2.9.18-i486-1_microlinux.txz: Added.
 l/tclap-1.2.1-i486-1_microlinux.txz: Added.
 l/exiftool-9.70-i486-1_microlinux.txz: Added.
 xap/hugin-2013.0.0-i486-1_microlinux.txz: Added.
+l/libpgf-6.14.12-i486-2_microlinux.txz: Added.
 +--------------------------+
 Thu Oct 16 13:29:41 CEST 2014
 d/jdk-7u71-i586-1_microlinux.txz: Upgraded.
