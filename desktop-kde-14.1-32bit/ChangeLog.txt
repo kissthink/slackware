@@ -1,3 +1,7 @@
+Sat Oct 18 11:27:10 CEST 2014
+kde/digikam-4.4.0-i486-2_microlinux.txz: Rebuilt.
+	Recompiled against the recently added eigen3 and libpgf libraries.
++--------------------------+
 Sun Oct 12 16:40:15 CEST 2014
 kde/digikam-4.4.0-i486-1_microlinux.txz: Upgraded.
 +--------------------------+
