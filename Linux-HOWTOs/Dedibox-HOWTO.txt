@@ -2,16 +2,23 @@
 Dedibox HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
 =============
 
-Dernière révision : 7 février 2013
+Dernière révision : 19 octobre 2014
 
-Ce HOWTO décrit l'installation et la configuration de Slackware64 14.0 sur un
+Ce HOWTO décrit l'installation et la configuration de Slackware64 14.1 sur un
 serveur dédié Dedibox SC de chez Online. Slackware ne figure pas parmi les
 distributions proposées par Online, mais on peut quand-même l'installer à
 l'aide de la console de secours, avec un peu de patience.
 
+  * Installation initiale
+  * Démarrer une session de secours
+  * Préparer le disque
+  * Installer un système Slackware minimal
+  * Configurer l'installation minimale
+  * Premier redémarrage
 
-Installation
-------------
+
+Installation initiale
+---------------------
 
 Ouvrir la console Online : 
 
@@ -27,22 +34,44 @@ Partitionnement : peu importe, vu qu'on le refera à la main
 
 Noter l'adresse IP du serveur, l'IP de la passerelle et les DNS
 
+
+Démarrer une session de secours
+-------------------------------
+
 Une fois que le système est installé, passer en 'Mode secours' et choisir
-'Ubuntu 12.04 LTS 64bits' comme système de secours.
+'Ubuntu 14.04 amd64' comme système de secours.
 
 La console affiche un identifiant et un mot de passe qui permettent de se
-connecter en SSH au système de secours.
+connecter en SSH au système de secours. Attendre une ou deux minutes, puis
+lancer la connexion. 
 
-Attendre une ou deux minutes, puis lancer la connexion. Parfois, il faut s'y
-prendre à plusieurs reprises, pour une raison mystérieuse :
+  /!\ Parfois, le mot de passe temporaire pour la session de secours ne
+  fonctionne pas tout de suite. Dans ce cas, il suffit d'insister un peu.
 
-  $ ssh kikinovak@88.191.137.75
-  kikinovak@88.191.137.75's password: 
-  Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-27-generic x86_64)
+  $ ssh kikinovak@195.154.65.130
+  kikinovak@195.154.65.130's password: 
+
+  Welcome to Ubuntu 14.04.1 LTS (GNU/Linux 3.13.0-24-generic x86_64)
 
    * Documentation:  https://help.ubuntu.com/
 
-   System information disabled due to load higher than 1.0
+    System information as of Sun Oct 19 10:10:44 CEST 2014
+
+    System load:    1.23      Processes:           79
+    Usage of /home: unknown   Users logged in:     0
+    Memory usage:   3%        IP address for eth0: 195.154.65.130
+    Swap usage:     0%
+
+    Graph this data and manage this system at:
+      https://landscape.canonical.com/
+
+
+  The programs included with the Ubuntu system are free software;
+  the exact distribution terms for each program are described in the
+  individual files in /usr/share/doc/*/copyright.
+
+  Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+  applicable law.
 
      _     _                ____
     | |   (_)__   __ ___   |  _ \  ___  ____ ___  _  _  ___
@@ -53,29 +82,31 @@ prendre à plusieurs reprises, pour une raison mystérieuse :
   Aide et documentation : http://documentation.dedibox.fr
   Console de gestion    : http://console.dedibox.fr
 
-  Serveur : 88-191-137-75
-  Adr IP  : 88.191.137.75
-  Adr MAC : 60:eb:69:8f:14:7c
-  Système : Ubuntu 12.04 LTS (precise) x86_64
-  Démarré : mercredi 6 février 2013, 06:20:57 (UTC+0100)
+  Serveur : 195-154-65-130
+  Adr IP  : 195.154.65.130
+  Adr MAC : e8:9a:8f:13:e6:47
+  Système : Ubuntu 14.04.1 LTS (trusty) x86_64
+  Démarré : dimanche 19 octobre 2014, 10:11:33 (UTC+0200)
 
-  kikinovak@88-191-137-75:~$
+  To run a command as administrator (user "root"), use "sudo <command>".
+  See "man sudo_root" for details.
+
+  kikinovak@195-154-65-130:~$ 
+
+
+Préparer le disque
+------------------
 
 Remettre à zéro la table de partitions :
 
   $ sudo dd if=/dev/zero of=/dev/sda bs=512 count=64
 
 Le changement de la table de partitions n'est pas pris en compte par la console
-de secours. Il faut donc la quitter et en relancer une autre, c'est-à-dire :
+de secours. Il faut donc la quitter et en relancer une autre. Dans la console
+Online, passer successivement par 'Repasser en mode normal' et 'Secours', puis
+se reconnecter en SSH avec un nouveau mot de passe. 
 
-  1. Repasser en mode normal ;
-  2. Secours ;
-  4. Éditer '~/.ssh/known_hosts' sur la machine locale et effacer la ligne avec
-     l'IP de la Dedibox ;
-  3. Se reconnecter en SSH avec un nouvel identifiant/mot de passe.
-
-Une fois qu'on s'est reconnecté au système de secours, on va activer le compte
-root :
+Activer le compte root :
 
   $ sudo passwd root
 
@@ -88,25 +119,36 @@ Définir la variable d'environnement LANG :
   # LANG=C
   # export LANG
 
-Partitionner le disque :
+Si l'on utilise 'fdisk' pour le partitionnement, on se retrouve avec des
+erreurs du style 'Partition 1 does not start on physical sector boundary.' Il
+vaut mieux utiliser 'gdisk'. Éventuellement, voir le 'Partition-HOWTO' pour
+plus de détails :
 
-  # cfdisk /dev/sda
+  # gdisk /dev/sda
 
 Schéma :
 
-  # fdisk -l
-  ...
-     Device Boot      Start         End      Blocks   Id  System
-  /dev/sda1   *           1          12       96358+  83  Linux
-  /dev/sda2              13         255     1951897+  82  Linux swap / Solaris
-  /dev/sda3             256       19457   154240065   83  Linux
+  # gdisk -l /dev/sda
 
-Formater le disque :
+  Found valid GPT with protective MBR; using GPT.
+  Disk /dev/sda: 976773168 sectors, 465.8 GiB
+
+  ...
+
+  Number  Start (sector)    End (sector)  Size       Code  Name
+     1            2048          206847   100.0 MiB   8300  Linux filesystem
+     2          206848         4401151   2.0 GiB     8200  Linux swap
+     3         4401152       976773134   463.7 GiB   8300  Linux filesystem
+
+
+Étant donné que nous n'avons pas accès à l'installateur Slackware, nous allons
+tout simplement formater le disque à la main :
 
   # mkfs.ext2 -v /dev/sda1
   # mkswap /dev/sda2
   # swapon /dev/sda2
   # mkfs.ext4 -v /dev/sda3
+
 
 Monter la partition principale :
 
@@ -117,8 +159,13 @@ Créer et monter la partition '/boot' :
   # mkdir /mnt/boot
   # mount /dev/sda1 /mnt/boot
 
-La console de secours comporte déjà le client FTP 'lftp'. Pour plus de confort,
-on va installer NcFTP :
+
+Installer un système Slackware minimal
+--------------------------------------
+
+On va récupérer un système Slackware minimal sur un miroir FTP. La console de
+secours comporte déjà le client FTP 'lftp'. Pour plus de confort, on va
+installer NcFTP :
 
   # apt-get update
   # apt-get install ncftp 
@@ -130,18 +177,22 @@ deux reprises :
 
   # mkdir slackware64
   # cd slackware64/
-  # ncftp ftp.slackware.at
-  ncftp > cd slackware64-14.0/slackware64/
+  # ncftp mirror.switch.ch
+  ncftp > cd mirror/slackware/slackware64-14.1/slackware64/
   ncftp > get -R a ap d n
   ncftp > bye
 
-  > Alternativement, on peut se connecter à ftp://mirror.ovh.net.
+  /!\ Le téléchargement produit quelques avertissements sans conséquence, que
+  l'on peut ignorer :
+
+    tar: This does not look like a tar archive
+    tar: Exiting with failure status due to previous errors
 
 Installer 'a/pkgtools' dans l'environnement de secours :
 
-  # cp a/pkgtools-14.0-noarch-2.tgz /
+  # cp a/pkgtools-14.1-noarch-2.tgz /
   # cd /
-  # tar xvzf pkgtools-14.0-noarch-2.tgz 
+  # tar xvzf pkgtools-14.1-noarch-2.tgz 
   ./
   var/
   var/log/
@@ -176,28 +227,49 @@ sous Ubuntu :
 
   # ln -s /usr/bin/du /bin/du
 
-Installer les paquets téléchargés vers l'environnement chrooté. On pourra
-sereinement ignorer l'avertissement (WARNING) concernant 'pkgtool' et la
-version de 'tar' :
+Installer les paquets téléchargés vers l'environnement chrooté :
 
   # cd /root/slackware64
   # installpkg --root /mnt */*.t?z
 
-Supprimer les groupes de paquets téléchargés pour faire de la place, puis
-télécharger et installer le groupe L :
+  /!\ Là encore, on pourra sereinement ignorer l'avertissement concernant la
+  version de 'tar' :
+
+    WARNING: pkgtools are unstable with tar > 1.13.
+             You should provide a "tar-1.13" in your $PATH.
+
+Le système de secours chargé dans la RAM est passablement saturé avec les
+quatre groupes de paquets téléchargés :
+
+  # df -h
+  Filesystem      Size  Used Avail Use% Mounted on
+  aufs            985M  675M  311M  69% /
+
+On va les supprimer pour faire de la place :
 
   # rm -rf a/ ap/ d/ n/
-  # ncftp ftp.slackware.at
-  ncftp > cd slackware64-14.0/slackware64/
+  # df -h
+  Filesystem      Size  Used Avail Use% Mounted on
+  aufs            985M  226M  760M  23% /
+
+À présent, on peut récupérer et installer le groupe de paquets L :
+
+  # ncftp mirror.switch.ch
+  ncftp > cd mirror/slackware/slackware64-14.1/slackware64/
   ncftp > get -R l
   ncftp > bye
   # installpkg --root /mnt l/*.t?z
   # rm -rf l/
 
-Lier les systèmes '/proc' et '/dev' à ceux de la console de secours :
 
-  # mount -t proc /proc /mnt/proc
-  # mount --bind /dev /mnt/dev
+Configurer l'installation minimale
+----------------------------------
+
+Lier les systèmes '/proc', '/dev' et '/sys' à ceux de la console de secours :
+
+  # mount --rbind /proc /mnt/proc
+  # mount --rbind /dev /mnt/dev
+  # mount --rbind /sys /mnt/sys
 
 Changer dans l'environnement chrooté en spécifiant l'interpréteur de commandes
 Bash :
@@ -213,29 +285,39 @@ configuration :
 
   [*] liloconfig
 
-L'installation de LILO produit quelques messages d'erreur sans conséquence. Il
-suffit d'éditer '/etc/lilo.conf' manuellement et de corriger quelques entrées,
-notamment la partition principale qui n'est pas détectée automatiquement.
+OPTIONAL LILO append    : 'ipv6.disable=1'
+
+USE UTF-8 TEXT CONSOLE  : Yes
+
+SELECT LILO DESTINATION : MBR - Install to Master Boot Record
+
+Éditer '/etc/lilo.conf' manuellement et corriger quelques entrées, notamment
+la partition principale qui n'est pas détectée automatiquement.
 
 --8<---------- /etc/lilo.conf ------------------------------------------------
 ...
-append="vt.default_utf8=1"
+lba32
+append="ipv6.disable=1 vt.default_utf8=1"
 boot=/dev/sda
 compact
-lba32
 ...
 timeout = 10
 ...
 image = /boot/vmlinuz
   root = /dev/sda3
-  label = Linux
+  label = MLES-14.1-64bit
   read-only
 --8<--------------------------------------------------------------------------
 
-Ne pas oublier :
+Prendre en compte les modifications en ignorant les avertissements sans
+conséquence :
 
   # lilo
-  Added Linux *
+  Warning: Unable to determine video adapter in use in the present system.
+  Warning: Video adapter does not support VESA BIOS extensions needed for
+    display of 256 colors.  Boot loader will fall back to TEXT only operation.
+  Added MLES-14.1-64bit  *
+  2 warnings were issued.
 
 Configurer le réseau :
 
@@ -253,15 +335,17 @@ Configurer les services au démarrage :
   [*] rc.syslog
   [*] rc.sshd
 
-Lancer les autres scripts de configuration :
+Générer les certificats SSL :
 
   [*] cacerts - Rebuilt SSL certificate database
 
-Générer les certificats SSL (se fait automatiquement).
+Configurer le fuseau horaire :
 
   [*] timeconfig - Select your timezone
 
-Fuseau horaire : Europe/Paris
+Horloge système : UTC
+
+Fuseau horaire  : Europe/Paris
 
 Le fichier '/etc/fstab' devra être créé manuellement comme ceci :
 
@@ -284,13 +368,20 @@ Quitter l'environnement chrooté :
 
 Démonter les partitions :
 
-  # umount /mnt/proc
+  # umount /mnt/sys
   # umount /mnt/dev
+  # umount /mnt/proc
   # umount /mnt/boot
   # umount /mnt
 
-Revenir dans l'interface web de la console Online, repasser en mode normal
-et croiser les doigts. 
+On obtient probablement des messages d'erreur de ce style :
+
+  umount: /mnt: device is busy.
+          (In some cases useful info about processes that use
+           the device is found by lsof(8) or fuser(1))
+
+Dans un cas comme dans l'autre, revenir dans l'interface web de la console
+Online, repasser en mode normal et croiser les doigts. 
 
 
 Premier redémarrage
@@ -480,6 +571,24 @@ Effectuer les mises à jour de sécurité :
 
   # slackpkg update
   # slackpkg upgrade-all
+
+
+Notes sur Slackware64 14.1
+--------------------------
+
+La session de secours proposée est basée sur Ubuntu 14.04 LTS 64-bits.
+
+Ce n'est plus la peine de nettoyer ~/.ssh/known_hosts après la connexion
+initiale à la session de secours.
+
+Pour le partitionnement, on choisira 'gdisk'.
+
+Miroir Slackware pour le téléchargement :
+
+  * ftp://mirror.switch.ch/mirror/slackware/
+
+Option de démarrage pour LILO : ipv6.disable=1
+
 
 
 ------------------------------------------------------------------------------
