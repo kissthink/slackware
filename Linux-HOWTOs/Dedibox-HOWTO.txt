@@ -517,6 +517,18 @@ Pour le passage au kernel GENERIC, c'est ici :
   * LILO-HOWTO.txt
 
 
+Peaufiner la configuration du réseau
+------------------------------------
+
+Éditer '/etc/hosts' comme ceci :
+
+--8<----------- /etc/hosts ---------------------------------------------------
+127.0.0.1          localhost.localdomain localhost
+195.154.65.130     sd-41893.dedibox.fr sd-41893
+--8<--------------------------------------------------------------------------
+
+
+
 Sécurité
 --------
 
