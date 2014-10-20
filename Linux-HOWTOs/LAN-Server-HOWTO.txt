@@ -456,44 +456,26 @@ Corriger la configuration de l'installateur dans '/etc/hosts'. Par exemple :
 192.168.2.1   nestor.microlinux.montpezat nestor
 --8<--------------------------------------------------------------------------
 
-**********************************************
 
-Activer le relais des paquets
------------------------------
+Pare-feu
+--------
 
-Pour activer le relais des paquets ("packet forwarding"), il faut utiliser le
-script '/etc/rc.d/rc.ip_forward' :
+Le répertoire 'template/' contient un pare-feu prêt à l'emploi :
 
-  # chmod 0755 /etc/rc.d/rc.ip_forward
-  # /etc/rc.d/rc.ip_forward {start|stop|restart}
-
-Il suffit de rendre le script exécutable pour qu'il se lance au démarrage de
-la machine.
-
-  /!\ Le relais des paquets est activé, mais pas encore défini. Pour ce faire,
-  il faudra ajouter une règle spécifique au script du pare-feu.
-
-
-Sécuriser le serveur
---------------------
-
-Dans un premier temps, configurer les encapsuleurs TCP. Voir le
-TCP-Wrapper-HOWTO.
-
-Ensuite, activer le pare-feu. Copier le script 'rc.firewall.lan-server' à
-l'endroit approprié et l'activer :
-
-  # cp rc.firewall.lan-server /etc/rc.d/rc.firewall
-  # chmod 0755 /etc/rc.d/rc.firewall
+  # cd template/
+  # cp rc.firewall.router /etc/rc.d/rc.firewall
+  # chmod +x /etc/rc.d/rc.firewall
   # /etc/rc.d/rc.firewall start
-  
 
-Installer les services
-----------------------
+Deux remarques :
 
-  * Serveur DHCP (DHCP-HOWTO)
-  * Serveur DNS (DNS-HOWTO)
-  * Serveur NTP (NTP-HOWTO)
+  1. Si le serveur n'est équipé d'une seule carte réseau et qu'il ne fait donc
+  pas office de routeur, on choisira le modèle de pare-feu rc.firewall.lan au
+  lieu de rc.firewall.router.
+
+  2. Le script rc.firewall.router gère également le relais des paquets. On
+  n'utilisera donc pas le script '/etc/rc.d/rc.ip_forward' proposé par
+  Slackware.
 
 
 ------------------------------------------------------------------------------
