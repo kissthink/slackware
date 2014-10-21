@@ -99,6 +99,7 @@ function start {
 
   # Activer le relais des paquets
   if [ $MASQ = 'yes' ]; then
+    echo ":: Activating IPv4 packet forwarding."
     $IPT -t nat -A POSTROUTING -o $IFACE_INET -s $IFACE_LAN_IP -j MASQUERADE
     $SYS -q -w net.ipv4.ip_forward=1
   fi
@@ -139,6 +140,7 @@ function stop {
   $IPT -t mangle -X
 
   # Désactiver le relais des paquets
+  echo ":: Disabling IPv4 packet forwarding."
   $SYS -q -w net.ipv4.ip_forward=1
 }
 
