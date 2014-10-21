@@ -25,13 +25,6 @@ Ouvrir les ports suivants dans le pare-feu :
   * 53 en TCP et UDP (requêtes DNS)
   * 67 et 68 en UDP (requêtes DHCP)
 
-Étant donné que Dnsmasq fournit les mêmes services que DHCPD et Bind, il faut
-éviter qu'ils se tirent dans les pattes. Vérifier s'ils sont bien désactivés :
-
-  # ls -l /etc/rc.d/rc.{dhcpd,bind}
-  -rw-r--r-- 1 root root 3378 juin  24  2010 /etc/rc.d/rc.bind
-  -rw-r--r-- 1 root root  883 août   9  2013 /etc/rc.d/rc.dhcpd
-
 Le fichier '/etc/hosts' du serveur local doit comporter au moins les deux
 lignes suivantes :
 
