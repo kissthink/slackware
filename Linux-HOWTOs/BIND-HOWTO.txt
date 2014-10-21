@@ -1,0 +1,302 @@
+==========
+BIND HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+==========
+
+Dernière révision : 21 octobre 2014
+
+Ce HOWTO décrit la mise en place d'un serveur DNS avec BIND sur un serveur
+dédié tournant sous Slackware.
+
+  * Généralités et prérequis
+  * Serveur cache DNS
+  * Serveur maître primaire 
+  * DNS secondaire
+  * Reverse DNS
+
+
+Généralités et prérequis
+------------------------
+
+Le système de noms de domaine ou DNS ("Domain Name System") permet d'établir
+une correspondance entre les adresses IP et les noms de domaine. Le DNS évite
+ainsi d'avoir à se rappeler des adresses IP.
+
+Pare-feu : ouvrir le port 53 en TCP et en UDP.
+
+
+Serveur cache DNS
+-----------------
+
+La configuration par défaut de BIND alloue un serveur de cache. Outre le
+fichier de configuration principal '/etc/named.conf', on trouvera donc une
+série de fichiers dans '/var/named/caching-example'. On va remonter ces quatre
+fichiers d'un cran, dans le répertoire canonique '/var/named' :
+
+  # cd /var/named
+  # mv -v caching-example/* .
+  « caching-example/localhost.zone » -> « ./localhost.zone »
+  « caching-example/named.ca » -> « ./named.ca »
+  « caching-example/named.local » -> « ./named.local »
+  « caching-example/named.root » -> « ./named.root »
+  # rmdir caching-example
+
+Ce changement devra se refléter dans les trois stances respectives de
+'/etc/named.conf', où il faudra rectifier le chemin vers les fichiers de
+configuration en supprimant le répertoire 'caching-example' :
+
+--8<---------- /etc/named.conf -----------------------------------------------
+options {
+  directory "/var/named";
+};
+
+zone "." IN {
+  type hint;
+  file "named.root";
+};
+
+zone "localhost" IN {
+  type master;
+  file "localhost.zone";
+  allow-update { none; };
+};
+
+zone "0.0.127.in-addr.arpa" IN {
+  type master;
+  file "named.local";
+  allow-update { none; };
+};
+--8<--------------------------------------------------------------------------
+
+À partir de là, il suffit d'ajouter les DNS externes. En passant, on pourra
+également spécifier l'utilisation du port 53 en décommentant l'option
+'query-source', pour éviter les ennuis de pare-feu :
+
+--8<---------- /etc/named.conf -----------------------------------------------
+options {
+  directory "/var/named";
+  query-source address * port 53;
+  forwarders {
+    62.210.16.6;
+    62.210.16.7;
+  };
+};
+...
+--8<--------------------------------------------------------------------------
+
+  > Gare aux erreurs de syntaxe provenant des accollades et des points-virgule
+    oubliés !
+
+Activer le script de démarrage de BIND :
+
+  # chmod +x /etc/rc.d/rc.bind
+
+Gérer le démarrage de BIND :
+
+  # /etc/rc.d/rc.bind start|stop|reload|restart|status
+
+Indiquer au serveur qu'il doit désormais utiliser son propre DNS :
+
+--8<---------- /etc/resolv.conf ----------------------------------------------
+nameserver 127.0.0.1
+--8<--------------------------------------------------------------------------
+
+Vérifier que le serveur écoute bien sur le port 53 en utilisant 'dig' sur
+l'interface loopback :
+
+  # dig -x 127.0.0.1
+
+On doit obtenir quelque chose comme ceci :
+
+  ;; Query time: 2 msec
+  ;; SERVER: 127.0.0.1#53(127.0.0.1)
+
+Exécuter 'dig' sur un domaine extérieur pour vérifier le temps de requête :
+
+  # dig slackware.com
+
+Noter le temps de réponse en fin de résultat :
+
+  ;; Query time: 61 msec
+
+Ce temps devrait être nettement plus court après une deuxième invocation de
+'dig' :
+
+  ;; Query time: 2 msec
+
+
+Serveur maître primaire
+-----------------------
+
+À présent, nous allons configurer BIND comme serveur maître primaire du
+domaine 'slackbox.fr'. Le nom de domaine sera réservé au bureau
+d'enregistrement ("registrar") BookMyName :
+
+  * https://www.bookmyname.com
+
+Pour ajouter une zone DNS à BIND afin de le transformer en serveur maître
+primaire, il faut tout d'abord ajouter une stance dans '/etc/named.conf' :
+
+--8<---------- /etc/named.conf -----------------------------------------------
+...
+zone "slackbox.fr" {
+  type master;
+  file "zone.slackbox.fr";
+};
+--8<--------------------------------------------------------------------------
+
+  > La directive 'allow-transfer' autorise le transfert de la zone vers le
+    serveur DNS secondaire d'Online, en l'occurrence 'nssec.online.net'. 
+
+  > Pour définir un DNS secondaire et en savoir plus, aller dans la console
+    Online > Administrer > DNS secondaires. On s'en occupera une fois que la
+    configuration de la zone sera fonctionnelle.
+
+  > La présence d'un serveur DNS secondaire est nécessaire pour les noms de
+    domaine en ".fr".
+
+Le fichier 'zone.slackbox.fr' devra être édité comme ceci :
+
+--8<---------- /var/named/zone.slackbox.fr ----------------------------------
+; /var/named/zone.slackbox.fr
+$TTL 86400
+$ORIGIN slackbox.fr.
+@ IN SOA ns.slackbox.fr. hostmaster.slackbox.fr. (
+   2014102101   ; sn
+        10800   ; refresh (3 heures)
+          600   ; retry (10 minutes)
+      1814400   ; expiry (3 semaines)
+        10800 ) ; minimum (3 heures)
+        IN          NS      ns.slackbox.fr.
+        IN          NS      nssec.online.net.
+        IN          MX      10 mail.slackbox.fr.
+slackbox.fr.        A       195.154.65.130
+ns      IN          A       195.154.65.130
+mail    IN          A       195.154.65.130
+www     CNAME               slackbox.fr.
+ftp     CNAME               slackbox.fr.
+--8<--------------------------------------------------------------------------
+
+  > La directive '$TTL' ("Time To Live") définit le temps en secondes qu'un
+    enregistrement pourra être gardé dans le cache par un autre serveur de
+    noms.
+
+  > La directive '$ORIGIN' définit le nom de domaine automatiquement ajouté à
+    tous les noms de domaine incomplets (c'est-à-dire "non qualifiés") définis
+    dans un enregistrement DNS. Le nom de domaine est toujours un FQDN ("Fully
+    Qualified Domain Name") et se termine en conséquence par un point.
+
+  > L'enregistrement 'SOA' ("Start Of Authority") définit les principales
+    caractéristiques pour la zone ou le domaine avec un certain nombre de
+    paramètres.
+
+  > Le symbole '@' se substitue à la valeur de '$ORIGIN', concrètement à
+    'slackbox.fr.'
+
+  > 'IN' définit la classe Internet. D'autres valeurs existent, mais elles sont
+    rarement utilisées.
+
+  > L'enregistrement 'NS' définit le serveur de noms primaire pour la
+    zone.
+
+  > 'hostmaster.slackbox.fr' définit l'adresse mail de l'administrateur de la
+    zone. L'adresse 'hostmaster' est recommandée, mais n'importe quelle
+    adresse mail valide peut être définie ici. Étant donné que le symbole '@'
+    a une signification spécifique dans le contexte, on utilise les points
+    comme séparateurs, ce qui explique la syntaxe bizarre. L'adresse mail
+    définie ici est donc 'hostmaster@slackbox.fr'. 
+
+  > '2014102101' définit le numéro de série associé à la zone. Par convention,
+    on utilise le format 'aaaammjjss'. Le numéro de série doit IMPÉRATIVEMENT
+    être mis à jour à chaque fois que l'on modifie le domaine. 
+
+  > La valeur 'refresh' contrôle la mise à jour des informations du serveur de
+    noms esclave de la zone. Les valeurs typiques se situent entre 3 heures
+    (10800) et 24 heures (86400). 
+  
+  > La valeur 'retry' définit le temps d'attente avant une deuxième tentative
+    lorsque le serveur de noms esclave n'arrive pas à contacter le serveur
+    maître pour rafraîchir les informations. Les valeurs typiques se situent
+    entre 10 minutes (600) et 60 minutes (3600). 
+
+  > La valeur 'expiry' définit le laps de temps au bout duquel les
+    enregistrements de zone sont considérés comme ne faisant plus autorité. On
+    choisira une valeur assez élevée, située entre une semaine (604800) à trois
+    semaines (1814400). 
+
+  > La valeur 'minimum' définit le laps de temps durant lequel des réponses
+    négatives ('NXDOMAIN') peuvent être gardées en cache par le serveur de noms
+    esclave. Cette valeur se situera entre 0 et 3 heures (10800). 
+
+  > L'enregistrement 'NS' ("NS Resource Record") définit le ou les serveurs de
+    noms pour le domaine ou la zone. 
+
+  > L'enregistrement 'A' ("A Resource Record") définit l'adresse IPv4 d'un hôte
+    du domaine ou de la zone. 
+
+Vérifier la définition correcte de la zone :
+
+  # named-checkzone slackbox.fr /var/named/zone.slackbox.fr 
+  zone slackbox.fr/IN: loaded serial 2014102101
+  OK
+
+À chaque fois que l'on modifie le fichier de zone, on doit obligatoirement (!)
+incrémenter le numéro de série. Ne pas oublier de redémarrer BIND après chaque
+modification :
+
+  # /etc/rc.d/rc.bind restart
+
+Dans l'interface de gestion de BookMyName (entrée de menu 'Gérer'), il faudra
+indiquer qu'on gère nous-mêmes notre propre DNS. Pour ce faire, cliquer sur le
+nom de domaine dans la liste des noms de domaine, puis sur 'Modifier' dans
+l'entrée de menu 'Vos DNS' :
+
+  Serveur DNS              Adresse IPv4 ou IPv6
+  ----------------------------------------------
+  ns.slackbox.fr           195.154.65.130
+  nssec.online.net         
+
+  > Dans la deuxième ligne, l'adresse IP correspondant à nssec.online.net est
+    facultative.
+
+
+DNS secondaire
+--------------
+
+La présence d'un serveur DNS secondaire est nécessaire pour les noms de
+domaine en ".fr". Ce n'est pas la peine de louer un deuxième serveur, Online
+met gracieusement un DNS secondaire à disposition.
+
+  * DNS secondaire : nssec.online.net
+  * IP             : 62.210.16.8
+
+Éditer '/etc/named.conf' et autoriser le transfert de la zone vers le DNS
+secondaire d'Online :
+
+--8<---------- /etc/named.conf -----------------------------------------------
+...
+zone "slackbox.fr" {
+  type master;
+  allow-transfer { 62.210.16.8; }; --> ajouter cette ligne
+  file "zone.slackbox.fr";
+};
+--8<--------------------------------------------------------------------------
+
+
+Reverse DNS
+-----------
+
+Il ne reste plus qu'à configurer les reverse DNS. Pour une configuration
+correcte du serveur, il faut que son adresse IP pointe vers le résultat de la
+commande 'hostname --fqdn'. En l'occurrence, nous devons faire pointer
+195.154.65.130 vers 'sd-41893.dedibox.fr". 
+
+Là aussi, il faut se rendre dans la console Online :
+
+  Liste de vos serveurs > Serveur > Réseau > Modifier les reverses
+
+Fournir le nom d'hôte souhaité. Pour la prise en compte des modifications, il
+faut patienter un peu.
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt
