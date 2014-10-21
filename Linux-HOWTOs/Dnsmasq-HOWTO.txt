@@ -70,6 +70,7 @@ dhcp-range=192.168.2.100,192.168.2.200,24h
 local=/microlinux.montpezat/
 domain=microlinux.montpezat
 expand-hosts
+no-resolv
 server=8.8.8.8
 server=8.8.4.4
 --8<--------------------------------------------------------------------------
@@ -99,14 +100,12 @@ server=8.8.4.4
     d'envoyer un 'ping' sur 'alphamule', Dnsmasq retournera automatiquement
     l'adresse IP de 'alphamule.microlinux.montpezat'.
 
+  > L'option 'no-resolv' fait en sorte que Dnsmasq ne va plus se renseigner
+    dans le fichier '/etc/resolv.conf' pour l'adresse du ou des serveur(s)
+    DNS externes.
+
   > L'option 'server' spécifie l'adresse IP d'un ou plusieurs serveurs DNS en
     amont.
-
-Enfin, éditer '/etc/resolv.conf' comme ceci :
-
---8<---------- /etc/resolv.conf ----------------------------------------------
-nameserver 127.0.0.1
---8<--------------------------------------------------------------------------
 
 
 Démarrage et utilisation
