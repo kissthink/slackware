@@ -430,6 +430,9 @@ Lancer la mise à jour du système de base Slackware :
 Peaufiner la configuration du réseau
 ------------------------------------
 
+Éditer '/etc/rc.d/rc.inet1.conf' et ajouter la configuration de la carte
+côté réseau local :
+
 --8<---------- /etc/rc.d/rc.inet1.conf ---------------------------------------
 # Config information for eth0:
 IPADDR[0]="192.168.1.2"
@@ -456,6 +459,10 @@ Corriger la configuration de l'installateur dans '/etc/hosts'. Par exemple :
 192.168.2.1   nestor.microlinux.montpezat nestor
 --8<--------------------------------------------------------------------------
 
+Prendre en compte les modifications :
+
+  # /etc/rc.d/rc.inet1 restart
+
 
 Pare-feu
 --------
@@ -464,6 +471,9 @@ Le répertoire 'template/' contient un pare-feu prêt à l'emploi :
 
   # cd template/
   # cp rc.firewall.router /etc/rc.d/rc.firewall
+
+Adapter la configuration du script, puis :
+
   # chmod +x /etc/rc.d/rc.firewall
   # /etc/rc.d/rc.firewall start
 

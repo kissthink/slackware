@@ -535,6 +535,9 @@ Le répertoire 'template/' contient un pare-feu prêt à l'emploi :
 
   # cd template/
   # cp rc.firewall.dedibox /etc/rc.d/rc.firewall
+
+Adapter la configuration du script, puis :
+
   # chmod +x /etc/rc.d/rc.firewall
   # /etc/rc.d/rc.firewall start
 
