@@ -109,7 +109,7 @@ Avant de lancer le service, effectuer l'ajustement initial de l'horloge :
 
 Activer le service :
 
-  # chmod 0755 /etc/rc.d/rc.ntpd
+  # chmod +x /etc/rc.d/rc.ntpd
 
 Gérer le service :
 
@@ -173,7 +173,7 @@ restrict 192.168.2.1 mask 255.255.255.255
 
 Activer et lancer le service :
 
-  # chmod 0755 /etc/rc.d/rc.ntpd
+  # chmod +x /etc/rc.d/rc.ntpd
   # /etc/rc.d/rc.ntpd start
 
 Vérifier si l'on est bien synchronisé avec le serveur local :
