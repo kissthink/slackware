@@ -2,7 +2,7 @@
 Apache HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
 ============
 
-Dernière révision : 3 février 2013
+Dernière révision : 22 octobre 2014
 
 Ce HOWTO décrit la configuration d'un serveur Apache sur une machine tournant
 sous Slackware. 

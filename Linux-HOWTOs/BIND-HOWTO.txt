@@ -2,7 +2,7 @@
 BIND HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
 ==========
 
-Dernière révision : 21 octobre 2014
+Dernière révision : 22 octobre 2014
 
 Ce HOWTO décrit la mise en place d'un serveur DNS avec BIND sur un serveur
 dédié tournant sous Slackware.
