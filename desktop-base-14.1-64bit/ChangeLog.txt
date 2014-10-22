@@ -1,3 +1,7 @@
+Wed Oct 22 15:55:08 CEST 2014
+ap/hplip-3.14.10-x86_64-1_microlinux.txz: Upgraded.
+  Following a request by user tb75252 on LQ.
++--------------------------+
 Fri Oct 17 18:13:58 CEST 2014
 l/libpano13-2.9.18-x86_64-1_microlinux.txz: Added.
 l/tclap-1.2.1-x86_64-1_microlinux.txz: Added.
