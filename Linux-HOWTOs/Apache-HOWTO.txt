@@ -1,11 +1,11 @@
-==========
-LAMP HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
-==========
+============
+Apache HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+============
 
 Dernière révision : 3 février 2013
 
-Ce HOWTO décrit la configuration d'un serveur LAMP (Linux/Apache/MySQL/PHP) sur
-une machine tournant sous Slackware. 
+Ce HOWTO décrit la configuration d'un serveur Apache sur une machine tournant
+sous Slackware. 
 
   * Introduction
   * Prérequis
@@ -73,15 +73,22 @@ On doit voir quelque chose de ce genre :
 Dans le réseau local, ouvrir l'adresse IP du serveur avec un navigateur, par
 exemple :
 
-  * http://192.168.2.3
+  * http://192.168.2.1
 
 On peut également invoquer le nom d'hôte :
 
-  * http://bernadette
+  * http://nestor
 
 Ou encore :
 
-  * http://bernadette.microlinux.montpezat
+  * http://nestor.microlinux.lan
+
+Sur un serveur dédié, on essaiera successivement l'adresse IP, le nom de
+domaine et l'alias associé :
+
+  * http://195.154.65.130
+  * http://slackbox.fr
+  * http://www.slackbox.fr
 
 
 Configuration de base
@@ -99,7 +106,7 @@ On peut déjà renseigner quelques directives :
 ...
 ServerAdmin info@microlinux.fr
 ...
-ServerName bernadette.microlinux.montpezat:80
+ServerName nestor.microlinux.lan:80
 --8<--------------------------------------------------------------------------
 
   > L'adresse mail de l'administrateur apparaîtra sur certaines pages générées
@@ -108,12 +115,11 @@ ServerName bernadette.microlinux.montpezat:80
   > Le nom du serveur peut être déterminé automatiquement, mais il vaut mieux
     le spécifier explicitement. 
     
-Dans le cas où l'hôte n'a pas de nom de domaine enregistré, on peut fournir
-l'adresse IP à la place :
+Sur un serveur dédié, on aura ceci :
 
 --8<---------- /etc/httpd/httpd.conf -----------------------------------------
 ...
-ServerName 213.41.252.141:80
+ServerName sd-41893.dedibox.fr
 ...
 --8<--------------------------------------------------------------------------
 
@@ -160,8 +166,8 @@ ici comme aspirateur de site :
 
 Éventuellement, assainir les permissions :
 
-  # find . -type d -exec chmod 0755 \{} \;
-  # find . -type f -exec chmod 0644 \{} \;
+  # find . -type d | xargs chmod 0755
+  # find . -type f | xargs chmod 0644
 
 Le serveur Apache tourne avec les droits de l'utilisateur 'apache' et du groupe
 'apache' :
@@ -181,6 +187,9 @@ On va donc attribuer toutes les pages de notre site local à cet utilisateur et
 À présent, on peut ouvrir le site dans un navigateur (Firefox, Links, Lynx) et
 apprécier le résultat.
 
+  /!\ Si le site ne s'affiche pas comme prévu dans Firefox, rafraîchir la page
+  en appuyant sur [F5].
+
 
 Activer le support des scripts CGI
 ----------------------------------
@@ -194,7 +203,7 @@ du module 'mod_cgi' :
 
 --8<---------- /etc/httpd/httpd.conf -----------------------------------------
 ...
-LoadModule cgi_module lib/httpd/modules/mod_cgi.so
+LoadModule cgi_module lib64/httpd/modules/mod_cgi.so
 ...
 --8<--------------------------------------------------------------------------
 
@@ -244,6 +253,10 @@ Afficher la page du script :
   SERVER_PORT = 80
   REQUEST_METHOD = GET
   ...
+
+Sur la machine publique, on ouvrira le script CGI à l'adresse suivante :
+
+  * http://www.slackbox.fr/cgi-bin/test-cgi
 
 
 Héberger plusieurs sites sur un même serveur
@@ -315,19 +328,19 @@ ou le nom d'hôte de la machine :
 
 --8<---------- /etc/httpd/extra/httpd-vhosts.conf ----------------------------
 <VirtualHost *:80>
-    ServerAdmin info@microlinux.fr
-    DocumentRoot "/srv/httpd/vhosts/default/htdocs"
-    ServerName bernadette.microlinux.montpezat
-    ServerAlias bernadette
-    ErrorLog "/var/log/httpd/default-error_log"
-    CustomLog "/var/log/httpd/default-access_log" common
+  ServerAdmin info@microlinux
+  DocumentRoot "/srv/httpd/vhosts/default/htdocs"
+  ServerName nestor.microlinux.lan
+  ServerAlias nestor
+  ErrorLog "/var/log/httpd/default-error_log"
+  CustomLog "/var/log/httpd/default-access_log" common
 </VirtualHost>
 --8<--------------------------------------------------------------------------
 
-  > Une erreur à ne pas commettre, c'est d'indiquer le chemin "réel" vers les
-    pages Web pour 'DocumentRoot', c'est-à-dire "/var/www/htdocs/default" au
-    lieu de "/srv/httpd/htdocs/default". Le chemin doit coïncider avec celui
-    que l'on a défini dans '/etc/httpd/httpd.conf' pour 'DocumentRoot".
+  /!\ Une erreur à ne pas commettre, c'est d'indiquer le chemin "réel" vers
+  les pages Web pour 'DocumentRoot', c'est-à-dire "/var/www/htdocs/default" au
+  lieu de "/srv/httpd/htdocs/default". Le chemin doit coïncider avec celui que
+  l'on a défini dans '/etc/httpd/httpd.conf' pour 'DocumentRoot".
 
 Pour activer les hôtes virtuels, il faut inclure le module en décommentant la
 ligne correspondante dans '/etc/httpd/httpd.conf' :
@@ -345,17 +358,78 @@ Redémarrer Apache pour prendre en compte les modifications :
 
 Vérifier si la page par défaut du serveur s'affiche bien :
 
-  # links http://bernadette
+  * http://nestor
+
+  /!\ Là encore, si l'on utilise Firefox, penser à rafraîchir la page avec la
+  touche [F5].
 
 À présent, nous pouvons ajouter les deux autres sites :
 
 --8<---------- /etc/httpd/extra/httpd-vhosts.conf ----------------------------
 # Page par défaut du serveur
 <VirtualHost *:80>
+    ServerAdmin info@microlinux
+    DocumentRoot "/srv/httpd/vhosts/default/htdocs"
+    ServerName nestor.microlinux.lan
+    ServerAlias nestor
+    ErrorLog "/var/log/httpd/default-error_log"
+    CustomLog "/var/log/httpd/default-access_log" common
+</VirtualHost>
+
+# Documentation de Slackware
+<VirtualHost *:80>
+    ServerAdmin info@microlinux
+    DocumentRoot "/srv/httpd/vhosts/slackware/htdocs"
+    ServerName slackware.nestor.microlinux.lan
+    ServerAlias slackware.nestor
+    ErrorLog "/var/log/httpd/slackware-error_log"
+    CustomLog "/var/log/httpd/slackware-access_log" common
+</VirtualHost>
+
+# Documentation de FreeBSD
+<VirtualHost *:80>
+    ServerAdmin info@microlinux
+    DocumentRoot "/srv/httpd/vhosts/freebsd/htdocs"
+    ServerName freebsd.nestor.microlinux.lan
+    ServerAlias freebsd.nestor
+    ErrorLog "/var/log/httpd/freebsd-error_log"
+    CustomLog "/var/log/httpd/freebsd-access_log" common
+</VirtualHost>
+--8<--------------------------------------------------------------------------
+
+Pour l'instant, les noms d'hôtes 'slackware.nestor' et 'freebsd.nestor'
+ne correspondent à rien dans notre réseau local. Nous devons donc les ajouter
+au fichier '/etc/hosts' de la machine sur laquelle tourne Dnsmasq :
+
+--8<---------- /etc/hosts ----------------------------------------------------
+192.168.2.1 nestor.microlinux.lan nestor
+192.168.2.1 slackware.nestor.microlinux.lan slackware.nestor
+192.168.2.1 freebsd.nestor.microlinux.lan freebsd.nestor
+--8<--------------------------------------------------------------------------
+
+Redémarrer Dnsmasq pour propager la configuration :
+
+  # /etc/rc.d/rc.dnsmasq restart
+
+Redémarrer Apache pour prendre en compte les deux nouveaux hôtes virtuels :
+
+  # /etc/rc.d/rc.httpd restart
+
+Tester l'affichage des trois différents sites :
+
+  * http://slackware.nestor 
+  * http://freebsd.nestor 
+  * http://nestor --> page par défaut
+
+Sur un serveur dédié avec un domaine publiquement accessible, la configuration
+des hôtes virtuels ressemblera à ceci :
+
+--8<---------- /etc/httpd/extra/httpd-vhosts.conf ----------------------------
+# Page par défaut du serveur
+<VirtualHost *:80>
     ServerAdmin info@microlinux.fr
     DocumentRoot "/srv/httpd/vhosts/default/htdocs"
-    ServerName bernadette.microlinux.montpezat
-    ServerAlias bernadette
+    ServerName sd-48975.dedibox.fr
     ErrorLog "/var/log/httpd/default-error_log"
     CustomLog "/var/log/httpd/default-access_log" common
 </VirtualHost>
@@ -364,8 +438,7 @@ Vérifier si la page par défaut du serveur s'affiche bien :
 <VirtualHost *:80>
     ServerAdmin info@microlinux.fr
     DocumentRoot "/srv/httpd/vhosts/slackware/htdocs"
-    ServerName slackware.bernadette.microlinux.montpezat
-    ServerAlias slackware.bernadette
+    ServerName slackware.slackbox.fr
     ErrorLog "/var/log/httpd/slackware-error_log"
     CustomLog "/var/log/httpd/slackware-access_log" common
 </VirtualHost>
@@ -374,46 +447,36 @@ Vérifier si la page par défaut du serveur s'affiche bien :
 <VirtualHost *:80>
     ServerAdmin info@microlinux.fr
     DocumentRoot "/srv/httpd/vhosts/freebsd/htdocs"
-    ServerName freebsd.bernadette.microlinux.montpezat
-    ServerAlias freebsd.bernadette
+    ServerName freebsd.slackbox.fr
     ErrorLog "/var/log/httpd/freebsd-error_log"
     CustomLog "/var/log/httpd/freebsd-access_log" common
 </VirtualHost>
 --8<--------------------------------------------------------------------------
 
-Pour l'instant, les noms d'hôtes 'slackware.bernadette' et 'freebsd.bernadette'
-ne correspondent à rien dans notre réseau local. Dans un premier temps, nous
-pouvons les ajouter à '/etc/hosts' pour y accéder à partir de la machine
-locale.
+Cette fois-ci, l'information sur les hôtes 'slackware.slackbox.fr' et
+'freebsd.slackbox.fr' devra être ajoutée dans le fichier zone de BIND, sous
+forme d'alias :
 
---8<---------- /etc/hosts ----------------------------------------------------
-127.0.0.1   localhost.localdomain localhost
-192.168.2.3 slackware.bernadette.microlinux.montpezat slackware.bernadette
-192.168.2.3 freebsd.bernadette.microlinux.montpezat freebsd.bernadette
+--8<---------- /var/named/zone.slackbox.fr -----------------------------------
+...
+slackbox.fr.        A       195.154.65.130
+ns      IN          A       195.154.65.130
+mail    IN          A       195.154.65.130
+www     CNAME               slackbox.fr.
+ftp     CNAME               slackbox.fr.
+slackware CNAME             slackbox.fr.     --> ajouter ces deux lignes
+freebsd   CNAME             slackbox.fr.     --> 
 --8<--------------------------------------------------------------------------
 
-  > Le fichier '/etc/hosts' permet en quelque sorte de "court-circuiter"
-    localement le DNS.
+Ne pas oublier de redémarrer BIND en incrémentant le numéro de série :
 
-Tester les deux sites directement sur le serveur :
+  # /etc/rc.d/rc.bind restart
 
-  # links http://slackware.bernadette 
-  # links http://freebsd.bernadette 
+Tester l'affichage des trois différentes sites :
 
-Si l'on compte rendre ces hôtes virtuels accessibles à toutes les machines du
-réseau local, il faudra ajouter les enregistrements A respectifs ("A records")
-dans la configuration de BIND. En l'occurrence :
-
---8<---------- /var/named/zone.microlinux.montpezat --------------------------
-...
-bernadette               IN A 192.168.2.3
-slackware.bernadette     IN A 192.168.2.3
-freebsd.bernadette       IN A 192.168.2.3
-...
---8<--------------------------------------------------------------------------
-
-  > Ne pas oublier d'incrémenter le numéro de série du fichier zone et de
-    redémarrer BIND.
+  * http://slackware.slackbox.fr
+  * http://freebsd.slackbox.fr
+  * http://slackbox.fr --> page par défaut
 
 
 Utiliser les scripts CGI avec les hôtes virtuels
@@ -441,8 +504,8 @@ Ensuite, ajouter une ligne dans la stance correspondante de
 <VirtualHost *:80>
     ServerAdmin info@microlinux.fr
     DocumentRoot "/srv/httpd/vhosts/default/htdocs"
-    ServerName bernadette.microlinux.montpezat
-    ServerAlias bernadette
+    ServerName nestor.microlinux.lan
+    ServerAlias nestor
     ScriptAlias /cgi-bin/ /srv/httpd/vhosts/default/cgi-bin/     --> ajouter
     ErrorLog "/var/log/httpd/default-error_log"
     CustomLog "/var/log/httpd/default-access_log" common
@@ -452,7 +515,7 @@ Ensuite, ajouter une ligne dans la stance correspondante de
 
 Redémarrer Apache et ouvrir la page suivante :
 
-  # links http://bernadette/cgi-bin/test-cgi
+  * http://nestor/cgi-bin/test-cgi
 
 
 Héberger des sites dynamiques avec PHP
@@ -500,7 +563,7 @@ Régler les droits d'accès :
 
   # chown -R apache:apache /var/www/vhosts/phpinfo
 
-Créer un hôte virtuel 'phpinfo.bernadette' (cf. ci-dessus) et afficher la page
+Créer un hôte virtuel 'phpinfo.nestor' (cf. ci-dessus) et afficher la page
 'index.php' dans un navigateur.
 
 Le fichier '/etc/httpd/php.ini' contient la configuration de PHP. On peut
@@ -529,245 +592,7 @@ configuration.
 Le protocole HTTPS
 ------------------
 
-Le protocole HTTP (Hypertext Transfer Protocol) transmet les données entre le
-serveur et le navigateur "en clair". Les données personnelles, mots de passe et
-autres numéros de Carte Bleue sont donc interceptables.
-
-Pour résoudre ce problème, on utilisera le protocole HTTPS, qui ajoute une
-couche de cryptage SSL (Secure Sockets Layer) au protocole HTTP.
-
-Le transfert crypté des données ne constitue qu'un aspect dans l'établissement
-d'une connexion sécurisé. L'autre aspect tout aussi important, c'est que
-l'utilisateur doit être sûr de communiquer avec la bonne personne. Autrement
-dit, votre numéro de Carte Bleue a beau être transmis de façon sécurisée,
-encore faut-il que la plateforme de paiement ne soit pas située sur un serveur
-géré par la mafia albanaise. 
-
-Pour savoir si l'on a bien affaire au bon interlocuteur, on utilisera un
-certificat. Cette véritable carte d'identité électronique contient non
-seulement la clé publique du serveur pour crypter les transmissions, mais
-également des renseignements sur le site ainsi que la signature de l'autorité
-de certification. Malheureusement, les certificats de serveurs sont assez
-chers, et la procédure pour les obtenir n'est pas tout à fait triviale.
-
-La bonne nouvelle, c'est que rien ne nous empêche de fabriquer nous-mêmes notre
-certificat auto-signé. Cette astuce nous permettra de mettre en place
-gratuitement notre propre hébergement HTTPS. 
-
-Le hic, c'est que les navigateurs courants comme Firefox ou Internet Explorer
-n'acceptent que les certificats émanant d'autorités reconnues comme Verisign.
-L'utilisateur qui se connectera à notre site HTTPS auto-certifié se retrouvera
-confronté à un avertissement concernant l'identité du site, et c'est à lui de
-décider s'il veut "confirmer une exception de sécurité". 
-
-Enfin, le protocole HTTPS utilise le port 443. Il faut donc songer avant toute
-chose à ouvrir ce port dans le pare-feu.
-
-Dans l'exemple ci-dessous, nous allons configurer un hébergement HTTPS local :
-
-  * https://secure.bernadette.microlinux.montpezat
-
-
-Générer un certificat auto-signé
---------------------------------
-
-Générer une clé privée :
-
-  # openssl genrsa -des3 -out server.key 1024
-  Generating RSA private key, 1024 bit long modulus
-  ...............++++++
-  ..............................................++++++
-  e is 65537 (0x10001)
-  Enter pass phrase for server.key: ********
-  Verifying - Enter pass phrase for server.key: ********
-
-Générer un fichier CSR ("Certificate Signing Request"). Faites très attention
-ici. Contrairement à ce que le dialogue de saisie peut laisser entendre,
-l'entrée "Common Name" doit correspondre EXACTEMENT à l'URL du site sécurisé.
-Si vous comptez héberger un site d'entreprise dont la partie sécurisée se situe
-à l'adresse http://gestion.mon-entreprise.com, l'entrée "Common Name" sera donc
-'gestion.mon-entreprise.com'.
-
-  # openssl req -new -key server.key -out server.csr
-  Enter pass phrase for server.key: ********
-  You are about to be asked to enter information that will be incorporated
-  into your certificate request.
-  What you are about to enter is what is called a Distinguished Name or a DN.
-  There are quite a few fields but you can leave some blank
-  For some fields there will be a default value,
-  If you enter '.', the field will be left blank.
-  -----
-  Country Name (2 letter code) [AU]:FR
-  State or Province Name (full name) [Some-State]:Gard
-  Locality Name (eg, city) []:Montpezat
-  Organization Name (eg, company) [Internet Widgits Pty Ltd]:Microlinux
-  Organizational Unit Name (eg, section) []: [Entrée]
-  Common Name (e.g. server FQDN or YOUR name) []:secure.bernadette.microlinux.montpezat
-  Email Address []:info@microlinux.fr
-
-  Please enter the following 'extra' attributes
-  to be sent with your certificate request
-  A challenge password []: [Entrée]
-  An optional company name []: [Entrée]
-
-Chaque fois que vous comptez utiliser votre clé, vous devez saisir le mot de
-passe ("passphrase") de la clé. Ce n'est pas très commode de répéter cette
-opération à chaque démarrage d'Apache. On va donc supprimer le mot de passe de
-la clé :
-
-  # cp server.key server.key.orig
-  # openssl rsa -in server.key.orig -out server.key
-  Enter pass phrase for server.key.orig:
-  writing RSA key
-
-Signons nous-mêmes notre certificat :
-
-  # openssl x509 -req -days 3650 -in server.csr -signkey server.key -out server.crt
-  Signature ok
-  subject=/C=FR/ST=Gard/L=Montpezat/O=Microlinux
-          /CN=bernadette.microlinux.montpezat
-          /emailAddress=info@microlinux.fr
-  Getting Private key
-
-  /!\ La durée par défaut d'un certificat n'est que de 30 jours. Puisque nous
-  sommes maîtres à bord, profitons-en allègrement et établissons un certificat
-  d'une durée de dix ans en utilisant l'option '-days 3650'.
-
-Installer la clé privée et le certificat : 
-
-  # cp -v server.{crt,key} /etc/httpd/
-  « server.crt » -> « /etc/httpd/server.crt »
-  « server.key » -> « /etc/httpd/server.key »
-
-La clé privée ne doit pas être lue par n'importe qui :
-
-  # chown apache:apache /etc/httpd/server.key 
-  # chmod 0400 /etc/httpd/server.key
-  # ls -l /etc/httpd/server.*
-  -rw-r--r-- 1 root   root   981 août  23 10:04 /etc/httpd/server.crt
-  -r-------- 1 apache apache 887 août  23 10:04 /etc/httpd/server.key
-
-
-Configurer Apache et SSL
-------------------------
-
-Notre hébergement HTTPS sera rangé en-dessous de
-'/var/www/vhosts/secure/htdocs'. Il faut donc créer cette arborescence pour
-avoir quelque chose qui ressemble à ceci :
-
-  # tree /var/www/vhosts/secure/
-  /var/www/vhosts/secure/
-  `-- htdocs
-      `-- index.html
-
-  1 directory, 1 file
-
-  # cat /var/www/vhosts/secure/htdocs/index.html 
-  <html><body><h1>HTTPS works!</h1></body></html>
-
-Éditer le fichier '/etc/httpd/extra/httpd-ssl.conf' :
-
---8<---------- /etc/httpd/extra/httpd-ssl.conf -------------------------------
-...
-<VirtualHost 192.168.2.4:443>
-
-#   General setup for the virtual host
-DocumentRoot "/srv/httpd/vhosts/secure/htdocs"
-ServerName secure.bernadette.microlinux.montpezat
-ServerAlias secure.bernadette
-ServerAdmin info@microlinux.fr
-ErrorLog "/var/log/httpd/secure-error_log"
-TransferLog "/var/log/httpd/secure-access_log"
-
-#   SSL Engine Switch:
-#   Enable/Disable SSL for this virtual host.
-SSLEngine on
-...
-</VirtualHost>
---8<--------------------------------------------------------------------------
-
-Activer SSL dans la configuration d'Apache :
-
---8<---------- /etc/httpd/httpd.conf -----------------------------------------
-...
-LoadModule socache_shmcb_module lib64/httpd/modules/mod_socache_shmcb.so
-...
-LoadModule ssl_module lib64/httpd/modules/mod_ssl.so
-...
-# Secure (SSL/TLS) connections
-Include /etc/httpd/extra/httpd-ssl.conf
-...
---8<--------------------------------------------------------------------------
-
-  > Faire une recherche sur la chaîne de caractères "ssl" pour éditer le
-    fichier.
-
-Redémarrer Apache :
-
-  # /etc/rc.d/rc.httpd restart
-
-Ouvrir notre site sécurisé :
-
-  # links https://secure.bernadette
-
-
-Plusieurs hébergements SSL sur un même serveur
-----------------------------------------------
-
-Générer un certificat à part et le ranger dans '/etc/httpd'. Exemple :
-
-  # ls -l /etc/httpd/*.{key,crt}
-  -rw-r--r-- 1 root   root   952 août  23 12:48 /etc/httpd/scholae.crt
-  -r-------- 1 apache apache 887 août  23 12:48 /etc/httpd/scholae.key
-  -rw-r--r-- 1 root   root   952 août  27 16:02 /etc/httpd/scholae-webmail.crt
-  -r-------- 1 apache apache 887 août  27 16:02 /etc/httpd/scholae-webmail.key
-
-Ajouter une directive dans '/etc/httpd/extra/httpd-ssl.conf et créer un
-deuxième hôte virtuel en se basant sur le premier comme modèle. Penser à
-renseigner l'emplacement du nouveau certificat :
-
---8<---------- /etc/httpd/extra/httpd-ssl.conf -------------------------------
-...
-Listen 443
-
-SSLStrictSNIVHostCheck off
-...
-<VirtualHost adresse_ip:443>
-DocumentRoot "/srv/httpd/vhosts/scholae-secure/htdocs"
-ServerName www.scholae.fr:443
-...
-SSLCertificateFile "/etc/httpd/scholae.crt"
-SSLCertificateKeyFile "/etc/httpd/scholae.crt"
-...
-</VirtualHost>
-
-<VirtualHost adresse_ip:443>
-DocumentRoot "/srv/httpd/vhosts/scholae-webmail/htdocs"
-ServerName mail.scholae.fr:443
-...
-SSLCertificateFile "/etc/httpd/scholae-webmail.crt"
-SSLCertificateKeyFile "/etc/httpd/scholae-webmail.crt"
-...
-</VirtualHost>
---8<--------------------------------------------------------------------------
-
-Pour être sûr que personne ne se connecte en utilisant le port 80, on peut
-rediriger ces requêtes ailleurs. Exemple :
-
---8<---------- /etc/httpd/extra/httpd-vhosts.conf ----------------------------
-...
-# mail.scholae.fr
-<VirtualHost *:80>
-    ServerAdmin info@microlinux.fr
-    DocumentRoot "/srv/httpd/vhosts/default/htdocs"
-    ServerName mail.scholae.fr
-    ErrorLog "/var/log/httpd/default-error_log"
-    CustomLog "/var/log/httpd/default-access_log" common
-</VirtualHost>
-...
---8<--------------------------------------------------------------------------
-
-Il ne reste qu'à redémarrer Apache.
+Voir le HTTPS-HOWTO consacré à ce sujet.
 
 
 ------------------------------------------------------------------------------

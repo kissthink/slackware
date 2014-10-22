@@ -1,0 +1,261 @@
+============
+Apache HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+============
+
+Dernière révision : 3 février 2013
+
+Ce HOWTO décrit la mise en place d'un site web sécurisé sur un serveur Apache
+tournant sous Slackware.
+
+  * Le protocole HTTPS
+  * Générer un certificat auto-signé
+  * Configurer Apache et SSL
+  * Plusieurs hébergements SSL sur un même serveur
+
+
+Le protocole HTTPS
+------------------
+
+Le protocole HTTP (Hypertext Transfer Protocol) transmet les données entre le
+serveur et le navigateur "en clair". Les données personnelles, mots de passe et
+autres numéros de Carte Bleue sont donc interceptables.
+
+Pour résoudre ce problème, on utilisera le protocole HTTPS, qui ajoute une
+couche de cryptage SSL (Secure Sockets Layer) au protocole HTTP.
+
+Le transfert crypté des données ne constitue qu'un aspect dans l'établissement
+d'une connexion sécurisé. L'autre aspect tout aussi important, c'est que
+l'utilisateur doit être sûr de communiquer avec la bonne personne. Autrement
+dit, votre numéro de Carte Bleue a beau être transmis de façon sécurisée,
+encore faut-il que la plateforme de paiement ne soit pas située sur un serveur
+géré par la mafia albanaise. 
+
+Pour savoir si l'on a bien affaire au bon interlocuteur, on utilisera un
+certificat. Cette véritable carte d'identité électronique contient non
+seulement la clé publique du serveur pour crypter les transmissions, mais
+également des renseignements sur le site ainsi que la signature de l'autorité
+de certification. Malheureusement, les certificats de serveurs sont assez
+chers, et la procédure pour les obtenir n'est pas tout à fait triviale.
+
+La bonne nouvelle, c'est que rien ne nous empêche de fabriquer nous-mêmes notre
+certificat auto-signé. Cette astuce nous permettra de mettre en place
+gratuitement notre propre hébergement HTTPS. 
+
+Le hic, c'est que les navigateurs courants comme Firefox ou Internet Explorer
+n'acceptent que les certificats émanant d'autorités reconnues comme Verisign.
+L'utilisateur qui se connectera à notre site HTTPS auto-certifié se retrouvera
+confronté à un avertissement concernant l'identité du site, et c'est à lui de
+décider s'il veut "confirmer une exception de sécurité". 
+
+Enfin, le protocole HTTPS utilise le port 443. Il faut donc songer avant toute
+chose à ouvrir ce port dans le pare-feu.
+
+Dans l'exemple ci-dessous, nous allons configurer un hébergement HTTPS local :
+
+  * https://secure.bernadette.microlinux.montpezat
+
+
+Générer un certificat auto-signé
+--------------------------------
+
+Générer une clé privée :
+
+  # openssl genrsa -des3 -out server.key 1024
+  Generating RSA private key, 1024 bit long modulus
+  ...............++++++
+  ..............................................++++++
+  e is 65537 (0x10001)
+  Enter pass phrase for server.key: ********
+  Verifying - Enter pass phrase for server.key: ********
+
+Générer un fichier CSR ("Certificate Signing Request"). Faites très attention
+ici. Contrairement à ce que le dialogue de saisie peut laisser entendre,
+l'entrée "Common Name" doit correspondre EXACTEMENT à l'URL du site sécurisé.
+Si vous comptez héberger un site d'entreprise dont la partie sécurisée se situe
+à l'adresse http://gestion.mon-entreprise.com, l'entrée "Common Name" sera donc
+'gestion.mon-entreprise.com'.
+
+  # openssl req -new -key server.key -out server.csr
+  Enter pass phrase for server.key: ********
+  You are about to be asked to enter information that will be incorporated
+  into your certificate request.
+  What you are about to enter is what is called a Distinguished Name or a DN.
+  There are quite a few fields but you can leave some blank
+  For some fields there will be a default value,
+  If you enter '.', the field will be left blank.
+  -----
+  Country Name (2 letter code) [AU]:FR
+  State or Province Name (full name) [Some-State]:Gard
+  Locality Name (eg, city) []:Montpezat
+  Organization Name (eg, company) [Internet Widgits Pty Ltd]:Microlinux
+  Organizational Unit Name (eg, section) []: [Entrée]
+  Common Name (e.g. server FQDN or YOUR name) []:secure.bernadette.microlinux.montpezat
+  Email Address []:info@microlinux.fr
+
+  Please enter the following 'extra' attributes
+  to be sent with your certificate request
+  A challenge password []: [Entrée]
+  An optional company name []: [Entrée]
+
+Chaque fois que vous comptez utiliser votre clé, vous devez saisir le mot de
+passe ("passphrase") de la clé. Ce n'est pas très commode de répéter cette
+opération à chaque démarrage d'Apache. On va donc supprimer le mot de passe de
+la clé :
+
+  # cp server.key server.key.orig
+  # openssl rsa -in server.key.orig -out server.key
+  Enter pass phrase for server.key.orig:
+  writing RSA key
+
+Signons nous-mêmes notre certificat :
+
+  # openssl x509 -req -days 3650 -in server.csr -signkey server.key -out server.crt
+  Signature ok
+  subject=/C=FR/ST=Gard/L=Montpezat/O=Microlinux
+          /CN=bernadette.microlinux.montpezat
+          /emailAddress=info@microlinux.fr
+  Getting Private key
+
+  /!\ La durée par défaut d'un certificat n'est que de 30 jours. Puisque nous
+  sommes maîtres à bord, profitons-en allègrement et établissons un certificat
+  d'une durée de dix ans en utilisant l'option '-days 3650'.
+
+Installer la clé privée et le certificat : 
+
+  # cp -v server.{crt,key} /etc/httpd/
+  « server.crt » -> « /etc/httpd/server.crt »
+  « server.key » -> « /etc/httpd/server.key »
+
+La clé privée ne doit pas être lue par n'importe qui :
+
+  # chown apache:apache /etc/httpd/server.key 
+  # chmod 0400 /etc/httpd/server.key
+  # ls -l /etc/httpd/server.*
+  -rw-r--r-- 1 root   root   981 août  23 10:04 /etc/httpd/server.crt
+  -r-------- 1 apache apache 887 août  23 10:04 /etc/httpd/server.key
+
+
+Configurer Apache et SSL
+------------------------
+
+Notre hébergement HTTPS sera rangé en-dessous de
+'/var/www/vhosts/secure/htdocs'. Il faut donc créer cette arborescence pour
+avoir quelque chose qui ressemble à ceci :
+
+  # tree /var/www/vhosts/secure/
+  /var/www/vhosts/secure/
+  `-- htdocs
+      `-- index.html
+
+  1 directory, 1 file
+
+  # cat /var/www/vhosts/secure/htdocs/index.html 
+  <html><body><h1>HTTPS works!</h1></body></html>
+
+Éditer le fichier '/etc/httpd/extra/httpd-ssl.conf' :
+
+--8<---------- /etc/httpd/extra/httpd-ssl.conf -------------------------------
+...
+<VirtualHost 192.168.2.4:443>
+
+#   General setup for the virtual host
+DocumentRoot "/srv/httpd/vhosts/secure/htdocs"
+ServerName secure.bernadette.microlinux.montpezat
+ServerAlias secure.bernadette
+ServerAdmin info@microlinux.fr
+ErrorLog "/var/log/httpd/secure-error_log"
+TransferLog "/var/log/httpd/secure-access_log"
+
+#   SSL Engine Switch:
+#   Enable/Disable SSL for this virtual host.
+SSLEngine on
+...
+</VirtualHost>
+--8<--------------------------------------------------------------------------
+
+Activer SSL dans la configuration d'Apache :
+
+--8<---------- /etc/httpd/httpd.conf -----------------------------------------
+...
+LoadModule socache_shmcb_module lib64/httpd/modules/mod_socache_shmcb.so
+...
+LoadModule ssl_module lib64/httpd/modules/mod_ssl.so
+...
+# Secure (SSL/TLS) connections
+Include /etc/httpd/extra/httpd-ssl.conf
+...
+--8<--------------------------------------------------------------------------
+
+  > Faire une recherche sur la chaîne de caractères "ssl" pour éditer le
+    fichier.
+
+Redémarrer Apache :
+
+  # /etc/rc.d/rc.httpd restart
+
+Ouvrir notre site sécurisé :
+
+  # links https://secure.bernadette
+
+
+Plusieurs hébergements SSL sur un même serveur
+----------------------------------------------
+
+Générer un certificat à part et le ranger dans '/etc/httpd'. Exemple :
+
+  # ls -l /etc/httpd/*.{key,crt}
+  -rw-r--r-- 1 root   root   952 août  23 12:48 /etc/httpd/scholae.crt
+  -r-------- 1 apache apache 887 août  23 12:48 /etc/httpd/scholae.key
+  -rw-r--r-- 1 root   root   952 août  27 16:02 /etc/httpd/scholae-webmail.crt
+  -r-------- 1 apache apache 887 août  27 16:02 /etc/httpd/scholae-webmail.key
+
+Ajouter une directive dans '/etc/httpd/extra/httpd-ssl.conf et créer un
+deuxième hôte virtuel en se basant sur le premier comme modèle. Penser à
+renseigner l'emplacement du nouveau certificat :
+
+--8<---------- /etc/httpd/extra/httpd-ssl.conf -------------------------------
+...
+Listen 443
+
+SSLStrictSNIVHostCheck off
+...
+<VirtualHost adresse_ip:443>
+DocumentRoot "/srv/httpd/vhosts/scholae-secure/htdocs"
+ServerName www.scholae.fr:443
+...
+SSLCertificateFile "/etc/httpd/scholae.crt"
+SSLCertificateKeyFile "/etc/httpd/scholae.crt"
+...
+</VirtualHost>
+
+<VirtualHost adresse_ip:443>
+DocumentRoot "/srv/httpd/vhosts/scholae-webmail/htdocs"
+ServerName mail.scholae.fr:443
+...
+SSLCertificateFile "/etc/httpd/scholae-webmail.crt"
+SSLCertificateKeyFile "/etc/httpd/scholae-webmail.crt"
+...
+</VirtualHost>
+--8<--------------------------------------------------------------------------
+
+Pour être sûr que personne ne se connecte en utilisant le port 80, on peut
+rediriger ces requêtes ailleurs. Exemple :
+
+--8<---------- /etc/httpd/extra/httpd-vhosts.conf ----------------------------
+...
+# mail.scholae.fr
+<VirtualHost *:80>
+    ServerAdmin info@microlinux.fr
+    DocumentRoot "/srv/httpd/vhosts/default/htdocs"
+    ServerName mail.scholae.fr
+    ErrorLog "/var/log/httpd/default-error_log"
+    CustomLog "/var/log/httpd/default-access_log" common
+</VirtualHost>
+...
+--8<--------------------------------------------------------------------------
+
+Il ne reste qu'à redémarrer Apache.
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt
