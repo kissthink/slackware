@@ -26,7 +26,7 @@
 # Modified by Niki Kovacs <info@microlinux.fr>
 
 PRGNAM=hplip
-VERSION=${VERSION:-3.13.11}
+VERSION=${VERSION:-3.14.10}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}   
 
@@ -63,7 +63,7 @@ OUTPUT=${OUTPUT:-/tmp}
 
 set -e 
 
-wget -c http://prdownloads.sourceforge.net/$PRGNAM/$PRGNAM-$VERSION.tar.gz
+# wget -c http://prdownloads.sourceforge.net/$PRGNAM/$PRGNAM-$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG
@@ -74,9 +74,6 @@ tar xvf $CWD/$PRGNAM-$VERSION.tar.?z* || exit 1
 cd $PRGNAM-$VERSION || exit 1
 
 zcat $CWD/hplip.no.upgrade.diff.gz | patch -p1 --verbose || exit 1
-# Upstream added nohup to the rule, but didn't background with '&'.
-# Fix this to prevent a startup delay:
-zcat $CWD/hplip.56-hpmud.background.diff.gz | patch -p1 --verbose || exit 1
 
 chown -R root:root .
 find . \
