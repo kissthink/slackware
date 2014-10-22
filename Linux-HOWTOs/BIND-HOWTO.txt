@@ -12,6 +12,7 @@ dédié tournant sous Slackware.
   * Serveur maître primaire 
   * DNS secondaire
   * Reverse DNS
+  * Quelques vérifications
 
 
 Généralités et prérequis
@@ -296,6 +297,35 @@ Là aussi, il faut se rendre dans la console Online :
 
 Fournir le nom d'hôte souhaité. Pour la prise en compte des modifications, il
 faut patienter un peu.
+
+
+Quelques vérifications
+----------------------
+
+Voici une série de commandes pour tester la configuration correcte d'un
+domaine.
+
+1. Configuration du DNS :
+
+  # host slackbox.fr
+  slackbox.fr has address 195.154.65.130
+  slackbox.fr mail is handled by 10 mail.slackbox.fr.
+
+2. Configuration du reverse DNS :
+
+  # host 195.154.65.130
+  130.65.154.195.in-addr.arpa domain name pointer sd-41893.dedibox.fr.
+
+3. Nom d'hôte du serveur mail :
+
+  # host -t MX slackbox.fr
+  slackbox.fr mail is handled by 10 mail.slackbox.fr.
+
+4. Adresse IP du serveur mail :
+
+  # host mail.slackbox.fr
+  mail.slackbox.fr has address 195.154.65.130
+
 
 
 ------------------------------------------------------------------------------
