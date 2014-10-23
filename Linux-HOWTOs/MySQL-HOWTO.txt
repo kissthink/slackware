@@ -11,6 +11,9 @@ MySQL/MariaDB sous Slackware.
   * Choisir un fichier de configuration pour MySQL
   * Initialiser le serveur MySQL/MariaDB
   * Sécuriser le serveur MySQL/MariaDB
+  * Exemple de base de données
+  * Sauvegarde
+  * Restauration
 
 
 Généralités
@@ -205,6 +208,55 @@ Créer un utilisateur 'webappuser' qui aura tous les droits sur 'webapp' :
 Si l'on souhaite supprimer cette base de données :
 
   mysql> drop database webapp;
+
+
+Sauvegarde
+----------
+
+La commande 'mysqldump' permet de sauvegarder une base de données MySQL sous
+forme d'une série d'instructions SQL. 
+
+L'exemple suivant effectue une sauvegarde complète de la base de données
+'cmsms' :
+
+  $ mysqldump -u root -p cmsms > sauvegarde_cmsms.sql
+
+L'option '--all-databases' permet de sauvegarder l'ensemble des bases de
+données d'un serveur :
+
+  $ mysqldump -u root -p --all-databases > sauvegarde.sql
+
+Les fichiers SQL résultants sont parfois très volumineux, étant donné qu'il
+s'agit d'un format texte simple. Dans ce cas, on peut les compresser durant la
+sauvegarde même. Voici ce que cela donne pour les deux exemples précédents :
+
+  $ mysqldump -u root -p cmsms | gzip -c > sauvegarde_cmsms.sql.gz
+  $ mysqldump -u root -p --all-databases | gzip -c > sauvegarde.sql.gz
+
+
+Restauration
+------------
+
+Dans l'exemple suivant, on va restaurer la base de données 'cmsms' depuis le
+fichier de sauvegarde créé ci-dessus :
+
+  $ mysqladmin -u root -p create cmsms
+  $ mysql -u root -p cmsms < sauvegarde_cmsms.sql
+
+Pour restaurer "à la louche" une sauvegarde globale, il suffit d'invoquer la
+commande suivante qui gère également la création des bases de données :
+
+  $ mysql -u root -p < sauvegarde.sql
+
+La restauration à partir d'une sauvegarde compressée peut s'effectuer comme
+ceci :
+
+  $ mysqladmin -u root -p create cmsms
+  $ gunzip -c sauvegarde_cmsms.sql.gz | mysql -u root -p cmsms
+
+Et pour une sauvegarde globale :
+
+  $ gunzip -c sauvegarde.sql.gz | mysql -u root -p
 
 
 ------------------------------------------------------------------------------
