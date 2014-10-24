@@ -515,7 +515,7 @@ Changer dans le répertoire de l'installation existante et décompresser
 l'archive de la mise à jour par-dessus les fichiers en place :
 
   # cd cmsms/htdocs
-  # tar xvzf cmsmadesimple-1.11.10-full.tar.gz
+  # tar xvzf /chemin/vers/cmsmadesimple-1.11.10-full.tar.gz
 
 Rectifier les permissions :
 
@@ -528,7 +528,7 @@ temporairement accessible en écriture :
 
 Dans un navigateur, ouvrir la page de mise à jour :
 
-  * http://<chemin_vers_cmsms>/admin/upgrade.php.
+  * http://<chemin_vers_cmsms>/install/upgrade.php.
 
 Une fois que la mise à jour s'est déroulée correctement :
 
