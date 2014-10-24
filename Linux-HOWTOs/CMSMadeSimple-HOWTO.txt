@@ -71,6 +71,11 @@ Résultat :
   drwxr-xr-x  6 root root  4096 déc.  16 17:21 uploads
   -rw-r--r--  1 root root  1133 nov.  24 17:10 version.php
 
+Alternativement, on peut télécharger la version "full" sur le site principal
+de CMS Made Simple :
+
+  * http://www.cmsmadesimple.org
+
 Régler les permissions :
 
   # cd /var/www/vhosts
@@ -90,31 +95,9 @@ Créer la base de données :
   mysql> exit
   Bye
 
-Ajouter un hôte virtuel dans la configuration d'Apache :
-
---8<---------- /etc/httpd/extra/httpd-vhosts.conf ----------------------------
-# cmsms.microlinux.montpezat
-<VirtualHost *:80>
-  ServerAdmin info@microlinux.fr
-  ServerName  cmsms.nestor.microlinux.montpezat
-  ServerAlias cmsms.nestor
-  DocumentRoot /srv/httpd/vhosts/cmsms/htdocs
-  ErrorLog "/var/log/httpd/cmsms-error.log"
-  CustomLog "/var/log/httpd/cmsms-access.log" common
-</VirtualHost>
---8<--------------------------------------------------------------------------
-
-Ajouter un enregistrement A correspondant dans la configuration du DNS, par
-exemple :
-
---8<---------- /var/named/zone.microlinux.montpezat --------------------------
-...
-cmsms.nestor     IN A 192.168.2.1
-...
---8<--------------------------------------------------------------------------
-
-Si l'on utilise Dnsmasq, ajouter une entrée correspondante dans le fichier
-'/etc/hosts' du serveur.
+Ajouter un hôte virtuel dans la configuration d'Apache. Le nouvel hôte devra
+avoir une entrée correspondante dans la configuration de BIND (serveur dédié)
+ou Dnsmasq (réseau local).
 
 Lancer l'installation avec Firefox, en l'ouvrant à l'adresse configurée.
 
@@ -511,6 +494,46 @@ Pour un affichage correct des News, il faut laisser vide le champ 'Sommaire' et
 éditer uniquement le champ 'Contenu'.
 
 
+Mise à jour
+-----------
+
+Sauvegarder la base de données :
+
+  # mysqldump -u root -p cmsms > cmsms.sql
+
+Sauvegarder le site existant :
+
+  # cd /var/www/vhosts
+  # cp -R cmsms cmsms.bak
+
+Télécharger la nouvelle version de CMS Made Simple. On optera pour la version
+"full" qui contient toutes les traductions :
+
+  * cmsmadesimple-1.11.10-full.tar.gz
+
+Changer dans le répertoire de l'installation existante et décompresser
+l'archive de la mise à jour par-dessus les fichiers en place :
+
+  # cd cmsms/htdocs
+  # tar xvzf cmsmadesimple-1.11.10-full.tar.gz
+
+Rectifier les permissions :
+
+  # chown -R apache:apache *
+
+Pour la procédure de mise à jour, le fichier 'config.php' doit être
+temporairement accessible en écriture :
+
+  # chmod 0644 config.php
+
+Dans un navigateur, ouvrir la page de mise à jour :
+
+  * http://<chemin_vers_cmsms>/admin/upgrade.php.
+
+Une fois que la mise à jour s'est déroulée correctement :
+
+  # chmod 0444 config.php
+  # rm -rf install/
 
 
 ------------------------------------------------------------------------------
