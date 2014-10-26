@@ -1,5 +1,5 @@
 =========================
-MLED KDE 14.1 64bit HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+MLED KDE 14.1 64bit HOWTO (c) Niki Kovacs <info@microlinux.fr>
 =========================
 
 Last revision: October 26th 2014
