@@ -1,11 +1,11 @@
 =========================
-MLED KDE 14.1 64bit HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+MLED KDE 14.1 32bit HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
 =========================
 
 Last revision: October 26th 2014
 
 The following HOWTO provides a step-by step installation guide for the
-Microlinux Enterprise Desktop KDE 14.1 64bit.
+Microlinux Enterprise Desktop KDE 14.1 32bit.
 
 
   * About MLED
@@ -17,7 +17,6 @@ Microlinux Enterprise Desktop KDE 14.1 64bit.
   * Configure slackpkg
   * Trim the base installation
   * Upgrade the base installation
-  * Multilib stuff
   * Install the MLED package collection
   * Set locales
   * Clean up the applications menu
@@ -88,7 +87,7 @@ directory for a set of tagfiles, so let's use it.
 
 Grab the set of tagfiles from the server:
 
-  # wget http://www.microlinux.fr/slackware/desktop-kde-14.1-64bit/tagfiles.tar.gz 
+  # wget http://www.microlinux.fr/slackware/desktop-kde-14.1-32bit/tagfiles.tar.gz 
 
 Unpack the downloaded archive:
 
@@ -159,9 +158,9 @@ repositories:
 
   # links http://www.microlinux.fr/slackware/ 
 
-Navigate to the 'desktop-base-14.1-64bit/slackware64/ap/' subdirectory. Grab
-the 'slackpkg+' package from the repository (use the [D] key in the Links
-browser to download it) and install it:
+Navigate to the 'desktop-base-14.1-32bit/slackware/ap/' subdirectory. Grab the
+'slackpkg+' package from the repository (use the [D] key in the Links browser
+to download it) and install it:
 
   # installpkg slackpkg+-1.3.2-noarch-2_microlinux.txz  
 
@@ -171,7 +170,7 @@ geographical location, for example:
 --8<---------- /etc/slackpkg/mirrors -----------------------------------------
 ...
 # GERMANY (DE)
-ftp://ftp.fu-berlin.de/unix/linux/slackware/slackware64-14.1/
+ftp://ftp.fu-berlin.de/unix/linux/slackware/slackware-14.1/
 ...
 --8<--------------------------------------------------------------------------
 
@@ -194,7 +193,7 @@ Trim the base installation
 In case you didn't use the set of tagfiles during the initial installation,
 now's the time to eventually catch up on it. 
 
-The 'desktop-kde-14.1-64bit/tools/' subdirectory provides a basic
+The 'desktop-kde-14.1-32bit/tools/' subdirectory provides a basic
 'trim_desktop_kde.sh' script that takes care of two things:
 
   1. install needed packages
@@ -205,7 +204,7 @@ The script makes use of 'slackpkg', so make sure it's configured correctly.
 
 Trim your Slackware installation: 
 
-  # cd slackware/desktop-kde-14.1-64bit/tools/ 
+  # cd slackware/desktop-kde-14.1-32bit/tools/ 
   # ./trim_desktop_kde.sh 
 
 If you don't run the 'trim_desktop_kde.sh' script, you'll be missing two
@@ -222,32 +221,11 @@ Now upgrade the base Slackware packages:
 
   # slackpkg upgrade-all 
 
-Two important remarks on this initial upgrade:
-
-  1. You'll notice that a handful of Slackware packages like 'MPlayer', 'k3b',
-  'kde-base-artwork', 'kde-baseapps', 'kde-wallpapers' or 'kde-workspace' will
-  be "upgraded", e. g. replaced by an MLED package. Don't worry, this is
-  normal. They've been rebuilt to offer extra functionality.
+You'll notice that a handful of Slackware packages like 'MPlayer', 'k3b',
+'kde-base-artwork', 'kde-baseapps', 'kde-wallpapers' or 'kde-workspace' will
+be "upgraded", e. g. replaced by an MLED package. Don't worry, this is normal.
+They've been rebuilt to offer extra functionality.
   
-  2. Your 'gcc-*' and 'glibc-*' packages will be replaced by Multilib
-  versions. Again, don't worry, this is also on purpose.
-
-
-Multilib stuff
---------------
-
-You may want to add applications like VirtualBox, Wine, Skype, etc. This is
-why 'slackpkg+' has been preconfigured to make use of Eric Hameleers' Multilib
-packages.
-
-The initial system upgrade we've just performed has already replaced your base
-'gcc-*' and 'glibc-*' packages by the respective Multilib versions. The only thing
-that's left to do now is to install the complete set of additional 32-bit
-support libraries. This can be done in one simple step using the following
-command:
-
-  # slackpkg install multilib 
-
 
 Install the MLED package collection
 -----------------------------------
@@ -286,11 +264,11 @@ export LC_COLLATE=en_US.utf8
 Clean up the applications menu
 ------------------------------
 
-The 'desktop-kde-14.1-64bit/tools/' subdirectory features the 'cleanmenu.sh'
+The 'desktop-kde-14.1-32bit/tools/' subdirectory features the 'cleanmenu.sh'
 utility, a small Bash script to clean up various desktop menu entries and make
 them Joe-Sixpack-friendly. Run this utility:
 
-# cd desktop-kde-14.1-64bit/tools/
+# cd desktop-kde-14.1-32bit/tools/
 # ./cleanmenu.sh 
 
 The script replaces many '*.desktop' files in /usr/share/applications and

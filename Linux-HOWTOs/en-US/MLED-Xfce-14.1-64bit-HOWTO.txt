@@ -1,11 +1,11 @@
-=========================
-MLED KDE 14.1 64bit HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
-=========================
+==========================
+MLED Xfce 14.1 64bit HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+==========================
 
 Last revision: October 26th 2014
 
 The following HOWTO provides a step-by step installation guide for the
-Microlinux Enterprise Desktop KDE 14.1 64bit.
+Microlinux Enterprise Desktop Xfce 14.1 64bit.
 
 
   * About MLED
@@ -88,7 +88,7 @@ directory for a set of tagfiles, so let's use it.
 
 Grab the set of tagfiles from the server:
 
-  # wget http://www.microlinux.fr/slackware/desktop-kde-14.1-64bit/tagfiles.tar.gz 
+  # wget http://www.microlinux.fr/slackware/desktop-xfce-14.1-64bit/tagfiles.tar.gz 
 
 Unpack the downloaded archive:
 
@@ -109,9 +109,7 @@ Now start the Slackware installer:
   # setup 
 
 PACKAGE SERIES SELECTION: accept the default package selection, since the
-tagfiles will override this and take care of selecting each package anyway. If
-you want the french and the german translation files for KDE to be installed,
-make sure to check the KDEI box.
+tagfiles will override this and take care of selecting each package anyway.
 
 SELECT PROMPTING MODE: tagpath - Use tagfiles in the subdirectories of a
 custom path
@@ -194,8 +192,8 @@ Trim the base installation
 In case you didn't use the set of tagfiles during the initial installation,
 now's the time to eventually catch up on it. 
 
-The 'desktop-kde-14.1-64bit/tools/' subdirectory provides a basic
-'trim_desktop_kde.sh' script that takes care of two things:
+The 'desktop-xfce-14.1-64bit/tools/' subdirectory provides a basic
+'trim_desktop_xfce.sh' script that takes care of two things:
 
   1. install needed packages
 
@@ -205,10 +203,10 @@ The script makes use of 'slackpkg', so make sure it's configured correctly.
 
 Trim your Slackware installation: 
 
-  # cd slackware/desktop-kde-14.1-64bit/tools/ 
-  # ./trim_desktop_kde.sh 
+  # cd slackware/desktop-xfce-14.1-64bit/tools/ 
+  # ./trim_desktop_xfce.sh 
 
-If you don't run the 'trim_desktop_kde.sh' script, you'll be missing two
+If you don't run the 'trim_desktop_xfce.sh' script, you'll be missing two
 packages from the official 'extra/' repository that don't ship on the
 installation disc. You can still install these manually:
 
@@ -224,10 +222,10 @@ Now upgrade the base Slackware packages:
 
 Two important remarks on this initial upgrade:
 
-  1. You'll notice that a handful of Slackware packages like 'MPlayer', 'k3b',
-  'kde-base-artwork', 'kde-baseapps', 'kde-wallpapers' or 'kde-workspace' will
-  be "upgraded", e. g. replaced by an MLED package. Don't worry, this is
-  normal. They've been rebuilt to offer extra functionality.
+  1. You'll notice that a handful of Slackware packages like 'MPlayer',
+  'audacious' and 'audacious-plugins' will be "upgraded", e. g. replaced by an
+  MLED package. Don't worry, this is normal. They've been rebuilt to offer
+  extra functionality.
   
   2. Your 'gcc-*' and 'glibc-*' packages will be replaced by Multilib
   versions. Again, don't worry, this is also on purpose.
@@ -256,9 +254,9 @@ First, install the full collection of desktop dependencies:
 
   # slackpkg install desktop-base 
 
-The next step fetches all KDE-specific MLED packages:
+The next step fetches all Xfce-specific MLED packages:
 
-  # slackpkg install desktop-kde 
+  # slackpkg install desktop-xfce 
 
 
 Set locales
@@ -286,11 +284,11 @@ export LC_COLLATE=en_US.utf8
 Clean up the applications menu
 ------------------------------
 
-The 'desktop-kde-14.1-64bit/tools/' subdirectory features the 'cleanmenu.sh'
+The 'desktop-xfce-14.1-64bit/tools/' subdirectory features the 'cleanmenu.sh'
 utility, a small Bash script to clean up various desktop menu entries and make
 them Joe-Sixpack-friendly. Run this utility:
 
-# cd desktop-kde-14.1-64bit/tools/
+# cd desktop-xfce-14.1-64bit/tools/
 # ./cleanmenu.sh 
 
 The script replaces many '*.desktop' files in /usr/share/applications and
@@ -329,7 +327,7 @@ commands:
 
 Or:
 
-  # slackpkg search desktop-kde 
+  # slackpkg search desktop-xfce
 
 Last but not least, application updates may sometimes overwrite the custom
 menu entries with a default '*.desktop' file. If that is the case, simply
