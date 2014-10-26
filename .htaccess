@@ -92,10 +92,10 @@ AddDefaultCharset utf-8
   AddDescription "Plain text file" .txt README
   AddDescription "Slackware build script" .SlackBuild
   AddDescription "Slackware package" .txz
-  AddDescription "Slackware package signature" .asc
-  AddDescription "Slackware package checksum" .txz.md5
-  AddDescription "Slackware package file list" .lst
-  AddDescription "Slackware package information" .meta
+  AddDescription "Signature file" .asc
+  AddDescription "Checksum file" .txz.md5
+  AddDescription "Package file list" .lst
+  AddDescription "Package information" .meta
   AddDescription "Slackware package description file" slack-desc
   AddDescription "Checksum file" .md5
   AddDescription "Patch file" .patch
