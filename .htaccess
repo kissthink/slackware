@@ -41,7 +41,6 @@ AddDefaultCharset utf-8
   AddIcon       /slackware/repository-layout/package-x-generic.png .tgz .gz .bz2 .7z .zip .rpm .deb
   AddIcon       /slackware/repository-layout/system-installer.png .txz 
   AddIcon       /slackware/repository-layout/application-certificate.png .txz.asc
-  AddIcon       /slackware/repository-layout/emblem-default.png .txz.md5
   AddIcon       /slackware/repository-layout/manual.png Linux-HOWTOs
   AddIcon       /slackware/repository-layout/help-browser.png -HOWTO.txt
   AddIcon       /slackware/repository-layout/preferences-system.png tools
