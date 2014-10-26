@@ -40,8 +40,8 @@ AddDefaultCharset utf-8
   AddIcon       /slackware/repository-layout/slackware.png .SlackBuild
   AddIcon       /slackware/repository-layout/package-x-generic.png .tgz .gz .bz2 .7z .zip .rpm .deb
   AddIcon       /slackware/repository-layout/system-installer.png .txz 
-  AddIcon       /slackware/repository-layout/applications-certificate.png .txz.asc
-  AddIcon       /slackware/repository-layout/emblem-default.png .txz.md5
+  AddIcon       /slackware/repository-layout/applications-certificate.png .asc
+  AddIcon       /slackware/repository-layout/emblem-default.png .md5
   AddIcon       /slackware/repository-layout/manual.png Linux-HOWTOs
   AddIcon       /slackware/repository-layout/help-browser.png -HOWTO.txt
   AddIcon       /slackware/repository-layout/preferences-system.png tools
@@ -92,8 +92,8 @@ AddDefaultCharset utf-8
   AddDescription "Plain text file" .txt README
   AddDescription "Slackware build script" .SlackBuild
   AddDescription "Slackware package" .txz
-  AddDescription "Slackware package signature" .txz.asc
-  AddDescription "Slackware package checksum" .txz.md5
+  AddDescription "Slackware package signature" .asc
+  AddDescription "Slackware package checksum" .md5
   AddDescription "Slackware package file list" .lst
   AddDescription "Slackware package information" .meta
   AddDescription "Slackware package description file" slack-desc
