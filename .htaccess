@@ -42,7 +42,7 @@ AddDefaultCharset utf-8
   AddIcon       /slackware/repository-layout/system-installer.png .txz 
   AddIcon       /slackware/repository-layout/application-certificate.png .txz.asc
   AddIcon       /slackware/repository-layout/manual.png Linux-HOWTOs
-  AddIcon       /slackware/repository-layout/help-browser.png -HOWTO.txt
+  AddIcon       /slackware/repository-layout/accessories-text-editor.png -HOWTO.txt
   AddIcon       /slackware/repository-layout/preferences-system.png tools
   AddIcon       /slackware/repository-layout/edit-copy.png template
   AddIcon       /slackware/repository-layout/server.png server-14.0-32bit
