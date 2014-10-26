@@ -1,0 +1,146 @@
+============
+TP Formation (c) Nicolas Kovacs <info@microlinux.fr>
+============
+
+Dernière révision : 3 mai 2014
+
+
+Objectif
+--------
+
+Installer et configurer un réseau local sous Slackware Linux.
+
+
+Serveur de base
+---------------
+
+Sortir la machine du local serveurs.
+
+Brancher un clavier et un écran.
+
+Installer un système Slackware 14.1 32-bits serveur : CD-Rom n° 1 et 2.
+
+Créer trois assemblages RAID 5 pour les partitions /boot, swap et /.
+
+  /!\ Ne pas oublier de nettoyer les assemblages RAID existants.
+
+Configurer la machine en tant que passerelle :
+
+  * eth0 : 192.168.1.254/255.255.255.0 ==> côté LiveBox
+  * eth1 : 192.168.2.1/255.255.255.0   ==> côté réseau local
+
+  Nom d'hôte : grossebertha
+  Domaine    : bge.montpellier
+
+  /!\ On veillera à placer la carte Ethernet récente côté réseau local. Il
+  faudra donc éventuellement permuter les cables et/ou la définition des
+  interfaces.
+
+Ajouter un pare-feu /etc/rc.d/rc.firewall et activer le relais des paquets.
+Pour commencer, ouvrir le seul port 22 en TCP pour l'accès SSH. Par la suite,
+ajouter les ports à ouvrir au fur et à mesure qu'on ajoute les services.
+
+Mettre la machine à l'heure manuellement.
+
+Ranger la machine dans le local serveurs. On effectuera la suite des
+opérations avec une connexion à distance (SSH, Putty). 
+
+Synchroniser la machine avec un ou plusieurs serveurs NTP publics.
+
+Installer et configurer sbopkg. 
+
+Installer l'outil de monitoring glances et ses dépendances, à partir des
+sources.
+
+Configurer Dnsmasq pour un réseau local "bge.montpellier". Dans un premier
+temps, effectuer une configuration de type minimum syndical, sans assigner
+d'IP statiques et de noms d'hôtes.
+
+Configurer un serveur FTP avec vsftpd.
+
+  Utilisateur  : install
+  Mot de passe : install
+
+
+Poste de travail de base
+------------------------
+
+Installer Slackware64 14.1 sur un poste Dell Vostro. 
+
+Désélectionner les groupes de paquets KDE, KDEI et XFCE. 
+
+  Nom d'hôte : localhost
+  Domaine    : localdomain
+
+Synchroniser la machine avec le serveur NTP local.
+
+Configurer la carte graphique en utilisant WindowMaker.
+
+Configurer slackpkg et mettre à jour le système de base.
+
+Créer un utilisateur 'test' avec un mot de passe 'bge'.
+
+Installer slackpkg+ et configurer le dépôt binaire MATE 1.8.
+
+Installer MATE 1.8.
+
+Installer sbopkg.
+
+Installer les paquets tiers suivants depuis les sources :
+
+  * google-droid-fonts
+  * webcore-fonts
+
+Cloner la configuration de ce poste de travail sur le serveur FTP local en
+utilisant Ghost4Linux.
+
+Récupérer cette configuration sur les autres postes de travail.
+
+  /!\ Il faudra repasser sur la configuration réseau.
+
+
+Serveur avancé
+--------------
+
+Assigner des adresses IP statiques et des noms d'hôtes correspondants à tous
+les postes :
+
+  * poste01
+  * poste02
+  * poste03
+  * etc.
+
+Créer un compte utilisateur pour chaque stagiaire, en suivant la convention de
+nommage UNIX. Pour commencer, définir le mot de passe 'bge'. Ensuite, chaque
+stagiaire modifiera ce mot de passe à la première connexion.
+
+Configurer le serveur NIS et exporter les répertoires utilisateur avec NFS.
+
+
+Poste de travail avancé
+-----------------------
+
+Essayer de monter manuellement les répertoires utilisateur (NFS).
+
+Configurer l'authentification centralisée (client NIS). 
+
+
+Facultatif
+----------
+
+Configurer un serveur Samba local avec un partage public et un partage
+confidentiel. Créer un compte Samba pour chaque utilisateur Linux existant.
+Tester l'accès aux partages avec les clients Linux et les clients Windows.
+
+Configurer un serveur LAMP. Installer un blog Wordpress accessible en Intranet
+à l'adresse http://blog.bge.montpellier. Ensuite, installer l'application GLPI
+(gestion de parc) joignable à l'adress http://parc.bge.montpellier.
+
+
+Amusez-vous bien,
+
+Nico
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt

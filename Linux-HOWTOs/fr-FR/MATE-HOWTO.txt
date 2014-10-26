@@ -1,0 +1,73 @@
+==========
+MATE HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+==========
+
+Dernière révision : 4 avril 2014
+
+Ce HOWTO décrit la configuration du bureau MATE sous Slackware Linux.
+
+
+Terminal MATE
+-------------
+
+Édition > Préférences du profil
+
+Police : Fixed 12
+
+[ ] Activer le texte en gras
+
+Couleurs > Palettes prédéfinies : Gris sur noir
+
+Palette : Tango
+
+Arrière-plan : Transparent 80 %
+
+Barre de défilement : Désactivée
+
+
+Apparence
+---------
+
+Thème : Clearlooks Phenix
+
+Bordures de fenêtres : WinMe ou BlueMenta 
+
+Thème d'icônes : GNOME Brave
+
+Police des applications : Droid Sans 11
+
+Pointeur : par défaut
+
+Arrière-plan du bureau : opensuse-1600x1200.jpg
+
+Tableau de bord supérieur : 26 pixels
+
+
+Compositeur d'affichage
+-----------------------
+
+  $ dconf-editor
+
+org > mate > marco > general > compositing manager [X]
+
+
+Icônes de bureau
+----------------
+
+  $ dconf-editor
+
+org > mate > caja > desktop > computer-icon-visible [ ]
+                              home-icon-visible     [ ]
+                              trash-icon-visible    [ ]
+                              volumes-visible       [X]
+
+
+Confection du profil
+--------------------
+
+Copier '~/.config' vers '/etc/skel' et conserver les répertoires 'dconf',
+'gconf' et 'mate'.
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt

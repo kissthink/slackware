@@ -1,0 +1,169 @@
+==============
+Dolibarr HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+==============
+
+Dernière révision : 17 décembre 2013
+
+Ce HOWTO décrit l'installation de Dolibarr sur un serveur Slackware.
+
+Créer la base de données :
+
+  # mysql -u root -p
+  mysql> create database dolibarr;
+  mysql> grant all on dolibarr.* to dolibarruser@localhost
+      -> identified by '********'; 
+  mysql> flush privileges;
+  Bye 
+
+# cd /var/www/vhosts
+
+Télécharger Dolibarr :
+
+  # wget -c http://www.dolibarr.org/files/dolibarr.tgz
+  # tar xvzf dolibarr.tgz
+  # mv dolibarr-x.y.z dolibarr
+  # rm -f dolibarr.tgz
+
+Régler les droits d'accès et les permissions de fichiers :
+
+  # chown -R apache:apache dolibarr/
+  # find dolibarr/ -type d -exec chmod 0755 \{} \;
+  # find dolibarr/ -type f -exec chmod 0644 \{} \;
+
+Créer un fichier de configuration vide :
+
+  # cd dolibarr
+  # touch htdocs/conf/conf.php
+
+Définir les permissions de ce fichier :
+
+  # chown apache:apache htdocs/conf/conf.php
+
+Créer le répertoire qui servira aux documents générés ou stockés par Dolibarr.
+Attention, il doit bien être à l'extérieur de l'arborescence du site, pour des
+raisons de sécurité évidentes :
+
+  # mkdir documents
+
+Définir les permissions du répertoire :
+
+  # chown -R apache:apache documents/
+
+Créer un hôte virtuel, comme ceci par exemple :
+
+--8<---------- /etc/httpd/extra/httpd-vhosts.conf ----------------------------
+...
+# dolibarr.nestor.microlinux.montpezat
+<VirtualHost *:80>
+  ServerAdmin info@microlinux.fr
+  ServerName  dolibarr.nestor.microlinux.montpezat
+  ServerAlias dolibarr.nestor
+  DocumentRoot /srv/httpd/vhosts/dolibarr/htdocs
+  ErrorLog "/var/log/httpd/dolibarr-error.log"
+  CustomLog "/var/log/httpd/dolibarr-access.log" common
+</VirtualHost>
+--8<--------------------------------------------------------------------------
+
+Redémarrer Apache :
+
+  # /etc/rc.d/rc.httpd restart
+
+Pointer le navigateur sur la page principale, par exemple :
+
+  * http://dolibarr.nestor
+
+Suivre les instructions de l'installation.
+
+Une fois l'installation terminée, on peut la verrouiller comme ceci :
+
+  # cd /var/www/vhosts/dolibarr
+  # touch install.lock
+
+Accéder à l'interface d'administration et procéder à la configuration de base :
+
+  * Nom de la société
+  * Modules
+
+Mise à jour
+-----------
+
+Vérifier si l'installation existante comporte un fichier 'install.lock' et
+supprimer ce fichier le cas échéant. 
+
+Récupérer la dernière version de Dolibarr et la ranger à la racine du serveur
+Web :
+
+  # cd /var/www/vhosts
+  
+Décompresser l'archive :
+
+  # tar xvzf dolibarr-x.y.z.tgz
+
+Recopier les nouveaux fichiers dans le répertoire dolibarr-x.y.z vers le
+répertoire contenant l'ancienne version de Dolibarr. Ceci a pour effet de
+remplacer les anciens fichiers par les nouveaux, tout en conservant les
+fichiers qui sont spécifiques à l'installation, comme le fichier conf.php ou
+encore les modules complémentaires installés. On utilisera l'astuce suivante :
+
+  # scp -r dolibarr-x.y.z/* dolibarr/
+
+À partir de là, on pourra supprimer le répertoire des fichiers sources :
+
+  # rm -rf dolibarr-x.y.z/
+
+Régler les droits d'accès :
+
+  # chown -R apache:apache dolibarr/
+
+Pointer le navigateur sur la page d'installation :
+
+  * http://chemin_vers_dolibarr/install/
+
+Choisir 'Mise à jour' dans le menu proposé, en respectant les versions
+intermédiaires successives. Lancer les étapes de migration successives.
+
+Une fois la mise à jour terminée, verrouiller le répertoire d'installation :
+
+  # touch documents/install.lock
+  # chmod 444 documents/install.lock
+
+Vérifier les droits d'accès du fichier de configuration et les modifier le cas
+échéant :
+
+  # chmod 444 htdocs/conf/conf.php
+
+
+Installer le module Multi-société
+---------------------------------
+
+Créer un répertoire 'custom' qui contiendra les modules tiers :
+
+  # mkdir htdocs/custom
+
+Éditer le fichier 'htdocs/conf/conf.php' et définir le chemin vers les modules.
+Il suffira éventuellement de décommenter les deux lignes correspondantes :
+
+--8<---------- conf.php ------------------------------------------------------
+...
+$dolibarr_main_url_root='http://myserver';
+$dolibarr_main_document_root='/path/of/dolibarr/htdocs';
+$dolibarr_main_url_root_alt='http://myserver/custom';
+$dolibarr_main_document_root_alt='/path/of/dolibarr/htdocs/custom';
+...
+--8<--------------------------------------------------------------------------
+
+Décompresser le module :
+
+  # unzip module_multicompany_3.4.0.zip
+
+Déplacer l'arborescence résultante vers l'endroit approprié :
+
+  # mv multicompany/ chemin_vers_dolibarr/htdocs/custom/
+
+Régler les droits d'accès :
+
+  # chown -R apache:apache chemin_vers_dolibarr/htdocs/custom/
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt

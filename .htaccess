@@ -64,7 +64,7 @@ AddDefaultCharset utf-8
   AddIconByType /slackware/repository-layout/image-x-generic.png image/*
 
   # DESCRIPTIONS
-  AddDescription "Microlinux documentation in French" Linux-HOWTOs -HOWTO.txt
+  AddDescription "Microlinux documentation" Linux-HOWTOs -HOWTO.txt
   AddDescription "Template configuration files" template
   AddDescription "Helper scripts" tools
   AddDescription "Obsolete software" pasture

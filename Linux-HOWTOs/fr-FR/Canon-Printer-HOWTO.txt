@@ -1,0 +1,176 @@
+===================
+Canon Printer HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+===================
+
+Dernière révision : 25 février 2014
+
+Ce HOWTO décrit la configuration d'une imprimante et/ou d'un scanner Canon
+sous Slackware Linux.
+
+
+  * Introduction
+  * Récupérer les paquets
+  * Installer le driver de l'imprimante
+  * Installer l'application de numérisation
+  * Installer une bibliothèque manquante
+  * Éditer une entrée de menu pour l'application de numérisation
+  
+
+Introduction
+------------
+
+Le fabricant Canon propose des drivers Linux pour ses imprimantes et ses
+scanners, ainsi qu'une application de numérisation "maison". L'installation de
+tous ces composants n'est pas évidente, étant donné que les seuls formats de
+paquets RPM et DEB sont officiellement supportés. 
+
+
+Récupérer les paquets
+---------------------
+
+Aller sur le site de Canon :
+
+  * http://www.canon.fr
+
+Trouver la section de téléchargement des drivers :
+
+  * Support > Assistance > Imprimantes et multifonctions 
+
+Trouver les drivers, par exemple : 
+
+  * Pixma > MG2250 > Logiciel (Pilotes et applications)
+
+Choisir le système d'exploitation et la langue :
+
+  [X] Linux
+  [X] Français
+
+Les drivers et les applications sont disponibles en trois formats :
+
+  1. Paquets RPM
+  2. Paquets DEB
+  3. Fichiers source
+
+Les fichiers source sont malheureusment spécifiques à la construction de
+paquets RPM. On va donc opter directement pour le format RPM binaire.
+Télécharger les deux archives compressées respectives :
+
+  * MG2200 series IJ Printer Driver Ver. 3.80 for Linux (rpm Packagearchive)
+  * MG2200 series ScanGear MP Ver. 2.00 for Linux (rpm Packagearchive)
+
+Créer un répertoire '/root/canon/' et ranger les deux archives dans ce
+répertoire :
+
+  * cnijfilter-mg2200series-3.80-1-rpm.tar.gz 
+  * scangearmp-mg2200series-2.00-1-rpm.tar.gz
+
+
+Installer le driver de l'imprimante
+-----------------------------------
+
+Décompresser l'archive du driver :
+  
+  # tar xvzf cnijfilter-mg2200series-3.80-1-rpm.tar.gz
+
+Voici ce que l'on obtient :
+
+  # tree cnijfilter-mg2200series-3.80-1-rpm
+  cnijfilter-mg2200series-3.80-1-rpm
+  |-- install.sh
+  |-- packages
+  |   |-- cnijfilter-common-3.80-1.i386.rpm
+  |   |-- cnijfilter-common-3.80-1.x86_64.rpm
+  |   |-- cnijfilter-mg2200series-3.80-1.i386.rpm
+  |   `-- cnijfilter-mg2200series-3.80-1.x86_64.rpm
+  `-- resources
+      |-- printer_fr_utf8.lc
+      |-- printer_ja_utf8.lc
+      `-- printer_zh_utf8.lc
+
+Convertir les paquets RPM au format TGZ :
+
+  # cd cnijfilter-mg2200series-3.80-1-rpm/packages/
+  # rpm2tgz *.i386.rpm
+
+Sur un système 64-bits :
+
+  # rpm2tgz *.x86_64.rpm
+  
+Vérifier les paquets résultants :
+
+  # ls *.tgz
+  cnijfilter-common-3.80-1.i386.tgz  
+  cnijfilter-mg2200series-3.80-1.i386.tgz
+
+Installer ces paquets :
+
+  # installpkg *.tgz
+
+
+Installer l'application de numérisation
+---------------------------------------
+
+Procéder de même pour le paquet qui contient le logiciel de numérisation :
+
+  # tar xvzf scangearmp-mg2200series-2.00-1-rpm.tar.gz
+  # cd scangearmp-mg2200series-2.00-1-rpm/packages/
+  # rpm2tgz *.i386.rpm
+
+Sur un système 64-bits :
+
+  # rpm2tgz *.x86_64.rpm
+
+Vérifier les paquets résultants :
+
+  # ls *.tgz
+  scangearmp-common-2.00-1.i386.tgz  
+  scangearmp-mg2200series-2.00-1.i386.tgz
+
+Installer ces paquets :
+
+  # installpkg *.tgz
+
+
+Installer une bibliothèque manquante
+------------------------------------
+
+L'application '/usr/local/bin/scangearmp' requiert une bibliothèque qui n'est
+pas présente sur un système Slackware par défaut :
+
+  # ldd /usr/local/bin/scangearmp | grep "not found"
+    libpangox-1.0.so.0 => not found
+
+La bibliothèque en question est fournie par le paquet 'pangox-compat', que
+l'on peut trouver sur SlackBuilds.org.
+
+
+Éditer une entrée de menu pour l'application de numérisation
+------------------------------------------------------------
+
+Éditer un fichier '/usr/share/desktop/scangearmp.desktop' pour créer une
+entrée de menu :
+
+--8<---------- scangearmp.desktop --------------------------------------------
+[Desktop Entry]
+Name=Scanner Tool
+Name[de]=Scannersoftware
+Name[fr]=Acquisition d'images
+Comment=Simple Scan
+Exec=scangearmp
+Icon=scanner
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Graphics;
+--8<--------------------------------------------------------------------------
+
+Rafraîchir les entrées de menu :
+
+  # update-desktop-database
+
+À partir de là, l'imprimante peut être configurée comme n'importe quel modèle
+supporté dans l'interface de CUPS.
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt

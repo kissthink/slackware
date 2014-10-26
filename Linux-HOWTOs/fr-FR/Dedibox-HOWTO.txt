@@ -1,0 +1,546 @@
+=============
+Dedibox HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+=============
+
+Dernière révision : 20 octobre 2014
+
+Ce HOWTO décrit l'installation et la configuration de MLES 14.1 64-bit sur un
+serveur dédié Dedibox SC de chez Online. MLES 14.1 64-bit est basé sur
+Slackware64 64-bit, avec une panoplie de paquets supplémentaires. Slackware ne
+figure pas parmi les distributions proposées par Online, mais on peut
+quand-même l'installer à l'aide de la console de secours, avec un peu de
+patience.
+
+  * Installation initiale
+  * Démarrer une session de secours
+  * Préparer le disque
+  * Installer un système Slackware minimal
+  * Configurer l'installation minimale
+  * Premier redémarrage
+
+
+Installation initiale
+---------------------
+
+Ouvrir la console Online : 
+
+  * http://console.online.net.
+  
+Serveur > Liste de vos serveurs > Serveur Dedibox SC (sd-XXXXX) > Installer
+
+Choix du type d'utilisation du système d'exploitation : Serveur
+
+Choix du système d'exploitation : Debian, Ubuntu, peu importe...
+
+Partitionnement : peu importe, vu qu'on le refera à la main
+
+Noter l'adresse IP du serveur, l'IP de la passerelle et les DNS
+
+
+Démarrer une session de secours
+-------------------------------
+
+Une fois que le système est installé, passer en 'Mode secours' et choisir
+'Ubuntu 14.04 amd64' comme système de secours.
+
+La console affiche un identifiant et un mot de passe qui permettent de se
+connecter en SSH au système de secours. Attendre une ou deux minutes, puis
+lancer la connexion. 
+
+  /!\ Parfois, le mot de passe temporaire pour la session de secours ne
+  fonctionne pas tout de suite. Dans ce cas, il suffit d'insister un peu.
+
+  $ ssh kikinovak@195.154.65.130
+  kikinovak@195.154.65.130's password: 
+
+  Welcome to Ubuntu 14.04.1 LTS (GNU/Linux 3.13.0-24-generic x86_64)
+
+   * Documentation:  https://help.ubuntu.com/
+
+    System information as of Sun Oct 19 10:10:44 CEST 2014
+
+    System load:    1.23      Processes:           79
+    Usage of /home: unknown   Users logged in:     0
+    Memory usage:   3%        IP address for eth0: 195.154.65.130
+    Swap usage:     0%
+
+    Graph this data and manage this system at:
+      https://landscape.canonical.com/
+
+
+  The programs included with the Ubuntu system are free software;
+  the exact distribution terms for each program are described in the
+  individual files in /usr/share/doc/*/copyright.
+
+  Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+  applicable law.
+
+     _     _                ____
+    | |   (_)__   __ ___   |  _ \  ___  ____ ___  _  _  ___
+    | |   | |\ \ / // _ \  | |_| |/ _ \/ ___/ __\| || |/ _ \
+    | |__ | | \ V /|  __/  |  _ /   __/\__ \ (__ | || |  __/
+    |____||_|  \_/  \___|  |_| \_\\___|____/\___/`.__.'\___|
+
+  Aide et documentation : http://documentation.dedibox.fr
+  Console de gestion    : http://console.dedibox.fr
+
+  Serveur : 195-154-65-130
+  Adr IP  : 195.154.65.130
+  Adr MAC : e8:9a:8f:13:e6:47
+  Système : Ubuntu 14.04.1 LTS (trusty) x86_64
+  Démarré : dimanche 19 octobre 2014, 10:11:33 (UTC+0200)
+
+  To run a command as administrator (user "root"), use "sudo <command>".
+  See "man sudo_root" for details.
+
+  kikinovak@195-154-65-130:~$ 
+
+
+Préparer le disque
+------------------
+
+Remettre à zéro la table de partitions :
+
+  $ sudo dd if=/dev/zero of=/dev/sda bs=512 count=64
+
+Le changement de la table de partitions n'est pas pris en compte par la console
+de secours. Il faut donc la quitter et en relancer une autre. Dans la console
+Online, passer successivement par 'Repasser en mode normal' et 'Secours', puis
+se reconnecter en SSH avec un nouveau mot de passe. 
+
+Activer le compte root :
+
+  $ sudo passwd root
+
+Devenir root :
+
+  $ su -
+
+Définir la variable d'environnement LANG :
+
+  # LANG=C
+  # export LANG
+
+Si l'on utilise 'fdisk' pour le partitionnement, on se retrouve avec des
+erreurs du style 'Partition 1 does not start on physical sector boundary.' Il
+vaut mieux utiliser 'gdisk'. Éventuellement, voir le 'Partition-HOWTO' pour
+plus de détails :
+
+  # gdisk /dev/sda
+
+Schéma :
+
+  # gdisk -l /dev/sda
+
+  Found valid GPT with protective MBR; using GPT.
+  Disk /dev/sda: 976773168 sectors, 465.8 GiB
+
+  ...
+
+  Number  Start (sector)    End (sector)  Size       Code  Name
+     1            2048          206847   100.0 MiB   8300  Linux filesystem
+     2          206848         4401151   2.0 GiB     8200  Linux swap
+     3         4401152       976773134   463.7 GiB   8300  Linux filesystem
+
+
+Étant donné que nous n'avons pas accès à l'installateur Slackware, nous allons
+tout simplement formater le disque à la main :
+
+  # mkfs.ext2 -v /dev/sda1
+  # mkswap /dev/sda2
+  # swapon /dev/sda2
+  # mkfs.ext4 -v /dev/sda3
+
+
+Monter la partition principale :
+
+  # mount /dev/sda3 /mnt
+
+Créer et monter la partition '/boot' :
+
+  # mkdir /mnt/boot
+  # mount /dev/sda1 /mnt/boot
+
+
+Installer un système Slackware minimal
+--------------------------------------
+
+On va récupérer un système Slackware minimal sur un miroir FTP. La console de
+secours comporte déjà le client FTP 'lftp'. Pour plus de confort, on va
+installer NcFTP :
+
+  # apt-get update
+  # apt-get install ncftp 
+
+Créer un répertoire 'slackware64' et télécharger les groupes de paquets
+essentiels (c'est-à-dire A, AP, D, L et N) dans ce répertoire. Étant donné que
+l'espace est limité dans notre console de secours, nous allons nous y prendre à
+deux reprises :
+
+  # mkdir slackware64
+  # cd slackware64/
+  # ncftp mirror.switch.ch
+  ncftp > cd mirror/slackware/slackware64-14.1/slackware64/
+  ncftp > get -R a ap d n
+  ncftp > bye
+
+  /!\ Le téléchargement produit quelques avertissements sans conséquence, que
+  l'on peut ignorer :
+
+    tar: This does not look like a tar archive
+    tar: Exiting with failure status due to previous errors
+
+Installer 'a/pkgtools' dans l'environnement de secours :
+
+  # cp a/pkgtools-14.1-noarch-2.tgz /
+  # cd /
+  # tar xvzf pkgtools-14.1-noarch-2.tgz 
+  ./
+  var/
+  var/log/
+  var/log/setup/
+  var/log/setup/setup.htmlview
+  var/log/setup/setup.80.make-bootdisk
+  var/log/setup/setup.70.install-kernel
+  var/log/setup/tmp/
+  var/log/setup/setup.services
+  install/
+  install/slack-desc
+  sbin/
+  sbin/removepkg
+  sbin/explodepkg
+  sbin/pkgtool
+  sbin/upgradepkg
+  sbin/makepkg
+  sbin/makebootdisk
+  sbin/installpkg
+  usr/
+  usr/man/
+  usr/man/man8/
+  usr/man/man8/pkgtool.8.gz
+  usr/man/man8/upgradepkg.8.gz
+  usr/man/man8/makepkg.8.gz
+  usr/man/man8/installpkg.8.gz
+  usr/man/man8/explodepkg.8.gz
+  usr/man/man8/removepkg.8.gz
+
+Créer un lien symbolique vers 'du' pour que 'pkgtools' fonctionne correctement
+sous Ubuntu :
+
+  # ln -s /usr/bin/du /bin/du
+
+Installer les paquets téléchargés vers l'environnement chrooté :
+
+  # cd /root/slackware64
+  # installpkg --root /mnt */*.t?z
+
+  /!\ Là encore, on pourra sereinement ignorer l'avertissement concernant la
+  version de 'tar' :
+
+    WARNING: pkgtools are unstable with tar > 1.13.
+             You should provide a "tar-1.13" in your $PATH.
+
+Le système de secours chargé dans la RAM est passablement saturé avec les
+quatre groupes de paquets téléchargés :
+
+  # df -h
+  Filesystem      Size  Used Avail Use% Mounted on
+  aufs            985M  675M  311M  69% /
+
+On va les supprimer pour faire de la place :
+
+  # rm -rf a/ ap/ d/ n/
+  # df -h
+  Filesystem      Size  Used Avail Use% Mounted on
+  aufs            985M  226M  760M  23% /
+
+À présent, on peut récupérer et installer le groupe de paquets L :
+
+  # ncftp mirror.switch.ch
+  ncftp > cd mirror/slackware/slackware64-14.1/slackware64/
+  ncftp > get -R l
+  ncftp > bye
+  # installpkg --root /mnt l/*.t?z
+  # rm -rf l/
+
+
+Configurer l'installation minimale
+----------------------------------
+
+Lier les systèmes '/proc', '/dev' et '/sys' à ceux de la console de secours :
+
+  # mount --rbind /proc /mnt/proc
+  # mount --rbind /dev /mnt/dev
+  # mount --rbind /sys /mnt/sys
+
+Changer dans l'environnement chrooté en spécifiant l'interpréteur de commandes
+Bash :
+
+  # chroot /mnt /bin/bash
+
+Maintenant qu'on est dans l'environnement Slackware, lancer l'utilitaire de
+configuration :
+
+  # pkgtool
+
+  > Setup - Choose Slackware installation scripts to run again
+
+  [*] liloconfig
+
+OPTIONAL LILO append    : 'ipv6.disable=1'
+
+USE UTF-8 TEXT CONSOLE  : Yes
+
+SELECT LILO DESTINATION : MBR - Install to Master Boot Record
+
+Éditer '/etc/lilo.conf' manuellement et corriger quelques entrées, notamment
+la partition principale qui n'est pas détectée automatiquement.
+
+--8<---------- /etc/lilo.conf ------------------------------------------------
+...
+lba32
+append="ipv6.disable=1 vt.default_utf8=1"
+boot=/dev/sda
+compact
+...
+timeout = 10
+...
+image = /boot/vmlinuz
+  root = /dev/sda3
+  label = MLES-14.1-64bit
+  read-only
+--8<--------------------------------------------------------------------------
+
+Prendre en compte les modifications en ignorant les avertissements sans
+conséquence :
+
+  # lilo
+  Warning: Unable to determine video adapter in use in the present system.
+  Warning: Video adapter does not support VESA BIOS extensions needed for
+    display of 256 colors.  Boot loader will fall back to TEXT only operation.
+  Added MLES-14.1-64bit  *
+  2 warnings were issued.
+
+Configurer le réseau :
+
+  [*] netconfig
+
+  * Nom d'hôte : sd-25854
+  * Nom de domaine : dedibox.fr
+  * Renseigner l'adresse IP, la passerelle et le DNS primaire.
+
+Configurer les services au démarrage :
+
+  [ ] rc.fuse -> désélectionner
+  [ ] rc.inetd -> désélectionner
+  [ ] rc.messagebus -> désélectionner
+  [*] rc.syslog
+  [*] rc.sshd
+
+Générer les certificats SSL :
+
+  [*] cacerts - Rebuilt SSL certificate database
+
+Configurer le fuseau horaire :
+
+  [*] timeconfig - Select your timezone
+
+Horloge système : UTC
+
+Fuseau horaire  : Europe/Paris
+
+Le fichier '/etc/fstab' devra être créé manuellement comme ceci :
+
+--8<---------- /etc/fstab ----------------------------------------------------
+/dev/sda1        /boot            ext2        defaults         1   2
+/dev/sda2        swap             swap        defaults         0   0
+/dev/sda3        /                ext4        defaults         1   1
+devpts           /dev/pts         devpts      gid=5,mode=620   0   0
+proc             /proc            proc        defaults         0   0
+tmpfs            /dev/shm         tmpfs       defaults         0   0
+--8<--------------------------------------------------------------------------
+
+Définir un mot de passe pour root :
+
+  # passwd root
+
+Quitter l'environnement chrooté :
+
+  # exit
+
+Démonter les partitions :
+
+  # umount /mnt/sys
+  # umount /mnt/dev
+  # umount /mnt/proc
+  # umount /mnt/boot
+  # umount /mnt
+
+On obtient probablement des messages d'erreur de ce style :
+
+  umount: /mnt: device is busy.
+          (In some cases useful info about processes that use
+           the device is found by lsof(8) or fuser(1))
+
+Dans un cas comme dans l'autre, revenir dans l'interface web de la console
+Online, repasser en mode normal et croiser les doigts. 
+
+
+Agrémenter le shell
+-------------------
+
+Récupérer et installer le paquet 'user-settings-console' :
+
+  # links http://www.microlinux.fr/slackware
+
+Le paquet se trouve dans le répertoire server-14.1-64bit/slackware64/profile.
+
+Redémarrer :
+
+  # reboot && exit
+
+
+Télécharger les scripts Microlinux
+----------------------------------
+
+Je fournis une collection de scripts et de fichiers de configuration prêts à
+l'emploi pour accélérer le processus d'installation. Récupérez toute cette
+arborescence en utilisant la commande suivante :
+
+  # cd 
+  # git clone https://github.com/kikinovak/slackware
+
+
+Configurer slackpkg
+-------------------
+
+Dans la configuration par défaut, le gestionnaire de paquets 'slackpkg' ne
+fonctionne qu'avec les dépôts officiels de Slackware. Nous devons télécharger
+et installer le plugin 'slackpkg+' de Matteo Rossini pour activer
+l'utilisation de dépôts de paquets tiers. Microlinux vous évite la corvée en
+fournissant des paquets 'slackpkg+' préconfigurés pour l'utilisation des
+dépôts MLES.
+
+En ligne de commande, utilisez le navigateur Links pour accéder aux dépôts
+distants :
+
+  # links http://www.microlinux.fr/slackware
+
+Repérez le dépôt server-14.1-64bit et naviguez vers le sous-répertoire
+'slackware64/ap/'. Téléchargez le paquet 'slackpkg+' depuis le dépôt (en
+utilisant la touche [D] comme "Download") et installez-le :
+
+  # installpkg slackpkg+-1.3.2-noarch-2_microlinux.txz 
+
+Éditez '/etc/slackpkg/mirrors' et sélectionnez un miroir Slackware en fonction
+de votre pays, par exemple :
+
+--8<---------- /etc/slackpkg/mirrors -----------------------------------------
+...
+# GERMANY (DE)
+ftp://ftp.fu-berlin.de/unix/linux/slackware/slackware64-14.1/
+...
+--8<--------------------------------------------------------------------------
+
+Assurez-vous de ne choisir qu'un seul miroir pour Slackware stable. Si vous
+utilisez MLES en France, optez pour le miroir ftp.fu-berlin.de ou
+mirror.switch.ch. Le miroir OVH est inutilisable comme à peu près tout ce qui
+vient de chez OVH.
+
+
+Mise à jour initiale
+--------------------
+
+Récupérez les clés GPG :
+
+  # slackpkg update gpg
+
+Mettez à jour les informations sur les paquets disponibles :
+
+  # slackpkg update
+
+Mettre à jour les paquets déjà installés :
+
+  # slackpkg upgrade-all
+
+Dans le dialogue de post-configuration :
+
+  Your kernel image was updated.  We highly recommend you run: lilo
+  Do you want slackpkg to run lilo now? (Y/n) --> [Y]
+   
+  Added MLES-14.1-64bit  *
+
+  Searching for NEW configuration files
+
+  Some packages had new configuration files installed.
+  You have four choices:
+
+  (K)eep the old files and consider .new files later
+
+  (O)verwrite all old files with the new ones. The old files will be stored with
+  the suffix .orig
+
+  (R)emove all .new files
+
+  (P)rompt K, O, R selection for every single file
+
+  What do you want (K/O/R/P)? --> [O]
+
+
+Installer les paquets manquants
+-------------------------------
+
+Notre installation de base ne compte pour l'instant que les groupes de paquets
+A, AP, D, L et N. On peut récupérer les groupes de paquets manquants de façon
+très simple, en utilisant le script fourni :
+
+  # cd slackware/server-14.1-64bit/tools
+  # ./trim_server_base.sh
+
+Cette dernière commande installe les groupes de paquets restants, c'est-à-dire
+grosso modo les groupes F, K, T, TCL, X et Y.
+
+Installer les paquets MLES :
+
+  # slackpkg install microlinux-server
+
+
+Migrer vers le noyau GENERIC
+----------------------------
+
+Pour la construction de l'initrd, voir ce document :
+
+  * Generic-Kernel-HOWTO.txt
+
+Pour le passage au kernel GENERIC, c'est ici :
+
+  * LILO-HOWTO.txt
+
+
+Peaufiner la configuration du réseau
+------------------------------------
+
+Éditer '/etc/hosts' comme ceci :
+
+--8<----------- /etc/hosts ---------------------------------------------------
+127.0.0.1          localhost.localdomain localhost
+195.154.65.130     sd-41893.dedibox.fr sd-41893
+--8<--------------------------------------------------------------------------
+
+
+Pare-feu
+--------
+
+Le répertoire 'template/' contient un pare-feu prêt à l'emploi :
+
+  # cd template/
+  # cp rc.firewall.dedibox /etc/rc.d/rc.firewall
+
+Adapter la configuration du script, puis :
+
+  # chmod +x /etc/rc.d/rc.firewall
+  # /etc/rc.d/rc.firewall start
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt

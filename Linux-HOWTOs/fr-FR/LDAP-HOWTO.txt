@@ -1,0 +1,234 @@
+==========
+LDAP HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+==========
+
+Dernière révision : 26 janvier 2014
+
+  ************************
+  *** TRAVAIL EN COURS ***
+  ************************
+
+Remplacer le paquet 'openldap-client' par le paquet recompilé 'openldap'.
+
+  # cd /etc/openldap
+  # mv slapd.conf slapd.conf.orig
+
+Éditer '/etc/openldap/slapd.conf' :
+
+--8<---------- /etc/openldap/slapd.conf --------------------------------------
+# SCHEMES
+include         /etc/openldap/schema/core.schema
+include         /etc/openldap/schema/cosine.schema
+include         /etc/openldap/schema/inetorgperson.schema
+include         /etc/openldap/schema/nis.schema
+# ACL
+include         /etc/openldap/acl.conf
+# DATABASE
+database        bdb
+directory       /var/lib/ldap/example.com
+# GENERIC
+pidfile         /var/run/slapd/slapd.pid
+argsfile        /var/run/slapd/slapd.args
+suffix          "dc=example,dc=com"
+rootdn          "cn=ldapadmin,dc=example,dc=com"
+rootpw          {SSHA}CBC4k64mVJuEcyylszFb/iS1I0HquCjF
+password-hash   {CRYPT}
+loglevel        256
+sizelimit       unlimited
+--8<--------------------------------------------------------------------------
+
+Éditer '/etc/openldap/acl.conf' :
+
+--8<---------- /etc/openldap/acl.conf ----------------------------------------
+access to attrs=userPassword
+  by self write
+  by * auth
+access to dn.base=""
+  by * read
+access to * by self write
+  by * read
+--8<--------------------------------------------------------------------------
+
+  # mkdir -p /var/lib/ldap/example.com
+  # cp /var/lib/openldap-data/DB_CONFIG.example \
+    /var/lib/ldap/example.com/DB_CONFIG
+  # mkdir /var/run/slapd
+
+Générer un mot de passe :
+
+  # slappasswd
+  New password:
+  Re-enter new password:
+  {SSHA}CBC4k64mVJuEcyylszFb/iS1I0HquCjF
+
+Coller la chaîne de caractères résultante dans 'slapd.conf'.
+
+Ajouter une ligne à '/etc/syslog.conf' :
+
+--8<---------- /etc/syslog.conf ----------------------------------------------
+...
+# LDAP
+local4.*    /var/log/ldap.log --> séparés par une TABULATION !!!
+--8<--------------------------------------------------------------------------
+
+  # touch /var/log/ldap.log
+  # chmod 644 /var/log/ldap.log
+  # /etc/rc.d/rc.syslog restart
+
+Démarrer 'slapd' à la main :
+
+  # /usr/libexec/slapd -h ldap://192.168.2.5:389
+
+Voir ce que ça donne :
+
+  # tail -f /var/log/ldap.log
+
+Voir si le processus tourne :
+
+  # pgrep -fl slapd
+
+Script de démarrage :
+
+--8<---------- /etc/rc.d/rc.slapd --------------------------------------------
+#!/bin/bash
+bin="/usr/libexec/slapd"
+host="10.0.2.15"
+port="389"
+pid_file="/var/run/slapd/slapd.pid"
+
+function boot_slapd {
+  echo "Starting slapd: $bin"
+  $bin -h "ldap://127.0.0.1:389"
+}
+
+function start_slapd {
+  echo "Starting slapd: $bin"
+  $bin -h "ldap://127.0.0.1:389 ldap://${host}:${port}"
+}
+
+function stop_slapd {
+  if [[ -f $pid_file ]]; then
+    kill -15 `cat $pid_file`
+    sleep 2
+  fi
+}
+
+case "$1" in
+  'boot')
+    boot_slapd
+    ;;
+  'start')
+    start_slapd
+    ;;
+  'stop')
+    stop_slapd
+    ;;
+  'restart')
+    stop_slapd
+    start_slapd
+    ;;
+  *)
+    echo "usage $0 start|stop|restart|boot"
+    ;;
+esac
+--8<--------------------------------------------------------------------------
+
+  # chmod +x /etc/rc.d/rc.slapd
+  # /etc/rc.d/rc.slapd start|stop|restart
+
+Configurer le client :
+
+  # cd /etc/openldap
+  # mv ldap.conf ldap.conf.orig
+
+Éditer 'ldap.conf' :
+
+--8<---------- /etc/openldap/ldap.conf ---------------------------------------
+BASE  dc=example,dc=com
+URI   ldap://10.0.2.15:389
+--8<--------------------------------------------------------------------------
+
+  # ln -s /etc/openldap/ldap.conf /etc/ldap.conf
+
+Créer un DIT basic :
+
+--8<---------- /root/basic_dit.ldif ------------------------------------------
+dn: dc=example,dc=com
+o: example
+dc: example
+objectClass: dcObject
+objectClass: organization
+
+dn: ou=groups,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: Groups
+
+dn: cn=users,ou=groups,dc=example,dc=com
+objectClass: top
+objectClass: posixGroup
+gidNumber: 100
+cn: users
+
+dn: ou=users,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: Users
+
+dn: uid=sneill,ou=users,dc=example,dc=com
+cn: Sam Neill
+sn: Neill
+givenName: Sam
+uid: sneill
+uidNumber: 1000
+gidNumber: 100
+homeDirectory: /home/sneill
+loginShell: /bin/bash
+gecos: Normal User
+mail: sam.neill@example.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+userPassword:
+--8<--------------------------------------------------------------------------
+
+  # ldapadd -x -W -D 'cn=ldapadmin,dc=example,dc=com' -f /root/basic_dit.ldif
+  Enter LDAP Password:
+  adding new entry "dc=example,dc=com"
+  adding new entry "ou=groups,dc=example,dc=com"
+  adding new entry "cn=users,ou=groups,dc=example,dc=com"
+  adding new entry "ou=users,dc=example,dc=com"
+  adding new entry "uid=sneill,ou=users,dc=example,dc=com"
+
+Lancer une recherche :
+
+  # ldapsearch -x -W -D 'cn=ldapadmin,dc=example,dc=com' \
+      -b 'dc=example,dc=com' -LLL
+  Enter LDAP Password: 
+  dn: dc=example,dc=com
+  o: example
+  dc: example
+  objectClass: dcObject
+  objectClass: organization
+  ...
+
+Définir un mot de passe pour l'utilisateur :
+
+ # ldappasswd -x -W -D 'cn=ldapadmin,dc=example,dc=com' \
+     -S 'uid=sneill,ou=users,dc=example,dc=com' 
+ New password: 
+ Re-enter new password: 
+ Enter LDAP Password: 
+
+
+Documentation
+-------------
+
+  * http://karellen.blogspot.fr/2011/11/ldap-for-slackware-linux.html
+  * LDAP System Administration - Gerald Carter, O'Reilly
+
+------------------------------------------------------------------------------
+# vim: syntax=txt

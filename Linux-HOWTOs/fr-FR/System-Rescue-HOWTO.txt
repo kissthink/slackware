@@ -1,0 +1,77 @@
+===================
+System Rescue HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+===================
+
+Dernière révision : 28 février 2014
+
+Ce HOWTO décrit la récupération d'un système Linux à l'aide d'un CD
+d'installation de Slackware. 
+
+
+Lors de la configuration d'un système Linux, il peut arriver qu'on se tire
+dans le pied et que le système ne soit plus amorçable. On se retrouve alors
+avec un "kernel panic" au démarrage ou une autre erreur fatale de ce genre.
+Avant de réinstaller le tout, on va plutôt essayer de restaurer le système.
+
+Démarrer sur le CD d'installation de Slackware, qui fait également office de
+LiveCD et de CD de restauration.
+
+Choisir la disposition clavier et se connecter en tant que root, comme on le
+ferait pour une installation de Slackware.
+
+Identifier les partitions existantes :
+
+  # fdisk -l
+
+Alternativement :
+
+  # ls -l /dev/sd*
+
+Identifier et monter la partition principale, par exemple :
+
+  # mount -v /dev/sda3 /mnt
+
+Identifier et monter les autres partitions principales sur les points de
+montage respectifs, par exemple :
+
+  # mount -v /dev/sda1 /mnt/boot
+
+Lier les systèmes de fichiers '/proc', '/dev' et '/sys' du système de
+restauration et du système installé :
+
+  # mount --bind /proc /mnt/proc
+  # mount --bind /dev /mnt/dev
+  # mount --bind /sys /mnt/sys
+
+Chrooter dans le système installé :
+
+  # chroot /mnt
+
+À partir de là, effectuer les modifications nécessaires, comme par exemple
+reconstruire l'initrd, ou reparamétrer le chargeur de démarrage LILO. 
+
+Une fois qu'on a terminé, il faut revenir vers le système du LiveCD :
+
+  # exit
+
+Démonter un par un les systèmes de fichiers montés, dans un ordre cohérent :
+
+  # umount /mnt/sys
+  # umount /mnt/proc
+  # umount /mnt/dev
+  # umount /mnt/boot
+  # umount /mnt
+
+Redémarrer :
+
+  # reboot
+
+Remarque : on peut éventuellement faire l'économie du démontage manuel des
+partitions, étant donné que le redémarrage du système LiveCD se charge du
+démontage des systèmes de fichiers.
+
+
+-- Ce HOWTO est dédié à Walid Djouak. ;o)
+
+------------------------------------------------------------------------------
+# vim: syntax=txt
