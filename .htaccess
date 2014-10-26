@@ -40,11 +40,7 @@ AddDefaultCharset utf-8
   AddIcon       /slackware/repository-layout/slackware.png .SlackBuild
   AddIcon       /slackware/repository-layout/package-x-generic.png .tgz .gz .bz2 .7z .zip .rpm .deb
   AddIcon       /slackware/repository-layout/system-installer.png .txz 
-<<<<<<< HEAD
   AddIcon       /slackware/repository-layout/application-certificate.png .txz.asc
-=======
-  AddIcon       /slackware/repository-layout/applications-certificate.png .asc
->>>>>>> fd07762ddca41ea0276a058dd33bacc9ee997b6e
   AddIcon       /slackware/repository-layout/emblem-default.png .txz.md5
   AddIcon       /slackware/repository-layout/manual.png Linux-HOWTOs
   AddIcon       /slackware/repository-layout/help-browser.png -HOWTO.txt
@@ -71,8 +67,7 @@ AddDefaultCharset utf-8
   AddIconByType /slackware/repository-layout/image-x-generic.png image/*
 
   # DESCRIPTIONS
-  AddDescription "Microlinux documentation" Linux-HOWTOs 
-  AddDescription "Microlinux HOWTO " -HOWTO.txt
+  AddDescription "Microlinux documentation" Linux-HOWTOs -HOWTO.txt
   AddDescription "Template configuration files" template
   AddDescription "Helper scripts" tools
   AddDescription "Obsolete software" pasture
