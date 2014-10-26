@@ -1,0 +1,65 @@
+============================
+Poulet Au Curry Et Dal HOWTO  (c) Nicolas Kovacs <info@microlinux.fr>
+============================
+
+Dernière révision : 17 septembre 2013
+
+Ce HOWTO décrit la confection d'un poulet au curry et au dal.
+
+Un grand merci à Agnès Maillebouis pour la recette.
+
+
+Ingrédients
+-----------
+
+  * 1 kg de blanc de poulet
+  * 4 gros oignons
+  * une demi-tête d'ail
+  * l'équivalent en gingembre
+  * une demi-branche de céleri
+  * un citron
+  * une boîte de lait de coco
+  * 300 grammes de lentilles corail
+  * une grosse boîte de tomates pelées concassées
+  * 1 CS de pâte de curry
+  * 3 CS de poudre de curry (2 pour la sauce, 1 pour le dal)
+  * 2 CC de fenugrec, de cumin et de moutarde (1 dans chaque)
+
+Préparation
+-----------
+
+Émincer le poulet.
+
+Mariner 1h - 12h avec la pâte de curry, 1/2 oignon haché et un citron.
+
+Hacher l'oignon.
+
+Dans la cocotte, faire revenir 2/3 des oignons dans l'huile pour la sauce.
+
+Dans une casserole, faire revenir 1/3 des oignons dans l'huile pour le dal.
+
+Ajouter les graines, l'ail, le gingembre haché et le curry.
+
+Laisser cuire 30 minutes à petit feu, en remuant de temps en temps.
+
+Ajouter les lentilles corail dans la casserole, mélanger et couvrir d'eau.
+
+Laisser cuire une demi-heure en remuant souvent, et en ajoutant de l'eau si
+nécessaire.
+
+En parallèle, ajouter la tomate et le lait de coco à la sauce pour le poulet. 
+
+Mijoter également une demi-heure, en remuant souvent.
+
+Saler les deux préparations.
+
+À feu vif, poêler le poulet mariné deux ou trois minutes de chaque côté.
+
+Incorporer les morceaux de poulet à la sauce et laisser mijoter encore 20
+minutes.
+
+Ajouter de la coriandre fraîche ciselée à la fin.
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt

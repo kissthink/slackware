@@ -69,6 +69,7 @@ AddDefaultCharset utf-8
   AddDescription "Microlinux documentation" Linux-HOWTOs 
   AddDescription "Microlinux tutorial" -HOWTO.txt
   AddDescription "Template configuration files" template
+  AddDescription "Microlinux cooking & recipes" recipes
   AddDescription "Helper scripts" tools
   AddDescription "Obsolete software" pasture
   AddDescription "Microlinux Enterprise Desktop Base 14.1 32-bit" desktop-base-14.1-32bit
