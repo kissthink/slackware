@@ -51,10 +51,10 @@ et configurer un système Slackware. Lisez-les attentivement. Les paragraphes
 sur lesquels vous décidez de faire l'impasse reviendront vous mordre les
 fesses.
 
-Si vous ne connaissez pas trop Slackware, allez faire un tour sur le Projet de
-Documentation Slackware à l'adresse http://docs.slackware.com. La plupart des
-pages de ce site sont disponibles en français. Lisez au moins la section
-"Débuter avec Slackware". 
+Si vous n'êtes pas trop familiarisé avec Slackware, allez faire un tour sur le
+Projet de Documentation Slackware à l'adresse http://docs.slackware.com. La
+plupart des pages de ce site sont disponibles en français. Lisez au moins la
+section "Débuter avec Slackware". 
 
 MLED s'installe par-dessus une base Slackware judicieusement choisie et n'est
 pas fourni sur un ISO d'installation à part. Tout ce qu'il vous faut, c'est un
