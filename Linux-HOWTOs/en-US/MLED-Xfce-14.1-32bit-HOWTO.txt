@@ -289,6 +289,18 @@ We're almost there. Here's what's left to be done.
   * Reboot.
 
 
+Extra applications
+------------------
+
+Once your MLED system is up and running, you can search and install extra
+applications using 'slackpkg'.
+
+Example :
+
+  # slackpkg search desktop-extra 
+  # slackpkg install virtualbox 
+
+
 Maintenance
 -----------
 

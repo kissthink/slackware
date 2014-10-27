@@ -1,0 +1,134 @@
+============================
+MLED Desktop Switching HOWTO (c) Niki Kovacs <info@microlinux.fr>
+============================
+
+Dernière révision : 27 octobre 2014
+
+Ce HOWTO décrit le passage d'un environnement de bureau à un autre sur un
+poste de travail MLED.
+
+  
+  * Migrer de Xfce vers KDE
+  * Migrer de KDE vers Xfce
+
+
+Migrer de Xfce vers KDE
+-----------------------
+
+Passer en init 3:
+
+  # init 3 
+
+Se connecter en root et mettre à jour les infos sur les paquets disponibles :
+
+  # slackpkg update 
+
+Supprimer les paquets MLED supplémentaires :
+
+  # slackpkg remove desktop-extra 
+
+Supprimer les paquets MLED spécifiques à Xfce :
+
+  # slackpkg remove desktop-xfce 
+
+Mettre à jour les scripts Microlinux :
+
+  # cd ~/slackware 
+  # git pull 
+
+Élaguer l'installation Slackware de base à l'aide du script
+'trim_desktop_kde.sh'. Cette opération supprimera tous les paquets relatifs à
+Xfce et se chargera d'installer le nécessaire pour un bureau KDE :
+
+  # cd desktop-kde-$VERSION-$ARCH/tools 
+  # ./trim_desktop_kde.sh 
+
+  Remarque : $VERSION correspond à votre version de Slackware (comme 14.1), et
+  $ARCH c'est l'architecture de votre CPU (en l'occurrence 32bit ou 64bit). 
+
+Installez tous les paquets MLED spécifiques à KDE :
+
+  # slackpkg install desktop-kde 
+
+Mettez à jour les entrées de menu en appliquant le script 'cleanmenu.sh' dans
+ce même répertoire :
+
+  # ./cleanmenu.sh 
+
+Étant donné que l'utilisateur est déjà créé, son profil par défaut devra être
+importé manuellement depuis '/etc/skel' :
+
+  # su - <utilisateur> 
+  $ cp -Rvf /etc/skel/.[!.]* . 
+
+  /!\ N'essayez pas d'utiliser un simple joker .* sur les fichiers cachés,
+  sous peine de remplir votre répertoire utilisateur avec le contenu de
+  '/etc/skel'.
+
+Revenez en init 4 et connectez-vous à KDE :
+
+  $ exit 
+  # init 4 
+
+
+Migrer de KDE vers Xfce
+-----------------------
+
+Passer en init 3 :
+
+  # init 3 
+
+Se connecter en root et mettre à jour les infos sur les paquets disponibles :
+
+  # slackpkg update 
+
+Supprimer les paquets MLED supplémentaires :
+
+  # slackpkg remove desktop-extra 
+
+Supprimer les paquets MLED spécifiques à Xfce :
+
+  # slackpkg remove desktop-kde 
+
+Mettre à jour les scripts Microlinux :
+
+  # cd ~/slackware 
+  # git pull 
+
+Élaguer l'installation Slackware de base à l'aide du script
+'trim_desktop_xfce.sh'. Cette opération supprimera tous les paquets relatifs à
+KDE et se chargera d'installer le nécessaire pour un bureau Xfce :
+
+  # cd desktop-xfce-$VERSION-$ARCH/tools 
+  # ./trim_desktop_xfce.sh 
+
+  Remarque : $VERSION correspond à votre version de Slackware (comme 14.1), et
+  $ARCH c'est l'architecture de votre CPU (en l'occurrence 32bit ou 64bit). 
+
+Installez tous les paquets MLED spécifiques à Xfce :
+
+  # slackpkg install desktop-xfce 
+
+Mettez à jour les entrées de menu en appliquant le script 'cleanmenu.sh' dans
+ce même répertoire :
+
+  # ./cleanmenu.sh 
+
+Étant donné que l'utilisateur est déjà créé, son profil par défaut devra être
+importé manuellement depuis '/etc/skel' :
+
+  # su - <youruser> 
+  $ cp -Rvf /etc/skel/.[!.]* . 
+
+  /!\ N'essayez pas d'utiliser un simple joker .* sur les fichiers cachés,
+  sous peine de remplir votre répertoire utilisateur avec le contenu de
+  '/etc/skel'.
+
+Revenez en init 4 et connectez-vous à Xfce :
+
+  $ exit 
+  # init 4 
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt

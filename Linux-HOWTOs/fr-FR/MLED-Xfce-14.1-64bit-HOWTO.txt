@@ -1,0 +1,352 @@
+==========================
+MLED Xfce 14.1 64bit HOWTO (c) Niki Kovacs <info@microlinux.fr>
+==========================
+
+Dernière révision : 27 octobre 2014
+
+Ce HOWTO décrit l'installation d'un poste de travail MLED Xfce 14.1 64bit.
+
+
+  * À propos de MLED
+  * À propos de ce Guide d'Installation
+  * Pour commencer
+  * Récupérer les tagfiles
+  * Démarrer l'installation
+  * Télécharger les scripts Microlinux
+  * Configurer slackpkg
+  * Élaguer et mettre à jour
+  * Paquets Multilib
+  * Installer les paquets MLED
+  * Vérifier les variables d'environnement
+  * Nettoyer le menu des applications
+  * Touches finales
+  * Applications supplémentaires
+  * Maintenance
+
+
+À propos de MLED
+----------------
+
+Le poste de travail Microlinux Entreprise MLED fournit un poste de travail
+professionnel propre, complet et ultra-stable basé sur Slackware Linux, avec
+une multitude d'améliorations. Il est actuellement utilisé dans quelques
+mairies, médiathèques, écoles et stations radio du sud de la France.
+
+MLED est disponible dans deux déclinaisons différentes :
+
+  1. la version standard basée sur KDE
+
+  2. MLED Light, basée sur Xfce
+
+Visitez la page du projet MLED pour plus d'informations :
+
+  * http://www.microlinux.fr/mledfr.php
+
+
+À propos de ce Guide d'Installation
+-----------------------------------
+
+Les instructions ci-dessous partent du principe que vous savez déjà installer
+et configurer un système Slackware. Lisez-les attentivement. Les paragraphes
+sur lesquels vous décidez de faire l'impasse reviendront vous mordre les
+fesses.
+
+Si vous ne connaissez pas trop Slackware, allez faire un tour sur le Projet de
+Documentation Slackware à l'adresse http://docs.slackware.com. La plupart des
+pages de ce site sont disponibles en français. Lisez au moins la section
+"Débuter avec Slackware". 
+
+MLED s'installe par-dessus une base Slackware judicieusement choisie et n'est
+pas fourni sur un ISO d'installation à part. Tout ce qu'il vous faut, c'est un
+support d'installation Slackware classique (DVD, CD-Rom, clé USB) et une
+connexion Internet.
+
+Pour éviter la corvée de sélectionner manuellement chaque paquet ou
+d'installer tout un fatras de paquets qui ne serviront à rien, la méthode
+d'installation recommandée est d'utiliser la collection de tagfiles fournis.
+Il s'agit là d'une série de fichiers au format texte simple, censés
+automatiser le processus de sélection des paquets, un peu comme une version
+simplifiée des fichiers Kickstart de Red Hat Enterprise Linux.
+
+
+Pour commencer
+--------------
+
+Démarrez sur le support d'installation de Slackware (DVD, premier CD-Rom, clé
+USB). Sélectionnez votre disposition clavier, connectez-vous en tant que root
+et partitionnez le disque dur, mais ne démarrez pas encore l'installateur.
+
+Activez le réseau, par exemple :
+
+  root@slackware:/# dhcpcd eth0 
+
+
+Récupérer les tagfiles
+----------------------
+
+L'environnement d'installation Slackware fournit déjà un répertoire '/tag'
+vide, censé recevoir un jeu de tagfiles. On va donc l'utiliser.
+
+  # cd /tag 
+
+Téléchargez les tagfiles depuis le serveur :
+
+  # wget http://www.microlinux.fr/slackware/desktop-xfce-14.1-64bit/tagfiles.tar.gz 
+
+Décompressez l'archive téléchargée :
+
+  # tar xvzf tagfiles.tar.gz 
+
+Le répertoire '/tag' contient à présent une série de répertoires qui
+correspondent aux jeux de paquets Slackware :
+
+  # ls 
+  a/ ap/ d/ e/ f/ k/ kde/ kdei/ l/ n/ t/ tcl/ x/ xap/ xfce/ y/
+
+
+Démarrer l'installation
+-----------------------
+
+Lancez l'installateur Slackware :
+
+  # setup 
+
+PACKAGE SERIES SELECTION : confirmez la sélection de paquets par défaut, étant
+donné que les tagfiles vont prendre le dessus et se charger de la sélection
+des paquets. 
+
+SELECT PROMPTING MODE : tagpath - Utiliser un jeu de tagfiles personnalisés.
+
+Path to tagfiles : /tag
+
+USE UTF-8 TEXT CONSOLE : Yes
+
+CONFIRM STARTUP SERVICES TO RUN : confirmez la panoplie minimale de services
+par défaut.
+
+SELECT DEFAULT WINDOW MANAGER FOR X : xinitrc.wmaker ou xinitrc.fluxbox. Ce
+choix n'est que temporaire. Je me sers habituellement des gestionnaires de
+fenêtres légers comme WindowMaker ou Fluxbox pour peaufiner la configuration
+du serveur graphique X.org.
+
+Terminez l'installation du système Slackware de base. Éventuellement, chrootez
+dans l'environnement nouvellement installé, configurez et construisez un
+Initrd et remplacez le kernel HUGE par le kernel GENERIC.
+
+Quittez l'installateur et redémarrez. Ne définissez pas encore le ou les
+utilisateurs. Nous attendrons que les profils MLED soient installés.
+
+
+Télécharger les scripts Microlinux
+----------------------------------
+
+Je fournis une collection de scripts et de fichiers de configuration prêts à
+l'emploi pour accélérer le processus d'installation. Récupérez toute cette
+arborescence en utilisant la commande suivante :
+
+  # cd 
+  # git clone https://github.com/kikinovak/slackware 
+
+
+Configurer slackpkg
+-------------------
+
+Dans la configuration par défaut, le gestionnaire de paquets 'slackpkg' ne
+fonctionne qu'avec les dépôts officiels de Slackware. Nous devons télécharger
+et installer le plugin 'slackpkg+' de Matteo Rossini pour activer l'utilisation
+de dépôts de paquets tiers. Microlinux vous évite la corvée en fournissant des
+paquets 'slackpkg+' préconfigurés pour l'utilisation des dépôts MLED.
+
+En ligne de commande, utilisez le navigateur Links pour accéder aux dépôts
+distants :
+
+  # links http://www.microlinux.fr/slackware/ 
+
+Naviguez vers le répertoire 'desktop-base-14.1-64bit/slackware64/ap/',
+téléchargez le paquet 'slackpkg+' depuis le dépôt (en utilisant la touche [D]
+comme "Download" dans le navigateur Links) et installez-le :
+
+  # installpkg slackpkg+-1.3.2-noarch-2_microlinux.txz
+
+Éditez '/etc/slackpkg/mirrors' et sélectionnez un miroir Slackware en fonction
+de votre pays, par exemple :
+
+--8<---------- /etc/slackpkg/mirrors -----------------------------------------
+...
+# GERMANY (DE)
+ftp://ftp.fu-berlin.de/unix/linux/slackware/slackware64-14.1/
+...
+--8<--------------------------------------------------------------------------
+
+Assurez-vous de ne choisir qu'un seul miroir pour Slackware stable. Si vous
+utilisez MLED en France, optez pour le miroir ftp.fu-berlin.de ou
+mirror.switch.ch. Le miroir OVH est inutilisable comme à peu près tout ce qui
+vient de chez OVH.
+
+Récupérez les clés GPG :
+
+  # slackpkg update gpg 
+
+Mettez à jour les informations sur les paquets disponibles :
+
+  # slackpkg update 
+
+
+Élaguer et mettre à jour
+------------------------
+
+Au cas où vous n'auriez pas utilisé le jeu de tagfiles durant l'installation,
+vous pouvez toujours vous rattraper ici. 
+
+Le sous-répertoire 'desktop-xfce-14.1-64bit/tools/' fournit un script
+'trim_desktop_xfce.sh' qui se charge de deux choses :
+
+  1. installer les paquets de base requis
+
+  2. supprimer les paquets de base superflus
+
+Le script utilise 'slackpkg', assurez-vous donc de l'avoir configuré
+correctement.
+
+Élaguez votre système Slackware de base :
+
+  # cd slackware/desktop-xfce-14.1-64bit/tools/ 
+  # ./trim_desktop_xfce.sh 
+
+Si vous n'utilisez pas le script 'trim_desktop_xfce.sh', il vous manquera deux
+paquets absents des disques d'installation, et qui figurent dans le dépôt
+'extra/' officiel. Vous pouvez les installer manuellement comme ceci :
+
+  # slackpkg install mplayerplug-in recordmydesktop 
+
+À présent, lancez la mise à jour du système de base Slackware :
+
+  # slackpkg upgrade-all 
+
+Deux remarques importantes concernant cette mise à jour initiale :
+
+  1. Certains paquets Slackware comme 'MPlayer', 'audacious' ou
+  'audacious-plugins' sont "mis à jour", c'est-à-dire remplacés par un paquet
+  MLED. Ne vous inquiétez pas, c'est tout à fait normal. Ils ont été
+  recompilés pour offrir plus de fonctionnalités.
+
+  2. Tous vos paquets 'gcc-*' et 'glibc-*' seront remplacés par des versions
+  Multilib. Là aussi, ne vous tracassez pas, c'est normal.
+
+
+Paquets Multilib
+----------------
+
+Vous souhaiterez peut-être ajouter des applications comme VirtualBox, Wine ou
+Skype. C'est pourquoi 'slackpkg+' a été préconfiguré pour utiliser les paquets
+Multilib du dépôt d'Eric Hameleers.
+
+La mise à jour initiale du système a déjà remplacé tous vos paquets 'gcc-*' et
+'glibc-*' par les paquets Multilib correspondants. La seule chose qui nous reste
+à faire, c'est d'installer un jeu complet de bibliothèques de compatibilité
+32-bit, ce qui peut se faire en une seule commande :
+
+  # slackpkg install multilib
+
+
+Installer les paquets MLED
+--------------------------
+
+Dans un premier temps, installez le jeu complet des paquets de base MLED :
+
+  # slackpkg install desktop-base 
+
+Ensuite, installez les paquets spécifiques à Xfce :
+
+# slackpkg install desktop-xfce 
+
+
+Vérifier les variables d'environnement
+--------------------------------------
+
+Dans une installation par défaut, les variables LANG et LC_COLLATE sont déjà
+définies comme fr_FR.UTF8, étant donné que MLED est surtout utilisé en France.
+Si vous souhaitez changer ceci, il faudra éditer le fichier
+'/etc/profile.d/lang.sh' :
+
+--8<---------- /etc/profile.d/lang.sh ----------------------------------------
+...
+export LANG=fr_FR.utf8
+export LC_COLLATE=fr_FR.utf8
+--8<--------------------------------------------------------------------------
+
+
+Nettoyer le menu des applications
+---------------------------------
+
+Le sous-répertoire 'desktop-xfce-14.1-64bit/tools/' fournit l'utilitaire
+'cleanmenu.sh', un petit script Bash qui se charge de nettoyer les entrées du
+menu des applications de façon à les rendre lisibles pour Madame Michu. Lancez
+ce script :
+
+  # cd desktop-xfce-14.1-64bit/tools/ 
+  # ./cleanmenu.sh 
+
+Le script remplace toute une série de fichiers '*.desktop' dans
+'/usr/share/applications' et des endroits similaires du système par des
+entrées de menu "maison". Pour l'instant, je fournis ces fichiers en anglais,
+en français et en allemand. Évitez de lancer le script si vous utilisez une
+autre langue.
+
+
+Touches finales
+---------------
+
+Nous y sommes presque. Voici ce qui reste à faire.
+
+  * Configurer le serveur graphique X.org.
+
+  * Ajouter un ou plusieurs utilisateurs au système.
+
+  * Basculer vers le niveau d'exécution 4.
+
+  * Redémarrer.
+
+
+Applications supplémentaires
+----------------------------
+
+Une fois que votre système MLED est fonctionnel, vous pouvez chercher des
+applications supplémentaires à installer en utilisant 'slackpkg'. 
+
+Exemple :
+
+  # slackpkg search desktop-extra 
+  # slackpkg install virtualbox 
+
+
+Maintenance
+-----------
+
+Voici quelques conseils pour la maintenance de votre installation MLED.
+
+Lisez les fichiers 'ChangeLog.txt' à la racine de chaque dépôt de paquets pour
+vous tenir au courant des mises à jour et des ajouts.
+
+Si vous souhaitez en savoir plus sur l'état de votre système, à savoir
+qu'est-ce qui est installé, qu'est-ce qui ne l'est pas, quelles sont les mises
+à jour disponibles etc., vous pouvez faire tout cela en une poignée de
+commandes :
+
+  # slackpkg search desktop-base 
+
+Ou encore :
+
+  # slackpkg search desktop-xfce
+
+Enfin, les mises à jour des applications peuvent parfois écraser les entrées
+de menu personnalisées avec un fichier '*.desktop' par défaut. Dans ce cas, il
+suffit de réinvoquer le script 'cleanmenu.sh'.
+
+Régalez-vous avec votre poste de travail MLED 14.1 !
+
+-- Nico, lun. oct. 27 10:06:34 CET 2014
+
+
+----------------------------------------------------------------------------- 
+# vim: syntax=txt
