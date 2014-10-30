@@ -30,7 +30,11 @@ Installation
 ------------
 
 Construire et installer le paquet 'squid' à partir du SlackBuild de
-SlackBuilds.org.
+SlackBuilds.org. 
+
+Si l'on utilise les dépôts MLES :
+
+  # slackpkg install squid
 
 
 Configuration
