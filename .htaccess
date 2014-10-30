@@ -73,6 +73,7 @@ AddDefaultCharset utf-8
   AddDescription "Microlinux cooking recipes" recipes
   AddDescription "Helper scripts" tools
   AddDescription "Obsolete software" pasture
+  AddDescription "Microlinux test bench" testing
   AddDescription "Microlinux Enterprise Desktop Base 14.1 32-bit" desktop-base-14.1-32bit
   AddDescription "Microlinux Enterprise Desktop Base 14.1 64-bit" desktop-base-14.1-64bit
   AddDescription "Microlinux Enterprise Desktop Base 14.1 source" desktop-base-14.1-source
