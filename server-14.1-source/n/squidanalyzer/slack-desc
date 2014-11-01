@@ -1,0 +1,12 @@
+             |-----handy-ruler------------------------------------------------------|
+squidanalyzer: squidanalyzer (squid logs parser)
+squidanalyzer:
+squidanalyzer: SquidAnalyzer parses Squid proxy access logs and reports general
+squidanalyzer: statistics about hits, bytes, users, networks, top URLs and top
+squidanalyzer: second level domains. Statistic reports are oriented towards user
+squidanalyzer: and bandwidth control.
+squidanalyzer:
+squidanalyzer: 
+squidanalyzer:
+squidanalyzer:
+squidanalyzer: Package created by Niki Kovacs <info@microlinux.fr>

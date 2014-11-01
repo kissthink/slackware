@@ -38,6 +38,7 @@ n/postgrey
 ap/glances
 ap/slackpkg+
 ap/hplip
+n/squidanalyzer
 #n/mpd
 #n/icecast
 #n/ncmpc
