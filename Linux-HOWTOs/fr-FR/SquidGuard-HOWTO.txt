@@ -1,0 +1,159 @@
+================
+SquidGuard HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+================
+
+Dernière révision : 1er novembre 2014
+
+Ce HOWTO décrit la mise en place du redirecteur SquidGuard pour un serveur
+proxy Squid sous Slackware.
+
+  * Généralités et prérequis
+  * Installation
+
+
+Généralités et prérequis
+------------------------
+
+SquidGuard est un plug-in pour Squid. On doit donc disposer d'une installation
+fonctionnelle de ce dernier.
+
+
+Installation
+------------
+
+Installer le paquet 'squidGuard' depuis le dépôt de paquets MLES.
+
+
+Récupérer les listes noires et blanches
+---------------------------------------
+
+Dans les exemples présentés ci-dessous, nous utiliserons les listes noires et
+blanches maintenues par le Centre de Ressources Informatiques de l'Université
+de Toulouse. Ces listes ne font pas partie de SquidGuard. On peut les
+récupérer manuellement comme ceci :
+  
+  # cd /var/lib/squidguard
+  # wget -c ftp://ftp.ut-capitole.fr/blacklist/blacklists.tar.gz
+  # tar xvzf blacklists.tar.gz
+  # cd blacklists
+
+Chacun des répertoires correspond à une catégorie (ou "destination") du Web :
+
+  # ls -l | awk '{print $9, $10, $11}'
+  ads -> publicite
+  adult  
+  aggressive -> agressif
+  agressif  
+  arjel  
+  astrology  
+  audio-video  
+  bank  
+  bitcoin  
+  blog  
+  cc-by-sa-4-0.pdf  
+  celebrity  
+  chat  
+  child  
+  cleaning  
+  cooking  
+  dangerous_material  
+  dating  
+  drogue  
+  drugs -> drogue
+  educational_games  
+  filehosting  
+  financial  
+  forums  
+  gambling  
+  games  
+  global_usage  
+  hacking  
+  jobsearch  
+  ...
+
+On peut également récupérer les listes avec l'outil 'rsync'. Cette méthode est
+même recommandée, étant donné que 'rsync' ne téléchargera que la différence
+entre les arborescences distante et locale lors d'une mise à jour :
+
+  # cd /var/lib/squidguard
+  # rm -rf blacklists*
+  # rsync -rv rsync://ftp.ut-capitole.fr/blacklist/ .
+  # cd dest
+
+La seule différence par rapport au téléchargement avec 'wget', c'est que nous
+retrouvons nos destinations dans un répertoire 'dest/' et non 'blacklists/'.
+
+Repérez le fichier 'global_usage' et jetez un oeil dedans. Il s'agit d'un
+fichier explicatif sur le contenu des listes.
+
+
+Un filtre simple pour contenus problématiques
+---------------------------------------------
+
+Nous allons découvrir SquidGuard à l'aide de quelques exemples pratiques. Dans
+ce premier exemple, nous allons filtrer les sites à contenu problématique pour
+toutes les machines du réseau local. 
+
+SquidGuard se configure par le biais du fichier de configuration
+'/etc/squidguard/squidguard.conf'. 
+
+--8<---------- /etc/squidguard/squidguard.conf -------------------------------
+dbhome /var/lib/squidguard
+logdir /var/log/squidguard
+...
+--8<--------------------------------------------------------------------------
+
+  > La directive 'dbhome' indique à SquidGuard où trouver la base de données
+    des listes (que nous n'avons pas encore).
+
+  > La directive 'logdir' spécifie l'endroit où l'on désire récupérer les
+    logs.
+
+Dans un premier temps, nous allons adapter la directive 'dbhome' à ce que nous
+venons de télécharger un peu plus haut :
+
+--8<---------- /etc/squidguard/squidguard.conf -------------------------------
+dbhome /var/lib/squidguard/dest
+logdir /var/log/squidguard
+...
+--8<--------------------------------------------------------------------------
+
+Les sources sont là pour définir les groupes de clients. Pour notre premier
+exemple, nous allons définir tout le réseau local "à la louche" :
+
+--8<---------- /etc/squidguard/squidguard.conf -------------------------------
+...
+source microlinux {
+  ip 192.168.2.0/24
+}
+--8<--------------------------------------------------------------------------
+
+Les destinations définissent des ensembles de domaines, d'URL ou d'expressions
+régulières à appliquer aux URLs. Ici, nous allons définir trois destinations :
+
+--8<---------- /etc/squidguard/squidguard.conf -------------------------------
+...
+# Des sites adultes allant de l'érotique à la pornographie dure
+destination adult {
+  domainlist adult/domains
+  urllist adult/urls
+  log adult
+}
+
+# Quelques sites racistes, antisémites et incitant à la haine
+destination agressif {
+  domainlist agressif/domains
+  urllist agressif/urls
+  log agressif
+}
+
+# Drogues
+destination drogue {
+  domainlist drogue/domains
+  urllist drogue/urls
+  log drogue
+}
+--8<--------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+# vim: syntax=txt
