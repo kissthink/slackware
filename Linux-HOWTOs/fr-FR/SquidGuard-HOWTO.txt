@@ -24,6 +24,98 @@ Installation
 Installer le paquet 'squidGuard' depuis le dépôt de paquets MLES.
 
 
+Une redirection simple
+----------------------
+
+Nous n'avons pas encore de listes noires et blanches ni de base de données,
+mais nous pouvons déjà faire un premier test de redirection :
+
+  1. la machine 192.168.2.2 n'est pas filtrée
+
+  2. toutes les autres machines du réseau local sont bloquées
+
+SquidGuard se configure par le biais du fichier de configuration
+'/etc/squidguard/squidguard.conf'. Sauvegardez le fichier de configuration
+d'origine :
+
+  # cd /etc/squidguard
+  # mv squidguard.conf squidguard.conf.orig
+
+Éditez un fichier de configuration minimal comme ceci :
+
+--8<---------- /etc/squidguard/squidguard.conf -------------------------------
+dbhome /var/lib/squidguard
+logdir /var/log/squidguard
+
+src admin {
+  ip 192.168.2.2
+}
+
+acl {
+  admin {
+    pass any
+  }
+  default {
+    pass none
+    redirect http://127.0.0.1/
+  }
+}
+--8<--------------------------------------------------------------------------
+
+  > La directive 'dbhome' indique à SquidGuard où trouver la base de données
+    des listes (que nous n'avons pas encore).
+
+  > La directive 'logdir' spécifie l'endroit où l'on désire récupérer les
+    logs.
+
+  > Les sources définissent les groupes de clients. Ici, nous définissons une
+    seule adresse IP.
+
+  > Les 'acl' ou "Access Control Lists" permettent de définir quelle source
+    peut aller ou ne pas aller vers quelle(s) destination(s). 
+
+  > Lorsqu'une destination n'est pas autorisée, la directive 'redirect' permet
+    de servir une page explicative au client. Dans un premier temps, nous
+    utiliserons la page par défaut du serveur Apache.
+
+
+À présent, il faut configurer Squid pour qu'il utilise SquidGuard. Éditer le
+fichier '/etc/squid/squid.conf' et ajouter cette stance à la fin du fichier :
+
+--8<---------- /etc/squid/squid.conf -----------------------------------------
+url_rewrite_program /usr/bin/squidGuard -c /etc/squidguard/squidguard.conf
+url_rewrite_children 5
+--8<--------------------------------------------------------------------------
+
+Recharger la configuration de Squid :
+
+  # /etc/rc.d/rc.squid reload
+
+Vérifier si la modification a bien été prise en compte :
+
+  # ps aux | grep squid | grep -v grep
+  root      5043  ...  /usr/sbin/squid -F
+  nobody    5045  ...  (squid) -F
+  nobody    5068  ...  (squidGuard) -c /etc/squidguard/squidguard.conf
+  nobody    5069  ...  (squidGuard) -c /etc/squidguard/squidguard.conf
+  nobody    5070  ...  (squidGuard) -c /etc/squidguard/squidguard.conf
+  nobody    5071  ...  (squidGuard) -c /etc/squidguard/squidguard.conf
+  nobody    5072  ...  (squidGuard) -c /etc/squidguard/squidguard.conf
+
+Maintenant, on peut essayer de naviguer sur Internet :
+
+  1. avec la machine 192.168.2.2
+
+  2. avec une machine dont l'adresse IP n'est pas 192.168.2.2
+
+
+Configurer la page explicative
+------------------------------
+
+
+
+
+
 Récupérer les listes noires et blanches
 ---------------------------------------
 
@@ -103,11 +195,6 @@ logdir /var/log/squidguard
 ...
 --8<--------------------------------------------------------------------------
 
-  > La directive 'dbhome' indique à SquidGuard où trouver la base de données
-    des listes (que nous n'avons pas encore).
-
-  > La directive 'logdir' spécifie l'endroit où l'on désire récupérer les
-    logs.
 
 Dans un premier temps, nous allons adapter la directive 'dbhome' à ce que nous
 venons de télécharger un peu plus haut :
