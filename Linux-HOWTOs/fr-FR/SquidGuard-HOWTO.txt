@@ -57,7 +57,7 @@ acl {
   }
   default {
     pass none
-    redirect http://127.0.0.1/
+    redirect http://www.microlinux.fr/squidguard/avertissement.html
   }
 }
 --8<--------------------------------------------------------------------------
@@ -75,9 +75,7 @@ acl {
     peut aller ou ne pas aller vers quelle(s) destination(s). 
 
   > Lorsqu'une destination n'est pas autorisée, la directive 'redirect' permet
-    de servir une page explicative au client. Dans un premier temps, nous
-    utiliserons la page par défaut du serveur Apache.
-
+    de servir une page explicative au client. 
 
 À présent, il faut configurer Squid pour qu'il utilise SquidGuard. Éditer le
 fichier '/etc/squid/squid.conf' et ajouter cette stance à la fin du fichier :
@@ -109,8 +107,6 @@ Maintenant, on peut essayer de naviguer sur Internet :
   2. avec une machine dont l'adresse IP n'est pas 192.168.2.2
 
 
-Configurer la page explicative
-------------------------------
 
 
 
