@@ -25,7 +25,7 @@
 
 PRGNAM=squidGuard			
 VERSION=${VERSION:-1.4}	 
-BUILD=${BUILD:-4}
+BUILD=${BUILD:-5}
 TAG=${TAG:-_microlinux}		
 
 NUMJOBS=${NUMJOBS:--j5}
@@ -123,7 +123,7 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a ANNOUNCE CHANGELOG CONFIGURATION COPYING FAQ GPL INSTALL ISSUES.txt \
-README* samples/sample.conf doc/{*.html,*.txt,*.gif} \
+README* samples/ doc/{*.html,*.txt,*.gif} \
   $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 

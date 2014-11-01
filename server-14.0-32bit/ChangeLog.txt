@@ -1,5 +1,7 @@
 Sat Nov  1 08:21:33 CET 2014
 n/squidanalyzer-5.3-i486-1_microlinux.txz: Added.
+n/squidGuard-1.4-i486-5_microlinux.txz: Rebuilt.
+  Include sample CGI scripts in /usr/doc/squidGuard-1.4/samples/.
 +--------------------------+
 Fri Sep 26 15:20:55 CEST 2014
 ap/slackpkg+-1.3.2-noarch-2_microlinux.txz: Rebuilt.
