@@ -24,12 +24,18 @@ Installation
 Installer le paquet 'squidGuard' depuis le dépôt de paquets MLES.
 
 
-La page d'avertissement
------------------------
+La page explicative
+-------------------
 
 Lorsque SquidGuard refuse l'accès à une page, c'est toujours une bonne idée
-d'expliquer la ou les raisons de ce refus aux utilisateurs. Pour commencer, on
-va donc mettre en place une page d'avertissement, qui sera hébergée
+d'expliquer les raisons de ce refus aux utilisateurs. Pour commencer, on va
+donc mettre en place une page d'avertissement, qui sera hébergée sur le
+serveur lui-même. 
+
+Le répertoire 'template/squidguard/' propose un modèle de page explicative.
+
+Pour la configuration d'une page web locale, voir le Apache-HOWTO.
+
 
 Une redirection simple
 ----------------------
@@ -64,7 +70,7 @@ acl {
   }
   default {
     pass none
-    redirect http://www.microlinux.fr/squidguard/avertissement.html
+    redirect http://squidguard.nestor/avertissement.html
   }
 }
 --8<--------------------------------------------------------------------------
