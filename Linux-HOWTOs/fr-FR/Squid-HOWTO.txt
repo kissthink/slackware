@@ -99,6 +99,7 @@ cache_mem 1024 MB
 access_log /var/log/squid/access.log squid
 cache_store_log /var/log/squid/store.log
 cache_log /var/log/squid/cache.log
+logfile_rotate 0
 
 # Durée de vie des fichiers sans date d'expiration
 refresh_pattern ^ftp:		1440	20%	10080
@@ -129,6 +130,10 @@ coredump_dir /var/log/squid/cache
     serveur. La directive 'cache_mem' permet de définir la taille du cache. Si
     l'on ne souhaite pas utiliser le disque dur pour le cache, il faut
     s'assurer de n'utiliser aucune directive 'cache_dir'.
+
+  > La directive 'logfile_rotate 0' désactive la rotation des logs par Squid,
+    étant donné que celle-ci est déjà gérée par 'logrotate'. Voir le fichier
+    '/etc/logrotate.d/squid'.
 
 
 Utilisation
