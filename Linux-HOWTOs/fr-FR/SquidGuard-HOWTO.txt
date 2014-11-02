@@ -428,6 +428,16 @@ potentiellement problématiques :
 
   * http://www.cannabizz.com
 
+Si tout se passe bien, les pages ne s'affichent pas, et l'utilisateur se
+trouve confronté à la page explicative. Non content de cela, sa tentative est
+enregistrée dans le fichier log correspondant à la catégorie de site prohibé,
+par exemple :
+
+  # tail -f /var/log/squidguard/adult
+  2014-11-02 11:28:42 ... http://www.nichons.com/ 192.168.2.3/- - GET REDIRECT
+  2014-11-02 11:28:42 ... http://www.nichons.com/favicon.ico 192.168.2.3/- ...
+  2014-11-02 11:28:42 ... http://www.nichons.com/favicon.ico 192.168.2.3/- ...
+
 
 Automatiser les opérations
 --------------------------
