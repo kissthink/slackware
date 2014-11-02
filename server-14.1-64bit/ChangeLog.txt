@@ -1,3 +1,7 @@
+Sun Nov  2 08:50:03 CET 2014
+n/squidGuard-1.4-x86_64-6_microlinux.txz: Rebuilt.
+  Don't clobber an existing configuration with an update.
++--------------------------+
 Sat Nov  1 08:28:47 CET 2014
 n/squidanalyzer-5.3-x86_64-1_microlinux.txz: Added.
 n/squidGuard-1.4-x86_64-5_microlinux.txz: Rebuilt.
