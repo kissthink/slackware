@@ -24,6 +24,13 @@ Installation
 Installer le paquet 'squidGuard' depuis le dépôt de paquets MLES.
 
 
+La page d'avertissement
+-----------------------
+
+Lorsque SquidGuard refuse l'accès à une page, c'est toujours une bonne idée
+d'expliquer la ou les raisons de ce refus aux utilisateurs. Pour commencer, on
+va donc mettre en place une page d'avertissement, qui sera hébergée
+
 Une redirection simple
 ----------------------
 
