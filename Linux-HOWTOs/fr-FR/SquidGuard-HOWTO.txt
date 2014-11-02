@@ -2,13 +2,18 @@
 SquidGuard HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
 ================
 
-Dernière révision : 1er novembre 2014
+Dernière révision : 2 novembre 2014
 
 Ce HOWTO décrit la mise en place du redirecteur SquidGuard pour un serveur
 proxy Squid sous Slackware.
 
   * Généralités et prérequis
   * Installation
+  * La page explicative
+  * Une redirection simple
+  * Récupérer les listes noires et blanches
+  * Un filtre simple pour contenus problématiques
+  * Automatiser les opérations
 
 
 Généralités et prérequis
@@ -120,11 +125,6 @@ Maintenant, on peut essayer de naviguer sur Internet :
   2. avec une machine dont l'adresse IP n'est pas 192.168.2.2
 
 
-
-
-
-
-
 Récupérer les listes noires et blanches
 ---------------------------------------
 
@@ -191,19 +191,9 @@ fichier explicatif sur le contenu des listes.
 Un filtre simple pour contenus problématiques
 ---------------------------------------------
 
-Nous allons découvrir SquidGuard à l'aide de quelques exemples pratiques. Dans
-ce premier exemple, nous allons filtrer les sites à contenu problématique pour
-toutes les machines du réseau local. 
-
-SquidGuard se configure par le biais du fichier de configuration
-'/etc/squidguard/squidguard.conf'. 
-
---8<---------- /etc/squidguard/squidguard.conf -------------------------------
-dbhome /var/lib/squidguard
-logdir /var/log/squidguard
-...
---8<--------------------------------------------------------------------------
-
+Dans ce deuxième exemple, nous allons filtrer les sites à contenu
+manifestement problématique (porno, violence, drogues) pour toutes les
+machines du réseau local. 
 
 Dans un premier temps, nous allons adapter la directive 'dbhome' à ce que nous
 venons de télécharger un peu plus haut :
@@ -214,12 +204,12 @@ logdir /var/log/squidguard
 ...
 --8<--------------------------------------------------------------------------
 
-Les sources sont là pour définir les groupes de clients. Pour notre premier
-exemple, nous allons définir tout le réseau local "à la louche" :
+Les sources sont là pour spécifier les groupes de clients. Nous allons définir
+tout le réseau local "à la louche" :
 
 --8<---------- /etc/squidguard/squidguard.conf -------------------------------
 ...
-source microlinux {
+src microlinux {
   ip 192.168.2.0/24
 }
 --8<--------------------------------------------------------------------------
@@ -250,6 +240,212 @@ destination drogue {
   log drogue
 }
 --8<--------------------------------------------------------------------------
+
+Les ACLs ("Access Control Lists") permettent de définir quelle source peut
+aller ou ne pas aller vers quelle destination :
+
+--8<---------- /etc/squidguard/squidguard.conf -------------------------------
+...
+acl {
+  microlinux {
+    pass !adult
+    pass !agressif
+    pass !drogue
+    redirect http://squidguard.nestor/avertissement.html
+  }
+  default {
+    pass none
+    redirect http://squidguard.nestor/avertissement.html
+  }
+}
+--8<--------------------------------------------------------------------------
+
+  > Le point d'exclamation '!' équivaut à une négation.
+
+Au total, notre configuration ressemblera donc à ceci :
+
+--8<---------- /etc/squidguard/squidguard.conf -------------------------------
+dbhome /var/lib/squidguard/dest
+logdir /var/log/squidguard
+
+src microlinux {
+  ip 192.168.2.0/24
+}
+
+# Des sites adultes allant de l'érotique à la pornographie dure
+destination adult {
+  domainlist adult/domains
+  urllist adult/urls
+  log adult
+}
+
+# Quelques sites racistes, antisémites et incitant à la haine
+destination agressif {
+  domainlist agressif/domains
+  urllist agressif/urls
+  log agressif
+}
+
+# Drogues
+destination drogue {
+  domainlist drogue/domains
+  urllist drogue/urls
+  log drogue
+}
+
+acl {
+  microlinux {
+    pass !adult
+    pass !agressif
+    pass !drogue
+    redirect http://squidguard.amandine/avertissement.html
+  }
+  default {
+    pass none
+    redirect http://squidguard.amandine/avertissement.html
+  }
+}
+--8<--------------------------------------------------------------------------
+
+Avant d'aller plus loin, nous devons régler quelques permissions.
+Rappelons-nous que le proxy cache Squid tourne avec les droits de
+l'utilisateur 'nobody' et du groupe 'nobody' :
+
+--8<---------- /etc/squid/squid.conf -----------------------------------------
+...
+cache_effective_user nobody
+cache_effective_group nobody
+...
+--8<--------------------------------------------------------------------------
+
+L'arborescence '/var/lib/squidguard' doit être accessible en lecture/écriture
+pour Squid :
+
+  # chown -R nobody:nobody /var/lib/squidguard/
+  # ls -ld /var/lib/squidguard/
+  drwxr-xr-x 3 nobody nobody 4096 nov.   2 08:56 /var/lib/squidguard/
+
+Au cas où le répertoire des logs n'existe pas, il faut le créer :
+
+  # mkdir -v /var/log/squidguard
+  mkdir: création du répertoire « /var/log/squidguard »
+
+Là aussi, il faut ajuster les permissions :
+
+  # chown -R nobody:nobody /var/log/squidguard/
+  # ls -ld /var/log/squidguard/
+  drwxr-xr-x 2 nobody nobody 4096 nov.   2 11:08 /var/log/squidguard/
+
+Pour pouvoir fonctionner rapidement, SquidGuard n'utilise pas les fichiers
+texte, mais des bases de données au format Berkeley. Ces bases de données
+n'existent pas encore, et nous devons les construire :
+
+  # squidGuard -C all
+
+Si tout s'est bien passé, on obtient quelque chose comme ceci :
+
+  # cat /var/log/squidguard/squidGuard.log 
+  2014-11-02 11:09:39 [3897] New setting: dbhome: /var/lib/squidguard/dest
+  2014-11-02 11:09:39 [3897] New setting: logdir: /var/log/squidguard
+  2014-11-02 11:09:39 [3897] init domainlist
+  /var/lib/squidguard/dest/adult/domains
+  2014-11-02 11:09:52 [3897] create new dbfile
+  /var/lib/squidguard/dest/adult/domains.db
+  2014-11-02 11:09:53 [3897] init urllist /var/lib/squidguard/dest/adult/urls
+  2014-11-02 11:09:53 [3897] create new dbfile
+  /var/lib/squidguard/dest/adult/urls.db
+  2014-11-02 11:09:54 [3897] init domainlist
+  /var/lib/squidguard/dest/agressif/domains
+  2014-11-02 11:09:54 [3897] create new dbfile
+  /var/lib/squidguard/dest/agressif/domains.db
+  2014-11-02 11:09:54 [3897] init urllist /var/lib/squidguard/dest/agressif/urls
+  2014-11-02 11:09:54 [3897] create new dbfile
+  /var/lib/squidguard/dest/agressif/urls.db
+  2014-11-02 11:09:54 [3897] init domainlist
+  /var/lib/squidguard/dest/drogue/domains
+  2014-11-02 11:09:54 [3897] create new dbfile
+  /var/lib/squidguard/dest/drogue/domains.db
+  2014-11-02 11:09:54 [3897] init urllist /var/lib/squidguard/dest/drogue/urls
+  2014-11-02 11:09:54 [3897] create new dbfile
+  /var/lib/squidguard/dest/drogue/urls.db
+  2014-11-02 11:09:54 [3897] squidGuard 1.4 started (1414922979.731)
+  2014-11-02 11:09:54 [3897] db update done
+  2014-11-02 11:09:54 [3897] squidGuard stopped (1414922994.459)
+
+Quelques mises en garde s'imposent ici :
+
+  1. SquidGuard est une application assez pointue, pour ne pas dire une
+  véritable usine à gaz. La moindre faute de frappe dans un des fichiers de
+  configuration se solde généralement par un échec. Il est donc nécessaire de
+  porter une grande attention à la syntaxe. 
+
+  2. Les bases de données (fichiers '*.db' en-dessous de l'arborescence
+  '/var/lib/squidguard/dest/') doivent être construites *après* avoir écrit le
+  fichier de configuration, car seules les destinations définies dans ce
+  fichier seront compilées. Autrement dit, si vous devez ajouter une
+  destination par la suite (malware, tricheur, etc.) il va falloir penser à
+  compiler les bases de données correspondantes.
+
+  3. En règle générale, ça ne fonctionne que rarement du premier coup. Dans ce
+  cas, jetez un oeil dans les logs, notamment 'squidGuard.log'. Ce dernier
+  vous sera d'un grand secours, car il vous avertira de tous les problèmes de
+  configuration.
+
+Étant donné que la commande 'squidGuard -C all' a été invoquée par root, les
+fichiers générés par cette commande appartiennent à ce dernier :
+
+  # ls -l /var/lib/squidguard/dest/adult/
+  total 66704
+  -rw-r--r-- 1 nobody nobody 17977204 nov.   1 11:02 domains
+  -rw-r--r-- 1 root   root   44773376 nov.   2 11:09 domains.db
+  -rw-r--r-- 1 nobody nobody        0 nov.   1 11:02 expressions
+  -rw-r--r-- 1 nobody nobody  1959494 nov.   1 11:02 urls
+  -rw-r--r-- 1 root   root    3584000 nov.   2 11:09 urls.db
+  -rw-r--r-- 1 nobody nobody       17 nov.   1 11:02 usage
+  ...
+  # ls -l /var/log/squidguard/
+  total 4
+  -rw-r--r-- 1 root root    0 nov.   2 11:09 adult
+  -rw-r--r-- 1 root root    0 nov.   2 11:09 agressif
+  -rw-r--r-- 1 root root    0 nov.   2 11:09 drogue
+  -rw-r--r-- 1 root root 1316 nov.   2 11:09 squidGuard.log
+
+On va donc devoir rectifier le tir une deuxième fois pour les permissions :
+
+  # chown -R nobody:nobody /var/lib/squidguard/
+  # chown -R nobody:nobody /var/log/squidguard/
+
+Recharger la configuration :
+
+  # /etc/rc.d/rc.squid reload
+
+À présent, naviguer sur le Web et tester le filtrage de quelques sites
+potentiellement problématiques :
+
+  * http://www.nichons.com
+
+  * http://www.whitehonor.com
+
+  * http://www.cannabizz.com
+
+
+Automatiser les opérations
+--------------------------
+
+Je fournis un script '/usr/local/sbin/blacklist.sh' qui automatise la plupart
+des tâches répétitives. Le script fait partie du paquet 'squidGuard' et se
+charge de :
+
+  1. récupérer les listes noires et blanches
+
+  2. mettre à jour les listes déjà téléchargées
+
+  3. construire les bases de données Berkeley
+
+  4. rectifier les permissions
+
+  5. relancer Squid pour prendre en compte les modifications
+
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
