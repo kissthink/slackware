@@ -79,7 +79,7 @@ Alternativement :
   $ groups
   users lp floppy audio video cdrom plugdev power netdev scanner
 
-En savoir plus sur un autre utilisateurs :
+En savoir plus sur un autre utilisateur :
 
   $ id lgibaud
   uid=1001(lgibaud) gid=100(users) groupes=100(users),7(lp),
