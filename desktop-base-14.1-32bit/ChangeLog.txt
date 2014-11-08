@@ -1,3 +1,6 @@
+Sat Nov  8 18:44:15 CET 2014
+xap/fontforge-20120731_b-i486-1_microlinux.txz: Added.
++--------------------------+
 Wed Nov  5 22:22:58 CET 2014
 locale/mozilla-firefox-l10n-31.2.0-i486-1_microlinux.txz: Upgraded.
 multimedia/flashplayer-plugin-11.2.202.411-i386-1_microlinux.txz: Upgraded.

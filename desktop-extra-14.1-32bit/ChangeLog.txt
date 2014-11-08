@@ -1,3 +1,6 @@
+Sat Nov  8 19:20:57 CET 2014
+xap/wine-1.6.2-i486-1_microlinux.txz: Added.
++--------------------------+
 Sun Oct 12 10:55:28 CEST 2014
 xap/aMule-2.3.1-i486-4_microlinux.txz: Rebuilt.
   This update provides UPnP support upon request from user fsLeg on LQ.
