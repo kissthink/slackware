@@ -66,9 +66,9 @@ fi
 
 set -e
 
-#wget -c http://downloads.sourceforge.net/$PRGNAM/${PRGNAM}_full-${TARVERS}.tar.bz2
-#wget -c http://slackware.osuosl.org/slackware-14.0/source/l/freetype/freetype-$FREETYPE.tar.xz
-#wget -c http://fontforge.sf.net/cidmaps.tgz
+wget -c http://downloads.sourceforge.net/$PRGNAM/${PRGNAM}_full-${TARVERS}.tar.bz2
+wget -c http://slackware.osuosl.org/slackware-14.0/source/l/freetype/freetype-$FREETYPE.tar.xz
+wget -c http://fontforge.sf.net/cidmaps.tgz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
