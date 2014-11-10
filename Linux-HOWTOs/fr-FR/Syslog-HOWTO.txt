@@ -1,0 +1,164 @@
+============
+Syslog HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+============
+
+Dernière révision : 10 novembre 2014
+
+Ce HOWTO décrit la gestion des logs système sous Slackware.
+
+
+Introduction
+------------
+
+Le kernel, certains outils système et la plupart des services réseau
+enregistrent toutes sortes d'événements divers et variés dans une série de
+fichiers situés en-dessous de '/var/log'. 
+
+Ces fichiers logs peuvent s'avérer très pratiques notamment pendant la mise en
+route d'un service, pour détecter les erreurs de configuration. 
+
+Une fois que le service tourne, les logs permettent de détecter d'éventuels
+problèmes de sécurité. 
+
+Pour éviter à chaque application de réinventer la roue, le kernel, les
+outils système et les services réseau ont recours à une série de
+fonctionnalités centrales connues sous le nom de Syslog, dont il existe
+plusieurs implémentations différentes. Slackware utilise Sysklogd.
+
+Ceci étant dit, les services réseau n'utilisent pas tous Syslog, notamment les
+"grands" services comme Apache, CUPS, MySQL et Samba, qui disposent tous de
+leurs propres fonctionnalités de logs intégrées. Ils échappent ainsi à la
+configuration globale de Syslog, et les paramètres de journalisation devront
+être définis dans les fichiers de configuration respectifs.
+
+
+Configuration
+-------------
+
+Syslog est configuré par le biais du fichier de configuration
+'/etc/syslog.conf'. Ce fichier contient un ensemble de règles qui suivent la
+syntaxe suivante :
+
+  1. la première partie de la règle (SELECTOR) spécifie ce qui doit être
+  enregistré.
+
+  2. la seconde partie (ACTION) définit ce que l'on doit faire avec le message
+  en question.
+
+Prenons un exemple :
+
+--8<---------- /etc/syslog.conf ----------------------------------------------
+...
+# Private authentication message logging:
+authpriv.*            -/var/log/secure
+...
+--8<--------------------------------------------------------------------------
+
+En langage tam-tam, cette ligne signifie que tout ce qui concerne la
+définition des utilisateurs et l'authentification locale doit être enregistré
+dans le fichier '/var/log/secure'. 
+
+  -> Le tiret '-' désactive la synchronisation des logs à chaque événement, ce
+  qui est beaucoup plus rapide, au prix de perdre la ou les dernières entrées
+  en cas de plantage. 
+
+Dans la configuration par défaut, '/var/log/secure' enregistre la création, la
+modification et la suppression des utilisateurs ainsi que les connexions
+locales. 
+
+Nous allons modifier la configuration pour que les connexions à distance soit
+également prises en compte :
+
+--8<---------- /etc/syslog.conf ----------------------------------------------
+...
+# Authentication message logging:
+auth,authpriv.*           -/var/log/secure
+...
+--8<--------------------------------------------------------------------------
+
+Redémarrer Syslog pour que les modifications prennent effet :
+
+  # /etc/rc.d/rc.syslog restart
+
+Dorénavant, les connexions SSH sont également enregistrées dans
+'/var/log/secure', y compris les tentatives de connexion qui se sont soldées
+par un échec. 
+
+
+Définition des règles
+---------------------
+
+Syslog connaît les services ("facilities") 'auth', 'authpriv', 'cron',
+'daemon', 'ftp', 'kern', 'lpr', 'mail', 'news', 'syslog', 'user', 'uucp' et
+'local0' à 'local7'. Le joker '*' désigne l'ensemble des services.
+
+La définition d'une règle peut être écrite sur plusieurs lignes grâce au
+caractère antislash '\'. Si un message est concerné par un ensemble de règles,
+il sera également enregistré à plusieurs reprises. 
+
+Chaque sélecteur est constitué de deux parties séparées par un point :
+'service.priorité'. Syslog connaît les niveaux de priorité 'debug', 'info',
+'notice', 'warning', 'err', 'crit', 'alert' et 'emerg', par ordre de priorité
+croissante. Là encore, le joker '*' englobe tous les niveaux de priorité. Le
+niveau 'none' désigne les messages auxquels on ne désigne aucun niveau de
+priorité. Le choix d'un niveau de priorité englobe automatiquement tous les
+niveaux de priorité supérieurs : 'mail.err' fournira automatiquement les
+messages des niveaux 'crit', 'alert' et 'emerg'. 
+
+Voici la configuration par défaut de Syslog dans un système Slackware, suivie
+de sa "traduction" :
+
+--8<---------- /etc/syslog.conf ----------------------------------------------
+*.info;*.!warn;\
+  authpriv.none;cron.none;mail.none;news.none -/var/log/messages
+
+*.warn;\
+  authpriv.none;cron.none;mail.none;news.none -/var/log/syslog
+
+*.=debug            -/var/log/debug
+
+authpriv.*          -/var/log/secure
+
+cron.*              -/var/log/cron
+
+mail.*              -/var/log/maillog
+
+*.emerg             *
+
+uucp,news.crit      -/var/log/spooler
+--8<--------------------------------------------------------------------------
+
+  -> Les messages d'une priorité supérieure ou égale à 'info', mais inférieure
+  à 'warn' sont écrits dans '/var/log/messages'. Les services 'authpriv',
+  'cron', 'mail' et 'news' sont exclus, étant donné qu'ils sont enregistrés
+  ailleurs.
+
+  -> Les messages d'une priorité supérieure ou égale à 'warn' sont écrits dans
+  '/var/log/syslog'. Là aussi, on exclut les services qui sont déjà
+  enregistrés ailleurs.
+
+  -> Les messages d'une priorité strictement égale à 'debug' sont écrits dans
+  '/var/log/debug'.
+
+  -> Les messages d'authentification de tous les niveaux de priorité vont dans
+  '/var/log/secure'. Comme nous l'avons vu plus haut, ils ne concernent que
+  l'authentification locale. 
+
+  -> Lorsqu'une tâche automatisée (cronjob) est démarrée, le message
+  correspondant est enregistré dans '/var/log/cron'.
+
+  -> Tous les messages du système de mail (comme Postfix ou Sendmail) sont
+  écrits dans '/var/log/maillog'.
+
+  -> Les messages d'un niveau de priorité 'emerg' ne sont pas enregistrés dans
+  un fichier, mais s'affichent directement dans la console (symbole '*'). 
+  
+
+RTFM
+----
+
+  * syslog.conf(5)
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt
