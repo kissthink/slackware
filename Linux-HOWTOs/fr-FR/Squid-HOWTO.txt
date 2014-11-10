@@ -99,7 +99,7 @@ cache_mem 1024 MB
 access_log /var/log/squid/access.log squid
 cache_store_log /var/log/squid/store.log
 cache_log /var/log/squid/cache.log
-logfile_rotate 0
+logfile_rotate 52
 
 # Durée de vie des fichiers sans date d'expiration
 refresh_pattern ^ftp:		1440	20%	10080
@@ -131,9 +131,9 @@ coredump_dir /var/log/squid/cache
     l'on ne souhaite pas utiliser le disque dur pour le cache, il faut
     s'assurer de n'utiliser aucune directive 'cache_dir'.
 
-  > La directive 'logfile_rotate 0' désactive la rotation des logs par Squid,
-    étant donné que celle-ci est déjà gérée par 'logrotate'. Voir le fichier
-    '/etc/logrotate.d/squid'.
+  > La directive 'logfile_rotate 52' prédéfinit la rotation des fichiers logs.
+    Si l'on effectue une rotation hebdomadaire (cf. un peu plus bas), on garde
+    les logs pendant un an.
 
 
 Utilisation
@@ -254,18 +254,22 @@ Rotation des logs
 '/var/log/squid/access.log' enregistre l'ensemble des requêtes HTTP du réseau,
 ce qui peut résulter en un fichier assez volumineux, et qui peut même prendre
 des proportions inquiétantes. On va donc mettre en place un cronjob pour une
-rotation des logs.
+rotation hebdomadaire des logs.
 
-Éditer un fichier '/etc/cron.daily/squid-logrotate' comme ceci :
+Éditer un fichier '/etc/cron.weekly/squid' comme ceci :
 
---8<---------- /etc/cron.daily/squid-logrotate -------------------------------
+--8<---------- /etc/cron.weekly/squid ----------------------------------------
 #!/bin/sh
 /usr/sbin/squid -k rotate
 --8<--------------------------------------------------------------------------
 
 Rendre ce fichier exécutable :
 
-  # chmod +x /etc/cron.daily/squid-logrotate
+  # chmod +x /etc/cron.weekly/squid
+
+Éventuellement, modifier l'heure d'exécution des cronjobs hebdomadaires :
+
+  # crontab -e
 
 
 ------------------------------------------------------------------------------
