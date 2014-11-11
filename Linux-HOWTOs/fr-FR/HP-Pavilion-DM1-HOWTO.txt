@@ -1,0 +1,70 @@
+=====================
+HP Pavilion DM1 HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+=====================
+
+Dernière révision : 11 novembre 2014
+
+Notes succinctes sur l'installation de MLED 14.1 KDE 64-bit sur un PC portable
+HP Pavilion DM1.
+
+
+La machine n'a pas de lecteur optique, il faut donc confectionner une clé USB.
+
+Au démarrage, appuyer sur [Esc], puis sur [F9] et booter sur la clé.
+
+Options de démarrage pour l'installation : 'huge.s vga=788'
+
+Options à passer au kernel : 'video=800x480 quiet ipv6.disable=1'
+
+Carte vidéo :
+
+  # lspci | grep -i vga
+  00:01.0 VGA compatible controller: AMD/ATI [Advanced Micro Devices, Inc.]
+  Wrestler [Radeon HD 6320]
+
+Le driver libre 'radeon' doit être intégré à l'initrd pour utiliser le KMS :
+
+--8<---------- /etc/mkinitrd.conf --------------------------------------------
+SOURCE_TREE="/boot/initrd-tree"
+CLEAR_TREE="1"
+OUTPUT_IMAGE="/boot/initrd.gz"
+KERNEL_VERSION="$(uname -r)"
+KEYMAP="fr_CH-latin1"
+MODULE_LIST="ext4:radeon" --> ajouter
+ROOTDEV="/dev/sda3"
+ROOTFS="ext4"
+RESUMEDEV="/dev/sda2"
+RAID="0"
+LVM="0"
+UDEV="1"
+MODCONF="0"
+WAIT="1"
+--8<--------------------------------------------------------------------------
+
+Carte wifi :
+
+  # lspci | grep -i network
+  03:00.0 Network controller: Broadcom Corporation BCM4313 802.11b/g/n Wireless
+  LAN Controller (rev 01)
+
+La carte a besoin du driver 'broadcom-sta' pour fonctionner correctement. On
+le trouve sur SlackBuilds.org.
+
+Il faudra blacklister une série de modules incompatibles avec ce driver :
+
+--8<---------- /etc/modprobe.d/b43_blacklist.conf ----------------------------
+blacklist b43
+blacklist b43legacy
+blacklist bcma
+blacklist ssb
+--8<--------------------------------------------------------------------------
+
+Supprimer la configuration dans '/etc/rc.d/rc.inet1.conf' et activer le
+NetworkManager.
+
+
+
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt
