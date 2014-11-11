@@ -188,19 +188,24 @@ Définition d'une tâche automatique
 ----------------------------------
 
 À partir de là, on peut définir une tâche automatique (cronjob) pour la
-génération des rapports. Si l'on souhaite produire un rapport toutes les
-semaines, on peut même ajouter une ligne au fichier '/etc/cron.weekly/squid'
-existant, comme ceci :
+génération des rapports. Si l'on souhaite produire un rapport quotidien, on
+peut créer un fichier '/etc/cron.daily/squid-analyzer et l'éditer comme ceci :
 
---8<---------- /etc/cron.weekly/squid ----------------------------------------
+--8<---------- /etc/cron.daily/squid-analyzer --------------------------------
 #!/bin/sh
-
-# Generate SquidAnalyzer report
-/usr/bin/squid-analyzer > /dev/null 2>&1
-
-# Rotate Squid logs
-/usr/sbin/squid -k rotate
+/usr/bin/squid-analyzer 
 --8<--------------------------------------------------------------------------
+
+Rendre ce fichier exécutable :
+
+  # chmod +x /etc/cron.daily/squid-analyzer
+
+Éventuellement, modifier l'heure d'exécution des cronjobs quotidiens :
+
+  # crontab -e
+  ...
+  # Run daily cron jobs at 11:40 every day:
+  40 11 * * * /usr/bin/run-parts /etc/cron.daily 1> /dev/null
 
 
 ------------------------------------------------------------------------------
