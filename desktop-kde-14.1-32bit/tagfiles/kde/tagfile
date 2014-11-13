@@ -36,7 +36,6 @@ marble:ADD
 mplayerthumbs:ADD
 nepomuk-core:ADD
 nepomuk-widgets:ADD
-networkmanagement:ADD
 okular:ADD
 oxygen-gtk2:ADD
 oxygen-gtk3:ADD
@@ -145,6 +144,7 @@ libkmahjongg:SKP
 libkscreen:SKP
 libktorrent:SKP
 lskat:SKP
+networkmanagement:SKP
 pairs:SKP
 palapeli:SKP
 parley:SKP
