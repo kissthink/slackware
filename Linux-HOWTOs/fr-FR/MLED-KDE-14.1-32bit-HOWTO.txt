@@ -306,7 +306,7 @@ Intégrer 'nm-applet' au démarrage automatique de KDE :
   $ grep -v NotShowIn /etc/xdg/autostart/nm-applet.desktop \
     > ~/.config/autostart/nm-applet.desktop
 
-L'applet a besoin de polkit-gnome-authentication-agent pour fonctionner
+L'applet a besoin de 'polkit-gnome-authentication-agent' pour fonctionner
 correctement. On va donc l'ajouter au démarrage automatique :
 
   $ grep -v NotShowIn \
