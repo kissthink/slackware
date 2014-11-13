@@ -2,27 +2,57 @@
 HP Pavilion DM1 HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
 =====================
 
-Dernière révision : 11 novembre 2014
+Dernière révision : 13 novembre 2014
 
-Notes succinctes sur l'installation de MLED 14.1 KDE 64-bit sur un PC portable
-HP Pavilion DM1.
+Ce HOWTO décrit de façon succincte les particularités de l'installation de
+Slackware Linux 14.1 64-bit (MLED 14.1 KDE 64-bit) sur un ordinateur portable
+HP Pavilion DM1. 
 
+
+  * Prérequis
+  * Démarrage
+  * LILO
+  * Carte vidéo AMD/Ati Radeon HD 6320
+  * Carte wifi Broadcom BCM4313
+  * Carte son AMD HDMI
+
+
+Prérequis
+---------
 
 La machine n'a pas de lecteur optique, il faut donc confectionner une clé USB.
 
-Au démarrage, appuyer sur [Esc], puis sur [F9] et booter sur la clé.
 
-Options de démarrage pour l'installation : 'huge.s vga=788'
+Démarrage
+---------
+
+Au démarrage du PC, appuyer sur [Esc], puis sur [F9] et booter sur la clé.
+
+Options pour l'installation : 'huge.s vga=788' -> résolution idéale
+
+
+LILO
+----
 
 Options à passer au kernel : 'video=800x480 quiet ipv6.disable=1'
 
-Carte vidéo :
+On obtient une résolution potable pour la console.
+
+
+Carte vidéo AMD/Ati Radeon HD 6320
+----------------------------------
+
+La carte vidéo est une AMD/ATi Radeon HD 6320. Le driver propriétaire n'est
+pas très stable et a une méchante tendance à entrer en conflit avec le
+framebuffer, voire carrément à faire geler le bureau. Heureusement que le
+driver libre 'radeon' fonctionne très bien. Il nécessite l'utilisation du KMS
+(Kernel Mode Setting).
 
   # lspci | grep -i vga
   00:01.0 VGA compatible controller: AMD/ATI [Advanced Micro Devices, Inc.]
   Wrestler [Radeon HD 6320]
 
-Le driver libre 'radeon' doit être intégré à l'initrd pour utiliser le KMS :
+Le driver 'radeon' doit être intégré à l'initrd pour utiliser le KMS :
 
 --8<---------- /etc/mkinitrd.conf --------------------------------------------
 SOURCE_TREE="/boot/initrd-tree"
@@ -41,14 +71,16 @@ MODCONF="0"
 WAIT="1"
 --8<--------------------------------------------------------------------------
 
-Carte wifi :
+
+Carte wifi Broadcom BCM4313
+---------------------------
 
   # lspci | grep -i network
   03:00.0 Network controller: Broadcom Corporation BCM4313 802.11b/g/n Wireless
   LAN Controller (rev 01)
 
-La carte a besoin du driver 'broadcom-sta' pour fonctionner correctement. On
-le trouve sur SlackBuilds.org.
+Cette carte a besoin du driver 'broadcom-sta' pour fonctionner correctement.
+On le trouve sur SlackBuilds.org.
 
 Il faudra blacklister une série de modules incompatibles avec ce driver :
 
@@ -61,6 +93,81 @@ blacklist ssb
 
 Supprimer la configuration dans '/etc/rc.d/rc.inet1.conf' et activer le
 NetworkManager.
+
+L'applet 'networkmanagement' de KDE ne fonctionne pas de manière
+satisfaisante, et il vaut mieux utiliser l'applet GNOME correspondant
+'network-manager-applet'. En bidouillant un peu, il s'intègre très bien au
+bureau KDE et fonctionne à merveille. 
+
+Supprimer l'applet de KDE s'il est installé :
+
+  # removepkg networkmanagement
+
+Intégrer 'nm-applet' au démarrage automatique de KDE :
+
+  $ mkdir -p ~/.config/autostart
+  $ grep -v NotShowIn /etc/xdg/autostart/nm-applet.desktop \
+    > ~/.config/autostart/nm-applet.desktop
+
+L'applet a besoin de 'polkit-gnome-authentication-agent' pour fonctionner
+correctement. On va donc l'ajouter au démarrage automatique :
+
+  $ grep -v NotShowIn \
+    /etc/xdg/autostart/polkit-gnome-authentication-agent-1.desktop \
+    > ~/.config/autostart/polkit-gnome-authentication-agent-1.desktop
+
+
+Carte son AMD HDMI
+------------------
+
+Dans la configuration d'origine, la machine reste obstinément muette.
+Évidemment, ç'aurait été trop facile autrement. 
+
+Au niveau matériel, voilà comment ça se présente :
+
+  $ /sbin/lspci | grep -i audio
+  00:01.1 Audio device: AMD/ATI [Advanced Micro Devices, Inc.] 
+  Wrestler HDMI Audio [Radeon HD 6250/6310]
+  00:14.2 Audio device: AMD/ATI [Advanced Micro Devices, Inc.] 
+  SBx00 Azalia (Intel HDA) (rev 40)
+
+Activer les sorties et régler le volume au maximum pour les deux cartes :
+
+  $ alsamixer
+
+  /!\ La touche [,] permet de basculer entre les états actif ([00]) et muet
+  ([MM]). Utiliser [Fn]+[F6] pour basculer entre les cartes.
+
+Identifier les périphériques :
+
+  $ aplay -l
+  **** Liste des Périphériques Matériels PLAYBACK ****
+  carte 0: Generic [HD-Audio Generic], périphérique 3: 
+    HDMI 0 [HDMI 0]
+    Sous-périphériques: 1/1
+    Sous-périphérique #0: subdevice #0
+  carte 1: SB [HDA ATI SB], périphérique 0: 92HD87B2/4 
+    Analog [92HD87B2/4 Analog]
+    Sous-périphériques: 1/1
+    Sous-périphérique #0: subdevice #0      
+
+Essayer successivement :
+
+  $ aplay -D plughw:0,3 /usr/share/sounds/alsa/*.wav
+  $ aplay -D plughw:1,0 /usr/share/sounds/alsa/*.wav
+
+J'obtiens du son avec '-D plughw:1,0', je vais donc configurer la carte et le
+périphérique de façon permanente en éditant '~/.asoundrc' comme ceci :
+
+--8<---------- ~/.asoundrc ---------------------------------------------------
+defaults.pcm.card 1
+defaults.pcm.device 0
+defaults.ctl.card 0
+--8<--------------------------------------------------------------------------
+
+Pour finir, j'enregistre les réglages de façon permanente :
+
+  # alsactl store
 
 
 ------------------------------------------------------------------------------
