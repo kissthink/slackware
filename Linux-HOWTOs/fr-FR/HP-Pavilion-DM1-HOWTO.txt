@@ -66,31 +66,17 @@ On peut très bien utiliser l'applet GNOME 'nm-applet' pour gérer les
 connexions réseau. Elle est mieux faite que l'applet 'networkmanagement'
 correspondante de KDE. 
 
-Dans sa configuration par défaut, 'nm-applet' n'apparaît pas sous KDE. On va
-changer ça en éditant le fichier '/usr/share/applications/nm-applet.desktop' :
+Désinstaller 'networkmanagement'.
 
---8<---------- /usr/share/applications/nm-applet.desktop ---------------------
-Icon=nm-device-wireless
-Exec=nm-applet
-Terminal=false
-Type=Application
-NoDisplay=true
-#NotShowIn=KDE;GNOME;              ---> commenter cette ligne
-X-GNOME-Bugzilla-Bugzilla=GNOME
-X-GNOME-Bugzilla-Product=NetworkManager
-X-GNOME-Bugzilla-Component=nm-applet
-X-GNOME-UsesNotifications=true
---8<--------------------------------------------------------------------------
 
-Lorsqu'on se connecte une première fois à un réseau wifi, KWallet se lance.
-Ignorer KWallet en cliquant sur [Terminer] et fournir le mot de passe. 
+ 1059 ?        Sl     0:00 /usr/libexec/polkit-gnome-authentication-agent-1
+ 1095 ?        S      0:00 gnome-pty-helper
 
-Dans sa configuration par défaut, NetworkManager ne retient pas les mots de
-passe des connexions wifi. Une fois qu'on s'est connecté à un réseau, aller
-dans "Gérer les connexions...", sélectionner la connexion, cliquer sur
-"Modifier..." et cocher la case "Connexion système". À partir de là,
-NetworkManager ne redemandera pas le mot de passe pour une prochaine connexion
-à un réseau connu.
+if [ -z "$DESKTOP_SESSION" -a -x /usr/bin/ck-launch-session ]; then
+  exec ck-launch-session dbus-launch --exit-with-session /usr/bin/startxfce4
+else
+  exec dbus-launch --exit-with-session /usr/bin/startxfce4
+fi
 
 
 
