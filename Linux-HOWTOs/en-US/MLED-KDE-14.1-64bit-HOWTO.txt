@@ -22,6 +22,8 @@ Microlinux Enterprise Desktop KDE 14.1 64bit.
   * Set locales
   * Clean up the applications menu
   * Finishing up
+  * NetworkManager applet
+  * Extra applications
   * Maintenance
 
 
@@ -311,6 +313,31 @@ We're almost there. Here's what's left to be done.
   * Switch to default runlevel 4.
 
   * Reboot.
+
+
+NetworkManager applet
+---------------------
+
+KDE's 'networkmanagement' applet doesn't work satisfyingly, and I recommend
+using GNOME's corresponding 'network-manager-applet'. It integrates nicely
+with a bit of fiddling and works perfectly. 
+
+Remove KDE's native applet if it's installed:
+
+  # removepkg networkmanagement
+
+Start 'nm-applet' automatically within KDE:
+
+  $ mkdir -p ~/.config/autostart
+  $ grep -v NotShowIn /etc/xdg/autostart/nm-applet.desktop \
+    > ~/.config/autostart/nm-applet.desktop
+
+The applet needs 'polkit-gnome-authentication-agent', so we have to add this
+too:
+
+  $ grep -v NotShowIn \
+    /etc/xdg/autostart/polkit-gnome-authentication-agent-1.desktop \
+    > ~/.config/autostart/polkit-gnome-authentication-agent-1.desktop
 
 
 Extra applications

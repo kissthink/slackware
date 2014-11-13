@@ -62,23 +62,6 @@ blacklist ssb
 Supprimer la configuration dans '/etc/rc.d/rc.inet1.conf' et activer le
 NetworkManager.
 
-On peut très bien utiliser l'applet GNOME 'nm-applet' pour gérer les
-connexions réseau. Elle est mieux faite que l'applet 'networkmanagement'
-correspondante de KDE. 
-
-Désinstaller 'networkmanagement'.
-
-
- 1059 ?        Sl     0:00 /usr/libexec/polkit-gnome-authentication-agent-1
- 1095 ?        S      0:00 gnome-pty-helper
-
-if [ -z "$DESKTOP_SESSION" -a -x /usr/bin/ck-launch-session ]; then
-  exec ck-launch-session dbus-launch --exit-with-session /usr/bin/startxfce4
-else
-  exec dbus-launch --exit-with-session /usr/bin/startxfce4
-fi
-
-
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
