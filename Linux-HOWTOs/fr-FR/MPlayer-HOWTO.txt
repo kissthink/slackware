@@ -34,5 +34,17 @@ l'option suivante :
   /!\ expérimenter avec des valeurs entre 10 et 20
 
 
+Intervalles de saut
+-------------------
+
+Les intervalles de saut sont prédéfinis dans MPlayer. La touche [FlècheGauche]
+recule de 10 secondes, la touche [FlècheDroite] avance de 10 secondes, etc.
+Pour modifer cet intervalle, éditer un fichier '~/.mplayer/input.conf' comme
+ceci :
+
+  LEFT seek -5
+
+
+
 ------------------------------------------------------------------------------
 # vim: syntax=txt
