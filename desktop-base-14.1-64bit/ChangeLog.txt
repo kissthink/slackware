@@ -1,3 +1,6 @@
+Mon Nov 17 15:56:45 CET 2014
+locale/mozilla-thunderbird-l10n-31.2.0-x86_64-1_microlinux.txz: Upgraded.
++--------------------------+
 Sat Nov  8 19:29:53 CET 2014
 xap/fontforge-20120731_b-x86_64-1_microlinux.txz: Added.
 +--------------------------+
