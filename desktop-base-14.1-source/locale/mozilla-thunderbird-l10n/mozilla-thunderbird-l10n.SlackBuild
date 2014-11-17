@@ -24,7 +24,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=mozilla-thunderbird-l10n
-VERSION=${VERSION:-24.8.1}	 
+VERSION=${VERSION:-31.2.0}	 
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}		
 
