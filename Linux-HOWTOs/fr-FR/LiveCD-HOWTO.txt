@@ -96,6 +96,7 @@ Supprimer les fichiers de périphériques persistants :
 
   # cd /etc/udev/rules.d
   # rm 70-persistent-*
+  # rm 60-vboxadd.rules
 
 
 Construction du système Live
