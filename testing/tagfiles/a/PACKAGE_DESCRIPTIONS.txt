@@ -1,0 +1,1231 @@
+aaa_base: aaa_base (Basic Linux filesystem package)
+aaa_base:
+aaa_base: Sets up the empty directory tree for Slackware and adds an email to
+aaa_base: root's mailbox welcoming them to Linux. :)  This package should be
+aaa_base: installed first, and never uninstalled.
+aaa_base:
+aaa_base:
+aaa_base:
+aaa_base:
+aaa_base:
+aaa_base:
+aaa_elflibs: aaa_elflibs (shared libraries needed by many programs)
+aaa_elflibs:
+aaa_elflibs: This is a collection of shared libraries needed to run Linux programs.
+aaa_elflibs: ELF (Executable and Linking Format) is the standard Linux binary 
+aaa_elflibs: format.  These libraries are gathered from other Slackware packages
+aaa_elflibs: and are intended to give a fairly complete initial set of libraries.
+aaa_elflibs: This package should be not upgraded or reinstalled (it could copy
+aaa_elflibs: over newer library versions).
+aaa_elflibs:
+aaa_elflibs:
+aaa_elflibs:
+aaa_terminfo: aaa_terminfo (a basic collection of terminfo entries)
+aaa_terminfo:
+aaa_terminfo: This is a starter set of files from the terminfo database, which
+aaa_terminfo: should be enough in most cases.  The complete set (from which this
+aaa_terminfo: is derived) can be found in the ncurses package.
+aaa_terminfo:
+aaa_terminfo: The terminfo database describes the characteristics of terminals, so
+aaa_terminfo: don't try to log in without this package.  :-)
+aaa_terminfo:
+aaa_terminfo:
+aaa_terminfo:
+acl: acl (tools for using POSIX Access Control Lists)
+acl:
+acl: This package contains a set of tools and libraries for manipulating
+acl: POSIX Access Control Lists.  POSIX Access Control Lists (defined in
+acl: POSIX 1003.1e draft standard 17) are used to define more fine-grained
+acl: discretionary access rights for files and directories.
+acl:
+acl:
+acl:
+acl: Homepage:  http://savannah.nongnu.org/projects/acl
+acl:
+acpid: acpid (ACPI daemon)
+acpid:
+acpid: Most modern computers support the Advanced Configuration and Power
+acpid: Interface (ACPI) standard to allow intelligent power management.
+acpid: This package contains acpid, which is the user-space daemon needed in
+acpid: order to make the Linux ACPI support completely functional.
+acpid:
+acpid: ACPI must be compiled into the kernel to run acpid.
+acpid:
+acpid: Homepage:  http://sourceforge.net/projects/acpid2/ 
+acpid:
+apmd: apmd (Advanced Power Management daemon)
+apmd:
+apmd: apmd is an APM monitoring daemon, and works in conjunction with the
+apmd: APM BIOS driver in the kernel.  Apmd (and the included tools) handle
+apmd: tasks such as automatically putting a laptop into suspend when the
+apmd: power level drop below a certain point.  This package also includes
+apmd: the graphical power management tools xapm and xbattery.
+apmd:
+apmd: The apmd tools were written by Rik Faith and are maintained by
+apmd: Avery Pennarun.  xbattery was written by Nathan Sidwell.
+apmd:
+attr: attr (tools for using extended attributes on filesystems)
+attr:
+attr: This package contains a set of tools for manipulating extended
+attr: attributes (name:value pairs associated permanently with files and
+attr: directories) on filesystem objects, and the library and header files
+attr: needed to develop programs which make use of extended attributes.
+attr: Extended attributes are used to provide additional functionality to
+attr: a filesystem.  For example, Access Control Lists (ACLs) are
+attr: implemented using extended attributes.
+attr:
+attr: Homepage:  http://savannah.nongnu.org/projects/attr
+bash: bash (sh-compatible shell)
+bash:
+bash: The GNU Bourne-Again SHell.  Bash is a sh-compatible command
+bash: interpreter that executes commands read from the standard input or
+bash: from a file.  Bash also incorporates useful features from the Korn
+bash: and C shells (ksh and csh).  Bash is ultimately intended to be a
+bash: conformant implementation of the IEEE Posix Shell and Tools
+bash: specification (IEEE Working Group 1003.2).
+bash:
+bash: Bash must be present for the system to boot properly.
+bash:
+bin: bin (some command-line utilities)
+bin:
+bin: The bin package is a collection of miscellaneous command-line 
+bin: utilities.  Some of these (such as 'tempfile') are used in system
+bin: scripts.
+bin:
+bin:
+bin:
+bin:
+bin:
+bin:
+btrfs-progs: btrfs-progs (Btrfs filesystem utilities)
+btrfs-progs:
+btrfs-progs: Btrfs is a new copy on write filesystem for Linux aimed at implementing
+btrfs-progs: advanced features while focusing on fault tolerance, repair and easy
+btrfs-progs: administration.  Initially developed by Oracle, Btrfs is licensed under
+btrfs-progs: the GPL and open for contribution from anyone.
+btrfs-progs:
+btrfs-progs:
+btrfs-progs:
+btrfs-progs: Btrfs homepage:  http://btrfs.wiki.kernel.org
+btrfs-progs:
+bzip2: bzip2 (a block-sorting file compressor)
+bzip2:
+bzip2: Bzip2 compresses files using the Burrows-Wheeler block sorting text
+bzip2: compression algorithm, and Huffman coding.  Compression is generally
+bzip2: considerably better than that achieved by more conventional LZ77/LZ78-
+bzip2: based compressors, and approaches the performance of the PPM family of
+bzip2: statistical compressors. 
+bzip2:
+bzip2: Julian Seward <jseward@acm.org> is the author of bzip2.
+bzip2:
+bzip2:
+coreutils: coreutils (core GNU utilities)
+coreutils:
+coreutils: These are the GNU core utilities, the basic command line programs
+coreutils: such as 'mkdir', 'ls', and 'rm' that are needed for the system to
+coreutils: run.  This package is the union of the GNU fileutils, sh-utils, and
+coreutils: textutils packages.  Most of these programs have significant
+coreutils: advantages over their Unix counterparts, such as greater speed,
+coreutils: additional options, and fewer arbitrary limits.
+coreutils:
+coreutils:
+coreutils:
+cpio: cpio (backup and archiving utility)
+cpio:
+cpio: This is GNU cpio, a program to manage archives of files. This package
+cpio: also includes mt, a tape drive control program. cpio copies files into
+cpio: or out of a cpio or tar archive, which is a file that contains other
+cpio: files plus information about them, such as their pathname, owner,
+cpio: timestamps, and access permissions. The archive can be another file on
+cpio: the disk, a magnetic tape, or a pipe.
+cpio:
+cpio:
+cpio:
+cpufrequtils: cpufrequtils (Kernel CPUfreq utilities)
+cpufrequtils:
+cpufrequtils: The cpufrequtils package makes access to the Linux kernel CPUfreq
+cpufrequtils: subsystem easier for users and cpufreq userspace tools.  It contains
+cpufrequtils: a library used by other programs (libcpufreq), and command line tools
+cpufrequtils: to determine current CPUfreq settings and to modify them.
+cpufrequtils:
+cpufrequtils: Dominik Brodowski is the cpufrequtils maintainer.
+cpufrequtils: The cpufrequtils page is hosted on kernel.org:
+cpufrequtils: http://www.kernel.org/pub/linux/utils/kernel/cpufreq/cpufreq.html
+cpufrequtils:
+cryptsetup: cryptsetup (utility for setting up encrypted filesystems)
+cryptsetup:
+cryptsetup: LUKS is a standard for cross-platform hard disk encryption.
+cryptsetup: It provides secure management of multiple userpasswords and
+cryptsetup: stores setup information in the partition header.
+cryptsetup: LUKS for dm-crypt is now implemented in cryptsetup replacing the
+cryptsetup: original cryptsetup. It provides all the functionally of the
+cryptsetup: original version plus all LUKS features.
+cryptsetup:
+cryptsetup: cryptsetup home:  http://code.google.com/p/cryptsetup/
+cryptsetup:
+cups: CUPS (Common UNIX Printing System)
+cups:
+cups: The Common UNIX Printing System provides a portable printing layer for
+cups: UNIX(R)-like operating systems. It has been developed by Easy Software
+cups: Products to promote a standard printing solution for all UNIX vendors
+cups: and users.  CUPS uses the Internet Printing Protocol ("IPP") as the
+cups: basis for managing print jobs and queues.  The CUPS package includes
+cups: System V and Berkeley command-line interfaces, a PostScript RIP
+cups: package for supporting non-PostScript printer drivers, and tools for
+cups: creating additional printer drivers and other CUPS services.
+cups:
+cxxlibs: cxxlibs (C++ shared library compatibility package)
+cxxlibs:
+cxxlibs: This package contains the shared libraries needed to run dynamically
+cxxlibs: linked C++ binaries linked with older versions of libstdc++.
+cxxlibs:
+cxxlibs:
+cxxlibs:
+cxxlibs:
+cxxlibs:
+cxxlibs:
+cxxlibs:
+dbus: dbus (D-Bus message bus system)
+dbus:
+dbus: D-Bus supplies both a system daemon (for events such as "new hardware
+dbus: device added" or "printer queue changed") and a per user login
+dbus: session daemon (for general IPC needs among user applications).
+dbus: Also, the message bus is built on top of a general one-to-one message
+dbus: passing framework, which can be used by any two apps to communicate
+dbus: directly (without going through the message bus daemon). 
+dbus:
+dbus:
+dbus:
+dcron: dcron (Dillon's Cron daemon)
+dcron:
+dcron: The cron daemon runs in the background and executes tasks on behalf of
+dcron: users at the appropriate time.  Many timed system tasks are started
+dcron: with cron, such as the nightly indexing with updatedb.
+dcron:
+dcron: dcron was written entirely from scratch by Matthew Dillon.
+dcron:
+dcron:
+dcron:
+dcron:
+devs: devs (system device files)
+devs:
+devs: This package creates special files in the /dev directory that 
+devs: represent your system's hardware, and a tool (/dev/MAKEDEV) for
+devs: creating new device files.  These files are required to access
+devs: hardware on a Linux system.
+devs:
+devs:
+devs:
+devs:
+devs:
+dialog: dialog (display dialog boxes from shell scripts)
+dialog:
+dialog: Dialog is a program to present a variety of questions or display
+dialog: messages using dialog boxes from a shell script.  The Slackware
+dialog: package management script "pkgtool" uses this, as do various other
+dialog: menu-driven console scripts.
+dialog:
+dialog: Dialog was originally contributed to Slackware by Savio Lam, and has
+dialog: been contributed to by many.  Dialog is currently maintained by
+dialog: Thomas E. Dickey.
+dialog:
+dosfstools: dosfstools (tools for working with FAT filesystems)
+dosfstools:
+dosfstools: Utilities for creating FAT filesystems (mkdosfs), and for checking
+dosfstools: and repairing them (dosfsck).
+dosfstools:
+dosfstools:
+dosfstools:
+dosfstools:
+dosfstools:
+dosfstools:
+dosfstools:
+e2fsprogs: e2fsprogs (ext2 and ext3 filesystems utilities)
+e2fsprogs:
+e2fsprogs: Utilities needed to create and maintain ext2 and ext3 filesystems.
+e2fsprogs:
+e2fsprogs: These utilities were written by Remy Card (the developer and
+e2fsprogs: maintainer of the ext2 fs) and Theodore T'so.
+e2fsprogs:
+e2fsprogs:
+e2fsprogs:
+e2fsprogs:
+e2fsprogs:
+ed: ed (text editor)
+ed:
+ed: GNU ed is an 8-bit clean, more or less POSIX-compliant implementation
+ed: of the standard Unix line editor.  These days, full-screen editors
+ed: have rendered 'ed' mostly of historical interest.  Nonetheless, it
+ed: appeals to a handful of aging programmers who still believe that
+ed: "Small is Beautiful".
+ed:
+ed:
+ed:
+ed:
+efibootmgr: efibootmgr (tool to modify UEFI boot entries)
+efibootmgr:
+efibootmgr: efibootmgr is a Linux userspace application to modify the Intel
+efibootmgr: Extensible Firmware Interface (EFI) Boot Manager.  This application
+efibootmgr: can create and destroy boot entries, change the boot order, change
+efibootmgr: the next running boot option, and more.
+efibootmgr:
+efibootmgr: Homepage:  http://linux.dell.com/efibootmgr
+efibootmgr:
+efibootmgr:
+efibootmgr:
+eject: eject (a tool to eject removable media)
+eject:
+eject: Eject allows removable media (typically a DVD, CD, floppy disk, tape,
+eject: etc.) to be ejected under software control.  The command can also
+eject: control some multi-disc changers, the auto-eject feature supported by
+eject: some devices, and can close the disc tray of some drives.
+eject:
+eject: The 'eject' program was written by Jeff Tranter.
+eject:
+eject:
+eject:
+elilo: elilo (Linux Loader for EFI-based platforms)
+elilo:
+elilo: This is elilo, a boot loader originally developed by HP for IA-64
+elilo: systems.  This is used to load the kernel and initial ramdisk on
+elilo: machines that use UEFI.  Since most UEFI implementations are 64-bit,
+elilo: the 64-bit EFI binary is generally the one to use (even for loading
+elilo: a 32-bit kernel).
+elilo:
+elilo: Homepage: http://elilo.sourceforge.net
+elilo:
+elilo:
+elvis: elvis
+elvis:
+elvis: Elvis is a text editor.  It is intended to be a modern replacement
+elvis: for the classic ex/vi editor of UNIX fame.  Elvis supports many new
+elvis: features, including multiple edit buffers, multiple windows, and a
+elvis: variety of display modes.
+elvis:
+elvis: As elvis is Slackware's default vi, this is a required package.
+elvis:
+elvis:
+elvis:
+etc: etc (system configuration files)
+etc:
+etc: System configuration files.  The /etc directory is traditionally the
+etc: location where configuration files are found.
+etc:
+etc:
+etc:
+etc:
+etc:
+etc:
+etc:
+file: file (a utility to determine file type)
+file:
+file: This is Ian F. Darwin's 'file' utility, used to identify files.
+file: Christos Zoulas has been file's maintainer since 1994.
+file:
+file: Home FTP site:  ftp://ftp.astron.com/pub/file/
+file:
+file:
+file:
+file:
+file:
+findutils: findutils (utilities to locate files)
+findutils:
+findutils: This package contains the GNU find and xargs programs.  The find and
+findutils: xargs implementations comply with POSIX 1003.2.  They also support
+findutils: some additional options, some borrowed from Unix and some unique to
+findutils: GNU.
+findutils:
+findutils:
+findutils:
+findutils:
+findutils:
+floppy: floppy (floppy disk utilities)
+floppy:
+floppy: Contains fdutils, tools to test and format floppy disks; and mtools,
+floppy: a collection of utilities to access FAT disks without mounting them.
+floppy:
+floppy:
+floppy:
+floppy:
+floppy:
+floppy:
+floppy:
+gawk: gawk (pattern scanning and processing language)
+gawk:
+gawk: Gawk is the GNU Project's implementation of the AWK programming
+gawk: language.  It conforms to the definition of the language in the POSIX
+gawk: 1003.2 Command Language And Utilities Standard.  This version in turn
+gawk: is based on the description in The AWK Programming Language, by Aho,
+gawk: Kernighan, and Weinberger, with the additional features found in the
+gawk: System V Release 4 version of UNIX awk.  Gawk also provides more
+gawk: recent Bell Labs awk extensions, and some GNU-specific extensions.
+gawk:
+gawk:
+genpower: genpower (UPS monitoring daemon)
+genpower:
+genpower: The genpower daemon, genpowerd, will monitor the status of a serial
+genpower: line connected to a UPS (Uninterruptible Power Supply).  If a power
+genpower: failure is detected, genpowerd will notify the system to take the
+genpower: needed steps to react to the condition of the UPS.  This may include
+genpower: shutting the system down, or canceling a pending shutdown if the
+genpower: power is restored.
+genpower:
+genpower:
+genpower:
+gettext: gettext (internationalization framework)
+gettext:
+gettext: The GNU gettext package contains "gettext" and "ngettext", programs
+gettext: that are used to internationalize the messages given by shell scripts.
+gettext:
+gettext:
+gettext:
+gettext:
+gettext:
+gettext:
+gettext:
+getty-ps: getty-ps (console or terminal login)
+getty-ps:
+getty-ps: /sbin/getty and /sbin/uugetty. 
+getty-ps: These control the process of logging into your system, and may be used
+getty-ps: instead of 'agetty', which is the default getty included with the
+getty-ps: util-linux package. getty-ps supports a number of enhancements such as
+getty-ps: ringback support.
+getty-ps:
+getty-ps: getty-ps was originally written by Paul Sutcliffe, Jr, and is
+getty-ps: currently maintained by Christine Jamison.
+getty-ps:
+glibc-solibs: glibc-solibs (shared GNU C libraries)
+glibc-solibs:
+glibc-solibs: This package contains the shared libraries, binaries, and support
+glibc-solibs: files required to run most Linux applications linked with glibc.
+glibc-solibs:
+glibc-solibs:
+glibc-solibs:
+glibc-solibs:
+glibc-solibs:
+glibc-solibs:
+glibc-solibs:
+glibc-zoneinfo: glibc-zoneinfo (timezone database)
+glibc-zoneinfo:
+glibc-zoneinfo: This package allows you to configure your time zone.
+glibc-zoneinfo:
+glibc-zoneinfo: This timezone database comes from the tzdata and tzcode packages by
+glibc-zoneinfo: Arthur David Olson et.al.  The latest version and more information
+glibc-zoneinfo: may be found at:  http://www.iana.org/time-zones
+glibc-zoneinfo:
+glibc-zoneinfo: Use the timeconfig utility to set your local time zone.
+glibc-zoneinfo:
+glibc-zoneinfo:
+gpm: gpm (general purpose mouse server)
+gpm:
+gpm: The general purpose mouse server, or gpm, allows you to use the mouse
+gpm: to cut and paste text from the screen.  It also acts as a mouse 
+gpm: server for applications running on the Linux console, such as the
+gpm: Midnight Commander file manager. 
+gpm:
+gpm: NOTE:  This program may cause problems when you start X on systems 
+gpm: that use a bus mouse (not common).  If you get an 'unable to open
+gpm: mouse device' error from X, disable /etc/rc.d/rc.gpm.
+gpm:
+gptfdisk: gptfdisk (GPT fdisk utilities)
+gptfdisk:
+gptfdisk: GPT fdisk (consisting of the gdisk, cgdisk, sgdisk, and fixparts
+gptfdisk: programs) is a set of text-mode partitioning tools for using a GPT
+gptfdisk: (GUID Partition Table), rather than the traditional MBR (Master Boot
+gptfdisk: Record) partition tables.  It features several partitioning tools,
+gptfdisk: recovery tools to help you deal with corrupt partition tables, and the
+gptfdisk: ability to convert MBR disks to GPT format.
+gptfdisk:
+gptfdisk: gdisk home: http://www.rodsbooks.com/gdisk/
+gptfdisk:
+grep: grep (print lines matching a pattern)
+grep:
+grep: This is GNU grep, the "fastest grep in the west" (we hope).  Grep
+grep: searches through textual input for lines which contain a match to a
+grep: specified pattern and then prints the matching lines.
+grep:
+grep:
+grep:
+grep:
+grep:
+grep:
+grub: GRUB (the GRand Unified Bootloader)
+grub:
+grub: GNU GRUB is a multiboot boot loader.
+grub:
+grub: Website: http://www.gnu.org/software/grub/
+grub:
+grub:
+grub:
+grub:
+grub:
+grub:
+gzip: gzip (file compression utility)
+gzip:
+gzip: Gzip reduces the size of the named files using Lempel-Ziv coding
+gzip: (LZ77).  Whenever possible, each file is replaced by one with the
+gzip: extension .gz, while keeping the same ownership modes, access and
+gzip: modification times.
+gzip:
+gzip:
+gzip:
+gzip:
+gzip:
+hdparm: hdparm (read/set hard drive parameters)
+hdparm:
+hdparm: hdparm provides a command line interface to various hard disk ioctls
+hdparm: supported by the Linux ATA/IDE device driver subsystem.  This may be
+hdparm: required to enable higher-performing disk modes.
+hdparm:
+hdparm: hdparm was written by Mark Lord.
+hdparm:
+hdparm:
+hdparm:
+hdparm:
+infozip: infozip (Info-ZIP's zip and unzip utilities)
+infozip:
+infozip: zip is a compression and file packaging utility for Unix, VMS, MSDOS,
+infozip: OS/2, Windows NT, Minix, Atari and Macintosh, Amiga and Acorn RISC OS.
+infozip: It is analogous to a combination of the UNIX commands tar(1) and
+infozip: compress(1) and is compatible with PKZIP (Phil Katz's ZIP).  A
+infozip: companion program (unzip(1L)), unpacks zip archives.
+infozip:
+infozip:
+infozip:
+infozip:
+inotify-tools: inotify-tools (command line utilities for inotify)
+inotify-tools:
+inotify-tools: inotify-tools is a set of command-line programs for Linux providing a
+inotify-tools: simple interface to inotify.  These programs can be used to monitor
+inotify-tools: and act upon filesystem events.
+inotify-tools:
+inotify-tools: For more information see the inotifywait and inotifywatch man pages.
+inotify-tools:
+inotify-tools: inotify-tools home: http://inotify-tools.sourceforge.net/
+inotify-tools:
+inotify-tools:
+isapnptools: isapnptools (ISA Plug-And-Play tools)
+isapnptools:
+isapnptools: These programs allow ISA Plug-And-Play devices to be configured
+isapnptools: on a Linux machine.
+isapnptools:
+isapnptools:
+isapnptools:
+isapnptools:
+isapnptools:
+isapnptools:
+isapnptools:
+jfsutils: jfsutils (IBM JFS utilities)
+jfsutils:
+jfsutils: Utilities for managing IBM's Journaled File System (JFS) under Linux:
+jfsutils:   jfs_debugfs - shell-type JFS file system editor.
+jfsutils:   jfs_fsck - check and repair a JFS formatted device.
+jfsutils:   jfs_fscklog - extract a JFS fsck service log into a file.
+jfsutils:   jfs_logdump - dump a JFS formatted device's journal log.
+jfsutils:   jfs_mkfs - create a JFS formatted partition.
+jfsutils:   jfs_tune - adjust tunable file system parameters on JFS.
+jfsutils:
+jfsutils:
+kbd: kbd (keyboard maps and console fonts)
+kbd:
+kbd: Load and save keyboard mappings.  Needed if you are not using the US
+kbd: keyboard map.  This package also contains utilities to change your
+kbd: console fonts - if you install it you'll get a menu later on that lets
+kbd: you select from many different fonts.  If you like one, you can make
+kbd: it your default font.  A new default font can be chosen at any time by
+kbd: typing 'setconsolefont'.
+kbd:
+kbd:
+kbd:
+kernel-firmware: kernel-firmware (Firmware for the kernel)
+kernel-firmware:
+kernel-firmware: These are firmware files for the Linux kernel.
+kernel-firmware:
+kernel-firmware: You'll need these to use certain hardware drivers with Linux.
+kernel-firmware:
+kernel-firmware: Upstream site:  
+kernel-firmware:
+kernel-firmware: git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git
+kernel-firmware:
+kernel-firmware:
+kernel-generic: kernel-generic (a general purpose single processor Linux kernel)
+kernel-generic:
+kernel-generic: This is a Linux kernel with built-in support for most IDE controllers.
+kernel-generic: For filesystem support, or if you need to load support for a SCSI or
+kernel-generic: other controller, then you'll need to load one or more kernel modules
+kernel-generic: using an initial ramdisk, or initrd.  For more information about
+kernel-generic: creating an initrd, see the README.initrd file in the /boot directory.
+kernel-generic:
+kernel-generic:
+kernel-generic:
+kernel-generic:
+kernel-generic-smp: kernel-generic-smp (a general purpose SMP Linux kernel)
+kernel-generic-smp:
+kernel-generic-smp: This is a Linux kernel with built-in support for most disk
+kernel-generic-smp: controllers.  To use filesystems, or to load support for a SCSI or
+kernel-generic-smp: other controller, then you'll need to load one or more kernel
+kernel-generic-smp: modules using an initial ramdisk, or initrd.  For more information
+kernel-generic-smp: about creating an initrd, see the README.initrd file in the /boot
+kernel-generic-smp: directory.
+kernel-generic-smp:
+kernel-generic-smp: SMP is "Symmetric multiprocessing", or multiple CPU/core support.
+kernel-generic-smp:
+kernel-huge: kernel-huge (a fully-loaded single processor Linux kernel)
+kernel-huge:
+kernel-huge: This is a Linux kernel with built-in support for most disk controllers
+kernel-huge: and filesystems.  If you're looking for a more stripped down kernel
+kernel-huge: (this one contains everything but the kitchen sink ;-), then install
+kernel-huge: the kernel-generic from the /boot directory along with an initrd to
+kernel-huge: load support for your boot device and filesystem.  For instructions
+kernel-huge: on the initrd, see README.initrd in the /boot directory.
+kernel-huge:
+kernel-huge:
+kernel-huge:
+kernel-huge-smp: kernel-huge-smp (a fully-loaded SMP Linux kernel)
+kernel-huge-smp:
+kernel-huge-smp: This is a Linux kernel with built-in support for most disk
+kernel-huge-smp: controllers.  If you're looking for a more stripped down kernel
+kernel-huge-smp: (this one contains everything but the kitchen sink ;-), then install
+kernel-huge-smp: the kernel-generic-smp in the /boot directory along with an initrd to
+kernel-huge-smp: load support for your boot device and filesystem.  For instructions
+kernel-huge-smp: on the initrd, see README.initrd in the /boot directory.
+kernel-huge-smp:
+kernel-huge-smp: SMP is "Symmetric multiprocessing", or multiple CPU/core support.
+kernel-huge-smp:
+kernel-modules: kernel-modules (single CPU Linux kernel modules)
+kernel-modules:
+kernel-modules: A kernel module is a piece of object code that can be dynamically
+kernel-modules: loaded into the Linux kernel to provide new kernel functions.  Most of
+kernel-modules: these modules provide support for devices such as CD-ROM drives, tape
+kernel-modules: drives, and ethernet cards.  You can choose which modules to load by
+kernel-modules: editing /etc/rc.d/rc.modules.
+kernel-modules:
+kernel-modules:
+kernel-modules:
+kernel-modules:
+kernel-modules-smp: kernel-modules (SMP Linux kernel modules)
+kernel-modules-smp:
+kernel-modules-smp: A kernel module is a piece of object code that can be dynamically
+kernel-modules-smp: loaded into the Linux kernel to provide new kernel functions.  Most of
+kernel-modules-smp: these modules provide support for devices such as CD-ROM drives, tape
+kernel-modules-smp: drives, and ethernet cards.  You can choose which modules to load by
+kernel-modules-smp: editing /etc/rc.d/rc.modules.
+kernel-modules-smp:
+kernel-modules-smp:
+kernel-modules-smp:
+kernel-modules-smp:
+kmod: kmod (kernel module tools and library)
+kmod:
+kmod: kmod is a set of tools to handle common tasks with Linux kernel 
+kmod: modules like insert, remove, list, check properties, resolve 
+kmod: dependencies and aliases.  The aim is to be compatible with the tools,
+kmod: configurations and indexes from the module-init-tools project.
+kmod:
+kmod: These tools are designed on top of libkmod, a library that is 
+kmod: shipped with kmod.
+kmod:
+kmod: Project home:  ftp://ftp.kernel.org/pub/linux/utils/kernel/kmod/
+less: less (file pager)
+less:
+less: Less is a paginator similar to more (1), but which allows backward
+less: movement in the file as well as forward movement. Also, less does not
+less: have to read the entire input file before starting, so with large
+less: input files it starts up faster than text editors like vi (1). 
+less:
+less: Less was written by Mark Nudelman.
+less:
+less:
+less:
+lha: lha (LHa archive utility)
+lha:
+lha: LHa is an archiving and compressing utility written by Tsugio Okamoto.
+lha:
+lha:
+lha:
+lha:
+lha:
+lha:
+lha:
+lha:
+libcgroup: libcgroup (library and utilities for kernel control groups)
+libcgroup:
+libcgroup: Control Groups provide a mechanism for aggregating/partitioning sets of
+libcgroup: tasks, and all their future children, into hierarchical groups with
+libcgroup: specialized behaviour.  It makes use of a filesystem interface.
+libcgroup: This package contains a library for developing applications that use
+libcgroup: control groups, as well as some basic userspace tools for controlling
+libcgroup: and monitoring control groups.
+libcgroup:
+libcgroup: Homepage:  http://libcg.sourceforge.net/
+libcgroup:
+lilo: lilo (Linux Loader)
+lilo:
+lilo: Generic Boot Loader for Linux ('LInux LOader') by Werner Almesberger.
+lilo: LILO boots Linux from your hard drive. It can also boot other
+lilo: operating systems such as MS-DOS and OS/2, and can even boot DOS from
+lilo: the second hard drive. LILO comes with utilities and documentation
+lilo: that make it easier to install, such as 'liloconfig' and 'QuickStart'.
+lilo: NOTE: Installing boot loaders is inherently dangerous. Be sure to have
+lilo: some means to boot your system from a different media if you install
+lilo: LILO on your hard disk.
+lilo:
+logrotate: logrotate (system log rotation tool)
+logrotate:
+logrotate: The logrotate utility is designed to simplify the administration
+logrotate: of log files on a system which generates a lot of log files.
+logrotate: Logrotate allows for the automatic rotation compression, removal
+logrotate: and mailing of log files.  Logrotate can be set to handle a log
+logrotate: file daily, weekly, monthly or when the log file gets to a certain
+logrotate: size.  Normally, logrotate runs as a daily cron job.
+logrotate:
+logrotate:
+logrotate:
+lrzip: lrzip (Long Range ZIP)
+lrzip:
+lrzip: LRZIP is a file compression program designed to do particularly well
+lrzip: on very large files containing long distance redundancy.  The larger
+lrzip: the file and the more memory you have, the better the compression
+lrzip: advantage this will provide.  A variety of compression options allow
+lrzip: optimizing for size or speed.
+lrzip:
+lrzip: Homepage:  http://ck.kolivas.org/apps/lrzip/
+lrzip:
+lrzip:
+lvm2: lvm2 (Logical Volume Manager version 2)
+lvm2:
+lvm2: Heinz Mauelshagen's LVM (Logical Volume Manager) for Linux.
+lvm2: LVM adds an additional layer between the physical peripherals and the
+lvm2: low-level I/O interface to get a logical view of disks.  This allows
+lvm2: the concatenation of several disks (so-called physical volumes or PVs)
+lvm2: to form a storage pool (so-called Volume Group or VG) with allocation
+lvm2: units called physical extents (called PE).  With LVM, you can extend,
+lvm2: resize, or relocate storage dynamically.
+lvm2:
+lvm2:
+mcelog: mcelog (Machine Check Event logger)
+mcelog:
+mcelog: mcelog is the user space backend for logging machine check errors
+mcelog: reported by the hardware to the kernel.  The kernel does the immediate
+mcelog: actions (like killing processes etc.) and mcelog decodes the logs the
+mcelog: errors.  It primarily handles machine checks and thermal events, which
+mcelog: are reported for errors detected by the CPU.  It is recommended that
+mcelog: mcelog runs on all x86 machines, both 64-bit and 32bit.
+mcelog:
+mcelog: mcelog home:  ftp://ftp.kernel.org:/pub/linux/utils/cpu/mce
+mcelog:
+mdadm: mdadm (manage RAID arrays)
+mdadm:
+mdadm: mdadm is a utility program for creating, managing, and monitoring
+mdadm: Linux MD (Software RAID) devices.  Unlike the older raidtools
+mdadm: package, mdadm is a single program (which should make it easier to
+mdadm: use).
+mdadm:
+mdadm: mdadm was written by Neil Brown.  Development of mdadm is sponsored
+mdadm: by CSE@UNSW (The School of Computer Science and Engineering at
+mdadm: The University of New South Wales).
+mdadm:
+minicom: minicom (communications package)
+minicom:
+minicom: Minicom - a full featured menu-driven communications package similar
+minicom: to the DOS program 'Telix'.  Also includes sz/rz - utilities used to
+minicom: upload and download files using the Zmodem protocol.
+minicom:
+minicom:
+minicom:
+minicom:
+minicom:
+minicom:
+mkinitrd: mkinitrd (make an initial ramdisk)
+mkinitrd:
+mkinitrd: mkinitrd is a script to create an initial ramdisk that is loaded at
+mkinitrd: the same time as the kernel.  The initial ramdisk may be responsible
+mkinitrd: for loading kernel modules (such a filesystem or SCSI controller
+mkinitrd: module) that are needed to mount the root filesystem.
+mkinitrd:
+mkinitrd: The "initrd" is implemented as an initramfs.  See the kernel
+mkinitrd: documentation for more information on this, if you are interested.
+mkinitrd:
+mkinitrd:
+mt-st: mt-st (controls magnetic tape drive operation)
+mt-st:
+mt-st: This mt originates from BSD NET-2.  Some Linux SCSI tape-specific
+mt-st: ioctls have been added to the original source and the man page has
+mt-st: been updated.  Although this mt program is tailored for SCSI tape, it
+mt-st: can also be used with the QIC-02 driver and hopefully with other Linux
+mt-st: tape drivers using the same ioctls (some of the commands may not work
+mt-st: with all drivers).
+mt-st:
+mt-st:
+mt-st:
+mtx: mtx (Controls tape autochangers)
+mtx:
+mtx: The MTX program controls the robotic mechanism in autoloaders and
+mtx: tape libraries such as the HP SureStore DAT 40x6, Exabyte EZ-17, and
+mtx: Exabyte 220. 
+mtx:
+mtx: This program is also reported to work with a variety of other tape
+mtx: libraries and autochangers from Tandberg/Overland, Breece Hill, HP, 
+mtx: Seagate, Dell and Quantum.
+mtx:
+mtx:
+ncompress: ncompress (the classic *nix compression utility)
+ncompress:
+ncompress: Compress reduces the size of the named files using adaptive Lempel-Ziv
+ncompress: coding.  Whenever possible, each file is replaced by one with the
+ncompress: extension .Z, while keeping the same ownership modes, access and
+ncompress: modification times.  If no files are specified, the standard input is
+ncompress: compressed to the standard output.  Compressed files can be restored
+ncompress: to their original form using uncompress or zcat.
+ncompress:
+ncompress:
+ncompress:
+ntfs-3g: ntfs-3g (NTFS read-write filesystem driver)
+ntfs-3g:
+ntfs-3g: The NTFS-3G driver is an open source, freely available NTFS driver
+ntfs-3g: for Linux with read and write support.  It provides safe and fast
+ntfs-3g: handling of the Windows XP, Windows Server 2003, Windows 2000 and
+ntfs-3g: Windows Vista file systems.  Most POSIX file system operations are
+ntfs-3g: supported, with the exception of full file ownership and access
+ntfs-3g: rights support.
+ntfs-3g:
+ntfs-3g: Homepage for the ntfs-3g project: http://www.ntfs-3g.org
+ntfs-3g:
+openssl-solibs: openssl-solibs (OpenSSL shared libraries)
+openssl-solibs:
+openssl-solibs: These shared libraries provide encryption routines required by
+openssl-solibs: programs such as openssh, bind, sendmail, and many others.
+openssl-solibs:
+openssl-solibs: This product includes software developed by the OpenSSL Project for
+openssl-solibs: use in the OpenSSL Toolkit (http://www.openssl.org).  This product
+openssl-solibs: includes cryptographic software written by Eric Young
+openssl-solibs: (eay@cryptsoft.com).  This product includes software written by Tim
+openssl-solibs: Hudson (tjh@cryptsoft.com).
+openssl-solibs:
+os-prober: os-prober (an OS detector)
+os-prober:
+os-prober: os-prober detects OSes on other partitions than the current system
+os-prober: partition, and outputs the results in a generic machine-readable
+os-prober: format.  This information can be used to add other OSes to the boot
+os-prober: loader.
+os-prober:
+os-prober: Homepage:  http://packages.debian.org/unstable/utils/os-prober
+os-prober:
+os-prober:
+os-prober:
+patch: patch (apply a diff file to an original file or files)
+patch:
+patch: Patch is a utility used to apply diffs (or patches) to files, which
+patch: are usually source code.
+patch:
+patch: Larry Wall wrote the original version of patch.  Paul Eggert removed
+patch: patch's arbitrary limits; added support for binary files, setting
+patch: file times, and deleting files; and made it conform better to POSIX.
+patch: Other  contributors include Wayne Davison, who added unidiff support,
+patch: and David MacKenzie, who added configuration and backup support.
+patch:
+pciutils: pciutils (PCI utilities)
+pciutils:
+pciutils: lspci displays detailed information about all PCI buses and devices
+pciutils: in the system, replacing the original /proc/pci interface.
+pciutils:
+pciutils: setpci allows reading from and writing to PCI device configuration
+pciutils: registers.  For example, you can adjust the latency timers with it.
+pciutils:
+pciutils: See the manual pages for more details.
+pciutils:
+pciutils:
+pcmciautils: pcmciautils (Utilities for using PCMCIA cards with 2.6+ kernels)
+pcmciautils:
+pcmciautils: This package provides PCMCIA tools that replace the pcmcia-cs tools
+pcmciautils: used with the 2.4.x Linux kernel.  PCMCIA cards are commonly used
+pcmciautils: in laptops to provide expanded capabilities such as network
+pcmciautils: connections, modems, increased memory, and more.
+pcmciautils:
+pcmciautils:
+pcmciautils:
+pcmciautils:
+pcmciautils:
+pkgtools: pkgtools (The Slackware package maintenance system)
+pkgtools:
+pkgtools: This package contains utilities for handling Slackware packages.
+pkgtools: Included are the command line utilities 'installpkg', 'removepkg',
+pkgtools: 'makepkg', 'explodepkg', and 'upgradepkg' that install, remove,
+pkgtools: build, examine, and upgrade software packages.  Also included are 
+pkgtools: 'pkgtool', a menu based program for installing packages, removing
+pkgtools: packages, or viewing the packages that are installed on the system,
+pkgtools: documentation (man pages), and a few other system admin scripts.
+pkgtools:
+pkgtools:
+procps: procps (utilities for displaying process information)
+procps:
+procps: The procps package provides the classic set of utilities used to
+procps: display information about the processes currently running on the 
+procps: machine.
+procps:
+procps:
+procps:
+procps:
+procps:
+procps:
+quota: quota (Linux disk quota utilities)
+quota:
+quota: An implementation of the diskquota system for the Linux operating
+quota: system to keep those greedy users from gobbling up 100% of the hard
+quota: drive space.  Works with ext2, ext3, reiserfs, and xfs filesystems.
+quota: This system is based on the Melbourne quota system by Robert Elz.
+quota: Edvard Tuinder and Marco van Wieringen ported this code to Linux.
+quota: Jan Kara added support for the new Linux quota format and the XFS
+quota: filesystem.
+quota:
+quota:
+reiserfsprogs: reiserfsprogs (Reiserfs filesystem utilities)
+reiserfsprogs:
+reiserfsprogs: These utilities are used for Reiserfs.  Reiserfs is a file system
+reiserfsprogs: based on balanced tree algorithms.
+reiserfsprogs:
+reiserfsprogs: Reiserfs is the work of Hans Reiser and many others.  See the file
+reiserfsprogs: /usr/doc/reiserfs*/README for full credits.
+reiserfsprogs:
+reiserfsprogs:
+reiserfsprogs:
+reiserfsprogs:
+rpm2tgz: rpm2tgz (a tool for converting an RPM archive into a tar+gz one)
+rpm2tgz:
+rpm2tgz: Converts RPM format to Slackware's GNU tar + GNU zip format.  (view
+rpm2tgz: converted packages with "less", install and remove with "installpkg",
+rpm2tgz: "removepkg", "pkgtool", or manually with "tar").
+rpm2tgz:
+rpm2tgz: Converted packages come with no warranty.  ;-)
+rpm2tgz:
+rpm2tgz:
+rpm2tgz:
+rpm2tgz:
+sdparm: sdparm (fetch and change SCSI attributes)
+sdparm:
+sdparm: sdparm is a utility for listing and potentially changing SCSI disk
+sdparm: parameters.  More generally it can be used on any device that uses
+sdparm: a SCSI command set.  Apart from SCSI disks, examples of devices that
+sdparm: use SCSI command sets are ATAPI CD/DVD drives, SCSI and ATAPI tape
+sdparm: drives and SCSI enclosures.
+sdparm:
+sdparm: sdparm was written by Douglas Gilbert.
+sdparm:
+sdparm:
+sed: sed (stream editor)
+sed:
+sed: This is the GNU version of sed, a stream editor.  A stream editor is
+sed: used to perform basic text transformations on an input stream (a file
+sed: or input from a pipeline).  It is sed's ability to filter text in a
+sed: pipeline which distinguishes it from other types of editors.
+sed:
+sed: sed is a required package (it is needed by many system scripts).
+sed:
+sed:
+sed:
+shadow: shadow (shadow password suite)
+shadow:
+shadow: This set of login related programs utilizes an alternate, non-readable
+shadow: file to contain the actual encrypted passwords.  This is presumed to 
+shadow: increase system security by increasing the difficulty with which 
+shadow: system crackers obtain encrypted passwords.  It was written by 
+shadow: Julianne Frances Haugh and the Linux port is maintained by Tomasz
+shadow: Kloczko.
+shadow:
+shadow: This package provides 'login', which is needed to log into the system.
+shadow:
+sharutils: sharutils (GNU shell archive packing utilities)
+sharutils:
+sharutils: `shar' makes so-called shell archives out of many files, preparing
+sharutils: them for transmission by electronic mail services.  `unshar' helps
+sharutils: unpacking shell archives after reception.  `uuencode' prepares a file
+sharutils: for transmission over an electronic channel which ignores or otherwise
+sharutils: mangles the eight bit (high order bit) of bytes.  `uudecode' does the
+sharutils: converse transformation.  `remsync' allows for remote synchronization
+sharutils: of directory trees using electronic mail. 
+sharutils:
+sharutils:
+slocate: slocate (Secure Locate)
+slocate:
+slocate: Slocate is an enhanced version of locate, a command to help you locate
+slocate: files on the system.  Like the original version of locate, Slocate
+slocate: maintains a database of files on the system, updating it nightly.
+slocate: Unlike the original, Slocate indexes every file on the machine rather
+slocate: than only the ones that can be seen by everyone.  The "secure" part of
+slocate: slocate is that it will only return matches if the user is allowed to
+slocate: see the files.
+slocate:
+slocate:
+smartmontools: smartmontools (hard drive monitoring utilities)
+smartmontools:
+smartmontools: SMARTMONTOOLS contains utilities that control and monitor storage
+smartmontools: devices using the Self-Monitoring, Analysis and Reporting Technology
+smartmontools: (S.M.A.R.T.) system build into ATA and SCSI Hard Drives. This is used
+smartmontools: to check the reliability of the hard drive and to predict drive
+smartmontools: failures.  SMARTMONTOOLS Version 5.x is designed to comply to the
+smartmontools: ATA/ATAPI-5 specification (Revision 1).  Future releases of
+smartmontools: SMARTMONTOOLS (Versions 6.x and 7.x) will comply with the ATA/ATAPI-6
+smartmontools: and ATA/ATAPI-7 specifications.
+smartmontools:
+splitvt: splitvt (run multiple shells in a single window)
+splitvt:
+splitvt: This program splits the screen into two windows, one above the other,
+splitvt: and runs a shell in each one.
+splitvt:
+splitvt: Splitvt was written by Sam Lantinga.
+splitvt:
+splitvt:
+splitvt:
+splitvt:
+splitvt:
+sysfsutils: sysfsutils (Utilities for the sysfs filesystem)
+sysfsutils:
+sysfsutils: The purpose of this package is to provide a set of utilities for
+sysfsutils: interfacing with sysfs, a virtual filesystem in Linux kernel versions
+sysfsutils: 2.6+ that provides a tree of system devices.  While a filesystem is a
+sysfsutils: very useful interface, a library (libsysfs) is also included that
+sysfsutils: will hopefully make it easier for applications to query system
+sysfsutils: devices and their attributes.
+sysfsutils:
+sysfsutils:
+sysfsutils:
+sysklogd: sysklogd (Linux system logging utilities)
+sysklogd:
+sysklogd: Dr. Greg Wettstein and Stephen Tweedie's syslogd/klogd.
+sysklogd:
+sysklogd: This package contains a modified version of syslogd for the Linux
+sysklogd: environment.  An additional utility, klogd, is included which allows
+sysklogd: kernel logging to be directed through the syslogd facility.
+sysklogd: Syslogd and klogd are started when your system boots.
+sysklogd:
+sysklogd:
+sysklogd:
+syslinux: syslinux (SYSLINUX/PXELINUX/ISOLINUX boot loaders)
+syslinux:
+syslinux: SYSLINUX is a boot loader for the Linux operating system which
+syslinux: operates off an MS-DOS/Windows FAT filesystem.  This is used by the
+syslinux: Slackware makebootdisk script to create system boot floppies.
+syslinux:
+syslinux: Also included are PXELINUX and ISOLINUX, boot loaders for booting from
+syslinux: a network server or CD-ROM.
+syslinux:
+syslinux: SYSLINUX, PXELINUX, and ISOLINUX were written by H. Peter Anvin.
+syslinux:
+sysvinit: sysvinit (init, the parent of all processes)
+sysvinit:
+sysvinit: System V style init programs by Miquel van Smoorenburg that control
+sysvinit: the booting and shutdown of your system.  These support a number of
+sysvinit: system runlevels, each with a specific set of utilities spawned.
+sysvinit: For example, the normal system runlevel is 3, which starts agetty
+sysvinit: on virtual consoles tty1 - tty6.  Runlevel 4 starts xdm.
+sysvinit: Runlevel 0 shuts the system down.
+sysvinit:
+sysvinit:
+sysvinit:
+sysvinit-functions: sysvinit-functions (/etc/init.d/functions)
+sysvinit-functions:
+sysvinit-functions: This is the /etc/init.d/functions file, the typical sysvinit-style
+sysvinit-functions: directories, and a few supporting binaries.  Using this system,
+sysvinit-functions: subdirectories of /etc/rc.d/ are searched for scripts (which are
+sysvinit-functions: usually symlinks to the script in /etc/init.d/ or /etc/rc.d/init.d/).
+sysvinit-functions: The links must start with S to start a script or K to stop (kill) it.
+sysvinit-functions:
+sysvinit-functions: For the most part, these are useful for running software developed
+sysvinit-functions: for other versions of Linux.
+sysvinit-functions:
+sysvinit-scripts: sysvinit-scripts (the basic scripts used to boot your machine)
+sysvinit-scripts:
+sysvinit-scripts: These are the Slackware boot scripts, which are needed to start the
+sysvinit-scripts: machine.  Sysvinit looks for these in /etc/rc.d/.
+sysvinit-scripts:
+sysvinit-scripts:
+sysvinit-scripts:
+sysvinit-scripts:
+sysvinit-scripts:
+sysvinit-scripts:
+sysvinit-scripts:
+tar: tar (archiving utility)
+tar:
+tar: This is the GNU version of tar, an archiving program designed to store
+tar: and extract files from an archive file known as a tarfile.  A tarfile
+tar: may be made on a tape drive, however, it is also common to write a
+tar: tarfile to a normal file.
+tar:
+tar: Slackware's package system uses tarfiles compressed with GNU gzip.
+tar:
+tar:
+tar:
+tcsh: tcsh (C shell)
+tcsh:
+tcsh: tcsh is an enhanced but completely compatible version of the Berkeley
+tcsh: UNIX C shell, csh(1). It is a command language interpreter usable both
+tcsh: as an interactive login shell and a shell script command processor. It
+tcsh: includes a command-line editor, programmable word completion, spelling
+tcsh: correction, a history mechanism, job control, and a C-like syntax.
+tcsh:
+tcsh:
+tcsh:
+tcsh:
+time: time (the GNU time command for measuring program resource use)
+time:
+time: The `time' command runs another program, then displays information
+time: about the resources used by that program, collected by the system
+time: while the program was running. 
+time:
+time: GNU time was originally written by David Keppel, with later versions
+time: worked on by David MacKenzie, Arne Henrik Juul, and Francois Pinard.
+time:
+time:
+tree: tree (a program to display a directory tree)
+tree:
+tree: Tree is a recursive directory listing program that produces a depth
+tree: indented listing of files, which is colorized ala dircolors if the
+tree: LS_COLORS environment variable is set and output is to tty.  With no
+tree: arguments, tree lists the files in the current directory.
+tree:
+tree: The tree utility was written by Steve Baker.
+tree:
+tree:
+tree:
+udev: udev (dynamic device directory system)
+udev:
+udev: udev provides a dynamic device directory containing only the files
+udev: for the devices which are actually present.  It creates or removes
+udev: device node files usually located in the /dev directory.
+udev:
+udev: udev requires a 2.6 or newer kernel.
+udev:
+udev: Kay Sievers is the udev maintainer.
+udev:
+udev:
+udisks: udisks (storage device daemon)
+udisks:
+udisks: The udisks project provides a storage daemon that implements D-Bus
+udisks: interfaces that can be used to query and manipulate storage devices.
+udisks:
+udisks: It also includes a command-line tool, udisks(1), that can be used to
+udisks: query and control the daemon.
+udisks:
+udisks: Homepage:  http://www.freedesktop.org/wiki/Software/udisks
+udisks:
+udisks:
+udisks2: udisks2 (storage device daemon v2)
+udisks2:
+udisks2: The udisks project provides a storage daemon that implements D-Bus
+udisks2: interfaces that can be used to query and manipulate storage devices.
+udisks2:
+udisks2: It also includes a command-line tool, udisks(1), that can be used to
+udisks2: query and control the daemon.
+udisks2:
+udisks2: Homepage:  http://www.freedesktop.org/wiki/Software/udisks
+udisks2:
+udisks2:
+unarj: unarj (a command-line utility for decompressing .arj archives)
+unarj:
+unarj: This is a simple command-line tool for decompressing .arj files.
+unarj: Thanks to Haruhiko Okumura and ARJ Software, Inc. for providing this
+unarj: source code free of charge.
+unarj:
+unarj: UNARJ software and manual copyright (c) 1990-2002 ARJ Software, Inc.
+unarj: All rights reserved.
+unarj:
+unarj:
+unarj:
+upower: UPower (power management abstraction daemon)
+upower:
+upower: UPower is an abstraction for enumerating power devices, listening to 
+upower: device events and querying history and statistics. Any application or 
+upower: service on the system can access the org.freedesktop.UPower service 
+upower: via the system message bus. Some operations (such as suspending the 
+upower: system) are restricted using PolicyKit. 
+upower:
+upower: Homepage: http://upower.freedesktop.org/
+upower:
+upower:
+usb_modeswitch: usb_modeswitch (mode switching tool for multiple mode USB devices)
+usb_modeswitch:
+usb_modeswitch: USB-ModeSwitch is (surprise!) a small mode switching tool for
+usb_modeswitch: controlling "flip flop" (multiple device) USB gear.  These devices
+usb_modeswitch: initially appear to be USB storage, typically containing the MS
+usb_modeswitch: Windows drivers for whatever the real purpose of the device is, such
+usb_modeswitch: as a wireless USB modem.  To use these devices with Linux, they need
+usb_modeswitch: to be told to switch out of storage mode, which is the purpose of the
+usb_modeswitch: USB-ModeSwitch utility.
+usb_modeswitch:
+usb_modeswitch: Homepage: http://www.draisberghof.de/usb_modeswitch
+usbutils: usbutils (USB utilities)
+usbutils:
+usbutils: lsusb displays detailed information about all USB buses and devices
+usbutils: in the system.
+usbutils:
+usbutils: usbmodules lists the kernel modules for a plugged in USB device.
+usbutils:
+usbutils: See the manual pages for more details.
+usbutils:
+usbutils:
+usbutils:
+utempter: utempter (utmp updating library and utility)
+utempter:
+utempter: The utempter package provides a utility and shared library that
+utempter: allows terminal applications such as xterm and screen to update
+utempter: /var/run/utmp and /var/log/wtmp without requiring root privileges.
+utempter:
+utempter:
+utempter:
+utempter:
+utempter:
+utempter:
+util-linux: util-linux (a huge collection of essential utilities) 
+util-linux:
+util-linux: The util-linux package is a huge collection of random utilities
+util-linux: that are essential to run a Linux system.
+util-linux:
+util-linux: http://kernel.org/~kzak/util-linux/
+util-linux:
+util-linux:
+util-linux:
+util-linux:
+util-linux:
+which: which (shows the full path to shell commands)
+which:
+which: GNU 'which' takes one or more arguments.  For each of its arguments it
+which: prints to stdout the full path of the executables that would have been
+which: executed when this argument had been entered at the shell prompt.  It
+which: does this by searching for an executable or script in the directories
+which: listed in the environment variable PATH using the same algorithm as
+which: bash(1).  'Which' is a built-in function in many shells.
+which:
+which: The GNU version of which was written by Carlo Wood.
+which:
+xfsprogs: xfsprogs (tools to use the XFS filesystem)
+xfsprogs:
+xfsprogs: XFS is a high performance journaling filesystem which originated
+xfsprogs: on the SGI IRIX platform.  It is completely multi-threaded, can
+xfsprogs: support large files and large filesystems, extended attributes,
+xfsprogs: variable block sizes, is extent based, and makes extensive use of
+xfsprogs: Btrees (directories, extents, free space) to aid both performance
+xfsprogs: and scalability.
+xfsprogs:
+xfsprogs:
+xfsprogs:
+xz: xz (compression utility based on the LZMA algorithm)
+xz:
+xz: LZMA is a general purpose compression algorithm designed by Igor
+xz: Pavlov as part of 7-Zip.  It provides high compression ratio while
+xz: keeping the decompression speed fast.  XZ Utils are an attempt to make
+xz: LZMA compression easy to use on free (as in freedom) operating
+xz: systems.
+xz:
+xz: The people most responsible for xz are Igor Pavlov, Ville Koskinen,
+xz: and Lasse Collin.  For more info:  http://tukaani.org/xz/
+xz:
+zoo: zoo (archiving and compressing utility)
+zoo:
+zoo: Zoo is used to create and maintain collections of files in compressed
+zoo: form.  It uses a Lempel-Ziv compression algorithm that gives space
+zoo: savings in the range of 20% to 80% depending on the type of file data.
+zoo: Zoo can store and selectively extract multiple generations of the same
+zoo: file.  Data can be recovered from damaged archives by skipping the
+zoo: damaged portion and locating undamaged data with the help of fiz(1).
+zoo:
+zoo: Zoo was written by Rahul Dhesi.
+zoo:

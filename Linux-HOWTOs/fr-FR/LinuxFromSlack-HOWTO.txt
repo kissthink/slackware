@@ -1,0 +1,35 @@
+======================
+Linux From Slack HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+======================
+
+Dernière révision : 26 novembre 2014
+
+Ce HOWTO décrit l'installation d'un système Slackware minimal.
+
+
+  * a/devs : peuple le répertoire '/dev', qui contient les points d'accès
+    entre le système et le matériel
+
+  * a/pkgtool : outil de gestion des paquets Slackware
+
+  * ap/slackpkg : outil pour l'installation ou la mise à niveau des paquets
+    Slackware à travers un réseau
+
+Documentation
+-------------
+
+Le livre de la distribution "Linux From Scratch" :
+
+  * http://www.linuxfromscratch.org/lfs/view/stable/
+
+La traduction française de ce dernier :
+
+  * http://www.fr.linuxfromscratch.org/view/lfs-stable/
+
+L'article "Linux From Slack" du site Slackware-fr.org :
+
+  * http://wiki.slackware-fr.org/installation:articles:linux_from_slack
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt
