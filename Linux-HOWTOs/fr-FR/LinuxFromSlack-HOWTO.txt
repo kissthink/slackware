@@ -45,6 +45,10 @@ L'article "Linux From Slack" du site Slackware-fr.org :
 
   * http://wiki.slackware-fr.org/installation:articles:linux_from_slack
 
+La page "Minimal Slackware Installation" de Vincent Batts :
+
+  * http://www.slackware.com/~vbatts/minimal/
+
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
