@@ -1,9 +1,10 @@
 # Add
+aaa_base:ADD
 devs:ADD
+etc:ADD
 pkgtools:ADD
 
 # Skip
-aaa_base:SKP
 aaa_elflibs:SKP
 aaa_terminfo:SKP
 acl:SKP
@@ -30,7 +31,6 @@ efibootmgr:SKP
 eject:SKP
 elilo:SKP
 elvis:SKP
-etc:SKP
 file:SKP
 findutils:SKP
 floppy:SKP

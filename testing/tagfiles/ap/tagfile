@@ -1,4 +1,7 @@
 # Add
+groff:ADD
+man:ADD
+man-pages:ADD
 slackpkg:ADD
 
 # Skip
@@ -26,7 +29,6 @@ foomatic-filters:SKP
 ghostscript:SKP
 ghostscript-fonts-std:SKP
 gphoto2:SKP
-groff:SKP
 gutenprint:SKP
 hplip:SKP
 htop:SKP
@@ -43,8 +45,6 @@ lsof:SKP
 lsscsi:SKP
 lxc:SKP
 madplay:SKP
-man:SKP
-man-pages:SKP
 mariadb:SKP
 mc:SKP
 moc:SKP

@@ -15,6 +15,21 @@ Ce HOWTO décrit l'installation d'un système Slackware minimal.
   * ap/slackpkg : outil pour l'installation ou la mise à niveau des paquets
     Slackware à travers un réseau
 
+  * a/aaa_base : arborescence du système
+
+  * a/etc : fichiers de configuration du système
+
+  * d/kernel-headers : fichiers d'en-tête C du noyau Linux 
+
+  * ap/man : programmes pour rechercher et afficher des pages man
+
+  * ap/man-pages : les pages man du Linux Documentation Project (LDP) en
+    version originale
+
+  * ap/groff : programmes de formatage de texte, utilisés principalement pour
+    les pages man
+
+
 Documentation
 -------------
 

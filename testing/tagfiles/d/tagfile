@@ -1,4 +1,5 @@
 # Add
+kernel-headers:ADD
 
 # Skip
 autoconf:SKP
@@ -29,7 +30,6 @@ guile:SKP
 help2man:SKP
 indent:SKP
 intltool:SKP
-kernel-headers:SKP
 libtool:SKP
 llvm:SKP
 m4:SKP
