@@ -1,4 +1,5 @@
 # Add
+bc:ADD
 groff:ADD
 man:ADD
 man-pages:ADD
@@ -11,7 +12,6 @@ alsa-utils:SKP
 amp:SKP
 ash:SKP
 at:SKP
-bc:SKP
 bpe:SKP
 cdparanoia:SKP
 cdrdao:SKP

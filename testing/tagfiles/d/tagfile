@@ -1,14 +1,17 @@
 # Add
 binutils:ADD
+bison:ADD
+flex:ADD
 gcc:ADD
 gcc-g++:ADD
 kernel-headers:ADD
+libtool:ADD
+m4:ADD
 pkg-config:ADD
 
 # Skip
 autoconf:SKP
 automake:SKP
-bison:SKP
 ccache:SKP
 clisp:SKP
 cmake:SKP
@@ -17,7 +20,6 @@ cvs:SKP
 dev86:SKP
 distcc:SKP
 doxygen:SKP
-flex:SKP
 gcc-gfortran:SKP
 gcc-gnat:SKP
 gcc-go:SKP
@@ -31,9 +33,7 @@ guile:SKP
 help2man:SKP
 indent:SKP
 intltool:SKP
-libtool:SKP
 llvm:SKP
-m4:SKP
 make:SKP
 mercurial:SKP
 nasm:SKP

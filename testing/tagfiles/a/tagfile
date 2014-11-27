@@ -2,12 +2,16 @@
 aaa_base:ADD
 acl:ADD
 attr:ADD
+bash:ADD
 bzip2:ADD
+coreutils:ADD
 devs:ADD
+e2fsprogs:ADD
 etc:ADD
 file:ADD
 glibc-solibs:ADD
 glibc-zoneinfo:ADD
+grep:ADD
 pkgtools:ADD
 procps:ADD
 sed:ADD
@@ -18,10 +22,8 @@ aaa_elflibs:SKP
 aaa_terminfo:SKP
 acpid:SKP
 apmd:SKP
-bash:SKP
 bin:SKP
 btrfs-progs:SKP
-coreutils:SKP
 cpio:SKP
 cpufrequtils:SKP
 cryptsetup:SKP
@@ -31,7 +33,6 @@ dbus:SKP
 dcron:SKP
 dialog:SKP
 dosfstools:SKP
-e2fsprogs:SKP
 ed:SKP
 efibootmgr:SKP
 eject:SKP
@@ -45,7 +46,6 @@ gettext:SKP
 getty-ps:SKP
 gpm:SKP
 gptfdisk:SKP
-grep:SKP
 grub:SKP
 gzip:SKP
 hdparm:SKP

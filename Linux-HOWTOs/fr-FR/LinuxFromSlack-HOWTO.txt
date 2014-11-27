@@ -16,8 +16,16 @@ Groupe de paquets A
 
   * a/attr : outils de gestion des attributs étendus
 
+  * a/bash : l'interpréteur de commandes Bourne Again Shell
+
+  * a/coreutils : collection de commandes de base, en particulier toutes
+    celles qui ont trait à la gestion des fichiers et répertoires
+
   * a/devs : peuple le répertoire '/dev', qui contient les points d'accès
     entre le système et le matériel
+
+  * a/e2fsprogs : outils de gestion des systèmes de fichiers ext2, ext3 et
+    ext4. 
 
   * a/etc : fichiers de configuration du système
 
@@ -28,6 +36,9 @@ Groupe de paquets A
     routines essentielles à son fonctionnement
 
   * a/glibc-zoneinfo : permet de configurer le fuseau horaire de la machine
+
+  * a/grep : programme de recherche de chaînes de caractères à l'intérieur de
+    fichiers
 
   * a/pkgtool : outil de gestion des paquets Slackware
 
@@ -41,6 +52,8 @@ Groupe de paquets A
 
 Groupe de paquets AP
 --------------------
+
+  * ap/bc : langage de traitement des nombres à précision arbitraire
 
   * ap/groff : programmes de formatage de texte, utilisés principalement pour
     les pages man
@@ -57,12 +70,22 @@ Groupe de paquets AP
 Groupe de paquets D
 -------------------
 
+  * d/bison : analyseur syntaxique
+
+  * d/flex : analyseur lexical
+
   * d/gcc : contient la partie de la collection de compilateurs GNU utilisée
     pour compiler le code source C 
 
   * d/gcc-g++ : support C++ pour la collection de compilateurs GNU
 
   * d/kernel-headers : fichiers d'en-tête C du noyau Linux 
+
+  * d/libtool : script de support de bibliothèques GNU génériques, qui emballe
+    la complexité d'utilisation de bibliothèques partagées dans une interface
+    cohérente et portable
+
+  * d/m4 : processeur de macros
 
   * d/pkg-config : outil utilisé lors de la compilation d'applications et de
     bibliothèques. 
@@ -92,8 +115,17 @@ Groupe de paquets L
   * l/ncurses : bibliothèque qui fournit des fonctions de définition de
     touches du clavier et de couleurs d'écran
 
+  * l/readline : ensemble de bibliothèques qui offrent des fonctionnalités
+    d'édition et d'historique pour la ligne de commande
+
   * l/zlib : contient des routines de compression et décompression utilisées
     par quelques programmes
+
+
+Groupe de paquets N
+-------------------
+
+  * n/network-scripts : scripts et fichiers de configuration réseau de base
 
 
 Documentation

@@ -1,4 +1,5 @@
 # Add
+network-scripts:ADD
  
 # Skip
 ModemManager:SKP
@@ -91,7 +92,6 @@ netkit-timed:SKP
 netpipes:SKP
 nettle:SKP
 netwatch:SKP
-network-scripts:SKP
 netwrite:SKP
 newspost:SKP
 nfacct:SKP
