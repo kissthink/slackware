@@ -1,10 +1,13 @@
 # Add
+binutils:ADD
+gcc:ADD
+gcc-g++:ADD
 kernel-headers:ADD
+pkg-config:ADD
 
 # Skip
 autoconf:SKP
 automake:SKP
-binutils:SKP
 bison:SKP
 ccache:SKP
 clisp:SKP
@@ -15,8 +18,6 @@ dev86:SKP
 distcc:SKP
 doxygen:SKP
 flex:SKP
-gcc:SKP
-gcc-g++:SKP
 gcc-gfortran:SKP
 gcc-gnat:SKP
 gcc-go:SKP
@@ -40,7 +41,6 @@ open-cobol:SKP
 oprofile:SKP
 p2c:SKP
 perl:SKP
-pkg-config:SKP
 pmake:SKP
 python:SKP
 rcs:SKP

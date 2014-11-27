@@ -7,27 +7,90 @@ Dernière révision : 26 novembre 2014
 Ce HOWTO décrit l'installation d'un système Slackware minimal.
 
 
-  * a/devs : peuple le répertoire '/dev', qui contient les points d'accès
-    entre le système et le matériel
-
-  * a/pkgtool : outil de gestion des paquets Slackware
-
-  * ap/slackpkg : outil pour l'installation ou la mise à niveau des paquets
-    Slackware à travers un réseau
+Groupe de paquets A
+-------------------
 
   * a/aaa_base : arborescence du système
 
+  * a/acl : outils d'administration des listes de contrôle d'accès
+
+  * a/attr : outils de gestion des attributs étendus
+
+  * a/devs : peuple le répertoire '/dev', qui contient les points d'accès
+    entre le système et le matériel
+
   * a/etc : fichiers de configuration du système
 
-  * d/kernel-headers : fichiers d'en-tête C du noyau Linux 
+  * a/file : contient un outil pour déterminer le type d'un fichier ou des
+    fichiers donnés
+
+  * a/glibc-solibs : bibliothèques C partagées du système, contenant les
+    routines essentielles à son fonctionnement
+
+  * a/glibc-zoneinfo : permet de configurer le fuseau horaire de la machine
+
+  * a/pkgtool : outil de gestion des paquets Slackware
+
+  * a/sed : éditeur de flux
+
+  * a/shadow : stocke les mots de passe des utilisateurs sous forme cryptée
+
+
+Groupe de paquets AP
+--------------------
+
+  * ap/groff : programmes de formatage de texte, utilisés principalement pour
+    les pages man
 
   * ap/man : programmes pour rechercher et afficher des pages man
 
   * ap/man-pages : les pages man du Linux Documentation Project (LDP) en
     version originale
 
-  * ap/groff : programmes de formatage de texte, utilisés principalement pour
-    les pages man
+  * ap/slackpkg : outil pour l'installation ou la mise à niveau des paquets
+    Slackware à travers un réseau
+
+
+Groupe de paquets D
+-------------------
+
+  * d/gcc : contient la partie de la collection de compilateurs GNU utilisée
+    pour compiler le code source C 
+
+  * d/gcc-g++ : support C++ pour la collection de compilateurs GNU
+
+  * d/kernel-headers : fichiers d'en-tête C du noyau Linux 
+
+  * d/pkg-config : outil utilisé lors de la compilation d'applications et de
+    bibliothèques. 
+
+
+Groupe de paquets L
+-------------------
+
+  * l/glibc : bibliothèque C standard
+
+  * l/glibc-i18n : traductions pour la bibliothèque C standard
+
+  * l/glibc-profile : versions statiques des bibliothèques C 
+
+  * l/gmp : contient des bibliothèques de maths
+
+  * l/libcap : implémente les interfaces niveau utilisateur avec les fonctions
+    qui établissent le partage avec les privilèges root dans un ensemble de
+    droits distincts
+
+  * l/libmpc : contient une bibliothèque pour le calcul arithmétique de
+    nombres complexes avec une haute précision au choix et l'arrondissement
+    correcte du résultat
+
+  * l/mpfr : contient des fonctions pour des maths à précision multiple
+
+  * l/ncurses : bibliothèque qui fournit des fonctions de définition de
+    touches du clavier et de couleurs d'écran
+
+  * l/zlib : contient des routines de compression et décompression utilisées
+    par quelques programmes
 
 
 Documentation

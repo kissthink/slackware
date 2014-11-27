@@ -1,20 +1,25 @@
 # Add
 aaa_base:ADD
+acl:ADD
+attr:ADD
+bzip2:ADD
 devs:ADD
 etc:ADD
+file:ADD
+glibc-solibs:ADD
+glibc-zoneinfo:ADD
 pkgtools:ADD
+sed:ADD
+shadow:ADD
 
 # Skip
 aaa_elflibs:SKP
 aaa_terminfo:SKP
-acl:SKP
 acpid:SKP
 apmd:SKP
-attr:SKP
 bash:SKP
 bin:SKP
 btrfs-progs:SKP
-bzip2:SKP
 coreutils:SKP
 cpio:SKP
 cpufrequtils:SKP
@@ -31,15 +36,12 @@ efibootmgr:SKP
 eject:SKP
 elilo:SKP
 elvis:SKP
-file:SKP
 findutils:SKP
 floppy:SKP
 gawk:SKP
 genpower:SKP
 gettext:SKP
 getty-ps:SKP
-glibc-solibs:SKP
-glibc-zoneinfo:SKP
 gpm:SKP
 gptfdisk:SKP
 grep:SKP
@@ -84,8 +86,6 @@ quota:SKP
 reiserfsprogs:SKP
 rpm2tgz:SKP
 sdparm:SKP
-sed:SKP
-shadow:SKP
 sharutils:SKP
 slocate:SKP
 smartmontools:SKP
