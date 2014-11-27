@@ -31,6 +31,9 @@ Groupe de paquets A
 
   * a/pkgtool : outil de gestion des paquets Slackware
 
+  * a/procps : contient des programmes pour afficher des informations sur les
+    processus en cours d'exécution
+
   * a/sed : éditeur de flux
 
   * a/shadow : stocke les mots de passe des utilisateurs sous forme cryptée

@@ -9,6 +9,7 @@ file:ADD
 glibc-solibs:ADD
 glibc-zoneinfo:ADD
 pkgtools:ADD
+procps:ADD
 sed:ADD
 shadow:ADD
 
@@ -81,7 +82,6 @@ os-prober:SKP
 patch:SKP
 pciutils:SKP
 pcmciautils:SKP
-procps:SKP
 quota:SKP
 reiserfsprogs:SKP
 rpm2tgz:SKP
