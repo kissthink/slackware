@@ -4,7 +4,7 @@ StripSlack HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
 
 Dernière révision : 28 novembre 2014
 
-Ce HOWTO décrit l'installation d'un système Slackware minimal.
+Ce HOWTO décrit l'installation d'un système Slackware 14.1 minimal.
 
 
 Introduction
