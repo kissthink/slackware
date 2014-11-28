@@ -1,7 +1,12 @@
 # Add
+ca-certificates:ADD
+curl:ADD
+cyrus-sasl:ADD
 dhcpcd:ADD
+gnupg:ADD
 iproute2:ADD
 iputils:ADD
+links:ADD
 net-tools:ADD
 netkit-bootparamd:ADD
 netkit-ftp:ADD
@@ -32,12 +37,9 @@ bluez-hcidump:SKP
 bootp:SKP
 bridge-utils:SKP
 bsd-finger:SKP
-ca-certificates:SKP
 cifs-utils:SKP
 conntrack-tools:SKP
 crda:SKP
-curl:SKP
-cyrus-sasl:SKP
 dhcp:SKP
 dirmngr:SKP
 dnsmasq:SKP
@@ -47,7 +49,6 @@ epic5:SKP
 ethtool:SKP
 fetchmail:SKP
 getmail:SKP
-gnupg:SKP
 gnupg2:SKP
 gnutls:SKP
 gpa:SKP
@@ -81,7 +82,6 @@ libnetfilter_log:SKP
 libnetfilter_queue:SKP
 libnfnetlink:SKP
 libqmi:SKP
-links:SKP
 lynx:SKP
 mailx:SKP
 mcabber:SKP

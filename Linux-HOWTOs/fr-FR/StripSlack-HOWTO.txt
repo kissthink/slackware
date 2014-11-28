@@ -1,16 +1,10 @@
-======================
-Linux From Slack HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
-======================
+================
+StripSlack HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+================
 
 Dernière révision : 28 novembre 2014
 
 Ce HOWTO décrit l'installation d'un système Slackware minimal.
-
-
-
-                    ************************
-                    *** TRAVAIL EN COURS ***
-                    ************************
 
 
 Introduction
@@ -87,6 +81,10 @@ Groupe de paquets A
   * a/coreutils : collection de commandes de base, en particulier toutes
     celles qui ont trait à la gestion des fichiers et répertoires
 
+  * a/cpio : format d'archivage permettant de créer des paquets RPM, également
+    requis pour pouvoir créer l'initrd nécessaire à l'emploi d'un noyau
+    générique
+
   * a/cxxlibs : bibliothèques assurant la compatibilité des applications liées
     à de plus anciennes versions de la bibliothèque standard C++ avec celle
     utilisée par le système
@@ -140,6 +138,13 @@ Groupe de paquets A
   * a/less : visualiseur de fichiers texte
 
   * a/lilo : chargeur de démarrage
+
+  * a/lvm2 : gestionnaire de volumes logiques
+
+  * a/mdadm : outils d'administration pour le RAID logiciel
+
+  * a/mkinitrd : utilitaire nécessaire pour créer l'initrd requis par le noyau
+    générique
 
   * a/openssl-solibs : bibliothèques partagées de cryptographie
 
@@ -217,7 +222,12 @@ Groupe de paquets D
 
   * d/gcc-g++ : support C++ pour la collection de compilateurs GNU
 
+  * d/git : système de contrôle de versions
+
   * d/gperf : générateur de fonction de hachage
+
+  * d/gnupg : outil GNU pour effectuer de la communication et du stockage
+    sécurisés
 
   * d/intltool : outil d'internationalisation utilisé pour extraire des
     chaînes traduisibles à partir de fichiers sources
@@ -236,6 +246,8 @@ Groupe de paquets D
 
   * d/pkg-config : outil utilisé lors de la compilation d'applications et de
     bibliothèques. 
+
+  * d/python : l'environnement de développement Python
 
 
 Groupe de paquets L
@@ -277,11 +289,22 @@ Groupe de paquets L
 Groupe de paquets N
 -------------------
 
+  * n/ca-certificates : liste de certificats pour les connexions sécurisées
+
+  * n/curl : contient un utilitaire et une bibliothèque utilisés pour le
+    transfert de fichiers
+
+  * n/cyrus-sasl : simple couche d'authentification et de sécurité, une
+    méthode pour ajouter le support d'authentification aux protocoles basés
+    sur la connexion
+
   * n/dhcpcd : client DHCP
 
   * n/iproute2 : outils réseau basiques et avancés
 
   * n/iputils : outils réseau que l'on trouve sur tous les systèmes *NIX
+
+  * n/links : navigateur Web en mode texte
 
   * n/net-tools : outils réseau de base 
 

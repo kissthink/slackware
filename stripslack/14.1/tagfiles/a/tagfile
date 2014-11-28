@@ -8,6 +8,7 @@ bash:ADD
 bin:ADD
 bzip2:ADD
 coreutils:ADD
+cpio:ADD
 cxxlibs:ADD
 devs:ADD
 dialog:ADD
@@ -32,6 +33,9 @@ kernel-modules-smp:ADD
 kmod:ADD
 less:ADD
 lilo:ADD
+lvm2:ADD
+mdadm:ADD
+mkinitrd:ADD
 openssl-solibs:ADD
 patch:ADD
 pciutils:ADD
@@ -53,7 +57,6 @@ xz:ADD
 acpid:SKP
 apmd:SKP
 btrfs-progs:SKP
-cpio:SKP
 cpufrequtils:SKP
 cryptsetup:SKP
 cups:SKP
@@ -80,11 +83,8 @@ lha:SKP
 libcgroup:SKP
 logrotate:SKP
 lrzip:SKP
-lvm2:SKP
 mcelog:SKP
-mdadm:SKP
 minicom:SKP
-mkinitrd:SKP
 mt-st:SKP
 mtx:SKP
 ncompress:SKP

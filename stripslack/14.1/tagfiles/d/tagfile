@@ -6,6 +6,7 @@ bison:ADD
 flex:ADD
 gcc:ADD
 gcc-g++:ADD
+git:ADD
 gperf:ADD
 intltool:ADD
 kernel-headers:ADD
@@ -14,6 +15,7 @@ make:ADD
 m4:ADD
 perl:ADD
 pkg-config:ADD
+python:ADD
 
 # Skip
 ccache:SKP
@@ -31,7 +33,6 @@ gcc-java:SKP
 gcc-objc:SKP
 gdb:SKP
 gettext-tools:SKP
-git:SKP
 guile:SKP
 help2man:SKP
 indent:SKP
@@ -42,7 +43,6 @@ open-cobol:SKP
 oprofile:SKP
 p2c:SKP
 pmake:SKP
-python:SKP
 rcs:SKP
 ruby:SKP
 slacktrack:SKP
