@@ -70,11 +70,19 @@ Groupe de paquets A
 
   * a/aaa_base : arborescence du système
 
+  * a/aaa_elflibs : collection de bibliothèques de base requises par beaucoup
+    de logiciels
+
+  * a/aaa_terminfo : descriptions de terminaux, requises pour en utiliser un
+
   * a/acl : outils d'administration des listes de contrôle d'accès
 
   * a/attr : outils de gestion des attributs étendus
 
   * a/bash : l'interpréteur de commandes Bourne Again Shell
+
+  * a/bin : collection d'utilitaires communément utilisés par les scripts
+    système
 
   * a/coreutils : collection de commandes de base, en particulier toutes
     celles qui ont trait à la gestion des fichiers et répertoires
@@ -111,12 +119,25 @@ Groupe de paquets A
   * a/kbd : contient les fichiers de tables de caractères, les polices de la
     console et des outils pour le clavier
 
+  * a/kernel-firmware : firmwares permettant de gérer certains matériels et
+    distribués séparément du reste du noyau
+
+  * a/kernel-generic-* : un noyau entièrement modulaire, qui n'embarque aucun
+    support de système de fichiers et doit donc être utilisé avec un initrd
+
+  * a/kernel-huge-* : le noyau par défaut de l'installation, avec le support
+    des systèmes de fichiers
+
+  * a/kernel-modules-* : les modules des noyaux
+
   * a/kmod : contient des bibliothèques et des outils pour charger des modules
     du noyau
 
   * a/less : visualiseur de fichiers texte
 
   * a/lilo : chargeur de démarrage
+
+  * a/openssl-solibs : bibliothèques partagées de cryptographie
 
   * a/patch : programme permettant de modifier et de créer des fichiers en
     appliquant un fichier correctif
@@ -259,6 +280,17 @@ Groupe de paquets N
   * n/netkit-* : collection d'outils réseau de base
 
   * n/network-scripts : scripts et fichiers de configuration réseau de base
+
+  * n/openssh : ensemble d'outils permettant des communications sécurisées en
+    utilisant le protocole SSH
+
+  * n/telnet : outil de communication non sécurisé
+
+  * n/tftp-hpa : interface utilisateur pour le protocole simplifié de
+    transfert de fichiers, utilisé notamment pour le démarrage réseau
+
+  * n/traceroute : permet d'afficher la route réseau que les paquets prennent
+    pour accéder à un hôte donné
 
 
 Documentation

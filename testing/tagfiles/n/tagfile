@@ -13,6 +13,7 @@ netkit-rwall:ADD
 netkit-rwho:ADD
 netkit-timed:ADD
 network-scripts:ADD
+openssh:ADD
 telnet:ADD
 tftp-hpa:ADD
 traceroute:ADD
@@ -107,7 +108,6 @@ obexfs:SKP
 obexftp:SKP
 openldap-client:SKP
 openobex:SKP
-openssh:SKP
 openssl:SKP
 openvpn:SKP
 p11-kit:SKP
