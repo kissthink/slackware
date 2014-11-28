@@ -2,9 +2,67 @@
 Linux From Slack HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
 ======================
 
-Dernière révision : 26 novembre 2014
+Dernière révision : 28 novembre 2014
 
 Ce HOWTO décrit l'installation d'un système Slackware minimal.
+
+
+
+                    ************************
+                    *** TRAVAIL EN COURS ***
+                    ************************
+
+
+Introduction
+------------
+
+Certaines distributions comme CentOS, Debian, Arch, Crux, Gentoo, LFS, etc.
+permettent assez facilement d'installer un système de base relativement
+réduit, pour ensuite ajouter successivement les composants dont on peut avoir
+besoin pour une configuration spécifique : serveur Web, serveur mail, station
+de travail, poste de travail léger, etc.
+
+La distribution Slackware est organisée différemment, et ses groupes de
+paquets mélangent pêle-mêle les composants requis par un système minimal avec
+ceux que l'on choisirait pour une configuration plus spécifique. La politique
+standard de Slackware requiert l'installation "à la louche" des différents
+groupes de paquets, à plus forte raison que la distribution ne dispose pas de
+résolveur automatique de dépendances. 
+
+Ceci étant dit, il est bien évidemment possible de configurer un système de
+base réduit tout comme dans les distributions citées ci-dessus, et c'est ce
+que nous nous proposons de faire. 
+
+
+Qu'est-ce qu'un système minimal ?
+---------------------------------
+
+Lorsque deux personnes parlent de "système minimal", elles ne veulent pas
+forcément dire la même chose. Un système Linux embarqué disposera tout au plus
+d'un kernel, d'une bibliothèque C, d'un shell et d'une poignée d'outils. À
+l'opposé de cela, l'installation du groupe "Système de base" sur un système
+RHEL/CentOS résultera en un système bien complet, avec toute une panoplie bien
+fournie de shells, d'éditeurs et d'outils d'administration divers et variés. 
+
+Un système de base, c'est un peu l'équivalent informatique de la pâte à crêpe.
+Pas de confiture, pas de miel, pas de Nutella, rien. Pas de jambon ni de
+fromage non plus. Juste une préparation de base qui pourra servir à une
+multitude de plats, sucrés ou salés.
+
+Que souhaitons nous faire avec notre système de base ?
+
+  * Démarrer en mode console
+  * Utiliser le shell Bash
+  * Afficher les pages man et info
+  * Gérer les disques et les systèmes de fichiers
+  * Construire un initrd
+  * Créer des utilisateurs
+  * Nous connecter à un réseau
+  * Gérer les paquets logiciels
+  * Utiliser SSH
+  * Éditer des fichiers texte avec Vim
+  * Travailler avec l'outil de développement Git
+  * Compiler des applications 
 
 
 Groupe de paquets A
@@ -23,6 +81,10 @@ Groupe de paquets A
 
   * a/devs : peuple le répertoire '/dev', qui contient les points d'accès
     entre le système et le matériel
+
+  * a/dialog : utilitaire permettant de créer des interfaces graphiques en
+    mode texte à partir de scripts shell, utilisé par la plupart des outils
+    Slackware
 
   * a/e2fsprogs : outils de gestion des systèmes de fichiers ext2, ext3 et
     ext4. 
@@ -49,9 +111,15 @@ Groupe de paquets A
   * a/kbd : contient les fichiers de tables de caractères, les polices de la
     console et des outils pour le clavier
 
+  * a/kmod : contient des bibliothèques et des outils pour charger des modules
+    du noyau
+
   * a/less : visualiseur de fichiers texte
 
   * a/lilo : chargeur de démarrage
+
+  * a/patch : programme permettant de modifier et de créer des fichiers en
+    appliquant un fichier correctif
 
   * a/pkgtool : outil de gestion des paquets Slackware
 
@@ -61,6 +129,18 @@ Groupe de paquets A
   * a/sed : éditeur de flux
 
   * a/shadow : stocke les mots de passe des utilisateurs sous forme cryptée
+
+  * a/sysklogd : programmes pour les messages de traces système
+
+  * a/sysvinit* : contrôle du démarrage, de l'exécution et de l'arrêt du
+    système
+
+  * a/tar : programme d'archivage
+
+  * a/udev : programmes pour la création dynamique de fichiers de périphérique
+
+  * a/util-linux : collection d'utilitaires nécessaires au fonctionnement d'un
+    système Linux
 
   * a/xz : programmes de compression et de décompression de fichiers
 
@@ -85,6 +165,10 @@ Groupe de paquets AP
 
   * ap/slackpkg : outil pour l'installation ou la mise à niveau des paquets
     Slackware à travers un réseau
+
+  * ap/texinfo : programmes de lecture, écriture et conversion des pages info
+
+  * ap/vim : l'éditeur de texte Vim
 
 
 Groupe de paquets D
@@ -114,6 +198,8 @@ Groupe de paquets D
   * d/libtool : script de support de bibliothèques GNU génériques, qui emballe
     la complexité d'utilisation de bibliothèques partagées dans une interface
     cohérente et portable
+
+  * d/make : programme pour compiler des paquets
 
   * d/m4 : processeur de macros
 
@@ -161,6 +247,8 @@ Groupe de paquets L
 
 Groupe de paquets N
 -------------------
+
+  * n/dhcpcd : client DHCP
 
   * n/iproute2 : outils réseau basiques et avancés
 

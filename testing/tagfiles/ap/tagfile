@@ -5,6 +5,8 @@ groff:ADD
 man:ADD
 man-pages:ADD
 slackpkg:ADD
+texinfo:ADD
+vim:ADD
 
 # Skip
 a2ps:SKP
@@ -66,10 +68,8 @@ sqlite:SKP
 sudo:SKP
 sysstat:SKP
 terminus-font:SKP
-texinfo:SKP
 tmux:SKP
 vbetool:SKP
-vim:SKP
 vorbis-tools:SKP
 workbone:SKP
 xfsdump:SKP

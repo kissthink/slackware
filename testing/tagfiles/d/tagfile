@@ -10,6 +10,7 @@ gperf:ADD
 intltool:ADD
 kernel-headers:ADD
 libtool:ADD
+make:ADD
 m4:ADD
 perl:ADD
 pkg-config:ADD
@@ -35,7 +36,6 @@ guile:SKP
 help2man:SKP
 indent:SKP
 llvm:SKP
-make:SKP
 mercurial:SKP
 nasm:SKP
 open-cobol:SKP

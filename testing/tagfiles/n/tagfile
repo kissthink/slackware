@@ -1,4 +1,5 @@
 # Add
+dhcpcd:ADD
 iproute2:ADD
 iputils:ADD
 net-tools:ADD
@@ -36,7 +37,6 @@ crda:SKP
 curl:SKP
 cyrus-sasl:SKP
 dhcp:SKP
-dhcpcd:SKP
 dirmngr:SKP
 dnsmasq:SKP
 ebtables:SKP

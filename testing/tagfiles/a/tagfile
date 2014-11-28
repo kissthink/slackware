@@ -6,6 +6,7 @@ bash:ADD
 bzip2:ADD
 coreutils:ADD
 devs:ADD
+dialog:ADD
 e2fsprogs:ADD
 etc:ADD
 file:ADD
@@ -17,12 +18,21 @@ glibc-zoneinfo:ADD
 grep:ADD
 gzip:ADD
 kbd:ADD
+kmod:ADD
 less:ADD
 lilo:ADD
+patch:ADD
 pkgtools:ADD
 procps:ADD
 sed:ADD
 shadow:ADD
+sysklogd:ADD
+sysvinit:ADD
+sysvinit-functions:ADD
+sysvinit-scripts:ADD
+tar:ADD
+udev:ADD
+util-linux:ADD
 xz:ADD
 
 # Skip
@@ -39,7 +49,6 @@ cups:SKP
 cxxlibs:SKP
 dbus:SKP
 dcron:SKP
-dialog:SKP
 dosfstools:SKP
 ed:SKP
 efibootmgr:SKP
@@ -64,7 +73,6 @@ kernel-huge:SKP
 kernel-huge-smp:SKP
 kernel-modules:SKP
 kernel-modules-smp:SKP
-kmod:SKP
 lha:SKP
 libcgroup:SKP
 logrotate:SKP
@@ -80,7 +88,6 @@ ncompress:SKP
 ntfs-3g:SKP
 openssl-solibs:SKP
 os-prober:SKP
-patch:SKP
 pciutils:SKP
 pcmciautils:SKP
 quota:SKP
@@ -92,16 +99,10 @@ slocate:SKP
 smartmontools:SKP
 splitvt:SKP
 sysfsutils:SKP
-sysklogd:SKP
 syslinux:SKP
-sysvinit:SKP
-sysvinit-functions:SKP
-sysvinit-scripts:SKP
-tar:SKP
 tcsh:SKP
 time:SKP
 tree:SKP
-udev:SKP
 udisks:SKP
 udisks2:SKP
 unarj:SKP
@@ -109,7 +110,6 @@ upower:SKP
 usb_modeswitch:SKP
 usbutils:SKP
 utempter:SKP
-util-linux:SKP
 which:SKP
 xfsprogs:SKP
 zoo:SKP
