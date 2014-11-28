@@ -87,6 +87,10 @@ Groupe de paquets A
   * a/coreutils : collection de commandes de base, en particulier toutes
     celles qui ont trait à la gestion des fichiers et répertoires
 
+  * a/cxxlibs : bibliothèques assurant la compatibilité des applications liées
+    à de plus anciennes versions de la bibliothèque standard C++ avec celle
+    utilisée par le système
+
   * a/devs : peuple le répertoire '/dev', qui contient les points d'accès
     entre le système et le matériel
 
@@ -142,6 +146,8 @@ Groupe de paquets A
   * a/patch : programme permettant de modifier et de créer des fichiers en
     appliquant un fichier correctif
 
+  * a/pciutils : utilitaires de configuration du matériel PCI
+
   * a/pkgtool : outil de gestion des paquets Slackware
 
   * a/procps : contient des programmes pour afficher des informations sur les
@@ -162,6 +168,8 @@ Groupe de paquets A
 
   * a/util-linux : collection d'utilitaires nécessaires au fonctionnement d'un
     système Linux
+
+  * a/which : affiche le chemin complet d'une commande installée dans le PATH
 
   * a/xz : programmes de compression et de décompression de fichiers
 
@@ -291,6 +299,8 @@ Groupe de paquets N
 
   * n/traceroute : permet d'afficher la route réseau que les paquets prennent
     pour accéder à un hôte donné
+
+  * n/wget : outil pour le téléchargement non-interactif de fichiers distants
 
 
 Documentation

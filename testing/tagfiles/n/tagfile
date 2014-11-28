@@ -17,6 +17,7 @@ openssh:ADD
 telnet:ADD
 tftp-hpa:ADD
 traceroute:ADD
+wget:ADD
  
 # Skip
 ModemManager:SKP
@@ -139,7 +140,6 @@ ulogd:SKP
 uucp:SKP
 vlan:SKP
 vsftpd:SKP
-wget:SKP
 whois:SKP
 wireless-tools:SKP
 wpa_supplicant:SKP

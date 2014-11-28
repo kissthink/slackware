@@ -8,6 +8,7 @@ bash:ADD
 bin:ADD
 bzip2:ADD
 coreutils:ADD
+cxxlibs:ADD
 devs:ADD
 dialog:ADD
 e2fsprogs:ADD
@@ -33,6 +34,7 @@ less:ADD
 lilo:ADD
 openssl-solibs:ADD
 patch:ADD
+pciutils:ADD
 pkgtools:ADD
 procps:ADD
 sed:ADD
@@ -44,6 +46,7 @@ sysvinit-scripts:ADD
 tar:ADD
 udev:ADD
 util-linux:ADD
+which:ADD
 xz:ADD
 
 # Skip
@@ -54,7 +57,6 @@ cpio:SKP
 cpufrequtils:SKP
 cryptsetup:SKP
 cups:SKP
-cxxlibs:SKP
 dbus:SKP
 dcron:SKP
 dosfstools:SKP
@@ -88,7 +90,6 @@ mtx:SKP
 ncompress:SKP
 ntfs-3g:SKP
 os-prober:SKP
-pciutils:SKP
 pcmciautils:SKP
 quota:SKP
 reiserfsprogs:SKP
@@ -110,6 +111,5 @@ upower:SKP
 usb_modeswitch:SKP
 usbutils:SKP
 utempter:SKP
-which:SKP
 xfsprogs:SKP
 zoo:SKP
