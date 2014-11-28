@@ -1,4 +1,6 @@
 # Add
+expat:ADD
+gdbm:ADD
 glibc:ADD
 glibc-i18n:ADD
 glibc-profile:ADD
@@ -48,7 +50,6 @@ eigen2:SKP
 enchant:SKP
 esound:SKP
 exiv2:SKP
-expat:SKP
 fftw:SKP
 freetype:SKP
 fribidi:SKP
@@ -57,7 +58,6 @@ gamin:SKP
 gc:SKP
 gcr:SKP
 gd:SKP
-gdbm:SKP
 gdk-pixbuf2:SKP
 gegl:SKP
 giflib:SKP

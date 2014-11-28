@@ -1,5 +1,6 @@
 # Add
 bc:ADD
+diffutils:ADD
 groff:ADD
 man:ADD
 man-pages:ADD
@@ -19,7 +20,6 @@ cdrtools:SKP
 dc3dd:SKP
 ddrescue:SKP
 diffstat:SKP
-diffutils:SKP
 dmapi:SKP
 dmidecode:SKP
 dvd+rw-tools:SKP

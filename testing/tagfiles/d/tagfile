@@ -1,17 +1,20 @@
 # Add
+autoconf:ADD
+automake:ADD
 binutils:ADD
 bison:ADD
 flex:ADD
 gcc:ADD
 gcc-g++:ADD
+gperf:ADD
+intltool:ADD
 kernel-headers:ADD
 libtool:ADD
 m4:ADD
+perl:ADD
 pkg-config:ADD
 
 # Skip
-autoconf:SKP
-automake:SKP
 ccache:SKP
 clisp:SKP
 cmake:SKP
@@ -28,11 +31,9 @@ gcc-objc:SKP
 gdb:SKP
 gettext-tools:SKP
 git:SKP
-gperf:SKP
 guile:SKP
 help2man:SKP
 indent:SKP
-intltool:SKP
 llvm:SKP
 make:SKP
 mercurial:SKP
@@ -40,7 +41,6 @@ nasm:SKP
 open-cobol:SKP
 oprofile:SKP
 p2c:SKP
-perl:SKP
 pmake:SKP
 python:SKP
 rcs:SKP

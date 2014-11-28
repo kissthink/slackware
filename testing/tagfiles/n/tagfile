@@ -1,5 +1,20 @@
 # Add
+iproute2:ADD
+iputils:ADD
+net-tools:ADD
+netkit-bootparamd:ADD
+netkit-ftp:ADD
+netkit-ntalk:ADD
+netkit-routed:ADD
+netkit-rsh:ADD
+netkit-rusers:ADD
+netkit-rwall:ADD
+netkit-rwho:ADD
+netkit-timed:ADD
 network-scripts:ADD
+telnet:ADD
+tftp-hpa:ADD
+traceroute:ADD
  
 # Skip
 ModemManager:SKP
@@ -42,11 +57,9 @@ idnkit:SKP
 iftop:SKP
 imapd:SKP
 inetd:SKP
-iproute2:SKP
 ipset:SKP
 iptables:SKP
 iptraf-ng:SKP
-iputils:SKP
 ipw2100-fw:SKP
 ipw2200-fw:SKP
 irssi:SKP
@@ -77,18 +90,8 @@ mutt:SKP
 nc:SKP
 ncftp:SKP
 net-snmp:SKP
-net-tools:SKP
 netatalk:SKP
 netdate:SKP
-netkit-bootparamd:SKP
-netkit-ftp:SKP
-netkit-ntalk:SKP
-netkit-routed:SKP
-netkit-rsh:SKP
-netkit-rusers:SKP
-netkit-rwall:SKP
-netkit-rwho:SKP
-netkit-timed:SKP
 netpipes:SKP
 nettle:SKP
 netwatch:SKP
@@ -130,10 +133,7 @@ snownews:SKP
 stunnel:SKP
 tcp_wrappers:SKP
 tcpdump:SKP
-telnet:SKP
-tftp-hpa:SKP
 tin:SKP
-traceroute:SKP
 trn:SKP
 ulogd:SKP
 uucp:SKP

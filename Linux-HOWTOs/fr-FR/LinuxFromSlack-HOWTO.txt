@@ -32,6 +32,10 @@ Groupe de paquets A
   * a/file : contient un outil pour déterminer le type d'un fichier ou des
     fichiers donnés
 
+  * a/findutils : programmes de recherche de fichiers
+
+  * a/gettext : outils pour l'internationalisation et la localisation
+
   * a/glibc-solibs : bibliothèques C partagées du système, contenant les
     routines essentielles à son fonctionnement
 
@@ -39,6 +43,15 @@ Groupe de paquets A
 
   * a/grep : programme de recherche de chaînes de caractères à l'intérieur de
     fichiers
+
+  * a/gzip : programmes de compression et décompression de fichiers
+
+  * a/kbd : contient les fichiers de tables de caractères, les polices de la
+    console et des outils pour le clavier
+
+  * a/less : visualiseur de fichiers texte
+
+  * a/lilo : chargeur de démarrage
 
   * a/pkgtool : outil de gestion des paquets Slackware
 
@@ -49,11 +62,18 @@ Groupe de paquets A
 
   * a/shadow : stocke les mots de passe des utilisateurs sous forme cryptée
 
+  * a/xz : programmes de compression et de décompression de fichiers
+
 
 Groupe de paquets AP
 --------------------
 
   * ap/bc : langage de traitement des nombres à précision arbitraire
+
+  * ap/diffutils : programmes montrant les différences entre fichiers ou
+    répertoires
+
+  * ap/gawk : programmes de manipulation de fichiers texte
 
   * ap/groff : programmes de formatage de texte, utilisés principalement pour
     les pages man
@@ -70,6 +90,11 @@ Groupe de paquets AP
 Groupe de paquets D
 -------------------
 
+  * d/autoconf : programmes produisant des scripts shell qui configurent
+    automatiquement le code source
+
+  * d/automake : générateur de Makefile 
+
   * d/bison : analyseur syntaxique
 
   * d/flex : analyseur lexical
@@ -79,6 +104,11 @@ Groupe de paquets D
 
   * d/gcc-g++ : support C++ pour la collection de compilateurs GNU
 
+  * d/gperf : générateur de fonction de hachage
+
+  * d/intltool : outil d'internationalisation utilisé pour extraire des
+    chaînes traduisibles à partir de fichiers sources
+
   * d/kernel-headers : fichiers d'en-tête C du noyau Linux 
 
   * d/libtool : script de support de bibliothèques GNU génériques, qui emballe
@@ -87,12 +117,19 @@ Groupe de paquets D
 
   * d/m4 : processeur de macros
 
+  * d/perl : langage pratique d'extraction et de rapport
+
   * d/pkg-config : outil utilisé lors de la compilation d'applications et de
     bibliothèques. 
 
 
 Groupe de paquets L
 -------------------
+
+  * l/expat : bibliothèque C orientée flux pour analyser de l'XML
+
+  * l/gdbm : contient le GNU Database Manager, une bibliothèque de fonctions
+    de base de données
 
   * l/glibc : bibliothèque C standard
 
@@ -124,6 +161,14 @@ Groupe de paquets L
 
 Groupe de paquets N
 -------------------
+
+  * n/iproute2 : outils réseau basiques et avancés
+
+  * n/iputils : outils réseau que l'on trouve sur tous les systèmes *NIX
+
+  * n/net-tools : outils réseau de base 
+
+  * n/netkit-* : collection d'outils réseau de base
 
   * n/network-scripts : scripts et fichiers de configuration réseau de base
 
