@@ -2,9 +2,11 @@
 StripSlack HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
 ================
 
-Dernière révision : 28 novembre 2014
+Dernière révision : 29 novembre 2014
 
-Ce HOWTO décrit l'installation d'un système Slackware 14.1 minimal.
+Ce HOWTO décrit l'installation d'un système Slackware 14.1 minimal. Le nom
+StripSlack est plus ou moins inspiré de ZipSlack, une configuration minimale
+de Slackware que Patrick Volkerding fournissait jusqu'à la version 11.0.
 
 
 Introduction
@@ -47,283 +49,98 @@ Que souhaitons nous faire avec notre système de base ?
 
   * Démarrer en mode console
   * Utiliser le shell Bash
+  * Éditer des fichiers texte avec Vim
   * Afficher les pages man et info
   * Gérer les disques et les systèmes de fichiers
   * Construire un initrd
   * Créer des utilisateurs
   * Nous connecter à un réseau
-  * Gérer les paquets logiciels
-  * Utiliser SSH
-  * Éditer des fichiers texte avec Vim
+  * Gérer les paquets logiciels via le réseau
+  * Nous connecter à distance avec SSH
   * Travailler avec l'outil de développement Git
   * Compiler des applications 
+  * Naviguer sur le Web en mode texte
+
+L'ambition de StripSlack consiste à fournir toutes ces fonctionnalités sans
+toutefois s'encombrer de tout le fatras de bibliothèques et/ou d'utilitaires
+qui ne sont pas strictement nécessaires.
+
+Installation
+------------
+
+Pour éviter la corvée de sélectionner manuellement chaque paquet, la méthode
+d'installation recommandée est d'utiliser la collection de tagfiles fournis.
+Il s'agit là d'une série de fichiers au format texte simple, censés
+automatiser le processus de sélection des paquets, un peu comme une version
+simplifiée des fichiers Kickstart de Red Hat Enterprise Linux.
+
+Démarrez sur le support d'installation de Slackware (DVD, premier CD-Rom, clé
+USB). Sélectionnez votre disposition clavier, connectez-vous en tant que root
+et partitionnez le disque dur, mais ne démarrez pas encore l'installateur.
+
+Activez le réseau, par exemple :
+
+  root@slackware:/# dhcpcd eth0 
+
+L'environnement d'installation Slackware fournit déjà un répertoire '/tag'
+vide, censé recevoir un jeu de tagfiles. On va donc l'utiliser.
+
+  # cd /tag 
+
+Téléchargez les tagfiles depuis le serveur :
+
+  # wget http://www.microlinux.fr/slackware/stripslack-14.1/tagfiles.tar.gz 
+
+Décompressez l'archive téléchargée :
+
+  # tar xvzf tagfiles.tar.gz 
+
+Le répertoire '/tag' contient à présent une série de répertoires qui
+correspondent aux jeux de paquets Slackware :
+
+  # ls 
+  a/ ap/ d/ e/ f/ k/ kde/ kdei/ l/ n/ t/ tcl/ x/ xap/ xfce/ y/
+
+Lancez l'installateur Slackware :
+
+  # setup 
+
+PACKAGE SERIES SELECTION : confirmez la sélection de paquets par défaut, étant
+donné que les tagfiles vont prendre le dessus et se charger de la sélection
+des paquets. 
+
+SELECT PROMPTING MODE : tagpath - Utiliser un jeu de tagfiles personnalisés.
+
+Path to tagfiles : /tag
+
+À partir de là, procédez comme à l'accoutumée.
 
 
-Groupe de paquets A
+Premier redémarrage
 -------------------
 
-  * a/aaa_base : arborescence du système
+Voici ce que l'on peut faire après le redémarrage initial :
 
-  * a/aaa_elflibs : collection de bibliothèques de base requises par beaucoup
-    de logiciels
+  1. Choisir un miroir de téléchargement pour 'slackpkg'.
 
-  * a/aaa_terminfo : descriptions de terminaux, requises pour en utiliser un
+  2. Effectuer la mise à jour initiale.
 
-  * a/acl : outils d'administration des listes de contrôle d'accès
+  3. Construire un initrd.
 
-  * a/attr : outils de gestion des attributs étendus
+  4. Basculer vers le noyau GENERIC.
 
-  * a/bash : l'interpréteur de commandes Bourne Again Shell
 
-  * a/bin : collection d'utilitaires communément utilisés par les scripts
-    système
+Élaguer une installation existante
+----------------------------------
 
-  * a/coreutils : collection de commandes de base, en particulier toutes
-    celles qui ont trait à la gestion des fichiers et répertoires
+Le script 'scriptslack.sh' peut se charger d'élaguer un système Slackware
+Linux existant. Il utilise 'slackpkg', qui doit donc être configuré au
+préalable :
 
-  * a/cpio : format d'archivage permettant de créer des paquets RPM, également
-    requis pour pouvoir créer l'initrd nécessaire à l'emploi d'un noyau
-    générique
+  # cd stripslack-14.1
+  # ./stripslack.sh
 
-  * a/cxxlibs : bibliothèques assurant la compatibilité des applications liées
-    à de plus anciennes versions de la bibliothèque standard C++ avec celle
-    utilisée par le système
-
-  * a/devs : peuple le répertoire '/dev', qui contient les points d'accès
-    entre le système et le matériel
-
-  * a/dialog : utilitaire permettant de créer des interfaces graphiques en
-    mode texte à partir de scripts shell, utilisé par la plupart des outils
-    Slackware
-
-  * a/e2fsprogs : outils de gestion des systèmes de fichiers ext2, ext3 et
-    ext4. 
-
-  * a/etc : fichiers de configuration du système
-
-  * a/file : contient un outil pour déterminer le type d'un fichier ou des
-    fichiers donnés
-
-  * a/findutils : programmes de recherche de fichiers
-
-  * a/gettext : outils pour l'internationalisation et la localisation
-
-  * a/glibc-solibs : bibliothèques C partagées du système, contenant les
-    routines essentielles à son fonctionnement
-
-  * a/glibc-zoneinfo : permet de configurer le fuseau horaire de la machine
-
-  * a/grep : programme de recherche de chaînes de caractères à l'intérieur de
-    fichiers
-
-  * a/gzip : programmes de compression et décompression de fichiers
-
-  * a/kbd : contient les fichiers de tables de caractères, les polices de la
-    console et des outils pour le clavier
-
-  * a/kernel-firmware : firmwares permettant de gérer certains matériels et
-    distribués séparément du reste du noyau
-
-  * a/kernel-generic-* : un noyau entièrement modulaire, qui n'embarque aucun
-    support de système de fichiers et doit donc être utilisé avec un initrd
-
-  * a/kernel-huge-* : le noyau par défaut de l'installation, avec le support
-    des systèmes de fichiers
-
-  * a/kernel-modules-* : les modules des noyaux
-
-  * a/kmod : contient des bibliothèques et des outils pour charger des modules
-    du noyau
-
-  * a/less : visualiseur de fichiers texte
-
-  * a/lilo : chargeur de démarrage
-
-  * a/lvm2 : gestionnaire de volumes logiques
-
-  * a/mdadm : outils d'administration pour le RAID logiciel
-
-  * a/mkinitrd : utilitaire nécessaire pour créer l'initrd requis par le noyau
-    générique
-
-  * a/openssl-solibs : bibliothèques partagées de cryptographie
-
-  * a/patch : programme permettant de modifier et de créer des fichiers en
-    appliquant un fichier correctif
-
-  * a/pciutils : utilitaires de configuration du matériel PCI
-
-  * a/pkgtool : outil de gestion des paquets Slackware
-
-  * a/procps : contient des programmes pour afficher des informations sur les
-    processus en cours d'exécution
-
-  * a/sed : éditeur de flux
-
-  * a/shadow : stocke les mots de passe des utilisateurs sous forme cryptée
-
-  * a/sysklogd : programmes pour les messages de traces système
-
-  * a/sysvinit* : contrôle du démarrage, de l'exécution et de l'arrêt du
-    système
-
-  * a/tar : programme d'archivage
-
-  * a/udev : programmes pour la création dynamique de fichiers de périphérique
-
-  * a/util-linux : collection d'utilitaires nécessaires au fonctionnement d'un
-    système Linux
-
-  * a/which : affiche le chemin complet d'une commande installée dans le PATH
-
-  * a/xz : programmes de compression et de décompression de fichiers
-
-
-Groupe de paquets AP
---------------------
-
-  * ap/bc : langage de traitement des nombres à précision arbitraire
-
-  * ap/diffutils : programmes montrant les différences entre fichiers ou
-    répertoires
-
-  * ap/gawk : programmes de manipulation de fichiers texte
-
-  * ap/groff : programmes de formatage de texte, utilisés principalement pour
-    les pages man
-
-  * ap/man : programmes pour rechercher et afficher des pages man
-
-  * ap/man-pages : les pages man du Linux Documentation Project (LDP) en
-    version originale
-
-  * ap/slackpkg : outil pour l'installation ou la mise à niveau des paquets
-    Slackware à travers un réseau
-
-  * ap/texinfo : programmes de lecture, écriture et conversion des pages info
-
-  * ap/vim : l'éditeur de texte Vim
-
-
-Groupe de paquets D
--------------------
-
-  * d/autoconf : programmes produisant des scripts shell qui configurent
-    automatiquement le code source
-
-  * d/automake : générateur de Makefile 
-
-  * d/bison : analyseur syntaxique
-
-  * d/flex : analyseur lexical
-
-  * d/gcc : contient la partie de la collection de compilateurs GNU utilisée
-    pour compiler le code source C 
-
-  * d/gcc-g++ : support C++ pour la collection de compilateurs GNU
-
-  * d/git : système de contrôle de versions
-
-  * d/gperf : générateur de fonction de hachage
-
-  * d/gnupg : outil GNU pour effectuer de la communication et du stockage
-    sécurisés
-
-  * d/intltool : outil d'internationalisation utilisé pour extraire des
-    chaînes traduisibles à partir de fichiers sources
-
-  * d/kernel-headers : fichiers d'en-tête C du noyau Linux 
-
-  * d/libtool : script de support de bibliothèques GNU génériques, qui emballe
-    la complexité d'utilisation de bibliothèques partagées dans une interface
-    cohérente et portable
-
-  * d/make : programme pour compiler des paquets
-
-  * d/m4 : processeur de macros
-
-  * d/perl : langage pratique d'extraction et de rapport
-
-  * d/pkg-config : outil utilisé lors de la compilation d'applications et de
-    bibliothèques. 
-
-  * d/python : l'environnement de développement Python
-
-
-Groupe de paquets L
--------------------
-
-  * l/expat : bibliothèque C orientée flux pour analyser de l'XML
-
-  * l/gdbm : contient le GNU Database Manager, une bibliothèque de fonctions
-    de base de données
-
-  * l/glibc : bibliothèque C standard
-
-  * l/glibc-i18n : traductions pour la bibliothèque C standard
-
-  * l/glibc-profile : versions statiques des bibliothèques C 
-
-  * l/gmp : contient des bibliothèques de maths
-
-  * l/libcap : implémente les interfaces niveau utilisateur avec les fonctions
-    qui établissent le partage avec les privilèges root dans un ensemble de
-    droits distincts
-
-  * l/libmpc : contient une bibliothèque pour le calcul arithmétique de
-    nombres complexes avec une haute précision au choix et l'arrondissement
-    correcte du résultat
-
-  * l/mpfr : contient des fonctions pour des maths à précision multiple
-
-  * l/ncurses : bibliothèque qui fournit des fonctions de définition de
-    touches du clavier et de couleurs d'écran
-
-  * l/readline : ensemble de bibliothèques qui offrent des fonctionnalités
-    d'édition et d'historique pour la ligne de commande
-
-  * l/zlib : contient des routines de compression et décompression utilisées
-    par quelques programmes
-
-
-Groupe de paquets N
--------------------
-
-  * n/ca-certificates : liste de certificats pour les connexions sécurisées
-
-  * n/curl : contient un utilitaire et une bibliothèque utilisés pour le
-    transfert de fichiers
-
-  * n/cyrus-sasl : simple couche d'authentification et de sécurité, une
-    méthode pour ajouter le support d'authentification aux protocoles basés
-    sur la connexion
-
-  * n/dhcpcd : client DHCP
-
-  * n/iproute2 : outils réseau basiques et avancés
-
-  * n/iputils : outils réseau que l'on trouve sur tous les systèmes *NIX
-
-  * n/links : navigateur Web en mode texte
-
-  * n/net-tools : outils réseau de base 
-
-  * n/netkit-* : collection d'outils réseau de base
-
-  * n/network-scripts : scripts et fichiers de configuration réseau de base
-
-  * n/openssh : ensemble d'outils permettant des communications sécurisées en
-    utilisant le protocole SSH
-
-  * n/telnet : outil de communication non sécurisé
-
-  * n/tftp-hpa : interface utilisateur pour le protocole simplifié de
-    transfert de fichiers, utilisé notamment pour le démarrage réseau
-
-  * n/traceroute : permet d'afficher la route réseau que les paquets prennent
-    pour accéder à un hôte donné
-
-  * n/wget : outil pour le téléchargement non-interactif de fichiers distants
+Attention, ce script écorche votre hamster à vif. :o)
 
 
 Documentation
