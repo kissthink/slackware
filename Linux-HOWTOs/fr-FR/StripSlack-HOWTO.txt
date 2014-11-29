@@ -65,6 +65,7 @@ L'ambition de StripSlack consiste à fournir toutes ces fonctionnalités sans
 toutefois s'encombrer de tout le fatras de bibliothèques et/ou d'utilitaires
 qui ne sont pas strictement nécessaires.
 
+
 Installation
 ------------
 
