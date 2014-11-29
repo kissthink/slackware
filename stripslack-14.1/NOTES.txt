@@ -1,0 +1,24 @@
+Notes
+-----
+
+Sat Nov 29 08:56:51 CET 2014
+
+  --> y/bsd-games
+  --> n/gnutls
+  --> n/p11-kit
+  --> n/nettle
+  --> l/db48
+  --> l/libtasn1
+  --> l/gd
+  --> x/libSM
+  --> x/libX11
+  --> x/libXpm
+  --> x/fontconfig
+  --> x/libxcb
+  --> x/libXau
+  --> x/libXdmcp
+  --> x/libICE
+  --> x/libXaw
+  --> x/libXmu
+  --> x/libXt
+  --> x/libXext
