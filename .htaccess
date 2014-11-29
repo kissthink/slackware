@@ -64,7 +64,7 @@ AddDefaultCharset utf-8
   AddIcon       /slackware/repository-layout/xfce.png desktop-xfce-14.1-32bit
   AddIcon       /slackware/repository-layout/xfce.png desktop-xfce-14.1-64bit
   AddIcon       /slackware/repository-layout/xfce.png desktop-xfce-14.1-source
-  AddIcon       /slackware/repository-layout/utilities-terminal.png stripslack
+  AddIcon       /slackware/repository-layout/utilities-terminal.png stripslack-14.1
   AddIconByType /slackware/repository-layout/image-x-generic.png image/*
 
   # DESCRIPTIONS
@@ -93,6 +93,7 @@ AddDefaultCharset utf-8
   AddDescription "Microlinux Enterprise Server 14.1 32-bit" server-14.1-32bit
   AddDescription "Microlinux Enterprise Server 14.1 64-bit" server-14.1-64bit
   AddDescription "Microlinux Enterprise Server 14.1 source" server-14.1-source
+  AddDescription "Lightweight Slackware Linux Edition" stripslack-14.1
   AddDescription "Plain text file" .txt README
   AddDescription "Slackware build script" .SlackBuild
   AddDescription "Checksum file" .txz.md5
