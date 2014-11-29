@@ -546,13 +546,10 @@ libmowgli
 libmsn 
 libmtp 
 libnjb 
-libnl 
-libnl3 
 libnotify 
 libogg 
 liboggz 
 liboil 
-libpcap 
 libplist 
 libpng 
 libproxy 
@@ -662,7 +659,6 @@ bluez-firmware
 bluez-hcidump 
 bootp 
 bridge-utils 
-bsd-finger 
 cifs-utils 
 conntrack-tools 
 crda 
@@ -676,7 +672,6 @@ ethtool
 fetchmail 
 getmail 
 gnupg2 
-gnutls 
 gpa 
 gpgme 
 htdig 
@@ -687,13 +682,10 @@ iftop
 imapd 
 inetd 
 ipset 
-iptables 
 iptraf-ng 
 ipw2100-fw 
 ipw2200-fw 
-irssi 
 iw 
-lftp 
 libassuan 
 libgcrypt 
 libgpg-error 
@@ -706,7 +698,6 @@ libnetfilter_cthelper
 libnetfilter_cttimeout 
 libnetfilter_log 
 libnetfilter_queue 
-libnfnetlink 
 libqmi 
 lynx 
 mailx 
@@ -716,18 +707,15 @@ mobile-broadband-provider-info
 mtr 
 mutt 
 nc 
-ncftp 
 net-snmp 
 netatalk 
 netdate 
 netpipes 
-nettle 
 netwatch 
 netwrite 
 newspost 
 nfacct 
 nfs-utils 
-nmap 
 nn 
 ntp 
 obex-data-server 
@@ -737,7 +725,6 @@ openldap-client
 openobex 
 openssl 
 openvpn 
-p11-kit 
 php 
 pidentd 
 pinentry 
@@ -750,7 +737,6 @@ pssh
 pth 
 rdist 
 rfkill 
-rp-pppoe 
 rsync 
 samba 
 sendmail 

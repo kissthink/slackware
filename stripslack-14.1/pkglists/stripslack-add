@@ -93,6 +93,9 @@ glibc-profile
 gmp 
 libcap 
 libmpc 
+libnl 
+libnl3 
+libpcap 
 libtasn1 
 mpfr 
 ncurses 
@@ -100,14 +103,21 @@ readline
 zlib 
 
 # N
+bsd-finger 
 ca-certificates 
 curl 
 cyrus-sasl 
 dhcpcd 
 gnupg 
+gnutls 
 iproute2 
+iptables 
 iputils 
+irssi 
+lftp 
+libnfnetlink 
 links 
+ncftp 
 net-tools 
 netkit-bootparamd 
 netkit-ftp 
@@ -118,8 +128,12 @@ netkit-rusers
 netkit-rwall 
 netkit-rwho 
 netkit-timed 
+nettle 
 network-scripts 
+nmap 
 openssh 
+p11-kit 
+rp-pppoe 
 telnet 
 tftp-hpa 
 traceroute 

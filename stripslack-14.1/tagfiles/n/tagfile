@@ -1,4 +1,5 @@
 # Add
+bsd-finger:ADD
 ca-certificates:ADD
 curl:ADD
 cyrus-sasl:ADD
@@ -6,8 +7,13 @@ dhcpcd:ADD
 gnupg:ADD
 gnutls:ADD
 iproute2:ADD
+iptables:ADD
 iputils:ADD
+irssi:ADD
+lftp:ADD
+libnfnetlink:ADD
 links:ADD
+ncftp:ADD
 net-tools:ADD
 netkit-bootparamd:ADD
 netkit-ftp:ADD
@@ -20,8 +26,10 @@ netkit-rwho:ADD
 netkit-timed:ADD
 nettle:ADD
 network-scripts:ADD
+nmap:ADD
 openssh:ADD
 p11-kit:ADD
+rp-pppoe:ADD
 telnet:ADD
 tftp-hpa:ADD
 traceroute:ADD
@@ -39,7 +47,6 @@ bluez-firmware:SKP
 bluez-hcidump:SKP
 bootp:SKP
 bridge-utils:SKP
-bsd-finger:SKP
 cifs-utils:SKP
 conntrack-tools:SKP
 crda:SKP
@@ -63,13 +70,10 @@ iftop:SKP
 imapd:SKP
 inetd:SKP
 ipset:SKP
-iptables:SKP
 iptraf-ng:SKP
 ipw2100-fw:SKP
 ipw2200-fw:SKP
-irssi:SKP
 iw:SKP
-lftp:SKP
 libassuan:SKP
 libgcrypt:SKP
 libgpg-error:SKP
@@ -82,7 +86,6 @@ libnetfilter_cthelper:SKP
 libnetfilter_cttimeout:SKP
 libnetfilter_log:SKP
 libnetfilter_queue:SKP
-libnfnetlink:SKP
 libqmi:SKP
 lynx:SKP
 mailx:SKP
@@ -92,7 +95,6 @@ mobile-broadband-provider-info:SKP
 mtr:SKP
 mutt:SKP
 nc:SKP
-ncftp:SKP
 net-snmp:SKP
 netatalk:SKP
 netdate:SKP
@@ -102,7 +104,6 @@ netwrite:SKP
 newspost:SKP
 nfacct:SKP
 nfs-utils:SKP
-nmap:SKP
 nn:SKP
 ntp:SKP
 obex-data-server:SKP
@@ -124,7 +125,6 @@ pssh:SKP
 pth:SKP
 rdist:SKP
 rfkill:SKP
-rp-pppoe:SKP
 rsync:SKP
 samba:SKP
 sendmail:SKP
