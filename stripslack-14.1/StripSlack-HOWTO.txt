@@ -1,0 +1,157 @@
+================
+StripSlack HOWTO (c) Niki Kovacs <info@microlinux.fr>
+================
+
+The following HOWTO describes the installation of StripSlack, a lightweight
+configuration of Slackware.
+
+
+Introduction
+------------
+
+Users who want a minimal system can configure this fairly easily with
+distributions like CentOS, Debian, Arch, Crux, Gentoo, LFS, etc. 
+
+The Slackware Linux distribution is built differently. The user is supposed to
+install full package groups to obtain a coherent system. These package groups
+mix packages required for a basic system with those needed for some more
+specific configurations. Thus, a user who wants to configure a file server
+without a GUI ends up with the full monty of KDE-specific libraries, and the
+average desktop user has a full collection of web and file servers on his
+machine. 
+
+While this is not really a problem, sometimes the need for a more
+stripped-down system may arise. This is where StripSlack comes in.
+
+
+Minimal system
+--------------
+
+When two users are talking about a "minimal system", chances are they don't
+refer to the same thing. Embedded Linux systems will consist in barely more
+than a kernel, a C library, a shell and a very reduced set of tools. On the
+other side of the scale, installing the "Base System" package group on a
+RHEL/CentOS system will leave you with several hundred packages and a complete
+collection of shells and text editors as well as a full set of administration
+tools.
+
+A task-oriented approach will help us in finding the right balance between
+these two extremes. Here's a few things we want to be able to do with our
+minimal installation of Slackware:
+
+  * Boot in multi-user console mode
+  * Use the Bash shell
+  * Edit text files using Vim
+  * Display man and info pages
+  * Manage disks and filesystems
+  * Build an initrd
+  * Manage users
+  * Connect to a network
+  * Install and upgrade packages through a network
+  * Work remotely using SSH
+  * Work with the Git revision control system
+  * Compile applications
+  * Browse the Web using a text-mode browser
+
+StripSlack simply aims to provide all these functionalities while leaving out
+all the stuff that's not strictly needed.
+
+
+Installation
+------------
+
+In order to avoid painstakingly picking each package, use the provided set of
+tagfiles to install StripSlack. These are plain text files supposed to
+automate the potentially tedious package installation process, like a
+bone-headed version of Red Hat Enterprise Linux' Kickstart files.
+
+Boot the Slackware installation DVD (or the first CD). Select your keyboard
+layout, login as root and partition your hard disk, but don't start the
+installer yet.
+
+Bring up your network interface, for example:
+
+  root@slackware:/# dhcpcd eth0 
+
+The Slackware installation environment already sports an empty '/tag'
+directory for a set of tagfiles, so let's use it.
+
+  # cd /tag 
+
+Grab the set of tagfiles from the server:
+
+  # wget http://www.microlinux.fr/slackware/stripslack-14.1/tagfiles.tar.gz 
+
+Unpack the downloaded archive:
+
+  # tar xvzf tagfiles.tar.gz 
+
+Your '/tag' directory should now contain a series of directories corresponding
+to the Slackware package sets:
+
+  # ls 
+  a/ ap/ d/ e/ f/ k/ kde/ kdei/ l/ n/ t/ tcl/ x/ xap/ xfce/ y/
+
+Now start the Slackware installer:
+
+  # setup 
+
+PACKAGE SERIES SELECTION: accept the default package selection, since the
+tagfiles will override this and take care of selecting each package anyway. 
+
+SELECT PROMPTING MODE: tagpath - Use tagfiles in the subdirectories of a
+custom path
+
+Path to tagfiles: /tag
+
+From there, proceed as usual.
+
+
+First reboot
+------------
+
+Here's what you can do after your initial reboot :
+
+  1. Choose a mirror for 'slackpkg'.
+
+  2. Upgrade your system.
+
+  3. Build an initrd.
+
+  4. Switch to the GENERIC kernel.
+
+
+Strip down an existing installation
+-----------------------------------
+
+The included 'stripslack.sh' script can strip down an existing Slackware Linux
+installation. All you have to do is configure 'slackpkg' and run the script:
+
+  # cd stripslack-14.1
+  # ./stripslack.sh
+
+Be warned, this will flay your hamster. :o)
+
+
+Documentation
+-------------
+
+The LFS book:
+
+  * http://www.linuxfromscratch.org/lfs/view/stable/
+
+The BLFS book:
+
+  * http://www.linuxfromscratch.org/blfs/view/stable/
+
+The somewhat outdated "Linux From Slack" article on the Slackware-fr.org site:
+
+  * http://wiki.slackware-fr.org/installation:articles:linux_from_slack
+
+Vincent Batts' Minimal Slackware Installation:
+
+  * http://www.slackware.com/~vbatts/minimal/
+
+
+-- Niki Kovacs, Sat Nov 29 08:14:07 CET 2014
+
