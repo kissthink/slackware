@@ -4,6 +4,7 @@ curl:ADD
 cyrus-sasl:ADD
 dhcpcd:ADD
 gnupg:ADD
+gnutls:ADD
 iproute2:ADD
 iputils:ADD
 links:ADD
@@ -17,8 +18,10 @@ netkit-rusers:ADD
 netkit-rwall:ADD
 netkit-rwho:ADD
 netkit-timed:ADD
+nettle:ADD
 network-scripts:ADD
 openssh:ADD
+p11-kit:ADD
 telnet:ADD
 tftp-hpa:ADD
 traceroute:ADD
@@ -50,7 +53,6 @@ ethtool:SKP
 fetchmail:SKP
 getmail:SKP
 gnupg2:SKP
-gnutls:SKP
 gpa:SKP
 gpgme:SKP
 htdig:SKP
@@ -95,7 +97,6 @@ net-snmp:SKP
 netatalk:SKP
 netdate:SKP
 netpipes:SKP
-nettle:SKP
 netwatch:SKP
 netwrite:SKP
 newspost:SKP
@@ -111,7 +112,6 @@ openldap-client:SKP
 openobex:SKP
 openssl:SKP
 openvpn:SKP
-p11-kit:SKP
 php:SKP
 pidentd:SKP
 pinentry:SKP

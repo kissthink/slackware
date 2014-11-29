@@ -1,4 +1,16 @@
 # Add
+fontconfig:ADD
+libICE:ADD
+libSM:ADD
+libX11:ADD
+libXau:ADD
+libXaw:ADD
+libXdmcp:ADD
+libXext:ADD
+libXmu:ADD
+libXpm:ADD
+libXt:ADD
+libxcb:ADD
 
 # Skip
 anthy:SKP
@@ -55,7 +67,6 @@ font-util:SKP
 font-winitzki-cyrillic:SKP
 font-xfree86-type1:SKP
 fontcacheproto:SKP
-fontconfig:SKP
 fontsproto:SKP
 fonttosfnt:SKP
 freeglut:SKP
@@ -72,33 +83,23 @@ inputproto:SKP
 intel-gpu-tools:SKP
 kbproto:SKP
 libFS:SKP
-libICE:SKP
-libSM:SKP
-libX11:SKP
 libXScrnSaver:SKP
-libXau:SKP
-libXaw:SKP
 libXaw3d:SKP
 libXcm:SKP
 libXcomposite:SKP
 libXcursor:SKP
 libXdamage:SKP
-libXdmcp:SKP
 libXevie:SKP
-libXext:SKP
 libXfixes:SKP
 libXfont:SKP
 libXfontcache:SKP
 libXft:SKP
 libXi:SKP
 libXinerama:SKP
-libXmu:SKP
 libXp:SKP
-libXpm:SKP
 libXrandr:SKP
 libXrender:SKP
 libXres:SKP
-libXt:SKP
 libXtst:SKP
 libXv:SKP
 libXvMC:SKP
@@ -112,7 +113,6 @@ libfontenc:SKP
 libhangul:SKP
 libpciaccess:SKP
 libpthread-stubs:SKP
-libxcb:SKP
 libxkbfile:SKP
 listres:SKP
 lndir:SKP

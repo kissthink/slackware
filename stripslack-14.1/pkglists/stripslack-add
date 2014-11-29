@@ -83,7 +83,9 @@ pkg-config
 python 
 
 # L
+db48 
 expat 
+gd 
 gdbm 
 glibc 
 glibc-i18n 
@@ -91,6 +93,7 @@ glibc-profile
 gmp 
 libcap 
 libmpc 
+libtasn1 
 mpfr 
 ncurses 
 readline 
@@ -122,3 +125,19 @@ tftp-hpa
 traceroute 
 wget 
 
+# X
+fontconfig 
+libICE 
+libSM 
+libX11 
+libXau 
+libXaw 
+libXdmcp 
+libXext 
+libXmu 
+libXpm 
+libXt 
+libxcb 
+
+# Y
+bsd-games 

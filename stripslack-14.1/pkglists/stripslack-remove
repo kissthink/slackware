@@ -449,7 +449,6 @@ chmlib
 clucene 
 db42 
 db44 
-db48 
 dbus-glib 
 dbus-python 
 dconf 
@@ -467,7 +466,6 @@ fuse
 gamin 
 gc 
 gcr 
-gd 
 gdk-pixbuf2 
 gegl 
 giflib 
@@ -566,7 +564,6 @@ libsndfile
 libsoup 
 libspectre 
 libssh 
-libtasn1 
 libtermcap 
 libtheora 
 libtiff 
@@ -845,7 +842,6 @@ font-util
 font-winitzki-cyrillic 
 font-xfree86-type1 
 fontcacheproto 
-fontconfig 
 fontsproto 
 fonttosfnt 
 freeglut 
@@ -862,33 +858,23 @@ inputproto
 intel-gpu-tools 
 kbproto 
 libFS 
-libICE 
-libSM 
-libX11 
 libXScrnSaver 
-libXau 
-libXaw 
 libXaw3d 
 libXcm 
 libXcomposite 
 libXcursor 
 libXdamage 
-libXdmcp 
 libXevie 
-libXext 
 libXfixes 
 libXfont 
 libXfontcache 
 libXft 
 libXi 
 libXinerama 
-libXmu 
 libXp 
-libXpm 
 libXrandr 
 libXrender 
 libXres 
-libXt 
 libXtst 
 libXv 
 libXvMC 
@@ -902,7 +888,6 @@ libfontenc
 libhangul 
 libpciaccess 
 libpthread-stubs 
-libxcb 
 libxkbfile 
 listres 
 lndir 
@@ -1165,5 +1150,3 @@ xfdesktop
 xfwm4 
 xfwm4-themes 
 
-# Y
-bsd-games 

@@ -1,5 +1,7 @@
 # Add
+db48:ADD
 expat:ADD
+gd:ADD
 gdbm:ADD
 glibc:ADD
 glibc-i18n:ADD
@@ -7,6 +9,7 @@ glibc-profile:ADD
 gmp:ADD
 libcap:ADD
 libmpc:ADD
+libtasn1:ADD
 mpfr:ADD
 ncurses:ADD
 readline:ADD
@@ -39,7 +42,6 @@ chmlib:SKP
 clucene:SKP
 db42:SKP
 db44:SKP
-db48:SKP
 dbus-glib:SKP
 dbus-python:SKP
 dconf:SKP
@@ -57,7 +59,6 @@ fuse:SKP
 gamin:SKP
 gc:SKP
 gcr:SKP
-gd:SKP
 gdk-pixbuf2:SKP
 gegl:SKP
 giflib:SKP
@@ -156,7 +157,6 @@ libsndfile:SKP
 libsoup:SKP
 libspectre:SKP
 libssh:SKP
-libtasn1:SKP
 libtermcap:SKP
 libtheora:SKP
 libtiff:SKP
