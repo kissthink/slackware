@@ -1,0 +1,1747 @@
+amarok: amarok (music player)
+amarok:
+amarok: Amarok is a music player for Linux and Unix with an intuitive
+amarok: interface.  Amarok makes playing the music you love easier than ever
+amarok: before -- and looks good doing it.
+amarok:
+amarok: Amarok's home page is:  http://amarok.kde.org
+amarok:
+amarok:
+amarok:
+amarok:
+analitza: analitza (library to add mathematical features to programs)
+analitza:
+analitza: The analitza library will let you add mathematical features
+analitza: to your program. 
+analitza:
+analitza: For more information, visit:
+analitza:   https://projects.kde.org/projects/kde/kdeedu/analitza
+analitza:
+analitza:
+analitza:
+analitza:
+ark: ark (KDE archiver tool)
+ark:
+ark: This is KDE's application to work with compressed archives.
+ark:
+ark: Ark's home page is:  http://kde.org
+ark:
+ark:
+ark:
+ark:
+ark:
+ark:
+audiocd-kio: audiocd-kio (audiocd kio slave)
+audiocd-kio:
+audiocd-kio: Audiocd kio slave.
+audiocd-kio:
+audiocd-kio:
+audiocd-kio:
+audiocd-kio:
+audiocd-kio:
+audiocd-kio:
+audiocd-kio: For more information, visit:  http://www.kde.org
+audiocd-kio:
+blinken: blinken (a memory enhancement game)
+blinken:
+blinken: Blinken is a memory enhancement game for KDE.
+blinken:
+blinken: For more information, visit:  http://edu.kde.org/
+blinken:
+blinken:
+blinken:
+blinken:
+blinken:
+blinken:
+bluedevil: bluedevil (bluetooth stack for KDE)
+bluedevil:
+bluedevil: BlueDevil is the bluetooth stack for KDE.
+bluedevil:
+bluedevil: Homepage: http://www.afiestas.org/
+bluedevil:
+bluedevil:
+bluedevil:
+bluedevil:
+bluedevil:
+bluedevil:
+bomber: bomber (arcade bombing game for KDE)
+bomber:
+bomber: Bomber is a single player arcade game. The player is invading various
+bomber: cities in a plane that is decreasing in height.  The goal of the game
+bomber: is to destroy all the buildings and advance to the next level.
+bomber: Each level gets a bit harder by increasing the speed of the plane
+bomber: and the height of the buildings.
+bomber:
+bomber:
+bomber: For more information, visit:  http://www.kde.org
+bomber:
+bovo: bovo (five-in-a-row board game)
+bovo:
+bovo: Bovo is a Gomoku ("five points" in Japanese) like game for two
+bovo: players, where the opponents alternate in placing their respective
+bovo: pictogram on the game board.  Also known as: Connect Five,
+bovo: Five in a row, X and O, Naughts and Crosses.
+bovo:
+bovo:
+bovo:
+bovo: For more information, visit:  http://www.kde.org
+bovo:
+calligra: calligra (KDE office productivity suite)
+calligra:
+calligra: Calligra office productivity applications.  Included are a word
+calligra: processor, spreadsheet, presentation program, chart and graph creator,
+calligra: vector graphics tool, database report creator, flowcharting program,
+calligra: integrated data management program, a pixel graphics editor,
+calligra: a mathematical formula editor, and Calligra Workspace
+calligra: (a combination of all of the above).
+calligra:
+calligra: For more information, see:  http://calligra-suite.org/
+calligra:
+cantor: cantor (front-end to mathematics software)
+cantor:
+cantor: Cantor is a frontend to several existing mathematical software
+cantor: such as R, Sage and Maxima: Cantor.
+cantor: Cantor offers a worksheet as a nice GUI for all those backends
+cantor: and is not targeted to kids but to scientists.
+cantor:
+cantor: For more information, visit:  http://edu.kde.org/
+cantor:
+cantor:
+cantor:
+dragon: dragon (KDE multimedia player)
+dragon:
+dragon: Dragon Player is a multimedia player where the focus is on simplicity,
+dragon: instead of features.  Dragon Player does one thing, and only one
+dragon: thing, which is playing multimedia files.
+dragon:
+dragon:
+dragon:
+dragon:
+dragon: For more information, visit:  http://www.kde.org
+dragon:
+filelight: filelight (file system monitor)
+filelight:
+filelight: Filelight allows you to quickly understand exactly where your
+filelight: diskspace is being used by graphically representing your file system.
+filelight:
+filelight: filelight's home page is:  http://utils.kde.org/projects/filelight
+filelight:
+filelight:
+filelight:
+filelight:
+filelight:
+granatier: granatier (bomberman clone for KDE)
+granatier:
+granatier: Granatier is a clone of the classic Bomberman game, inspired by
+granatier: the work of the Clanbomber clone.
+granatier:
+granatier:
+granatier:
+granatier:
+granatier:
+granatier: For more information, visit:  http://www.kde.org
+granatier:
+gwenview: gwenview (image viewer for KDE)
+gwenview:
+gwenview: Gwenview is a simple image viewer for KDE.  It features a folder tree
+gwenview: window and a file list window, providing easy navigation of your file
+gwenview: hierarchy.
+gwenview:
+gwenview: For more information, visit:  http://www.kde.org
+gwenview:
+gwenview:
+gwenview:
+gwenview:
+juk: juk (audio jukebox application)
+juk:
+juk: JuK is an audio jukebox application, supporting collections of MP3,
+juk: Ogg Vorbis, and FLAC audio files.  It allows you to edit the "tags"
+juk: of your audio files, and manage your collection and playlists.
+juk: It's main focus, in fact, is on music management.
+juk:
+juk:
+juk:
+juk: For more information, visit:  http://www.kde.org
+juk:
+k3b: k3b (The CD Creator)
+k3b:
+k3b: K3b makes writing cds under Linux easy.  It has an easy to use
+k3b: interface and supports CD burning (including on-the-fly), copying,
+k3b: erasing, ripping, and more.
+k3b:
+k3b: K3b was written by Sebastian Trueg, Thomas Froescher,
+k3b: Christian Kvasny, and Klaus-Dieter Krannich.
+k3b:
+k3b: For more information, visit:  http://www.k3b.org
+k3b:
+kaccessible: kaccessible (Accessibility bridge)
+kaccessible:
+kaccessible: Kaccessible implements a QAccessibleBridgePlugin to provide
+kaccessible: accessibility services like focus tracking and a screenreader.
+kaccessible:
+kaccessible: For more information, visit:  http://www.kde.org
+kaccessible:
+kaccessible:
+kaccessible:
+kaccessible:
+kaccessible:
+kactivities: kactivities (API for using and interacting with Activities)
+kactivities:
+kactivities: API for using and interacting with Activities as a consumer,
+kactivities: application adding information to them or as an activity manager.
+kactivities:
+kactivities: For more information, visit:  http://www.kde.org
+kactivities:
+kactivities:
+kactivities:
+kactivities:
+kactivities:
+kalgebra: kalgebra (a graph calculator)
+kalgebra:
+kalgebra: KAlgebra is a MathML-based graph calculator.  It was initially mathml
+kalgebra: oriented, but now it can be used by anyone with a little mathematic
+kalgebra: knowledge.
+kalgebra:
+kalgebra: For more information, visit:  http://edu.kde.org/
+kalgebra:
+kalgebra:
+kalgebra:
+kalgebra:
+kalzium: kalzium (periodic table of the elements)
+kalzium:
+kalzium: Kalzium shows a periodic table of the elements.
+kalzium:
+kalzium: For more information, visit:  http://edu.kde.org/
+kalzium:
+kalzium:
+kalzium:
+kalzium:
+kalzium:
+kalzium:
+kamera: kamera (digital camera support for KDE)
+kamera:
+kamera: Digital camera support for KDE.
+kamera:
+kamera: For more information, visit:  http://www.kde.org
+kamera:
+kamera:
+kamera:
+kamera:
+kamera:
+kamera:
+kanagram: kanagram (letter game)
+kanagram:
+kanagram: Kanagram is a replacement for KMessedWords.  Kanagram mixes up the
+kanagram: letters of a word to create an anagram, and you have to guess what
+kanagram: the mixed up word is.  Kanagram features several built-in word lists,
+kanagram: hints, and a cheat feature which reveals the original word.
+kanagram: Kanagram also has a vocabulary editor.
+kanagram:
+kanagram: For more information, visit:  http://edu.kde.org/
+kanagram:
+kanagram:
+kapman: kapman (KDE version of Pac-Man)
+kapman:
+kapman: Kapman is a clone of the well known game Pac-Man.
+kapman: You must run through the maze to eat all pills without being captured
+kapman: by a ghost.  By eating an energizer, Kapman gets the ability to eat
+kapman: ghosts for a few seconds.  When a stage is cleared of pills and
+kapman: energizer the player is taken to the next stage with slightly
+kapman: increased game speed.
+kapman:
+kapman: For more information, visit:  http://www.kde.org
+kapman:
+kate: kate (an advanced text editor for KDE)
+kate:
+kate: The Kate project develops two main products:
+kate: KatePart, the advanced editor component which is used in numerous KDE
+kate: applications requiring a text editing component, and Kate, a MDI text
+kate: editor application.  In addition, we provide KWrite, a simple SDI
+kate: editor shell which allows the user to select his/her favorite editor
+kate: component.
+kate:
+kate: Homepage: http://kate-editor.org
+kate:
+katomic: katomic (re-assemble molecules from compound atoms)
+katomic:
+katomic: Katomic is both fun and educational game built around molecular
+katomic: geometry.  It employs simplistic two-dimensional looks at different
+katomic: chemical elements.  You can also play an online demo version
+katomic: of this game. 
+katomic:
+katomic:
+katomic:
+katomic: For more information, visit:  http://www.kde.org
+katomic:
+kaudiocreator: kaudiocreator (CD ripper and audio encoder)
+kaudiocreator:
+kaudiocreator: kaudiocreater is a KDE frontend for ripping and encoding audio
+kaudiocreator: to/from optical media.
+kaudiocreator:
+kaudiocreator:
+kaudiocreator:
+kaudiocreator:
+kaudiocreator:
+kaudiocreator:
+kaudiocreator:
+kblackbox: kblackbox (a game of hide and seek)
+kblackbox:
+kblackbox: KBlackbox is a game of hide and seek played on a grid of boxes
+kblackbox: where the computer has hidden several balls. 
+kblackbox:
+kblackbox:
+kblackbox:
+kblackbox:
+kblackbox:
+kblackbox: For more information, visit:  http://www.kde.org
+kblackbox:
+kblocks: kblocks (falling blocks game for KDE)
+kblocks:
+kblocks: KBlocks is the KDE version of the classic falling blocks game.
+kblocks:
+kblocks:
+kblocks:
+kblocks:
+kblocks:
+kblocks:
+kblocks: For more information, visit:  http://www.kde.org
+kblocks:
+kbounce: kbounce (KDE Bounce Ball Game)
+kbounce:
+kbounce: KBounce is a single player arcade game with the elements of puzzle.
+kbounce: It is played on a field, surrounded by wall, with two or more balls
+kbounce: that move about in the field bouncing off of walls.
+kbounce: The player can build new walls, decreasing the size of active field. 
+kbounce:
+kbounce:
+kbounce:
+kbounce: For more information, visit:  http://www.kde.org
+kbounce:
+kbreakout: kbreakout (breakout-like game for KDE)
+kbreakout:
+kbreakout: KBreakout is the KDE version of a Breakout-like game.
+kbreakout:
+kbreakout:
+kbreakout:
+kbreakout:
+kbreakout:
+kbreakout:
+kbreakout: For more information, visit:  http://www.kde.org
+kbreakout:
+kbruch: kbruch (calculate fractions)
+kbruch:
+kbruch: KBruch is a small program to practice calculating with fractions.
+kbruch:
+kbruch: For more information, visit:  http://edu.kde.org/
+kbruch:
+kbruch:
+kbruch:
+kbruch:
+kbruch:
+kbruch:
+kcalc: kcalc (KDE calculator)
+kcalc:
+kcalc: KCalc is a calculator which offers many more mathematical functions
+kcalc: than meet the eye on a first glance.
+kcalc:
+kcalc: kcalc's home page is:  http://utils.kde.org/projects/kcalc
+kcalc:
+kcalc:
+kcalc:
+kcalc:
+kcalc:
+kcharselect: kcharselect (character picker)
+kcharselect:
+kcharselect: KCharSelect is a tool to select special characters from all
+kcharselect: installed fonts and copy them into the clipboard.
+kcharselect:
+kcharselect: kcharselect's home page:  http://utils.kde.org/projects/kcharselect
+kcharselect:
+kcharselect:
+kcharselect:
+kcharselect:
+kcharselect:
+kcolorchooser: kcolorchooser (color chooser)
+kcolorchooser:
+kcolorchooser: A color chooser application for KDE.
+kcolorchooser:
+kcolorchooser: For more information, visit:  http://www.kde.org
+kcolorchooser:
+kcolorchooser:
+kcolorchooser:
+kcolorchooser:
+kcolorchooser:
+kcolorchooser:
+kdeadmin: kdeadmin (System Administration tools)
+kdeadmin:
+kdeadmin: KDE system administration tools.
+kdeadmin:
+kdeadmin:
+kdeadmin:
+kdeadmin:
+kdeadmin:
+kdeadmin:
+kdeadmin:
+kdeadmin:
+kdeartwork: kdeartwork (Artwork for KDE)
+kdeartwork:
+kdeartwork: Additional themes, screensavers, sounds, wallpapers, and window
+kdeartwork: styles.
+kdeartwork:
+kdeartwork:
+kdeartwork:
+kdeartwork:
+kdeartwork:
+kdeartwork:
+kdeartwork:
+kde-baseapps: kde-baseapps (KDE core applications and files)
+kde-baseapps:
+kde-baseapps: This package provides the core applications and infrastructure files
+kde-baseapps: for the KDE Plasma Desktop.
+kde-baseapps:
+kde-baseapps: For more info, visit:  http://www.kde.org
+kde-baseapps:
+kde-baseapps:
+kde-baseapps:
+kde-baseapps:
+kde-baseapps:
+kde-base-artwork: kde-base-artwork (KDE themes artwork)
+kde-base-artwork:
+kde-base-artwork: This package contains KSplash themes and other artwork.
+kde-base-artwork:
+kde-base-artwork: For more information, visit:  http://www.kde.org
+kde-base-artwork:
+kde-base-artwork:
+kde-base-artwork:
+kde-base-artwork:
+kde-base-artwork:
+kde-base-artwork:
+kdegraphics-mobipocket: kdegraphics-mobipocket (Mobipocket support for Okular)
+kdegraphics-mobipocket:
+kdegraphics-mobipocket: Mobipocket support for Okular.
+kdegraphics-mobipocket:
+kdegraphics-mobipocket: For more information, visit:  http://www.kde.org/
+kdegraphics-mobipocket:
+kdegraphics-mobipocket:
+kdegraphics-mobipocket:
+kdegraphics-mobipocket:
+kdegraphics-mobipocket:
+kdegraphics-mobipocket:
+kdegraphics-strigi-analyzer: kdegraphics-strigi-analyzer (graphics plugins for strigi)
+kdegraphics-strigi-analyzer:
+kdegraphics-strigi-analyzer: Graphics file format plugins for Strigi Desktop Search.
+kdegraphics-strigi-analyzer: These plugins allow Strigi Desktop Search to extract
+kdegraphics-strigi-analyzer: additional information about several document and graphic file
+kdegraphics-strigi-analyzer: formats.
+kdegraphics-strigi-analyzer:
+kdegraphics-strigi-analyzer: For more information, visit:  http://www.kde.org
+kdegraphics-strigi-analyzer:
+kdegraphics-strigi-analyzer:
+kdegraphics-strigi-analyzer:
+kdegraphics-thumbnailers: kdegraphics-thumbnailers (thumbnailers for various graphics formats)
+kdegraphics-thumbnailers:
+kdegraphics-thumbnailers: These plugins allow KDE software to create thumbnails for
+kdegraphics-thumbnailers: several advanced graphic file formats.
+kdegraphics-thumbnailers:
+kdegraphics-thumbnailers: For more information, visit:  http://www.kde.org
+kdegraphics-thumbnailers:
+kdegraphics-thumbnailers:
+kdegraphics-thumbnailers:
+kdegraphics-thumbnailers:
+kdegraphics-thumbnailers:
+kdelibs: kdelibs (KDE libraries)
+kdelibs:
+kdelibs: System libraries and other resources required for the KDE Platform.
+kdelibs:
+kdelibs:
+kdelibs:
+kdelibs:
+kdelibs:
+kdelibs:
+kdelibs:
+kdelibs:
+kdenetwork: kdenetwork (Network utilities for KDE)
+kdenetwork:
+kdenetwork: Network related utilities for the KDE Software Compilation.
+kdenetwork:
+kdenetwork:
+kdenetwork:
+kdenetwork:
+kdenetwork:
+kdenetwork:
+kdenetwork:
+kdenetwork:
+kdepim: kdepim (KDE Personal Information Management applications)
+kdepim:
+kdepim: The KDE-PIM project aims to bring together those who wish to help 
+kdepim: design, implement, test, etc. anything that's to do with personal 
+kdepim: information management.
+kdepim:
+kdepim: This rather broad scope encompasses mail clients, addressbooks, 
+kdepim: usenet news, scheduling, and even sticky notes.
+kdepim:
+kdepim:
+kdepim:
+kdepimlibs: kdepimlibs (Libraries for KDE-PIM)
+kdepimlibs:
+kdepimlibs: This module includes libraries that are central to the development and
+kdepimlibs: execution of a KDE-PIM application.
+kdepimlibs:
+kdepimlibs:
+kdepimlibs:
+kdepimlibs:
+kdepimlibs:
+kdepimlibs:
+kdepimlibs:
+kdepim-runtime: kdepim-runtime (KDE Personal Information Management runtime)
+kdepim-runtime:
+kdepim-runtime: The KDE-PIM project aims to bring together those who wish to help 
+kdepim-runtime: design, implement, test, etc. anything that's to do with personal 
+kdepim-runtime: information management.
+kdepim-runtime:
+kdepim-runtime: This rather broad scope encompasses mail clients, addressbooks, 
+kdepim-runtime: usenet news, scheduling, and even sticky notes.
+kdepim-runtime:
+kdepim-runtime:
+kdepim-runtime:
+kdeplasma-addons: kdeplasma-addons (Plasma addons for KDE)
+kdeplasma-addons:
+kdeplasma-addons: Plasmoids (or widgets) for the KDE Plasma Desktop shell.
+kdeplasma-addons:
+kdeplasma-addons:
+kdeplasma-addons:
+kdeplasma-addons:
+kdeplasma-addons:
+kdeplasma-addons:
+kdeplasma-addons:
+kdeplasma-addons:
+kde-runtime: kde-runtime (KDE runtime core)
+kde-runtime:
+kde-runtime: This package contains core components of the KDE base runtime module.
+kde-runtime:
+kde-runtime:
+kde-runtime:
+kde-runtime:
+kde-runtime:
+kde-runtime:
+kde-runtime:
+kde-runtime:
+kdesdk: kdesdk (KDE SDK)
+kdesdk:
+kdesdk: KDE Software Development Kit.  This is a collection of applications
+kdesdk: and tools used to develop on the KDE Platform.  It also contains
+kdesdk: example code for use in learning KDE programming or starting a new
+kdesdk: KDE application.
+kdesdk:
+kdesdk:
+kdesdk:
+kdesdk:
+kdesdk:
+kdetoys: kdetoys (Toys for the KDE Software Compilation)
+kdetoys:
+kdetoys: Some toys for the KDE Software Compilation such as amor, kteatime,
+kdetoys: ktux, kweatherreport, and kweatherservice.
+kdetoys:
+kdetoys:
+kdetoys:
+kdetoys:
+kdetoys:
+kdetoys:
+kdetoys:
+kdevelop: kdevelop (development environment for KDE)
+kdevelop:
+kdevelop: The KDevelop integrated C/C++ application development environment.
+kdevelop:
+kdevelop:
+kdevelop:
+kdevelop:
+kdevelop:
+kdevelop:
+kdevelop:
+kdevelop:
+kdevelop-pg-qt: kdevelop-pg-qt (KDevelop Parser Generator)
+kdevelop-pg-qt:
+kdevelop-pg-qt: KDevelop Parser Generator used in the PHP language plugin and others.
+kdevelop-pg-qt:
+kdevelop-pg-qt:
+kdevelop-pg-qt:
+kdevelop-pg-qt:
+kdevelop-pg-qt:
+kdevelop-pg-qt:
+kdevelop-pg-qt:
+kdevelop-pg-qt:
+kdevelop-php: kdevelop-php (PHP language plugin for KDevelop)
+kdevelop-php:
+kdevelop-php: This is a KDevelop plugin that provides support for the PHP language.
+kdevelop-php:
+kdevelop-php:
+kdevelop-php:
+kdevelop-php:
+kdevelop-php:
+kdevelop-php:
+kdevelop-php:
+kdevelop-php:
+kdevelop-php-docs: kdevelop-php-docs (PHP documentation plugin for KDevelop)
+kdevelop-php-docs:
+kdevelop-php-docs: This KDevelop plugin integrates the php.net online documentation.
+kdevelop-php-docs:
+kdevelop-php-docs:
+kdevelop-php-docs:
+kdevelop-php-docs:
+kdevelop-php-docs:
+kdevelop-php-docs:
+kdevelop-php-docs:
+kdevelop-php-docs:
+kdevplatform: kdevplatform (KDE development platform)
+kdevplatform:
+kdevplatform: This KDE module provides libraries used by kdevelop.
+kdevplatform:
+kdevplatform:
+kdevplatform:
+kdevplatform:
+kdevplatform:
+kdevplatform:
+kdevplatform:
+kdevplatform:
+kde-wallpapers: kde-wallpapers (Wallpapers for KDE)
+kde-wallpapers:
+kde-wallpapers: Additional wallpapers for KDE.
+kde-wallpapers:
+kde-wallpapers:
+kde-wallpapers:
+kde-wallpapers:
+kde-wallpapers:
+kde-wallpapers:
+kde-wallpapers:
+kde-wallpapers:
+kdewebdev: kdewebdev (web development package for the KDE Platform)
+kdewebdev:
+kdewebdev: The kdewebdev package contains applications which are useful for
+kdewebdev: web development.
+kdewebdev:
+kdewebdev:
+kdewebdev:
+kdewebdev:
+kdewebdev:
+kdewebdev:
+kdewebdev:
+kde-workspace: kde-workspace (KDE Plasma Desktop)
+kde-workspace:
+kde-workspace: This package provides the essential parts of the KDE Plasma Desktop
+kde-workspace: that are presented to the user.
+kde-workspace:
+kde-workspace:
+kde-workspace:
+kde-workspace:
+kde-workspace:
+kde-workspace:
+kde-workspace:
+kdf: kdf (show available disk space)
+kdf:
+kdf: kdf (KDiskFree) displays the available file devices (hard drive
+kdf: partitions, floppy and CD/DVD drives, etc.) along with information on
+kdf: their capacity, free space, type and mount point.
+kdf:
+kdf: kdf's home page is:  http://utils.kde.org/projects/kdf
+kdf:
+kdf:
+kdf:
+kdf:
+kdiamond: kdiamond (three-in-a-row game for KDE)
+kdiamond:
+kdiamond: KDiamond is a single player puzzle game.  The object of the game is
+kdiamond: to build and remove lines of three similar diamonds.
+kdiamond:
+kdiamond:
+kdiamond:
+kdiamond:
+kdiamond:
+kdiamond: For more information, visit:  http://www.kde.org
+kdiamond:
+kfloppy: kfloppy (floppy disk formatter)
+kfloppy:
+kfloppy: KFloppy is a utility that provides a straightforward graphical means
+kfloppy: to format 3.5" and 5.25" floppy disks.
+kfloppy:
+kfloppy: kfloppy's home page is:  http://utils.kde.org/projects/kfloppy
+kfloppy:
+kfloppy:
+kfloppy:
+kfloppy:
+kfloppy:
+kfourinline: kfourinline (four-in-a-row board game)
+kfourinline:
+kfourinline: KFourInLine is a board game for two players based on the
+kfourinline: Connect-Four game.  The players try to build up a row of
+kfourinline: four pieces using different strategies.
+kfourinline:
+kfourinline:
+kfourinline:
+kfourinline:
+kfourinline: For more information, visit:  http://www.kde.org
+kfourinline:
+kgamma: kgamma (display gamma configuration)
+kgamma:
+kgamma: A KDE system settings module to configure display gamma.
+kgamma:
+kgamma: For more information, visit:  http://www.kde.org
+kgamma:
+kgamma:
+kgamma:
+kgamma:
+kgamma:
+kgamma:
+kgeography: kgeography (a geography learning tool)
+kgeography:
+kgeography: KGeography is a geography learning tool.
+kgeography: Right now it has three usage modes:
+kgeography: * Browse the maps clicking in a map division to see it's name
+kgeography: * The game tells you a map division name and you have to click on it
+kgeography: * The game shows you a map division flag and you have to guess
+kgeography:   its name 
+kgeography:
+kgeography: For more information, visit:  http://kgeography.berlios.de/
+kgeography:
+kgoldrunner: kgoldrunner (Hunt gold, dodge enemies and solve puzzles)
+kgoldrunner:
+kgoldrunner: KGoldrunner is a maze-threading game with a puzzle flavor.
+kgoldrunner: It has hundreds of levels where pieces of gold must be collected,
+kgoldrunner: with enemies in hot pursuit.
+kgoldrunner:
+kgoldrunner:
+kgoldrunner:
+kgoldrunner:
+kgoldrunner: For more information, visit:  http://www.kde.org
+kgoldrunner:
+kgpg: kgpg (KDE GUI for GnuPG)
+kgpg:
+kgpg: KGpg is a simple interface for GnuPG, a powerful encryption utility.
+kgpg:
+kgpg: kgpg's home page is:  http://utils.kde.org/projects/kgpg
+kgpg:
+kgpg:
+kgpg:
+kgpg:
+kgpg:
+kgpg:
+khangman: khangman (classical hangman game)
+khangman:
+khangman: KHangman is the classical hangman game. The child should guess a word
+khangman: letter by letter.  At each miss, the picture of a hangman appears.
+khangman: After 10 tries, if the word is not guessed, the game is over and
+khangman: the answer is displayed.
+khangman:
+khangman: For more information, visit:  http://edu.kde.org/
+khangman:
+khangman:
+khangman:
+kig: kig (interactive geometry game)
+kig:
+kig: Kig is an application meant to allow high school students to
+kig: interactively explore mathematical concepts, much like Dr.Geo, KGeo,
+kig: KSeg and Cabri.
+kig:
+kig: For more information, visit:  http://edu.kde.org/kig/
+kig:
+kig:
+kig:
+kig:
+kigo: kigo (Go board game for KDE)
+kigo:
+kigo: Kigo is an open-source implementation of the popular Go game.
+kigo: Go is a strategic board game for two players. It is also known as igo
+kigo: (Japanese), weiqi or wei ch'i (Chinese) or baduk (Korean). Go is noted
+kigo: for being rich in strategic complexity despite its simple rules.
+kigo: The game is played by two players who alternately place black and
+kigo: white pieces on the vacant intersections of a grid of 19x19 lines
+kigo: (9x9 or 13x13 for easier games).
+kigo:
+kigo: For more information, visit:  http://www.kde.org
+killbots: killbots (Robots-like game for KDE)
+killbots:
+killbots: Killbots is a simple game of evading killer robots.
+killbots:
+killbots:
+killbots:
+killbots:
+killbots:
+killbots:
+killbots: For more information, visit:  http://www.kde.org
+killbots:
+kio-mtp: kio-mtp (Provides KIO Access to MTP devices)
+kio-mtp:
+kio-mtp: Provides KIO Access to MTP devices using the mtp:/// protocol.
+kio-mtp: MTP stands for Media Transfer Protocol”  It is required in order to
+kio-mtp: access and manage files on devices running Android 4.0 and later.
+kio-mtp:
+kio-mtp:
+kio-mtp: Kio-mtp has been developed by Philipp Schmidt.
+kio-mtp:
+kio-mtp: For more information, visit:  http://www.kde.org
+kio-mtp:
+kiriki: kiriki (yahtzee-like dice game for KDE)
+kiriki:
+kiriki: Kiriki is an addictive and fun dice game for KDE, designed to be
+kiriki: played by as many as six players.  Participants have to collect points
+kiriki: by rolling five dice for up to three times per single turn. 
+kiriki:
+kiriki:
+kiriki:
+kiriki:
+kiriki: For more information, visit:  http://www.kde.org
+kiriki:
+kiten: kiten (a tool to learn Japanese)
+kiten:
+kiten: Kiten is a tool to learn Japanese.
+kiten:
+kiten: For more information, visit:  http://edu.kde.org/
+kiten:
+kiten:
+kiten:
+kiten:
+kiten:
+kiten:
+kjumpingcube: kjumpingcube (territory capture game)
+kjumpingcube:
+kjumpingcube: KJumpingcube is a simple dice driven tactical game.
+kjumpingcube: The playing area consists of squares containing points.
+kjumpingcube: Players move by clicking on either a vacant square,
+kjumpingcube: or on one of their own squares. 
+kjumpingcube:
+kjumpingcube:
+kjumpingcube:
+kjumpingcube: For more information, visit:  http://www.kde.org
+kjumpingcube:
+klettres: klettres (language learning program)
+klettres:
+klettres: KLettres aims to help to learn the alphabet and then to read some
+klettres: syllables in different languages.
+klettres: It is meant to help learning the very first sounds of a new language,
+klettres: for children or for adults.
+klettres:
+klettres: For more information, visit:  http://edu.kde.org/klettres
+klettres:
+klettres:
+klettres:
+klickety: klickety (strategy game)
+klickety:
+klickety: Klickety is a strategy game for KDE, an adaption of the Clickomania
+klickety: game.
+klickety: The rules are similar to those of the Same game: your goal is to clear
+klickety: the board by clicking on groups to destroy them.
+klickety:
+klickety:
+klickety:
+klickety: For more information, visit:  http://www.kde.org
+klickety:
+klines: klines (tactical game for KDE)
+klines:
+klines: KLines is a simple but highly addictive, one player game for KDE.
+klines: KLines has been inspired by well known game of Color Lines, written
+klines: by Olga Demina, Igor Ivkin and Gennady Denisov back in 1992.
+klines: You can also play an online demo version of this game. 
+klines:
+klines:
+klines:
+klines: For more information, visit:  http://www.kde.org
+klines:
+kmag: kmag (Screen magnifier)
+kmag:
+kmag: Magnifies a part of your screen.
+kmag:
+kmag: For more information, visit:  http://www.kde.org
+kmag:
+kmag:
+kmag:
+kmag:
+kmag:
+kmag:
+kmahjongg: kmahjongg (KDE port of Mahjongg game)
+kmahjongg:
+kmahjongg: KMahjongg is a clone of the well known tile based patience game of
+kmahjongg: the same name.  In the game you have to empty a game board filled
+kmahjongg: with pieces, by pairwise removal of pieces of the same type.
+kmahjongg:
+kmahjongg:
+kmahjongg:
+kmahjongg:
+kmahjongg: For more information, visit:  http://www.kde.org
+kmahjongg:
+kmines: kmines (minesweeper clone for KDE)
+kmines:
+kmines: KMines is the classic Minesweeper game. The idea is to uncover all
+kmines: the squares without blowing up any mines.  When a mine is blown up,
+kmines: the game is over. 
+kmines:
+kmines:
+kmines:
+kmines:
+kmines: For more information, visit:  http://www.kde.org
+kmines:
+kmix: kmix (sound mixer)
+kmix:
+kmix: KMix is an application to allow you to change the volume of your
+kmix: sound card.  Though small, it is full-featured, and it supports
+kmix: several platforms and sound drivers.
+kmix:
+kmix:
+kmix:
+kmix:
+kmix: For more information, visit:  http://www.kde.org
+kmix:
+kmousetool: kmousetool (Automatic mouse clicks)
+kmousetool:
+kmousetool: Clicks the mouse for you, reducing hand strain.
+kmousetool:
+kmousetool: For more information, visit:  http://www.kde.org
+kmousetool:
+kmousetool:
+kmousetool:
+kmousetool:
+kmousetool:
+kmousetool:
+kmouth: kmouth (Speech synthesis frontend)
+kmouth:
+kmouth: The computer "speaks" the entered text for talking with people.
+kmouth:
+kmouth: For more information, visit:  http://www.kde.org
+kmouth:
+kmouth:
+kmouth:
+kmouth:
+kmouth:
+kmouth:
+kmplot: kmplot (a mathematical function plotter)
+kmplot:
+kmplot: KmPlot is a mathematical function plotter for the KDE-Desktop.  
+kmplot: It has a built-in powerful parser. You can plot different functions
+kmplot: simultaneously and combine them into new functions. KmPlot supports
+kmplot: functions with parameters and functions in polar coordinates.
+kmplot: Several grid modes are possible.
+kmplot: Plots may be printed with high precision in correct scale.
+kmplot:
+kmplot: For more information, visit:  http://edu.kde.org/
+kmplot:
+knavalbattle: knavalbattle (KDE version of battleship game)
+knavalbattle:
+knavalbattle: KNavalBattle is a battleship game with built-in game server.
+knavalbattle: Ships are placed on a board which represents the sea.  Players try
+knavalbattle: to hit each others ships in turns without knowing where they are
+knavalbattle: placed.  The first player to destroy all ships wins the game. 
+knavalbattle:
+knavalbattle:
+knavalbattle:
+knavalbattle: For more information, visit:  http://www.kde.org
+knavalbattle:
+knetwalk: knetwalk (turn the board pieces to get computers connected)
+knetwalk:
+knetwalk: KNetwalk is a single player logic game.  Construct the network,
+knetwalk: connecting all the terminals to the server in the fewest turns
+knetwalk: possible.
+knetwalk:
+knetwalk:
+knetwalk:
+knetwalk:
+knetwalk: For more information, visit:  http://www.kde.org
+knetwalk:
+kolf: kolf (miniature golf game for KDE)
+kolf:
+kolf: Kolf is a miniature golf game. The game is played from an overhead
+kolf: view, with a short bar representing the golf club.  Kolf features many
+kolf: different types of objects, such water hazards, slopes, sand traps,
+kolf: and black holes (warps), among others.
+kolf:
+kolf:
+kolf:
+kolf: For more information, visit:  http://www.kde.org
+kolf:
+kollision: kollision (simple ball dodging game)
+kollision:
+kollision: Kollision is a simple ball dodging game.
+kollision:
+kollision:
+kollision:
+kollision:
+kollision:
+kollision:
+kollision: For more information, visit:  http://www.kde.org
+kollision:
+kolourpaint: kolourpaint (easy to use paint program)
+kolourpaint:
+kolourpaint: KolourPaint is a easy-to-use paint program for KDE. It aims to be
+kolourpaint: conceptually simply to understand; providing a level of functionality
+kolourpaint: targeted towards the average user. It's designed for tasks like: 
+kolourpaint: * Painting - drawing diagrams and "finger painting".
+kolourpaint: * Image Manipulation - editing screenshots and photos, and
+kolourpaint:   applying effects
+kolourpaint: * Icon Editing - drawing clipart and logos with transparency.
+kolourpaint:
+kolourpaint: For more information, visit:  http://www.kde.org
+konquest: konquest (KDE version of Gnu-Lactic Konquest)
+konquest:
+konquest: This the KDE version of Gnu-Lactic Konquest, a multi-player
+konquest: strategy game.  The goal of the game is to expand your
+konquest: interstellar empire across the galaxy.
+konquest:
+konquest:
+konquest:
+konquest:
+konquest: For more information, visit:  http://www.kde.org
+konquest:
+konsole: konsole (KDE's terminal emulator)
+konsole:
+konsole: Konsole is KDE's terminal emulator.
+konsole:
+konsole: Homepage: http://kde.org
+konsole:
+konsole:
+konsole:
+konsole:
+konsole:
+konsole:
+korundum: korundum (KDE ruby bindings)
+korundum:
+korundum: Very complete bindings to both the KDE API and the Qt APIs.
+korundum: The Korundum package includes both a QtRuby Qt-only binding along
+korundum: with the full combined Qt/KDE one.
+korundum: The QtRuby package contains just Qt bindings with no dependencies
+korundum: on KDE.
+korundum:
+korundum: For more information, visit:  http://rubyforge.org/projects/korundum/
+korundum:
+korundum:
+kpat: kpat (patience card game for KDE)
+kpat:
+kpat: KPat (aka KPatience) is a relaxing card sorting game.  To win the game
+kpat: a player has to arrange a single deck of cards in certain order
+kpat: amongst each other.
+kpat:
+kpat:
+kpat:
+kpat:
+kpat: For more information, visit:  http://www.kde.org
+kpat:
+kplayer: kplayer (KDE media player)
+kplayer:
+kplayer: KPlayer is a KDE multimedia player. With KPlayer you can easily play
+kplayer: a wide variety of video and audio files and streams using a rich and
+kplayer: friendly interface that follows KDE standards.
+kplayer: KPlayer will work out of the box if properly installed, and because
+kplayer: it uses MPlayer as the media playing backend, it will play virtually
+kplayer: any file or Internet stream.
+kplayer:
+kplayer: For more information, visit:  http://www.kde.org
+kplayer:
+kremotecontrol: kremotecontrol (remote control frontend)
+kremotecontrol:
+kremotecontrol: KRemoteControl (formerly known as KDELirc) is a KDE frontend for
+kremotecontrol: your remote controls.
+kremotecontrol:
+kremotecontrol: kremotecontrol's home page is:
+kremotecontrol:   http://utils.kde.org/projects/kremotecontrol
+kremotecontrol:
+kremotecontrol:
+kremotecontrol:
+kremotecontrol:
+kreversi: kreversi (reversi board game for KDE)
+kreversi:
+kreversi: KReversi is a simple one player strategy game played against the
+kreversi: computer.  If a player's piece is captured by an opposing player,
+kreversi: that piece is turned over to reveal the color of that player.
+kreversi: A winner is declared when one player has more pieces of his own color
+kreversi: on the board and there are no more possible moves. 
+kreversi:
+kreversi:
+kreversi: For more information, visit:  http://www.kde.org
+kreversi:
+kross-interpreters: kross-interpreters (Kross interpreters)
+kross-interpreters:
+kross-interpreters: Set of interpreter plugins for the Kross archtecture in KDE.
+kross-interpreters:
+kross-interpreters: See also:  http://developer.kde.org/language-bindings/
+kross-interpreters:
+kross-interpreters:
+kross-interpreters:
+kross-interpreters:
+kross-interpreters:
+kross-interpreters:
+kruler: kruler (a screen ruler for KDE)
+kruler:
+kruler: A screen ruler and color measurement tool for KDE.
+kruler:
+kruler: For more information, visit:  http://www.kde.org
+kruler:
+kruler:
+kruler:
+kruler:
+kruler:
+kruler:
+ksaneplugin: ksaneplugin (scanning plugin using libksane)
+ksaneplugin:
+ksaneplugin: This is a KScan plugin that implements the scanning through libksane.
+ksaneplugin:
+ksaneplugin: For more information, visit:  http://www.kde.org
+ksaneplugin:
+ksaneplugin:
+ksaneplugin:
+ksaneplugin:
+ksaneplugin:
+ksaneplugin:
+kscreen: kscreen (KDE screen management)
+kscreen:
+kscreen: KScreen is the new screen management software for KDE Plasma
+kscreen: Workspaces which tries to be as magic and automatic as possible
+kscreen: for users with basic needs and easy to configure for those
+kscreen: who want special setups. 
+kscreen:
+kscreen:
+kscreen: For more information, visit:
+kscreen:   http://community.kde.org/Solid/Projects/ScreenManagement
+kscreen:
+kshisen: kshisen (Shisen-Sho Mahjongg-like tile game)
+kshisen:
+kshisen: KShisen is a solitaire-like game played using the standard set of
+kshisen: Mahjong tiles.  Unlike Mahjong however, KShisen has only one layer
+kshisen: of scrambled tiles.
+kshisen:
+kshisen:
+kshisen:
+kshisen:
+kshisen: For more information, visit:  http://www.kde.org
+kshisen:
+ksirk: ksirk (KDE port of the board game risk)
+ksirk:
+ksirk: Ksirk is a KDE port of the board game risk.
+ksirk:
+ksirk:
+ksirk:
+ksirk:
+ksirk:
+ksirk:
+ksirk: For more information, visit:  http://www.kde.org
+ksirk:
+ksnakeduel: ksnakeduel (simple snake duel game for KDE)
+ksnakeduel:
+ksnakeduel: KSnakeDuel is a simple snake duel game for KDE.  You can play
+ksnakeduel: KSnakeDuel against the computer or a friend.  The aim of the game is
+ksnakeduel: to live longer than your opponent.  To do that, avoid running into
+ksnakeduel: a wall, your own tail and that of your opponent. 
+ksnakeduel:
+ksnakeduel:
+ksnakeduel:
+ksnakeduel: For more information, visit:  http://www.kde.org
+ksnakeduel:
+ksnapshot: ksnapshot (screen capture program)
+ksnapshot:
+ksnapshot: A screenshot utility for KDE.
+ksnapshot:
+ksnapshot: For more information, visit:  http://www.kde.org
+ksnapshot:
+ksnapshot:
+ksnapshot:
+ksnapshot:
+ksnapshot:
+ksnapshot:
+kspaceduel: kspaceduel (space arcade game)
+kspaceduel:
+kspaceduel: In KSpaceduel each of two possible players controls a satellite
+kspaceduel: spaceship orbiting the sun.  As the game progresses players have to
+kspaceduel: eliminate opponent's spacecraft.
+kspaceduel:
+kspaceduel:
+kspaceduel:
+kspaceduel:
+kspaceduel: For more information, visit:  http://www.kde.org
+kspaceduel:
+ksquares: ksquares (connect the dots to create squares)
+ksquares:
+ksquares: KSquares is a fun and exciting game for desktop environment.
+ksquares: The game is modeled after the well known pen and paper based
+ksquares: game of Dots and Boxes. 
+ksquares:
+ksquares:
+ksquares:
+ksquares:
+ksquares: For more information, visit:  http://www.kde.org
+ksquares:
+kstars: kstars (a desktop planetarium)
+kstars:
+kstars: KStars is a desktop planetarium.
+kstars:
+kstars: For more information, visit:  http://edu.kde.org/
+kstars:
+kstars:
+kstars:
+kstars:
+kstars:
+kstars:
+ksudoku: ksudoku (sudoku game)
+ksudoku:
+ksudoku: KSudoku is a logic-based symbol placement puzzle.
+ksudoku: The player has to fill a grid so that each column, row as well as
+ksudoku: each square block on the game field contains only one instance of
+ksudoku: each symbol.
+ksudoku:
+ksudoku:
+ksudoku:
+ksudoku: For more information, visit:  http://www.kde.org
+ksudoku:
+ktimer: ktimer (program scheduler)
+ktimer:
+ktimer: KTimer is a little tool to execute programs after some time.
+ktimer:
+ktimer: ktimer's home page is:  http://utils.kde.org/projects/ktimer
+ktimer:
+ktimer:
+ktimer:
+ktimer:
+ktimer:
+ktimer:
+ktorrent: ktorrent (KDE BitTorrent program)
+ktorrent:
+ktorrent: KTorrent is a BitTorrent program with many features:
+ktorrent: Download torrent files (of course :-), upload and download speed
+ktorrent: capping, Internet searching, UDP trackers, port forwarding with UPnP,
+ktorrent: IP blocking, importing of partially or fully downloaded files,
+ktorrent: support for distributed hash tables, protocol encryption,
+ktorrent: bandwidth scheduling, and much more.
+ktorrent:
+ktorrent: KTorrent's developers are Joris Guisson and Ivan Vasic.
+ktorrent:
+ktouch: ktouch (touch typing tutor)
+ktouch:
+ktouch: A KDE program that helps you to learn and practice touch typing.
+ktouch:
+ktouch: For more information, visit:  http://edu.kde.org/
+ktouch:
+ktouch:
+ktouch:
+ktouch:
+ktouch:
+ktouch:
+ktuberling: ktuberling (picture game for children)
+ktuberling:
+ktuberling: KTuberling a simple constructor game suitable for children and
+ktuberling: adults alike.  The idea of the game is based around a once popular
+ktuberling: doll making concept. 
+ktuberling:
+ktuberling:
+ktuberling:
+ktuberling:
+ktuberling: For more information, visit:  http://www.kde.org
+ktuberling:
+kturtle: kturtle (Logo programming environment)
+kturtle:
+kturtle: KTurtle is an educational Logo programming environment.
+kturtle:
+kturtle: For more information, visit:  http://edu.kde.org/
+kturtle:
+kturtle:
+kturtle:
+kturtle:
+kturtle:
+kturtle:
+kubrick: kubrick (3-D game based on Rubik's Cube)
+kubrick:
+kubrick: Kubrick is a game based on the Rubik's Cube puzzle.  The cube sizes
+kubrick: range from 2x2x2 up to 6x6x6, or you can play with irregular "bricks"
+kubrick: such as 5x3x2 or "mats" such as 6x4x1 or 2x2x1.
+kubrick: The game has a selection of puzzles at several levels of difficulty,
+kubrick: as well as demos of pretty patterns and solution moves, or you can
+kubrick: make up your own puzzles. 
+kubrick:
+kubrick: For more information, visit:  http://www.kde.org
+kubrick:
+kwallet: kwallet (KDE wallet manager)
+kwallet:
+kwallet: KDE Wallet Manager is a tool to manage your passwords under KDE.
+kwallet:
+kwallet: kwallet's home page is:
+kwallet:   https://projects.kde.org/projects/kde/kdeutils
+kwallet:
+kwallet:
+kwallet:
+kwallet:
+kwallet:
+kwebkitpart: kwebkitpart (WebKit browser component)
+kwebkitpart:
+kwebkitpart: KWebKitPart is a web browser component for KDE based on (Qt)WebKit.
+kwebkitpart: You can use it for example for browsing the web in Konqueror.
+kwebkitpart:
+kwebkitpart: Homepage:  http://kde-apps.org/content/show.php?content=127960
+kwebkitpart:
+kwebkitpart:
+kwebkitpart:
+kwebkitpart:
+kwebkitpart:
+kwordquiz: kwordquiz (a general purpose flash card program)
+kwordquiz:
+kwordquiz: KWordQuiz is a general purpose flash card program.
+kwordquiz: It can be used for vocabulary learning and many other subjects.
+kwordquiz:
+kwordquiz: For more information, visit:  http://edu.kde.org/
+kwordquiz:
+kwordquiz:
+kwordquiz:
+kwordquiz:
+kwordquiz:
+libkcddb: libkcddb (KDE CDDB retrieval library)
+libkcddb:
+libkcddb: A KDE CDDB retrieval library.
+libkcddb:
+libkcddb:
+libkcddb:
+libkcddb:
+libkcddb:
+libkcddb:
+libkcddb: For more information, visit:  http://www.kde.org
+libkcddb:
+libkcompactdisc: libkcompactdisc (KDE library for playing & ripping CDs)
+libkcompactdisc:
+libkcompactdisc: A KDE library for playing & ripping CDs.
+libkcompactdisc:
+libkcompactdisc:
+libkcompactdisc:
+libkcompactdisc:
+libkcompactdisc:
+libkcompactdisc:
+libkcompactdisc: For more information, visit:  http://www.kde.org
+libkcompactdisc:
+libkdcraw: libkdcraw (library wrapper around dcraw)
+libkdcraw:
+libkdcraw: Libkdcraw is a C++ interface around the dcraw binary program, used
+libkdcraw: to decode RAW picture files.
+libkdcraw:
+libkdcraw: For more information, visit:  http://www.kipi-plugins.org/
+libkdcraw:
+libkdcraw:
+libkdcraw:
+libkdcraw:
+libkdcraw:
+libkdeedu: libkdeedu (Educational applications)
+libkdeedu:
+libkdeedu: Educational applications for the KDE Software Compilation.
+libkdeedu:
+libkdeedu:
+libkdeedu:
+libkdeedu:
+libkdeedu:
+libkdeedu:
+libkdeedu:
+libkdeedu:
+libkdegames: libkdegames (common code and data for many KDE games)
+libkdegames:
+libkdegames: Libkdegames contains common code and data for many KDE games.
+libkdegames:
+libkdegames:
+libkdegames:
+libkdegames:
+libkdegames:
+libkdegames:
+libkdegames: For more information, visit:  http://www.kde.org
+libkdegames:
+libkexiv2: libkexiv2 (wrapper library for exiv2 library)
+libkexiv2:
+libkexiv2: Libkexiv2 is a KDE wrapper around the Exiv2 library to manipulate
+libkexiv2: pictures' metadata.
+libkexiv2:
+libkexiv2: For more information, visit:  http://www.kipi-plugins.org/
+libkexiv2:
+libkexiv2:
+libkexiv2:
+libkexiv2:
+libkexiv2:
+libkipi: libKipi (KDE Image Plugin Interface)
+libkipi:
+libkipi: This package provides a generic KDE Image Plug-in Interface used by
+libkipi: some KDE image applications.
+libkipi: Plug-ins for this interface are in the kipi-plugins package.
+libkipi:
+libkipi: For more info, visit:  http://www.kipi-plugins.org/
+libkipi:
+libkipi:
+libkipi:
+libkipi:
+libkmahjongg: libkmahjongg (library for rendering of Mahjongg tilesets)
+libkmahjongg:
+libkmahjongg: libkmahjongg is a library used by several KDE games for loading
+libkmahjongg: and rendering of Mahjongg tilesets.
+libkmahjongg:
+libkmahjongg:
+libkmahjongg:
+libkmahjongg:
+libkmahjongg:
+libkmahjongg: For more information, visit:  http://www.kde.org
+libkmahjongg:
+libksane: libksane (KDE scan support interface)
+libksane:
+libksane: Libksane is a library to add scan support to KDE applications.
+libksane:
+libksane: For more information, visit:  http://www.kde.org
+libksane:
+libksane:
+libksane:
+libksane:
+libksane:
+libksane:
+libkscreen: libkscreen (KDE screen management library)
+libkscreen:
+libkscreen: LibKScreen is a library that provides access to current configuration
+libkscreen: of connected displays and ways to change the configuration.
+libkscreen:
+libkscreen:
+libkscreen:
+libkscreen:
+libkscreen: For more information, visit:
+libkscreen:   http://community.kde.org/Solid/Projects/ScreenManagement
+libkscreen:
+libktorrent: libktorrent (Protocol library for the KDE BitTorrent program)
+libktorrent:
+libktorrent: Libktorrent is the BitTorrent protocol library for ktorrent, which
+libktorrent: contains all the torrent downloading code.  Although it is closely
+libktorrent: to ktorrent, the goal is to make libktorrent an independent
+libktorrent: library which can be used by other applications.
+libktorrent:
+libktorrent: Homepage:  http://ktorrent.org
+libktorrent:
+libktorrent:
+libktorrent:
+lskat: lskat (Lieutenant Skat card game for KDE)
+lskat:
+lskat: Lieutenant Skat (from German "Offiziersskat") is a fun and engaging
+lskat: card game for two players, where the second player is either live
+lskat: opponent, or a built in artificial intelligence.
+lskat:
+lskat:
+lskat:
+lskat:
+lskat: For more information, visit:  http://www.kde.org
+lskat:
+marble: marble (virtual globe)
+marble:
+marble: Marble is a virtual globe with advanced routing capabilities.  You can
+marble: download maps from a variety of themes and explore the surroundings.
+marble: Record your trip and share it with your friends.
+marble: Features:  online and offline routing, GPS tracking and recording,
+marble: themable maps (OpenStreetMap, Satellite Map and more), support for
+marble: different projections (globe, flat map, ...) and other planets,
+marble: download of maps and route data for offline usage.
+marble:
+marble: For more information, visit:  http://edu.kde.org/
+mplayerthumbs: mplayerthumbs (video thumbnail generator)
+mplayerthumbs:
+mplayerthumbs: MPlayerThumbs is a video thumbnail generator for KDE file managers
+mplayerthumbs: like Dolphin and Konqueror.  It enables them to show preview images
+mplayerthumbs: of video files. 
+mplayerthumbs:
+mplayerthumbs:
+mplayerthumbs:
+mplayerthumbs:
+mplayerthumbs: For more information, visit:  http://www.kde.org
+mplayerthumbs:
+nepomuk-core: nepomuk-core (Nepomuk Core utilities and libraries)
+nepomuk-core:
+nepomuk-core: This package contains the Nepomuk Core utilities and libraries.
+nepomuk-core:
+nepomuk-core:
+nepomuk-core:
+nepomuk-core:
+nepomuk-core:
+nepomuk-core:
+nepomuk-core: For more information, visit:  http://www.kde.org
+nepomuk-core:
+nepomuk-widgets: nepomuk-widgets (nepomuk widgets)
+nepomuk-widgets:
+nepomuk-widgets: This package contains all of the Nepomuk widgets.
+nepomuk-widgets:
+nepomuk-widgets:
+nepomuk-widgets:
+nepomuk-widgets:
+nepomuk-widgets:
+nepomuk-widgets:
+nepomuk-widgets: For more information, visit:  http://nepomuk.kde.org/
+nepomuk-widgets:
+networkmanagement: networkmanagement (KDE network control panel and widget)
+networkmanagement:
+networkmanagement: KDE network control panel and widget.
+networkmanagement:
+networkmanagement: For more information, visit:
+networkmanagement:   http://userbase.kde.org/NetworkManagement
+networkmanagement:
+networkmanagement:
+networkmanagement:
+networkmanagement:
+networkmanagement:
+okular: okular (a document viewer)
+okular:
+okular: Okular is a document viewer for KDE.
+okular:
+okular: For more information, visit:  http://www.kde.org
+okular:
+okular:
+okular:
+okular:
+okular:
+okular:
+oxygen-gtk2: oxygen-gtk2 (Oxygen GTK+ engine)
+oxygen-gtk2:
+oxygen-gtk2: Oxygen-Gtk2 is a port of the KDE widget theme Oxygen, to GTK+.
+oxygen-gtk2: It's primary goal is to ensure visual consistency between GTK+ and
+oxygen-gtk2: qt-based applications running under kde. A secondary objective is
+oxygen-gtk2: to also have a stand-alone nice looking GTK+ theme that would behave
+oxygen-gtk2: well on other Desktop Environments.
+oxygen-gtk2: Unlike other attempts made to port the kde oxygen theme to GTK+, this
+oxygen-gtk2: attempt does not depend on Qt.
+oxygen-gtk2:
+oxygen-gtk2: See: http://projects.kde.org/projects/playground/artwork/oxygen-gtk
+oxygen-gtk3: oxygen-gtk3 (Oxygen GTK+3 engine)
+oxygen-gtk3:
+oxygen-gtk3: Oxygen-Gtk3 is a port of the KDE widget theme Oxygen, to GTK+3.
+oxygen-gtk3: It's primary goal is to ensure visual consistency between GTK+ and
+oxygen-gtk3: qt-based applications running under kde. A secondary objective is
+oxygen-gtk3: to also have a stand-alone nice looking GTK+ theme that would behave
+oxygen-gtk3: well on other Desktop Environments.
+oxygen-gtk3: Unlike other attempts made to port the kde oxygen theme to GTK+, this
+oxygen-gtk3: attempt does not depend on Qt.
+oxygen-gtk3:
+oxygen-gtk3: See: http://projects.kde.org/projects/playground/artwork/oxygen-gtk
+oxygen-icons: oxygen-icons (Oxygen theme for the KDE Plasma Desktop)
+oxygen-icons:
+oxygen-icons: Oxygen provides a complete and modern icon theme for KDE.
+oxygen-icons:
+oxygen-icons: Visit the Oxygen project online:  http://www.oxygen-icons.org
+oxygen-icons:
+oxygen-icons:
+oxygen-icons:
+oxygen-icons:
+oxygen-icons:
+oxygen-icons:
+pairs: pairs (a memory game)
+pairs:
+pairs: Pairs is a game that will help train your memory by remembering
+pairs: different images, shapes, sounds and text.
+pairs:
+pairs:
+pairs:
+pairs:
+pairs:
+pairs: For more information, visit:  http://www.kde.org
+pairs:
+palapeli: palapeli (jigsaw puzzle game)
+palapeli:
+palapeli: Palapeli is a single-player jigsaw puzzle game.
+palapeli: Unlike other games in that genre, you are not limited to aligning
+palapeli: pieces on imaginary grids.  The pieces are freely moveable.
+palapeli: Also, Palapeli features real persistency, i.e. everything you do
+palapeli: is saved on your disk immediately.
+palapeli:
+palapeli:
+palapeli: For more information, visit:  http://www.kde.org
+palapeli:
+parley: parley (vocabulary trainer)
+parley:
+parley: Parley is a vocabulary trainer for KDE.
+parley:
+parley: For more information, visit:  http://edu.kde.org/
+parley:
+parley:
+parley:
+parley:
+parley:
+parley:
+perlkde: perlkde (perl bindings for KDE)
+perlkde:
+perlkde: Perl bindings for KDE.
+perlkde:
+perlkde: For more information, visit:  http://www.kde.org
+perlkde:
+perlkde:
+perlkde:
+perlkde:
+perlkde:
+perlkde:
+perlqt: perlqt (Perl OO interface to Qt)
+perlqt:
+perlqt: A Perl Object Oriented interface to the Qt GUI Toolkit.
+perlqt: Access to the KDE Desktop Environment libraries is planned as well.
+perlqt:
+perlqt: For more information, visit:  http://perlqt.sourceforge.net
+perlqt:
+perlqt:
+perlqt:
+perlqt:
+perlqt:
+picmi: picmi (logic puzzle game)
+picmi:
+picmi: Picmi is a single player logic-based puzzle game.
+picmi: The goal is to color cells according to numbers given at the side
+picmi: of the board in order to uncover a hidden pattern or picture. 
+picmi:
+picmi:
+picmi:
+picmi:
+picmi: For more information, visit:  http://www.kde.org
+picmi:
+polkit-kde-agent-1: polkit-kde-agent-1 (KDE polkit authenticator)
+polkit-kde-agent-1:
+polkit-kde-agent-1: This is a polkit authenticator for KDE.
+polkit-kde-agent-1: 
+polkit-kde-agent-1: 
+polkit-kde-agent-1: 
+polkit-kde-agent-1: 
+polkit-kde-agent-1:
+polkit-kde-agent-1: 
+polkit-kde-agent-1:
+polkit-kde-kcmodules-1: polkit-kde-kcmodules-1 (KDE polkit kcmodules)
+polkit-kde-kcmodules-1:
+polkit-kde-kcmodules-1: This package contains the kcm_polkit modules for KDE.
+polkit-kde-kcmodules-1:
+polkit-kde-kcmodules-1:
+polkit-kde-kcmodules-1:
+polkit-kde-kcmodules-1:
+polkit-kde-kcmodules-1:
+polkit-kde-kcmodules-1:
+polkit-kde-kcmodules-1:
+print-manager: print-manager (tool for managing print jobs and printers)
+print-manager:
+print-manager: Print Manager (formerly printer-applet) is a system tray utility
+print-manager: that shows current print jobs, printer warnings, and errors.
+print-manager:
+print-manager:
+print-manager:
+print-manager:
+print-manager: Homepage:
+print-manager:   https://projects.kde.org/projects/kde/kdeutils/print-manager
+print-manager:
+pykde4: pykde4 (Python bindings for KDE4)
+pykde4:
+pykde4: Python bindings for KDE4.
+pykde4:
+pykde4: For more information, visit:  http://www.kde.org
+pykde4:
+pykde4:
+pykde4:
+pykde4:
+pykde4:
+pykde4:
+qtruby: qtruby (Qt bindings for ruby)
+qtruby:
+qtruby: QtRuby is part of Korundum, very complete bindings to both the KDE
+qtruby: API and the Qt APIs. The Korundum package includes both a QtRuby
+qtruby: Qt-only binding along with the full combined Qt/KDE one.
+qtruby: The QtRuby package contains just Qt bindings, with no dependency
+qtruby: on KDE.
+qtruby:
+qtruby: For more information, see:  http://rubyforge.org/projects/korundum/
+qtruby:
+qtruby:
+rocs: rocs (graph theory IDE)
+rocs:
+rocs: Rocs is a Graph Theory IDE for professors and students.
+rocs:
+rocs: For more information, visit:  http://edu.kde.org/
+rocs:
+rocs:
+rocs:
+rocs:
+rocs:
+rocs:
+skanlite: skanlite (a scanning program)
+skanlite:
+skanlite: Skanlite is a light-weight scanning application based on libksane.
+skanlite:
+skanlite:
+skanlite:
+skanlite:
+skanlite:
+skanlite:
+skanlite:
+skanlite:
+smokegen: smokegen (smoke generator)
+smokegen:
+smokegen: Smoke Generator.  The main purpose of SMOKE is making it easier to
+smokegen: write bindings from scripting languages to Qt and KDE - with an
+smokegen: emphasis on ease of use and flexibility.
+smokegen:
+smokegen: For more information, visit:  http://www.kde.org
+smokegen:
+smokegen:
+smokegen:
+smokegen:
+smokekde: smokekde (smoke-kde library)
+smokekde:
+smokekde: Smoke generator.
+smokekde:
+smokekde: For more information, visit:  http://www.kde.org
+smokekde:
+smokekde:
+smokekde:
+smokekde:
+smokekde:
+smokekde:
+smokeqt: smokeqt (bindings for Qt libraries)
+smokeqt:
+smokeqt: This package includes bindings for Qt libraries.
+smokeqt:
+smokeqt: For more information, visit:  http://www.kde.org
+smokeqt:
+smokeqt:
+smokeqt:
+smokeqt:
+smokeqt:
+smokeqt:
+step: step (interactive physics simulator)
+step:
+step: Step is an interactive physical simulator.
+step: It works like this: you place some bodies on the scene, add some
+step: forces such as gravity or springs, then click "Simulate" and Step
+step: shows you how your scene will evolve according to the laws of physics.
+step: With Step you can not only learn but feel how physics works !
+step:
+step: For more information, visit:  http://edu.kde.org/
+step:
+step:
+superkaramba: superkaramba (interactive widget manager)
+superkaramba:
+superkaramba: SuperKaramba is a tool that allows you to easily create
+superkaramba: interactive widgets on your KDE desktop.
+superkaramba:
+superkaramba: Home page:  https://projects.kde.org/projects/kde/kdeutils/
+superkaramba:
+superkaramba:
+superkaramba:
+superkaramba:
+superkaramba:
+svgpart: svgpart (SVG plugin for KDE)
+svgpart:
+svgpart: KPart for viewing SVG files in KDE.
+svgpart:
+svgpart: For more information, visit:  http://www.kde.org
+svgpart:
+svgpart:
+svgpart:
+svgpart:
+svgpart:
+svgpart:
+sweeper: sweeper (remove traces of your activities)
+sweeper:
+sweeper: Sweeper helps to clean unwanted traces the user leaves on the system.
+sweeper:
+sweeper: Home page:  https://projects.kde.org/projects/kde/kdeutils/sweeper
+sweeper:
+sweeper:
+sweeper:
+sweeper:
+sweeper:
+sweeper:
+wicd-kde: wicd-kde (Wicd client built on the KDE Development Platform)
+wicd-kde:
+wicd-kde: A Wicd client built on the KDE Development Platform.
+wicd-kde:
+wicd-kde: For more information, visit:
+wicd-kde:   https://projects.kde.org/projects/extragear/network/wicd-kde
+wicd-kde:
+wicd-kde:
+wicd-kde:
+wicd-kde:
+wicd-kde:
