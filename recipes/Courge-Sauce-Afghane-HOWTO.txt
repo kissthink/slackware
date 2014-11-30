@@ -1,0 +1,57 @@
+==========================
+Courge Sauce Afghane HOWTO  (c) Nicolas Kovacs <info@microlinux.fr>
+==========================
+
+Dernière révision : 30 novembre 2014
+
+Ce HOWTO décrit la confection d'une courge à la sauce afghane
+
+
+Ingrédients
+-----------
+
+  * une tranche de courge
+  * 800 g de tomates pelées en boîte
+  * une branche de céleri
+  * une cuillère à café de curcuma
+  * un peu de piment de chili
+  * 4 gousses d'ail
+  * sel
+
+
+Préparation
+-----------
+
+Écraser les tomates pelées à la main.
+
+Couper les gousses d'ail en petits dés.
+
+Hacher le céleri.
+
+Couper la courge en tranches d'épaisseur moyenne.
+
+Faire revenir deux des quatre gousses d'ail et le céleri dans de l'huile
+d'olive.
+
+Ajouter les tomates et le curcuma.
+
+Faire cuire 10 minutes à feu doux.
+
+Dans une poêle, faire revenir la courge dans de l'huile bien chaude. Il faudra
+bien les saler.
+
+Ajouter les tranches de courge à la sauce.
+
+Faire revenir les deux gousses d'ail restantes dans un peu d'huile sans les
+faire brunir et les ajouter à la préparation.
+
+
+Variante
+--------
+
+On peut remplacer la courge par des tranches d'aubergines. Dans ce cas, il
+vaut mieux les choisir pas trop grosses pour qu'elles aient moins de pépins.
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt
