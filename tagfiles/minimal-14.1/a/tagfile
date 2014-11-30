@@ -19,7 +19,9 @@ grep:ADD
 gzip:ADD
 kbd:ADD
 kernel-firmware:ADD
+kernel-huge:ADD
 kernel-huge-smp:ADD
+kernel-modules:ADD
 kernel-modules-smp:ADD
 kmod:ADD
 lilo:ADD
@@ -69,8 +71,6 @@ isapnptools:SKP
 jfsutils:SKP
 kernel-generic:SKP
 kernel-generic-smp:SKP
-kernel-huge:SKP
-kernel-modules:SKP
 less:SKP
 lha:SKP
 libcgroup:SKP
