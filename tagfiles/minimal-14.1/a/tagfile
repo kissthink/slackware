@@ -28,6 +28,8 @@ procps:ADD
 sed:ADD
 shadow:ADD
 sysvinit:ADD
+sysvinit-functions:ADD
+sysvinit-scripts:ADD
 tar:ADD
 udev:ADD
 util-linux:ADD
@@ -99,8 +101,6 @@ splitvt:SKP
 sysfsutils:SKP
 sysklogd:SKP
 syslinux:SKP
-sysvinit-functions:SKP
-sysvinit-scripts:SKP
 tcsh:SKP
 time:SKP
 tree:SKP
