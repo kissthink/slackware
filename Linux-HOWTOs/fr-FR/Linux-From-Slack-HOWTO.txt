@@ -259,7 +259,6 @@ des paquets dans notre système minimal.
   * xz : programmes de compression et de décompression de fichiers
 
 
-
 Documentation
 -------------
 
