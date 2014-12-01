@@ -59,14 +59,11 @@ suite. Pour l'instant, voici la liste des paquets qu'il nous faut :
   * a/aaa_terminfo
   * a/bash
   * a/bin
-  * a/bzip2
   * a/coreutils
-  * a/cxxlibs
   * a/devs
   * a/e2fsprogs
   * a/elvis
   * a/etc
-  * a/file
   * a/findutils
   * a/glibc-solibs
   * a/glibc-zoneinfo
@@ -93,9 +90,91 @@ suite. Pour l'instant, voici la liste des paquets qu'il nous faut :
   * a/which
   * a/xz
 
-[Description de la procédure d'installation manuelle.]
 
-[Description de l'installation en utilisant les tagfiles.]
+Installation manuelle
+---------------------
+
+Lorsqu'on arrive à l'écran de sélection des groupes de paquets (PACKAGE SERIES
+SELECTION), il faut désélectionner tous les groupes de paquets à l'exception
+du groupe A :
+
+  [*] A     Base Linux system
+
+Dans l'écran subséquent (SELECT PROMPTING MODE), on choisira un des modes
+de sélection "menu" ou "expert" :
+
+  menu      Choose individual packages from interactive menus
+  expert    This is actually the same as the "menu" option
+
+Dans l'écran de sélection des paquets (SELECTING PACKAGES FROM SERIES A), tous
+les paquets sont sélectionnés par défaut. Là, il faut faire le tour de la
+liste et désélectionner tous les paquets dont nous n'avons pas besoin :
+
+  [*] aaa_base
+  [*] aaa_elflibs
+  [*] aaa_terminfo
+  [ ] acl
+  [ ] acpid
+  [ ] apm
+  [ ] attr
+  [*] bash
+  ...
+
+  /!\ Ce mode de sélection est relativement fastidieux, et la probabilité de
+  se tirer dans le pied est relativement élevée. Il suffit de désélectionner
+  par mégarde un seul paquet requis, et le système ne démarrera plus. 
+
+
+Installation semi-automatisée
+-----------------------------
+
+Pour éviter la corvée de sélectionner manuellement chaque paquet, la méthode
+d'installation recommandée est d'utiliser la collection de tagfiles fournis.
+Il s'agit là d'une série de fichiers au format texte simple, censés
+automatiser le processus de sélection des paquets, un peu comme une version
+simplifiée des fichiers Kickstart de Red Hat Enterprise Linux.
+
+Démarrez sur le support d'installation de Slackware (DVD, premier CD-Rom, clé
+USB). Sélectionnez votre disposition clavier, connectez-vous en tant que root
+et partitionnez le disque dur, mais ne démarrez pas encore l'installateur.
+
+Activez le réseau, par exemple :
+
+  root@slackware:/# dhcpcd eth0 
+
+L'environnement d'installation Slackware fournit déjà un répertoire '/tag'
+vide, censé recevoir un jeu de tagfiles. On va donc l'utiliser.
+
+  # cd /tag 
+
+Téléchargez les tagfiles depuis le serveur :
+
+  # wget http://www.microlinux.fr/slackware/stripslack-14.1/core.tar.gz 
+
+Décompressez l'archive téléchargée :
+
+  # tar xvzf core.tar.gz 
+
+Le répertoire '/tag' contient à présent une série de répertoires qui
+correspondent aux jeux de paquets Slackware :
+
+  # ls 
+  a/ ap/ d/ e/ f/ k/ kde/ kdei/ l/ n/ t/ tcl/ x/ xap/ xfce/ y/
+
+Lancez l'installateur Slackware :
+
+  # setup 
+
+PACKAGE SERIES SELECTION : décochez tous les groupes de paquets sauf le groupe
+A, ou alors confirmez la sélection de paquets par défaut. Dans un cas comme
+dans l'autre, les tagfiles vont prendre le dessus et se charger de la
+sélection des paquets. 
+
+SELECT PROMPTING MODE : tagpath - Utiliser un jeu de tagfiles personnalisés.
+
+Path to tagfiles : /tag
+
+À partir de là, procédez comme à l'accoutumée.
 
 
 Le rôle des paquets
@@ -117,15 +196,8 @@ des paquets dans notre système minimal.
   * bin : collection d'utilitaires communément utilisés par les scripts
     système
 
-  * bzip2 : commandes pour compresser et décompresser des données au format
-    éponyme
-
   * coreutils : collection de commandes de base, en particulier toutes celles
     qui ont trait à la gestion des fichiers et répertoires
-
-  * cxxlibs : bibliothèques assurant la compatibilité des applications liées
-    à de plus anciennes versions de la bibliothèque standard C++ avec celle
-    utilisée par le système
 
   * devs : peuple le répertoire '/dev', qui contient les points d'accès entre
     le système et le matériel
@@ -135,9 +207,6 @@ des paquets dans notre système minimal.
   * elvis : éditeur de fichiers par défaut sous Slackware
 
   * etc : fichiers de configuration du système
-
-  * file : contient un outil pour déterminer le type d'un fichier ou des
-    fichiers donnés
 
   * findutils : programmes de recherche de fichiers
 
@@ -189,84 +258,6 @@ des paquets dans notre système minimal.
 
   * xz : programmes de compression et de décompression de fichiers
 
-
-
-Installation
-------------
-
-Pour éviter la corvée de sélectionner manuellement chaque paquet, la méthode
-d'installation recommandée est d'utiliser la collection de tagfiles fournis.
-Il s'agit là d'une série de fichiers au format texte simple, censés
-automatiser le processus de sélection des paquets, un peu comme une version
-simplifiée des fichiers Kickstart de Red Hat Enterprise Linux.
-
-Démarrez sur le support d'installation de Slackware (DVD, premier CD-Rom, clé
-USB). Sélectionnez votre disposition clavier, connectez-vous en tant que root
-et partitionnez le disque dur, mais ne démarrez pas encore l'installateur.
-
-Activez le réseau, par exemple :
-
-  root@slackware:/# dhcpcd eth0 
-
-L'environnement d'installation Slackware fournit déjà un répertoire '/tag'
-vide, censé recevoir un jeu de tagfiles. On va donc l'utiliser.
-
-  # cd /tag 
-
-Téléchargez les tagfiles depuis le serveur :
-
-  # wget http://www.microlinux.fr/slackware/stripslack-14.1/tagfiles.tar.gz 
-
-Décompressez l'archive téléchargée :
-
-  # tar xvzf tagfiles.tar.gz 
-
-Le répertoire '/tag' contient à présent une série de répertoires qui
-correspondent aux jeux de paquets Slackware :
-
-  # ls 
-  a/ ap/ d/ e/ f/ k/ kde/ kdei/ l/ n/ t/ tcl/ x/ xap/ xfce/ y/
-
-Lancez l'installateur Slackware :
-
-  # setup 
-
-PACKAGE SERIES SELECTION : confirmez la sélection de paquets par défaut, étant
-donné que les tagfiles vont prendre le dessus et se charger de la sélection
-des paquets. 
-
-SELECT PROMPTING MODE : tagpath - Utiliser un jeu de tagfiles personnalisés.
-
-Path to tagfiles : /tag
-
-À partir de là, procédez comme à l'accoutumée.
-
-
-Premier redémarrage
--------------------
-
-Voici ce que l'on peut faire après le redémarrage initial :
-
-  1. Choisir un miroir de téléchargement pour 'slackpkg'.
-
-  2. Effectuer la mise à jour initiale.
-
-  3. Construire un initrd.
-
-  4. Basculer vers le noyau GENERIC.
-
-
-Élaguer une installation existante
-----------------------------------
-
-Le script 'scriptslack.sh' peut se charger d'élaguer un système Slackware
-Linux existant. Il utilise 'slackpkg', qui doit donc être configuré au
-préalable :
-
-  # cd stripslack-14.1
-  # ./stripslack.sh
-
-Attention, ce script écorche votre hamster à vif. :o)
 
 
 Documentation

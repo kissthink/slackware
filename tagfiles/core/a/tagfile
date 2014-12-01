@@ -4,14 +4,11 @@ aaa_elflibs:ADD
 aaa_terminfo:ADD
 bash:ADD
 bin:ADD
-bzip2:ADD
 coreutils:ADD
-cxxlibs:ADD
 devs:ADD
 e2fsprogs:ADD
 elvis:ADD
 etc:ADD
-file:ADD
 findutils:ADD
 glibc-solibs:ADD
 glibc-zoneinfo:ADD
@@ -44,10 +41,12 @@ acpid:SKP
 apmd:SKP
 attr:SKP
 btrfs-progs:SKP
+bzip2:SKP
 cpio:SKP
 cpufrequtils:SKP
 cryptsetup:SKP
 cups:SKP
+cxxlibs:SKP
 dbus:SKP
 dcron:SKP
 dialog:SKP
@@ -56,6 +55,7 @@ ed:SKP
 efibootmgr:SKP
 eject:SKP
 elilo:SKP
+file:SKP
 floppy:SKP
 gawk:SKP
 genpower:SKP
