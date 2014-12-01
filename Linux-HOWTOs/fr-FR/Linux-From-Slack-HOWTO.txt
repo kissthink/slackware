@@ -259,6 +259,210 @@ des paquets dans notre système minimal.
   * xz : programmes de compression et de décompression de fichiers
 
 
+Si tout se passe bien, le système démarre jusqu'à l'invite de connexion, et
+nous pouvons nous connecter en tant que root. 
+
+Dans l'état actuel des choses, notre système est utilisable dans la mesure où
+une poule est capable de voler et un cheval de nager. 
+
+
+Rendre le système minimal utilisable
+------------------------------------
+
+Voici ce que nous souhaitons faire avec notre système minimal :
+
+  1.  Démarrer en mode console
+
+  2.  Utiliser le shell Bash
+
+  3.  Éditer des fichiers texte avec Vim
+
+  4.  Afficher les pages man et info
+
+  5.  Gérer les disques et les systèmes de fichiers
+
+  6.  Construire un initrd
+
+  7.  Nous connecter à un réseau
+
+  8.  Gérer les paquets logiciels via le réseau
+
+  9.  Nous connecter à distance avec SSH
+
+  10. Travailler avec l'outil de développement Git
+
+Pour ce faire, nous allons installer les paquets suivants :
+
+  * a/acl 
+  * a/attr 
+  * a/bzip2 
+  * a/cpio
+  * cxxlibs
+  * a/dialog
+  * a/file
+  * a/gawk
+  * a/gettext
+  * a/kernel-generic-*
+  * a/less
+  * a/lvm2
+  * a/mdadm
+  * a/mkinitrd
+  * a/openssl-solibs
+  * a/sysklogd
+  * ap/diffutils
+  * ap/groff
+  * ap/man
+  * ap/man-pages
+  * ap/slackpkg
+  * ap/texinfo
+  * ap/vim
+  * d/git
+  * d/perl
+  * d/python
+  * l/glibc
+  * l/glibc-i18n
+  * l/glibc-profile
+  * l/mpfr
+  * n/ca-certificates
+  * n/curl
+  * n/cyrus-sasl
+  * n/dhcpcd
+  * n/gnupg
+  * n/iproute2
+  * n/iputils
+  * n/net-tools
+  * n/network-scripts
+  * n/openssh
+  * n/wget
+
+Le rôle des paquets supplémentaires
+-----------------------------------
+
+Là encore, jetons un oeil sur le rôle de chacun des paquets supplémentaires
+que nous venons d'installer.
+
+  * a/acl : outils d'administration des listes de contrôle d'accès
+
+  * a/attr : outils de gestion des attributs étendus
+
+  * a/bzip2 : commandes pour compresser et décompresser des données au format
+    éponyme
+
+  * a/cpio : format d'archivage permettant de créer des paquets RPM, également
+    requis pour pouvoir créer l'initrd nécessaire à l'emploi d'un noyau
+    générique
+
+  * cxxlibs : bibliothèques assurant la compatibilité des applications liées
+    à de plus anciennes versions de la bibliothèque standard C++ avec celle
+    utilisée par le système
+
+  * a/dialog : utilitaire permettant de créer des interfaces graphiques en
+    mode texte à partir de scripts shell, utilisé par la plupart des outils
+    Slackware
+
+  * a/file : outil pour déterminer le type d'un fichier 
+
+  * a/gawk : programmes de manipulation de fichiers texte
+
+  * a/gettext : outils pour l'internationalisation et la localisation
+
+  * a/kernel-generic-* : un noyau entièrement modulaire, qui n'embarque aucun
+    support de système de fichiers et doit donc être utilisé avec un initrd
+  
+  * a/less : visualiseur de fichiers texte
+
+  * a/lvm2 : gestionnaire de volumes logiques
+
+  * a/mdadm : outils d'administration pour le RAID logiciel
+
+  * a/mkinitrd : utilitaire nécessaire pour créer l'initrd requis par le noyau
+    générique
+
+  * a/openssl-solibs : bibliothèques partagées de cryptographie
+
+  * a/sysklogd : programmes pour les messages de traces système
+
+  * ap/diffutils : programmes montrant les différences entre fichiers ou
+    répertoires
+
+  * ap/groff : programmes de formatage de texte, utilisés principalement pour
+    les pages man
+
+  * ap/man : programmes pour rechercher et afficher des pages man
+
+  * ap/man-pages : les pages man du Linux Documentation Project (LDP) en
+    version originale
+
+  * ap/slackpkg : outil pour l'installation ou la mise à niveau des paquets
+    Slackware à travers un réseau
+
+  * ap/texinfo : programmes de lecture, écriture et conversion des pages info
+
+  * ap/vim : l'éditeur de texte Vim
+
+  * d/git : système de contrôle de versions
+
+  * d/perl : langage pratique d'extraction et de rapport
+
+  * d/python : l'environnement de développement Python
+
+  * l/glibc : bibliothèque C standard
+
+  * l/glibc-i18n : traductions pour la bibliothèque C standard
+
+  * l/glibc-profile : versions statiques des bibliothèques C 
+
+  * l/mpfr : contient des fonctions pour des maths à précision multiple
+
+  * n/ca-certificates : liste de certificats pour les connexions sécurisées
+
+  * n/curl : contient un utilitaire et une bibliothèque utilisés pour le
+    transfert de fichiers
+
+  * n/cyrus-sasl : simple couche d'authentification et de sécurité, une
+    méthode pour ajouter le support d'authentification aux protocoles basés
+    sur la connexion
+
+  * n/dhcpcd : client DHCP
+
+  * n/gnupg : outil pour effectuer de la communication et du stockage
+    sécurisés
+
+  * n/iproute2 : outils réseau basiques et avancés
+
+  * n/iputils : outils réseau que l'on trouve sur tous les systèmes *NIX
+
+  * n/net-tools : outils réseau de base 
+
+  * n/network-scripts : scripts et fichiers de configuration réseau de base
+
+  * n/openssh : ensemble d'outils permettant des communications sécurisées en
+    utilisant le protocole SSH
+
+  * n/wget : outil pour le téléchargement non-interactif de fichiers distants
+
+
+TODO : depcheck.sh et installer les paquets manquants
+
+
+Configuration
+-------------
+
+Le service '/etc/rc.d/rc.syslog' est activé par défaut, donc il n'y a rien à
+faire pour activer les logs du kernel.
+
+Le réseau n'a pas été configuré lors de l'installation initiale :
+
+  # hostname --fqdn
+  darkstar.example.net
+
+Éditer '/etc/HOSTNAME' et '/etc/hosts' et fournir le nom de la machine.
+
+Enfin, éditer '/etc/rc.d/rc.inet1.conf' pour configurer le réseau.
+
+Redémarrer.
+
+
 Documentation
 -------------
 
