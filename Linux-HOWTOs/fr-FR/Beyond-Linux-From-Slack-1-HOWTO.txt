@@ -4,10 +4,10 @@ Beyond Linux From Slack 1 HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
 
 Dernière révision : 2 décembre 2014
 
-Ce HOWTO décrit l'installation d'un système Slackware 14.1 extrêmement
-minimaliste.
+Ce HOWTO décrit la construction couche par couche de Slackware Linux 14.1
+en partant d'une installation minimaliste telle qu'elle est décrite dans le
+"Linux From Slackware HOWTO". 
 
-  ### BROUILLON ### !!!
 
 Introduction
 ------------
@@ -20,22 +20,96 @@ Au-delà de l'intérêt pédagogique de la démarche, ce document peut égalemen
 servir de guide aux administrateurs chevronnés qui souhaitent constituer une
 bonne base minimaliste pour personnaliser leur système. 
 
-Certaines distributions comme CentOS, Debian, Arch, Crux, Gentoo, LFS, etc.
-permettent assez facilement d'installer un système de base relativement
-réduit, pour ensuite ajouter successivement les composants dont on peut avoir
-besoin pour une configuration spécifique : serveur Web, serveur mail, station
-de travail, poste de travail léger, etc.
 
-La distribution Slackware est organisée différemment, et ses groupes de
-paquets mélangent pêle-mêle les composants requis par un système minimal avec
-ceux que l'on choisirait pour une configuration plus spécifique. La politique
-standard de Slackware requiert plus ou moins explicitement l'installation "à
-la louche" des différents groupes de paquets, à plus forte raison que la
-distribution ne dispose pas de résolveur automatique de dépendances. 
+Objectifs
+---------
 
-Ceci étant dit, il est bien évidemment possible de configurer un système de
-base réduit tout comme dans les distributions citées ci-dessus, et c'est ce
-que nous nous proposons de faire. 
+Pour l'instant, notre système réduit au minimum syndical est fonctionnel dans
+la mesure où une poule est capable de voler et un cheval de nager. Notre
+prochain objectif consiste à étendre ses capacités de la sorte :
+
+  1.  Démarrer en mode console
+
+  2.  Utiliser le shell Bash
+
+  3.  Éditer des fichiers texte avec Vim
+
+  4.  Afficher les pages man et info
+
+  5.  Gérer les disques et les systèmes de fichiers
+
+  6.  Construire un initrd
+
+  7.  Nous connecter à un réseau
+
+  8.  Gérer les paquets logiciels via le réseau
+
+  9.  Nous connecter à distance avec SSH
+
+  10. Travailler avec l'outil de développement Git
+
+
+Gestion des paquets
+-------------------
+
+Nous ne disposons pour l'instant que du seul gestionnaire de paquets
+'pkgtools', et nous n'avons pas encore de réseau. Nous devons donc installer
+les paquets localement à partir d'un CD-Rom, d'un DVD ou d'une clé USB. Par
+exemple :
+
+  # mount /dev/cdrom /mnt/cdrom
+  # cd /mnt/cdrom/slackware/ap
+  # installpkg vim-7.4.050-i486-1.txz
+
+
+L'éditeur Vim
+-------------
+
+Notre système minimal ne dispose que d'une version minimale de l'éditeur Vi.
+Nous allons installer Vim pour plus de confort.
+
+  * ap/vim
+
+Lorsque nous essayons de démarrer Vim, nous obtenons le message d'erreur
+suivant :
+
+  # vim
+  vim: error while loading shared libraries: libperl.so: cannot open shared
+  object file: No such file or directory
+
+Nous allons installer Perl pour remédier à cela :
+
+  * d/perl
+
+Une nouvelle tentative se solde par un nouveau message d'erreur, différent du
+premier :
+
+  # vim
+  vim: error while loading shared libraries: libpython2.7.so.1.0: cannot open
+  shared object file: No such file or directory
+
+Il faut donc installer Python :
+
+  * d/python
+
+
+
+Vue d'ensemble sur les paquets
+------------------------------
+
+  * ap/vim : l'éditeur de texte Vim
+
+  * d/perl : langage pratique d'extraction et de rapport
+
+  * d/python : l'environnement de développement Python
+
+
+
+**************************************************************
+TRAVAIL EN COURS
+**************************************************************
+
+
 
 
 Le minimum syndical
@@ -272,25 +346,6 @@ Rendre le système minimal utilisable
 
 Voici ce que nous souhaitons faire avec notre système minimal :
 
-  1.  Démarrer en mode console
-
-  2.  Utiliser le shell Bash
-
-  3.  Éditer des fichiers texte avec Vim
-
-  4.  Afficher les pages man et info
-
-  5.  Gérer les disques et les systèmes de fichiers
-
-  6.  Construire un initrd
-
-  7.  Nous connecter à un réseau
-
-  8.  Gérer les paquets logiciels via le réseau
-
-  9.  Nous connecter à distance avec SSH
-
-  10. Travailler avec l'outil de développement Git
 
 Pour ce faire, nous allons installer les paquets suivants :
 
@@ -399,13 +454,7 @@ que nous venons d'installer.
 
   * ap/texinfo : programmes de lecture, écriture et conversion des pages info
 
-  * ap/vim : l'éditeur de texte Vim
-
   * d/git : système de contrôle de versions
-
-  * d/perl : langage pratique d'extraction et de rapport
-
-  * d/python : l'environnement de développement Python
 
   * l/glibc : bibliothèque C standard
 

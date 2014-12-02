@@ -266,9 +266,9 @@ des paquets dans notre système minimal.
 Et maintenant ?
 ---------------
 
-Dans l'état actuel des choses, notre système est utilisable dans la mesure où
-une poule est capable de voler et un cheval de nager. Lisez la suite dans le
-"Beyond Linux From Scratch 1 HOWTO". 
+Dans l'état actuel des choses, notre système ne nous sert pas à grand-chose.
+Pour savoir comment le rendre fonctionnel, lisez la suite dans le "Beyond
+Linux From Scratch 1 HOWTO". 
 
 
 Documentation
