@@ -268,7 +268,7 @@ Et maintenant ?
 
 Dans l'état actuel des choses, notre système ne nous sert pas à grand-chose.
 Pour savoir comment le rendre fonctionnel, lisez la suite dans le "Beyond
-Linux From Scratch 1 HOWTO". 
+Linux From Slack 1 HOWTO". 
 
 
 Documentation
