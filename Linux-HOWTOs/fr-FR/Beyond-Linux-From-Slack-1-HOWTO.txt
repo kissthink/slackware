@@ -9,6 +9,15 @@ en partant d'une installation minimaliste telle qu'elle est décrite dans le
 "Linux From Slackware HOWTO". 
 
 
+  * Introduction
+  * Objectifs
+  * Gestion des paquets
+  * L'éditeur Vim
+  * La documentation en ligne
+
+  * Vue d'ensemble sur les paquets
+
+
 Introduction
 ------------
 
@@ -93,9 +102,77 @@ Il faut donc installer Python :
   * d/python
 
 
+La documentation en ligne
+-------------------------
+
+La commande 'man' est fournie par le paquet du même nom :
+
+  * ap/man
+
+Les pages correspondantes se trouvent dans un paquet à part :
+
+  * ap/man-pages
+
+Essayons d'afficher la page man de la commande elle-même :
+
+  # man man
+  sh: /usr/bin/gtbl: No such file or directory
+  sh: /usr/bin/nroff: No such file or directory
+  sh: /usr/bin/less: No such file or directory
+
+Les deux premières commandes sont des outils de formatage de texte contenus
+dans le paquet 'groff' :
+
+  * ap/groff
+
+La troisième commande, c'est le visualiseur 'less' :
+
+  * a/less
+
+Essayons encore :
+
+  # man man
+  /usr/bin/gtbl: error while loading shared libraries: libstdc++.so.6: cannot
+  open shared object file: No such file or directory
+
+Ces bibliothèques partagées sont fournies par le paquet 'cxxlibs' :
+
+  * a/cxxlibs
+
+La commande 'info' est fournie par le paquet 'texinfo' :
+
+  * ap/texinfo
+
+Faisons un test :
+
+  # info info
+
+Enfin, les deux paquets 'linux-faqs' et 'linux-howtos' contiennent une
+collection de tutoriaux sur des sujets spécifiques :
+
+  * f/linux-faqs
+  * f/linux-howtos
+
+Une fois que ces deux paquets sont installés, leur contenu est accessible dans
+les répertoires respectifs '/usr/doc/Linux-FAQs' et '/usr/doc/Linux-HOWTOs'.
+
 
 Vue d'ensemble sur les paquets
 ------------------------------
+
+  * cxxlibs : bibliothèques assurant la compatibilité des applications liées
+    à de plus anciennes versions de la bibliothèque standard C++ avec celle
+    utilisée par le système
+
+  * a/less : visualiseur de fichiers texte
+
+  * ap/groff : programmes de formatage de texte, utilisés principalement pour
+    les pages man
+
+  * ap/man : programmes pour rechercher et afficher des pages man
+
+  * ap/man-pages : les pages man du Linux Documentation Project (LDP) en
+    version originale
 
   * ap/vim : l'éditeur de texte Vim
 
@@ -103,299 +180,16 @@ Vue d'ensemble sur les paquets
 
   * d/python : l'environnement de développement Python
 
+  * f/linux-faqs : collection de questions et de réponses autour de Linux,
+    passablement obsolète par endroits
 
+  * f/linux-howtos : Les HOWTOs du Linux Documentation Project TLDP, qui
+    datent également un peu
 
-**************************************************************
-TRAVAIL EN COURS
-**************************************************************
 
 
+################ ANNEXE (travail en cours) #####################
 
-
-Le minimum syndical
--------------------
-
-Dans un premier temps, nous allons tenter d'installer un système réduit au
-possible. Ce système doit pouvoir faire les trois choses suivantes :
-
-  1. Démarrer en mode console.
-  
-  2. Permettre à l'utilisateur root de se connecter.
-
-  3. Permettre l'installation de paquets fournis sur un CD-Rom ou un DVD.
-
-Et c'est tout. Pas de réseau ni de connexion à distance, pas d'outils de
-développement, pas de pages man et info, et juste la poignée de commandes de
-base pour effectuer le minimum syndical. Nous ajouterons tout ceci par la
-suite. Pour l'instant, voici la liste des paquets qu'il nous faut :
-
-  * a/aaa_base
-  * a/aaa_elflibs
-  * a/aaa_terminfo
-  * a/bash
-  * a/bin
-  * a/coreutils
-  * a/devs
-  * a/e2fsprogs
-  * a/elvis
-  * a/etc
-  * a/findutils
-  * a/glibc-solibs
-  * a/glibc-zoneinfo
-  * a/grep
-  * a/gzip
-  * a/kbd
-  * a/kernel-firmware
-  * a/kernel-huge
-  * a/kernel-huge-smp
-  * a/kernel-modules
-  * a/kernel-modules-smp
-  * a/kmod
-  * a/lilo
-  * a/pkgtools
-  * a/procps
-  * a/sed
-  * a/shadow
-  * a/sysvinit
-  * a/sysvinit-functions
-  * a/sysvinit-scripts
-  * a/tar
-  * a/udev
-  * a/util-linux
-  * a/which
-  * a/xz
-
-
-Installation manuelle
----------------------
-
-Lorsqu'on arrive à l'écran de sélection des groupes de paquets (PACKAGE SERIES
-SELECTION), il faut désélectionner tous les groupes de paquets à l'exception
-du groupe A :
-
-  [*] A     Base Linux system
-
-Dans l'écran subséquent (SELECT PROMPTING MODE), on choisira un des modes
-de sélection "menu" ou "expert" :
-
-  menu      Choose individual packages from interactive menus
-  expert    This is actually the same as the "menu" option
-
-Dans l'écran de sélection des paquets (SELECTING PACKAGES FROM SERIES A), tous
-les paquets sont sélectionnés par défaut. Là, il faut faire le tour de la
-liste et désélectionner tous les paquets dont nous n'avons pas besoin :
-
-  [*] aaa_base
-  [*] aaa_elflibs
-  [*] aaa_terminfo
-  [ ] acl
-  [ ] acpid
-  [ ] apm
-  [ ] attr
-  [*] bash
-  ...
-
-  /!\ Ce mode de sélection est relativement fastidieux, et la probabilité de
-  se tirer dans le pied est relativement élevée. Il suffit de désélectionner
-  par mégarde un seul paquet requis, et le système ne démarrera plus. 
-
-
-Installation semi-automatisée
------------------------------
-
-Pour éviter la corvée de sélectionner manuellement chaque paquet, la méthode
-d'installation recommandée est d'utiliser la collection de tagfiles fournis.
-Il s'agit là d'une série de fichiers au format texte simple, censés
-automatiser le processus de sélection des paquets, un peu comme une version
-simplifiée des fichiers Kickstart de Red Hat Enterprise Linux.
-
-Démarrez sur le support d'installation de Slackware (DVD, premier CD-Rom, clé
-USB). Sélectionnez votre disposition clavier, connectez-vous en tant que root
-et partitionnez le disque dur, mais ne démarrez pas encore l'installateur.
-
-Activez le réseau, par exemple :
-
-  root@slackware:/# dhcpcd eth0 
-
-L'environnement d'installation Slackware fournit déjà un répertoire '/tag'
-vide, censé recevoir un jeu de tagfiles. On va donc l'utiliser.
-
-  # cd /tag 
-
-Téléchargez les tagfiles depuis le serveur :
-
-  # wget http://www.microlinux.fr/slackware/stripslack-14.1/core.tar.gz 
-
-Décompressez l'archive téléchargée :
-
-  # tar xvzf core.tar.gz 
-
-Le répertoire '/tag' contient à présent une série de répertoires qui
-correspondent aux jeux de paquets Slackware :
-
-  # ls 
-  a/ ap/ d/ e/ f/ k/ kde/ kdei/ l/ n/ t/ tcl/ x/ xap/ xfce/ y/
-
-Lancez l'installateur Slackware :
-
-  # setup 
-
-PACKAGE SERIES SELECTION : décochez tous les groupes de paquets sauf le groupe
-A, ou alors confirmez la sélection de paquets par défaut. Dans un cas comme
-dans l'autre, les tagfiles vont prendre le dessus et se charger de la
-sélection des paquets. 
-
-SELECT PROMPTING MODE : tagpath - Utiliser un jeu de tagfiles personnalisés.
-
-Path to tagfiles : /tag
-
-À partir de là, procédez comme à l'accoutumée.
-
-
-Le rôle des paquets
--------------------
-
-La soupe alphabétique de paquets de 'aaa_base' jusqu'à 'xz' n'est pas très
-parlante. Voici donc un petit topo qui essaie de détailler le rôle de chacun
-des paquets dans notre système minimal.
-
-  * aaa_base : arborescence du système
-
-  * aaa_elflibs : collection de bibliothèques de base requises par beaucoup
-    de logiciels
-
-  * aaa_terminfo : descriptions de terminaux, requises pour en utiliser un
-
-  * bash : l'interpréteur de commandes Bourne Again Shell
-
-  * bin : collection d'utilitaires communément utilisés par les scripts
-    système
-
-  * coreutils : collection de commandes de base, en particulier toutes celles
-    qui ont trait à la gestion des fichiers et répertoires
-
-  * devs : peuple le répertoire '/dev', qui contient les points d'accès entre
-    le système et le matériel
-
-  * e2fsprogs : outils de gestion des systèmes de fichiers ext2, ext3 et ext4
-
-  * elvis : éditeur de fichiers par défaut sous Slackware
-
-  * etc : fichiers de configuration du système
-
-  * findutils : programmes de recherche de fichiers
-
-  * glibc-solibs : bibliothèques C partagées du système, contenant les
-    routines essentielles à son fonctionnement
-
-  * glibc-zoneinfo : permet de configurer le fuseau horaire de la machine
-
-  * grep : programme de recherche de chaînes de caractères à l'intérieur de
-    fichiers
-
-  * gzip : programmes de compression et décompression de fichiers
-
-  * kbd : contient les fichiers de tables de caractères, les polices de la
-    console et des outils pour le clavier
-
-  * kernel-firmware : firmwares permettant de gérer certains matériels et
-    distribués séparément du reste du noyau
-
-  * kernel-huge-* : le noyau par défaut de l'installation, avec le support des
-    systèmes de fichiers
-
-  * kernel-modules-* : les modules associés aux noyaux
-
-  * kmod : contient des bibliothèques et des outils pour charger des modules
-    du noyau
-
-  * lilo : chargeur de démarrage
-
-  * pkgtools : outils de gestion des paquets Slackware
-
-  * procps : contient des programmes pour afficher des informations sur les
-    processus en cours d'exécution
-
-  * sed : éditeur de flux
-
-  * shadow : stocke les mots de passe des utilisateurs sous forme cryptée
-
-  * sysvinit* : contrôle du démarrage, de l'exécution et de l'arrêt du système
-
-  * tar : programme d'archivage
-
-  * udev : programmes pour la création dynamique de fichiers de périphérique
-
-  * util-linux : collection d'utilitaires nécessaires au fonctionnement d'un
-    système Linux
-
-  * which : affiche le chemin complet d'une commande installée dans le PATH
-
-  * xz : programmes de compression et de décompression de fichiers
-
-
-Si tout se passe bien, le système démarre jusqu'à l'invite de connexion, et
-nous pouvons nous connecter en tant que root. 
-
-Dans l'état actuel des choses, notre système est utilisable dans la mesure où
-une poule est capable de voler et un cheval de nager. 
-
-
-Rendre le système minimal utilisable
-------------------------------------
-
-Voici ce que nous souhaitons faire avec notre système minimal :
-
-
-Pour ce faire, nous allons installer les paquets suivants :
-
-  * a/acl 
-  * a/attr 
-  * a/bzip2 
-  * a/cpio
-  * cxxlibs
-  * a/dialog
-  * a/file
-  * a/gawk
-  * a/gettext
-  * a/kernel-generic-*
-  * a/less
-  * a/lvm2
-  * a/mdadm
-  * a/mkinitrd
-  * a/openssl-solibs
-  * a/sysklogd
-  * ap/diffutils
-  * ap/groff
-  * ap/man
-  * ap/man-pages
-  * ap/slackpkg
-  * ap/texinfo
-  * ap/vim
-  * d/git
-  * d/perl
-  * d/python
-  * l/glibc
-  * l/glibc-i18n
-  * l/glibc-profile
-  * l/mpfr
-  * n/ca-certificates
-  * n/curl
-  * n/cyrus-sasl
-  * n/dhcpcd
-  * n/gnupg
-  * n/iproute2
-  * n/iputils
-  * n/net-tools
-  * n/network-scripts
-  * n/openssh
-  * n/wget
-
-Le rôle des paquets supplémentaires
------------------------------------
-
-Là encore, jetons un oeil sur le rôle de chacun des paquets supplémentaires
-que nous venons d'installer.
 
   * a/acl : outils d'administration des listes de contrôle d'accès
 
@@ -407,10 +201,6 @@ que nous venons d'installer.
   * a/cpio : format d'archivage permettant de créer des paquets RPM, également
     requis pour pouvoir créer l'initrd nécessaire à l'emploi d'un noyau
     générique
-
-  * cxxlibs : bibliothèques assurant la compatibilité des applications liées
-    à de plus anciennes versions de la bibliothèque standard C++ avec celle
-    utilisée par le système
 
   * a/dialog : utilitaire permettant de créer des interfaces graphiques en
     mode texte à partir de scripts shell, utilisé par la plupart des outils
@@ -425,8 +215,6 @@ que nous venons d'installer.
   * a/kernel-generic-* : un noyau entièrement modulaire, qui n'embarque aucun
     support de système de fichiers et doit donc être utilisé avec un initrd
   
-  * a/less : visualiseur de fichiers texte
-
   * a/lvm2 : gestionnaire de volumes logiques
 
   * a/mdadm : outils d'administration pour le RAID logiciel
@@ -440,14 +228,6 @@ que nous venons d'installer.
 
   * ap/diffutils : programmes montrant les différences entre fichiers ou
     répertoires
-
-  * ap/groff : programmes de formatage de texte, utilisés principalement pour
-    les pages man
-
-  * ap/man : programmes pour rechercher et afficher des pages man
-
-  * ap/man-pages : les pages man du Linux Documentation Project (LDP) en
-    version originale
 
   * ap/slackpkg : outil pour l'installation ou la mise à niveau des paquets
     Slackware à travers un réseau
@@ -491,8 +271,6 @@ que nous venons d'installer.
 
   * n/wget : outil pour le téléchargement non-interactif de fichiers distants
 
-
-TODO : depcheck.sh et installer les paquets manquants
 
 
 Configuration
