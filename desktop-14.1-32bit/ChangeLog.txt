@@ -3,4 +3,6 @@ profile/user-settings-console-1.0-noarch-1_microlinux.txz: Added.
 xfce/aero-1.0-noarch-1_microlinux.txz: Added.
 xfce/gtk-engines-2.20.2-i486-1_microlinux.txz: Added.
 xfce/clearlooks-phenix-theme-20131228-noarch-1_microlinux.txz: Added.
+xfce/xfwm4-theme-axe-1.0-noarch-1_microlinux.txz: Added.
+xfce/elementary-xfce-20141217-noarch-1_microlinux.txz: Added.
 +--------------------------+
