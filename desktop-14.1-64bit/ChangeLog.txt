@@ -5,4 +5,8 @@ xfce/gtk-engines-2.20.2-x86_64-1_microlinux.txz: Added.
 xfce/clearlooks-phenix-theme-20131228-noarch-1_microlinux.txz: Added.
 xfce/xfwm4-theme-axe-1.0-noarch-1_microlinux.txz: Added.
 xfce/elementary-xfce-20141217-noarch-1_microlinux.txz: Added.
+xfce/microlinux-wallpapers-1.0-noarch-1_microlinux.txz: Added.
+x/eurostile-fonts-1.0-noarch-1_microlinux.txz: Added.
+x/google-droid-fonts-20141010-noarch-1_microlinux.txz: Added.
+x/webcore-fonts-3.0-noarch-1_microlinux.txz: Added.
 +--------------------------+
