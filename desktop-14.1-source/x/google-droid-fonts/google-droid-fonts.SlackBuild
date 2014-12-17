@@ -1,9 +1,10 @@
 #!/bin/sh
 
-# Slackware build script for elementary-xfce
+# Slackware build script for google-droid-fonts
 
-# Written by Niki Kovacs <info@microlinux.fr>
-#
+# Ryan P.C. McQuen | Everett, WA | ryan.q@linux.com
+
+# Copyright 2010  Binh Nguyen <binhvng@gmail.com>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -12,7 +13,7 @@
 # 1. Redistributions of this script must retain the above copyright
 #    notice, this list of conditions and the following disclaimer.
 #
-#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
 #  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
 #  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
 #  EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
@@ -22,60 +23,59 @@
 #  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+# Modified by Niki Kovacs <info@microlinux.fr>
 
-PRGNAM=elementary-xfce      
-VERSION=${VERSION:-20141217}  
+PRGNAM=google-droid-fonts
+VERSION=${VERSION:-20141010}
+SRCVERSION=5.x
 BUILD=${BUILD:-1}
-TAG=${TAG:-_microlinux}   
+TAG=${TAG:-_microlinux}
 
 ARCH=noarch
 
 CWD=$(pwd)
-TMP=${TMP:-/tmp/microlinux} 
+TMP=${TMP:-/tmp/microlinux}
 PKG=$TMP/package-$PRGNAM
-OUTPUT=${OUTPUT:-/tmp}  
+OUTPUT=${OUTPUT:-/tmp}
+URL=http://sourceforge.net/projects/slackbuildsdirectlinks/files
 
-set -e 
+set -eu
 
-wget -c http://www.microlinux.fr/download/$PRGNAM-snapshot-$VERSION.tar.bz2
+wget -c $URL/$PRGNAM/platform_frameworks_base-$SRCVERSION-$VERSION-fonts.tar.xz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM
-tar xvf $CWD/$PRGNAM-snapshot-$VERSION.tar.bz2 || exit 1
-cd $PRGNAM || exit 1
+rm -rf $PRGNAM-$VERSION
+mkdir $PRGNAM-$VERSION
+cd $PRGNAM-$VERSION
+tar xvf $CWD/platform_frameworks_base-$SRCVERSION-$VERSION-fonts.tar.xz
 chown -R root:root .
-find . \
- \( -perm 777 -o -perm 775 -o -perm 711 -o -perm 555 -o -perm 511 \) \
- -exec chmod 755 {} \; -o \
- \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
- -exec chmod 644 {} \;
+find -L . \
+ \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
+  -o -perm 511 \) -exec chmod 755 {} \; -o \
+ \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
+  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-mkdir -p $PKG/usr/share/icons
+mkdir -p $PKG/usr/share/fonts/TTF
+cp -a platform_frameworks_base-$SRCVERSION-fonts/fonts/*.ttf $PKG/usr/share/fonts/TTF
 
-cp -a elementary-xfce \
-      elementary-xfce-dark \
-      elementary-xfce-darker \
-      elementary-xfce-darkest \
-      $PKG/usr/share/icons/
-
-# Slackware branding (cannibalized from Faenza icon theme)
-find $PKG/usr/share/icons/ -name 'start-here*' | xargs rm -f
-find $PKG/usr/share/icons/ -name 'distributor-logo*' | xargs rm -f
-tar xvzf $CWD/slackware-branding.tar.gz -C $PKG/usr/share/icons/elementary-xfce/
+# Create a font config file. It was taken from
+# http://www.vcn.bc.ca/~dugan/slackware-fonts/
+mkdir -p $PKG/etc/fonts/conf.avail
+cat $CWD/35-droid.conf > $PKG/etc/fonts/conf.avail/35-droid.conf
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a README elementary-xfce/{AUTHORS,CONTRIBUTORS,LICENSE} \
-  $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
+cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
 
 # Cleanup
 cd $TMP
-rm -rf $PRGNAM $PKG
+rm -rf $PRGNAM-$VERSION $PKG
