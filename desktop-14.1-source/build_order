@@ -1,6 +1,8 @@
 # Build order
 profile/user-settings-console
 xfce/aero
+xfce/gtk-engines
+xfce/clearlooks-phenix-theme
 
 
 
