@@ -69,6 +69,7 @@ Accessoires
   [ ] Brasero
   [ ] Gnote
   [ ] Éditeur de texte simple
+  [ ] Recherche de fichiers
   [ ] Calculatrice
   [ ] Gestionnaire d'archives
   [ ] Gestion des formats d'archivage 
@@ -90,9 +91,10 @@ Environnement de bureau
   [*] Thème graphique Clearlooks Phenix
   [*] Bordures de fenêtres Axe Rounded
   [*] Pointeur Aero
-  [ ] Entrées de menu personnalisées
+  [*] Entrées de menu personnalisées
   [ ] Configuration par défaut
   [ ] Profil par défaut pour les nouveaux utilisateurs
+  [ ] Gestionnaire de connexion
 
 
 ------------------------------------------------------------------------------
