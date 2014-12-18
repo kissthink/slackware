@@ -11,5 +11,9 @@ x/google-droid-fonts
 x/webcore-fonts
 xap/mozilla-firefox-langpack
 xap/mozilla-thunderbird-langpack
+l/libgnomecanvas
+x/gdm
+xap/libreoffice
+#xap/libreoffice --> build manually
 
 

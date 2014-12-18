@@ -1,6 +1,10 @@
 Thu Dec 18 09:25:13 CET 2014
 xap/mozilla-firefox-langpack-31.3.0-i486-1_microlinux.txz: Added.
 xap/mozilla-thunderbird-langpack-31.3.0-i486-1_microlinux.txz: Added.
+l/libgnomecanvas-2.30.3-i486-1_microlinux.txz: Added.
+x/gdm-2.20.11-i486-1_microlinux.txz: Added.
+xap/libreoffice-langpack-fr-4.2.8-i586-1_microlinux.txz: Added.
+xap/libreoffice-langpack-de-4.2.8-i586-1_microlinux.txz: Added.
 +--------------------------+
 Wed Dec 17 10:48:25 CET 2014
 profile/user-settings-console-1.0-noarch-1_microlinux.txz: Added.
