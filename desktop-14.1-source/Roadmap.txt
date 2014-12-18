@@ -28,7 +28,9 @@ Internet
 Bureautique
 -----------
 
-  [ ] LibreOffice
+  [*] LibreOffice
+  [*] Traductions LibreOffice
+  [ ] Aide en ligne LibreOffice
   [*] Jeu de polices TrueType
   [ ] Evince
   [ ] Gestion des e-books
