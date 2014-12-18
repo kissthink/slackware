@@ -2,9 +2,7 @@
 
 # Slackware build script for google-droid-fonts
 
-# Ryan P.C. McQuen | Everett, WA | ryan.q@linux.com
-
-# Copyright 2010  Binh Nguyen <binhvng@gmail.com>
+# Copyright 2010  Binh Nguyen <binhnguyen@fastmail.fm>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -27,8 +25,7 @@
 # Modified by Niki Kovacs <info@microlinux.fr>
 
 PRGNAM=google-droid-fonts
-VERSION=${VERSION:-20141010}
-SRCVERSION=5.x
+VERSION=${VERSION:-20100409}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
@@ -38,11 +35,11 @@ CWD=$(pwd)
 TMP=${TMP:-/tmp/microlinux}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
-URL=http://sourceforge.net/projects/slackbuildsdirectlinks/files
 
 set -eu
 
-wget -c $URL/$PRGNAM/platform_frameworks_base-$SRCVERSION-$VERSION-fonts.tar.xz
+
+wget -c ftp://mirrors3.kernel.org/fedora-secondary/development/rawhide/source/SRPMS/$PRGNAM-$VERSION-2.fc15.src.rpm
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -50,16 +47,16 @@ cd $TMP
 rm -rf $PRGNAM-$VERSION
 mkdir $PRGNAM-$VERSION
 cd $PRGNAM-$VERSION
-tar xvf $CWD/platform_frameworks_base-$SRCVERSION-$VERSION-fonts.tar.xz
+rpm2cpio < $CWD/$PRGNAM-$VERSION-2.fc15.src.rpm | cpio -imdv
 chown -R root:root .
-find -L . \
- \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
-  -o -perm 511 \) -exec chmod 755 {} \; -o \
- \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
-  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+find . \
+ \( -perm 777 -o -perm 775 -o -perm 711 -o -perm 555 -o -perm 511 \) \
+ -exec chmod 755 {} \; -o \
+ \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
+ -exec chmod 644 {} \;
 
 mkdir -p $PKG/usr/share/fonts/TTF
-cp -a platform_frameworks_base-$SRCVERSION-fonts/fonts/*.ttf $PKG/usr/share/fonts/TTF
+cp -a *.ttf $PKG/usr/share/fonts/TTF
 
 # Create a font config file. It was taken from
 # http://www.vcn.bc.ca/~dugan/slackware-fonts/
@@ -67,6 +64,7 @@ mkdir -p $PKG/etc/fonts/conf.avail
 cat $CWD/35-droid.conf > $PKG/etc/fonts/conf.avail/35-droid.conf
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a NOTICE README.txt $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
@@ -77,5 +75,6 @@ cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
 
 # Cleanup
-cd $TMP
+cd $TMP          
 rm -rf $PRGNAM-$VERSION $PKG
+

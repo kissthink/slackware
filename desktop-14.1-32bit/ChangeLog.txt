@@ -5,6 +5,8 @@ l/libgnomecanvas-2.30.3-i486-1_microlinux.txz: Added.
 x/gdm-2.20.11-i486-1_microlinux.txz: Added.
 xap/libreoffice-langpack-fr-4.2.8-i586-1_microlinux.txz: Added.
 xap/libreoffice-langpack-de-4.2.8-i586-1_microlinux.txz: Added.
+x/google-droid-fonts-20100409-noarch-1_microlinux.txz: Downgraded.
+	Droid Sans is missing in the new release. Go figure.
 +--------------------------+
 Wed Dec 17 10:48:25 CET 2014
 profile/user-settings-console-1.0-noarch-1_microlinux.txz: Added.
