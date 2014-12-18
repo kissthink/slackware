@@ -15,5 +15,11 @@ l/libgnomecanvas
 x/gdm
 xap/libreoffice
 #xap/libreoffice --> build manually
+ap/sbopkg
+ap/hplip
+ap/recode
+ap/unrar
+ap/cdlabelgen
+ap/p7zip
 
 
