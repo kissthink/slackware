@@ -12,10 +12,10 @@ Internet
 --------
 
   [*] Mozilla Firefox
-  [ ] Traductions Mozilla Firefox
+  [*] Traductions Mozilla Firefox
   [ ] Plug-in Flash
   [*] Mozilla Thunderbird
-  [ ] Traductions Mozilla Thunderbird
+  [*] Traductions Mozilla Thunderbird
   [*] Messagerie instantanée
   [ ] Transmission
   [*] GFTP
