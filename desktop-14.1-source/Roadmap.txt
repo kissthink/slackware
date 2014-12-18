@@ -1,0 +1,99 @@
+=======
+Roadmap (c) Nicolas Kovacs <info@microlinux.fr>
+=======
+
+Dernière révision : 18 décembre 2014
+
+Ce document fournit une liste assez exhaustive des éléments qui constituent un
+poste de travail raisonnablement complet.
+
+
+Internet
+--------
+
+  [*] Mozilla Firefox
+  [ ] Traductions Mozilla Firefox
+  [ ] Plug-in Flash
+  [*] Mozilla Thunderbird
+  [ ] Traductions Mozilla Thunderbird
+  [*] Messagerie instantanée
+  [ ] Transmission
+  [*] GFTP
+  [ ] Filezilla
+  [ ] Remmina
+  [ ] Dropbox
+  [ ] Skype
+
+
+Bureautique
+-----------
+
+  [ ] LibreOffice
+  [*] Jeu de polices TrueType
+  [ ] Evince
+  [ ] Gestion des e-books
+  [ ] Logiciel de dactylographie
+
+
+Graphisme
+---------
+
+  [*] GIMP
+  [ ] Simple Scan
+  [ ] Capture d'écran
+  [ ] Visionneuse d'images
+  [ ] Gestion des appareils photo PTP 
+  [ ] Confection de pochettes CD
+  [ ] Inkscape
+  [ ] Scribus
+
+
+Multimédia
+----------
+
+  [ ] Lecteur audio  
+  [ ] Lecteur vidéo
+  [ ] Codecs et plug-ins audio
+  [ ] Décryptage de DVD
+  [ ] Gestion des iPods
+  [ ] Extracteur audio
+  [ ] Gestion des tags ID3
+  [ ] Convertisseur multimédia
+  [ ] Audacity
+  [ ] Openshot
+
+
+Accessoires
+-----------
+
+  [ ] Brasero
+  [ ] Gnote
+  [ ] Éditeur de texte simple
+  [ ] Calculatrice
+  [ ] Gestionnaire d'archives
+  [ ] Gestion des formats d'archivage 
+  [ ] Utilitaire pour formater les clés USB
+
+
+Système
+-------
+
+  [ ] Conky
+  [ ] VirtualBox
+  [ ] Wine
+
+
+Environnement de bureau
+-----------------------
+
+  [*] Jeu d'icônes Elementary Xfce
+  [*] Thème graphique Clearlooks Phenix
+  [*] Bordures de fenêtres Axe Rounded
+  [*] Pointeur Aero
+  [ ] Entrées de menu personnalisées
+  [ ] Configuration par défaut
+  [ ] Profil par défaut pour les nouveaux utilisateurs
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt

@@ -1,0 +1,54 @@
+=======
+Roadmap (c) Nicolas Kovacs <info@microlinux.fr>
+=======
+
+Dernière révision : 18 décembre 2014
+
+Ce document fournit une liste assez exhaustive des éléments qui peuvent
+constituer un serveur raisonnablement complet.
+
+
+Serveur de réseau local
+-----------------------
+
+  [ ] Système de base
+  [ ] Pare-feu 
+  [ ] Serveur Dnsmasq
+  [ ] Client/Serveur NTP
+  [ ] Serveur MySQL
+  [ ] Serveur LAMP Intranet
+  [ ] Serveur FTP local
+  [ ] Gestion des quotas
+  [ ] Serveur de fichiers Samba
+  [ ] Serveur d'impression CUPS
+  [ ] Impression mixte Samba + CUPS
+  [ ] Serveur NIS/NFS
+  [ ] Gestion des quotas
+  [ ] Serveur proxy Squid
+  [ ] Proxy filtrant SquidGuard
+  [ ] Filtrage des virus Squid-ClamAV
+  [ ] Statistiques réseau SquidAnalyzer
+  [ ] Sauvegardes incrémentales
+  [ ] Authentification FreeIPA
+
+
+Serveur dédié
+-------------
+
+  [ ] Système de base
+  [ ] Pare-feu 
+  [ ] Client NTP
+  [ ] Serveur BIND
+  [ ] Serveur LAMP public
+  [ ] Serveur mail Postfix/Dovecot
+  [ ] Listes de diffusion
+  [ ] Filtrage des spams Spamassassin
+  [ ] Filtrage des virus ClamAV
+  [ ] Greylisting Postgrey
+  [ ] Webmail Roundcube
+  [ ] Serveur de flux audio Icecast/MPD
+  [ ] Cloud privé Owncloud
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt
