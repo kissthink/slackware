@@ -8,6 +8,13 @@ xap/libreoffice-langpack-fr-4.2.8-x86_64-1_microlinux.txz: Added.
 xap/libreoffice-langpack-de-4.2.8-x86_64-1_microlinux.txz: Added.
 x/google-droid-fonts-20100409-noarch-1_microlinux.txz: Downgraded.
 	Droid Sans is missing in the new release. Go figure.
+ap/sbopkg-0.37.0-noarch-1_microlinux.txz: Added.
+ap/hplip-3.14.10-x86_64-1_microlinux.txz: Upgraded.
+  Support for recent HP printers.
+ap/recode-3.7_beta2-x86_64-1_microlinux.txz: Added.
+ap/unrar-5.0.14-x86_64-1_microlinux.txz: Added.
+ap/cdlabelgen-4.3.0-noarch-1_microlinux.txz: Added.
+ap/p7zip-9.20.1-x86_64-1_microlinux.txz: Added.
 +--------------------------+
 Wed Dec 17 10:56:31 CET 2014
 profile/user-settings-console-1.0-noarch-1_microlinux.txz: Added.

@@ -42,7 +42,7 @@ Graphisme
 
   [*] GIMP
   [ ] Simple Scan
-  [ ] Capture d'écran
+  [*] Capture d'écran
   [ ] Visionneuse d'images
   [ ] Gestion des appareils photo PTP 
   [ ] Confection de pochettes CD
@@ -74,7 +74,7 @@ Accessoires
   [ ] Recherche de fichiers
   [ ] Calculatrice
   [ ] Gestionnaire d'archives
-  [ ] Gestion des formats d'archivage 
+  [*] Gestion des formats d'archivage 
   [ ] Utilitaire pour formater les clés USB
 
 
