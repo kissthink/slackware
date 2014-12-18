@@ -1,9 +1,13 @@
 Thu Dec 18 09:31:32 CET 2014
 xap/mozilla-firefox-langpack-31.3.0-x86_64-1_microlinux.txz: Added.
 xap/mozilla-thunderbird-langpack-31.3.0-x86_64-1_microlinux.txz: Added.
-slackware64/l/libgnomecanvas-2.30.3-x86_64-1_microlinux.txz
-slackware64/x/gdm-2.20.11-x86_64-1_microlinux.txz
-slackware64/xap/libreoffice-4.2.8-x86_64-1_microlinux.txz
+l/libgnomecanvas-2.30.3-x86_64-1_microlinux.txz: Added.
+x/gdm-2.20.11-x86_64-1_microlinux.txz: Added.
+xap/libreoffice-4.2.8-x86_64-1_microlinux.txz: Added.
+xap/libreoffice-langpack-fr-4.2.8-x86_64-1_microlinux.txz: Added.
+xap/libreoffice-langpack-de-4.2.8-x86_64-1_microlinux.txz: Added.
+x/google-droid-fonts-20100409-noarch-1_microlinux.txz: Downgraded.
+	Droid Sans is missing in the new release. Go figure.
 +--------------------------+
 Wed Dec 17 10:56:31 CET 2014
 profile/user-settings-console-1.0-noarch-1_microlinux.txz: Added.
