@@ -96,7 +96,7 @@ Environnement de bureau
   [*] Entrées de menu personnalisées
   [ ] Configuration par défaut
   [ ] Profil par défaut pour les nouveaux utilisateurs
-  [ ] Gestionnaire de connexion
+  [*] Gestionnaire de connexion
 
 
 ------------------------------------------------------------------------------
