@@ -1,3 +1,6 @@
+Fri Dec 19 06:55:29 CET 2014
+d/jdk-7u71-x86_64-1_microlinux.txz: Added.
++--------------------------+
 Thu Dec 18 09:31:32 CET 2014
 xap/mozilla-firefox-langpack-31.3.0-x86_64-1_microlinux.txz: Added.
 xap/mozilla-thunderbird-langpack-31.3.0-x86_64-1_microlinux.txz: Added.
