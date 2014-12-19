@@ -1,5 +1,12 @@
 Fri Dec 19 06:38:07 CET 2014
 d/jdk-7u71-i586-1_microlinux.txz: Added.
+ap/lame-3.99.5-i486-1_microlinux.txz: Added.
+l/x264-20131101-i486-1_microlinux.txz: Added.
+l/enca-1.15-i486-1_microlinux.txz: Added.
+l/libass-0.10.2-i486-1_microlinux.txz: Added.
+l/libaacs-0.7.1-i486-1_microlinux.txz: Added.
+l//libbluray-0.6.2-i486-1_microlinux.txz: Added.
+l/celt-0.11.3-i486-1_microlinux.txz: Added.
 +--------------------------+
 Thu Dec 18 09:25:13 CET 2014
 xap/mozilla-firefox-langpack-31.3.0-i486-1_microlinux.txz: Added.

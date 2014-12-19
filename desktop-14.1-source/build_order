@@ -22,5 +22,12 @@ ap/unrar
 ap/cdlabelgen
 ap/p7zip
 d/jdk
+ap/lame
+l/x264
+l/enca
+l/libass
+l/libaacs
+l/libbluray
+l/celt
 
 
