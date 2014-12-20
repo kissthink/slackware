@@ -29,5 +29,13 @@ l/libass
 l/libaacs
 l/libbluray
 l/celt
+l/libdc1394
+l/libmp4v2
+ap/faac
+l/frei0r
+l/gsm
+l/libiec61883
+l/libavc1394
+l/libilbc
 
 
