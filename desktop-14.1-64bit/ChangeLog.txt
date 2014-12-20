@@ -1,3 +1,13 @@
+Sat Dec 20 07:51:44 CET 2014
+l/libdc1394-2.2.2-x86_64-1_microlinux.txz: Added.
+l/libmp4v2-2.0.0-x86_64-1_microlinux.txz: Added.
+ap/faac-1.28-x86_64-1_microlinux.txz: Added.
+l/frei0r-1.4-x86_64-1_microlinux.txz: Added.
+l/gsm-1.0.13-x86_64-1_microlinux.txz: Added.
+l/libiec61883-1.2.0-x86_64-1_microlinux.txz: Added.
+l/libavc1394-0.5.4-x86_64-1_microlinux.txz: Added.
+l/libilbc-2.0.2-x86_64-1_microlinux.txz: Added.
++--------------------------+
 Fri Dec 19 06:55:29 CET 2014
 d/jdk-7u71-x86_64-1_microlinux.txz: Added.
 ap/lame-3.99.5-x86_64-1_microlinux.txz: Added.
