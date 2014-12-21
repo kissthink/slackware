@@ -13,6 +13,23 @@ ap/twolame-0.3.13-x86_64-1_microlinux.txz: Added.
 l/libvpx-1.3.0-x86_64-1_microlinux.txz: Added.
 l/xvidcore-1.3.2-x86_64-1_microlinux.txz: Added.
 xap/ffmpeg-2.1.5-x86_64_custom-1_microlinux.txz: Added.
+l/libcdaudio-0.99.12p2-x86_64-1_microlinux.txz: Added.
+ap/dirac-1.0.2-x86_64-1_microlinux.txz: Added.
+l/libdca-0.0.5-x86_64-1_microlinux.txz: Added.
+l/libdvdnav-4.2.0-x86_64-1_microlinux.txz: Added.
+ap/faad2-2.7-x86_64-1_microlinux.txz: Added.
+l/libkate-0.4.1-x86_64-1_microlinux.txz: Added.
+l/libmms-0.6.2-x86_64-1_microlinux.txz: Added.
+l/libmusicbrainz-2.1.5-x86_64-1_microlinux.txz: Added.
+l/soundtouch-1.7.1-x86_64-1_microlinux.txz: Added.
+l/gst-plugins-bad-0.10.23-x86_64-1_microlinux.txz: Added.
+l/a52dec-0.7.4-x86_64-1_microlinux.txz: Added.
+l/libmpeg2-0.5.1-x86_64-1_microlinux.txz: Added.
+l/gst-plugins-ugly-0.10.19-x86_64-1_microlinux.txz: Added.
+l/libdv-1.0.0-x86_64-1_microlinux.txz: Added.
+l/libcuefile-r475-x86_64-1_microlinux.txz: Added.
+l/libreplaygain-r475-x86_64-1_microlinux.txz: Added.
+ap/musepack-tools-r475-x86_64-1_microlinux.txz: Added.
 +--------------------------+
 Sat Dec 20 07:51:44 CET 2014
 l/libdc1394-2.2.2-x86_64-1_microlinux.txz: Added.
