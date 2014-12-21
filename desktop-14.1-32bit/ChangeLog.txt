@@ -13,6 +13,22 @@ ap/twolame-0.3.13-i486-1_microlinux.txz: Added.
 l/libvpx-1.3.0-i486-1_microlinux.txz: Added.
 l/xvidcore-1.3.2-i486-1_microlinux.txz: Added.
 xap/ffmpeg-2.1.5-i686_custom-1_microlinux.txz: Added.
+l/libcdaudio-0.99.12p2-i486-1_microlinux.txz: Added.
+ap/dirac-1.0.2-i486-2_microlinux.txz: Added.
+l/libdca-0.0.5-i486-1_microlinux.txz: Added.
+l/libdvdnav-4.2.0-i486-1_microlinux.txz: Added.
+ap/faad2-2.7-i486-1_microlinux.txz: Added.
+l/libkate-0.4.1-i486-1_microlinux.txz: Added.
+l/libmms-0.6.2-i486-1_microlinux.txz: Added.
+l/libmusicbrainz-2.1.5-i486-1_microlinux.txz: Added.
+l/soundtouch-1.7.1-i486-1_microlinux.txz: Added.
+l/gst-plugins-bad-0.10.23-i486-1_microlinux.txz: Added.
+l/a52dec-0.7.4-i486-1_microlinux.txz: Added.
+l/libmpeg2-0.5.1-i486-1_microlinux.txz: Added.
+l/gst-plugins-ugly-0.10.19-i486-1_microlinux.txz: Added.
+l/libdv-1.0.0-i486-1_microlinux.txz: Added.
+l/libcuefile-r475-i486-1_microlinux.txz: Added.
+ap/musepack-tools-r475-i486-1_microlinux.txz: Added.
 +--------------------------+
 Sat Dec 20 07:18:46 CET 2014
 l/libdc1394-2.2.2-i486-1_microlinux.txz: Added.

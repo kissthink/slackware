@@ -51,5 +51,23 @@ ap/twolame
 l/libvpx
 l/xvidcore
 xap/ffmpeg
+l/libcdaudio
+ap/dirac
+l/libdca
+l/libdvdnav
+ap/faad2
+l/libkate
+l/libmms
+l/libmusicbrainz
+l/soundtouch
+l/gst-plugins-bad
+l/a52dec
+l/libmpeg2
+l/gst-plugins-ugly
+l/libdv
+l/libcuefile
+l/libreplaygain
+ap/musepack-tools
+
 
 
