@@ -14,7 +14,7 @@ l/libvpx-1.3.0-i486-1_microlinux.txz: Added.
 l/xvidcore-1.3.2-i486-1_microlinux.txz: Added.
 xap/ffmpeg-2.1.5-i686_custom-1_microlinux.txz: Added.
 l/libcdaudio-0.99.12p2-i486-1_microlinux.txz: Added.
-ap/dirac-1.0.2-i486-2_microlinux.txz: Added.
+ap/dirac-1.0.2-i486-1_microlinux.txz: Added.
 l/libdca-0.0.5-i486-1_microlinux.txz: Added.
 l/libdvdnav-4.2.0-i486-1_microlinux.txz: Added.
 ap/faad2-2.7-i486-1_microlinux.txz: Added.
