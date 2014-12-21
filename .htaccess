@@ -46,6 +46,9 @@ AddDefaultCharset utf-8
   AddIcon       /slackware/repository-layout/accessories-text-editor.png -HOWTO.txt
   AddIcon       /slackware/repository-layout/preferences-system.png tools
   AddIcon       /slackware/repository-layout/edit-copy.png template
+  AddIcon       /slackware/repository-layout/xfce.png desktop-14.1-32bit
+  AddIcon       /slackware/repository-layout/xfce.png desktop-14.1-64bit
+  AddIcon       /slackware/repository-layout/xfce.png desktop-14.1-source
   AddIcon       /slackware/repository-layout/server.png server-14.0-32bit
   AddIcon       /slackware/repository-layout/server.png server-14.0-64bit
   AddIcon       /slackware/repository-layout/server.png server-14.0-source
@@ -75,6 +78,9 @@ AddDefaultCharset utf-8
   AddDescription "Helper scripts" tools
   AddDescription "Obsolete software" pasture
   AddDescription "Microlinux test bench" testing
+  AddDescription "Work In Progress" desktop-14.1-32bit
+  AddDescription "Work In Progress" desktop-14.1-64bit
+  AddDescription "Work In Progress" desktop-14.1-source
   AddDescription "Microlinux Enterprise Desktop Base 14.1 32-bit" desktop-base-14.1-32bit
   AddDescription "Microlinux Enterprise Desktop Base 14.1 64-bit" desktop-base-14.1-64bit
   AddDescription "Microlinux Enterprise Desktop Base 14.1 source" desktop-base-14.1-source
