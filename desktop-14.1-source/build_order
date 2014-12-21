@@ -37,5 +37,19 @@ l/gsm
 l/libiec61883
 l/libavc1394
 l/libilbc
+l/openjpeg
+l/ladspa_sdk
+l/libmodplug
+l/OpenAL
+ap/opencore-amr
+l/opus
+l/rtmpdump
+d/orc
+l/schroedinger
+ap/speex
+ap/twolame
+l/libvpx
+l/xvidcore
+xap/ffmpeg
 
 

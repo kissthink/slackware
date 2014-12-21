@@ -271,5 +271,13 @@ Sur Github.com, cliquer sur le nom du dépôt > 'Settings' >
 Confirmer la suppression en tapant le nom du dépôt.
 
 
+Astuces
+-------
+
+Revenir en arrière si l'on a ajouté un fichier par mégarde avec 'git add' :
+
+  # git reset HEAD <fichier>
+
+
 ------------------------------------------------------------------------------
 # vim: syntax=txt
