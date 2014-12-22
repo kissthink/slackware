@@ -68,6 +68,9 @@ l/libdv
 l/libcuefile
 l/libreplaygain
 ap/musepack-tools
-
+l/mplayer-codecs
+xap/MPlayer
+l/libdvdcss
+l/flashplayer-plugin
 
 
