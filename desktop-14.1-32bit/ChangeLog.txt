@@ -8,6 +8,16 @@ l/libquicktime-1.2.4-i486-1_microlinux.txz: Added.
 xap/mjpegtools-2.1.0-i486-1_microlinux.txz: Added.
 xap/transcode-1.1.7-i486-1_microlinux.txz: Added.
 xap/transmission-2.84-i486-1_microlinux.txz: Added.
+ap/vcdimager-0.7.24-i486-1_microlinux.txz: Added.
+l/cddb-py-1.4-i486-1_microlinux.txz: Added.
+l/id3lib-3.8.3-i486-1_microlinux.txz: Added.
+l/libmusicbrainz3-3.0.3-i486-1_microlinux.txz: Added.
+l/gstreamer1-1.4.1-i486-1_microlinux.txz: Added.
+l/gst1-plugins-base-1.4.1-i486-1_microlinux.txz: Added.
+l/gst1-plugins-good-1.4.1-i486-1_microlinux.txz: Added.
+l/gst1-plugins-bad-1.4.1-i486-1_microlinux.txz: Added.
+l/gst1-plugins-ugly-1.4.1-i486-1_microlinux.txz: Added.
+l/gst1-libav-1.4.1-i486-1_microlinux.txz: Added.
 +--------------------------+
 Sun Dec 21 05:14:58 CET 2014
 l/openjpeg-1.5.1-i486-1_microlinux.txz: Added.
