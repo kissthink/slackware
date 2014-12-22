@@ -72,5 +72,11 @@ l/mplayer-codecs
 xap/MPlayer
 l/libdvdcss
 l/flashplayer-plugin
+l/gst-ffmpeg
+l/libquicktime
+xap/mjpegtools
+xap/transcode
+xap/transmission
+
 
 
