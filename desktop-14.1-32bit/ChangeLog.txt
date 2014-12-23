@@ -1,3 +1,18 @@
+Tue Dec 23 06:51:32 CET 2014
+d/lua-5.1.5-i486-1_microlinux.txz: Added.
+l/imlib2-1.4.6-i486-1_microlinux.txz: Added.
+d/scons-2.3.4-i486-1_microlinux.txz: Added.
+l/tolua++-1.0.93-i486-1_microlinux.txz: Added.
+d/pysetuptools-7.0-i486-1_microlinux.txz: Added.
+l/protobuf-2.5.0-i486-1_microlinux.txz: Added.
+l/wxGTK-2.8.12-i486-1_microlinux.txz: Added.
+l/cryptopp-5.6.2-i486-1_microlinux.txz: Added.
+l/BeautifulSoup-3.2.1-i486-1_microlinux.txz: Added.
+l/lxml-3.4.0-i486-1_microlinux.txz: Added.
+d/numpy-1.9.1-i486-1_microlinux.txz: Added.
+l/gsl-1.16-i486-1_microlinux.txz: Added.
+l/libsigc++-2.2.11-i486-1_microlinux.txz: Added.
++--------------------------+
 Mon Dec 22 06:08:01 CET 2014
 l/mplayer-codecs-20110131-i486-1_microlinux.txz: Added.
 xap/MPlayer-1.1.1-i486-1_microlinux.txz: Added.
