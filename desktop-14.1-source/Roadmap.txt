@@ -13,11 +13,11 @@ Internet
 
   [*] Mozilla Firefox
   [*] Traductions Mozilla Firefox
-  [ ] Plug-in Flash
+  [*] Plug-in Flash
   [*] Mozilla Thunderbird
   [*] Traductions Mozilla Thunderbird
   [*] Messagerie instantanée
-  [ ] Transmission
+  [*] Transmission
   [*] GFTP
   [ ] Filezilla
   [ ] Remmina
@@ -55,8 +55,8 @@ Multimédia
 
   [ ] Lecteur audio  
   [ ] Lecteur vidéo
-  [ ] Codecs et plug-ins audio
-  [ ] Décryptage de DVD
+  [*] Codecs et plug-ins audio
+  [*] Décryptage de DVD
   [ ] Gestion des iPods
   [ ] Extracteur audio
   [ ] Gestion des tags ID3

@@ -100,6 +100,16 @@ l/lxml
 d/numpy
 l/gsl
 l/libsigc++
+l/glibmm
+l/cairomm
+l/pangomm
+l/atkmm
+d/mm-common
+l/gtkmm
+l/goocanvas
+l/pygoocanvas
+l/pyxdg
+d/acpica
 
 
 
