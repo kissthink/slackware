@@ -12,6 +12,16 @@ l/lxml-3.4.0-x86_64-1_microlinux.txz: Added.
 d/numpy-1.9.1-x86_64-1_microlinux.txz: Added.
 l/gsl-1.16-x86_64-1_microlinux.txz: Added.
 l/libsigc++-2.2.11-x86_64-1_microlinux.txz: Added.
+l/glibmm-2.36.2-x86_64-1_microlinux.txz: Added.
+l/cairomm-1.10.0-x86_64-1_microlinux.txz: Added.
+l/pangomm-2.34.0-x86_64-1_microlinux.txz: Added.
+l/atkmm-2.22.7-x86_64-1_microlinux.txz: Added.
+d/mm-common-0.9.6-noarch-1_microlinux.txz: Added.
+l/gtkmm-2.24.4-x86_64-1_microlinux.txz: Added.
+l/goocanvas-0.15-x86_64-1_microlinux.txz: Added.
+l/pygoocanvas-0.14.1-x86_64-1_microlinux.txz: Added.
+l/pyxdg-0.25-x86_64-1_microlinux.txz: Added.
+d/acpica-20141107-x86_64-1_microlinux.txz: Added.
 +--------------------------+
 Mon Dec 22 06:53:37 CET 2014
 l/mplayer-codecs-20110131-x86_64-1_microlinux.txz: Added.
