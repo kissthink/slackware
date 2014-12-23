@@ -1,3 +1,18 @@
+Tue Dec 23 09:35:07 CET 2014
+d/lua-5.1.5-x86_64-1_microlinux.txz: Added.
+l/imlib2-1.4.6-x86_64-1_microlinux.txz: Added.
+d/scons-2.3.4-x86_64-1_microlinux.txz: Added.
+l/tolua++-1.0.93-x86_64-1_microlinux.txz: Added.
+d/pysetuptools-7.0-x86_64-1_microlinux.txz: Added.
+l/protobuf-2.5.0-x86_64-1_microlinux.txz: Added.
+l/wxGTK-2.8.12-x86_64-1_microlinux.txz: Added.
+l/cryptopp-5.6.2-x86_64-1_microlinux.txz: Added.
+l/BeautifulSoup-3.2.1-x86_64-1_microlinux.txz: Added.
+l/lxml-3.4.0-x86_64-1_microlinux.txz: Added.
+d/numpy-1.9.1-x86_64-1_microlinux.txz: Added.
+l/gsl-1.16-x86_64-1_microlinux.txz: Added.
+l/libsigc++-2.2.11-x86_64-1_microlinux.txz: Added.
++--------------------------+
 Mon Dec 22 06:53:37 CET 2014
 l/mplayer-codecs-20110131-x86_64-1_microlinux.txz: Added.
 xap/MPlayer-1.1.1-x86_64-1_microlinux.txz: Added.
