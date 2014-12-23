@@ -64,7 +64,7 @@ fi
 
 set -e 	# Exit on most errors
 
-#wget -c http://diracvideo.org/download/dirac-research/$PRGNAM-$VERSION.tar.gz
+wget -c http://sourceforge.net/projects/$PRGNAM/files/dirac-codec/Dirac-$VERSION/$PRGNAM-$VERSION.tar.gz
 
 rm -fr $TMP/$PRGNAM-$VERSION $PKG
 mkdir -p $TMP $PKG $OUTPUT

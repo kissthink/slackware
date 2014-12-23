@@ -62,7 +62,7 @@ fi
 
 set -e
 
-wget -c ftp://ftp.videolan.org/pub/videolan/$PRGNAM/snapshots/$PRGNAM-snapshot-$VERSION-2245-stable.tar.bz2
+wget -c http://beefdrapes.partedmagic.com/source/$PRGNAM/$PRGNAM-snapshot-$VERSION-2245-stable.tar.bz2
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
