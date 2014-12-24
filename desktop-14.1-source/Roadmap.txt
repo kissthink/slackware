@@ -41,13 +41,13 @@ Graphisme
 ---------
 
   [*] GIMP
-  [ ] Simple Scan
+  [*] Simple Scan
   [*] Capture d'écran
   [ ] Visionneuse d'images
   [ ] Gestion des appareils photo PTP 
   [ ] Confection de pochettes CD
-  [ ] Inkscape
-  [ ] Scribus
+  [*] Inkscape
+  [*] Scribus
 
 
 Multimédia
@@ -61,8 +61,8 @@ Multimédia
   [ ] Extracteur audio
   [ ] Gestion des tags ID3
   [ ] Convertisseur multimédia
-  [ ] Audacity
-  [ ] Openshot
+  [*] Audacity
+  [*] Openshot
 
 
 Accessoires

@@ -60,9 +60,14 @@ d/scons
 #############
 # Libraries #
 #############
+l/BeautifulSoup
 l/enca
+l/gsl
 l/imlib2
+l/lxml
+l/pyxdg
 l/tolua++
+l/wxGTK
 
 ##############
 # Multimedia #
@@ -128,12 +133,19 @@ multimedia/gst1-plugins-good
 multimedia/gst1-plugins-bad
 multimedia/gst1-plugins-ugly
 multimedia/gst1-libav
+multimedia/mlt
+
 
 ################
 # Applications #
 ################
 xap/MPlayer
+xap/audacity
+xap/inkscape
 xap/libreoffice
+xap/openshot
+xap/scribus
+xap/simple-scan
 xap/transmission
 
 ################
@@ -148,12 +160,7 @@ locale/mozilla-thunderbird-langpack
 ##################
 #d/pysetuptools
 #l/protobuf
-#l/wxGTK
 #l/cryptopp
-#l/BeautifulSoup
-#l/lxml
-#l/gsl
-#l/pyxdg
 
 
 
