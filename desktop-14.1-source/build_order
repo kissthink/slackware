@@ -151,7 +151,7 @@ x/webcore-fonts
 ################
 # Translations #
 ################
-#locale/mozilla-firefox-langpack
+locale/mozilla-firefox-langpack
 #locale/mozilla-thunderbird-langpack
 #locale/libreoffice-langpack --> build manually
  
