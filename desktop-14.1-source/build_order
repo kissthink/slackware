@@ -30,6 +30,8 @@ gnome/mm-common
 gnome/gtkmm
 gnome/goocanvas
 gnome/pygoocanvas
+gnome/totem-pl-parser
+gnome/libunique
 
 ########
 # Xfce #
@@ -64,6 +66,9 @@ l/BeautifulSoup
 l/enca
 l/gsl
 l/imlib2
+l/libisofs
+l/libburn
+l/libisoburn
 l/lxml
 l/pyxdg
 l/tolua++
@@ -141,10 +146,12 @@ multimedia/mlt
 ################
 xap/MPlayer
 xap/audacity
+gnome/brasero
 gnome/evince
 xap/inkscape
 xap/libreoffice
 xap/openshot
+xfce/ristretto
 xap/scribus
 xap/simple-scan
 xap/transmission

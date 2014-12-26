@@ -32,7 +32,7 @@ Bureautique
   [*] Traductions LibreOffice
   [ ] Aide en ligne LibreOffice
   [*] Jeu de polices TrueType
-  [ ] Evince
+  [*] Evince
   [ ] Gestion des e-books
   [ ] Logiciel de dactylographie
 
@@ -43,7 +43,7 @@ Graphisme
   [*] GIMP
   [*] Simple Scan
   [*] Capture d'écran
-  [ ] Visionneuse d'images
+  [*] Visionneuse d'images
   [ ] Gestion des appareils photo PTP 
   [ ] Confection de pochettes CD
   [*] Inkscape

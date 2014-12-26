@@ -1,0 +1,18 @@
+Notes
+-----
+
+Redéfinir NUMJOBS -j3 --> -j5
+
+Brasero :
+
+  --disable-scrollkeeper n'est pas une option reconnue
+
+Apparemment Brasero n'a pas besoin de libunique pour compiler correctement.
+
+Ordre de compilation :
+
+  1. libisofs
+  2. libburn
+  3. libisoburn
+
+
