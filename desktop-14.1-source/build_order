@@ -141,6 +141,7 @@ multimedia/mlt
 ################
 xap/MPlayer
 xap/audacity
+gnome/evince
 xap/inkscape
 xap/libreoffice
 xap/openshot
