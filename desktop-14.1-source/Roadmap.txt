@@ -53,8 +53,8 @@ Graphisme
 Multimédia
 ----------
 
-  [ ] Lecteur audio  
-  [ ] Lecteur vidéo
+  [*] Lecteur audio  
+  [*] Lecteur vidéo
   [*] Codecs et plug-ins audio
   [*] Décryptage de DVD
   [ ] Gestion des iPods

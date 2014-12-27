@@ -64,6 +64,7 @@ d/scons
 #############
 l/BeautifulSoup
 l/enca
+l/gmtk
 l/gsl
 l/imlib2
 l/libisofs
@@ -150,6 +151,7 @@ xap/audacious-plugins
 xap/audacity
 gnome/brasero
 gnome/evince
+xap/gnome-mplayer
 xap/inkscape
 xap/libreoffice
 xap/openshot
