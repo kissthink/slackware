@@ -15,4 +15,7 @@ Ordre de compilation :
   2. libburn
   3. libisoburn
 
+Audacious :
+
+  Ajouter libcuefile avant de compiler audacious-plugins
 

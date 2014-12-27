@@ -68,7 +68,7 @@ Multimédia
 Accessoires
 -----------
 
-  [ ] Brasero
+  [*] Brasero
   [ ] Gnote
   [ ] Éditeur de texte simple
   [ ] Recherche de fichiers

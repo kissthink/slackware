@@ -145,6 +145,8 @@ multimedia/mlt
 # Applications #
 ################
 xap/MPlayer
+xap/audacious
+xap/audacious-plugins
 xap/audacity
 gnome/brasero
 gnome/evince
