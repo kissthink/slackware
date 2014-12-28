@@ -3,4 +3,5 @@
 ##############
 
 xap/virtualbox
-
+xap/virtualbox-kernel
+xap/virtualbox-extension-pack

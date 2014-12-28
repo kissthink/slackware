@@ -82,7 +82,7 @@ Système
 -------
 
   [ ] Conky
-  [ ] VirtualBox
+  [*] VirtualBox
   [ ] Wine
 
 
