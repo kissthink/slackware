@@ -154,11 +154,14 @@ gnome/evince
 xap/gnome-mplayer
 xap/inkscape
 xap/libreoffice
+xap/medit
 xap/openshot
 xfce/ristretto
 xap/scribus
 xap/simple-scan
 xap/transmission
+xfce/xarchiver
+xfce/thunar-archive-plugin
 
 ################
 # Translations #

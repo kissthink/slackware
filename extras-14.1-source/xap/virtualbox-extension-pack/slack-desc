@@ -1,0 +1,12 @@
+                         |-----handy-ruler------------------------------------------------------|
+virtualbox-extension-pack: virtualbox-extension-pack (closed source addons for vbox)
+virtualbox-extension-pack:
+virtualbox-extension-pack: The extension pack contains various libraries which make support for
+virtualbox-extension-pack: USB 2.0 devices, VirtualBox RDP and PXE boot for Intel cards
+virtualbox-extension-pack: possible.
+virtualbox-extension-pack:
+virtualbox-extension-pack: 
+virtualbox-extension-pack:
+virtualbox-extension-pack:
+virtualbox-extension-pack:
+virtualbox-extension-pack: Package created by Niki Kovacs <info@microlinux.fr>
