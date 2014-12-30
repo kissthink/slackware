@@ -1,0 +1,78 @@
+===============
+Asus S300 HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+===============
+
+Dernière révision : 29 décembre 2014
+
+Ce HOWTO décrit de façon succincte les particularités de l'installation de
+Slackware Linux 14.1 64-bit sur un ordinateur portable Asus S300.
+
+
+  * Prérequis
+  * Configuration du BIOS
+  * Démarrage
+  * Partitionnement
+  * LILO
+
+
+Prérequis
+---------
+
+La machine n'a pas de lecteur optique, il faut donc confectionner une clé USB.
+
+
+Configuration du BIOS
+---------------------
+
+Au démarrage, appuyer sur [F2] pour accéder au BIOS.
+
+Onglet 'Advanced' : SATA Configuration > SATA Mode Selection [IDE]
+
+Onglet 'Boot' : Launch CSM [enabled]
+
+Onglet 'Security' : Secure Boot Control [disabled]
+
+Appuyer sur [F10] pour enregistrer les modifications et redémarrer.
+
+
+Démarrage
+---------
+
+Appuyer sur [Esc] pour afficher les options de démarrage.
+
+La clé USB apparaît deux fois :
+
+  1. UEFI: KingstonDataTraveler G3 1.00
+  2. Windows Boot Manager
+  3. KingstonDataTraveler G3 1.00
+
+Démarrer sur l'option sans UEFI.
+
+Options pour l'installation : 'huge.s vga=791' 
+
+
+Partitionnement
+---------------
+
+Supprimer le foutoir innommable façon Microsoft :
+
+  # gdisk /dev/sda
+
+Touche [x] --> extra functionality (experts only)
+
+Touche [z] --> zap (destroy) GTP data structures and exit
+
+Ensuite, effectuer un partitionnement classique avec 'cfdisk'. La taille de la
+partition swap sera de 8 Go.
+
+
+LILO
+----
+
+Options à passer au kernel : 'video=1024x600 quiet ipv6.disable=1'
+
+On obtient une résolution potable pour la console.
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt
