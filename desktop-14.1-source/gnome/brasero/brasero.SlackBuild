@@ -11,7 +11,7 @@ VERSION=${VERSION:-3.11.4}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
-NUMJOBS=${NUMJOBS:--j3}
+NUMJOBS=${NUMJOBS:--j5}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
