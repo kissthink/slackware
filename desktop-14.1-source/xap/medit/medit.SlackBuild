@@ -65,7 +65,7 @@ fi
 
 DOWNLOAD="http://sourceforge.net/projects/mooedit/files/$PRGNAM/$VERSION/$PRGNAM-$VERSION.tar.bz2"
 
-#wget -c $DOWNLOAD
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
