@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Network Storage
+Name[de]=Filehosting-Dienst
+Name[fr]=Stockage en ligne
+Comment=Dropbox
+Exec=/opt/dropbox/dropboxd
+Icon=/usr/share/pixmaps/dropbox.png
+Terminal=false
+Type=Application
+Categories=Network;

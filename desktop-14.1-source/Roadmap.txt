@@ -58,7 +58,7 @@ Multimédia
   [*] Codecs et plug-ins audio
   [*] Décryptage de DVD
   [ ] Gestion des iPods
-  [ ] Extracteur audio
+  [*] Extracteur audio
   [ ] Gestion des tags ID3
   [ ] Convertisseur multimédia
   [*] Audacity
