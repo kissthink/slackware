@@ -45,7 +45,7 @@ PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
 # kmk doesn't support MAKEFLAGS, so we use JOBS here
-JOBS=${JOBS:-3}
+JOBS=${JOBS:-5}
 
 # Define Variable Names
 gui=""

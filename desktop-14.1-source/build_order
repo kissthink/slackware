@@ -146,6 +146,7 @@ multimedia/mlt
 # Applications #
 ################
 xap/MPlayer
+xap/asunder
 xap/audacious
 xap/audacious-plugins
 xap/audacity
