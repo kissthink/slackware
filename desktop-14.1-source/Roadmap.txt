@@ -94,6 +94,7 @@ Environnement de bureau
   [*] Bordures de fenêtres Axe Rounded
   [*] Pointeur Aero
   [*] Entrées de menu personnalisées
+  [ ] Fonds d'écran ElementaryOS
   [ ] Configuration par défaut
   [ ] Profil par défaut pour les nouveaux utilisateurs
   [*] Gestionnaire de connexion
