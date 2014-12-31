@@ -21,7 +21,7 @@ Internet
   [*] GFTP
   [ ] Filezilla
   [ ] Remmina
-  [ ] Dropbox
+  [*] Dropbox
   [ ] Skype
 
 
