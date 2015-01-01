@@ -1,129 +1,26 @@
-Tue Dec 23 09:35:07 CET 2014
-d/lua-5.1.5-x86_64-1_microlinux.txz: Added.
-l/imlib2-1.4.6-x86_64-1_microlinux.txz: Added.
-d/scons-2.3.4-x86_64-1_microlinux.txz: Added.
-l/tolua++-1.0.93-x86_64-1_microlinux.txz: Added.
-d/pysetuptools-7.0-x86_64-1_microlinux.txz: Added.
-l/protobuf-2.5.0-x86_64-1_microlinux.txz: Added.
-l/wxGTK-2.8.12-x86_64-1_microlinux.txz: Added.
-l/cryptopp-5.6.2-x86_64-1_microlinux.txz: Added.
-l/BeautifulSoup-3.2.1-x86_64-1_microlinux.txz: Added.
-l/lxml-3.4.0-x86_64-1_microlinux.txz: Added.
-d/numpy-1.9.1-x86_64-1_microlinux.txz: Added.
-l/gsl-1.16-x86_64-1_microlinux.txz: Added.
-l/libsigc++-2.2.11-x86_64-1_microlinux.txz: Added.
-l/glibmm-2.36.2-x86_64-1_microlinux.txz: Added.
-l/cairomm-1.10.0-x86_64-1_microlinux.txz: Added.
-l/pangomm-2.34.0-x86_64-1_microlinux.txz: Added.
-l/atkmm-2.22.7-x86_64-1_microlinux.txz: Added.
-d/mm-common-0.9.6-noarch-1_microlinux.txz: Added.
-l/gtkmm-2.24.4-x86_64-1_microlinux.txz: Added.
-l/goocanvas-0.15-x86_64-1_microlinux.txz: Added.
-l/pygoocanvas-0.14.1-x86_64-1_microlinux.txz: Added.
-l/pyxdg-0.25-x86_64-1_microlinux.txz: Added.
-d/acpica-20141107-x86_64-1_microlinux.txz: Added.
-+--------------------------+
-Mon Dec 22 06:53:37 CET 2014
-l/mplayer-codecs-20110131-x86_64-1_microlinux.txz: Added.
-xap/MPlayer-1.1.1-x86_64-1_microlinux.txz: Added.
-l/libdvdcss-1.2.13-x86_64-1_microlinux.txz: Added.
-l/flashplayer-plugin-11.2.202.425-x86_64-1_microlinux.txz: Added.
-l/gst-ffmpeg-0.10.13-x86_64-1_microlinux.txz: Added.
-l/libquicktime-1.2.4-x86_64-1_microlinux.txz: Added.
-xap/mjpegtools-2.1.0-x86_64-1_microlinux.txz: Added.
-xap/transcode-1.1.7-x86_64-1_microlinux.txz: Added.
-xap/transmission-2.84-x86_64-1_microlinux.txz: Added.
-ap/vcdimager-0.7.24-x86_64-1_microlinux.txz: Added.
-l/cddb-py-1.4-x86_64-1_microlinux.txz: Added.
-l/id3lib-3.8.3-x86_64-1_microlinux.txz: Added.
-l/libmusicbrainz-2.1.5-x86_64-1_microlinux.txz: Added.
-l/gstreamer1-1.4.1-x86_64-1_microlinux.txz: Added.
-l/gst1-plugins-base-1.4.1-x86_64-1_microlinux.txz: Added.
-l/gst1-plugins-good-1.4.1-x86_64-1_microlinux.txz: Added.
-l/gst1-plugins-bad-1.4.1-x86_64-1_microlinux.txz: Added.
-l/gst1-plugins-ugly-1.4.1-x86_64-1_microlinux.txz: Added.
-l/gst1-libav-1.4.1-x86_64-1_microlinux.txz: Added.
-+--------------------------+
-Sun Dec 21 08:25:55 CET 2014
-l/openjpeg-1.5.1-x86_64-1_microlinux.txz: Added.
-l/ladspa_sdk-1.13-x86_64-1_microlinux.txz: Added.
-l/libmodplug-0.8.8.5-x86_64-1_microlinux.txz: Added.
-l/OpenAL-1.16.0-x86_64-1_microlinux.txz: Added.
-ap/opencore-amr-0.1.3-x86_64-1_microlinux.txz: Added.
-l/opus-1.1-x86_64-1_microlinux.txz: Added.
-l/rtmpdump-20131007_a9f353c-x86_64-1_microlinux.txz: Added.
-d/orc-0.4.22-x86_64-1_microlinux.txz: Added.
-l/schroedinger-1.0.11-x86_64-1_microlinux.txz: Added.
-ap/speex-1.2rc1-x86_64-1_microlinux.txz: Added.
-ap/twolame-0.3.13-x86_64-1_microlinux.txz: Added.
-l/libvpx-1.3.0-x86_64-1_microlinux.txz: Added.
-l/xvidcore-1.3.2-x86_64-1_microlinux.txz: Added.
-xap/ffmpeg-2.1.5-x86_64_custom-1_microlinux.txz: Added.
-l/libcdaudio-0.99.12p2-x86_64-1_microlinux.txz: Added.
-ap/dirac-1.0.2-x86_64-1_microlinux.txz: Added.
-l/libdca-0.0.5-x86_64-1_microlinux.txz: Added.
-l/libdvdnav-4.2.0-x86_64-1_microlinux.txz: Added.
-ap/faad2-2.7-x86_64-1_microlinux.txz: Added.
-l/libkate-0.4.1-x86_64-1_microlinux.txz: Added.
-l/libmms-0.6.2-x86_64-1_microlinux.txz: Added.
-l/libmusicbrainz-2.1.5-x86_64-1_microlinux.txz: Added.
-l/soundtouch-1.7.1-x86_64-1_microlinux.txz: Added.
-l/gst-plugins-bad-0.10.23-x86_64-1_microlinux.txz: Added.
-l/a52dec-0.7.4-x86_64-1_microlinux.txz: Added.
-l/libmpeg2-0.5.1-x86_64-1_microlinux.txz: Added.
-l/gst-plugins-ugly-0.10.19-x86_64-1_microlinux.txz: Added.
-l/libdv-1.0.0-x86_64-1_microlinux.txz: Added.
-l/libcuefile-r475-x86_64-1_microlinux.txz: Added.
-l/libreplaygain-r475-x86_64-1_microlinux.txz: Added.
-ap/musepack-tools-r475-x86_64-1_microlinux.txz: Added.
-+--------------------------+
-Sat Dec 20 07:51:44 CET 2014
-l/libdc1394-2.2.2-x86_64-1_microlinux.txz: Added.
-l/libmp4v2-2.0.0-x86_64-1_microlinux.txz: Added.
-ap/faac-1.28-x86_64-1_microlinux.txz: Added.
-l/frei0r-1.4-x86_64-1_microlinux.txz: Added.
-l/gsm-1.0.13-x86_64-1_microlinux.txz: Added.
-l/libiec61883-1.2.0-x86_64-1_microlinux.txz: Added.
-l/libavc1394-0.5.4-x86_64-1_microlinux.txz: Added.
-l/libilbc-2.0.2-x86_64-1_microlinux.txz: Added.
-+--------------------------+
-Fri Dec 19 06:55:29 CET 2014
-d/jdk-7u71-x86_64-1_microlinux.txz: Added.
-ap/lame-3.99.5-x86_64-1_microlinux.txz: Added.
-l/x264-20131101-x86_64-1_microlinux.txz: Added.
-l/enca-1.15-x86_64-1_microlinux.txz: Added.
-l/libass-0.10.2-x86_64-1_microlinux.txz: Added.
-l/libaacs-0.7.1-x86_64-1_microlinux.txz: Added.
-l/libbluray-0.6.2-x86_64-1_microlinux.txz: Added.
-l/celt-0.11.3-x86_64-1_microlinux.txz: Added.
-+--------------------------+
-Thu Dec 18 09:31:32 CET 2014
-xap/mozilla-firefox-langpack-31.3.0-x86_64-1_microlinux.txz: Added.
-xap/mozilla-thunderbird-langpack-31.3.0-x86_64-1_microlinux.txz: Added.
-l/libgnomecanvas-2.30.3-x86_64-1_microlinux.txz: Added.
-x/gdm-2.20.11-x86_64-1_microlinux.txz: Added.
-xap/libreoffice-4.2.8-x86_64-1_microlinux.txz: Added.
-xap/libreoffice-langpack-fr-4.2.8-x86_64-1_microlinux.txz: Added.
-xap/libreoffice-langpack-de-4.2.8-x86_64-1_microlinux.txz: Added.
-x/google-droid-fonts-20100409-noarch-1_microlinux.txz: Downgraded.
-	Droid Sans is missing in the new release. Go figure.
-ap/sbopkg-0.37.0-noarch-1_microlinux.txz: Added.
-ap/hplip-3.14.10-x86_64-1_microlinux.txz: Upgraded.
-  Support for recent HP printers.
-ap/recode-3.7_beta2-x86_64-1_microlinux.txz: Added.
-ap/unrar-5.0.14-x86_64-1_microlinux.txz: Added.
-ap/cdlabelgen-4.3.0-noarch-1_microlinux.txz: Added.
-ap/p7zip-9.20.1-x86_64-1_microlinux.txz: Added.
-+--------------------------+
-Wed Dec 17 10:56:31 CET 2014
+Thu Jan  1 16:01:03 CET 2015
+	Work on the Xfce-based MLED 14.1 Reloaded is starting with the new year.
 profile/user-settings-console-1.0-noarch-1_microlinux.txz: Added.
+ap/p7zip-9.20.1-x86_64-1_microlinux.txz: Added.
+ap/recode-3.7_beta2-x86_64-1_microlinux.txz: Added.
+ap/sbopkg-0.37.0-noarch-1_microlinux.txz: Added.
+ap/unrar-5.0.14-x86_64-1_microlinux.txz: Added.
+gnome/gtk-engines-2.20.2-x86_64-1_microlinux.txz: Added.
+gnome/libgnomecanvas-2.30.3-x86_64-1_microlinux.txz: Added.
+gnome/gdm-2.20.11-x86_64-1_microlinux.txz: Added.
 xfce/aero-1.0-noarch-1_microlinux.txz: Added.
-xfce/gtk-engines-2.20.2-x86_64-1_microlinux.txz: Added.
 xfce/clearlooks-phenix-theme-20131228-noarch-1_microlinux.txz: Added.
 xfce/xfwm4-theme-axe-1.0-noarch-1_microlinux.txz: Added.
 xfce/elementary-xfce-20141217-noarch-1_microlinux.txz: Added.
 xfce/microlinux-wallpapers-1.0-noarch-1_microlinux.txz: Added.
-x/eurostile-fonts-1.0-noarch-1_microlinux.txz: Added.
-x/google-droid-fonts-20141010-noarch-1_microlinux.txz: Added.
+x/google-droid-fonts-20100409-noarch-1_microlinux.txz: Added.
 x/webcore-fonts-3.0-noarch-1_microlinux.txz: Added.
+x/eurostile-fonts-1.0-noarch-1_microlinux.txz: Added.
+d/acpica-20141107-x86_64-1_microlinux.txz: Added.
+d/jdk-7u71-x86_64-1_microlinux.txz: Added.
+xap/libreoffice-4.2.8-x86_64-1_microlinux.txz: Added.
+locale/libreoffice-langpack-fr-4.2.8-x86_64-1_microlinux.txz: Added.
+locale/libreoffice-langpack-de-4.2.8-x86_64-1_microlinux.txz: Added.
+locale/mozilla-firefox-langpack-31.3.0-x86_64-1_microlinux.txz: Added.
+locale/mozilla-thunderbird-langpack-31.3.0-x86_64-1_microlinux.txz: Added.
 +--------------------------+
