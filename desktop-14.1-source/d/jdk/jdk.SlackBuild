@@ -168,7 +168,3 @@ EOF
 cd $PKG
 rm -f $TMP/${PKGNAM}-$(echo $VERSION | tr - _)-$ARCH-$BUILD.txz
 /sbin/makepkg -l y -c n $OUTPUT/${PKGNAM}-$(echo $VERSION | tr - _)-$ARCH-$BUILD$TAG.txz
-
-# Cleanup
-cd $TMP          
-rm -rf $PKG 

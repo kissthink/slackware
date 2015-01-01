@@ -65,7 +65,9 @@ fi
 
 set -e
 
-wget -c https://acpica.org/sites/$PRGNAM/files/$PRGNAM-unix2-$VERSION.tar.gz
+DOWNLOAD="https://acpica.org/sites/$PRGNAM/files/$PRGNAM-unix2-$VERSION.tar.gz"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -96,8 +98,3 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $PRGNAM-unix2-$VERSION $PKG
-

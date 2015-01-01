@@ -36,10 +36,11 @@ TMP=${TMP:-/tmp/microlinux}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
-set -eu
+set -e
 
+DOWNLOAD="ftp://mirrors3.kernel.org/fedora-secondary/development/rawhide/source/SRPMS/$PRGNAM-$VERSION-2.fc15.src.rpm"
 
-wget -c ftp://mirrors3.kernel.org/fedora-secondary/development/rawhide/source/SRPMS/$PRGNAM-$VERSION-2.fc15.src.rpm
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -73,8 +74,3 @@ cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP          
-rm -rf $PRGNAM-$VERSION $PKG
-
