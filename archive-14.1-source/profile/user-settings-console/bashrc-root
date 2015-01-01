@@ -1,5 +1,5 @@
 if [ "$PS1" ]; then
-  
+
   # Colored output for 'ls'
   eval `dircolors -b`
   alias ls='ls --color=auto'
@@ -14,11 +14,11 @@ if [ "$PS1" ]; then
   alias vi='vim'
   alias uman='GROFF_ENCODING=utf8 man'
 
-  # Command prompt for users
-  GREEN='\[\033[0;32m\]'
+  # Command prompt for root
   WHITE='\[\033[1;37m\]'
-  NC='\[\033[0;m\]'
-  PS1="$GREEN[$WHITE\u$NC@$WHITE\h$NC:$WHITE\W$GREEN] \$ $NC"
+  RED='\[\033[0;33m\]'
+  NC='\[\033[0m\]'
+  PS1="$RED[$WHITE\u$NC@$WHITE\h$NC:$WHITE\W$RED] #$NC "
 
   # Vim is our preferred editor
   EDITOR=vim
@@ -26,3 +26,4 @@ if [ "$PS1" ]; then
   export EDITOR VISUAL
 
 fi
+

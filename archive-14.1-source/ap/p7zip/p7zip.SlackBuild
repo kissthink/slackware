@@ -63,9 +63,7 @@ GUI=${GUI:-no}
 
 set -e
 
-DOWNLOAD="http://downloads.sourceforge.net/$PRGNAM/${PRGNAM}_${VERSION}_src_all.tar.bz2"
-
-wget -c $DOWNLOAD
+wget -c http://downloads.sourceforge.net/$PRGNAM/${PRGNAM}_${VERSION}_src_all.tar.bz2
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -146,3 +144,7 @@ cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
+
+# Cleanup
+cd $TMP
+rm -rf ${PRGNAM}_${VERSION} $PKG

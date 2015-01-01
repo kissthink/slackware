@@ -61,9 +61,7 @@ fi
 
 set -e
 
-DOWNLOAD="ftp://ftp.rarlab.com/rar/$SRCNAM-$VERSION.tar.gz"
-
-wget -c $DOWNLOAD
+wget -c ftp://ftp.rarlab.com/rar/$SRCNAM-$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -114,3 +112,7 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
+
+# Cleanup
+cd $TMP
+rm -rf $PRGNAM libunrar $PKG 
