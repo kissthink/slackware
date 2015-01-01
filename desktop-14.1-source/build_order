@@ -17,3 +17,7 @@ x/webcore-fonts
 x/eurostile-fonts
 d/acpica
 d/jdk
+xap/libreoffice
+# locale/libreoffice-langpack --> build manually
+locale/mozilla-firefox-langpack
+locale/mozilla-thunderbird-langpack
