@@ -56,7 +56,9 @@ DOCS="AUTHORS COPYING ChangeLog INSTALL NEWS README"
 
 set -e
 
-wget -c http://ftp.gnome.org/pub/gnome/sources/$PRGNAM/2.20/$PRGNAM-$VERSION.tar.gz
+DOWNLOAD="http://ftp.gnome.org/pub/gnome/sources/$PRGNAM/2.20/$PRGNAM-$VERSION.tar.gz"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -99,7 +101,3 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $PRGNAM-$VERSION $PKG

@@ -48,7 +48,9 @@ fi
 
 set -e
 
-wget -c http://ftp.gnome.org/pub/gnome/sources/$PRGNAM/2.20/$PRGNAM-$VERSION.tar.bz2
+DOWNLOAD="http://ftp.gnome.org/pub/gnome/sources/$PRGNAM/2.20/$PRGNAM-$VERSION.tar.bz2"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -137,7 +139,3 @@ cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $PRGNAM-$VERSION $PKG Shine
