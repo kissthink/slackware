@@ -24,6 +24,16 @@ multimedia/a52dec-0.7.4-x86_64-1_microlinux.txz: Added.
 multimedia/libmpeg2-0.5.1-x86_64-1_microlinux.txz: Added.
 multimedia/libdv-1.0.0-x86_64-1_microlinux.txz: Added.
 multimedia/mplayer-codecs64-20061022-x86_64-1_microlinux.txz: Added.
+multimedia/libdvdcss-1.2.13-x86_64-1_microlinux.txz: Added.
+multimedia/flashplayer-plugin-11.2.202.425-x86_64-1_microlinux.txz: Added.
+multimedia/libquicktime-1.2.4-x86_64-1_microlinux.txz: Added.
+multimedia/id3lib-3.8.3-x86_64-1_microlinux.txz: Added.
+d/orc-0.4.22-x86_64-1_microlinux.txz: Added.
+multimedia/gstreamer1-1.4.1-x86_64-1_microlinux.txz: Added.
+multimedia/gst1-plugins-base-1.4.1-x86_64-1_microlinux.txz: Added.
+multimedia/gst1-plugins-bad-1.4.1-x86_64-1_microlinux.txz: Added.
+d/lua-5.1.5-x86_64-1_microlinux.txz: Added.
+multimedia/mlt-0.9.0-x86_64-1_microlinux.txz: Added.
 +--------------------------+
 Thu Jan  1 16:01:03 CET 2015
 	Work on the Xfce-based MLED 14.1 Reloaded is starting with the new year.
