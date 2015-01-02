@@ -1,13 +1,4 @@
-##############
-# VirtualBox #
-##############
-
 xap/virtualbox
 xap/virtualbox-kernel
 xap/virtualbox-extension-pack
-
-###########
-# Dropbox #
-###########
-
 xap/dropbox
