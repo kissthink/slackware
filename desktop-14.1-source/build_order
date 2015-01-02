@@ -54,5 +54,8 @@ d/orc
 multimedia/gstreamer1
 multimedia/gst1-plugins-base
 multimedia/gst1-plugins-bad
+d/lua
+multimedia/mlt
+
 
 
