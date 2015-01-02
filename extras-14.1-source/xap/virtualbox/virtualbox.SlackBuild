@@ -318,7 +318,3 @@ fi
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $SRCNAM-$VERSION $PKG
