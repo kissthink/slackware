@@ -13,7 +13,7 @@ Internet
 
   [*] Mozilla Firefox
   [*] Traductions Mozilla Firefox
-  [ ] Plug-in Flash
+  [*] Plug-in Flash
   [*] Mozilla Thunderbird
   [*] Traductions Mozilla Thunderbird
   [*] Messagerie instantanée
@@ -53,22 +53,22 @@ Graphisme
 Multimédia
 ----------
 
-  [ ] Lecteur audio  
+  [*] Lecteur audio  
   [ ] Lecteur vidéo
-  [ ] Codecs et plug-ins audio
-  [ ] Décryptage de DVD
+  [*] Codecs et plug-ins audio
+  [*] Décryptage de DVD
   [ ] Gestion des iPods
-  [ ] Extracteur audio
+  [*] Extracteur audio
   [ ] Gestion des tags ID3
   [ ] Convertisseur multimédia
-  [ ] Audacity
+  [*] Audacity
   [ ] Openshot
 
 
 Accessoires
 -----------
 
-  [ ] Brasero
+  [*] Brasero
   [ ] Gnote
   [ ] Éditeur de texte simple
   [ ] Recherche de fichiers
