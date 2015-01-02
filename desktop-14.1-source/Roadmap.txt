@@ -2,7 +2,7 @@
 Roadmap (c) Nicolas Kovacs <info@microlinux.fr>
 =======
 
-Dernière révision : 18 décembre 2014
+Dernière révision : 2 janvier 2015
 
 Ce document fournit une liste assez exhaustive des éléments qui constituent un
 poste de travail raisonnablement complet.
@@ -21,7 +21,7 @@ Internet
   [*] GFTP
   [ ] Filezilla
   [ ] Remmina
-  [ ] Dropbox
+  [*] Dropbox
   [ ] Skype
 
 
@@ -82,7 +82,7 @@ Système
 -------
 
   [ ] Conky
-  [ ] VirtualBox
+  [*] VirtualBox
   [ ] Wine
 
 
