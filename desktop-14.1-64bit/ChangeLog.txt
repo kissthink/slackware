@@ -23,6 +23,7 @@ multimedia/faad2-2.7-x86_64-1_microlinux.txz: Added.
 multimedia/a52dec-0.7.4-x86_64-1_microlinux.txz: Added.
 multimedia/libmpeg2-0.5.1-x86_64-1_microlinux.txz: Added.
 multimedia/libdv-1.0.0-x86_64-1_microlinux.txz: Added.
+multimedia/mplayer-codecs64-20061022-x86_64-1_microlinux.txz: Added.
 +--------------------------+
 Thu Jan  1 16:01:03 CET 2015
 	Work on the Xfce-based MLED 14.1 Reloaded is starting with the new year.
