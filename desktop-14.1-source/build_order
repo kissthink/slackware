@@ -21,3 +21,14 @@ xap/libreoffice
 # locale/libreoffice-langpack --> build manually
 locale/mozilla-firefox-langpack
 locale/mozilla-thunderbird-langpack
+gnome/libsigc++
+gnome/glibmm
+gnome/cairomm
+gnome/pangomm
+gnome/atkmm
+gnome/mm-common
+gnome/gtkmm
+gnome/goocanvas
+gnome/pygoocanvas
+gnome/totem-pl-parser
+gnome/libunique

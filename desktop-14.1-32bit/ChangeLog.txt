@@ -1,3 +1,16 @@
+
+gnome/libsigc++-2.2.11-i486-1_microlinux.txz: Added.
+gnome/glibmm-2.36.2-i486-1_microlinux.txz: Added.
+gnome/cairomm-1.10.0-i486-1_microlinux.txz: Added.
+gnome/pangomm-2.34.0-i486-1_microlinux.txz: Added.
+gnome/atkmm-2.22.7-i486-1_microlinux.txz: Added.
+gnome/mm-common-0.9.6-noarch-1_microlinux.txz: Added.
+gnome/gtkmm-2.24.4-i486-1_microlinux.txz: Added.
+gnome/goocanvas-0.15-i486-1_microlinux.txz: Added.
+gnome/pygoocanvas-0.14.1-i486-1_microlinux.txz: Added.
+gnome/totem-pl-parser-3.4.5-i486-1_microlinux.txz: Added.
+gnome/libunique-1.1.6-i486-1_microlinux.txz: Added.
++--------------------------+
 Thu Jan  1 16:01:03 CET 2015
 	Work on the Xfce-based MLED 14.1 Reloaded is starting with the new year.
 profile/user-settings-console-1.0-noarch-1_microlinux.txz: Added.

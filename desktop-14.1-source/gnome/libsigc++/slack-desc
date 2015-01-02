@@ -7,6 +7,6 @@ libsigc++: callback function, either global or a member function, regardless
 libsigc++: of whether it is static or virtual.
 libsigc++: It also contains adaptor classes for connection of dissimilar
 libsigc++: callbacks and has an ease of use unmatched by other C++ callback
-libsigc++: libraries. Libsigc++ is licensed under the GNU Library General
-libsigc++: Public License, LGPL.
+libsigc++: libraries. 
+libsigc++: 
 libsigc++: Package created by Niki Kovacs <info@microlinux.fr>

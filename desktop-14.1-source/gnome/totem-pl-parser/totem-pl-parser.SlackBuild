@@ -42,7 +42,9 @@ fi
 
 set -e
 
-wget -c ftp://ftp.gnome.org/pub/gnome/sources/$PRGNAM/3.4/$PRGNAM-$VERSION.tar.xz
+DOWNLOAD="ftp://ftp.gnome.org/pub/gnome/sources/$PRGNAM/3.4/$PRGNAM-$VERSION.tar.xz"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -87,7 +89,3 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $PRGNAM-$VERSION $PKG

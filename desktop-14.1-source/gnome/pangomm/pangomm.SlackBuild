@@ -1,8 +1,8 @@
 #!/bin/sh
 
-# Slackware build script for cairomm
+# Slackware build script for pangomm
 
-# Copyright (C) 2006 paul wisehart wise@lupulin.net
+# Copyright 2009,2011  Robby Workman, Northport, Alabama, USA
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,8 +24,8 @@
 #
 # Modified by Niki Kovacs <info@microlinux.fr>
 
-PRGNAM=cairomm
-VERSION=${VERSION:-1.10.0}
+PRGNAM=pangomm
+VERSION=${VERSION:-2.34.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
@@ -62,13 +62,15 @@ fi
 
 set -e
 
-wget -c http://cairographics.org/releases/$PRGNAM-$VERSION.tar.gz
+DOWNLOAD="ftp://ftp.gnome.org/pub/gnome/sources/$PRGNAM/2.34/$PRGNAM-$VERSION.tar.xz"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvzf $CWD/$PRGNAM-$VERSION.tar.gz
+tar xvf $CWD/$PRGNAM-$VERSION.tar.xz
 cd $PRGNAM-$VERSION
 chown -R root:root .
 chmod -R a-s,u+rw,go-w+r .
@@ -81,14 +83,17 @@ CXXFLAGS="$SLKCFLAGS" \
   --sysconfdir=/etc \
   --localstatedir=/var \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
-  --enable-static=no \
+  --disable-static \
   --build=$ARCH-slackware-linux
 
-make $NUMJOBS libdocdir=/usr/doc/$PRGNAM-$VERSION
-make install-strip DESTDIR=$PKG libdocdir=/usr/doc/$PRGNAM-$VERSION
+make $NUMJOBS 
+make install DESTDIR=$PKG || exit 1
 
-cp -a AUTHORS COPYING ChangeLog INSTALL MAINTAINERS NEWS README \
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a AUTHORS COPYING* ChangeLog INSTALL NEWS README* \
   $PKG/usr/doc/$PRGNAM-$VERSION
+# API reference docs are in here, but we don't need those
+rm -rf $PKG/usr/share/doc
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
@@ -96,8 +101,3 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $PRGNAM-$VERSION $PKG
-
