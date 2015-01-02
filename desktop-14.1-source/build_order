@@ -45,4 +45,4 @@ multimedia/faad2
 multimedia/a52dec
 multimedia/libmpeg2
 multimedia/libdv
-
+# multimedia/mplayer-codecs{32,64} --> build manually
