@@ -1,9 +1,9 @@
 #!/bin/sh
 
-# Slackware build script for Audacity
+# Slackware build script for wxGTK
 
-# Copyright 2006-2010 Chess Griffin <chess@chessgriffin.com>
-# Copyright 2011-2014 Matteo Bernardini <ponce@slackbuilds.org>
+# Copyright 2006-2009 Chess Griffin <chess@chessgriffin.com>
+# Copyright 2010-2011 Niels Horn, Rio de Janeiro, RJ, Brazil
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,16 +23,14 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# Thanks to Eric Hameleers for adding the audacity.desktop file
-# and other tweaks and bug fixes.  Thanks to Heinz Wiesinger for
-# bug fixes and the soundtouch and twolame improvements.
+# Lots of key help from Eric Hameleers and the SBo admins.
 
-# Modified by the SlackBuilds.org project
+# revision date: 2011/12/23
 #
-# Modified by Niki Kovacs <info@microlinux.fr)
+# Modified by Niki Kovacs <info@microlinux.fr>
 
-PRGNAM=audacity
-VERSION=${VERSION:-2.0.6}
+PRGNAM=wxGTK
+VERSION=${VERSION:-2.8.12}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
@@ -51,6 +49,10 @@ TMP=${TMP:-/tmp/microlinux}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
+# If you don't want a unicode-enabled build, change to NO or
+# pass UNICODE=NO ./wxGTK.SlackBuild when building
+UNICODE=${UNICODE:-YES}
+
 if [ "$ARCH" = "i486" ]; then
   SLKCFLAGS="-O2 -march=i486 -mtune=i686"
   LIBDIRSUFFIX=""
@@ -60,86 +62,74 @@ elif [ "$ARCH" = "i686" ]; then
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
   LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "arm" ]; then
+  SLKCFLAGS="-O2 -march=armv4t"
+  LIBDIRSUFFIX=""
 else
   SLKCFLAGS="-O2"
   LIBDIRSUFFIX=""
 fi
 
-do_soundtouch="out" ; [ "${SOUNDTOUCH:-no}" != "yes" ] && do_soundtouch=""
-do_twolame="out"    ; [ "${TWOLAME:-no}" != "yes" ]    && do_twolame=""
-do_vamp="out"       ; [ "${VAMP:-no}" != "no" ]       && do_vamp=""
-do_ffmpeg="out"     ; [ "${FFMPEG:-no}" != "yes" ]     && do_ffmpeg=""
-
 set -e
 
-wget -c http://ponce.cc/slackware/sources/repo/$PRGNAM-minsrc-$VERSION.tar.xz
+DOWNLOAD="http://downloads.sourceforge.net/wxwindows/$PRGNAM-$VERSION.tar.gz"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-src-$VERSION
-tar xvf $CWD/$PRGNAM-minsrc-$VERSION.tar.xz
-cd $PRGNAM-src-$VERSION
+rm -rf $PRGNAM-$VERSION
+tar xvzf $CWD/$PRGNAM-$VERSION.tar.gz
+cd $PRGNAM-$VERSION
 chown -R root:root .
-find -L . \
- \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 -o -perm 511 \) \
+find . \
+ \( -perm 777 -o -perm 775 -o -perm 711 -o -perm 555 -o -perm 511 \) \
  -exec chmod 755 {} \; -o \
  \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
  -exec chmod 644 {} \;
 
-# Fix vamp plugin search path on x86_64 - thanks to B. Watson
-sed -i "s,lib/vamp,lib$LIBDIRSUFFIX/vamp,g" \
-       lib-src/libvamp/src/vamp-hostsdk/PluginHostAdapter.cpp
+# Set unicode flag as desired by UNICODE variable
+if [ "$UNICODE" = "YES" ]; then
+  _do_unicode="en"
+elif [ "$UNICODE" = "NO" ]; then
+  _do_unicode="dis"
+fi
 
-# libsoxr is the new default resampling library
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
 ./configure \
   --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
-  --enable-unicode \
-  --enable-nyquist \
-  --enable-vamp \
-  --with-expat \
-  --with-libvorbis \
-  --with-libmad \
-  --with-libflac \
-  --with-libsndfile \
-  --with-libid3tag \
-  --with-libsoxr \
-  --with$do_ffmpeg-ffmpeg \
-  --with$do_soundtouch-soundtouch \
-  --with$do_twolame-libtwolame \
-  --with$do_vamp-libvamp
+  --sysconfdir=/etc \
+  --enable-shared \
+  --enable-mediactrl \
+  --with-opengl \
+  --${_do_unicode}able-unicode \
+  --build=$ARCH-slackware-linux
 
-make $NUMJOBS
-make install DESTDIR=$PKG
+make $NUMJOBS 
+make install DESTDIR=$PKG || exit 1
 
 find $PKG | xargs file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
-# We're going to overwrite the included audacity.desktop file with ours,
-# and the icon isn't added at all by upstream, so we'll do that here
-install -D -m 0644 $CWD/audacity.desktop \
-  $PKG/usr/share/applications/audacity.desktop
-install -D -m 0644 images/AudacityLogo48x48.xpm \
-  $PKG/usr/share/pixmaps/audacity.xpm
-
-# Move manpage directory to proper location; pages are already gzipped
-mv $PKG/usr/share/man $PKG/usr
+# Now let's fix the broken symlink created by the package
+( cd $PKG/usr/bin
+  rm wx-config
+  if [ "$UNICODE" = "YES" ]; then
+    ln -s /usr/lib${LIBDIRSUFFIX}/wx/config/gtk2-unicode-release-2.8 wx-config
+  elif [ "$UNICODE" = "NO" ]; then
+    ln -s /usr/lib${LIBDIRSUFFIX}/wx/config/gtk2-ansi-release-2.8 wx-config
+  fi
+)
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-rm -fr $PKG/usr/share/doc
-cp LICENSE.txt README.txt $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a docs/* $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
-cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $PRGNAM-src-$VERSION $PKG

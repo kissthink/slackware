@@ -1,12 +1,8 @@
 #!/bin/sh
 
-# Slackware build script for MPlayer
-
-# Written by Niki Kovacs <info@microlinux.fr)
-# Based on Eric Hameleers' SlackBuild
+# Slackware build script for audacious
 #
-# This script builds MPlayer WITHOUT a GUI, since I only use it as a backend
-# for SMPlayer.
+# Written by Niki Kovacs <info@microlinux.fr)
 #
 # All rights reserved.
 #
@@ -27,8 +23,8 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-PRGNAM=MPlayer
-VERSION=${VERSION:-1.1.1}	 
+PRGNAM=audacious			
+VERSION=${VERSION:-3.4.2}	 
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}		
 
@@ -65,14 +61,16 @@ fi
 
 set -e 
 
-wget -c http://www.mplayerhq.hu/$PRGNAM/releases/$PRGNAM-$VERSION.tar.xz
+DOWNLOAD="http://distfiles.audacious-media-player.org/$PRGNAM-$VERSION.tar.bz2"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$PRGNAM-$VERSION.tar.xz 
-cd $PRGNAM-$VERSION 
+tar xvjf $CWD/$PRGNAM-$VERSION.tar.bz2 || exit 1
+cd $PRGNAM-$VERSION || exit 1
 chown -R root:root .
 find . \
  \( -perm 777 -o -perm 775 -o -perm 711 -o -perm 555 -o -perm 511 \) \
@@ -80,33 +78,22 @@ find . \
  \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
  -exec chmod 644 {} \;
 
-# Determine what X we're running (the modular X returns the prefix
-# in the next command, while older versions stay silent):
-XPREF=$(pkg-config --variable=prefix x11) || true
-[ "$XPREF" == "" ] && XPREF='/usr/X11R6'
-
-# MPlayer wants to automatically determine compiler flags,
-# so we don't provide CFLAGS:
+CFLAGS="$SLKCFLAGS" \
+CXXFLAGS="$SLKCFLAGS" \
 ./configure \
   --prefix=/usr \
+  --libdir=/usr/lib${LIBDIRSUFFIX} \
+  --sysconfdir=/etc \
   --mandir=/usr/man \
-	--confdir=/etc/mplayer \
-	--disable-gui \
-	--enable-menu \
-  --disable-live \
-	--disable-arts \
-	--disable-bitmap-font \
-	--enable-runtime-cpudetection \
-	--codecsdir=/usr/lib${LIBDIRSUFFIX}/codecs \
-	--language="en de fr" 
+  --docdir=/usr/doc/$PRGNAM-$VERSION \
+  --enable-thunar \
+	--program-prefix= \
+	--program-suffix= \
+  --build=$ARCH-slackware-linux \
 
-# So that MPlayer does not report "UNKNOWN" as it's version:
-echo $VERSION > VERSION
+# Compile the application and install it into the $PKG directory
 make $NUMJOBS 
-make DESTDIR=$PKG install
-
-# Configuration file
-cp etc/example.conf $PKG/etc/mplayer/mplayer.conf
+make install DESTDIR=$PKG || exit 1
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
@@ -116,7 +103,7 @@ for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; r
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
-  AUTHORS LICENSE README VERSION \
+  AUTHORS COPYING INSTALL \
   $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
@@ -126,8 +113,3 @@ cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $PRGNAM-$VERSION $PKG
-

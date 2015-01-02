@@ -56,6 +56,18 @@ multimedia/gst1-plugins-base
 multimedia/gst1-plugins-bad
 d/lua
 multimedia/mlt
+xap/MPlayer
+xap/asunder
+xap/audacious
+xap/audacious-plugins
+gnome/libgnomecups
+gnome/libgnomeprint
+gnome/libgnomeprintui
+l/wxGTK
+xap/audacity
+l/libburn
+l/libisofs
+gnome/brasero
 
 
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Slackware build script for libgnomecups
+# Slackware build script for libgnomeprintui
 
 # Copyright 2007  Martin Lefebvre <dadexter@sekurity.com>
 # All rights reserved.
@@ -26,8 +26,8 @@
 #
 # Modified by Niki Kovacs <info@microlinux.fr>
 
-PRGNAM=libgnomecups
-VERSION=0.2.3
+PRGNAM=libgnomeprintui
+VERSION=2.18.6
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
@@ -64,34 +64,22 @@ fi
 
 set -e 
 
-wget -c ftp://ftp.gnome.org/pub/gnome/sources/$PRGNAM/0.2/$PRGNAM-$VERSION.tar.bz2
+DOWNLOAD="ftp://ftp.gnome.org/pub/gnome/sources/$PRGNAM/2.18/$PRGNAM-$VERSION.tar.bz2"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
-cd $TMP || exit 1
+cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvjf $CWD/$PRGNAM-$VERSION.tar.bz2
-cd $PRGNAM-$VERSION || exit 1
+tar xvjf $CWD/$PRGNAM-$VERSION.tar.bz2 || exit 1
+cd $PRGNAM-$VERSION
 chown -R root:root .
 find . \
  \( -perm 777 -o -perm 775 -o -perm 711 -o -perm 555 -o -perm 511 \) \
  -exec chmod 755 {} \; -o \
  \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
  -exec chmod 644 {} \;
-
-patch -p0 -i $CWD/patches/enablenet.patch
-
-# Fix .pc file
-patch -p0 -i $CWD/patches/$PRGNAM-$VERSION-pkgconfig.patch
-
-# Upstream fix for g_list_find_custom() argument order
-patch -p1 -i $CWD/patches/$PRGNAM-$VERSION-g_list_find_custom.patch
-
-# >=glib-2.31 compat
-patch -p1 -i $CWD/patches/$PRGNAM-$VERSION-glib.h.patch
-
-# cups-1.6 compat
-patch -p1 -i $CWD/patches/$PRGNAM-$VERSION-cups-1.6.patch
 
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
@@ -101,15 +89,19 @@ CXXFLAGS="$SLKCFLAGS" \
   --sysconfdir=/etc \
   --localstatedir=/var \
   --enable-static=no \
+  --enable-gtk-doc=yes \
   --build=$ARCH-slackware-linux \
-  --host=$ARCH-slackware-linux
-  
+  || exit 1
+
 make $NUMJOBS 
-make install DESTDIR=$PKG || exit 1
+make install-strip DESTDIR=$PKG || exit 1
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a AUTHORS COPYING* ChangeLog INSTALL NEWS README \
+cp -a AUTHORS COPYING* ChangeLog INSTALL MAINTAINERS NEWS README \
   $PKG/usr/doc/$PRGNAM-$VERSION
+( cd $PKG/usr/doc/$PRGNAM-$VERSION
+  ln -s ../../share/gtk-doc/html/libgnomeprintui html
+)
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
@@ -117,7 +109,3 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $PRGNAM-$VERSION $PKG
