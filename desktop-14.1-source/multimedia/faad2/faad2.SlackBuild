@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# Slackware build script for a52dec
-#
+# Slackware build script for faad2
+
 # Copyright 2007  Niklas "Nille" Åkerström
 # All rights reserved.
 #
@@ -24,8 +24,8 @@
 #
 # Modified by Niki Kovacs <info@microlinux.fr>
 
-PRGNAM=a52dec
-VERSION=0.7.4
+PRGNAM=faad2
+VERSION=${VERSION:-2.7}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
@@ -46,7 +46,6 @@ TMP=${TMP:-/tmp/microlinux}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
-
 if [ "$ARCH" = "i486" ]; then
   SLKCFLAGS="-O2 -march=i486 -mtune=i686"
   LIBDIRSUFFIX=""
@@ -63,13 +62,15 @@ fi
 
 set -e
 
-wget -c http://liba52.sourceforge.net/files/$PRGNAM-$VERSION.tar.gz
+DOWNLOAD="http://downloads.sourceforge.net/faac/$PRGNAM-$VERSION.tar.bz2"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
+tar xvf $CWD/$PRGNAM-$VERSION.tar.bz2
 cd $PRGNAM-$VERSION
 chown -R root:root .
 chmod -R a-s,u+rw,go+r-w .
@@ -79,33 +80,34 @@ CXXFLAGS="$SLKCFLAGS" \
 ./configure \
   --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
-  --enable-shared \
+  --mandir=/usr/man \
+  --enable-shared=yes \
+  --enable-static=no \
   --build=$ARCH-slackware-linux
 
+# This option is supposed to enable support for decoding Digital Radio
+# Mondiale, but actually breaks the base functionality. -HW
+# --with-drm
+
 make $NUMJOBS 
-make install DESTDIR=$PKG || exit 1
+make install-strip DESTDIR=$PKG || exit 1
 
-find $PKG | xargs file | grep -e "executable" -e "shared object" | grep ELF \
-  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
-
+# Compress man pages
+mv $PKG/usr/man/manm $PKG/usr/man/man1
+rename .man .1 $PKG/usr/man/man1/*.man
 ( cd $PKG/usr/man
   find . -type f -exec gzip -9 {} \;
-  for i in $(find . -type l) ; do ln -s $(readlink $i).gz $i.gz ; rm $i ; done
+  for i in $( find . -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 )
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a \
-  AUTHORS COPYING ChangeLog HISTORY INSTALL NEWS README TODO \
-    $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a AUTHORS COPYING ChangeLog INSTALL NEWS README* TODO docs/* \
+  $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+find $PKG/usr/doc -type f -exec chmod 0644 {} \;
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP          
-rm -rf $PRGNAM-$VERSION $PKG
-

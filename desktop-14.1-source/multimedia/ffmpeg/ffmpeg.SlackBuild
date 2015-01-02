@@ -79,33 +79,33 @@ PKGARCH=$(uname -m)_custom
 # Unfortunately ffmpeg's configure doesn't support --enable-feature=yes
 # syntax, so we have to do it the complicated way :/
 
-libcelt=""    ; [ "${CELT:-yes}" != "no" ]         && libcelt="--enable-libcelt"
-libdc1394=""  ; [ "${DC1394:-yes}" != "no" ]       && libdc1394="--enable-libdc1394"
+libcelt=""    ; [ "${CELT:-no}" != "no" ]         && libcelt="--enable-libcelt"
+libdc1394=""  ; [ "${DC1394:-no}" != "no" ]       && libdc1394="--enable-libdc1394"
 libfrei0r=""  ; [ "${FREI0R:-yes}" != "no" ]       && libfrei0r="--enable-frei0r"
-libgsm=""     ; [ "${GSM:-yes}" != "no" ]          && libgsm="--enable-libgsm"
-librtmp=""    ; [ "${RTMP:-yes}" != "no" ]         && librtmp="--enable-librtmp"
-dirac_fast="" ; [ "${SCHROEDINGER:-yes}" != "no" ] && dirac_fast="--enable-libschroedinger"
-libspeex=""   ; [ "${SPEEX:-yes}" != "no" ]        && libspeex="--enable-libspeex"
-libvpx=""     ; [ "${VPX:-yes}" != "no" ]          && libvpx="--enable-libvpx"
+libgsm=""     ; [ "${GSM:-no}" != "no" ]          && libgsm="--enable-libgsm"
+librtmp=""    ; [ "${RTMP:-no}" != "no" ]         && librtmp="--enable-librtmp"
+dirac_fast="" ; [ "${SCHROEDINGER:-no}" != "no" ] && dirac_fast="--enable-libschroedinger"
+libspeex=""   ; [ "${SPEEX:-no}" != "no" ]        && libspeex="--enable-libspeex"
+libvpx=""     ; [ "${VPX:-no}" != "no" ]          && libvpx="--enable-libvpx"
 libxvid=""    ; [ "${XVID:-yes}" != "no" ]         && libxvid="--enable-libxvid"
-libbluray=""  ; [ "${BLURAY:-yes}" != "no" ]       && libbluray="--enable-libbluray"
-libass=""     ; [ "${ASS:-yes}" != "no" ]          && libass="--enable-libass"
-libopenal=""  ; [ "${OPENAL:-yes}" != "no" ]       && libopenal="--enable-openal"
-libiec61883=""; [ "${IEC61883:-yes}" != "no" ]     && libiec61883="--enable-libiec61883"
+libbluray=""  ; [ "${BLURAY:-no}" != "no" ]       && libbluray="--enable-libbluray"
+libass=""     ; [ "${ASS:-no}" != "no" ]          && libass="--enable-libass"
+libopenal=""  ; [ "${OPENAL:-no}" != "no" ]       && libopenal="--enable-openal"
+libiec61883=""; [ "${IEC61883:-no}" != "no" ]     && libiec61883="--enable-libiec61883"
 libilbc="";     [ "${ILBC:-no}" != "no" ]         && libilbc="--enable-libilbc"
-libmodplug="";  [ "${MODPLUG:-yes}" != "no" ]      && libmodplug="--enable-libmodplug"
-libopus="";     [ "${OPUS:-yes}" != "no" ]         && libopus="--enable-libopus"
-libtwolame="";  [ "${TWOLAME:-yes}" != "no" ]      && libtwolame="--enable-libtwolame"
-ladspa="";      [ "${LADSPA:-yes}" != "no" ]       && ladspa="--enable-ladspa"
+libmodplug="";  [ "${MODPLUG:-no}" != "no" ]      && libmodplug="--enable-libmodplug"
+libopus="";     [ "${OPUS:-no}" != "no" ]         && libopus="--enable-libopus"
+libtwolame="";  [ "${TWOLAME:-no}" != "no" ]      && libtwolame="--enable-libtwolame"
+ladspa="";      [ "${LADSPA:-no}" != "no" ]       && ladspa="--enable-ladspa"
 #opencl="";      [ "${OPENCL:-yes}" != "no" ]       && opencl="--enable-opencl"
 
-opencore_amr="" ; [ "${OPENCORE:-yes}" != "no" ] && \
+opencore_amr="" ; [ "${OPENCORE:-no}" != "no" ] && \
   opencore_amr="--enable-libopencore-amrnb --enable-libopencore-amrwb"
 libfaac=""      ; [ "${FAAC:-yes}" != "no" ]     && \
   { libfaac="--enable-libfaac" ; non_free="--enable-nonfree" ; }
 ssl=""      ; [ "${OPENSSL:-yes}" != "no" ]     && \
   { ssl="--enable-openssl" ; non_free="--enable-nonfree" ; }
-openjpeg=""     ; [ "${JP2:-yes}" != "no" ]      && \
+openjpeg=""     ; [ "${JP2:-no}" != "no" ]      && \
   { openjpeg="--enable-libopenjpeg" ; \
     SLKCFLAGS="$SLKCFLAGS -I/usr/include/openjpeg-1.5" ; }
 
@@ -117,7 +117,9 @@ libx264="--enable-libx264"    ; [ "${X264:-yes}" != "yes" ] && libx264=""
 
 set -e
 
-wget -c http://www.ffmpeg.org/releases/$PRGNAM-$VERSION.tar.bz2
+DOWNLOAD="http://www.ffmpeg.org/releases/$PRGNAM-$VERSION.tar.bz2"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -202,7 +204,3 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$PKGARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $PRGNAM-$VERSION $PKG

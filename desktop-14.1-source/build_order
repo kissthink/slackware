@@ -32,3 +32,17 @@ gnome/goocanvas
 gnome/pygoocanvas
 gnome/totem-pl-parser
 gnome/libunique
+multimedia/lame
+multimedia/x264
+multimedia/libmp4v2
+multimedia/faac
+multimedia/frei0r
+multimedia/xvidcore
+multimedia/ffmpeg
+multimedia/libcdaudio
+multimedia/libdvdnav
+multimedia/faad2
+multimedia/a52dec
+multimedia/libmpeg2
+multimedia/libdv
+

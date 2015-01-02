@@ -61,7 +61,9 @@ fi
 
 set -e 
 
-wget -c http://ponce.cc/slackware/sources/repo/$PRGNAM-plugins-$VERSION.tar.gz
+DOWNLOAD="http://ponce.cc/slackware/sources/repo/$PRGNAM-plugins-$VERSION.tar.gz"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -108,8 +110,3 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP          
-rm -rf $PRGNAM-plugins-$VERSION $PKG
-
