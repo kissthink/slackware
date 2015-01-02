@@ -10,6 +10,19 @@ gnome/goocanvas-0.15-x86_64-1_microlinux.txz: Added.
 gnome/pygoocanvas-0.14.1-x86_64-1_microlinux.txz: Added.
 gnome/totem-pl-parser-3.4.5-x86_64-1_microlinux.txz: Added.
 gnome/libunique-1.1.6-x86_64-1_microlinux.txz: Added.
+multimedia/lame-3.99.5-x86_64-1_microlinux.txz: Added.
+multimedia/x264-20131101-x86_64-1_microlinux.txz: Added.
+multimedia/libmp4v2-2.0.0-x86_64-1_microlinux.txz: Added.
+multimedia/faac-1.28-x86_64-1_microlinux.txz: Added.
+multimedia/frei0r-1.4-x86_64-1_microlinux.txz: Added.
+multimedia/xvidcore-1.3.3-x86_64-1_microlinux.txz: Added.
+multimedia/ffmpeg-2.1.5-x86_64_custom-1_microlinux.txz: Added.
+multimedia/libcdaudio-0.99.12p2-x86_64-1_microlinux.txz: Added.
+multimedia/libdvdnav-4.2.0-x86_64-1_microlinux.txz: Added.
+multimedia/faad2-2.7-x86_64-1_microlinux.txz: Added.
+multimedia/a52dec-0.7.4-x86_64-1_microlinux.txz: Added.
+multimedia/libmpeg2-0.5.1-x86_64-1_microlinux.txz: Added.
+multimedia/libdv-1.0.0-x86_64-1_microlinux.txz: Added.
 +--------------------------+
 Thu Jan  1 16:01:03 CET 2015
 	Work on the Xfce-based MLED 14.1 Reloaded is starting with the new year.
