@@ -1,9 +1,8 @@
 #!/bin/sh
 
-# Slackware build script for libquicktime
+# Slackware build script for id3lib
 
-# Copyright 2008-2011 Heinz Wiesinger, Amsterdam, The Netherlands
-# All rights reserved.
+# Copyright 2006  Halim Issa <yallaone@gmail.com>
 #
 # Redistribution and use of this script, with or without modification, is
 # permitted provided that the following conditions are met:
@@ -21,20 +20,25 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+# Heavily based on original slackbuild by AlienBOB. 
+# Modified by Robby Workman <rworkman@slackbuilds.org>
 #
 # Modified by Niki Kovacs <info@microlinux.fr>
 
-PRGNAM=libquicktime
-VERSION=1.2.4
+PRGNAM=id3lib
+VERSION=3.8.3
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}
 
+# Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i486 ;;
     arm*) ARCH=arm ;;
+    # Unless $ARCH is already set, use uname -m for all other archs:
        *) ARCH=$( uname -m ) ;;
   esac
 fi
@@ -52,6 +56,7 @@ elif [ "$ARCH" = "i686" ]; then
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
+  SLKLDFLAGS="-L/usr/lib64"
   LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="-O2"
@@ -60,52 +65,61 @@ fi
 
 set -e
 
-wget -c http://downloads.sourceforge.net/$PRGNAM/$PRGNAM-$VERSION.tar.gz
+DOWNLOAD="http://downloads.sourceforge.net/$PRGNAM/$PRGNAM-$VERSION.tar.gz"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvzf $CWD/$PRGNAM-$VERSION.tar.gz
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 cd $PRGNAM-$VERSION
 chown -R root:root .
 chmod -R u+w,go+r-w,a-s .
 
-# BLFS patch 
-patch -Np1 -i $CWD/libquicktime-1.2.4-ffmpeg2-1.patch
+patch -p1 < $CWD/patches/id3lib_3.8.3_UTF16_writing_bug.patch
+patch -p1 < $CWD/patches/id3lib-3.8.3-GCC43FIX-1.patch
+patch -p1 -d doc < $CWD/patches/id3lib_Doxyfile.patch
+
+# iomanip.h is obsolete; use the standard c++ header
+sed -i "s%iomanip.h%iomanip%g" configure
 
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
-LDFLAGS="-L/usr/lib${LIBDIRSUFFIX}" \
 ./configure \
   --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
-  --sysconfdir=/etc \
   --localstatedir=/var \
-  --mandir=/usr/man \
-  --docdir=/usr/doc/$PRGNAM-$VERSION \
-  --enable-gpl \
-  --with-libdv \
+  --sysconfdir=/etc \
+  --enable-static=no \
+  --enable-debug=no \
   --build=$ARCH-slackware-linux
 
-make $NUMJOBS 
-make install-strip DESTDIR=$PKG || exit 1
+make $NUMJOBS
+make docs 2>/dev/null || true
+make install DESTDIR=$PKG
 
-find $PKG/usr/man -type f -exec gzip -9 {} \;
+find $PKG | xargs file | grep -e "executable" -e "shared object" | grep ELF \
+  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+
+# Strip down the doc and examples directories so we can copy w/impunity
+for i in doc/ examples/; do \
+  find $i                   \
+  \(  -name 'Makefile*' -or -name '*.ps.gz' -or -name '*.pdf' -or -name '*.in' \
+  \)  -exec rm {} \; ; done
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
-  ChangeLog COPYING INSTALL README TODO \
+  AUTHORS COPYING ChangeLog HISTORY NEWS README THANKS TODO doc/* \
     $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+find $PKG/usr/doc/$PRGNAM-$VERSION -type f -exec chmod 0644 {} \;
+# Remove the massive amount of API docs
+rm -rf $PKG/usr/doc/$PRGNAM-$VERSION/api
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
+chmod -R o-w $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP          
-rm -rf $PRGNAM-$VERSION $PKG
-

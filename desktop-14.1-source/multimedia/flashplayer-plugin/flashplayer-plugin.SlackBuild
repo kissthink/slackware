@@ -51,7 +51,9 @@ OUTPUT=${OUTPUT:-/tmp}
 
 set -e
 
-wget -c https://$URL/$VERSION/install_flash_player_${VERS_MAJ}_linux.${ARCH}.tar.gz
+DOWNLOAD="https://$URL/$VERSION/install_flash_player_${VERS_MAJ}_linux.${ARCH}.tar.gz"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -88,7 +90,3 @@ chmod -R g-w $PKG
 find $PKG -type f -name "*.so" -exec chmod 0755 {} \;
 
 /sbin/makepkg -l y -c n -p $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $PKG

@@ -62,7 +62,9 @@ fi
 
 set -e
 
-wget -c http://gstreamer.freedesktop.org/src/$SRCNAM/$SRCNAM-$VERSION.tar.xz
+DOWNLOAD="http://gstreamer.freedesktop.org/src/$SRCNAM/$SRCNAM-$VERSION.tar.xz"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -107,7 +109,3 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $SRCNAM-$VERSION $PKG

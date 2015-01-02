@@ -46,3 +46,13 @@ multimedia/a52dec
 multimedia/libmpeg2
 multimedia/libdv
 # multimedia/mplayer-codecs{32,64} --> build manually
+multimedia/libdvdcss
+multimedia/flashplayer-plugin
+multimedia/libquicktime
+multimedia/id3lib
+d/orc
+multimedia/gstreamer1
+multimedia/gst1-plugins-base
+multimedia/gst1-plugins-bad
+
+
