@@ -40,8 +40,10 @@ fi
 
 set -e 
 
-wget -c --no-check-certificate \
-  http://launchpad.net/$PRGNAM/1.4/$VERSION/+download/$PRGNAM-$VERSION.tar.gz
+DOWNLOAD="http://launchpad.net/$PRGNAM/1.4/$VERSION/+download/$PRGNAM-$VERSION.tar.gz"
+
+wget -c --no-check-certificate $DOWNLOAD
+  
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -80,8 +82,3 @@ cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $PRGNAM-$VERSION $PKG
-
