@@ -1,5 +1,7 @@
 
 gnome/evince-3.12.2-x86_64-1_microlinux.txz: Added.
+gnome/gmtk-1.0.8-x86_64-1_microlinux.txz: Added.
+gnome/gnome-mplayer-1.0.8-x86_64-1_microlinux.txz: Added.
 +--------------------------+
 Fri Jan  2 20:02:16 CET 2015
 gnome/libsigc++-2.2.11-x86_64-1_microlinux.txz: Added.
