@@ -43,7 +43,7 @@ Graphisme
   [*] GIMP
   [ ] Simple Scan
   [*] Capture d'écran
-  [ ] Visionneuse d'images
+  [*] Visionneuse d'images
   [ ] Gestion des appareils photo PTP 
   [ ] Confection de pochettes CD
   [*] Inkscape
@@ -73,8 +73,8 @@ Accessoires
   [ ] Éditeur de texte simple
   [ ] Recherche de fichiers
   [ ] Calculatrice
-  [ ] Gestionnaire d'archives
-  [ ] Gestion des formats d'archivage 
+  [*] Gestionnaire d'archives
+  [*] Gestion des formats d'archivage 
   [ ] Utilitaire pour formater les clés USB
 
 

@@ -1,4 +1,4 @@
-
+Sat Jan  3 12:10:42 CET 2015
 gnome/evince-3.12.2-x86_64-1_microlinux.txz: Added.
 gnome/gmtk-1.0.8-x86_64-1_microlinux.txz: Added.
 gnome/gnome-mplayer-1.0.8-x86_64-1_microlinux.txz: Added.
@@ -10,6 +10,9 @@ xap/inkscape-0.48.5-x86_64-1_microlinux.txz: Added.
 xap/openshot-1.4.3-x86_64-1_microlinux.txz: Added.
 xap/transmission-2.84-x86_64-1_microlinux.txz: Added.
 xap/scribus-1.4.4-x86_64-1_microlinux.txz: Added.
+xfce/ristretto-0.6.3-x86_64-1_microlinux.txz: Added.
+xfce/xarchiver-0.5.4-x86_64-1_microlinux.txz: Added.
+xfce/thunar-archive-plugin-0.3.1-x86_64-1_microlinux.txz: Added.
 +--------------------------+
 Fri Jan  2 20:02:16 CET 2015
 gnome/libsigc++-2.2.11-x86_64-1_microlinux.txz: Added.
