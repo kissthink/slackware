@@ -1,3 +1,10 @@
+Sat Jan  3 19:49:25 CET 2015
+xap/filezilla-3.8.1-x86_64-1_microlinux.txz: Added.
+n/freerdp-20131115_ea18d2b-x86_64-1_microlinux.txz: Added.
+xap/remmina-20131008_26b814a-x86_64-1_microlinux.txz: Added.
+ap/cdlabelgen-4.3.0-noarch-1_microlinux.txz: Added.
+xap/gtkcdlabel-1.15-noarch-1_microlinux.txz: Added.
++--------------------------+
 Fri Jan  2 20:01:25 CET 2015
 xap/virtualbox-4.3.20-x86_64-1_microlinux.txz: Added.
 xap/virtualbox-kernel-4.3.20_3.10.17-x86_64-1_microlinux.txz: Added.

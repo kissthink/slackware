@@ -19,8 +19,8 @@ Internet
   [*] Messagerie instantanée
   [*] Transmission
   [*] GFTP
-  [ ] Filezilla
-  [ ] Remmina
+  [*] Filezilla
+  [*] Remmina
   [*] Dropbox
   [ ] Skype
 
@@ -45,7 +45,7 @@ Graphisme
   [*] Capture d'écran
   [*] Visionneuse d'images
   [ ] Gestion des appareils photo PTP 
-  [ ] Confection de pochettes CD
+  [*] Confection de pochettes CD
   [*] Inkscape
   [*] Scribus
 
