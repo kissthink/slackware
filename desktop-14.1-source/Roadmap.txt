@@ -32,7 +32,7 @@ Bureautique
   [*] Traductions LibreOffice
   [ ] Aide en ligne LibreOffice
   [*] Jeu de polices TrueType
-  [ ] Evince
+  [*] Evince
   [ ] Gestion des e-books
   [ ] Logiciel de dactylographie
 
@@ -46,7 +46,7 @@ Graphisme
   [ ] Visionneuse d'images
   [ ] Gestion des appareils photo PTP 
   [ ] Confection de pochettes CD
-  [ ] Inkscape
+  [*] Inkscape
   [ ] Scribus
 
 
@@ -54,7 +54,7 @@ Multimédia
 ----------
 
   [*] Lecteur audio  
-  [ ] Lecteur vidéo
+  [*] Lecteur vidéo
   [*] Codecs et plug-ins audio
   [*] Décryptage de DVD
   [ ] Gestion des iPods
