@@ -29,7 +29,7 @@
 
 PRGNAM=freerdp
 VERSION=${VERSION:-20131115_ea18d2b}
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}
@@ -67,7 +67,9 @@ fi
 
 set -e
 
-wget -c http://ponce.cc/slackware/sources/repo/$PRGNAM-$VERSION.tar.xz
+DOWNLOAD="http://ponce.cc/slackware/sources/repo/$PRGNAM-$VERSION.tar.xz"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -119,7 +121,3 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $PRGNAM-$VERSION $PKG

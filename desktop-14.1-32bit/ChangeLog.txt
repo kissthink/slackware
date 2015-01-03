@@ -13,6 +13,7 @@ xap/scribus-1.4.4-i486-1_microlinux.txz: Added.
 xfce/ristretto-0.6.3-i486-1_microlinux.txz: Added.
 xfce/xarchiver-0.5.4-i486-1_microlinux.txz: Added.
 xfce/thunar-archive-plugin-0.3.1-i486-1_microlinux.txz: Added.
+multimedia/cddb-py-1.4-i486-1_microlinux.txz: Added.
 +--------------------------+
 Fri Jan  2 20:04:43 CET 2015
 gnome/libsigc++-2.2.11-i486-1_microlinux.txz: Added.

@@ -25,7 +25,7 @@
 
 PRGNAM=gtkcdlabel      
 VERSION=${VERSION:-1.15}  
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}   
 
 # Automatically determine the architecture we're building on:
@@ -47,7 +47,9 @@ ARCH=noarch
 
 set -e 
 
-wget -c http://downloads.sourceforge.net/project/$PRGNAM/$PRGNAM/$VERSION/$PRGNAM-$VERSION.tar.bz2
+DOWNLOAD="http://downloads.sourceforge.net/project/$PRGNAM/$PRGNAM/$VERSION/$PRGNAM-$VERSION.tar.bz2"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -72,6 +74,3 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-rm -rf $PKG

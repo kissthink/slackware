@@ -9,7 +9,7 @@
 
 PRGNAM=remmina
 VERSION=${VERSION:-20131008_26b814a}
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}
@@ -50,7 +50,9 @@ fi
 
 set -e
 
-wget -c http://ponce.cc/slackware/sources/repo/$SRCNAM-$VERSION.tar.xz
+DOWNLOAD="http://ponce.cc/slackware/sources/repo/$SRCNAM-$VERSION.tar.xz"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -110,7 +112,3 @@ cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $SRCNAM-$VERSION $PKG
