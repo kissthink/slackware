@@ -47,7 +47,7 @@ Graphisme
   [ ] Gestion des appareils photo PTP 
   [ ] Confection de pochettes CD
   [*] Inkscape
-  [ ] Scribus
+  [*] Scribus
 
 
 Multimédia
