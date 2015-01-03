@@ -71,6 +71,11 @@ gnome/brasero
 gnome/evince
 gnome/gmtk
 gnome/gnome-mplayer
+d/numpy
+l/BeautifulSoup
+l/gsl
+l/lxml
+xap/inkscape
 
 
 

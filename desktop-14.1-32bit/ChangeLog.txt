@@ -2,6 +2,11 @@
 gnome/evince-3.12.2-i486-1_microlinux.txz: Added.
 gnome/gmtk-1.0.8-i486-1_microlinux.txz: Added.
 gnome/gnome-mplayer-1.0.8-i486-1_microlinux.txz: Added.
+d/numpy-1.9.1-i486-1_microlinux.txz: Added.
+l/BeautifulSoup-3.2.1-i486-1_microlinux.txz: Added.
+l/gsl-1.16-i486-1_microlinux.txz: Added.
+l/lxml-3.4.0-i486-1_microlinux.txz: Added.
+xap/inkscape-0.48.5-i486-1_microlinux.txz: Added.
 +--------------------------+
 Fri Jan  2 20:04:43 CET 2015
 gnome/libsigc++-2.2.11-i486-1_microlinux.txz: Added.
