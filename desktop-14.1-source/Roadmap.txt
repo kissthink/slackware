@@ -84,6 +84,8 @@ Système
   [ ] Conky
   [*] VirtualBox
   [ ] Wine
+  [*] sbopkg
+  [ ] slackpkg+ préconfiguré
 
 
 Environnement de bureau
