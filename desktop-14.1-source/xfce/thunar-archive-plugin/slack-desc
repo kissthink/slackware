@@ -1,0 +1,12 @@
+                     |-----handy-ruler------------------------------------------------------|
+thunar-archive-plugin: thunar-archive-plugin (Thunar Archive Plugin)
+thunar-archive-plugin:
+thunar-archive-plugin: The thunar-archive-plugin is a plugin for the Thunar file manager 
+thunar-archive-plugin: which adds archive operations to the file context menus. Using this
+thunar-archive-plugin: plugin you will be able to extract and create archive files from 
+thunar-archive-plugin: within Thunar with a a single click.
+thunar-archive-plugin: 
+thunar-archive-plugin:
+thunar-archive-plugin:
+thunar-archive-plugin:
+thunar-archive-plugin: Package created by Niki Kovacs <info@microlinux.fr>
