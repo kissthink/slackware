@@ -17,7 +17,7 @@ Internet
   [*] Mozilla Thunderbird
   [*] Traductions Mozilla Thunderbird
   [*] Messagerie instantanée
-  [ ] Transmission
+  [*] Transmission
   [*] GFTP
   [ ] Filezilla
   [ ] Remmina
