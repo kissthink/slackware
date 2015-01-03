@@ -9,6 +9,7 @@ l/lxml-3.4.0-i486-1_microlinux.txz: Added.
 xap/inkscape-0.48.5-i486-1_microlinux.txz: Added.
 xap/openshot-1.4.3-i486-1_microlinux.txz: Added.
 xap/transmission-2.84-i486-1_microlinux.txz: Added.
+xap/scribus-1.4.4-i486-1_microlinux.txz: Added.
 +--------------------------+
 Fri Jan  2 20:04:43 CET 2015
 gnome/libsigc++-2.2.11-i486-1_microlinux.txz: Added.
