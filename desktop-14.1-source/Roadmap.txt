@@ -62,7 +62,7 @@ Multimédia
   [ ] Gestion des tags ID3
   [ ] Convertisseur multimédia
   [*] Audacity
-  [ ] Openshot
+  [*] Openshot
 
 
 Accessoires
