@@ -72,7 +72,7 @@ Accessoires
   [ ] Gnote
   [*] Éditeur de texte simple
   [ ] Recherche de fichiers
-  [ ] Calculatrice
+  [*] Calculatrice
   [*] Gestionnaire d'archives
   [*] Gestion des formats d'archivage 
   [ ] Utilitaire pour formater les clés USB
