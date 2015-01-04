@@ -19,90 +19,85 @@ Créer un utilisateur 'template' pour le modèle de configuration.
 
 Premier démarrage : Utiliser les paramètres par défaut.
 
+Style : Clearlooks Phenix
+
+Icônes : Elementary Xfce
+
+Police de l'interface : Droid Sans 11
+
+Icônes du bureau :
+
+  [ ] Répertoire personnel
+
+  [ ] Système de fichiers
+
+  [ ] Corbeille
+
+  [X] Périphériques amovibles
+
+Arrière-plan : opensuse-1600x1200.jpg
+
+Économiseur d'écran : un seul > GLMatrix
+
+Nombre d'espaces de travail : 2
+
+Gestionnaire de fenêtres : Axe Rounded
+
+Peaufinage des fenêtres > Compositeur :
+
+  [*] Activer le compositeur d'affichage
+
+  [*] Affichage direct des fenêtres plein écran
+
+  [*] Afficher l'ombre sous les fenêtres normales
+
+  [*] Afficher l'ombre sous les fenêtres contextuelles
+
+  [*] Afficher l'ombre sous les fenêtres du dock
+
+  Opacité des décorations des fenêtres : laisser tel quel
+
+  Opacité des fenêtres inactives : réduire d'un cran
+
+  Opacité des fenêtres durant leur déplacement : réduire de deux crans
+
+  Opacité des fenêtres durant leur redimensionnement : réduire d'un cran
+
+  Opacité des fenêtres contextuelles : laisser tel quel
+
+Éditeur de paramètres > xsettings > Gtk > IconSizes > Modifier :
+
+  gtk-menu=16,16:gtk-button=20,20:panel-applications-menu=24,24:\
+    panel-directory-menu=24,24
+
+Menu d'applications > Démarrer > start-here-slackware (emplacements)
+
+  [*] Afficher la description de l'application dans une bulle d'aide
+
 Déplacer la zone de notifications à gauche du sélecteur de bureaux virtuels.
 
-Ajouter deux applets entre la zone de notifications et le sélecteur de bureaux
-virtuels :
+Ajouter l'applet de mixage entre la zone de notifications et le sélecteur de
+bureaux virtuels.
 
-  * un bouton 'Clipman'
-  * un bouton 'Mixer'
+Tableau de bord > Panneau 2 : supprimer tous les lanceurs prédéfinis.
 
-  > Apparence
-  * Style > Clearlooks-Phenix
-  * Icônes > Faenza
-  * Polices > Police par défaut : Droid Sans Regular 11
+Ajouter des lanceurs pour les applications de base :
 
-  > Applications favorites
-  * Navigateur Web : Mozilla Firefox
-  * Client de messagerie : Mozilla Thunderbird
-  * Gestionnaire de fichiers : Thunar
-  * Émulateur de Terminal : Terminal Xfce
+  * Thunar
+  * Mozilla Firefox
+  * Mozilla Thunderbird
+  * LibreOffice
+  * Ristretto
+  * Audacious
+  * MPlayer
 
-  > Bureau
-  * Arrière-plan : opensuse-1600x1200.jpg
-  * Icônes > Icônes par défaut :
-  * [ ] Répertoire personnel
-  * [ ] Système de fichiers
-  * [ ] Corbeille
-  * [*] Périphériques amovibles
+Pour chacune des entrées qu'on vient d'ajouter :
 
-  > Économiseur d'écran
-  * Mode : Seulement un économiseur d'écran : GLMatrix
+  [ ] Désactiver les bulles d'aide
 
-  > Espaces de travail
-  * Nombre d'espaces de travail : 2
-
-  > Gestionnaire de fenêtres
-  * Style > Thème : Axe Rounded
-
-  > Gestionnaire de fichiers
-  * Affichage > Voir un nouveau dossier en utilisant : Liste détaillée
-
-  > Peaufinage des fenêtres
-  * Compositeur > [*] Activer le compositeur d'affichage
-  * [*] Affichage direct des fenêtres plein écran
-  * [*] Afficher l'ombre sous les fenêtres normales
-  * [*] Afficher l'ombre sous les fenêtres contextuelles
-  * [*] Afficher l'ombre sous les fenêtres du dock
-  * Opacité des décorations des fenêtres : laisser tel quel
-  * Opacité des fenêtres inactives : réduire d'un cran
-  * Opacité des fenêtres durant leur déplacement : réduire de deux crans
-  * Opacité des fenêtres durant leur redimensionnement : réduire d'un cran
-  * Opacité des fenêtres contextuelles : laisser tel quel
-
-  > Souris
-  Thème : whiteglass
-
-  > Tableau de bord > Panneau 2
-  * Dans un premier temps, maximiser la largeur du panneau pour pouvoir ajouter
-    les applications plus confortablement.
-  * Supprimer tous les lanceurs prédéfinis.
-  * Ajouter la sélection d'applications, une par une.
-  * Affichage > Dimensions > Taille : 40 - 48 pixels selon le nombre
-    d'applications
-  * Largeur : 1 %
-  * Apparence > Opacité : 1 %
-  * Apparence > Arrière-plan > Opacité : 0 %
-  * Pour chacune des entrées qu'on vient d'ajouter :
-    [ ] Désactiver les bulles d'aide
- 
 Peaufiner Xfce Terminal.
 
-Bouton du menu d'applications : remplacer le logo de Xfce par celui de
-Slackware. 
-
-  * Icônes des emplacements > 'start-here-slackware'
-    [*] Afficher la description de l'application dans une bulle d'aide
-
-Agrandir la taille des icônes. Lancer l'éditeur de paramètres
-'xfce4-settings-editor' et définir les paramètres xsettings > Gtk > IconSizes :
-
-  * gtk-menu=16,16
-  * gtk-button=20,20
-  * panel-applications-menu=24,24
-  * panel-directory-menu=24,24
-
-Écrire tous ces paramètres dans une seule ligne, séparés par ':' sans espace.
+Thunar : augmenter d'un cran la taille des icônes
 
 
 Création du profil
