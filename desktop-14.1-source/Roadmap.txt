@@ -59,7 +59,7 @@ Multimédia
   [*] Décryptage de DVD
   [ ] Gestion des iPods
   [*] Extracteur audio
-  [ ] Gestion des tags ID3
+  [*] Gestion des tags ID3
   [ ] Convertisseur multimédia
   [*] Audacity
   [*] Openshot
@@ -69,7 +69,7 @@ Accessoires
 -----------
 
   [*] Brasero
-  [ ] Gnote
+  [*] Gnote
   [*] Éditeur de texte simple
   [*] Recherche de fichiers
   [*] Calculatrice
