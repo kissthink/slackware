@@ -71,7 +71,7 @@ Accessoires
   [*] Brasero
   [ ] Gnote
   [*] Éditeur de texte simple
-  [ ] Recherche de fichiers
+  [*] Recherche de fichiers
   [*] Calculatrice
   [*] Gestionnaire d'archives
   [*] Gestion des formats d'archivage 
