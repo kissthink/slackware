@@ -49,25 +49,15 @@ AddDefaultCharset utf-8
   AddIcon       /slackware/repository-layout/xfce.png desktop-14.1-32bit
   AddIcon       /slackware/repository-layout/xfce.png desktop-14.1-64bit
   AddIcon       /slackware/repository-layout/xfce.png desktop-14.1-source
+  AddIcon       /slackware/repository-layout/system-installer.png extras-14.1-32bit
+  AddIcon       /slackware/repository-layout/system-installer.png extras-14.1-64bit
+  AddIcon       /slackware/repository-layout/system-installer.png extras-14.1-source
   AddIcon       /slackware/repository-layout/server.png server-14.0-32bit
   AddIcon       /slackware/repository-layout/server.png server-14.0-64bit
   AddIcon       /slackware/repository-layout/server.png server-14.0-source
   AddIcon       /slackware/repository-layout/server.png server-14.1-32bit
   AddIcon       /slackware/repository-layout/server.png server-14.1-64bit
   AddIcon       /slackware/repository-layout/server.png server-14.1-source
-  AddIcon       /slackware/repository-layout/xorg.png desktop-base-14.1-32bit
-  AddIcon       /slackware/repository-layout/xorg.png desktop-base-14.1-64bit
-  AddIcon       /slackware/repository-layout/xorg.png desktop-base-14.1-source
-  AddIcon       /slackware/repository-layout/xorg.png desktop-extra-14.1-32bit
-  AddIcon       /slackware/repository-layout/xorg.png desktop-extra-14.1-64bit
-  AddIcon       /slackware/repository-layout/xorg.png desktop-extra-14.1-source
-  AddIcon       /slackware/repository-layout/kde.png desktop-kde-14.1-32bit
-  AddIcon       /slackware/repository-layout/kde.png desktop-kde-14.1-64bit
-  AddIcon       /slackware/repository-layout/kde.png desktop-kde-14.1-source
-  AddIcon       /slackware/repository-layout/xfce.png desktop-xfce-14.1-32bit
-  AddIcon       /slackware/repository-layout/xfce.png desktop-xfce-14.1-64bit
-  AddIcon       /slackware/repository-layout/xfce.png desktop-xfce-14.1-source
-  AddIcon       /slackware/repository-layout/utilities-terminal.png stripslack-14.1
   AddIconByType /slackware/repository-layout/image-x-generic.png image/*
 
   # DESCRIPTIONS
@@ -78,21 +68,12 @@ AddDefaultCharset utf-8
   AddDescription "Helper scripts" tools
   AddDescription "Obsolete software" pasture
   AddDescription "Microlinux test bench" testing
-  AddDescription "Work In Progress" desktop-14.1-32bit
-  AddDescription "Work In Progress" desktop-14.1-64bit
-  AddDescription "Work In Progress" desktop-14.1-source
-  AddDescription "Microlinux Enterprise Desktop Base 14.1 32-bit" desktop-base-14.1-32bit
-  AddDescription "Microlinux Enterprise Desktop Base 14.1 64-bit" desktop-base-14.1-64bit
-  AddDescription "Microlinux Enterprise Desktop Base 14.1 source" desktop-base-14.1-source
-  AddDescription "Microlinux Enterprise Desktop Extra 14.1 32-bit" desktop-extra-14.1-32bit
-  AddDescription "Microlinux Enterprise Desktop Extra 14.1 64-bit" desktop-extra-14.1-64bit
-  AddDescription "Microlinux Enterprise Desktop Extra 14.1 source" desktop-extra-14.1-source
-  AddDescription "Microlinux Enterprise Desktop KDE 14.1 32-bit" desktop-kde-14.1-32bit
-  AddDescription "Microlinux Enterprise Desktop KDE 14.1 64-bit" desktop-kde-14.1-64bit
-  AddDescription "Microlinux Enterprise Desktop KDE 14.1 source" desktop-kde-14.1-source
-  AddDescription "Microlinux Enterprise Desktop Xfce 14.1 32-bit" desktop-xfce-14.1-32bit
-  AddDescription "Microlinux Enterprise Desktop Xfce 14.1 64-bit" desktop-xfce-14.1-64bit
-  AddDescription "Microlinux Enterprise Desktop Xfce 14.1 source" desktop-xfce-14.1-source
+  AddDescription "Microlinux Enterprise Desktop 14.1 32-bit" desktop-14.1-32bit
+  AddDescription "Microlinux Enterprise Desktop 14.1 64-bit" desktop-14.1-64bit
+  AddDescription "Microlinux Enterprise Desktop 14.1 source" desktop-14.1-source
+  AddDescription "Additional Software for MLED 14.1 32-bit" extras-14.1-32bit
+  AddDescription "Additional Software for MLED 14.1 64-bit" extras-14.1-64bit
+  AddDescription "Additional Software for MLED 14.1 source" extras-14.1-source
   AddDescription "Microlinux Enterprise Server 14.0 32-bit" server-14.0-32bit
   AddDescription "Microlinux Enterprise Server 14.0 64-bit" server-14.0-64bit
   AddDescription "Microlinux Enterprise Server 14.0 source" server-14.0-source

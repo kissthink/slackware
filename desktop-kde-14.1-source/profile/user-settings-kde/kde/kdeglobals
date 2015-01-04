@@ -1,6 +1,0 @@
-[KDE]
-SingleClick=false
-
-[General]
-BrowserApplication[$e]=mozilla-firefox.desktop
-EmailClient[$e]=thunderbird
