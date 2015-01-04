@@ -1,3 +1,6 @@
+
+xap/leafpad-0.8.18.1-i486-1_microlinux.txz: Added.
++--------------------------+
 Sat Jan  3 11:56:27 CET 2015
 gnome/evince-3.12.2-i486-1_microlinux.txz: Added.
 gnome/gmtk-1.0.8-i486-1_microlinux.txz: Added.
