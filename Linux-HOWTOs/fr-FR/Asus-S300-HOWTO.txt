@@ -12,7 +12,7 @@ Slackware Linux 14.1 64-bit sur un ordinateur portable Asus S300.
   * Configuration du BIOS
   * Démarrage
   * Partitionnement
-  * LILO
+  * Chargeur de démarrage
 
 
 Prérequis
