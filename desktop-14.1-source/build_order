@@ -88,7 +88,7 @@ multimedia/cddb-py
 xap/leafpad
 xap/galculator
 xap/catfish
-gnome/gtkmm3
-gnome/gnote
+#gnome/gtkmm3
+#gnome/gnote
 
 
