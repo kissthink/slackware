@@ -90,5 +90,7 @@ xap/galculator
 xap/catfish
 #gnome/gtkmm3
 #gnome/gnote --> too many bugs
+profile/user-settings-xfce
+
 
 

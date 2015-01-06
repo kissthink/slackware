@@ -106,12 +106,7 @@ Création du profil
   # cp -Rv /home/template/.config /etc/skel/
   # cd /etc/skel/.config
 
-Garder les répertoires suivants :
-
-  * Thunar
-  * xfce4
-
-Supprimer tout le reste.
+Garder le répertoire 'xfce4' et supprimer tout le reste.
 
 Supprimer .config/xfce4/xfce4-screenshooter
 
