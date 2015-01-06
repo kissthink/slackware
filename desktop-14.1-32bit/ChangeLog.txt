@@ -6,6 +6,7 @@ l/pyxdg-0.25-i486-1_microlinux.txz: Added.
 xap/openshot-1.4.3-i486-2_microlinux.txz: Rebuilt.
 gnome/gtkmm3-3.8.1-i486-1_SBo.txz: Removed.
 gnome/gnote-3.10.3-i486-1_microlinux.txz: Removed.
+xfce/ristretto-0.6.3-i486-1_microlinux.txz: removed.
 +--------------------------+
 Sun Jan  4 11:29:37 CET 2015
 xap/leafpad-0.8.18.1-i486-1_microlinux.txz: Added.

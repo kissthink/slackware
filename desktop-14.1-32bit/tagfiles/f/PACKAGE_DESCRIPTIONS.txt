@@ -1,0 +1,22 @@
+linux-faqs: linux-faqs (Linux FAQ collection from ibiblio.org)
+linux-faqs:
+linux-faqs: Frequently Asked Questions (and answers!) on many Linux topics.
+linux-faqs:
+linux-faqs: Some of the FAQs included in this package: 
+linux-faqs: ATAPI-FAQ, AfterStep-FAQ, BLFAQ (Brief Linux FAQ), Ftape-FAQ,
+linux-faqs: GCC-SIG11-FAQ, Joe-Command-Reference, the Linux-FAQ, PPP-FAQ, SMP-FAQ,
+linux-faqs: and the Threads-FAQ.
+linux-faqs:
+linux-faqs: These FAQs will be installed under /usr/doc/Linux-FAQs/.
+linux-faqs:
+linux-howtos: linux-howtos (HOWTOs from the Linux Documentation Project)
+linux-howtos:
+linux-howtos: Documentation on many tasks relating to Linux setup and operation.
+linux-howtos:
+linux-howtos: These documents will be installed in /usr/doc/Linux-HOWTOs/.
+linux-howtos:
+linux-howtos:
+linux-howtos:
+linux-howtos:
+linux-howtos:
+linux-howtos:
