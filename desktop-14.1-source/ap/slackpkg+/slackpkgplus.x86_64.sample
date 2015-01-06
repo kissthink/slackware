@@ -1,0 +1,52 @@
+# /etc/slackpkg/slackpkgplus.conf
+
+# Enable (on) / Disable (off) slackpkg+
+SLACKPKGPLUS=on
+
+# set to '0' to never show the download progress bar
+# set to '1' to show the bar only in download packages (default)
+# set to '2' to always show the download bar
+# set to '3' for a debug mode
+VERBOSE=2
+
+# By default slackpkg+ deny to install 32bit packages.
+# Set this flag to 'on' allow slackpkg+ to install 32bit packages on a 64bit slackware 
+# installation (possibly unsafe). Please, do not install both 32 and 64bit of the same 
+# package to avoid problems, and NEVER upgrade exitant 64bit packages with relative 32bit package.
+# Do not forget to install the multilibs.
+ALLOW32BIT=off
+
+# Enable (1) / Disable (0) the official slackpkg blacklist. May be useful to temporarily skip
+# the slackware blacklist. You can also override it from command line:
+# 'USEBL=0 slackpkg upgrade-all'
+USEBL=1
+
+# Add custom option to 'wget'.
+# You can solve the repository indisponibility issue by set a timeout here
+WGETOPTS="--timeout=5 --tries=1"
+
+# Enable (on) / Disable (off) notification events (see notifymsg.conf)
+ENABLENOTIFY=off
+
+# Enable (on) / Disable (off) the greylist feature. See /etc/slackpkg/greylist
+GREYLIST=off
+
+# If two or more repositories contains some same packages, you can specify
+# from which repository you prefer to search it.
+# The syntax is "<repository_name>:<package_name>"
+# Accepts regular expressions. To give priority to an entire repository use "<repository_name>:.*"
+PKGS_PRIORITY=( multilib:.* microlinux-desktop:.* )
+
+# List repositories you want to use (defined below)
+# remember to launch 'slackpkg update' if you modify that row.
+REPOPLUS=( multilib microlinux-desktop microlinux-extras )
+
+# Define mirrors (uncomment one or more mirror; remember to add it to REPOPLUS)
+MIRRORPLUS['multilib']=http://taper.alienbase.nl/mirrors/people/alien/multilib/14.1/
+MIRRORPLUS['microlinux-desktop']=http://www.microlinux.fr/slackware/desktop-14.1-64bit/
+MIRRORPLUS['microlinux-extras']=http://www.microlinux.fr/slackware/extras-14.1-64bit/
+
+#
+# Supported Repositories (see /usr/doc/slackpkg+-* for details):
+#
+
