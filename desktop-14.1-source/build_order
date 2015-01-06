@@ -63,7 +63,7 @@ xap/audacious-plugins
 gnome/libgnomecups
 gnome/libgnomeprint
 gnome/libgnomeprintui
-#l/wxGTK
+#l/wxGTK --> replaced by wxPython
 l/wxPython
 xap/audacity
 l/libburn
@@ -81,7 +81,7 @@ l/pyxdg
 xap/openshot
 xap/transmission
 xap/scribus
-xfce/ristretto
+#xfce/ristretto --> replaced by Geeqie
 xfce/xarchiver
 xfce/thunar-archive-plugin
 multimedia/cddb-py
@@ -89,6 +89,6 @@ xap/leafpad
 xap/galculator
 xap/catfish
 #gnome/gtkmm3
-#gnome/gnote
+#gnome/gnote --> too many bugs
 
 
