@@ -1,0 +1,12 @@
+        |-----handy-ruler------------------------------------------------------|
+wxPython: wxPython (Crossplatform GUI Toolkit)
+wxPython:
+wxPython: wxPython is a GUI toolkit for the Python programming language.
+wxPython: It allows Python programmers to create programs with a robust,
+wxPython: highly functional graphical user interface simply and easily.
+wxPython: It is implemented as a Python extension module (native code)
+wxPython: that wraps the popular wxWidgets cross platform GUI library
+wxPython: which is written in C++.
+wxPython:
+wxPython: 
+wxPython: Package created by Niki Kovacs <info@microlinux.fr>

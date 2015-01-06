@@ -2,9 +2,9 @@
 catfish: Catfish (A versatile file searching tool)
 catfish:
 catfish: Catfish is a frontend for different search engines (daemons). The
-catfish: interface is intentionally lightweight and simple, using only GTK+ 2.
-catfish: You can configure it to your needs by using several command line
-catfish: options.
+catfish: interface is intentionally lightweight and simple. You can configure
+catfish: it to your needs by using several command line options.
+catfish: 
 catfish:
 catfish: 
 catfish:

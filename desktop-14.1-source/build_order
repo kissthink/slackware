@@ -63,7 +63,8 @@ xap/audacious-plugins
 gnome/libgnomecups
 gnome/libgnomeprint
 gnome/libgnomeprintui
-l/wxGTK
+#l/wxGTK
+l/wxPython
 xap/audacity
 l/libburn
 l/libisofs
@@ -76,6 +77,7 @@ l/BeautifulSoup
 l/gsl
 l/lxml
 xap/inkscape
+l/pyxdg
 xap/openshot
 xap/transmission
 xap/scribus
