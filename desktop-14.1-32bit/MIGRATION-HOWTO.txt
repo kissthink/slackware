@@ -46,11 +46,12 @@ their removal yet:
 
   # slackpkg clean-system
 
-You may want to keep the following packages if you're using them:
+You may want to keep the following packages if you're using them. They will be
+replaced by more recent versions later on, but removing them would cause some
+minor trouble :
 
   1. user-settings-console (if you're running an old MLED system)
   2. slackpkg+ 
-  3. everything multilib-related
 
 Import the Microlinux helper scripts:
 
@@ -62,22 +63,29 @@ If you already have these scripts, make sure they're up to date:
   # cd ~/slackware
   # git pull
 
-Now's the time to install and/or configure 'slackpkg+' to point to the
+Now's the time to install and/or configure 'slackpkg+' to point to the new
 MLED repositories. To avoid the hassle, Microlinux provides a custom
 'slackpkg+' package that comes preconfigured for the Microlinux repositories.
 
 On the command line, use the 'links' browser to navigate through the
 repositories:
 
+  # cd
   # links http://www.microlinux.fr/slackware/ 
 
-Navigate to the 'desktop-14.1-32bit/slackware/ap/' subdirectory. Grab the
+Navigate to the 'desktop-14.1-$ARCH/slackware/ap/' subdirectory. Grab the
 'slackpkg+' package from the repository (use the [D] key in the Links browser
 to download it) and install it:
 
   # upgradepkg --reinstall --install-new slackpkg+-1.3.2-noarch-2_microlinux.txz  
 
 Make sure you don't keep the existing configuration file.
+
+  /!\ $ARCH is the architecture of your CPU (either 32-bit or 64-bit).
+
+Update information about available packages again:
+
+  # slackpkg update 
 
 Trim the base Slackware installation by running the 'trim_desktop.sh' script.
 This will remove all unneeded packages and install everything that's needed
@@ -86,7 +94,14 @@ for a functional Xfce desktop:
   # cd desktop-14.1-$ARCH/tools 
   # ./trim_desktop.sh 
 
-  Note: $ARCH is the architecture of your CPU (either 32-bit or 64-bit).
+Upgrade the base packages:
+
+  # slackpkg upgrade-all
+
+If you're upgrading an existing MLED installation, reinstall Audacious and
+MPlayer (three packages):
+
+  # slackpkg reinstall audacious MPlayer
 
 Install the full collection of MLED packages:
 
@@ -101,15 +116,25 @@ Since your user is already created, his default profile will have to be copied
 over manually from /etc/skel:
 
   # su - <youruser> 
+  $ rm -rf ~/.config
   $ cp -Rvf /etc/skel/.[!.]* . 
 
   /!\ Don't simply use a .* wildcard on hidden files, otherwise you'll fill
   your home directory with the contents of '/etc'.
 
-Now switch back to init 4 and login to Xfce
+Now define Xfce as your default desktop environment, switch back to init 4 and
+login to Xfce:
 
   $ exit 
+  # xwmconfig --> choose Xfce
   # init 4 
+
+  /!\ The above command deserves a little explanation. It uses a quirk in
+  'xwmconfig'. Defining Xfce as default environment for root does not mean
+  that you're supposed to login as root. It just has the secondary effect of
+  setting it as default desktop for all your users. This measure is redundant,
+  since the files in '/etc/skel' already contain an '.xinitrc' file that's
+  predefined for Xfce. 
 
 
 Enjoy your shiny new Microlinux Enterprise Desktop!
