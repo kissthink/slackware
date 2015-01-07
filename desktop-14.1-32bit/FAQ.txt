@@ -3,19 +3,23 @@ Frequently Asked Questions
 ==========================
 
 
-  1. What's the MLED project about?
+  1.  What's the MLED project about?
 
-  2. Why is MLED based on Slackware?
+  2.  Why is MLED based on Slackware?
 
-  3. How intrusive is MLED?
+  3.  How intrusive is MLED?
 
-  4. Where can I download the MLED installation ISO?
+  4.  Where can I download the MLED installation ISO?
 
-  5. Why don't you provide a separate ISO?
+  5.  Why don't you provide a separate ISO?
 
-  6. Why is MLED based on Xfce and not on $DESKTOP?
+  6.  Why is MLED based on Xfce and not on $DESKTOP?
 
-  7. I like your project. How can I support it?
+  7.  I like your project. How can I support it?
+
+  8.  Why do some of Xfce's context menu entries show up in French?
+
+  9.  What's that dock you're using?
 
 
 ===========================================================================
@@ -28,6 +32,7 @@ full-blown, lightweight, rock-solid and mature Linux desktop for professional
 users, or more generally folks who use their computer as an efficient tool to
 get their work done.
 
+
 2. Why is MLED based on Slackware?
 
 Over the years, there have been various attempts to base MLED on other Linux
@@ -35,6 +40,7 @@ distributions like CentOS, Debian or Ubuntu LTS. The choice of Slackware is
 explained in detail here:
 
   * http://www.microlinux.fr/why_slackware.php
+
 
 3. How intrusive is MLED?
 
@@ -44,6 +50,7 @@ MPlayer are rebuilt either for enhanced multimedia capabilities, and MLED's
 [extras] repository sports a more recent HPLIP package to support
 last-generation HP printers.
 
+
 4. Where can I download the MLED installation ISO?
 
 MLED doesn't ship on its own installation ISO. All you need is a vanilla
@@ -51,11 +58,13 @@ Slackware installation disc and a working internet connection. Once the base
 Slackware system is installed, all you have to do is fetching the packages
 using 'slackpkg'.
 
+
 5. Why don't you provide a separate ISO?
 
 MLED doesn't aim to be yet another Linux distribution. Its ambition is to be
 an add-on to Slackware Linux and to provide those packages that are missing
 for a complete out-of-the-box desktop experience.
+
 
 6. Why is MLED based on Xfce and not on $DESKTOP?
 
@@ -64,6 +73,7 @@ support multiple desktop environments like KDE or MATE,but unfortunately this
 is not viable in the long run. So I decided to focus on one single desktop
 environment and concentrate on quality rather than quantity. 
 
+
 7. I like your project. How can I support it?
 
 MLED development is happening in my spare time and is currently only funded by
@@ -71,6 +81,22 @@ my own company Microlinux. If you want to support the project, read more on
 this page:
 
   * http://www.microlinux.fr/mled_donate.php
+
+
+8. Why do some of Xfce's context menu entries show up in French?
+
+Check out the section on setting system locales in the file 'MLED-HOWTO.txt'.
+If you're an english-speaking user, your LANG and LC_COLLATE environment
+variables should be set to something like en_US.utf8. If some of your context
+menu entries show up in French, then there's a chance your LANG and LC_COLLATE
+were set to fr_FR.utf8 while you created your user using 'adduser'.
+
+
+9. What's that dock you're using?
+
+MLED doesn't use any third-party dock like Cairo-Dock, Avant Window
+Navigator or Docky. The dock-like effect is obtained with a little hack of
+Xfce's built-in compositor and a transparent second panel set to a 1 % width. 
 
 
 -- Niki Kovacs, Wed Jan  7 09:12:25 CET 2015
