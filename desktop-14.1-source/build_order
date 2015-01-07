@@ -92,5 +92,12 @@ xap/catfish
 #gnome/gnote --> too many bugs
 profile/user-settings-xfce
 ap/slackpkg+
+xap/simple-scan
+l/imlib2
+d/scons
+l/tolua++
+xap/conky
+xfce/xfce4-xkb-plugin
+xfce/xfce4-notes-plugin
 
 

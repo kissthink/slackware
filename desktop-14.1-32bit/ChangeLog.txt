@@ -1,3 +1,12 @@
+Wed Jan  7 12:31:42 CET 2015
+xap/simple-scan-2.32.0.2-i486-1_microlinux.txz: Added.
+l/imlib2-1.4.6-i486-1_microlinux.txz: Added.
+d/scons-2.3.4-i486-1_microlinux.txz: Added.
+l/tolua++-1.0.93-i486-1_microlinux.txz: Added.
+xap/conky-1.9.0-i486-1_microlinux.txz: Added.
+xfce/xfce4-xkb-plugin-0.5.6-i486-1_microlinux.txz: Added.
+xfce/xfce4-notes-plugin-1.7.7-i486-1_microlinux.txz: Added.
++--------------------------+
 Tue Jan  6 10:14:18 CET 2015
 l/wxGTK-2.8.12-i486-1_microlinux.txz: Removed.
 l/wxPython-2.8.12.1-i486-1_microlinux.txz: Added.
