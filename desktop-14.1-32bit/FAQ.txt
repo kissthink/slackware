@@ -1,0 +1,80 @@
+==========================
+Frequently Asked Questions
+==========================
+
+
+  1. What's the MLED project about?
+
+  2. Why is MLED based on Slackware?
+
+  3. How intrusive is MLED?
+
+  4. Where can I download the MLED installation ISO?
+
+  5. Why don't you provide a separate ISO?
+
+  6. Why is MLED based on Xfce and not on $DESKTOP?
+
+  7. I like your project. How can I support it?
+
+
+===========================================================================
+
+
+1. What's the MLED project about?
+
+MLED stands for "Microlinux Enterprise Desktop". Its ambition is to provide a
+full-blown, lightweight, rock-solid and mature Linux desktop for professional
+users, or more generally folks who use their computer as an efficient tool to
+get their work done.
+
+2. Why is MLED based on Slackware?
+
+Over the years, there have been various attempts to base MLED on other Linux
+distributions like CentOS, Debian or Ubuntu LTS. The choice of Slackware is
+explained in detail here:
+
+  * http://www.microlinux.fr/why_slackware.php
+
+3. How intrusive is MLED?
+
+Unlike projects like Dropline GNOME, MLED doesn't replace core components of
+your base Slackware installation. A handful of applications like Audacious or
+MPlayer are rebuilt either for enhanced multimedia capabilities, and MLED's
+[extras] repository sports a more recent HPLIP package to support
+last-generation HP printers.
+
+4. Where can I download the MLED installation ISO?
+
+MLED doesn't ship on its own installation ISO. All you need is a vanilla
+Slackware installation disc and a working internet connection. Once the base
+Slackware system is installed, all you have to do is fetching the packages
+using 'slackpkg'.
+
+5. Why don't you provide a separate ISO?
+
+MLED doesn't aim to be yet another Linux distribution. Its ambition is to be
+an add-on to Slackware Linux and to provide those packages that are missing
+for a complete out-of-the-box desktop experience.
+
+6. Why is MLED based on Xfce and not on $DESKTOP?
+
+Over the last two years, there have been quite some attempts and iterations to
+support multiple desktop environments like KDE or MATE,but unfortunately this
+is not viable in the long run. So I decided to focus on one single desktop
+environment and concentrate on quality rather than quantity. 
+
+7. I like your project. How can I support it?
+
+MLED development is happening in my spare time and is currently only funded by
+my own company Microlinux. If you want to support the project, read more on
+this page:
+
+  * http://www.microlinux.fr/mled_donate.php
+
+
+-- Niki Kovacs, Wed Jan  7 09:12:25 CET 2015
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt

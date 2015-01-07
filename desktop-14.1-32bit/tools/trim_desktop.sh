@@ -1,9 +1,9 @@
 #!/bin/sh
 #
-# trim_server_base.sh
+# trim_desktop.sh
 #
 # This script prepares the system before building or installing the Microlinux
-# Thin Client. It removes unneeded packages and installs needed ones. 
+# Enterprise Desktop. It removes unneeded packages and installs needed ones. 
 #
 # You should configure slackpkg and run 'slackpkg update' before calling it.
 #

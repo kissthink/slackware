@@ -1,0 +1,121 @@
+===============
+MIGRATION HOWTO (c) Niki Kovacs <info@microlinux.fr>
+===============
+
+Last revision: January 7th 2015
+
+The following HOWTO describes how to turn an existing Slackware configuration
+(or a first-generation MLED) into a second-generation Xfce-based MLED system
+without reinstalling everything from scratch. 
+
+
+Switch to init 3:
+
+  # init 3 
+
+Login as root.
+
+Edit '/etc/slackpkg/mirrors' and choose a Slackware mirror according to your
+geographical location, for example:
+
+--8<---------- /etc/slackpkg/mirrors -----------------------------------------
+...
+# GERMANY (DE)
+ftp://ftp.fu-berlin.de/unix/linux/slackware/slackware-14.1/
+...
+--8<--------------------------------------------------------------------------
+
+Make sure you choose only one single mirror for Slackware stable. If you're
+using MLED in France, configure the ftp.fu-berlin.de or the mirror.switch.ch
+mirror. The admins at OVH can't seem to get their act together.
+
+If you're already using 'slackpkg+', edit '/etc/slackpkg/slackpkgplus.conf'
+and comment out all third-party repositories EXCEPT the multilib repository on
+a 64-bit system.
+
+Update GPG keys:
+
+  # slackpkg update gpg 
+
+Update information about available packages:
+
+  # slackpkg update 
+
+List all third-party packages that are going to be removed, but don't confirm
+their removal yet:
+
+  # slackpkg clean-system
+
+You may want to keep the following packages if you're using them:
+
+  1. user-settings-console (if you're running an old MLED system)
+  2. slackpkg+ 
+  3. everything multilib-related
+
+Import the Microlinux helper scripts:
+
+  # cd
+  # git clone https://github.com/kikinovak/slackware
+
+If you already have these scripts, make sure they're up to date:
+
+  # cd ~/slackware
+  # git pull
+
+Now's the time to install and/or configure 'slackpkg+' to point to the
+MLED repositories. To avoid the hassle, Microlinux provides a custom
+'slackpkg+' package that comes preconfigured for the Microlinux repositories.
+
+On the command line, use the 'links' browser to navigate through the
+repositories:
+
+  # links http://www.microlinux.fr/slackware/ 
+
+Navigate to the 'desktop-14.1-32bit/slackware/ap/' subdirectory. Grab the
+'slackpkg+' package from the repository (use the [D] key in the Links browser
+to download it) and install it:
+
+  # upgradepkg --reinstall --install-new slackpkg+-1.3.2-noarch-2_microlinux.txz  
+
+Make sure you don't keep the existing configuration file.
+
+Trim the base Slackware installation by running the 'trim_desktop.sh' script.
+This will remove all unneeded packages and install everything that's needed
+for a functional Xfce desktop:
+
+  # cd desktop-14.1-$ARCH/tools 
+  # ./trim_desktop.sh 
+
+  Note: $ARCH is the architecture of your CPU (either 32-bit or 64-bit).
+
+Install the full collection of MLED packages:
+
+  # slackpkg install microlinux-desktop
+
+Install the custom menu entries by running the 'cleanmenu.sh' script in the
+same directory:
+
+  # ./cleanmenu.sh 
+
+Since your user is already created, his default profile will have to be copied
+over manually from /etc/skel:
+
+  # su - <youruser> 
+  $ cp -Rvf /etc/skel/.[!.]* . 
+
+  /!\ Don't simply use a .* wildcard on hidden files, otherwise you'll fill
+  your home directory with the contents of '/etc'.
+
+Now switch back to init 4 and login to Xfce
+
+  $ exit 
+  # init 4 
+
+
+Enjoy your shiny new Microlinux Enterprise Desktop!
+
+-- Niki Kovacs, Wed Jan  7 08:05:09 CET 2015
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt
