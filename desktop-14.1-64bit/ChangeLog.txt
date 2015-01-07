@@ -1,3 +1,12 @@
+Wed Jan  7 12:47:08 CET 2015
+xap/simple-scan-2.32.0.2-x86_64-1_microlinux.txz: Added.
+l/imlib2-1.4.6-x86_64-1_microlinux.txz: Added.
+d/scons-2.3.4-x86_64-1_microlinux.txz: Added.
+l/tolua++-1.0.93-x86_64-1_microlinux.txz: Added.
+xap/conky-1.9.0-x86_64-1_microlinux.txz: Added.
+xfce/xfce4-xkb-plugin-0.5.6-x86_64-1_microlinux.txz: Added.
+xfce/xfce4-notes-plugin-1.7.7-x86_64-1_microlinux.txz: Added.
++--------------------------+
 Tue Jan  6 10:14:18 CET 2015
 l/wxGTK-2.8.12-x86_64-1_microlinux.txz: Removed.
 l/wxPython-2.8.12.1-x86_64-1_microlinux.txz: Added.
