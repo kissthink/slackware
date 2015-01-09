@@ -10,3 +10,5 @@ ap/cdlabelgen
 xap/gtkcdlabel
 xap/easytag
 xap/aMule
+#xap/spotify32 --> install 
+#xap/spotify64 --> manually

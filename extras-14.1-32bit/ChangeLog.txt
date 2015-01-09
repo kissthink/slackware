@@ -1,5 +1,6 @@
 Fri Jan  9 08:07:15 CET 2015
 xap/aMule-2.3.1-i486-1_microlinux.txz: Added.
+xap/spotify32-0.9.4.183.g644e24e.428-i386-1_microlinux.txz: Added.
 +--------------------------+
 Tue Jan  6 09:37:06 CET 2015
 xap/filezilla-3.8.1-i486-2_microlinux.txz: Rebuilt.
