@@ -1,0 +1,12 @@
+       |-----handy-ruler------------------------------------------------------|
+libupnp: libupnp (Portable SDK for UPnP Devices)
+libupnp:
+libupnp: The portable SDK for UPnP Devices (libupnp) provides developers with
+libupnp: an API and open source code for building control points, devices, and
+libupnp: bridges that are compliant with Version 1.0 of the Universal Plug and
+libupnp: Play Device Architecture Specification and support several operating
+libupnp: systems like Linux, *BSD, Solaris and others.
+libupnp:
+libupnp: 
+libupnp: 
+libupnp: Package created by Niki Kovacs <info@microlinux.fr>
