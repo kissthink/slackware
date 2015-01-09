@@ -1,5 +1,6 @@
 Fri Jan  9 08:27:27 CET 2015
 xap/aMule-2.3.1-x86_64-1_microlinux.txz: Added.
+xap/spotify64-0.9.11.27.g2b1a638.81-x86_64-2_microlinux.txz: Added.
 +--------------------------+
 Tue Jan  6 10:20:31 CET 2015
 xap/filezilla-3.8.1-x86_64-2_microlinux.txz: Rebuilt.
