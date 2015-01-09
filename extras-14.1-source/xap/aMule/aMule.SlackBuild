@@ -115,7 +115,7 @@ set -e
 
 DOWNLOAD="http://downloads.sourceforge.net/amule/$PRGNAM-$VERSION.tar.xz"
 
-#wget -c $DOWNLOAD
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
