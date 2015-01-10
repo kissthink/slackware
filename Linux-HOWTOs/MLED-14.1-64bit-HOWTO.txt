@@ -1,10 +1,10 @@
-==========================
-MLED Xfce 14.1 64bit HOWTO (c) Niki Kovacs <info@microlinux.fr>
-==========================
+=====================
+MLED 14.1 64bit HOWTO (c) Niki Kovacs <info@microlinux.fr>
+=====================
 
-Dernière révision : 27 octobre 2014
+Dernière révision : 10 janvier 2015
 
-Ce HOWTO décrit l'installation d'un poste de travail MLED Xfce 14.1 64bit.
+Ce HOWTO décrit l'installation d'un poste de travail MLED 14.1 64bit.
 
 
   * À propos de MLED
@@ -28,15 +28,10 @@ Ce HOWTO décrit l'installation d'un poste de travail MLED Xfce 14.1 64bit.
 ----------------
 
 Le poste de travail Microlinux Entreprise MLED fournit un poste de travail
-professionnel propre, complet et ultra-stable basé sur Slackware Linux, avec
-une multitude d'améliorations. Il est actuellement utilisé dans quelques
-mairies, médiathèques, écoles et stations radio du sud de la France.
-
-MLED est disponible dans deux déclinaisons différentes :
-
-  1. la version standard basée sur KDE
-
-  2. MLED Light, basée sur Xfce
+professionnel propre, complet et ultra-stable basé sur Slackware Linux et
+l'environnement de bureau Xfce, avec une multitude d'améliorations. Il est
+actuellement utilisé dans quelques mairies, médiathèques, écoles et stations
+radio du sud de la France.
 
 Visitez la page du projet MLED pour plus d'informations :
 
@@ -91,7 +86,7 @@ vide, censé recevoir un jeu de tagfiles. On va donc l'utiliser.
 
 Téléchargez les tagfiles depuis le serveur :
 
-  # wget http://www.microlinux.fr/slackware/desktop-xfce-14.1-64bit/tagfiles.tar.gz 
+  # wget http://www.microlinux.fr/slackware/desktop-14.1-64bit/tagfiles.tar.gz 
 
 Décompressez l'archive téléchargée :
 
@@ -154,17 +149,17 @@ Configurer slackpkg
 Dans la configuration par défaut, le gestionnaire de paquets 'slackpkg' ne
 fonctionne qu'avec les dépôts officiels de Slackware. Nous devons télécharger
 et installer le plugin 'slackpkg+' de Matteo Rossini pour activer l'utilisation
-de dépôts de paquets tiers. Microlinux vous évite la corvée en fournissant des
-paquets 'slackpkg+' préconfigurés pour l'utilisation des dépôts MLED.
+de dépôts de paquets tiers. Microlinux vous évite la corvée en fournissant un
+paquet 'slackpkg+' préconfiguré pour l'utilisation des dépôts MLED.
 
 En ligne de commande, utilisez le navigateur Links pour accéder aux dépôts
 distants :
 
   # links http://www.microlinux.fr/slackware/ 
 
-Naviguez vers le répertoire 'desktop-base-14.1-64bit/slackware64/ap/',
-téléchargez le paquet 'slackpkg+' depuis le dépôt (en utilisant la touche [D]
-comme "Download" dans le navigateur Links) et installez-le :
+Naviguez vers le répertoire 'desktop-14.1-64bit/slackware64/ap/', téléchargez
+le paquet 'slackpkg+' depuis le dépôt (en utilisant la touche [D] comme
+"Download" dans le navigateur Links) et installez-le :
 
   # installpkg slackpkg+-1.3.2-noarch-2_microlinux.txz
 
@@ -198,8 +193,8 @@ Mettez à jour les informations sur les paquets disponibles :
 Au cas où vous n'auriez pas utilisé le jeu de tagfiles durant l'installation,
 vous pouvez toujours vous rattraper ici. 
 
-Le sous-répertoire 'desktop-xfce-14.1-64bit/tools/' fournit un script
-'trim_desktop_xfce.sh' qui se charge de deux choses :
+Le sous-répertoire 'desktop-14.1-64bit/tools/' fournit un script
+'trim_desktop.sh' qui se charge de deux choses :
 
   1. installer les paquets de base requis
 
@@ -210,10 +205,10 @@ correctement.
 
 Élaguez votre système Slackware de base :
 
-  # cd slackware/desktop-xfce-14.1-64bit/tools/ 
+  # cd slackware/desktop-14.1-64bit/tools/ 
   # ./trim_desktop_xfce.sh 
 
-Si vous n'utilisez pas le script 'trim_desktop_xfce.sh', il vous manquera deux
+Si vous n'utilisez pas le script 'trim_desktop.sh', il vous manquera deux
 paquets absents des disques d'installation, et qui figurent dans le dépôt
 'extra/' officiel. Vous pouvez les installer manuellement comme ceci :
 
@@ -252,13 +247,9 @@ La mise à jour initiale du système a déjà remplacé tous vos paquets 'gcc-*'
 Installer les paquets MLED
 --------------------------
 
-Dans un premier temps, installez le jeu complet des paquets de base MLED :
+Installez le jeu complet de paquets MLED comme ceci :
 
-  # slackpkg install desktop-base 
-
-Ensuite, installez les paquets spécifiques à Xfce :
-
-# slackpkg install desktop-xfce 
+  # slackpkg install microlinux-desktop
 
 
 Vérifier les variables d'environnement
@@ -279,12 +270,12 @@ export LC_COLLATE=fr_FR.utf8
 Nettoyer le menu des applications
 ---------------------------------
 
-Le sous-répertoire 'desktop-xfce-14.1-64bit/tools/' fournit l'utilitaire
+Le sous-répertoire 'desktop-14.1-64bit/tools/' fournit l'utilitaire
 'cleanmenu.sh', un petit script Bash qui se charge de nettoyer les entrées du
 menu des applications de façon à les rendre lisibles pour Madame Michu. Lancez
 ce script :
 
-  # cd desktop-xfce-14.1-64bit/tools/ 
+  # cd desktop-14.1-64bit/tools/ 
   # ./cleanmenu.sh 
 
 Le script remplace toute une série de fichiers '*.desktop' dans
@@ -316,7 +307,7 @@ applications supplémentaires à installer en utilisant 'slackpkg'.
 
 Exemple :
 
-  # slackpkg search desktop-extra 
+  # slackpkg search microlinux-extras
   # slackpkg install virtualbox 
 
 
@@ -333,19 +324,17 @@ qu'est-ce qui est installé, qu'est-ce qui ne l'est pas, quelles sont les mises
 à jour disponibles etc., vous pouvez faire tout cela en une poignée de
 commandes :
 
-  # slackpkg search desktop-base 
+  # slackpkg search microlinux-desktop
 
 Ou encore :
 
-  # slackpkg search desktop-xfce
+  # slackpkg search microlinux-extras
 
 Enfin, les mises à jour des applications peuvent parfois écraser les entrées
 de menu personnalisées avec un fichier '*.desktop' par défaut. Dans ce cas, il
 suffit de réinvoquer le script 'cleanmenu.sh'.
 
 Régalez-vous avec votre poste de travail MLED 14.1 !
-
--- Nico, lun. oct. 27 10:06:34 CET 2014
 
 
 ----------------------------------------------------------------------------- 

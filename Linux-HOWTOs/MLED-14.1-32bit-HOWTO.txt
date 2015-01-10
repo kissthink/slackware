@@ -1,10 +1,10 @@
-=========================
-MLED KDE 14.1 64bit HOWTO (c) Niki Kovacs <info@microlinux.fr>
-=========================
+=====================
+MLED 14.1 32bit HOWTO (c) Niki Kovacs <info@microlinux.fr>
+=====================
 
-Dernière révision : 27 octobre 2014
+Dernière révision : 10 janvier 2015
 
-Ce HOWTO décrit l'installation d'un poste de travail MLED KDE 14.1 64bit.
+Ce HOWTO décrit l'installation d'un poste de travail MLED 14.1 32bit.
 
 
   * À propos de MLED
@@ -15,12 +15,10 @@ Ce HOWTO décrit l'installation d'un poste de travail MLED KDE 14.1 64bit.
   * Télécharger les scripts Microlinux
   * Configurer slackpkg
   * Élaguer et mettre à jour
-  * Paquets Multilib
   * Installer les paquets MLED
   * Vérifier les variables d'environnement
   * Nettoyer le menu des applications
   * Touches finales
-  * Applet NetworkManager
   * Applications supplémentaires
   * Maintenance
 
@@ -29,15 +27,10 @@ Ce HOWTO décrit l'installation d'un poste de travail MLED KDE 14.1 64bit.
 ----------------
 
 Le poste de travail Microlinux Entreprise MLED fournit un poste de travail
-professionnel propre, complet et ultra-stable basé sur Slackware Linux, avec
-une multitude d'améliorations. Il est actuellement utilisé dans quelques
-mairies, médiathèques, écoles et stations radio du sud de la France.
-
-MLED est disponible dans deux déclinaisons différentes :
-
-  1. la version standard basée sur KDE
-
-  2. MLED Light, basée sur Xfce
+professionnel propre, complet et ultra-stable basé sur Slackware Linux et
+l'environnement de bureau Xfce, avec une multitude d'améliorations. Il est
+actuellement utilisé dans quelques mairies, médiathèques, écoles et stations
+radio du sud de la France.
 
 Visitez la page du projet MLED pour plus d'informations :
 
@@ -92,7 +85,7 @@ vide, censé recevoir un jeu de tagfiles. On va donc l'utiliser.
 
 Téléchargez les tagfiles depuis le serveur :
 
-  # wget http://www.microlinux.fr/slackware/desktop-kde-14.1-64bit/tagfiles.tar.gz 
+  # wget http://www.microlinux.fr/slackware/desktop-14.1-32bit/tagfiles.tar.gz 
 
 Décompressez l'archive téléchargée :
 
@@ -114,7 +107,7 @@ Lancez l'installateur Slackware :
 
 PACKAGE SERIES SELECTION : confirmez la sélection de paquets par défaut, étant
 donné que les tagfiles vont prendre le dessus et se charger de la sélection
-des paquets. Cochez la sélection KDEI pour installer les traductions.
+des paquets. 
 
 SELECT PROMPTING MODE : tagpath - Utiliser un jeu de tagfiles personnalisés.
 
@@ -154,16 +147,17 @@ Configurer slackpkg
 
 Dans la configuration par défaut, le gestionnaire de paquets 'slackpkg' ne
 fonctionne qu'avec les dépôts officiels de Slackware. Nous devons télécharger
-et installer le plugin 'slackpkg+' de Matteo Rossini pour activer l'utilisation
-de dépôts de paquets tiers. Microlinux vous évite la corvée en fournissant des
-paquets 'slackpkg+' préconfigurés pour l'utilisation des dépôts MLED.
+et installer le plugin 'slackpkg+' de Matteo Rossini pour activer
+l'utilisation de dépôts de paquets tiers. Microlinux vous évite la corvée en
+fournissant un paquet 'slackpkg+' préconfiguré pour l'utilisation des dépôts
+MLED.
 
 En ligne de commande, utilisez le navigateur Links pour accéder aux dépôts
 distants :
 
   # links http://www.microlinux.fr/slackware/ 
 
-Naviguez vers le répertoire 'desktop-base-14.1-64bit/slackware64/ap/',
+Naviguez vers le répertoire 'desktop-14.1-32bit/slackware/ap/',
 téléchargez le paquet 'slackpkg+' depuis le dépôt (en utilisant la touche [D]
 comme "Download" dans le navigateur Links) et installez-le :
 
@@ -175,7 +169,7 @@ de votre pays, par exemple :
 --8<---------- /etc/slackpkg/mirrors -----------------------------------------
 ...
 # GERMANY (DE)
-ftp://ftp.fu-berlin.de/unix/linux/slackware/slackware64-14.1/
+ftp://ftp.fu-berlin.de/unix/linux/slackware/slackware-14.1/
 ...
 --8<--------------------------------------------------------------------------
 
@@ -199,8 +193,8 @@ Mettez à jour les informations sur les paquets disponibles :
 Au cas où vous n'auriez pas utilisé le jeu de tagfiles durant l'installation,
 vous pouvez toujours vous rattraper ici. 
 
-Le sous-répertoire 'desktop-kde-14.1-64bit/tools/' fournit un script
-'trim_desktop_kde.sh' qui se charge de deux choses :
+Le sous-répertoire 'desktop-14.1-32bit/tools/' fournit un script
+'trim_desktop.sh' qui se charge de deux choses :
 
   1. installer les paquets de base requis
 
@@ -211,10 +205,10 @@ correctement.
 
 Élaguez votre système Slackware de base :
 
-  # cd slackware/desktop-kde-14.1-64bit/tools/ 
-  # ./trim_desktop_kde.sh 
+  # cd slackware/desktop-14.1-32bit/tools/ 
+  # ./trim_desktop.sh 
 
-Si vous n'utilisez pas le script 'trim_desktop_kde.sh', il vous manquera deux
+Si vous n'utilisez pas le script 'trim_desktop.sh', il vous manquera deux
 paquets absents des disques d'installation, et qui figurent dans le dépôt
 'extra/' officiel. Vous pouvez les installer manuellement comme ceci :
 
@@ -224,42 +218,18 @@ paquets absents des disques d'installation, et qui figurent dans le dépôt
 
   # slackpkg upgrade-all 
 
-Deux remarques importantes concernant cette mise à jour initiale :
-
-  1. Certains paquets Slackware comme 'MPlayer', 'k3b', 'kde-base-artwork',
-  'kde-baseapps', 'kde-wallpapers' ou 'kde-workspace' sont "mis à jour",
-  c'est-à-dire remplacés par un paquet MLED. Ne vous inquiétez pas, c'est tout
-  à fait normal. Ils ont été recompilés pour offrir plus de fonctionnalités.
-
-  2. Tous vos paquets 'gcc-*' et 'glibc-*' seront remplacés par des versions
-  Multilib. Là aussi, ne vous tracassez pas, c'est normal.
-
-
-Paquets Multilib
-----------------
-
-Vous souhaiterez peut-être ajouter des applications comme VirtualBox, Wine ou
-Skype. C'est pourquoi 'slackpkg+' a été préconfiguré pour utiliser les paquets
-Multilib du dépôt d'Eric Hameleers.
-
-La mise à jour initiale du système a déjà remplacé tous vos paquets 'gcc-*' et
-'glibc-*' par les paquets Multilib correspondants. La seule chose qui nous reste
-à faire, c'est d'installer un jeu complet de bibliothèques de compatibilité
-32-bit, ce qui peut se faire en une seule commande :
-
-  # slackpkg install multilib
+Certains paquets Slackware comme 'MPlayer', 'audacious' ou 'audacious-plugins'
+sont "mis à jour", c'est-à-dire remplacés par un paquet MLED. Ne vous
+inquiétez pas, c'est tout à fait normal. Ils ont été recompilés pour offrir
+plus de fonctionnalités.
 
 
 Installer les paquets MLED
 --------------------------
 
-Dans un premier temps, installez le jeu complet des paquets de base MLED :
+Installez le jeu complet de paquets MLED comme ceci :
 
-  # slackpkg install desktop-base 
-
-Ensuite, installez les paquets spécifiques à KDE :
-
-# slackpkg install desktop-kde 
+  # slackpkg install microlinux-desktop
 
 
 Vérifier les variables d'environnement
@@ -280,12 +250,12 @@ export LC_COLLATE=fr_FR.utf8
 Nettoyer le menu des applications
 ---------------------------------
 
-Le sous-répertoire 'desktop-kde-14.1-64bit/tools/' fournit l'utilitaire
+Le sous-répertoire 'desktop-14.1-32bit/tools/' fournit l'utilitaire
 'cleanmenu.sh', un petit script Bash qui se charge de nettoyer les entrées du
 menu des applications de façon à les rendre lisibles pour Madame Michu. Lancez
 ce script :
 
-  # cd desktop-kde-14.1-64bit/tools/ 
+  # cd desktop-14.1-32bit/tools/ 
   # ./cleanmenu.sh 
 
 Le script remplace toute une série de fichiers '*.desktop' dans
@@ -309,32 +279,6 @@ Nous y sommes presque. Voici ce qui reste à faire.
   * Redémarrer.
 
 
-Applet NetworkManager
----------------------
-
-L'applet 'networkmanagement' de KDE ne fonctionne pas de manière
-satisfaisante, et il vaut mieux utiliser l'applet GNOME correspondant
-'network-manager-applet'. En bidouillant un peu, il s'intègre très bien au
-bureau KDE et fonctionne à merveille. 
-
-Supprimer l'applet de KDE s'il est installé :
-
-  # removepkg networkmanagement
-
-Intégrer 'nm-applet' au démarrage automatique de KDE :
-
-  $ mkdir -p ~/.config/autostart
-  $ grep -v NotShowIn /etc/xdg/autostart/nm-applet.desktop \
-    > ~/.config/autostart/nm-applet.desktop
-
-L'applet a besoin de 'polkit-gnome-authentication-agent' pour fonctionner
-correctement. On va donc l'ajouter au démarrage automatique :
-
-  $ grep -v NotShowIn \
-    /etc/xdg/autostart/polkit-gnome-authentication-agent-1.desktop \
-    > ~/.config/autostart/polkit-gnome-authentication-agent-1.desktop
-
-
 Applications supplémentaires
 ----------------------------
 
@@ -343,7 +287,7 @@ applications supplémentaires à installer en utilisant 'slackpkg'.
 
 Exemple :
 
-  # slackpkg search desktop-extra 
+  # slackpkg search microlinux-extras
   # slackpkg install virtualbox 
 
 
@@ -360,19 +304,17 @@ qu'est-ce qui est installé, qu'est-ce qui ne l'est pas, quelles sont les mises
 à jour disponibles etc., vous pouvez faire tout cela en une poignée de
 commandes :
 
-  # slackpkg search desktop-base 
+  # slackpkg search microlinux-desktop
 
 Ou encore :
 
-  # slackpkg search desktop-kde 
+  # slackpkg search microlinux-extras
 
 Enfin, les mises à jour des applications peuvent parfois écraser les entrées
 de menu personnalisées avec un fichier '*.desktop' par défaut. Dans ce cas, il
 suffit de réinvoquer le script 'cleanmenu.sh'.
 
 Régalez-vous avec votre poste de travail MLED 14.1 !
-
--- Nico, lun. oct. 27 10:06:34 CET 2014
 
 
 ----------------------------------------------------------------------------- 
