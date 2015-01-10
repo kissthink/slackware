@@ -1,3 +1,6 @@
+Thu Jan  8 10:24:53 CET 2015
+xfce/luna-wallpapers-0.2-noarch-1_microlinux.txz: Added.
++--------------------------+
 Wed Jan  7 12:47:08 CET 2015
 xap/simple-scan-2.32.0.2-x86_64-1_microlinux.txz: Added.
 l/imlib2-1.4.6-x86_64-1_microlinux.txz: Added.

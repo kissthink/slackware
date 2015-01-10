@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Music Streaming Service
+Name[de]=Musikstreaming-Dienst
+Name[fr]=Streaming musical
+Comment=Spotify
+Icon=/opt/spotify/spotify-client/Icons/spotify-linux-128.png
+Exec=spotify %U
+TryExec=spotify
+Terminal=false
+Type=Application
+Categories=Qt;Audio;Player;AudioVideo;
+MimeType=x-scheme-handler/spotify;
