@@ -117,19 +117,25 @@ same directory:
   # ./cleanmenu.sh 
 
 Since your user is already created, his default profile will have to be copied
-over manually from /etc/skel:
+over manually from '/etc/skel'. 
 
-  # su - <youruser> 
+First, delete your existing '~/.config' directory:
+
   $ rm -rf ~/.config
-  $ cp -Rvf /etc/skel/.[!.]* . 
 
-  /!\ Don't simply use a .* wildcard on hidden files, otherwise you'll fill
-  your home directory with the contents of '/etc'.
+Switch to root and copy '/etc/skel/.config' to your user's home directory:
 
-Now define Xfce as your default desktop environment, switch back to init 4 and
+  # cp -Rv /etc/skel/.config /home/your_user/
+
+Now set permissions on your user's '.config' directory:
+
+  # chown -R your_user:users /home/your_user/.config
+  # find /home/your_user/.config -type d | xargs chmod 0755
+  # find /home/your_user/.config -type f | xargs chmod 0644
+
+Define Xfce as your default desktop environment, switch back to init 4 and
 login to Xfce:
 
-  $ exit 
   # xwmconfig --> choose Xfce
   # init 4 
 
