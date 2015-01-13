@@ -22,6 +22,7 @@ Microlinux Enterprise Desktop 14.1 64-bit edition.
   * Set locales
   * Clean up the applications menu
   * Finishing up
+  * Extra applications
   * Maintenance
 
 
