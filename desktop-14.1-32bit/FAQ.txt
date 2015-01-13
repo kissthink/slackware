@@ -21,6 +21,10 @@ Frequently Asked Questions
 
   9.  What's that dock you're using?
 
+  10. How can I turn a stock Slackware installation into MLED?
+
+  11. How can I turn my "old" MLED into a "new" Xfce-based MLED?
+
 
 ===========================================================================
 
@@ -99,8 +103,20 @@ Navigator or Docky. The dock-like effect is obtained with a little hack of
 Xfce's built-in compositor and a transparent second panel set to a 1 % width. 
 
 
--- Niki Kovacs, Wed Jan  7 09:12:25 CET 2015
+10. How can I turn a stock Slackware installation into MLED?
+
+The file 'MIGRATION-HOWTO.txt' provides a step-by-step guide for turning a
+standard Slackware system into an MLED configuration.
+
+
+11. How can I turn my "old" MLED into a "new" Xfce-based MLED?
+
+The file 'MIGRATION-HOWTO.txt' also provides information on upgrading your
+existing first-generation MLED.
+
+
+-- Niki Kovacs, Tue Jan 13 14:29:53 CET 2015
 
 
 ------------------------------------------------------------------------------
-# vim: syntax=txt
+  vim: syntax=txt

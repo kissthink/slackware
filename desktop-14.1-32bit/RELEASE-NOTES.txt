@@ -1,10 +1,22 @@
+=======================
+MLED 14.1 Release Notes - Tue Jan 13 14:16:54 CET 2015
+=======================
 
-MLED 14.1 Release Notes Tue Jan 13 09:36:24 CET 2015
+Here's the final version of the Microlinux Enterprise Desktop 14.1, a
+full-blown production desktop based on Slackware Linux.
 
-Hi folks,
 
-Here's the final version of the Microlinux Enterprise Desktop, a full-blown
-production desktop based on Slackware Linux.
+  * Choice of desktop environment
+  * Base Slackware components
+  * Enhanced Xfce desktop
+  * Desktop applications
+  * Utilities
+  * Additional software
+  * More information
+
+
+Choice of desktop environment
+-----------------------------
 
 MLED is now firmly based on the Xfce desktop environment. Over the last two
 years, the project has undergone quite a few respins based on other desktop
@@ -15,6 +27,10 @@ desktop environment, namely Xfce, and decided to concentrate on quality rather
 than quantity. Ironically, this is also a move back to the roots. The very
 first avatar of this project, dating back to 2006, was called "Slick Linux"
 at the time and was based on Slackware 12.0 and Xfce 4.4. 
+
+
+Base Slackware components
+-------------------------
 
 MLED makes use of the following base Slackware components:
 
@@ -28,6 +44,10 @@ MLED makes use of the following base Slackware components:
   * ImageMagick software collection
   * Geeqie image viewer
 
+
+Enhanced Xfce desktop
+---------------------
+
 The Xfce desktop is enhanced with the following packages:
 
   * Themed GDM login manager
@@ -38,9 +58,14 @@ The Xfce desktop is enhanced with the following packages:
   * Collection of extra fonts (Google Droid, Webcore fonts, Eurostile)
   * Sober wallpapers fit for use in a "corporate" environment
   * Custom desktop menu entries (english, french, german)
+  * Xarchiver archive manager
   * Translations for Mozilla Firefox ESR (french and german)
   * Translations for Mozilla Thunderbird ESR (french and german)
   * Appealing default user profile
+
+
+Desktop applications
+--------------------
 
 MLED provides the following desktop applications:
 
@@ -60,6 +85,24 @@ MLED provides the following desktop applications:
   * Transmission BitTorrent client
   * Brasero CD/DVD burning software
   * Evince document viewer
+  * Galculator pocket calculator
+
+
+Utilities
+---------
+
+Under the hood, MLED is shipping all the stuff that's commonly missing in a
+stock Slackware system.
+
+  * Basic command-line utilities: p7zip, unrar, recode, sbopkg
+  * Slackpkg+ preconfigured for MLED repositories
+  * Java Development Kit
+  * Collection of multimedia codecs and libraries: ffmpeg, libdvdcss, etc.
+  * Flash player
+
+
+Additional software
+-------------------
 
 The following applications are available in the [extras] repository:
 
@@ -71,6 +114,12 @@ The following applications are available in the [extras] repository:
   * Easytag ID3 tagger
   * Filezilla FTP/SFTP client
   * Spotify music streaming
+
+More extra software may be added post-release.
+
+
+More information
+----------------
 
 Check out the detailed information at the root of each package repository:
 
