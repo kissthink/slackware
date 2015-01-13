@@ -1,0 +1,92 @@
+
+MLED 14.1 Release Notes Tue Jan 13 09:36:24 CET 2015
+
+Hi folks,
+
+Here's the final version of the Microlinux Enterprise Desktop, a full-blown
+production desktop based on Slackware Linux.
+
+MLED is now firmly based on the Xfce desktop environment. Over the last two
+years, the project has undergone quite a few respins based on other desktop
+environments like KDE and MATE. While these successive versions were not bad
+technically speaking, I had to make a decision based on a series of factors
+like perennity, popularity, lack of manpower, etc. I opted for one single
+desktop environment, namely Xfce, and decided to concentrate on quality rather
+than quantity. Ironically, this is also a move back to the roots. The very
+first avatar of this project, dating back to 2006, was called "Slick Linux"
+at the time and was based on Slackware 12.0 and Xfce 4.4. 
+
+MLED makes use of the following base Slackware components:
+
+  * Xfce desktop environment
+  * Mozilla Firefox ESR
+  * Mozilla Thunderbird ESR
+  * Pidgin instant messaging application
+  * GFTP client
+  * NetworkManager
+  * GIMP image manipulation software
+  * ImageMagick software collection
+  * Geeqie image viewer
+
+The Xfce desktop is enhanced with the following packages:
+
+  * Themed GDM login manager
+  * Elementary-Xfce icon theme
+  * Aero mouse cursor theme (Windows 7 style)
+  * Clearlooks Phenix theme (fit for GTK2 and GTK3 applications)
+  * Axe Rounded window manager theme
+  * Collection of extra fonts (Google Droid, Webcore fonts, Eurostile)
+  * Sober wallpapers fit for use in a "corporate" environment
+  * Custom desktop menu entries (english, french, german)
+  * Translations for Mozilla Firefox ESR (french and german)
+  * Translations for Mozilla Thunderbird ESR (french and german)
+  * Appealing default user profile
+
+MLED provides the following desktop applications:
+
+  * LibreOffice + translations (french and german)
+  * Asunder audio CD ripper
+  * Audacious audio player (rebuilt with full multimedia capabilities)
+  * MPlayer (rebuilt with full multimedia capabilities)
+  * GNOME MPlayer frontend
+  * Audacity audio editor
+  * Catfish file search utility
+  * Conky system monitor
+  * Inkscape vector graphics application
+  * Leafpad text editor
+  * Openshot video editor
+  * Scribus desktop publishing application
+  * Simple Scan GUI for image scanning
+  * Transmission BitTorrent client
+  * Brasero CD/DVD burning software
+  * Evince document viewer
+
+The following applications are available in the [extras] repository:
+
+  * VirtualBox virtualization software
+  * Gtkcdlabel CD label generator
+  * Remmina remote desktop client
+  * AMule P2P client with UPnP support
+  * Dropbox network storage
+  * Easytag ID3 tagger
+  * Filezilla FTP/SFTP client
+  * Spotify music streaming
+
+Check out the detailed information at the root of each package repository:
+
+  * MLED-HOWTO.txt (Installation Guide)
+  * FAQ.txt (Frequently Asked Questions)
+  * MIGRATION-HOWTO.txt (Migration Guide)
+
+Learn more about the project here:
+
+  * http://www.microlinux.fr/mled.php
+
+
+Enjoy!
+
+Niki Kovacs <info@microlinux.fr>
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt

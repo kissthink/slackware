@@ -46,7 +46,7 @@ explained in detail here:
 
 Unlike projects like Dropline GNOME, MLED doesn't replace core components of
 your base Slackware installation. A handful of applications like Audacious or
-MPlayer are rebuilt either for enhanced multimedia capabilities, and MLED's
+MPlayer have been rebuilt for enhanced multimedia capabilities, and MLED's
 [extras] repository sports a more recent HPLIP package to support
 last-generation HP printers.
 
@@ -61,7 +61,7 @@ using 'slackpkg'.
 
 5. Why don't you provide a separate ISO?
 
-MLED doesn't aim to be yet another Linux distribution. Its ambition is to be
+MLED doesn't aim to be Yet Another Linux Distribution. Its ambition is to be
 an add-on to Slackware Linux and to provide those packages that are missing
 for a complete out-of-the-box desktop experience.
 
@@ -69,7 +69,7 @@ for a complete out-of-the-box desktop experience.
 6. Why is MLED based on Xfce and not on $DESKTOP?
 
 Over the last two years, there have been quite some attempts and iterations to
-support multiple desktop environments like KDE or MATE,but unfortunately this
+support multiple desktop environments like KDE or MATE, but unfortunately this
 is not viable in the long run. So I decided to focus on one single desktop
 environment and concentrate on quality rather than quantity. 
 
