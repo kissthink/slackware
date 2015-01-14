@@ -1,3 +1,7 @@
+Wed Jan 14 15:01:59 CET 2015
+n/postfix-2.9.11-i486-1_microlinux.txz: Upgraded.
+n/dovecot-2.1.17-i486-5_microlinux.txz: Rebuilt.
++--------------------------+
 Sat Jan 10 08:08:11 CET 2015
 profile/user-settings-console-1.0-noarch-6_microlinux.txz: Rebuilt.
 ap/sbopkg-0.36.0-noarch-5_microlinux.txz: Rebuilt.

@@ -5,6 +5,8 @@ ap/recode
 ap/unrar
 ap/p7zip
 ap/pwgen
+n/postfix
+n/dovecot
 #d/perl-IO-Multiplex
 #d/perl-digest-sha1
 #d/perl-digest-hmac
@@ -32,8 +34,6 @@ ap/pwgen
 #n/rtorrent
 #n/squid
 #n/squidGuard
-#n/postfix
-#n/dovecot
 #n/postgrey
 #n/mpd
 #n/icecast
