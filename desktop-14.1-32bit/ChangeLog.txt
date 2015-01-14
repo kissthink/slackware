@@ -1,3 +1,15 @@
+Wed Jan 14 09:29:27 CET 2015
+MLED 14.1 32-bit is released! 
+
+Third time's the charm. This is a complete respin, based on the Xfce desktop
+environment, with many changes under the hood. 
+
+For more information, check out http://www.microlinux.fr/mled.php and read the
+files 'RELEASE-NOTES.txt', 'MLED-HOWTO.txt', 'MIGRATION-HOWTO.txt' and
+'FAQ.txt' in the current directory.
+
+Have fun!
++--------------------------+
 Fri Jan  9 08:01:36 CET 2015
 l/libupnp-1.6.17-i486-1_microlinux.txz: Added.
 l/cryptopp-5.6.2-i486-1_microlinux.txz: Added.
