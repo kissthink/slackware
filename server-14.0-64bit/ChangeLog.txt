@@ -1,3 +1,15 @@
+Wed Jan 14 15:01:59 CET 2015
+n/postfix-2.9.11-x86_64-1_microlinux.txz: Upgraded.
+n/dovecot-2.1.17-x86_64-5_microlinux.txz: Rebuilt.
++--------------------------+
+Sat Jan 10 08:08:11 CET 2015
+profile/user-settings-console-1.0-noarch-6_microlinux.txz: Rebuilt.
+ap/sbopkg-0.36.0-noarch-5_microlinux.txz: Rebuilt.
+ap/recode-3.7_beta2-x86_64-1_microlinux.txz: Upgraded.
+ap/unrar-5.0.14-x86_64-2_microlinux.txz: Rebuilt.
+ap/p7zip-9.20.1-x86_64-5_microlinux.txz: Rebuilt.
+ap/pwgen-2.06-x86_64-5_microlinux.txz: Rebuilt.
++--------------------------+
 Sun Nov  2 08:50:03 CET 2014
 n/squidGuard-1.4-x86_64-6_microlinux.txz: Rebuilt.
   Don't clobber an existing configuration with an update.
