@@ -9,7 +9,7 @@
 
 PRGNAM=libshout	
 VERSION=${VERSION:-2.3.1}
-BUILD=${BUILD:-1}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}
@@ -45,7 +45,9 @@ fi
 
 set -e # Exit on most errors
 
-wget -c http://downloads.xiph.org/releases/$PRGNAM/$PRGNAM-$VERSION.tar.gz
+DOWNLOAD="http://downloads.xiph.org/releases/$PRGNAM/$PRGNAM-$VERSION.tar.gz"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -87,7 +89,3 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $PRGNAM-$VERSION $PKG
