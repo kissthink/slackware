@@ -13,3 +13,5 @@ xap/aMule
 #xap/spotify32 --> install 
 #xap/spotify64 --> manually
 ap/hplip
+# WinFF build dependencies: fpc, fpc-source, lazarus
+xap/winff
