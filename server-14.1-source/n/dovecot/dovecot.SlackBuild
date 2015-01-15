@@ -24,7 +24,7 @@
 
 PRGNAM=dovecot
 VERSION=${VERSION:-2.1.17}
-BUILD=${BUILD:-4}
+BUILD=${BUILD:-5}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}
@@ -65,7 +65,9 @@ fi
 
 set -e
 
-wget -c http://www.dovecot.org/releases/2.1/$PRGNAM-$VERSION.tar.gz
+DOWNLOAD="http://www.dovecot.org/releases/2.1/$PRGNAM-$VERSION.tar.gz"
+
+wget -c $DOWNLOAD
 
 if [ "$ARCH" = "i486" ]; then
   SLKCFLAGS="-O2 -march=i486 -mtune=i686"
@@ -129,7 +131,3 @@ cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $PRGNAM-$VERSION $PKG

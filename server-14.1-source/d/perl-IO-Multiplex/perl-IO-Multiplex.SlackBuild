@@ -29,7 +29,7 @@
 
 PRGNAM=perl-IO-Multiplex
 VERSION=${VERSION:-1.13}
-BUILD=${BUILD:-4}
+BUILD=${BUILD:-5}
 TAG=${TAG:-_microlinux}
 
 SRCNAM=IO-Multiplex
@@ -49,7 +49,9 @@ OUTPUT=${OUTPUT:-/tmp}
 
 set -e
 
-wget -c http://search.cpan.org/CPAN/authors/id/M/MA/MARKOV/$SRCNAM-$VERSION.tar.gz
+DOWNLOAD="http://search.cpan.org/CPAN/authors/id/M/MA/MARKOV/$SRCNAM-$VERSION.tar.gz"
+
+wget -c $DOWNLOAD
 
 DOCS="Changes README TODO"
 
@@ -108,7 +110,3 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $SRCNAM-$VERSION $PKG

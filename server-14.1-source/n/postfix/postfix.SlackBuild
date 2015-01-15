@@ -25,7 +25,7 @@
 # Modified by Niki Kovacs <info@microlinux.fr>
 
 PRGNAM=postfix
-VERSION=${VERSION:-2.9.9}
+VERSION=${VERSION:-2.9.11}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
@@ -95,7 +95,9 @@ fi
 
 set -e
 
-wget -c http://mirror.ovh.net/ftp.postfix.org/postfix-release/official/$PRGNAM-$VERSION.tar.gz
+DOWNLOAD="http://mirror.ovh.net/ftp.postfix.org/postfix-release/official/$PRGNAM-$VERSION.tar.gz"
+
+wget -c $DOWNLOAD
 
 CFLAGS=${CFLAGS:-$SLKCFLAGS}
 
@@ -212,7 +214,3 @@ done
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $PRGNAM-$VERSION $PKG $PRGNAM-temp

@@ -7,7 +7,7 @@
 
 PRGNAM=libmpdclient
 VERSION=2.7
-BUILD=${BUILD:-4}
+BUILD=${BUILD:-5}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}
@@ -43,7 +43,9 @@ fi
 
 set -e
 
-wget -c http://www.musicpd.org/download/$PRGNAM/2/$PRGNAM-$VERSION.tar.bz2
+DOWNLOAD="http://www.musicpd.org/download/$PRGNAM/2/$PRGNAM-$VERSION.tar.bz2"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -85,7 +87,3 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $PRGNAM-$VERSION $PKG

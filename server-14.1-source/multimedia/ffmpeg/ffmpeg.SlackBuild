@@ -29,7 +29,7 @@
 
 PRGNAM=ffmpeg
 VERSION=${VERSION:-2.1}
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-3}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}
@@ -117,7 +117,9 @@ libx264="--enable-libx264"    ; [ "${X264:-no}" != "yes" ] && libx264=""
 
 set -e
 
-wget -c http://www.ffmpeg.org/releases/$PRGNAM-$VERSION.tar.bz2
+DOWNLOAD="http://www.ffmpeg.org/releases/$PRGNAM-$VERSION.tar.bz2"
+
+wget -c $DOWNLOAD 
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -202,7 +204,3 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$PKGARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $PRGNAM-$VERSION $PKG

@@ -26,7 +26,7 @@
 
 PRGNAM=p7zip
 VERSION=9.20.1
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-3}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}
@@ -63,7 +63,9 @@ GUI=${GUI:-no}
 
 set -e
 
-wget -c http://downloads.sourceforge.net/$PRGNAM/${PRGNAM}_${VERSION}_src_all.tar.bz2
+DOWNLOAD="http://downloads.sourceforge.net/$PRGNAM/${PRGNAM}_${VERSION}_src_all.tar.bz2"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -144,7 +146,3 @@ cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf ${PRGNAM}_${VERSION} $PKG

@@ -29,7 +29,7 @@
 
 PRGNAM=speex
 VERSION=1.2rc1
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-3}
 TAG=${TAG:-_microlinux}
 
 # Automatically determine the architecture we're building on:
@@ -63,7 +63,9 @@ fi
 
 set -e
 
-wget -c http://downloads.us.xiph.org/releases/$PRGNAM/$PRGNAM-$VERSION.tar.gz
+DOWNLOAD="http://downloads.us.xiph.org/releases/$PRGNAM/$PRGNAM-$VERSION.tar.gz"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -108,8 +110,4 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP          
-rm -rf $PRGNAM-$VERSION $PKG
 

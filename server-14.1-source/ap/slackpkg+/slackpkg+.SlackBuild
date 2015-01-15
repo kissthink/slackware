@@ -3,7 +3,7 @@
 set -e 
 
 VERSION=$(head -1 ChangeLog.txt|awk '{print $2}')
-BUILD=${BUILD:-2_microlinux}
+BUILD=${BUILD:-3_microlinux}
 
 CWD=`pwd`
 TMP=${TMP:-/tmp}
@@ -38,7 +38,6 @@ chmod +x usr/libexec/slackpkg/functions.d/slackpkgplus.sh
 chmod +x usr/libexec/slackpkg/functions.d/zdialogplus.sh
 chmod +x usr/libexec/slackpkg/makeinstlog.sh
 chmod +x usr/doc/slackpkg+-$VERSION/setupmultilib.sh
-
 
 makepkg -l y -c y $OUTPUT/slackpkg+-$VERSION-noarch-$BUILD.txz
 
