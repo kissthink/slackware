@@ -15,3 +15,5 @@ xap/aMule
 ap/hplip
 # WinFF build dependencies: fpc, fpc-source, lazarus
 xap/winff
+# Wine build dependency: fontforge
+xap/wine
