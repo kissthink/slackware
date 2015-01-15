@@ -24,7 +24,7 @@
 
 PRGNAM=pysetuptools
 VERSION=${VERSION:-2.1}
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-3}
 TAG=${TAG:-_microlinux}
 
 SRCNAM=setuptools
@@ -42,9 +42,11 @@ TMP=${TMP:-/tmp/microlinux}
 PKG=${PKG:-$TMP/package-$SRCNAM}
 OUTPUT=${OUTPUT:-/tmp}
 
-set -eu
+set -e
 
-wget -c http://pypi.python.org/packages/source/s/$SRCNAM/$SRCNAM-$VERSION.tar.gz
+DOWNLOAD="http://pypi.python.org/packages/source/s/$SRCNAM/$SRCNAM-$VERSION.tar.gz"
+
+wget -c $DOWNLOAD
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -77,7 +79,3 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $SRCNAM-$VERSION $PKG

@@ -31,7 +31,7 @@
 
 PRGNAM="perl-BerkeleyDB"
 VERSION=${VERSION:-0.53}
-BUILD=${BUILD:-1}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
 SRCNAM="$(printf $PRGNAM | cut -f2- -d-)"
@@ -51,7 +51,9 @@ OUTPUT=${OUTPUT:-/tmp}
 
 set -e
 
-wget -c http://search.cpan.org/CPAN/authors/id/P/PM/PMQS/$SRCNAM-$VERSION.tar.gz
+DOWNLOAD="http://search.cpan.org/CPAN/authors/id/P/PM/PMQS/$SRCNAM-$VERSION.tar.gz"
+
+wget -c $DOWNLOAD
 
 DOCS="Changes README"
 
@@ -111,7 +113,3 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $SRCNAM-$VERSION $PKG

@@ -31,7 +31,7 @@
 
 PRGNAM="perl-Net-Server"
 VERSION=${VERSION:-2.007}
-BUILD=${BUILD:-4}
+BUILD=${BUILD:-5}
 TAG=${TAG:-_microlinux}
 
 SRCNAM="$(printf $PRGNAM | cut -f2- -d-)"
@@ -53,7 +53,9 @@ OUTPUT=${OUTPUT:-/tmp}
 
 set -e
 
-wget -c http://search.cpan.org/CPAN/authors/id/R/RH/RHANDOM/$SRCNAM-$VERSION.tar.gz
+DOWNLOAD="http://search.cpan.org/CPAN/authors/id/R/RH/RHANDOM/$SRCNAM-$VERSION.tar.gz"
+
+wget -c $DOWNLOAD
 
 DOCS="Changes README"
 
@@ -99,7 +101,3 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
-
-# Cleanup
-cd $TMP
-rm -rf $SRCNAM-$VERSION $PKG
