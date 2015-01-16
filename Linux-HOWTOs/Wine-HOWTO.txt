@@ -1,0 +1,33 @@
+==========
+Wine HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+==========
+
+Dernière révision : 16 janvier 2015
+
+Ce HOWTO rassemble quelques astuces pour l'utilisation de l'émulateur Wine.
+
+
+Associations de fichiers
+------------------------
+
+Wine crée toute une série d'associations de fichiers indésirables, et l'on se
+retrouve avec des fichiers texte qui s'ouvrent avec Notepad ou des images
+associées à Internet Explorer. 
+
+La solution consiste à supprimer une série de répertoires :
+
+  $ rm -rf ~./local/share/applications
+  $ rm -rf ~./local/share/desktop-directories
+  $ rm -rf ~./local/share/mime
+
+Pour que la solution soit permanente, on créera une série de fichiers vides :
+
+  $ touch ~/.local/share/applications
+  $ touch ~/.local/share/desktop-directories
+  $ touch ~/.local/share/mime
+
+Et le tour est joué.
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt
