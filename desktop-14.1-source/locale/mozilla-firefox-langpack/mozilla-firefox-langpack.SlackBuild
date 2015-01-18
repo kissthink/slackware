@@ -24,7 +24,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=mozilla-firefox-langpack
-VERSION=${VERSION:-31.3.0}   
+VERSION=${VERSION:-31.4.0}   
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}   
 
