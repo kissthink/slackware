@@ -1,3 +1,11 @@
+Sun Jan 18 10:41:33 CET 2015
+multimedia/libcuefile-r475-i486-1_microlinux.txz: Added.
+multimedia/gst-plugins-bad-0.10.23-i486-1_microlinux.txz: Added.
+multimedia/gst-plugins-ugly-0.10.19-i486-2_microlinux.txz: Added.
+multimedia/gst-ffmpeg-0.10.13-i486-2_microlinux.txz: Added.
+multimedia/gst1-plugins-good-1.4.1-i486-1_microlinux.txz: Added.
+multimedia/gst1-libav-1.4.1-i486-1_microlinux.txz: Added.
++--------------------------+
 Wed Jan 14 09:29:27 CET 2015
 MLED 14.1 32-bit is released! 
 

@@ -50,10 +50,16 @@ multimedia/libdvdcss
 multimedia/flashplayer-plugin
 multimedia/libquicktime
 multimedia/id3lib
+multimedia/libcuefile
 d/orc
+multimedia/gst-plugins-bad
+multimedia/gst-plugins-ugly
+multimedia/gst-ffmpeg
 multimedia/gstreamer1
 multimedia/gst1-plugins-base
+multimedia/gst1-plugins-good
 multimedia/gst1-plugins-bad
+multimedia/gst1-libav
 d/lua
 multimedia/mlt
 xap/MPlayer
