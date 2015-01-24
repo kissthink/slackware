@@ -1,3 +1,9 @@
+Sat Jan 24 09:50:07 CET 2015
+xap/simple-scan-2.32.0.2-i486-1_microlinux.txz: Removed.
+	Simple Scan 2.32 doesn't store settings correctly, which is a showstopper.
+	More recent versions are a PITA to build, so we recommend using XSane, which
+	is already shipping with Slackware. Tagfiles will be modified accordingly.
++--------------------------+
 Sun Jan 18 10:41:33 CET 2015
 multimedia/libcuefile-r475-i486-1_microlinux.txz: Added.
 multimedia/gst-plugins-bad-0.10.23-i486-1_microlinux.txz: Added.

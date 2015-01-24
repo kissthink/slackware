@@ -98,7 +98,7 @@ xap/catfish
 #gnome/gnote --> too many bugs
 profile/user-settings-xfce
 ap/slackpkg+
-xap/simple-scan
+#xap/simple-scan --> removed, use xsane ! 
 l/imlib2
 d/scons
 l/tolua++
