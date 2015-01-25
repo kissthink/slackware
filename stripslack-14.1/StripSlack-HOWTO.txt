@@ -6,6 +6,14 @@ The following HOWTO describes the installation of StripSlack, a lightweight
 configuration of Slackware.
 
 
+  * Introduction
+  * Core system
+  * Manual installation
+  * Semi-automatic installation
+  * From core to minimal
+  * Documentation
+
+
 Introduction
 ------------
 
@@ -167,40 +175,71 @@ In the present state, our system is functional in the sense that chickens fly
 and horses swim. Our next objective will be to add some basic functionalities,
 layer by layer. Here's what we want to be able to do:
 
-  1.  Boot in console mode.
+  * Boot in console mode.
 
-  2.  Use the Bash shell.
+  * Use the Bash shell.
 
-  3.  Edit text files using Vim.
+  * Edit text files using Vim.
 
-  4.  Display system documentation (man and info pages, HOWTOs, FAQs)
+  * Display system documentation (man and info pages, HOWTOs, FAQs)
 
-  5.  Manage disks and filesystems.
+  * Manage disks and filesystems.
 
-  6.  Build an initrd.
+  * Build an initrd.
 
-  7.  Connect to a network.
+  * Connect to a network.
 
-  8.  Manage packages through the network using slackpkg.
+  * Manage packages through the network using slackpkg.
 
-  9.  Connect remotely using SSH.
+  * Connect remotely using SSH.
 
-  10. Work using Git.  
+  * Work using Git.  
 
 
 We have to add the following packages to our core system:
 
+  * a/acl
+  * a/attr
+  * a/bzip2
+  * a/cpio
   * a/cxxlibs
+  * a/dialog
+  * a/file
+  * a/gawk
+  * a/gettext
+  * a/kernel-generic
+  * a/kernel-generic-smp
   * a/less
+  * a/lvm2
+  * a/mdadm
+  * a/mkinitrd
+  * a/openssl-solibs
+  * a/sysklogd
+  * ap/diffutils
   * ap/groff
   * ap/man
   * ap/man-pages
+  * ap/slackpkg
   * ap/texinfo
   * ap/vim
+  * d/git
   * d/perl
   * d/python
   * f/linux-faqs
   * f/linux-howtos
+  * l/mpfr
+  * l/ncurses
+  * n/ca-certificates
+  * n/curl
+  * n/cyrus-sasl
+  * n/dhcpcd
+  * n/gnupg
+  * n/iproute2
+  * n/iputils
+  * n/net-tools
+  * n/network-scripts
+  * n/openssh
+  * n/wget
   
 
   *****************************
