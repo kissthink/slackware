@@ -58,6 +58,7 @@ AddDefaultCharset utf-8
   AddIcon       /slackware/repository-layout/server.png server-14.1-32bit
   AddIcon       /slackware/repository-layout/server.png server-14.1-64bit
   AddIcon       /slackware/repository-layout/server.png server-14.1-source
+  AddIcon       /slackware/repository-layout/utilities-terminal.png stripslack-14.1
   AddIconByType /slackware/repository-layout/image-x-generic.png image/*
 
   # DESCRIPTIONS
