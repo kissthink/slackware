@@ -1,0 +1,2651 @@
+aalib: aalib (ASCII Art library)               _1l1vlvlvlvlvlvlvlvlvvl=.
+aalib:                                      __111llvl+' __...._   +1lv11=.
+aalib: AA-lib is an ASCII art graphics     _11vllvlv+  =vlvlvl1=  /1vlvv1i=_
+aalib: library.  Internally, the AA-lib   _vvllvlvlv=  -+vlvlvlvlvlvlvlvdvl=_
+aalib: API is similar to other graphics  _:lvlvlvlvlv=.     --^-^1lvlvlrlvv1s
+aalib: libraries, but it renders the     =llvlvvlvlvv11lvl=....   -lvlevlvlvv
+aalib: the output into ASCII art (like   =lvlvlvlvll-^+1vv11111v_  vlkllvllvl
+aalib: the example to the right :^)      =lvlvlvlvl1   +1vv1v1lv  _llvlvlvlvl
+aalib: The developers of AA-lib are       +1lv |vlvl'    -^-^-   _1olvlvlvlv'
+aalib: Jan Hubicka, Thomas A. K. Kjaer,   -1vl |lvlvlvlvlvlvlvlvv1vlvlvlvlv+.
+aalib: Tim Newsome, and Kamil Toman.        +1 ^^^^^^^^^^^^^^^^^^^^^^^^vlv-
+aalib:                                       -+uvlvlvlvlvlvlvlvlvlvlvlvl+_
+aalib:                                          -vlvlvlvlvlvlvlvllvlvl-'
+akonadi: akonadi (PIM storage service)
+akonadi:
+akonadi: akonadi is an extensible cross-desktop storage service for PIM data 
+akonadi: and meta data providing concurrent read, write, and query access. 
+akonadi: It will provide a unique desktop wide object identification and 
+akonadi: retrieval.
+akonadi:
+akonadi: Homepage:  http://www.kdepim.org/akonadi/
+akonadi:
+akonadi:
+akonadi:
+alsa-lib: alsa-lib (Advanced Linux Sound Architecture library)
+alsa-lib:
+alsa-lib: The Advanced Linux Sound Architecture (ALSA) provides audio and MIDI
+alsa-lib: functionality to the Linux operating system.  This is the ALSA library
+alsa-lib: (libasound) which is used by audio applications.
+alsa-lib:
+alsa-lib: For more information, see http://alsa-project.org
+alsa-lib:
+alsa-lib:
+alsa-lib:
+alsa-lib:
+alsa-oss: alsa-oss (library/wrapper to use OSS programs with ALSA)
+alsa-oss:
+alsa-oss: The Advanced Linux Sound Architecture (ALSA) provides audio and MIDI
+alsa-oss: functionality to the Linux operating system.  OSS (Open Sound System)
+alsa-oss: is an older sound system for Linux that ALSA is replacing.  Using
+alsa-oss: the aoss wrapper you can use programs that only support OSS with ALSA
+alsa-oss: without having to load the OSS compatibility kernel modules.
+alsa-oss:
+alsa-oss:
+alsa-oss:
+alsa-oss:
+apr: apr (Apache Portable Runtime)
+apr:
+apr: The mission of the Apache Portable Runtime (APR) is to provide a
+apr: free library of C data structures and routines, forming a system
+apr: portability layer to as many operating systems as possible.
+apr:
+apr:
+apr:
+apr:
+apr:
+apr:
+apr-util: apr-util (Apache Portable Runtime utilities)
+apr-util:
+apr-util: The mission of the Apache Portable Runtime (APR) is to provide a
+apr-util: free library of C data structures and routines, forming a system
+apr-util: portability layer to as many operating systems as possible.
+apr-util:
+apr-util: This package contains additional utility interfaces for APR;
+apr-util: including support for XML, LDAP, database interfaces, URI parsing,
+apr-util: and more.
+apr-util:
+apr-util:
+aspell: aspell (spell checker)
+aspell:
+aspell: GNU Aspell is a spell checker designed to eventually replace Ispell.
+aspell: It can either be used as a library or as an independent spell checker.
+aspell:
+aspell:
+aspell:
+aspell:
+aspell:
+aspell:
+aspell:
+aspell-en: aspell-en
+aspell-en:
+aspell-en: GNU Aspell 0.60 English Dictionary Package.
+aspell-en:
+aspell-en:
+aspell-en:
+aspell-en:
+aspell-en:
+aspell-en:
+aspell-en:
+aspell-en:
+atk: atk (accessibility functions library)
+atk:
+atk: atk is a library of accessibility functions that is used by the
+atk: GTK+-2 toolkit.
+atk:
+atk:
+atk:
+atk:
+atk:
+atk:
+atk:
+at-spi2-atk: at-spi2-atk (AT-SPI2 bridge to ATK)
+at-spi2-atk:
+at-spi2-atk: The At-Spi2 Atk package contains a library that bridges ATK to the
+at-spi2-atk: At-Spi2 D-Bus service.
+at-spi2-atk:
+at-spi2-atk:
+at-spi2-atk:
+at-spi2-atk:
+at-spi2-atk:
+at-spi2-atk:
+at-spi2-atk:
+at-spi2-core: at-spi2-core (Assistive Technology Service Provider Interface core) 
+at-spi2-core:
+at-spi2-core: The At-Spi2 Core package is a part of the GNOME Accessibility
+at-spi2-core: Project.  It provides a service provider interface for the 
+at-spi2-core: assistive technologies available on the GNOME platform and a
+at-spi2-core: library against which applications can be linked. 
+at-spi2-core:
+at-spi2-core:
+at-spi2-core:
+at-spi2-core:
+at-spi2-core:
+attica: attica (Qt Collaboration library)
+attica: 
+attica: Attica is a Qt library that implements the freedesktop.org
+attica: specification for the Open Collaboration Services API version 1.4.
+attica: It grants easy access to the services such as querying information
+attica: about persons and contents.
+attica:
+attica: Homepage: http://www.kde.org
+attica:
+attica:
+attica:
+audiofile: audiofile (audio support library)
+audiofile:
+audiofile: Audiofile is a library to handle various audio file formats, and is
+audiofile: used by the esound daemon.  You can also use it to develop your own
+audiofile: audiofile applications.
+audiofile:
+audiofile:
+audiofile:
+audiofile:
+audiofile:
+audiofile:
+automoc4: automoc4 (automatic moc for Qt4)
+automoc4:
+automoc4: This package contains the automoc4 binary which is used to run moc
+automoc4: on the right source files in a Qt 4 or KDE 4 application.
+automoc4: Moc is the meta object compiler which is a widely used tool with Qt
+automoc4: and creates standard C++ files to provide syntactic sugar of the
+automoc4: signal/slots mechanism.
+automoc4:
+automoc4:
+automoc4: See also  http://www.kde.org
+automoc4:
+babl: babl (pixel format translation library)
+babl: 
+babl: babl is a dynamic, any to any, pixel format translation library.
+babl: 
+babl: It allows converting between different methods of storing pixels known
+babl: as pixel formats that have with different bitdepths and other data
+babl: representations, color models and component permutations.
+babl: 
+babl: A vocabulary to formulate new pixel formats from existing primitives is
+babl: provided as well as the framework to add new color models and data types.
+babl: 
+boost: boost (Boost C++ Libraries)
+boost:
+boost: Boost provides free peer-reviewed portable C++ source libraries.
+boost: The emphasis is on libraries that work well with the C++ Standard
+boost: Library.  One goal is to establish "existing practice" and provide
+boost: reference implementations so that the Boost libraries are suitable
+boost: for eventual standardization.
+boost:
+boost: Homepage:  http://www.boost.org/
+boost:
+boost:
+cairo: cairo (graphics library used by GTK+)
+cairo:
+cairo: Cairo is a vector graphics library designed to provide high-quality
+cairo: display and print output. Cairo is designed to produce
+cairo: identical output on all output media while taking advantage of display
+cairo: hardware acceleration when available (eg. through the X Render
+cairo: Extension or OpenGL).
+cairo:
+cairo:
+cairo:
+cairo:
+chmlib: chmlib (library for accessing CHM files)
+chmlib:
+chmlib: chmlib is a small library designed for accessing MS ITSS files.
+chmlib: The ITSS file format is used for Microsoft Html Help files (.chm), 
+chmlib: which have been the predominant medium for software documentation 
+chmlib: from Microsoft during the past several years, having superceded 
+chmlib: the previously used .hlp file format.
+chmlib:
+chmlib: Homepage:  http://www.jedrea.com/chmlib/
+chmlib:
+chmlib:
+clucene: clucene (Text-Search Engine)
+clucene:
+clucene: CLucene is a C++ port of Lucene.  It is a high-performance,
+clucene: full-featured text search engine written in C++.
+clucene:
+clucene: Homepage:  http://clucene.sourceforge.net
+clucene:
+clucene:
+clucene:
+clucene:
+clucene:
+ConsoleKit: ConsoleKit (user, login, and seat tracking framework)
+ConsoleKit:
+ConsoleKit: ConsoleKit is a framework for defining and tracking users, login
+ConsoleKit: sessions, and seats.
+ConsoleKit:
+ConsoleKit:
+ConsoleKit:
+ConsoleKit:
+ConsoleKit:
+ConsoleKit: Homepage: http://freedesktop.org/wiki/Software/ConsoleKit
+ConsoleKit:
+db42: db42 (Berkeley database library version 4.2.x)
+db42:
+db42: The Berkeley Database (Berkeley DB) library provides embedded database
+db42: support for both traditional and client/server applications.
+db42:
+db42: This package should be installed if compatibility is needed with
+db42: databases created with the Berkeley DB version 4.2.x.
+db42:
+db42:
+db42:
+db42:
+db44: db4 (Berkeley database library version 4.4.x)
+db44:
+db44: The Berkeley Database (Berkeley DB) library provides embedded database
+db44: support for both traditional and client/server applications.
+db44:
+db44: This package should be installed if compatibility is needed with
+db44: databases created with the Berkeley DB version 4.4.x.
+db44:
+db44:
+db44:
+db44:
+db48: db4 (Berkeley database library version 4.8.x)
+db48:
+db48: The Berkeley Database (Berkeley DB) library provides embedded database
+db48: support for both traditional and client/server applications.
+db48:
+db48: This package should be installed if compatibility is needed with
+db48: databases created with the Berkeley DB version 4.8.x.
+db48:
+db48:
+db48:
+db48:
+dbus-glib: dbus-glib (Glib bindings for dbus)
+dbus-glib:
+dbus-glib: This package includes the glib bindings for the dbus IPC library.
+dbus-glib:
+dbus-glib:
+dbus-glib:
+dbus-glib:
+dbus-glib:
+dbus-glib:
+dbus-glib:
+dbus-glib:
+dbus-python: dbus-python (Python bindings for dbus)
+dbus-python:
+dbus-python: This package includes python bindings for the D-Bus messagebus.
+dbus-python:
+dbus-python:
+dbus-python:
+dbus-python:
+dbus-python:
+dbus-python:
+dbus-python:
+dbus-python:
+dconf: dconf (low-level configuration system)
+dconf:
+dconf: dconf is a low-level configuration system. Its main purpose is to
+dconf: provide a backend to the GSettings API in GLib.
+dconf:
+dconf: Homepage: http://live.gnome.org/dconf
+dconf:
+dconf:
+dconf:
+dconf:
+dconf:
+desktop-file-utils: desktop-file-utils (Utilities for manipulating desktop files)
+desktop-file-utils:
+desktop-file-utils: Some utilities from freedesktop.org for handling .desktop files:
+desktop-file-utils:
+desktop-file-utils: desktop-file-validate:  validates a desktop file and prints
+desktop-file-utils:   warnings/errors about spec violations.
+desktop-file-utils: desktop-file-install:  installs a desktop file to the applications
+desktop-file-utils:   directory, optionally munging it a bit in transit.
+desktop-file-utils: desktop-menu-tool:  loads .vfolder-info and .menu files and does
+desktop-file-utils:   operations on them.
+desktop-file-utils:
+djvulibre: djvulibre (web-centric document and image format)
+djvulibre:
+djvulibre: DjVu is a web-centric format and software platform for distributing
+djvulibre: documents and images.  DjVu content downloads faster, displays and 
+djvulibre: renders faster, looks nicer on a screen, and consume less client 
+djvulibre: resources than competing formats.  DjVu was originally developed at
+djvulibre: AT&T Labs-Research by Leon Bottou, Yann LeCun, Patrick Haffner, and
+djvulibre: many others.
+djvulibre:
+djvulibre: Homepage:  http://djvu.sourceforge.net
+djvulibre:
+ebook-tools: ebook-tools (access and convert various ebook file formats)
+ebook-tools:
+ebook-tools: Tools for accessing and converting various ebook file formats. 
+ebook-tools:
+ebook-tools: Home page: http://sourceforge.net/projects/ebook-tools/
+ebook-tools:
+ebook-tools:
+ebook-tools:
+ebook-tools:
+ebook-tools:
+ebook-tools:
+eigen2: Eigen2 (c++ math library)
+eigen2:
+eigen2: Eigen 2 is a lightweight C++ template library for vector and matrix
+eigen2: math, a.k.a. linear algebra. 
+eigen2:
+eigen2: See the website:  http://eigen.tuxfamily.org
+eigen2:
+eigen2:
+eigen2:
+eigen2:
+eigen2:
+enchant: Enchant (a wrapper for spellcheck libraries)
+enchant:
+enchant: Enchant supports:
+enchant:   * Aspell/Pspell
+enchant:   * Ispell
+enchant:   * MySpell/HunSpell
+enchant:   * Uspell (Yiddish, Hebrew and Eastern European languages)
+enchant:   * Hspell (Hebrew) and others
+enchant:
+enchant: http://www.abisource.com/projects/enchant/
+enchant:
+esound: esound (Enlightened Sound Daemon)
+esound:
+esound: EsounD, the Enlightened Sound Daemon, is a server process that mixes
+esound: several audio streams for playback by a single audio device. For
+esound: example, if you're listening to music on a CD and you receive a
+esound: sound-related event from ICQ, the two applications won't have to
+esound: jockey for the use of your sound card.  Install esound if you'd like
+esound: to let sound applications share your audio device.
+esound:
+esound:
+esound:
+exiv2: Exiv2 (Exif and IPTC Metadata Library and Tools)
+exiv2:
+exiv2: Exiv2 is a C++ library and a command line utility to read and write
+exiv2: Exif and IPTC image metadata.
+exiv2:
+exiv2: Homepage:  http://www.exiv2.org/
+exiv2:
+exiv2:
+exiv2:
+exiv2:
+exiv2:
+expat: expat (C library for parsing XML)
+expat:
+expat: This is Expat, a C library for parsing XML, written by James Clark.
+expat: Expat is a stream-oriented XML parser used by Python, GNOME, Xft2,
+expat: and other things.
+expat:
+expat:
+expat:
+expat:
+expat:
+expat:
+fftw: fftw (Fastest Fourier Transform in the West)
+fftw: 
+fftw: FFTW is a free collection of fast C routines for computing the
+fftw: Discrete Fourier Transform in one or more dimensions.  It includes
+fftw: complex, real, symmetric, and parallel transforms, and can handle
+fftw: arbitrary array sizes efficiently.  FFTW is typically faster than
+fftw: other publicly-available FFT implementations, and is even
+fftw: competitive with vendor-tuned libraries.
+fftw:
+fftw: Homepage: http://www.fftw.org/
+fftw:
+freetype: freetype (A Free, High-Quality, and Portable Font Engine)
+freetype:
+freetype: The FreeType engine is a free and portable TrueType font rendering
+freetype: engine.  It has been developed to provide TrueType support to a
+freetype: great variety of platforms and environments.
+freetype:
+freetype:
+freetype:
+freetype:
+freetype:
+freetype:
+fribidi: fribidi (Unicode BiDirectional algorithm library)
+fribidi:
+fribidi: This library implements the Unicode BiDirectional algorithm, which
+fribidi: is needed in order to support right-to-left languages such as Arabic
+fribidi: and Hebrew.  It is used in display software like KDE's SVG modules.
+fribidi:
+fribidi:
+fribidi:
+fribidi:
+fribidi:
+fribidi:
+fuse: FUSE (Filesystem in Userspace)
+fuse: 
+fuse: FUSE is a simple interface for userspace programs to export a virtual
+fuse: filesystem to the Linux kernel.  FUSE also aims to provide a secure
+fuse: method for non privileged users to create and mount their own
+fuse: filesystem implementations.
+fuse:
+fuse: The FUSE web site can be found here: http://fuse.sourceforge.net
+fuse:
+fuse:
+fuse:
+gamin: gamin (A minimalist FAM replacement)
+gamin:
+gamin: Gamin is a file and directory monitoring system defined to be a subset
+gamin: of the FAM (File Alteration Monitor) system.
+gamin:
+gamin: The homepage for Gamin is:  http://www.gnome.org/~veillard/gamin/ 
+gamin:
+gamin:
+gamin:
+gamin:
+gamin:
+gc: gc (garbage collector library)
+gc:
+gc: The Boehm-Demers-Weiser conservative garbage collector can be used as
+gc: a garbage collecting replacement for C malloc or C++ new.
+gc:
+gc: Homepage:  http://www.hpl.hp.com/personal/Hans_Boehm/gc/
+gc:
+gc:
+gc:
+gc:
+gc:
+GConf: GConf (GNOME configuration library)
+GConf: 
+GConf: GConf is a configuration database system designed for the GNOME project
+GConf: and applications based on GTK+.  It is conceptually similar to the
+GConf: Windows registry.
+GConf:
+GConf: For information, see:  http://projects.gnome.org/gconf/
+GConf: 
+GConf: 
+GConf: 
+GConf: 
+gcr: gcr (crypto library and ui for gnome-keyring)
+gcr:
+gcr: GCR is a library for displaying certificates and crypto UI accessing
+gcr: key stores. It also provides the viewer for crypto files on the GNOME
+gcr: desktop.
+gcr:
+gcr: GCK is a library for accessing PKCS#11 modules like smart cards, in a
+gcr: (G)object oriented way.
+gcr:
+gcr:
+gcr:
+gd: gd (a graphics library)
+gd:
+gd: gd is a graphics library.  It allows your code to quickly draw images
+gd: complete with lines, arcs, text, multiple colors, cut and paste from
+gd: other images, and flood fills, and write out the result as a PNG or
+gd: JPEG file.  This is particularly useful in web applications, where
+gd: PNG and JPEG are two of the formats accepted for inline images by
+gd: most browsers.
+gd:
+gd: The gd library was written by Thomas Boutell.
+gd:
+gdbm: gdbm (GNU database routines)
+gdbm:
+gdbm: GNU dbm is a set of database routines that work similar to the
+gdbm: standard UNIX dbm routines.
+gdbm:
+gdbm:
+gdbm:
+gdbm:
+gdbm:
+gdbm:
+gdbm:
+gdk-pixbuf2: gdk-pixbuf2 (image library used by GTK+ v2)
+gdk-pixbuf2:
+gdk-pixbuf2: The gdk-pixbuf library provides a number of features:
+gdk-pixbuf2: - GdkPixbuf structure for representing images.
+gdk-pixbuf2: - Image loading facilities, both synchronous and progressive.
+gdk-pixbuf2: - Rendering of a GdkPixbuf into various formats:
+gdk-pixbuf2:   drawables (windows, pixmaps), GdkRGB buffers.
+gdk-pixbuf2: - Fast scaling and compositing of pixbufs.
+gdk-pixbuf2: - Simple animation loading (ie. animated gifs).
+gdk-pixbuf2:
+gdk-pixbuf2:
+gegl: GEGL (Generic Graphics Library)
+gegl: 
+gegl: GEGL (Generic Graphics Library) is a graph based image processing
+gegl: framework.
+gegl: 
+gegl: GEGL provides infrastructure to do demand based cached non destructive
+gegl: image editing on larger than RAM buffers. Through babl it provides
+gegl: support for a wide range of color models and pixel storage formats for
+gegl: input and output.
+gegl: 
+gegl: 
+giflib: giflib (GIF image format library)
+giflib:
+giflib: A library to load and save (uncompressed only) images using GIF,
+giflib: or Graphics Interchange Format.  GIF was introduced by CompuServe
+giflib: in 1987, but is still widely used today (especially on web pages.)
+giflib:
+giflib:
+giflib:
+giflib:
+giflib:
+giflib:
+glade3: glade3 (Glade UI Designer version 3)
+glade3:
+glade3: Glade is a RAD tool to enable quick and easy development of user
+glade3: interfaces for the GTK+ toolkit and the GNOME desktop environment.
+glade3: The user interfaces designed in Glade are saved as XML, and by using
+glade3: the GtkBuilder GTK+ object these can be loaded by applications
+glade3: dynamically as needed.
+glade3:
+glade3: Homepage: http://glade.gnome.org/
+glade3:
+glade3:
+glib: glib (library of C routines, version 1.x)
+glib:
+glib: GLib is a library which includes support routines for C such as lists,
+glib: trees, hashes, memory allocation, and many other things.
+glib:
+glib: GLib is required by nearly everything that uses GTK+ version 1.x.
+glib:
+glib:
+glib:
+glib:
+glib:
+glib2: glib2 (library of C routines)
+glib2:
+glib2: GLib is a library which includes support routines for C such as lists,
+glib2: trees, hashes, memory allocation, and many other things.
+glib2:
+glib2:
+glib2:
+glib2:
+glib2:
+glib2:
+glib2:
+glibc: glibc (GNU C libraries)
+glibc:
+glibc: This package contains the GNU C libraries and header files.  The GNU
+glibc: C library was written originally by Roland McGrath, and is currently
+glibc: maintained by Ulrich Drepper.  Some parts of the library were
+glibc: contributed or worked on by other people.
+glibc:
+glibc: You'll need this package to compile programs.
+glibc:
+glibc:
+glibc:
+glibc-i18n: glibc-i18n (locale files from glibc)
+glibc-i18n:
+glibc-i18n: These files go in /usr/lib/locale and /usr/share/i18n/ to provide
+glibc-i18n: internationalization support.  You'll need this package unless you
+glibc-i18n: will be using US English only.
+glibc-i18n:
+glibc-i18n:
+glibc-i18n:
+glibc-i18n:
+glibc-i18n:
+glibc-i18n:
+glibc-profile: glibc-profile (GNU C libraries with profiling support)
+glibc-profile:
+glibc-profile: This package contains static versions of the GNU C libraries with 
+glibc-profile: support for profiling binaries using gprof.  gprof calculates how
+glibc-profile: much time a program spends in each routine which can suggest where
+glibc-profile: to concentrate efforts to improve performance.
+glibc-profile:
+glibc-profile: See the gprof man page for more details.
+glibc-profile:
+glibc-profile:
+glibc-profile:
+glib-networking: glib-networking (network-related giomodules for glib)
+glib-networking:
+glib-networking: This package contains network-related giomodules for glib.
+glib-networking:
+glib-networking:
+glib-networking:
+glib-networking:
+glib-networking:
+glib-networking:
+glib-networking:
+glib-networking:
+gmime: gmime (MIME parsing library)
+gmime:
+gmime: GMime is a set of utilities for parsing and creating messages using
+gmime: the Multipurpose Internet Mail Extension (MIME) as defined by many
+gmime: Internet RFCs.
+gmime:
+gmime: Jeffrey Stedfast is the author of GMime.
+gmime:
+gmime:
+gmime:
+gmime:
+gmm: gmm (C++ generic matrix template library)
+gmm:
+gmm: Gmm++ is a generic C++ template library for sparse, dense and skyline
+gmm: matrices.  It is built as a set of generic algorithms (mult, add, copy,
+gmm: sub-matrices, dense and sparse solvers, etc.) for any interfaced vector 
+gmm: type or matrix type.  It can be viewed as a glue library that allows 
+gmm: cooperation between several vector and matrix types.  However, basic 
+gmm: sparse, dense and skyline matrix/vector types are built in Gmm++, so 
+gmm: it can be used as a standalone linear algebra library.
+gmm: 
+gmm: 
+gmp: gmp (GNU multiple precision arithmetic library)
+gmp:
+gmp: GNU MP is a library for arbitrary precision arithmetic, operating on
+gmp: signed integers, rational numbers, and floating point numbers.  It has
+gmp: a rich set of functions, and the functions have a regular interface.
+gmp:
+gmp:
+gmp:
+gmp:
+gmp:
+gmp:
+gnome-icon-theme: gnome-icon-theme (default icons used by GTK+)
+gnome-icon-theme:
+gnome-icon-theme: A set of default icons used by many GTK+ applications.
+gnome-icon-theme:
+gnome-icon-theme:
+gnome-icon-theme:
+gnome-icon-theme:
+gnome-icon-theme:
+gnome-icon-theme:
+gnome-icon-theme:
+gnome-icon-theme:
+gnome-keyring: GNOME Keyring (a tool to handle security credentials)
+gnome-keyring:
+gnome-keyring: GNOME Keyring is a program designed to take care of the user's
+gnome-keyring: security credentials, such as user names and passwords, in an
+gnome-keyring: easy to access manner.  The keyring is implemented as a daemon
+gnome-keyring: and uses the process name gnome-keyring-daemon.
+gnome-keyring:
+gnome-keyring:
+gnome-keyring:
+gnome-keyring:
+gnome-keyring:
+gnome-themes-standard: gnome-themes-standard (default icons used by GTK+)
+gnome-themes-standard:
+gnome-themes-standard: A set of default icons used by many GTK+ applications.
+gnome-themes-standard:
+gnome-themes-standard:
+gnome-themes-standard:
+gnome-themes-standard:
+gnome-themes-standard:
+gnome-themes-standard:
+gnome-themes-standard:
+gnome-themes-standard:
+gnu-efi: gnu-efi (EFI Development files for the GNU toolchain)
+gnu-efi:
+gnu-efi: Develop EFI applications using the GNU toolchain and the EFI
+gnu-efi: development environment.
+gnu-efi:
+gnu-efi: Homepage: http://gnu-efi.sourceforge.net
+gnu-efi:
+gnu-efi:
+gnu-efi:
+gnu-efi:
+gnu-efi:
+gobject-introspection: gobject-introspection (GObject interface introspection library)
+gobject-introspection:
+gobject-introspection: GObject Introspection is a project for providing machine readable
+gobject-introspection: introspection data of the API of C libraries. This introspection data
+gobject-introspection: can be used for automatic code generation for bindings, API
+gobject-introspection: verification, and documentation generation.
+gobject-introspection:
+gobject-introspection: For more information, check out:
+gobject-introspection:   http://live.gnome.org/GObjectIntrospection
+gobject-introspection:
+gobject-introspection:
+grantlee: grantlee (string template engine)
+grantlee: 
+grantlee: Grantlee is a plugin based String Template system written using the
+grantlee: Qt framework.  The goals of the project are to make it easier for
+grantlee: application developers to separate the structure of documents from
+grantlee: the data they contain, opening the door for theming.
+grantlee:
+grantlee: Homepage: http://gitorious.org/grantlee/
+grantlee:
+grantlee:
+grantlee:
+gsettings-desktop-schemas: gsettings-desktop-schemas (GSettings schemas)
+gsettings-desktop-schemas:
+gsettings-desktop-schemas: gsettings-desktop-schemas contains a collection of GSettings schemas 
+gsettings-desktop-schemas: for settings shared by various components of a desktop.
+gsettings-desktop-schemas:
+gsettings-desktop-schemas: 
+gsettings-desktop-schemas:
+gsettings-desktop-schemas:
+gsettings-desktop-schemas:
+gsettings-desktop-schemas:
+gsettings-desktop-schemas:
+gst-plugins-base: gst-plugins-base (base set of GStreamer plugins)
+gst-plugins-base:
+gst-plugins-base: GStreamer Base Plug-ins is a well-groomed and well-maintained 
+gst-plugins-base: collection of GStreamer plug-ins and elements, spanning the 
+gst-plugins-base: range of possible types of elements one would want to write 
+gst-plugins-base: for GStreamer.  It also contains helper libraries and base 
+gst-plugins-base: classes useful for writing elements.  A wide range of video 
+gst-plugins-base: and audio decoders, encoders, and filters are included.
+gst-plugins-base:
+gst-plugins-base:
+gst-plugins-base:
+gst-plugins-good: gst-plugins-good (good set of GStreamer plugins)
+gst-plugins-good:
+gst-plugins-good: GStreamer Good Plug-ins is a set of plug-ins that have good
+gst-plugins-good: quality code, correct functionality, and a good license
+gst-plugins-good: (LGPL for the plug-in code, LGPL or LGPL-compatible for the
+gst-plugins-good: supporting library).
+gst-plugins-good:
+gst-plugins-good:
+gst-plugins-good:
+gst-plugins-good:
+gst-plugins-good:
+gstreamer: GStreamer (streaming multimedia framework)
+gstreamer: 
+gstreamer: GStreamer is a library that allows the construction of graphs of a
+gstreamer: media-handling components, ranging from simple Ogg/Vorbis playback 
+gstreamer: to complex audio (mixing) and video (non-linear editing) processing.
+gstreamer: Applications can take advantage of advances in codec and filter 
+gstreamer: technology transparently. Developers can add new codecs and filters
+gstreamer: by writing a simple plugin with a clean, generic interface.
+gstreamer: 
+gstreamer: GStreamer is released under the LGPL.
+gstreamer: 
+gtk+: gtk+ (graphical user interface toolkit, version 1.x)
+gtk+:
+gtk+: GTK+, which stands for the Gimp ToolKit, is a library for creating
+gtk+: graphical user interfaces for the X Window System.
+gtk+:
+gtk+: This library has been largely replaced by GTK+ version 2, but there
+gtk+: are still some good programs that require it.
+gtk+:
+gtk+:
+gtk+:
+gtk+:
+gtk+2: GTK+ version 2 (multi-platform GUI toolkit)
+gtk+2:
+gtk+2: This is GTK+, a multi-platform toolkit for creating graphical user
+gtk+2: interfaces.  Offering a complete set of widgets, GTK+ is suitable for
+gtk+2: projects ranging from small one-off projects to complete application
+gtk+2: suites.
+gtk+2:
+gtk+2:
+gtk+2:
+gtk+2:
+gtk+2:
+gtk+3: GTK+ version 3 (multi-platform GUI toolkit)
+gtk+3:
+gtk+3: This is GTK+, a multi-platform toolkit for creating graphical user
+gtk+3: interfaces.  Offering a complete set of widgets, GTK+ is suitable for
+gtk+3: projects ranging from small one-off projects to complete application
+gtk+3: suites.
+gtk+3:
+gtk+3:
+gtk+3:
+gtk+3:
+gtk+3:
+gtkspell: gtkspell (GTK2 spell checker interface library)
+gtkspell:
+gtkspell: GtkSpell provides MSWord/MacOSX-style highlighting of misspelled words
+gtkspell: in a GtkTextView widget.  Right-clicking a misspelled word pops up a
+gtkspell: menu of suggested replacements.
+gtkspell:
+gtkspell:
+gtkspell:
+gtkspell:
+gtkspell:
+gtkspell:
+gvfs: gvfs (glib virtual filesystems)
+gvfs:
+gvfs: gvfs is a userspace virtual filesystem designed to work with the I/O
+gvfs: abstractions of libgio (a library included in the glib2 package).
+gvfs: It installs several modules that are automatically used by applications
+gvfs: that use the libgio API.  There is also fuse support that allows
+gvfs: applications not using gio to access the gvfs filesystems.
+gvfs:
+gvfs:
+gvfs:
+gvfs:
+harfbuzz: harfbuzz (OpenType text shaping engine)
+harfbuzz:
+harfbuzz: HarfBuzz is an OpenType text shaping engine.
+harfbuzz:
+harfbuzz: http://www.freedesktop.org/wiki/Software/HarfBuzz
+harfbuzz:
+harfbuzz:
+harfbuzz:
+harfbuzz:
+harfbuzz:
+harfbuzz:
+herqq: herqq (UPnP library)
+herqq:
+herqq: Herqq UPnP (HUPnP) is a software library for building UPnP devices
+herqq: and control points conforming to the UPnP Device Architecture
+herqq: version 1.1.  It is designed to be simple to use and robust in
+herqq: operation.  It is built using C++ and the Qt Framework.
+herqq:
+herqq: Homepage:  http://www.herqq.org/
+herqq:
+herqq:
+herqq:
+hicolor-icon-theme: hicolor-icon-theme (default icon theme)
+hicolor-icon-theme:
+hicolor-icon-theme: This is the default fallback theme used by implementations of the icon
+hicolor-icon-theme: theme specification.  
+hicolor-icon-theme:
+hicolor-icon-theme: The specification is available at:
+hicolor-icon-theme:   http://www.freedesktop.org/standards/icon-theme-spec/
+hicolor-icon-theme:
+hicolor-icon-theme:
+hicolor-icon-theme:
+hicolor-icon-theme:
+hunspell: hunspell (spell checker and morphological analyzer library)
+hunspell:
+hunspell: Hunspell is a spell checker and morphological analyzer library
+hunspell: and program designed for languages with rich morphology
+hunspell: and complex word compounding or character encoding.
+hunspell: Hunspell interfaces: Ispell-like terminal interface using ncurses
+hunspell: library, Ispell pipe interface, and OpenOffice.org UNO module.
+hunspell:
+hunspell: Home page: http://hunspell.sourceforge.net/
+hunspell:
+hunspell:
+icon-naming-utils: icon-naming-utils (generate icon files for your DE)
+icon-naming-utils:
+icon-naming-utils: It is a script for maintaining backwards compatibility 
+icon-naming-utils: with current desktop icon themes, while migrating to 
+icon-naming-utils: the names specified in the Icon Naming Specification.
+icon-naming-utils:
+icon-naming-utils: Homepage: http://tango.freedesktop.org
+icon-naming-utils:
+icon-naming-utils:
+icon-naming-utils:
+icon-naming-utils:
+icu4c: icu4c (International Components for Unicode)
+icu4c:
+icu4c: The International Components for Unicode (ICU) libraries provide
+icu4c: robust and full-featured Unicode services on a wide variety of
+icu4c: platforms.
+icu4c:
+icu4c: Homepage: http://www.icu-project.org/
+icu4c:
+icu4c:
+icu4c:
+icu4c:
+ilmbase: ilmbase (Industrial Light & Magic base libraries)
+ilmbase:
+ilmbase: ilmbase currently includes:
+ilmbase:
+ilmbase: IlmThread - a thread abstraction library
+ilmbase: Imath - a math function library
+ilmbase: Iex - an exception-handling library
+ilmbase: Half - Ilm's 16 bit floating point format library
+ilmbase:
+ilmbase: Homepage:  http://www.openexr.org/
+ilmbase:
+imlib: imlib (image loading and rendering library)
+imlib:
+imlib: Imlib is a display depth-independent image loading and rendering
+imlib: library.  Imlib is designed to simplify and speed up the process of
+imlib: loading images and obtaining X Window System drawables.  Imlib
+imlib: provides many simple manipulation routines which can be used for
+imlib: common operations.
+imlib:
+imlib:
+imlib:
+imlib:
+iso-codes: iso-codes (ISO-standard lists)
+iso-codes:
+iso-codes: This package provides lists of various ISO standards (e.g.
+iso-codes: country, language, language scripts, and currency names) in one
+iso-codes: place, rather than repeated in many programs throughout the system.
+iso-codes:
+iso-codes: Homepage: http://pkg-isocodes.alioth.debian.org/
+iso-codes:
+iso-codes:
+iso-codes:
+iso-codes:
+jasper: jasper (free implementation of the JPEG-2000 standard)
+jasper:
+jasper: The JasPer Project is an open-source initiative to provide a free
+jasper: software-based reference implementation of the codec specified in the
+jasper: JPEG-2000 Part-1 standard (i.e., ISO/IEC 15444-1).jasper:
+jasper:
+jasper:
+jasper:
+jasper: jasper home: http://www.ece.uvic.ca/~mdadams/jasper/
+jasper:
+js185: js185 (SpiderMonkey - Mozilla's JavaScript Engine)
+js185:
+js185: SpiderMonkey is Mozilla's JavaScript engine written in C/C++. 
+js185: It is used in various Mozilla products (including Firefox) and is 
+js185: available under MPL/GPL/LGPL tri-license.
+js185:
+js185: Homepage: http://www.mozilla.org/js/spidermonkey
+js185:
+js185:
+js185:
+js185:
+keybinder: keybinder (keyboard shortcut library)
+keybinder:
+keybinder: keybinder is a library for registering global keyboard shortcuts. 
+keybinder: Keybinder works with GTK-based applications using the X Window System.
+keybinder:
+keybinder: Homepage: http://kaizer.se/wiki/keybinder/
+keybinder:
+keybinder:
+keybinder:
+keybinder:
+keybinder:
+keyutils: keyutils (Kernel key management utilities)
+keyutils:
+keyutils: This package contains tools and a wrapper library to control the
+keyutils: Linux kernel key management facility and to provide a mechanism by
+keyutils: which the kernel can call back to user space to get a key
+keyutils: instantiated.
+keyutils:
+keyutils: Homepage:  http://people.redhat.com/~dhowells/keyutils/
+keyutils:
+keyutils:
+keyutils:
+lcms: lcms (little cms engine)
+lcms:
+lcms: Little cms is a small, speed optimized color management engine.
+lcms:
+lcms: lcms was written by Marti Maria <marti@littlecms.com>.
+lcms:
+lcms:
+lcms:
+lcms:
+lcms:
+lcms:
+lcms2: lcms2 (little cms engine, version 2)
+lcms2:
+lcms2: Little cms is a small, speed optimized color management engine.
+lcms2:
+lcms2: lcms was written by Marti Maria <marti@littlecms.com>.
+lcms2:
+lcms2:
+lcms2:
+lcms2:
+lcms2:
+lcms2:
+lesstif: lesstif (a free replacement for OSF/Motif(R))
+lesstif:
+lesstif: LessTif is the Hungry Programmers' (www.hungry.com) free clone of
+lesstif: Motif(R). It aims to be source compatible with OSF/Motif(R) meaning
+lesstif: that the same source code should compile with both and work exactly
+lesstif: the same.  This package contains the libraries and header files to
+lesstif: be able to run and compile Motif applications, along with the lesstif
+lesstif: version of mwm, the Motif window manager.
+lesstif:
+lesstif:
+lesstif:
+libaio: libaio (asynchronous I/O library)
+libaio:
+libaio: The Linux-native asynchronous I/O facility ("async I/O", or "aio")
+libaio: has a richer API and capability set than the simple POSIX async I/O
+libaio: facility.  This library provides the Linux-native API for async I/O.
+libaio: The POSIX async I/O facility requires this library in order to
+libaio: provide kernel-accelerated async I/O capabilities, as do applications
+libaio: which require the Linux-native async I/O API.
+libaio:
+libaio:
+libaio:
+libao: libao (Audio Output library)
+libao:
+libao: Libao is a cross-platform audio library, and is required by many
+libao: programs and other libraries that use audio (some examples include
+libao: ogg123, GAIM, and the Ogg Vorbis libraries).  This package provides
+libao: plugins for OSS, ESD, aRts, and ALSA.  You will need to install the
+libao: supporting libraries for any plugins you want to use.
+libao:
+libao:
+libao:
+libao:
+libarchive: libarchive (archive reading library)
+libarchive:
+libarchive: Libarchive is a programming library that can create and read
+libarchive: several different streaming archive formats, including most
+libarchive: popular TAR variants and several CPIO formats.  It can also
+libarchive: write SHAR archives.
+libarchive:
+libarchive: Homepage:  http://libarchive.org
+libarchive:
+libarchive:
+libarchive:
+libart_lgpl: libart_lgpl (graphics library)
+libart_lgpl:
+libart_lgpl: Libart is a library for high-performance 2D graphics.  It is used by
+libart_lgpl: both KDE and GNOME.  This is the LGPL'd component of the library.
+libart_lgpl:
+libart_lgpl: Raph Levien <raph@acm.org> is the author of libart.
+libart_lgpl:
+libart_lgpl:
+libart_lgpl:
+libart_lgpl:
+libart_lgpl:
+libatasmart: libatasmart (ATA S.M.A.R.T. library)
+libatasmart:
+libatasmart: libatasmart is a lean, small and clean implementation of an ATA
+libatasmart: S.M.A.R.T. ((Self-Monitoring, Analysis and Reporting Technology)
+libatasmart: reading and parsing library.  S.M.A.R.T. is a system used by hard
+libatasmart: drives to monitor factors that may impact drive reliability in the
+libatasmart: hope of predicting a drive failure before it occurs.
+libatasmart:
+libatasmart: Homepage: http://0pointer.de/blog/projects/being-smart.html
+libatasmart:
+libatasmart:
+libbluedevil: libbluedevil (Qt wrapper for bluez)
+libbluedevil: 
+libbluedevil: This is a Qt-based library for handling Bluetooth functionality.
+libbluedevil:
+libbluedevil: Homepage: http://ereslibre.es/
+libbluedevil:
+libbluedevil:
+libbluedevil:
+libbluedevil:
+libbluedevil:
+libbluedevil:
+libcaca: libcaca (Colour AsCii Art library)
+libcaca:
+libcaca: The libcaca library is a graphics library that outputs text instead
+libcaca: of pixels, so that it can work on older video cards or text terminals.
+libcaca: It is not unlike the famous AAlib library.
+libcaca:
+libcaca: Sam Hocevar is the main author of libcaca.
+libcaca:
+libcaca:
+libcaca:
+libcaca:
+libcanberra: libcanberra (XDG Sound Theme and Name Spec implementation)
+libcanberra:
+libcanberra: libcanberra is an implementation of the XDG Sound Theme and Name 
+libcanberra: Specifications, for generating event sounds on free desktops. 
+libcanberra: It comes with several backends for several audio systems and is
+libcanberra: designed to be portable.
+libcanberra:
+libcanberra: Homepage: http://0pointer.de/lennart/projects/libcanberra/
+libcanberra:
+libcanberra:
+libcanberra:
+libcap: libcap (get/set POSIX capabilities)
+libcap:
+libcap: This is a library for getting and setting POSIX.1e (formerly POSIX 6)
+libcap: draft 15 capabilities.
+libcap:
+libcap: Libcap was written by Andrew G. Morgan; however, it would not
+libcap: have been possible without the help of Aleph1, Roland Buresund,
+libcap: Andrew Main, and Alexander Kjeldaas.
+libcap:
+libcap:
+libcap:
+libcddb: libcddb (An online CD database library)
+libcddb:
+libcddb: Libcddb is a library that implements the different protocols (CDDBP,
+libcddb: HTTP, SMTP) to access data on a CDDB server (http://freedb.org).
+libcddb:
+libcddb: Visit the project at:  http://libcddb.sourceforge.net/
+libcddb:
+libcddb:
+libcddb:
+libcddb:
+libcddb:
+libcdio: libcdio (GNU CD access library)
+libcdio:
+libcdio: The libcdio package contains a library for CD-ROM and CD image access.
+libcdio: Applications wishing to be oblivious of the OS and device-dependent
+libcdio: properties of a CD-ROM or of the specific details of various CD-image
+libcdio: formats may benefit from using this library.  A library for working
+libcdio: with ISO-9660 filesystems libiso9660 is included.  A generic interface
+libcdio: for issuing MMC (multimedia commands) is also part of the libcdio
+libcdio: library.
+libcdio:
+libcdio:
+libcroco: libcroco (CSS2 parsing and manipulation library)
+libcroco:
+libcroco: Libcroco is a standalone CSS2 parsing and manipulation library.
+libcroco: The parser provides a low level event driven SAC like API and a CSS
+libcroco: object model like API.
+libcroco:
+libcroco: Libcroco provides a CSS2 selection engine and an experimental
+libcroco: XML/CSS rendering engine.
+libcroco:
+libcroco:
+libcroco:
+libdbusmenu-qt: libdbusmenu-qt (Qt implementation of the DBusMenu spec)
+libdbusmenu-qt:
+libdbusmenu-qt: This library provides a Qt implementation of the DBusMenu protocol.
+libdbusmenu-qt: The DBusMenu protocol makes it possible for applications to export
+libdbusmenu-qt: and import their menus over DBus.
+libdbusmenu-qt:
+libdbusmenu-qt: Homepage:  http://people.canonical.com/~agateau/dbusmenu/
+libdbusmenu-qt:
+libdbusmenu-qt:
+libdbusmenu-qt:
+libdbusmenu-qt:
+libdiscid: libdiscid (library to generate DiscIDs from audio CDs)
+libdiscid:
+libdiscid: libdiscid creates MusicBrainz DiscIDs from audio CDs.
+libdiscid: It reads the table of contents (TOC) of a CD and generates
+libdiscid: an identifier which can be used to lookup the CD at MusicBrainz.
+libdiscid: Additionally, it provides a submission URL for adding the DiscID
+libdiscid: to the database. 
+libdiscid:
+libdiscid:
+libdiscid: Home: http://musicbrainz.org/doc/libdiscid
+libdiscid:
+libdvdread: libdvdread (library for reading DVDs)
+libdvdread:
+libdvdread: libdvdread provides a simple foundation for reading DVD video
+libdvdread: disks.  It provides the functionality that is required to access
+libdvdread: many DVDs.  It parses IFO files, reads NAV-blocks, and performs
+libdvdread: CSS authentication and descrambling.
+libdvdread:
+libdvdread:
+libdvdread:
+libdvdread:
+libdvdread:
+libelf: libelf (ELF object file access library)
+libelf:
+libelf: Libelf lets you read, modify or create ELF files in an architecture
+libelf: independent way.  The library takes care of size and endian issues,
+libelf: so for example you can process a file for SPARC processors on an
+libelf: Intel based system.  GCC uses libelf for LTO (Link Time Optimization).
+libelf:
+libelf: Project home:  http://www.mr511.de/software/
+libelf:
+libelf:
+libelf:
+libevent: libevent (event loop library)
+libevent:
+libevent: libevent is meant to replace the event loop found in event driven
+libevent: network servers.  An application just needs to call event_dispatch()
+libevent: and then add or remove events dynamically without having to change the
+libevent: event loop.  The libevent API provides a mechanism to execute a
+libevent: callback function when a specific event occurs on a file descriptor or
+libevent: after a timeout has been reached.
+libevent:
+libevent: Homepage:  http://libevent.org
+libevent:
+libexif: libexif (Exchangeable Image File Format library)
+libexif:
+libexif: EXIF stands for Exchangeable Image File Format, which is a format used
+libexif: to store extra information in images such as the JPEG files produced
+libexif: by digital cameras.  The libexif library allows programs such as 
+libexif: gthumb to parse, edit, and save EXIF data.
+libexif:
+libexif:
+libexif:
+libexif:
+libexif:
+libffi: libffi (A Portable Foreign Function Interface Library)
+libffi:
+libffi: FFI stands for Foreign Function Interface.  A foreign function 
+libffi: interface is the popular name for the interface that allows code 
+libffi: written in one language to call code written in another language. 
+libffi: The libffi library really only provides the lowest, machine dependent 
+libffi: layer of a fully featured foreign function interface.  
+libffi:
+libffi: Homepage: http://sourceware.org/libffi/
+libffi:
+libffi:
+libglade: libglade (GLADE library)
+libglade:
+libglade: The GLADE library allows loading user interfaces which are stored
+libglade: externally into a program.  This allows the interface to be changed
+libglade: without recompiling the program.  The interfaces can also be edited
+libglade: with GLADE.
+libglade:
+libglade:
+libglade:
+libglade:
+libglade:
+libgnome-keyring: libgnome-keyring (gnome-keyring library)
+libgnome-keyring:
+libgnome-keyring: gnome-keyring is a program that keep password and other secrets
+libgnome-keyring: for users.  The library libgnome-keyring is used by applications
+libgnome-keyring: to integrate with the gnome keyring system.
+libgnome-keyring:
+libgnome-keyring:
+libgnome-keyring:
+libgnome-keyring:
+libgnome-keyring:
+libgnome-keyring:
+libgphoto2: libgphoto2 (Digital Camera Library)
+libgphoto2:
+libgphoto2: libgphoto2 is a library that can be used by applications to access
+libgphoto2: various digital cameras.
+libgphoto2:
+libgphoto2: Homepage: http://www.gphoto.org/
+libgphoto2:
+libgphoto2:
+libgphoto2:
+libgphoto2:
+libgphoto2:
+libgpod: libgpod (A library for connecting to some sort of media device ;-)
+libgpod:
+libgpod: libgpod for accessing iPod content. It provides an easy to use way
+libgpod: to retrieve the list of files and playlist stored on an iPod, to
+libgpod: modify them and to save them back to the iPod.
+libgpod:
+libgpod: If you decide to make improvements please contact us so we can work
+libgpod: together. Just drop a mail to:  Gtkpod-devel@lists.sourceforge.net
+libgpod: (you may ask to be CC in the answer).
+libgpod:
+libgpod:
+libgsf: libgsf (structured file I/O library)
+libgsf:
+libgsf: libgsf aims to provide an efficient extensible I/O abstraction for
+libgsf: dealing with different structured file formats.
+libgsf:
+libgsf: libgsf is used by libwv2, which is used by various word processors
+libgsf: to import .doc format files.
+libgsf:
+libgsf:
+libgsf:
+libgsf:
+libical: libical (iCAL protocol implementation)
+libical:
+libical: libical is an Open Source (MPL/LGPL) implementation of the IETF's
+libical: iCalendar Calendaring and Scheduling protocols. (RFC 2445, 2446, and
+libical: 2447). It parses iCal components and provides C/C++/Python/Java APIs
+libical: for manipulating the component properties, parameters, and
+libical: subcomponents.
+libical:
+libical: Homepage:  http://sourceforge.net/projects/freeassociation/
+libical:
+libical:
+libid3tag: libid3tag (ID3 tag manipulation library)
+libid3tag:
+libid3tag: libid3tag is a library for reading and (eventually) writing ID3 tags,
+libid3tag: both ID3v1 and the various versions of ID3v2.
+libid3tag:
+libid3tag: libid3tag was written by Robert Leslie.
+libid3tag:
+libid3tag:
+libid3tag:
+libid3tag:
+libid3tag:
+libidl: libIDL (IDL library)
+libidl:
+libidl: libIDL is a library licensed under the GNU LGPL for creating trees of
+libidl: CORBA Interface Definition Language (IDL) files, which is a
+libidl: specification for defining portable interfaces.
+libidl:
+libidl: libIDL is used by SeaMonkey and the Mozilla Suite.
+libidl:
+libidl:
+libidl:
+libidl:
+libidn: libidn (GNU Internationalized Domain Name library)
+libidn:
+libidn: GNU Libidn is an implementation of the Stringprep, Punycode and IDNA
+libidn: specifications defined by the IETF Internationalized Domain Names
+libidn: (IDN) working group, used for internationalized domain names.
+libidn:
+libidn:
+libidn:
+libidn:
+libidn:
+libidn:
+libieee1284: libieee1284 (parallel port library)
+libieee1284:
+libieee1284: This library is intended to be used by applications that need to
+libieee1284: communicate with (or at least identify) devices that are attached via
+libieee1284: a parallel port.  For example, SANE uses it to identify scanners.
+libieee1284:
+libieee1284:
+libieee1284:
+libieee1284:
+libieee1284:
+libieee1284:
+libiodbc: libiodbc (Independent Open DataBase Connectivity)
+libiodbc:
+libiodbc: iODBC is the acronym for Independent Open DataBase Connectivity,
+libiodbc: an Open Source platform independent implementation of both the ODBC
+libiodbc: and X/Open specifications.  It allows for developing solutions
+libiodbc: that are language, platform and database independent.
+libiodbc:
+libiodbc:
+libiodbc:
+libiodbc: Homepage: http://iodbc.org/
+libiodbc:
+libjpeg: libjpeg (Independent JPEG Group's JPEG software)
+libjpeg:
+libjpeg: Software to implement JPEG image compression and decompression.  JPEG
+libjpeg: (pronounced 'jay-peg') is a standardized compression method for
+libjpeg: full-color and gray-scale images.  JPEG is intended for compressing
+libjpeg: 'real-world' scenes; cartoons and other non-realistic images are not
+libjpeg: its strong suit.  JPEG is lossy, however, on typical images of
+libjpeg: real-world scenes, very good compression levels can be obtained with
+libjpeg: no visible change, and amazingly high compression levels are possible
+libjpeg: if you can tolerate a low-quality image.
+libjpeg:
+libkarma: libkarma (library for accessing the Rio Karma music player)
+libkarma:
+libkarma: This is a library for accessing the Rio Karma, a small media player
+libkarma: which supports the music formats ogg vorbis, flac, mp3, wave and wma.
+libkarma:
+libkarma: libkarma was mostly written by Frank Zschockelt.
+libkarma:
+libkarma:
+libkarma:
+libkarma:
+libkarma:
+liblastfm: liblastfm (last fm library)
+liblastfm: 
+liblastfm: The last.fm audio scrobbling service library.
+liblastfm: 
+liblastfm: 
+liblastfm: 
+liblastfm: 
+liblastfm: 
+liblastfm: 
+liblastfm: 
+liblastfm: 
+libmad: libmad (high-quality MPEG audio library)
+libmad:
+libmad: MAD (libmad) is a high-quality MPEG audio decoder.  It currently
+libmad: supports MPEG-1 and the MPEG-2 extension to Lower Sampling
+libmad: Frequencies, as well as the so-called MPEG 2.5 format.  All three
+libmad: audio layers (Layer I, Layer II, and Layer III a.k.a. MP3) are
+libmad: fully implemented.  Because MAD provides full 24-bit PCM output,
+libmad: applications using MAD are able to produce high quality audio.
+libmad: MAD is distributed under the terms of the GPL.
+libmad:
+libmad: MAD (libmad) was written by Robert Leslie.
+libmcrypt: libmcrypt (MCrypt encryption library)
+libmcrypt:
+libmcrypt: Libmcrypt is a data encryption library.  The library is thread safe
+libmcrypt: and provides encryption and decryption functions.  This version of
+libmcrypt: the library supports many encryption algorithms and encryption modes.
+libmcrypt: Some algorithms which are supported: SERPENT, RIJNDAEL, 3DES, GOST,
+libmcrypt: SAFER+, CAST-256, RC2, XTEA, 3WAY, TWOFISH, BLOWFISH, ARCFOUR, WAKE,
+libmcrypt: and more.
+libmcrypt:
+libmcrypt: Homepage:  http://mcrypt.sourceforge.net
+libmcrypt:
+libmcs: libmcs (A library for managing configuration settings)
+libmcs:
+libmcs: mcs is a library and set of userland tools which abstract the
+libmcs: storage of configuration settings away from userland applications.
+libmcs:
+libmcs: It is hoped that by using mcs, that the applications which use it
+libmcs: will generally have a more congruent feeling in regards to settings.
+libmcs:
+libmcs: Because mcs is licenced under the BSD license, it is hoped that
+libmcs: many applications will adopt its use.
+libmcs:
+libmng: libmng (Multiple-image Network Graphics library)
+libmng:
+libmng: This is libmng, the MNG reference library.  MNG (pronounced 'ming'),
+libmng: is short for Multiple-image Network Graphics.  Designed with the same
+libmng: modular philosophy as PNG and by many of the same people, MNG is
+libmng: intended to provide a home for all of the multi-image (animation)
+libmng: capabilities that have no place in PNG.  
+libmng:
+libmng: libmng was written by Gerard Juyn.
+libmng:
+libmng:
+libmowgli: libmowgli (A useful collection of routines for programming)
+libmowgli:
+libmowgli: libmowgli is a class library containing performance and usability
+libmowgli: oriented extensions to C.
+libmowgli:
+libmowgli: libmowgli was written by Patrick McFarland, William Pitcock,
+libmowgli: Jonathan Schleifer, Pippijn van Steenhoven, and Jilles Tjoelker.
+libmowgli:
+libmowgli:
+libmowgli:
+libmowgli:
+libmpc: libmpc (Multiple Precision Complex Library)
+libmpc:
+libmpc: mpc is a complex floating-point library with exact rounding.  It is
+libmpc: based on the GNU MPFR floating-point library (http://www.mpfr.org/),
+libmpc: which is itself based on the GNU MP library (http://gmplib.org/).
+libmpc:
+libmpc: Homepage:  http://www.multiprecision.org
+libmpc:
+libmpc:
+libmpc:
+libmpc:
+libmsn: libmsn (implementation of the MSN Messenger service protocol)
+libmsn:
+libmsn: Libmsn is a reusable, open-source, fully documented library for
+libmsn: connecting to Microsoft's MSN Messenger service. 
+libmsn:
+libmsn: Homepage:  http://sourceforge.net/projects/libmsn/
+libmsn:
+libmsn:
+libmsn:
+libmsn:
+libmsn:
+libmtp: libmtp (A library for MTP media devices)
+libmtp:
+libmtp: libmtp is a library that attempts to support Microsoft's Media
+libmtp: Transfer Protocol (MTP).  It was initially based on the great libptp2
+libmtp: library by Mariusz Woloszyn now maintained by Marcus Meissners, and
+libmtp: Hubert Figuere's libgphoto2 work based on libptp2 (or is libptp2
+libmtp: based on libgphoto?).  It is like a master DJ has remixed all of
+libmtp: these tracks and then added a new API adapted for portable media
+libmtp: players.  :-)
+libmtp:
+libmtp: For the latest info, check out:  http://libmtp.sourceforge.net
+libnjb: libnjb (A library for Creative Nomad related media devices)
+libnjb:
+libnjb: libnjb is a C library and API for communicating with the Creative
+libnjb: Nomad JukeBox and Dell DJ digital audio players under BSD, Linux,
+libnjb: Mac OS X, and Windows.  The protocol these devices use is presumably
+libnjb: called PDE (Portable Digital Entertainment protocol) at Creative.
+libnjb: Newer devices using the Microsoft MTP (Media Transfer Protocol)
+libnjb: are NOT supported.
+libnjb:
+libnjb: Home page:  http://libnjb.sourceforge.net
+libnjb:
+libnl: libnl (netlink socket library)
+libnl:
+libnl: libnl is a library for applications dealing with netlink sockets.
+libnl: The library provides an interface for raw netlink messaging and
+libnl: various netlink family specific interfaces.
+libnl: 
+libnl: Homepage: http://people.suug.ch/~tgr/libnl/
+libnl:
+libnl: 
+libnl: 
+libnl: 
+libnl3: libnl3 (Netlink Protocol Library Suite version 3)
+libnl3:
+libnl3: The libnl suite is a collection of libraries providing APIs to 
+libnl3: netlink protocol based Linux kernel interfaces.
+libnl3: Netlink is a IPC mechanism primarily between the kernel and user 
+libnl3: space processes. It was designed to be a more flexible successor 
+libnl3: to ioctl to provide mainly networking related kernel configuration 
+libnl3: and monitoring interfaces. 
+libnl3:
+libnl3: Homepage: http://www.infradead.org/~tgr/libnl/
+libnl3:
+libnotify: libnotify (notification library)
+libnotify: 
+libnotify: A general library for event notification
+libnotify:
+libnotify: Homepage: http://www.galago-project.org/news/index.php
+libnotify:
+libnotify:
+libnotify:
+libnotify:
+libnotify:
+libnotify:
+libogg: libogg (Ogg Bitstream library)
+libogg:
+libogg: Libogg is a library for manipulating ogg bitstreams.  It handles
+libogg: both making ogg bitstreams and getting packets from ogg bitstreams.
+libogg:
+libogg: libogg is needed to use the Ogg Vorbis audio format.
+libogg:
+libogg:
+libogg:
+libogg:
+libogg:
+liboggz: liboggz (Ogg inspect/edit/validate tools and library)
+liboggz:
+liboggz: Oggz comprises liboggz and the tool oggz, which provides commands to
+liboggz: inspect, edit and validate Ogg files.  The oggz-chop tool can also be
+liboggz: used to serve time ranges of Ogg media over HTTP by any web server
+liboggz: that supports CGI.  liboggz is a C library for reading and writing Ogg
+liboggz: files and streams.  It offers various improvements over the reference
+liboggz: libogg, including support for seeking, validation and timestamp
+liboggz: interpretation.
+liboggz:
+liboggz:
+liboil: liboil (a library of simple functions)
+liboil:
+liboil: Liboil is a library of simple functions that are optimized for 
+liboil: various CPUs.  These functions are generally loops implementing 
+liboil: simple algorithms, such as converting an array of N integers to 
+liboil: floating-point numbers or multiplying and summing an array of N 
+liboil: numbers.  Such functions are candidates for significant optimization 
+liboil: using various techniques, especially by using extended instructions 
+liboil: provided by modern CPUs (Altivec, MMX, SSE, etc.).
+liboil:
+liboil:
+libpcap: libpcap (packet capture library)
+libpcap:
+libpcap: libpcap is a library for user-level packet capture.  libpcap provides
+libpcap: a portable framework for low-level network monitoring.  Applications
+libpcap: include network statistics collection, security monitoring, network
+libpcap: debugging, etc.  The tcpdump utility uses libpcap.
+libpcap:
+libpcap: Project homepage:  http://sourceforge.net/projects/libpcap/
+libpcap:
+libpcap:
+libpcap:
+libplist: libplist (A library for Apple Binary and XML Property Lists) 
+libplist:
+libplist: libplist is a library that attempts to support Apple Binary and XML
+libplist: Property Lists.  It is used by libgpod.
+libplist:
+libplist: The libplist homepage:  http://www.libimobiledevice.org/
+libplist:
+libplist:
+libplist:
+libplist:
+libplist:
+libpng: libpng (Portable Network Graphics library)
+libpng:
+libpng: PNG (Portable Network Graphics) is an extensible file format for the
+libpng: lossless, portable, well-compressed storage of raster images.  PNG
+libpng: provides a patent-free replacement for GIF and can also replace many
+libpng: common uses of TIFF.  Indexed-color, grayscale, and truecolor images
+libpng: are supported, plus an optional alpha channel.  Sample depths range
+libpng: from 1 to 16 bits.
+libpng:
+libpng:
+libpng:
+libproxy: libproxy (proxy configuration library)
+libproxy:
+libproxy: libproxy exists to answer the question: Given a network resource, 
+libproxy: how do I reach it?  It handles all the details, enabling you to get 
+libproxy: back to programming.  Just ask libproxy what proxy to use:  you get
+libproxy: simple code and your users get correct, consistent behavior and 
+libproxy: broad infrastructure compatibility. 
+libproxy:
+libproxy: Homepage: http://code.google.com/p/libproxy/
+libproxy:
+libproxy:
+libraw1394: libraw1394 (user space IEEE 1394 driver)
+libraw1394:
+libraw1394: libraw1394 provides direct access to the IEEE 1394 bus through
+libraw1394: the Linux 1394 subsystem's raw1394 user space interface.
+libraw1394:
+libraw1394: Homepage:  http://www.kernel.org/pub/linux/libs/ieee1394/
+libraw1394:
+libraw1394:
+libraw1394:
+libraw1394:
+libraw1394:
+librsvg: librsvg (SVG library)
+librsvg:
+librsvg: Library for handling SVG (Scalable Vector Graphics).
+librsvg:
+librsvg:
+librsvg:
+librsvg:
+librsvg:
+librsvg:
+librsvg:
+librsvg:
+libsamplerate: libsamplerate (a Sample Rate Converter for audio)
+libsamplerate:
+libsamplerate: Secret Rabbit Code (aka libsamplerate) is a Sample Rate Converter for
+libsamplerate: audio.  One example of where such a thing would be useful is
+libsamplerate: converting audio from the CD sample rate of 44.1kHz to the 48kHz
+libsamplerate: sample rate used by DAT players.  SRC is capable of arbitrary and time
+libsamplerate: varying conversions.  SRC provides a small set of converters to allow
+libsamplerate: quality to be traded off against computation cost.
+libsamplerate:
+libsamplerate: libsamplerate home: http://www.mega-nerd.com/SRC/
+libsamplerate:
+libsecret: libsecret (library to access the Secret Service API)
+libsecret:
+libsecret: libsecret is a GObject based library for accessing the 
+libsecret: Secret Service API.
+libsecret:
+libsecret:
+libsecret:
+libsecret:
+libsecret:
+libsecret:
+libsecret:
+libsndfile: libsndfile (C library for reading and writing wav files)
+libsndfile:
+libsndfile: Libsndfile is a C library for reading and writing files containing
+libsndfile: sampled sound (such as MS Windows WAV and Apple/SGI AIFF format).
+libsndfile:
+libsndfile: Homepage:  http://www.mega-nerd.com/libsndfile/
+libsndfile:
+libsndfile:
+libsndfile:
+libsndfile:
+libsndfile:
+libsoup: libsoup (an HTTP client/server library)
+libsoup:
+libsoup: Soup is an HTTP client/server library implementation in C.  It uses
+libsoup: GObjects and the glib main loop to integrate well with GTK+
+libsoup: applications, and has a synchronous API suitable for use in threaded
+libsoup: applications.
+libsoup:
+libsoup:
+libsoup:
+libsoup:
+libsoup:
+libspectre: libspectre (ghostscript wrapper library)
+libspectre:
+libspectre: libspectre is a small wrapper library for ghostscript, which is
+libspectre: used for rendering Postscript documents.  The goal of libspectre
+libspectre: is to provide a convenient, easy to use API for writing programs
+libspectre: which handle and render Postscript documents.
+libspectre:
+libspectre:
+libspectre:
+libspectre:
+libspectre:
+libssh: libssh (library implementing ssh protocols)
+libssh: 
+libssh: libssh is a mulitplatform C library implementing the SSHv2 and SSHv1
+libssh: protocol on client and server side.  With libssh, you can remotely
+libssh: execute programs, transfer files, and use a secure and transparent
+libssh: tunnel for your remote applications.
+libssh:
+libssh: Homepage: http://www.libssh.org/
+libssh:
+libssh:
+libssh:
+libtasn1: libtasn1 (ASN.1 library)
+libtasn1:
+libtasn1: Libtasn1 is the GNU ASN.1 library.  Abstract Syntax Notation One
+libtasn1: (ASN.1) is a standard and flexible notation that describes rules and
+libtasn1: structures for representing, encoding, transmitting, and decoding
+libtasn1: data in telecommunications and computer networking.
+libtasn1:
+libtasn1: Libtasn1 was written by Fabio Fiorina.
+libtasn1:
+libtasn1:
+libtasn1:
+libtermcap: libtermcap
+libtermcap:
+libtermcap: This is the GNU termcap library -- a library of C functions that
+libtermcap: enable programs to send control strings to terminals in a way
+libtermcap: independent of the terminal type.  Most of this package is also
+libtermcap: distributed with GNU Emacs, but it is available in this separate
+libtermcap: distribution to make it easier to install as -ltermcap.
+libtermcap:
+libtermcap:
+libtermcap:
+libtermcap:
+libtheora: libtheora (Theora video codec library)
+libtheora:
+libtheora: Theora is Xiph.Org's first publicly released video codec, intended
+libtheora: for use within the Foundation's Ogg multimedia streaming system.
+libtheora:
+libtheora: The Theora bitstream format was frozen after the alpha3 release. This
+libtheora: means that files produced by the alpha3 encoder will always be
+libtheora: playable according to the Theora I specification.  Traditionally
+libtheora: alpha means a proof of concept, not a production-ready release. 
+libtheora: However the code is very robust, ready for and indeed in general use.
+libtheora:
+libtiff: libtiff (a library for reading and writing TIFF files)
+libtiff:
+libtiff: This package provides support for the Tag Image File Format (TIFF),
+libtiff: a widely used format for storing image data.  Included is the libtiff
+libtiff: library (for reading and writing TIFF files), and a collection of
+libtiff: tools for working with TIFF images.
+libtiff:
+libtiff:
+libtiff:
+libtiff:
+libtiff:
+libunistring: libunistring (GNU Unicode string library)
+libunistring:
+libunistring: This library provides functions for manipulating Unicode strings and
+libunistring: for manipulating C strings according to the Unicode standard.
+libunistring:
+libunistring: Homepage:  http://www.gnu.org/s/libunistring
+libunistring:
+libunistring:
+libunistring:
+libunistring:
+libunistring:
+libusb: libusb (USB library)
+libusb:
+libusb: This is libusb, a library which allows userspace application access
+libusb: to USB devices.  It is used to connect to USB devices like scanners
+libusb: and printers.
+libusb:
+libusb: http://libusb.org
+libusb:
+libusb:
+libusb:
+libusb:
+libusb-compat: libusb-compat (Compatibility library for libusb-0.1 apps)
+libusb-compat:
+libusb-compat: A compatibility layer allowing applications written for libusb-0.1 to
+libusb-compat: work with libusb-1.0.  libusb-compat-0.1 attempts to retain as much
+libusb-compat: ABI and API compatibility with libusb-0.1 as possible.
+libusb-compat:
+libusb-compat: Homepage:  http://libusb.org
+libusb-compat:
+libusb-compat:
+libusb-compat:
+libusb-compat:
+libvisual: libvisual (audio visualization library)
+libvisual:
+libvisual: Libvisual is an audio visualization library that acts as a middle
+libvisual: layer between audio visualization plugins and applications.  Any
+libvisual: application written with libvisual support included will be able to
+libvisual: make use of all the plugins that are written for libvisual.
+libvisual: Libvisual also contains a whole set of facilities to ease the
+libvisual: development of plugins.
+libvisual:
+libvisual: Libvisual was written by Dennis Smit.
+libvisual:
+libvisual-plugins: libvisual-plugins (plugins for the libvisual library)
+libvisual-plugins:
+libvisual-plugins: By itself, libvisual only provides a framework to build upon.  The
+libvisual-plugins: plugins in this package are designed to work with libvisual to allow
+libvisual-plugins: it to actually do all sorts of interesting visualizations based on
+libvisual-plugins: metrics gathered as players process audio information data.  Plugins
+libvisual-plugins: can be mixed (more than one run at a time), or morphed from one to
+libvisual-plugins: another.  Other special effects are possible as well.
+libvisual-plugins:
+libvisual-plugins: Several authors have contributed libvisual-plugins under the GPL.
+libvisual-plugins:
+libvncserver: libvncserver (VNC Server Library)
+libvncserver:
+libvncserver: LibVNCServer makes writing a VNC server (or more correctly,
+libvncserver: a program exporting a framebuffer via the Remote Frame Buffer
+libvncserver: protocol) easy.
+libvncserver:
+libvncserver: Homepage:  http://libvncserver.sourceforge.net/
+libvncserver:
+libvncserver:
+libvncserver:
+libvncserver:
+libvorbis: libvorbis (Ogg Vorbis library)
+libvorbis:
+libvorbis: This library supports the Vorbis General Audio Compression Codec
+libvorbis: (commonly known as Ogg Vorbis).  Ogg Vorbis is a fully open,
+libvorbis: non-proprietary, patent-and-royalty-free, general-purpose compressed
+libvorbis: audio format for audio and music at fixed and variable bitrates.
+libvorbis:
+libvorbis: The libvorbis library requires libao and libogg.  You'll find some
+libvorbis: basic tools for creating and using Ogg Vorbis files in the
+libvorbis: vorbis-tools package.
+libvorbis:
+libwmf: libwmf (WMF graphics format library)
+libwmf:
+libwmf: libwmf is a library for interpreting metafile images and either
+libwmf: displaying them using X or converting them to standard formats such
+libwmf: as PNG, JPEG, PS, EPS and SVG.
+libwmf:
+libwmf:
+libwmf:
+libwmf:
+libwmf:
+libwmf:
+libwmf-docs: libwmf-docs (extra documentation for libwmf)
+libwmf-docs:
+libwmf-docs: This package contains extra documentation useful for programming with
+libwmf-docs: the libwmf (metafile graphics format) library.
+libwmf-docs:
+libwmf-docs:
+libwmf-docs:
+libwmf-docs:
+libwmf-docs:
+libwmf-docs:
+libwmf-docs:
+libwnck: libwnck (Window Navigator Construction Kit library)
+libwnck:
+libwnck: libwnck is the Window Navigator Construction Kit, a library for use
+libwnck: in writing pagers, tasklists, and more generally applications that
+libwnck: are dealing with window management.  It tries hard to respect the
+libwnck: Extended Window Manager Hints specification (EWMH).
+libwnck:
+libwnck: libwnck is used by compiz to provide the gtk-window-decorator program.
+libwnck:
+libwnck:
+libwnck:
+libwpd: libwpd (WordPerfect document format library)
+libwpd:
+libwpd: This package contains a library (libwpd) and tools to transform
+libwpd: WordPerfect documents into other formats such as HTML, text, and raw.
+libwpd:
+libwpd:
+libwpd: libwpd is used by word processors such as KWord.
+libwpd:
+libwpd:
+libwpd:
+libwpd:
+libxklavier: libxklavier (XKB Library)
+libxklavier:
+libxklavier: libxklavier is a utility library to make XKB stuff easier.
+libxklavier:
+libxklavier: Homepage:  http://www.freedesktop.org/wiki/Software/LibXklavier
+libxklavier:
+libxklavier:
+libxklavier:
+libxklavier:
+libxklavier:
+libxklavier:
+libxml2: libxml2 (XML parser library)
+libxml2:
+libxml2: Libxml2 is the XML C parser library and toolkit.  XML itself is a
+libxml2: metalanguage to design markup languages  -- i.e. a text language where
+libxml2: structures are added to the content using extra "markup" information
+libxml2: enclosed between angle brackets.  HTML is the most well-known markup
+libxml2: language.  Though the library is written in C, a variety of language
+libxml2: bindings make it available in other environments.
+libxml2:
+libxml2:
+libxml2:
+libxslt: libxslt (XML transformation library)
+libxslt:
+libxslt: XSLT support for libxml2.  (XSLT is a language used for transforming
+libxslt: XML documents)
+libxslt:
+libxslt:
+libxslt:
+libxslt:
+libxslt:
+libxslt:
+libxslt:
+libyaml: libyaml (YAML parser, written in C)
+libyaml:
+libyaml: YAML Ain't Markup Language. It is a human friendly data serialization 
+libyaml: standard for all programming languages.
+libyaml:
+libyaml: Homepage: http://pyyaml.org/wiki/LibYAML
+libyaml:
+libyaml:
+libyaml:
+libyaml:
+libyaml:
+libzip: libzip (A library to read, create, and modify Zip archives)
+libzip:
+libzip: This is libzip, a C library for reading, creating, and modifying
+libzip: zip archives.  Files can be added from data buffers, files, or
+libzip: compressed data copied directly from other zip archives.  Changes
+libzip: made without closing the archive can be reverted.
+libzip:
+libzip: Homepage:  http://www.nih.at/libzip/
+libzip:
+libzip:
+libzip:
+loudmouth: loudmouth (XMPP C programming library)
+loudmouth:
+loudmouth: Loudmouth is a lightweight and easy-to-use C library for programming
+loudmouth: with the Jabber protocol.  It is designed to be easy to get started
+loudmouth: with, and yet extensible enough to allow you to do anything that the
+loudmouth: Jabber protocol allows.
+loudmouth:
+loudmouth: loudmouth home: http://www.loudmouth-project.org/
+loudmouth:
+loudmouth:
+loudmouth:
+lzo: lzo (LZO Compression Library)
+lzo:
+lzo: LZO is a portable lossless data compression library written in ANSI C.
+lzo: It offers pretty fast compression and very fast decompression. 
+lzo:
+lzo: Homepage:  http://www.oberhumer.com/opensource/lzo/ 
+lzo:
+lzo:
+lzo:
+lzo:
+lzo:
+M2Crypto: M2Crypto (cryptography toolkit for Python)
+M2Crypto:
+M2Crypto: M2Crypto is a crypto and SSL toolkit for Python.  It includes:
+M2Crypto: - RSA, DSA, DH, HMACs, message digests, symmetric ciphers (e.g. AES)
+M2Crypto: - SSL functionality to implement clients and servers
+M2Crypto: - HTTPS extensions to Python's httplib, urllib, and xmlrpclib
+M2Crypto: - Unforgeable HMAC'ing AuthCookies for web session management
+M2Crypto: - FTP/TLS client and server, S/MIME v2, ZServerSSL, ZSmime  
+M2Crypto:
+M2Crypto: Website: http://wiki.osafoundation.org/bin/view/Projects/MeTooCrypto
+M2Crypto:
+media-player-info: media-player-info (media player capability data)
+media-player-info:
+media-player-info: media-player-info is a repository of data files describing media 
+media-player-info: player (mostly USB Mass Storage ones) capabilities.  These files 
+media-player-info: contain information about the directory layout to use to add music 
+media-player-info: to these devices, about the supported file formats,
+media-player-info:
+media-player-info:
+media-player-info:
+media-player-info:
+media-player-info:
+mhash: mhash (Thread-safe hash library)
+mhash:
+mhash: mhash is a thread-safe hash library, implemented in C, and provides a
+mhash: uniform interface to a large number of hash algorithms (MD5, SHA-1,
+mhash: HAVAL, RIPEMD128, RIPEMD160, TIGER, GOST). These algorithms can be
+mhash: used to compute checksums, message digests, and other signatures.
+mhash: The HMAC support implements the basics for message authentication,
+mhash: following RFC 2104.
+mhash:
+mhash:
+mhash:
+mm: mm (Shared Memory Allocation library)
+mm:
+mm: OSSP mm is a 2-layer abstraction library which simplifies the usage of
+mm: shared memory between forked processes.  On the first layer it hides
+mm: all platform dependent implementation details (allocation and locking)
+mm: when dealing with shared memory segments and on the second layer it
+mm: provides a high-level malloc(3)-style API to work with data inside
+mm: those shared memory segments.  Apache, PHP, and other projects use mm.
+mm:
+mm: The mm library was written by Ralf S. Engelschall.
+mm:
+mozilla-nss: mozilla-nss (Network Security Services)
+mozilla-nss:
+mozilla-nss: Network Security Services (NSS) is a set of libraries designed to 
+mozilla-nss: support cross-platform development of security-enabled client and
+mozilla-nss: server applications. Applications built with NSS can support
+mozilla-nss: SSL v2 and v3, TLS, PKCS #5, PKCS #7, PKCS #11, PKCS #12, S/MIME,
+mozilla-nss: X.509 v3 certificates, and other security standards.
+mozilla-nss:
+mozilla-nss:
+mozilla-nss: Read http://www.mozilla.org/projects/security/pki/nss/overview.html
+mozilla-nss:
+mpfr: mpfr (Multiple-Precision Floating-Point Reliable Library)
+mpfr:
+mpfr: The MPFR library is a C library for multiple-precision floating-point
+mpfr: computations with exact rounding (also called correct rounding).
+mpfr: It is based on the GMP multiple-precision library.
+mpfr: The main goal of MPFR is to provide a library for multiple-precision
+mpfr: floating-point computation which is both efficient and has 
+mpfr: well-defined semantics.  It copies the good ideas from the
+mpfr: ANSI/IEEE-754 standard for double-precision floating-point arithmetic
+mpfr: (53-bit mantissa).
+mpfr:
+ncurses: ncurses (CRT screen handling and optimization package)
+ncurses:
+ncurses: The ncurses (new curses) library is a free software emulation of
+ncurses: curses in System V Release 4.0, and more.  It uses terminfo format,
+ncurses: supports pads and color and multiple highlights and forms characters
+ncurses: and function-key mapping, and has all the other SYSV-curses
+ncurses: enhancements over BSD curses.
+ncurses:
+ncurses:
+ncurses:
+ncurses:
+neon: neon (HTTP and WebDAV client library)
+neon:
+neon: neon is an HTTP and WebDAV client library, with a C language API.
+neon: Bindings for other languages may also be available, see the web site
+neon: for more details:  http://www.webdav.org/neon/
+neon:
+neon: The neon library is used by projects such as subversion.
+neon:
+neon:
+neon:
+neon:
+netpbm: netpbm (graphics conversion utilities)
+netpbm:
+netpbm: The netpbm package contains a library and tools for converting between
+netpbm: many different graphics formats.
+netpbm:
+netpbm:
+netpbm:
+netpbm:
+netpbm:
+netpbm:
+netpbm:
+notify-python: notify-python (Python bindings for libnotify)
+notify-python:
+notify-python: The notify-python package contains bindings to use libnotify with
+notify-python: Python programs.
+notify-python:
+notify-python: Homepage for notify-python:  http://www.galago-project.org/
+notify-python:
+notify-python:
+notify-python:
+notify-python:
+notify-python:
+openexr: openexr (HDR Image File Format & Library)
+openexr:
+openexr: OpenEXR is an image file format and library developed by Industrial
+openexr: Light & Magic, and later released to the public.  It provides support
+openexr: for high dynamic range and a 16-bit floating point "half" data type
+openexr: which is compatible with the half data type in the Cg programming
+openexr: language.
+openexr:
+openexr: Homepage: http://www.openexr.org/
+openexr:
+openexr:
+pango: pango (library for layout and rendering of text)
+pango:
+pango: Pango is a library for layout and rendering of text, with an emphasis
+pango: on internationalization. Pango can be used anywhere that text layout
+pango: is needed; however, most of the work on Pango was done using the GTK+
+pango: widget toolkit as a test platform. Pango forms the core of text and
+pango: font handling for GTK+-2.
+pango:
+pango:
+pango:
+pango:
+parted: parted (GNU disk partitioning tool)
+parted:
+parted: GNU Parted is a program for creating, destroying, resizing, checking
+parted: and copying partitions, and the filesystems on them.  This is useful
+parted: for creating space for new operating systems, reorganizing disk
+parted: usage, copying data between hard disks, and disk imaging.
+parted:
+parted:
+parted:
+parted:
+parted:
+pcre: pcre (Perl-compatible regular expression library)
+pcre:
+pcre: The PCRE library is a set of functions that implement regular
+pcre: expression pattern matching using the same syntax and semantics as
+pcre: Perl 5, with just a few differences (documented in the man page).
+pcre:
+pcre: The PCRE library is used by KDE's Konqueror browser.
+pcre:
+pcre:
+pcre:
+pcre:
+phonon: phonon (multimedia framework for KDE4)
+phonon:
+phonon: Phonon is the multimedia API provided by Qt and is the standard
+phonon: abstraction for handling multimedia streams within the KDE Software
+phonon: Compilation.  Phonon provides an API for multimedia using various
+phonon: backends (gstreamer, mplayer, xine) to handle the lower level I/O.
+phonon:
+phonon: Homepage:  http://phonon.kde.org
+phonon:
+phonon:
+phonon:
+phonon-gstreamer: phonon-gstreamer (gstreamer backend for phonon)
+phonon-gstreamer:
+phonon-gstreamer: This package provides an additional gstreamer backend for the phonon
+phonon-gstreamer: multimedia framework used in KDE.
+phonon-gstreamer:
+phonon-gstreamer: For more information, visit:
+phonon-gstreamer: https://projects.kde.org/projects/kdesupport/phonon/phonon-gstreamer
+phonon-gstreamer:
+phonon-gstreamer:
+phonon-gstreamer:
+phonon-gstreamer:
+phonon-mplayer: phonon-mplayer (mplayer backend for phonon)
+phonon-mplayer:
+phonon-mplayer: This package provides an additional mplayer backend for the phonon
+phonon-mplayer: multimedia framework used in KDE.
+phonon-mplayer:
+phonon-mplayer: Home: http://code.google.com/p/phonon-vlc-mplayer/
+phonon-mplayer:
+phonon-mplayer:
+phonon-mplayer:
+phonon-mplayer:
+phonon-mplayer:
+phonon-xine: phonon-xine (xine backend for phonon)
+phonon-xine:
+phonon-xine: This package provides an additional xine backend for the phonon
+phonon-xine: multimedia framework used in KDE.
+phonon-xine:
+phonon-xine: For more information, visit:
+phonon-xine:   https://projects.kde.org/projects/kdesupport/phonon/phonon-xine
+phonon-xine:
+phonon-xine:
+phonon-xine:
+phonon-xine:
+pil: pil (Python Imaging Library)
+pil:
+pil: The Python Imaging Library (PIL) adds image processing capabilities
+pil: to your Python environment.  This library provides extensive file
+pil: format support, an efficient internal representation, and powerful
+pil: image processing capabilities.
+pil:
+pil: PIL is used by the scanning component of HPLIP.
+pil:
+pil: PIL homepage:  http://www.pythonware.com/products/pil/
+pil:
+pilot-link: pilot-link (library for communicating with PalmOS devices)
+pilot-link:
+pilot-link: This is a library for communicating with Palm Computing, Inc.  Palm
+pilot-link: Devices as well as the Handspring Visor,  TRGPro,  and other devices
+pilot-link: which conform to this standard (PalmOS licensed devices).
+pilot-link:
+pilot-link: pilot-link is used by KPilot.
+pilot-link:
+pilot-link:
+pilot-link:
+pilot-link:
+polkit: polkit (authentication framework)
+polkit: 
+polkit: PolicyKit is an application-level toolkit for defining and handling
+polkit: the policy that allows unprivileged processes to speak to privileged
+polkit: processes.  PolicyKit is specifically targeting applications in rich
+polkit: desktop environments on multi-user UNIX-like operating systems.
+polkit:
+polkit:
+polkit:
+polkit: Home: http://www.freedesktop.org/wiki/Software/PolicyKit
+polkit:
+polkit-gnome: polkit-gnome (GTK+ authentication agent for polkit)
+polkit-gnome:
+polkit-gnome: polkit-gnome provides a GTK+ based authentication agent for polkit.
+polkit-gnome: It can be used by any desktop environment that follows the XDG
+polkit-gnome: Base Directory Specification.
+polkit-gnome:
+polkit-gnome:
+polkit-gnome:
+polkit-gnome:
+polkit-gnome:
+polkit-gnome:
+polkit-qt-1: polkit-qt-1 (Qt polkit API wrapper)
+polkit-qt-1:
+polkit-qt-1: polkit-qt-1 aims to make it easy for Qt developers to take advantage
+polkit-qt-1: of the polkit API.  It is a convenience wrapper around QAction and
+polkit-qt-1: QAbstractButton that lets you integrate those two components
+polkit-qt-1: easily with polkit.
+polkit-qt-1:
+polkit-qt-1: Homepage: http://techbase.kde.org/Polkit-Qt-1
+polkit-qt-1:
+polkit-qt-1:
+polkit-qt-1:
+poppler: poppler (a library for rendering PDF documents)
+poppler:
+poppler: Poppler is a library based on the xpdf PDF viewer developed by Derek
+poppler: Noonburg of Glyph and Cog, LLC.  Since xpdf does not provide a shared
+poppler: library, whenever a flaw was found potentially dozens of applications
+poppler: incorporating code from xpdf would have to be patched.  By providing
+poppler: a centralized PDF library this duplicated effort will be eliminated.
+poppler:
+poppler:
+poppler:
+poppler:
+poppler-data: poppler-data (data files used by poppler)
+poppler-data:
+poppler-data: This package consists of encoding files for use with poppler.  The
+poppler-data: encoding files are optional and poppler will automatically read them
+poppler-data: if they are present.  When installed, the encoding files enables
+poppler-data: poppler to correctly render CJK and Cyrillic properly.  While poppler
+poppler-data: is licensed under the GPL, these encoding files are copyright Adobe
+poppler-data: and licensed much more strictly, and thus distributed separately.
+poppler-data:
+poppler-data:
+poppler-data:
+popt: popt (command line parsing library)
+popt:
+popt: Popt is a C library for parsing command line parameters.  Popt was
+popt: heavily influenced by the getopt() and getopt_long() functions, but it
+popt: improves on them by allowing more powerful argument expansion.  Popt
+popt: can parse arbitrary argv[] style arrays and automatically set
+popt: variables based on command line arguments.  Popt allows command line
+popt: arguments to be aliased via configuration files and includes utility
+popt: functions for parsing arbitrary strings into argv[] arrays using
+popt: shell-like rules.
+popt:
+pycairo: pycairo (a set of Python bindings for the cairo graphics library)
+pycairo:
+pycairo: Pycairo is set of Python bindings for the cairo graphics library.
+pycairo: 
+pycairo: Pycairo's web site:  http://cairographics.org/pycairo
+pycairo:
+pycairo:
+pycairo:
+pycairo:
+pycairo:
+pycairo:
+pycups: pycups (Python bindings for the CUPS API)
+pycups:
+pycups: These Python bindings are intended to wrap the CUPS API.
+pycups:
+pycups: Homepage:  http://cyberelk.net/tim/software/pycups/
+pycups:
+pycups:
+pycups:
+pycups:
+pycups:
+pycups:
+pycurl: pycurl (Python interface to cURL library)
+pycurl:
+pycurl: PycURL is a Python interface to libcurl.  PycURL can be used
+pycurl: to fetch objects identified by a URL from a Python program,
+pycurl: similar to the urllib Python module.  PycURL is mature, very
+pycurl: fast, and supports a lot of features.
+pycurl:
+pycurl: Homepage:  http://pycurl.sourceforge.net
+pycurl:
+pycurl:
+pycurl:
+pygobject: pygobject (GObject bindings for Python)
+pygobject:
+pygobject: This archive contains bindings for the GObject, to be used in Python.
+pygobject: It is a fairly complete set of bindings, it's already rather useful,
+pygobject: and is usable to write moderately complex programs.
+pygobject:
+pygobject: pygobject's home page:  http://www.pygtk.org/
+pygobject:
+pygobject:
+pygobject:
+pygobject:
+pygtk: pygtk (GTK+ bindings for Python)
+pygtk:
+pygtk: PyGTK provides a convenient wrapper for the GTK+ library for use in
+pygtk: Python programs, taking care of many of the boring details such as
+pygtk: managing memory and type casting.
+pygtk:
+pygtk: PyGTK's web page:  http://www.pygtk.org/
+pygtk:
+pygtk:
+pygtk:
+pygtk:
+PyQt: PyQt (Python bindings for Qt)
+PyQt:
+PyQt: PyQt is a set of Python bindings for Trolltech's Qt application
+PyQt: framework and runs on all platforms supported by Qt.
+PyQt: 
+PyQt: Homepage: http://www.riverbankcomputing.co.uk/software/pyqt/
+PyQt: 
+PyQt:
+PyQt:
+PyQt:
+PyQt:
+pyrex: pyrex (A Python extension modules language)
+pyrex:
+pyrex: Pyrex is a language for writing Python extension modules.
+pyrex: Pyrex lets you write code that mixes Python and C data types any
+pyrex: way you want, and then compiles it into a C extension for Python. 
+pyrex:
+pyrex: The home page for Pyrex is:
+pyrex: http://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/
+pyrex:
+pyrex:
+pyrex:
+qca: qca (Qt Cryptographic Architecture)
+qca:
+qca: QCA aims to provide a straightforward and cross-platform crypto API,
+qca: using Qt datatypes and conventions.  QCA separates the API from the
+qca: implementation, using plugins known as Providers.  The advantage of
+qca: this model is to allow applications to avoid linking to or explicitly
+qca: depending on any particular cryptographic library.  This allows one
+qca: to easily change or upgrade crypto implementations without needing
+qca: to recompile the application.
+qca:
+qca: QCA was written by Justin Karneges.
+qca-cyrus-sasl: qca-cyrus-sasl (Cyrus SASL plugin for QCA)
+qca-cyrus-sasl:
+qca-cyrus-sasl: This plugin provides features based on Cyrus SASL version 2.
+qca-cyrus-sasl:
+qca-cyrus-sasl:
+qca-cyrus-sasl:
+qca-cyrus-sasl:
+qca-cyrus-sasl:
+qca-cyrus-sasl:
+qca-cyrus-sasl:
+qca-cyrus-sasl:
+qca-gnupg: qca-gnupg (GnuPG plugin for QCA)
+qca-gnupg:
+qca-gnupg: This plugin provides features based on GnuPG.
+qca-gnupg:
+qca-gnupg:
+qca-gnupg:
+qca-gnupg:
+qca-gnupg:
+qca-gnupg:
+qca-gnupg:
+qca-gnupg:
+qca-ossl: qca-ossl (OpenSSL plugin for QCA)
+qca-ossl:
+qca-ossl: This plugin provides features based on OpenSSL.  It implements:
+qca-ossl: * Hashing - SHA1, SHA0, RIPEMD160, MD2, MD4, MD5
+qca-ossl: * Hashing - SHA224, SHA256, SHA384 and SHA512
+qca-ossl: * Block Ciphers
+qca-ossl: * Keyed Hash Message Authentication Code (HMAC), using SHA1,
+qca-ossl:   MD5, and RIPEMD160
+qca-ossl: * Public keys - RSA, DSA, Diffie-Hellman
+qca-ossl: * PKCS#12       * SSL/TLS       * CMS (for S/MIME)
+qca-ossl:
+qimageblitz: QImageBlitz (Graphical effect and filter library for KDE4)
+qimageblitz:
+qimageblitz: Blitz is a graphical effect and filter library for KDE4.0 that 
+qimageblitz: contains many improvements over KDE 3.x's kdefx library 
+qimageblitz: including bugfixes, memory and speed improvements, and MMX/SSE
+qimageblitz: support.
+qimageblitz:
+qimageblitz:
+qimageblitz:
+qimageblitz:
+qimageblitz:
+qjson: QJson (manage JSON objects with Qt)
+qjson:
+qjson: JSON (JavaScript Object Notation) is a lightweight data-interchange
+qjson: format. It can represents integer, real number, string, an ordered
+qjson: sequence of value, and a collection of name/value pairs.
+qjson: QJson is a qt-based library that maps JSON data to QVariant objects:
+qjson: JSON arrays will be mapped to QVariantList instances, while JSON's
+qjson: objects will be mapped to QVariantMap.
+qjson:
+qjson: http://qjson.sourceforge.net/
+qjson:
+QScintilla: QScintilla (Qt port of the Scintilla C++ editor control)
+QScintilla:
+QScintilla: QScintilla includes features especially useful when editing and 
+QScintilla: debugging source code.  These include support for syntax styling, 
+QScintilla: error indicators, code completion, and call tips.  The selection 
+QScintilla: margin can contain markers like those used in debuggers to 
+QScintilla: indicate breakpoints and the current line.  Styling choices are 
+QScintilla: more open than with many editors, allowing the use of 
+QScintilla: proportional fonts, bold and italics, multiple foreground and 
+QScintilla: background colours, and multiple fonts.
+QScintilla:
+qt: Qt (a multi-platform C++ graphical user interface toolkit)
+qt:
+qt: Qt is a complete and well-developed object-oriented framework for
+qt: developing graphical user interface (GUI) applications using C++.
+qt:
+qt: Homepage:  http://qt-project.org/
+qt:
+qt:
+qt:
+qt:
+qt:
+qtscriptgenerator: qtscriptgenerator (Qt API Bindings for QtScript)
+qtscriptgenerator:
+qtscriptgenerator: Qt Script Generator is a tool that generates Qt bindings for Qt
+qtscriptgenerator: Script.  With the generated bindings you get access to substantial
+qtscriptgenerator: portions of the Qt API from within Qt Script.
+qtscriptgenerator:
+qtscriptgenerator: Homepage: http://code.google.com/p/qtscriptgenerator/
+qtscriptgenerator:
+qtscriptgenerator:
+qtscriptgenerator:
+qtscriptgenerator:
+raptor2: raptor2 (RDF Parser & Serializer)
+raptor2:
+raptor2: Raptor is a free software/Open Source C library that provides a set of
+raptor2: parsers and serializers that generate Resource Description Framework
+raptor2: (RDF) triples by parsing syntaxes or serialize the triples into a
+raptor2: syntax.  The supported parsing syntaxes are RDF/XML, N-Triples, TRiG,
+raptor2: Turtle, RSS tag soup including all versions of RSS, Atom 1.0 and 0.3,
+raptor2: GRDDL and microformats for HTML, XHTML and XML.
+raptor2:
+raptor2: Homepage:  http://librdf.org/
+raptor2:
+rasqal: rasqal (RDF parsing library)
+rasqal:
+rasqal: Rasqal is a library providing full support for querying Resource
+rasqal: Description Framework (RDF) including parsing query syntaxes,
+rasqal: constructing the queries, executing them and returning result formats.
+rasqal: It currently handles the RDF Data Query Language (RDQL) and SPARQL
+rasqal: Query language.
+rasqal:
+rasqal: Homepage:  http://librdf.org/
+rasqal:
+rasqal:
+readline: readline (line input library with editing features)
+readline:
+readline: The GNU Readline library provides a set of functions for use by
+readline: applications that allow users to edit command lines as they are typed
+readline: in.  Both Emacs and vi editing modes are available.  The Readline
+readline: library includes additional functions to maintain a list of previously
+readline: entered command lines, to recall and perhaps edit those lines, and
+readline: perform csh-like history expansion on previous commands.  
+readline:
+readline:
+readline:
+redland: redland (RDF high-level interface library)
+redland:
+redland: Redland is a library that provides a high-level interface for the
+redland: Resource Description Framework (RDF) allowing the RDF graph to be
+redland: parsed from XML, stored, queried and manipulated.  Redland
+redland: implements each of the RDF concepts in its own class via an object
+redland: based API, reflected into the language APIs, currently C#, Java,
+redland: Perl, PHP, Python, Ruby and Tcl.
+redland:
+redland: Homepage:  http://librdf.org/
+redland:
+sdl: sdl (Simple DirectMedia Layer library)
+sdl:
+sdl: This is the Simple DirectMedia Layer, a generic API that provides low
+sdl: level access to audio, keyboard, mouse, joystick, 3D hardware via
+sdl: OpenGL, and 2D framebuffer across multiple platforms.
+sdl:
+sdl: SDL links against alsa-lib, arts, audiofile, esound, and the X11
+sdl: libraries.  Make sure all of these are installed if you're planning to
+sdl: use SDL (a full installation will cover all of the prerequisites).
+sdl:
+sdl:
+seamonkey-solibs: seamonkey-solibs (Shared libraries from Seamonkey)
+seamonkey-solibs:
+seamonkey-solibs: This package contains a subset of the shared libraries from Seamonkey
+seamonkey-solibs: to provide runtime support for various programs.
+seamonkey-solibs: This package is built from the Seamonkey sources and is provided
+seamonkey-solibs: as a standalone runtime package for people who do not want to install
+seamonkey-solibs: the entire seamonkey package (as for server use).
+seamonkey-solibs:
+seamonkey-solibs: This package is runtime only.  The include files and other files for
+seamonkey-solibs: development can be found in the seamonkey package.
+seamonkey-solibs:
+sg3_utils: sg3_utils (utilities and test programs for the linux sg driver)
+sg3_utils:
+sg3_utils: This package contains low level utilities for devices that use a SCSI
+sg3_utils: command set. Apart from SCSI parallel interface (SPI) devices, the 
+sg3_utils: SCSI command set is used by ATAPI devices (CD/DVDs and tapes), USB 
+sg3_utils: mass storage devices, Fibre Channel disks, IEEE 1394 storage devices
+sg3_utils: (that use the "SBP" protocol), SAS, iSCSI and FCoE devices (among 
+sg3_utils: others).
+sg3_utils:
+sg3_utils: Homepage: http://sg.danny.cz/sg/sg3_utils.html
+sg3_utils:
+shared-desktop-ontologies: shared-desktop-ontologies (Shared OSCAF desktop ontologies)
+shared-desktop-ontologies:
+shared-desktop-ontologies: The shared-desktop-ontologies package brings the semantic web to
+shared-desktop-ontologies: the desktop in terms of vocabulary. It contains the well known core
+shared-desktop-ontologies: ontologies such as RDF and RDFS as well as the Nepomuk ontologies
+shared-desktop-ontologies: which are used by projects like KDE or Strigi.
+shared-desktop-ontologies:
+shared-desktop-ontologies: Homepage:  http://sourceforge.net/projects/oscaf
+shared-desktop-ontologies:
+shared-desktop-ontologies:
+shared-desktop-ontologies:
+shared-mime-info: shared-mime-info (MIME database)
+shared-mime-info:
+shared-mime-info: This package contains:
+shared-mime-info:
+shared-mime-info:   The freedesktop.org shared MIME database spec.
+shared-mime-info:   The merged GNOME and KDE databases, in the new format.
+shared-mime-info:   The update-mime-database command, used to install new MIME data.
+shared-mime-info:
+shared-mime-info: See http://www.freedesktop.org/standards/shared-mime-info.html for
+shared-mime-info: more information.
+shared-mime-info:
+sip: SIP (a tool for generating Python bindings)
+sip:
+sip: SIP is a tool that makes it very easy to create Python bindings for
+sip: C and C++ libraries.  It was originally developed to create PyQt,
+sip: the Python bindings for the Qt toolkit, but can be used to create
+sip: bindings for any C or C++ library.
+sip:
+sip: Homepage:  http://www.riverbankcomputing.co.uk/software/sip/
+sip:
+sip:
+sip:
+slang1: slang (S-Lang interpreter version 1)
+slang1:
+slang1: S-Lang is an interpreted language that was designed from the start
+slang1: to be easily embedded into a program to provide it with a powerful
+slang1: extension language.  S-Lang is also a programmer's library that
+slang1: permits a programmer to develop sophisticated platform-independent
+slang1: software.  In addition to providing the S-Lang extension language,
+slang1: the library provides facilities for screen management, keymaps,
+slang1: and low-level terminal I/O.
+slang1:
+slang1:
+slang: slang (S-Lang interpreter version 2)
+slang:
+slang: S-Lang is an interpreted language that was designed from the start
+slang: to be easily embedded into a program to provide it with a powerful
+slang: extension language.  S-Lang is also a programmer's library that
+slang: permits a programmer to develop sophisticated platform-independent
+slang: software.  In addition to providing the S-Lang extension language,
+slang: the library provides facilities for screen management, keymaps,
+slang: and low-level terminal I/O.
+slang:
+slang:
+soprano: soprano (C++/Qt4 framework for RDF data)
+soprano:
+soprano: Soprano (formally known as QRDF) is a library which provides 
+soprano: a nice Qt interface to RDF storage solutions.  It has a modular
+soprano: structure which allows to replace the actual RDF storage 
+soprano: implementation used. 
+soprano:
+soprano: Homepage:  http://soprano.sourceforge.net/
+soprano:
+soprano:
+soprano:
+sound-theme-freedesktop: sound-theme-freedesktop (freedesktop.org sound theme)
+sound-theme-freedesktop:
+sound-theme-freedesktop: The freedesktop.org sound theme is a basic set of sounds for
+sound-theme-freedesktop: applications to use.
+sound-theme-freedesktop:
+sound-theme-freedesktop: Homepage: http://freedesktop.org/wiki/Specifications/sound-theme-spec
+sound-theme-freedesktop:
+sound-theme-freedesktop:
+sound-theme-freedesktop:
+sound-theme-freedesktop:
+sound-theme-freedesktop:
+startup-notification: startup-notification ("busy" cursors support)
+startup-notification:
+startup-notification: Adds support for applications to use "busy" cursors while starting up.
+startup-notification:
+startup-notification:
+startup-notification:
+startup-notification:
+startup-notification:
+startup-notification:
+startup-notification:
+startup-notification:
+strigi: strigi (fast and light desktop search engine)
+strigi:
+strigi: Strigi is a fast and light desktop search engine.  It can handle a 
+strigi: large range of file formats such as emails, office documents, media
+strigi: files, and file archives.  It can index files that are embedded in 
+strigi: other files.  This means email attachments and files in zip files
+strigi: are searchable as if they were normal files on your harddisk. 
+strigi:
+strigi: Homepage:  http://strigi.sourceforge.net/
+strigi:
+strigi:
+svgalib: svgalib (A low level graphics library for Linux)
+svgalib: 
+svgalib: This is a low level graphics library for Linux, originally based on
+svgalib: VGAlib 1.2 by Tommy Frandsen.  Support for many more chipsets has
+svgalib: been added.
+svgalib:
+svgalib: svgalib is currently maintained by Matan Ziv-Av.
+svgalib:
+svgalib:
+svgalib:
+svgalib:
+system-config-printer: system-config-printer (CUPS printer administration tool)
+system-config-printer:
+system-config-printer: The purpose of the tool is to configure a CUPS server (often the local
+system-config-printer: machine) using the CUPS API.  The tool is written in Python, using
+system-config-printer: pygtk for the graphical parts and Python bindings (pycups) for the
+system-config-printer: CUPS API.  It is largely the same as using the CUPS web interface for
+system-config-printer: configuring printers, but has the advantage of being a native
+system-config-printer: application rather than a web page.
+system-config-printer:
+system-config-printer: Home: http://cyberelk.net/tim/software/system-config-printer/
+system-config-printer:
+t1lib: t1lib (Type 1 font rasterizer library)
+t1lib:
+t1lib: t1lib is a library distributed under the GNU General Public Library
+t1lib: License for generating character and string glyphs from Adobe Type 1
+t1lib: fonts under UNIX.  t1lib uses most of the code of the X11 rasterizer
+t1lib: donated by IBM to the X11 project.
+t1lib:
+t1lib:
+t1lib:
+t1lib:
+t1lib:
+taglib: taglib (audio meta-data library)
+taglib:
+taglib: TagLib is a library for reading and editing the meta-data of several
+taglib: popular audio formats.  Currently it supports both ID3v1 and ID3v2
+taglib: for MP3 files, Ogg Vorbis comments and ID3 tags and Vorbis comments
+taglib: in FLAC files.
+taglib:
+taglib:
+taglib:
+taglib:
+taglib:
+taglib-extras: taglib-extras (taglib support for other formats)
+taglib-extras:
+taglib-extras: Taglib file type plugins which were split off from Amarok
+taglib-extras: to allow others to use and help maintain them.
+taglib-extras: Taglib-extras delivers support for reading and editing
+taglib-extras: meta-data of audio formats not supported by taglib, including:
+taglib-extras: asf, mp4v2, rmff, wav.
+taglib-extras:
+taglib-extras:
+taglib-extras: The taglib-extras are part of kdesupport: http://www.kde.org
+taglib-extras:
+tango-icon-theme: Tango icon theme (Another standard icon theme)
+tango-icon-theme:
+tango-icon-theme: The Tango Desktop Project has designed a basic set of desktop icons
+tango-icon-theme: that follow the style guidelines.  The set has been created as a
+tango-icon-theme: proof of concept for the style, but works rather well as a replacement
+tango-icon-theme: for the base theme under GNOME and KDE.
+tango-icon-theme:
+tango-icon-theme: Tango's home page is:  http://tango.freedesktop.org
+tango-icon-theme:
+tango-icon-theme:
+tango-icon-theme-extras: tango-icon-theme-extras (Extras for the Tango icon theme)
+tango-icon-theme-extras:
+tango-icon-theme-extras: This is an extension to the Tango Icon Theme.  Currently it includes
+tango-icon-theme-extras: Tango icons for iPod Digital Audio Player (DAP) devices and the Dell
+tango-icon-theme-extras: Pocket DJ DAP.
+tango-icon-theme-extras:
+tango-icon-theme-extras: Visit the Tango project at:  http://tango-project.org/
+tango-icon-theme-extras:
+tango-icon-theme-extras:
+tango-icon-theme-extras:
+tango-icon-theme-extras:
+urwid: urwid (python console UI module)
+urwid:
+urwid: Urwid is a console user interface library for Python. It is released
+urwid: under the GNU Lesser General Public License and includes many
+urwid: (too many to list) features useful for text console application
+urwid: developers.
+urwid:
+urwid: Urwid was written by Ian Ward.
+urwid:
+urwid: More info at: http://excess.org/urwid
+urwid:
+v4l-utils: v4l-utils (libraries and utilities for video4linux)
+v4l-utils:
+v4l-utils: libv4l is a collection of libraries which adds a thin abstraction
+v4l-utils: layer on top of video4linux2 devices.  The purpose of this (thin)
+v4l-utils: layer is to make it easy for application writers to support a wide
+v4l-utils: variety of devices without having to write separate code for
+v4l-utils: different devices in the same class.  Linux V4L2 and DVB API
+v4l-utils: utilities are also included.
+v4l-utils:
+v4l-utils: Homepage:  http://linuxtv.org
+v4l-utils:
+virtuoso-ose: virtuoso-ose (A high-performance object-relational SQL database)
+virtuoso-ose:
+virtuoso-ose: Virtuoso is a scalable cross-platform server that combines
+virtuoso-ose: SQL/RDF/XML Data Management with Web Application Server
+virtuoso-ose: and Web Services Platform functionality.
+virtuoso-ose:
+virtuoso-ose:
+virtuoso-ose:
+virtuoso-ose:
+virtuoso-ose: Homepage: http://virtuoso.openlinksw.com/wiki/main/
+virtuoso-ose:
+vte: vte (terminal emulator widget)
+vte:
+vte: VTE is a terminal emulator widget for use with GTK+.  This package
+vte: contains the VTE library and development files and a sample
+vte: implementation (vte).
+vte:
+vte: VTE is used by XFce.
+vte:
+vte:
+vte:
+vte:
+wavpack: wavpack (A lossless WAV file compressor)
+wavpack:
+wavpack: Wavpack is a hybrid lossless wavefile compressor.  Wavfile is
+wavpack: Copyright (c) 1998 - 2006 Conifer Software.  All Rights Reserved.
+wavpack:
+wavpack: Wavpack is distributed under the BSD Software License.
+wavpack:
+wavpack: Visit the wavpack project online:  http://www.wavpack.com
+wavpack:
+wavpack:
+wavpack:
+zlib: zlib (compression library)
+zlib:
+zlib: zlib is a general purpose thread safe data compression library.  The
+zlib: data format used by the zlib library is described by RFCs 1950 to 
+zlib: 1952 in the files ftp://ds.internic.net/rfc/rfc1950.txt (zlib format)
+zlib: rfc1951.txt (deflate format) and rfc1952.txt (gzip format).
+zlib:
+zlib:
+zlib:
+zlib:
+zlib:
