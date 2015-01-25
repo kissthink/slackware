@@ -156,7 +156,56 @@ custom path
 
 Path to tagfiles: /tag
 
-From there, proceed as usual.
+From there, proceed as usual. If things go as expected, we can login as root
+after the initial reboot.
+
+
+From core to minimal
+--------------------
+
+In the present state, our system is functional in the sense that chickens fly
+and horses swim. Our next objective will be to add some basic functionalities,
+layer by layer. Here's what we want to be able to do:
+
+  1.  Boot in console mode.
+
+  2.  Use the Bash shell.
+
+  3.  Edit text files using Vim.
+
+  4.  Display system documentation (man and info pages, HOWTOs, FAQs)
+
+  5.  Manage disks and filesystems.
+
+  6.  Build an initrd.
+
+  7.  Connect to a network.
+
+  8.  Manage packages through the network using slackpkg.
+
+  9.  Connect remotely using SSH.
+
+  10. Work using Git.  
+
+
+We have to add the following packages to our core system:
+
+  * a/cxxlibs
+  * a/less
+  * ap/groff
+  * ap/man
+  * ap/man-pages
+  * ap/texinfo
+  * ap/vim
+  * d/perl
+  * d/python
+  * f/linux-faqs
+  * f/linux-howtos
+  
+
+  *****************************
+  ***** WORK IN PROGRESS ******
+  *****************************
 
 
 Documentation
