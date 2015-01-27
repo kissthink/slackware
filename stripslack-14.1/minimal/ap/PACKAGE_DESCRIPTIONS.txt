@@ -1,0 +1,803 @@
+a2ps: a2ps (any to PostScript filter)
+a2ps:
+a2ps: GNU a2ps is an Any to PostScript filter.  Of course it processes
+a2ps: plain text files, but also pretty prints quite a few popular
+a2ps: programming languages.  Also contained in this package is psutils, a
+a2ps: collection of programs for manipulating PostScript files.
+a2ps:
+a2ps: a2ps is used by Apsfilter, so be sure to install this package if you
+a2ps: plan to do any printing.
+a2ps:
+a2ps:
+acct: acct (process accounting utilities)
+acct:
+acct: This is a set of utilities which reports and summarizes data about
+acct: user connect times and process execution statistics.  To activate
+acct: process accounting, create the log file (touch /var/log/pacct), and
+acct: then use the accton command to start it (accton /var/log/pacct).
+acct: Be aware that the log file can grow to be quite large.
+acct:
+acct: The GNU process accounting utilities were written by Noel Cragg and
+acct: the software is currently maintained by Ciaran O'Riordan,
+acct: Manuel A. Fernandez Montecelo, and Tim Schmielau.
+alsa-utils: alsa-utils (Advanced Linux Sound Architecture utilities) 
+alsa-utils:
+alsa-utils: The Advanced Linux Sound Architecture (ALSA) provides audio and MIDI
+alsa-utils: functionality to the Linux operating system.  This package contains
+alsa-utils: command line audio utilities for use with ALSA:
+alsa-utils:   alsactl        (manage soundcard settings)
+alsa-utils:   arecord/aplay  (capture and play audio)
+alsa-utils:   amixer         (adjust mixer settings from the command line)
+alsa-utils:   alsamixer      (an ncurses-based console mixer)
+alsa-utils:
+alsa-utils: For more information, see http://alsa-project.org
+amp: amp (An MP3 player)
+amp:
+amp: amp (Audio Mpeg Player) is a command-line MPEG audio decoder (MP3
+amp: player).  It works with both MPEG1 and MPEG2 audio streams (except for
+amp: the multichannel extensions defined in MPEG2), layers 2 and 3.
+amp:
+amp:
+amp:
+amp:
+amp:
+amp:
+ash: ash (Kenneth Almquist's ash shell)
+ash:
+ash: A lightweight (92K) Bourne compatible shell.  Great for machines with
+ash: low memory, but does not provide all the extras of shells like bash,
+ash: tcsh, and zsh.  Runs most shell scripts compatible with the Bourne
+ash: shell.  Note that under Linux, most scripts seem to use at least some
+ash: bash-specific syntax.  The Slackware setup scripts are a notable
+ash: exception, since ash is the shell used on the install disks.  NetBSD
+ash: uses ash as its /bin/sh.
+ash:
+ash:
+at: at (delayed command execution)
+at:
+at: at and batch read shell commands from standard input (or a specified
+at: file) storing them as a job to be scheduled for execution at a later
+at: time.
+at:
+at: The 'at' command was written by David Parsons and Thomas Koenig.
+at:
+at:
+at:
+at:
+bc: bc (An arbitrary precision calculator language)
+bc:
+bc: bc is an arbitrary precision numeric processing language.  Syntax is
+bc: similar to C, but differs in many substantial areas.  It supports
+bc: interactive execution of statements.  bc is a utility included in the
+bc: POSIX P1003.2/D11 draft standard.
+bc:
+bc: The GNU version of bc was written by Philip A. Nelson.
+bc:
+bc:
+bc:
+bpe: bpe (Binary Patch Editor)
+bpe:
+bpe: bpe is a simple, screen-oriented editor for searching and editing
+bpe: ordinary files in either ASCII or hexadecimal modes.
+bpe:
+bpe: bpe was written by Andreas Pleschutznig.  Bill Davidsen contributed
+bpe: additional features, as did Ralphe Neill (the current maintainer).
+bpe:
+bpe:
+bpe:
+bpe:
+cdparanoia: cdparanoia (digital audio extraction tool)
+cdparanoia:
+cdparanoia: cdparanoia is a Compact Disc Digital Audio (CDDA) extraction tool,
+cdparanoia: commonly known on the net as a 'ripper'.  It reads digital audio data
+cdparanoia: from a Compact Disc and saves it to sound files.  cdparanoia has been
+cdparanoia: designed to read correct audio data even using cheap CD-ROM drives
+cdparanoia: prone to misalignment, frame jitter and loss of streaming.
+cdparanoia: cdparanoia will also read and repair data from CDs that have been
+cdparanoia: damaged in some way.
+cdparanoia:
+cdparanoia:
+cdrdao: cdrdao (CD burning utility)
+cdrdao:
+cdrdao: cdrdao burns proper disc-at-once (DAO) audio discs.  In DAO mode the
+cdrdao: disc is written in one shot, so you don't have to have irritating 2
+cdrdao: second gaps interrupting a live recording.
+cdrdao:
+cdrdao:
+cdrdao:
+cdrdao:
+cdrdao:
+cdrdao:
+cdrtools: cdrtools (CD-R, ISO and related tools)
+cdrtools:
+cdrtools: Tools for mastering and writing compact discs.
+cdrtools:
+cdrtools: cdda2wav -- CD audio sampling utility.
+cdrtools: cdrecord -- burn discs in most ATAPI and SCSI CD-R drives.
+cdrtools: mkisofs  -- create ISO9660/HFS/Joliet CD-ROM images.
+cdrtools: mkzftree -- compress a file tree to make a compressed CD-ROM.
+cdrtools:
+cdrtools:
+cdrtools:
+dc3dd: dc3dd (version of dd designed for computer forensics)
+dc3dd:
+dc3dd: dc3dd is a patched version of GNU dd to include a number of features 
+dc3dd: useful for computer forensics. Many of these features were inspired by
+dc3dd: dcfldd, but were rewritten for dc3dd.  Added features include robust
+dc3dd: error handling, logging, progress meter, image verification, split 
+dc3dd: output and more.
+dc3dd:
+dc3dd: http://sourceforge.net/projects/dc3dd/
+dc3dd:
+dc3dd:
+ddrescue: ddrescue (automatic data recovery tool)
+ddrescue:
+ddrescue: GNU ddrescue is a data recovery tool.  It copies data from one file or
+ddrescue: block device (hard disc, cdrom, etc) to another, trying hard to rescue
+ddrescue: data in case of read errors.  Every time you run it on the same output
+ddrescue: file, it tries to fill in the gaps.
+ddrescue:
+ddrescue:
+ddrescue:
+ddrescue: ddrescue home: http://www.gnu.org/software/ddrescue/ddrescue.html
+ddrescue:
+diffstat: diffstat (produces statistics from diff output)
+diffstat:
+diffstat: DiffStat is a simple filter that reads the output of the 'diff'
+diffstat: program and displays a histogram of insertions, deletions, and
+diffstat: modifications per-file.  It is useful for reviewing large, complex
+diffstat: patch files.
+diffstat:
+diffstat: Thomas E. Dickey is the author of DiffStat.
+diffstat:
+diffstat:
+diffstat:
+diffutils: diffutils (finds differences between files)
+diffutils:
+diffutils: The GNU diff utilities finds differences between files.  A major use
+diffutils: for this package is to make source code patches.
+diffutils:
+diffutils:
+diffutils:
+diffutils:
+diffutils:
+diffutils:
+diffutils:
+dmapi: dmapi (Data Management API library)
+dmapi:
+dmapi: A library required to use the Data Management API (DMAPI).
+dmapi: This interface is defined in the X/Open document 'Systems Management:
+dmapi: Data Storage Management (XDSM) API' dated February 1997.
+dmapi:
+dmapi: The DMAPI library is used by the xfsdump utility.
+dmapi:
+dmapi:
+dmapi:
+dmapi:
+dmidecode: dmidecode (DMI table decoder)
+dmidecode:
+dmidecode: dmidecode is a tool for dumping a computer's DMI table (some say
+dmidecode: SMBIOS) contents in a human-readable format.  This table contains a
+dmidecode: description of the system's hardware components, as well as other
+dmidecode: useful pieces of information such as serial numbers and BIOS
+dmidecode: revision.
+dmidecode:
+dmidecode: dmidecode was written by Alan Cox and Jean Delvare.
+dmidecode:
+dmidecode:
+dvd+rw-tools: dvd+rw-tools (DVD+-RW tools)
+dvd+rw-tools:
+dvd+rw-tools: A collection of tools to master DVD+RW/+R/-R/-RW media.  For further
+dvd+rw-tools: information see http://fy.chalmers.se/~appro/linux/DVD+RW/.
+dvd+rw-tools:
+dvd+rw-tools: The DVD+RW tools were written by Andy Polyakov.
+dvd+rw-tools:
+dvd+rw-tools:
+dvd+rw-tools:
+dvd+rw-tools:
+dvd+rw-tools:
+enscript: enscript (converts text files to PostScript and other formats)
+enscript:
+enscript: Enscript converts text files to PostScript and spools the generated
+enscript: output to a printer or saves it to a file.  If no input files are
+enscript: given, enscript processes standard input.  Enscript can be extended to
+enscript: handle different output media and it has many options for customizing
+enscript: printouts.  
+enscript:
+enscript:
+enscript:
+enscript:
+flac: flac (Free Lossless Audio Codec)
+flac:
+flac: FLAC stands for Free Lossless Audio Codec. Grossly oversimplified,
+flac: FLAC is similar to MP3, but lossless.  "Free" means that the
+flac: specification of the stream format is in the public domain, and that
+flac: neither the FLAC format nor any of the implemented encoding/decoding
+flac: methods are covered by any patent. It also means that the sources for
+flac: libFLAC and libFLAC++ are available under the LGPL and the sources for
+flac: flac, metaflac, and the plugins are available under the GPL.
+flac:
+flac: FLAC was developed by Josh Coalson.
+foomatic-filters: foomatic-filters (Universal print filter/RIP wrapper)
+foomatic-filters:
+foomatic-filters: foomatic-rip is a universal print filter, which is used by CUPS with
+foomatic-filters: the gutenprint and hplip printer drivers.  It translates PostScript
+foomatic-filters: (and also other file formats) to the printer's native language,
+foomatic-filters: usually using Ghostscript (gs) as the external renderer.  The way
+foomatic-filters: this translation is done is described in a PPD file.
+foomatic-filters:
+foomatic-filters: For more information on foomatic, see:  http://linuxprinting.org
+foomatic-filters:
+foomatic-filters:
+ghostscript: ghostscript (Postscript and PDF interpreter)
+ghostscript:
+ghostscript: Ghostscript is an interpreter of Adobe Systems' PostScript(tm)
+ghostscript: and Portable Document Format (PDF) languages.  Ghostscript is an
+ghostscript: essential part of the printing subsystem, taking PostScript output
+ghostscript: from applications and converting it into an appropriate printer or
+ghostscript: display format.  Ghostscript supports many printers directly, and
+ghostscript: more are supported through add-on packages.
+ghostscript:
+ghostscript:
+ghostscript:
+ghostscript-fonts-std: ghostscript-fonts-std (fonts for the Ghostscript interpreter)
+ghostscript-fonts-std:
+ghostscript-fonts-std: These fonts are used by the GhostScript interpreter.
+ghostscript-fonts-std:
+ghostscript-fonts-std:
+ghostscript-fonts-std:
+ghostscript-fonts-std:
+ghostscript-fonts-std:
+ghostscript-fonts-std:
+ghostscript-fonts-std:
+ghostscript-fonts-std:
+gphoto2: gphoto2 (A command-line frontend to libgphoto2)
+gphoto2:
+gphoto2: libgphoto2 is a cross-platform digital camera library, and gphoto2 is
+gphoto2: a command-line client for it.
+gphoto2:
+gphoto2: Visit the gphoto project online:  http://www.gphoto.org
+gphoto2:
+gphoto2:
+gphoto2:
+gphoto2:
+gphoto2:
+groff: groff (document formatting system)
+groff:
+groff: The GNU groff package provides versions of troff, nroff, eqn, tbl, and 
+groff: other Unix text-formatting utilities.  Groff is used to 'compile' man
+groff: pages stored in groff/nroff format into a form which can be printed or
+groff: displayed on the screen.  These man pages are stored in compressed
+groff: form in the /usr/man/man? directories.
+groff:
+groff:
+groff:
+groff:
+gutenprint: gutenprint (IJS printer driver for Ghostscript and CUPS)
+gutenprint:
+gutenprint: Gutenprint (formerly named Gimp-Print) is a suite of printer drivers
+gutenprint: that may be used with most common print spooling systems, including
+gutenprint: CUPS, LPRng, or others.  These drivers provide high quality printing
+gutenprint: in many cases equal to or better than proprietary vendor-supplied
+gutenprint: drivers.  Gutenprint also includes an enhanced print plug-in for the
+gutenprint: GIMP image editor.
+gutenprint:
+gutenprint:
+gutenprint:
+hplip: hplip (HP print/scan/fax support)
+hplip:
+hplip: HPLIP is an HP developed solution for printing, scanning, and faxing
+hplip: with HP inkjet and laser based printers in Linux.  The HPLIP project
+hplip: provides printing support for more than 1400 HP printer models,
+hplip: including Deskjet, Officejet, Photosmart, PSC (Print Scan Copy),
+hplip: Business Inkjet, LaserJet, and LaserJet MFP.
+hplip:
+hplip: For more information, see: http://hplipopensource.com
+hplip:
+hplip:
+htop: htop (ncurses-based interactive process viewer)
+htop:
+htop: htop is a free (GPL) ncurses-based process viewer that is similar to
+htop: the well-known "top" program, but allows to scroll the list vertically
+htop: and horizontally to see all processes and their full command lines.
+htop: Tasks related to processes (killing, renicing) can be done without
+htop: entering their PIDs.
+htop:
+htop: htop is developed by Hisham Muhammad.
+htop: Homepage:  http://htop.sf.net
+htop:
+ispell: ispell (spelling checker)
+ispell:
+ispell: Ispell is a fast screen-oriented spelling checker that shows you your
+ispell: errors in the context of the original file, and suggests possible 
+ispell: corrections when it can figure them out.  Compared to UNIX spell, it
+ispell: is faster and much easier to use.  Ispell can also handle languages
+ispell: other than English.  Ispell has a long history, and many people have
+ispell: contributed to the current version -- some of the major contributors
+ispell: include R. E. Gorin, Pace Willisson, Walt Buehring, and Geoff 
+ispell: Kuenning. 
+ispell:
+itstool: itstool (Translate XML documents with PO files)
+itstool:
+itstool: ITS Tool allows you to translate your XML documents with PO
+itstool: files, using rules from the W3C Internationalization Tag Set
+itstool: (ITS) to determine what to translate and how to separate it
+itstool: into PO file messages.
+itstool:
+itstool: Homepage: http://itstool.org/
+itstool:
+itstool:
+itstool:
+jed: jed (programmer's editor)
+jed:
+jed: JED (by John E. Davis) is an extremely powerful but small emacs-like
+jed: programmer's editor that is extensible in a C-like macro language and
+jed: can do color syntax highlighting.  Among the many features:
+jed:     Emacs, wordstar, EDT emulation;
+jed:     C, Fortran, TeX, text editing modes;  Full undo;
+jed:     GNU Emacs compatible info reader, and lots more.
+jed:
+jed: JED is also 8 bit clean, so you can even edit binary files!  
+jed:
+joe: joe (Joe text editor)
+joe:
+joe: Joseph H. Allen's easy to use text editor, similar to WordStar[tm].
+joe:
+joe:
+joe:
+joe:
+joe:
+joe:
+joe:
+joe:
+jove: jove (Jonathan's Own Version of Emacs)
+jove:
+jove: A mostly Emacs compatible text editor, with man pages and the 
+jove: 'teachjove' tutorial program.  If you'd rather have the real thing, 
+jove: the actual Emacs editor/environment is available in series 'E'.
+jove:
+jove: JOVE was written by Jonathan Payne.
+jove:
+jove:
+jove:
+jove:
+ksh93: ksh (AT&T Korn Shell 93)
+ksh93:
+ksh93: The KornShell language and interactive shell were designed by
+ksh93: David G. Korn at AT&T Bell Laboratories.  Besides offering a powerful
+ksh93: interactive shell, it also offers a robust programming language with
+ksh93: such features as associative arrays and built in integer math
+ksh93: operations.  ksh is an excellent choice for system administration
+ksh93: scripts and for everyday interactive use.
+ksh93: 
+ksh93: The official site for the Korn Shell is http://www.kornshell.com/
+ksh93:
+libx86: libx86 (hardware-independent library for x86 code execution)
+libx86: 
+libx86: libx86 is a hardware-independent library for executing
+libx86: real-mode x86 code, such as bios calls, from userspace.
+libx86: 
+libx86: Homepage: http://www.codon.org.uk/~mjg59/libx86/
+libx86: 
+libx86: 
+libx86: 
+libx86: 
+libx86: 
+linuxdoc-tools: linuxdoc-tools (utilities for working with DocBook and SGML)
+linuxdoc-tools:
+linuxdoc-tools: SGML stands for Standard Generalized Markup Language.  This is a
+linuxdoc-tools: system which allows you to produce LaTeX, HTML, GNU info, LyX, RTF,
+linuxdoc-tools: and plain text (via groff) from a single source file in SGML.  It is
+linuxdoc-tools: often used for technical software documentation, such as the Linux
+linuxdoc-tools: HOWTO documents.  
+linuxdoc-tools:
+linuxdoc-tools: This package includes everything you need to use SGML -- all of the
+linuxdoc-tools: standard SGML tools; OpenJade; tools for working with DocBook
+linuxdoc-tools: documents (various DTDs); xmlto and AsciiDoc.
+lm_sensors: lm_sensors (hardware monitoring package)
+lm_sensors:
+lm_sensors: lm_sensors provides tools for monitoring the temperatures, voltages,
+lm_sensors: and fans of Linux systems with hardware monitoring devices.  Included
+lm_sensors: are text-based tools for sensor reporting, and a library for sensors
+lm_sensors: access called libsensors.  It also contains tools for sensor hardware
+lm_sensors: identification and I2C bus probing.
+lm_sensors:
+lm_sensors: IMPORTANT NOTE:  If you have a Thinkpad, please read the warnings in
+lm_sensors: the README.thinkpad file.  lm_sensors has been known to cause damage
+lm_sensors: to some Thinkpads.
+lsof: lsof (list open files)
+lsof:
+lsof: Lsof is a Unix-specific tool.  Its name stands for "LiSt Open Files",
+lsof: and it does just that.  It lists information about files that are open
+lsof: by the processes running on the system.
+lsof:
+lsof: Victor A. Abell of Purdue University is the developer of lsof.
+lsof:
+lsof:
+lsof:
+lsof:
+lsscsi: lsscsi (list SCSI devices or hosts, and their attributes)
+lsscsi:
+lsscsi: Uses information in sysfs to list scsi devices (or hosts) currently
+lsscsi: attached to the system.  Options can be used to control the amount
+lsscsi: and form of information provided for each device.
+lsscsi:
+lsscsi: lsscsi was written by Doug Gilbert.
+lsscsi:
+lsscsi:
+lsscsi:
+lsscsi:
+lxc: lxc (Linux Containers)
+lxc:
+lxc: Linux Containers (LXC) are an operating system-level virtualization
+lxc: method for running multiple isolated server installs (containers) on
+lxc: a single control host.  LXC does not provide a virtual machine, but
+lxc: rather provides a virtual environment that has its own process and
+lxc: network space.  It is similar to a chroot, but offers more isolation.
+lxc:
+lxc: Daniel Lezcano is the primary developer of lxc.
+lxc: Homepage:  http://lxc.sourceforge.net/
+lxc:
+madplay: madplay (MPEG audio decoder and player)
+madplay:
+madplay: madplay is a command-line MPEG audio decoder and player based on the
+madplay: MAD library (libmad).  For details about MAD, see the libmad package
+madplay: distributed separately.
+madplay:
+madplay: madplay was written by Robert Leslie.
+madplay:
+madplay:
+madplay:
+madplay:
+man: man (format and display the on-line manual pages)
+man:
+man: The man package is a collection of tools used for searching and
+man: reading the online system documentation.  In fact, on most UNIX-like
+man: operating systems it is the primary means of finding out how programs
+man: on the system work.  For example, 'man man' will display the
+man: documentation for man itself.
+man:
+man: Man requires the groff text processing package.
+man:
+man:
+man-pages: man-pages (system documentation)
+man-pages:
+man-pages: Man pages are online documentation for Linux.  This package includes
+man-pages: many section 1, 2, 3, 4, 5, 7, and 8 man pages for Linux.
+man-pages:
+man-pages: The man-pages distribution is maintained by Michael Kerrisk with
+man-pages: the help of more writers, editors, and other contributors than we
+man-pages: can name here.
+man-pages:
+man-pages: For more information, see http://www.kernel.org/doc/man-pages/
+man-pages:
+mariadb: mariadb (Drop-in replacement for the MySQL Database Server)
+mariadb:
+mariadb: MariaDB is a backward compatible, drop-in replacement branch of the
+mariadb: MySQL(R) Database Server.  It includes all major open source storage
+mariadb: engines, including the Aria storage engine.
+mariadb:
+mariadb: Homepage: http://mariadb.org/
+mariadb:
+mariadb:
+mariadb:
+mariadb:
+mc: mc (Midnight Commander file manager)
+mc:
+mc: The Midnight Commander is a Norton Commander clone, a program that
+mc: manipulates and manages files and directories.  Useful, fast, and has
+mc: color displays on the Linux console.  Mouse support is provided
+mc: through the gpm mouse server.  This is a lightweight compilation of
+mc: mc for use on the text console or in an xterm.
+mc:
+mc: mc was written by Miguel de Icaza and Mauricio Plaza.
+mc:
+mc:
+moc: moc (console audio player)
+moc:
+moc: MOC is a console audio player with a simple ncurses interface.
+moc: It supports OGG, FLAC, WAV, and MP3 formats.  Just run mocp, go to some
+moc: directory using the menu, select a file, and press enter to play it.
+moc: MOC will continue playing the rest of the files in the directory.
+moc:
+moc: MOC was written by Damian Pietras.
+moc:
+moc: Homepage:  http://moc.daper.net
+moc:
+most: most (another pager, like 'more' and 'less')
+most:
+most: most is a paging program that displays, one windowful at a time,  the
+most: contents of a file on a terminal.  Unlike other well-known paging
+most: programs, most supports multiple windows and can scroll left and
+most: right.  Why settle for less?
+most:
+most: 'most' was written by John E. Davis.
+most:
+most:
+most:
+mpg123: mpg123 (a command-line mp3 player)
+mpg123:
+mpg123: mpg123 is a real time MPEG 1.0/2.0/2.5 audio player/decoder for 
+mpg123: layers 1, 2, and 3 (MPEG 1.0 layer 3 aka MP3 most commonly tested). 
+mpg123:
+mpg123: It is free software licensed under LGPL 2.1.
+mpg123:
+mpg123: Homepage: http://mpg123.org/
+mpg123:
+mpg123:
+mpg123:
+nano: nano (Nano's ANOther editor, an enhanced free Pico clone)
+nano:
+nano: nano is a small, free, and friendly editor from the GNU project.  It
+nano: aims to copy Pico's look and feel while providing additional (or
+nano: disabled by default) features that are missing from Pico, such as
+nano: "search and replace" or "go to line and column number".
+nano:
+nano: Chris Allegretta is Nano's author.
+nano:
+nano:
+nano:
+normalize: normalize (adjusts volume levels of audio files)
+normalize:
+normalize: normalize is a tool for adjusting the volume of audio files to a
+normalize: standard level.  This is useful for things like creating mix CDs
+normalize: from mp3 collections, where different recording levels on
+normalize: different albums can cause the volume to vary greatly from song
+normalize: to song.  The package also contains an XMMS plugin.
+normalize:
+normalize: Chris Vaill is the author of normalize.
+normalize:
+normalize:
+pm-utils: pm-utils (Power Management Utilities)
+pm-utils:
+pm-utils: The pm-utils package provides simple shell command line tools to
+pm-utils: suspend and hibernate computers that can be used to run vendor or
+pm-utils: distribution supplied scripts on suspend and resume.
+pm-utils:
+pm-utils: Homepage: http://pm-utils.freedesktop.org/
+pm-utils:
+pm-utils:
+pm-utils:
+pm-utils:
+powertop: powertop (tool for analyzing system power usage)
+powertop:
+powertop: PowerTOP is a utility that collects data from your system and presents
+powertop: an overview to help optimize power savings.  PowerTOP will identify
+powertop: which tunables and software components are the biggest offenders in
+powertop: slurping up your battery time.  PowerTOP updates its display
+powertop: frequently so that you can directly see the impact of any changes you
+powertop: are making.
+powertop:
+powertop: Homepage:  http://01.org/powertop/
+powertop:
+radeontool: radeontool (small utility for ati radeon-based laptops)
+radeontool: 
+radeontool: Radeontool is a small utility to control ATI Radeon-based 
+radeontool: laptops' backlight and external output functions
+radeontool: 
+radeontool: Homepage: http://fdd.com/software/radeon/
+radeontool: 
+radeontool: 
+radeontool: 
+radeontool: 
+radeontool: 
+rpm: rpm (RPM package format tool)
+rpm:
+rpm: RPM is a tool from Red Hat Software used to install and remove
+rpm: packages in the .rpm format.  When installing RPM packages on
+rpm: Slackware, you may need to use the --nodeps and --force options.
+rpm: Before installing any binary package, it's wise to examine it to
+rpm: see what it's going to do, and if it will overwrite any files.  You
+rpm: can use rpm2tgz to convert .rpm packages to .tgz packages so you
+rpm: can look them over.
+rpm:
+rpm:
+rzip: rzip (a large-file compression program)
+rzip:
+rzip: rzip is a file compression program designed to do particularly well
+rzip: on very large files containing long distance redundancy.
+rzip:
+rzip: rzip was written by Andrew Tridgell.
+rzip:
+rzip:
+rzip:
+rzip:
+rzip:
+sc: sc (spreadsheet calculator)
+sc:
+sc: This is a simple curses-based spreadsheet program.
+sc:
+sc:
+sc:
+sc:
+sc:
+sc:
+sc:
+sc:
+screen: screen (screen manager with VT100/ANSI terminal emulation)
+screen:
+screen: Screen is a full-screen window manager that multiplexes a physical
+screen: terminal between several processes (typically interactive shells).
+screen: Each virtual terminal provides the functions of a DEC VT100 terminal
+screen: and several control functions from the ISO 6492 (ECMA 48, ANSI X3.64)
+screen: and ISO 2022 standards (e.g. insert/delete line and support for
+screen: multiple character sets).  There is a scrollback history buffer for
+screen: each virtual terminal and a copy-and-paste mechanism that allows
+screen: moving text regions between windows.
+screen:
+seejpeg: seejpeg (console JPEG viewer)
+seejpeg:
+seejpeg: Seejpeg is an image viewer which uses SVGAlib.  In spite of the name,
+seejpeg: it understands the JPEG, GIF, PPM, BMP and TARGA formats.  One nice
+seejpeg: feature of seejpeg is that it automatically decides on the best video
+seejpeg: mode to use based on the image being displayed and the video card
+seejpeg: being used.  
+seejpeg:
+seejpeg: Evan Harris is the author of seejpeg.
+seejpeg:
+seejpeg:
+slackpkg: slackpkg 
+slackpkg:
+slackpkg: Slackpkg is a package manager for Slackware. It can download,
+slackpkg: upgrade, install and remove selected packages. With it, you
+slackpkg: can search in the Slackware Package database and find which
+slackpkg: package has the selected file.
+slackpkg:
+slackpkg: Slackpkg DOESN'T replace pkgtool. Actually, Slackpkg uses pkgtool
+slackpkg: for all install|upgrade|remove functions.
+slackpkg:
+slackpkg:
+soma: Soma - a command line/dialog internet radio player
+soma:
+soma: Soma is a frontend for mplayer to play radio playlists pls,m3u and 
+soma: ram. More will be added as it progresses.
+soma:
+soma: Homepage: http://www.dawoodfall.net/slackbuilds/noversion/soma
+soma:
+soma:
+soma:
+soma:
+soma:
+sox: sox (universal sound sample translator)
+sox:
+sox: Sox is a universal sound converter, player, and recorder.  It can
+sox: play, record, and convert between several sound file formats such as
+sox: .au, .snd, .voc and .wav.
+sox:
+sox:
+sox:
+sox:
+sox: Homepage:  http://sox.sourceforge.net/
+sox:
+sqlite: SQLite (simple, self contained database engine)
+sqlite:
+sqlite: SQLite is a small C library that implements a self-contained,
+sqlite: embeddable, zero-configuration SQL database engine.
+sqlite:
+sqlite: The SQLite distribution comes with a standalone command-line access
+sqlite: program (sqlite) that can be used to administer an SQLite database
+sqlite: and which serves as an example of how to use the SQLite library.
+sqlite:
+sqlite: Homepage:  http://www.sqlite.org/
+sqlite:
+sudo: sudo (give limited root privileges to certain users)
+sudo:
+sudo: 'sudo' is a command that allows users to execute some commands as 
+sudo: root.  The /etc/sudoers file (edited with 'visudo') specifies which
+sudo: users have access to sudo and which commands they can run.  'sudo' 
+sudo: logs all its activities to /var/log/ so the system administrator
+sudo: can keep an eye on things.
+sudo:
+sudo:
+sudo:
+sudo:
+sysstat: sysstat (System performance monitoring tools)
+sysstat:
+sysstat: The sysstat utilities are a collection of performance monitoring
+sysstat: tools for Linux.  These include the iostat, mpstat, pidstat, sadf,
+sysstat: and sar tools.
+sysstat:
+sysstat: The sysstat utilities were written by Sebastien Godard.
+sysstat:
+sysstat: For more information, see the sysstat web site:
+sysstat:   http://pagesperso-orange.fr/sebastien.godard/
+sysstat:
+terminus-font: terminus-font (a clean fixed width font)
+terminus-font:
+terminus-font: Terminus Font is designed for long (8 and more hours per day)
+terminus-font: work with computers.  It is a good choice if you run a Unicode-enabled
+terminus-font: console but the package also contains a non-scalable Unicode-enabled
+terminus-font: font for use in X terminal applications.
+terminus-font:
+terminus-font:
+terminus-font:
+terminus-font: terminus-font home: http://terminus-font.sourceforge.net
+terminus-font:
+texinfo: texinfo (GNU software documentation system)
+texinfo:
+texinfo: 'Texinfo' is a documentation system that uses a single source file to
+texinfo: produce both on-line information and printed output.  Using Texinfo,
+texinfo: you can create a printed document with the normal features of a book,
+texinfo: including chapters, sections, cross references, and indices.  From the
+texinfo: same Texinfo source file, you can create a menu-driven, on-line Info
+texinfo: file with nodes, menus, cross references, and indices.
+texinfo:
+texinfo: This package is needed to read the documentation files in /usr/info.
+texinfo:
+tmux: tmux (terminal multiplexer)
+tmux:
+tmux: tmux is a terminal multiplexer. It enables a number of terminals
+tmux: (or windows) to be accessed and controlled from a single terminal.
+tmux: tmux is intended to be a simple, modern, BSD-licensed alternative to
+tmux: programs such as GNU screen.
+tmux:
+tmux: Homepage:  http://tmux.sourceforge.net
+tmux:
+tmux:
+tmux:
+vbetool: vbetool (video bios execution tool)
+vbetool: 
+vbetool: vbetool is a small application that executes code from the BIOS of 
+vbetool: your video card. 
+vbetool: 
+vbetool: This is mostly useful for reinitialising the hardware, for instance 
+vbetool: after ACPI suspend/resuming. 
+vbetool: 
+vbetool: Homepage: http://www.codon.org.uk/~mjg59/vbetool/
+vbetool: 
+vbetool: 
+vim: vim (Vi IMproved)
+vim:
+vim: Vim is an almost compatible version of the UNIX editor vi.  Many new
+vim: features have been added:  multi level undo, command line history, 
+vim: filename completion, block operations, and more.
+vim:
+vim: Vim's development is led by Bram Moolenaar.
+vim:
+vim: This package also contains the Exuberant Ctags program
+vim: written by Darren Hiebert.
+vim:
+vorbis-tools: vorbis-tools (Ogg Vorbis Tools)
+vorbis-tools:
+vorbis-tools: The vorbis-tools package contains several basic tools for working with
+vorbis-tools: compressed audio files in the Ogg Vorbis (.ogg) format:
+vorbis-tools:
+vorbis-tools:   oggenc (an .ogg encoder), ogg123 (a playback tool), vorbiscomment
+vorbis-tools:   (add comments to vorbis files), ogginfo (show information about an
+vorbis-tools:   ogg file), oggdec (a command line decoder), and vcut (a tool for
+vorbis-tools:   splitting vorbis files).
+vorbis-tools:
+vorbis-tools: These tools require the libao, libogg, and libvorbis libraries.
+workbone: workbone (text-based CD player)
+workbone:
+workbone: WorkBone is a simple interactive tool for for playing audio CDs from
+workbone: the Linux console.
+workbone:
+workbone:
+workbone:
+workbone:
+workbone:
+workbone:
+workbone:
+xfsdump: xfsdump (backup tools for the XFS filesystem)
+xfsdump:
+xfsdump: The xfsdump package contains the xfsdump and xfsrestore utilities for
+xfsdump: backing up and restoring XFS partitions.  xfsdump examines files in a
+xfsdump: filesystem, determines which need to be backed up, and copies those
+xfsdump: files to a specified disk, tape or other storage medium.  xfsrestore
+xfsdump: performs the inverse function of xfsdump; it can restore a full
+xfsdump: or incremental backup of a filesystem.
+xfsdump:
+xfsdump:
+xfsdump:
+zsh: zsh (the Z shell)
+zsh:
+zsh: Zsh is a UNIX command interpreter (shell) which of the standard shells
+zsh: most resembles the Korn shell (ksh), although it is not completely
+zsh: compatible.  It includes enhancements of many types, notably in the
+zsh: command-line editor, options for customizing its behavior, filename
+zsh: globbing, features to make C-shell (csh) users feel more at home and
+zsh: extra features drawn from tcsh (another 'custom' shell).  Zsh was 
+zsh: written by Paul Falstad.
+zsh:
+zsh:

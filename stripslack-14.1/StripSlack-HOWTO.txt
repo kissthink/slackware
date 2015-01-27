@@ -227,6 +227,10 @@ We have to add the following packages to our core system:
   * d/python
   * f/linux-faqs
   * f/linux-howtos
+  * l/db48
+  * l/gd
+  * l/glibc
+  * l/libtasn1
   * l/mpfr
   * l/ncurses
   * n/ca-certificates
@@ -234,12 +238,27 @@ We have to add the following packages to our core system:
   * n/cyrus-sasl
   * n/dhcpcd
   * n/gnupg
+  * n/gnutls
   * n/iproute2
   * n/iputils
   * n/net-tools
+  * n/nettle
   * n/network-scripts
   * n/openssh
+  * n/p11-kit
   * n/wget
+  * x/fontconfig
+  * x/libICE
+  * x/libSM
+  * x/libX11
+  * x/libXau
+  * x/libXaw
+  * x/libXdmcp
+  * x/libXext
+  * x/libXmu
+  * x/libXpm
+  * x/libXt
+  * x/libxcb
   
 
   *****************************
