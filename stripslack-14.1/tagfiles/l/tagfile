@@ -2,6 +2,8 @@
 db48:ADD
 gd:ADD
 glibc:ADD
+glibc-i18n:ADD
+libnl:ADD
 libtasn1:ADD
 mpfr:ADD
 ncurses:ADD
@@ -59,7 +61,6 @@ glade3:SKP
 glib:SKP
 glib-networking:SKP
 glib2:SKP
-glibc-i18n:SKP
 glibc-profile:SKP
 gmime:SKP
 gmm:SKP
@@ -137,7 +138,6 @@ libmpc:SKP
 libmsn:SKP
 libmtp:SKP
 libnjb:SKP
-libnl:SKP
 libnl3:SKP
 libnotify:SKP
 libogg:SKP

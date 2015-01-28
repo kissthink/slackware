@@ -7,9 +7,14 @@ gnupg:ADD
 gnutls:ADD
 iproute2:ADD
 iputils:ADD
+irssi:ADD
+lftp:ADD
+links:ADD
+ncftp:ADD
 net-tools:ADD
 nettle:ADD
 network-scripts:ADD
+nmap:ADD
 openssh:ADD
 p11-kit:ADD
 wget:ADD
@@ -54,9 +59,7 @@ iptables:SKP
 iptraf-ng:SKP
 ipw2100-fw:SKP
 ipw2200-fw:SKP
-irssi:SKP
 iw:SKP
-lftp:SKP
 libassuan:SKP
 libgcrypt:SKP
 libgpg-error:SKP
@@ -71,7 +74,6 @@ libnetfilter_log:SKP
 libnetfilter_queue:SKP
 libnfnetlink:SKP
 libqmi:SKP
-links:SKP
 lynx:SKP
 mailx:SKP
 mcabber:SKP
@@ -80,7 +82,6 @@ mobile-broadband-provider-info:SKP
 mtr:SKP
 mutt:SKP
 nc:SKP
-ncftp:SKP
 net-snmp:SKP
 netatalk:SKP
 netdate:SKP
@@ -99,7 +100,6 @@ netwrite:SKP
 newspost:SKP
 nfacct:SKP
 nfs-utils:SKP
-nmap:SKP
 nn:SKP
 ntp:SKP
 obex-data-server:SKP

@@ -5,17 +5,17 @@
 
 CWD=$(pwd)
 CATEGORIES="a ap d e f k kde kdei l n t tcl x xap xfce y" 
-PKGADD=$CWD/PACKAGES-ADD.txt
-PKGDEL=$CWD/PACKAGES-SKIP.txt
+PKGADD=$CWD/PACKAGES.txt
+PKGDEL=$CWD/SKIP.txt
 PKGINFO=/tmp/pkg_database
 
-echo "#########################################################" > $PKGADD
-echo "# Packages included in a minimal Slackware installation #" >> $PKGADD
-echo "#########################################################" >> $PKGADD
+echo "###################################" > $PKGADD
+echo "# Packages included in StripSlack #" >> $PKGADD
+echo "###################################" >> $PKGADD
 
-echo "#############################################################" > $PKGDEL
-echo "# Packages not included in a minimal Slackware installation #" >> $PKGDEL
-echo "#############################################################" >> $PKGDEL
+echo "#######################################" > $PKGDEL
+echo "# Packages not included in StripSlack #" >> $PKGDEL
+echo "#######################################" >> $PKGDEL
 
 for CATEGORY in $CATEGORIES; do
   FILE=$CWD/tagfiles/$CATEGORY/tagfile

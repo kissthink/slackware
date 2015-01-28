@@ -3,6 +3,7 @@ aaa_base:ADD
 aaa_elflibs:ADD
 aaa_terminfo:ADD
 acl:ADD
+acpid:ADD
 attr:ADD
 bash:ADD
 bin:ADD
@@ -10,9 +11,11 @@ bzip2:ADD
 coreutils:ADD
 cpio:ADD
 cxxlibs:ADD
+dcron:ADD
 devs:ADD
 dialog:ADD
 e2fsprogs:ADD
+eject:ADD
 elvis:ADD
 etc:ADD
 findutils:ADD
@@ -38,6 +41,7 @@ lvm2:ADD
 mdadm:ADD
 mkinitrd:ADD
 openssl-solibs:ADD
+pciutils:ADD
 pkgtools:ADD
 procps:ADD
 sed:ADD
@@ -47,24 +51,23 @@ sysvinit:ADD
 sysvinit-functions:ADD
 sysvinit-scripts:ADD
 tar:ADD
+time:ADD
+tree:ADD
 udev:ADD
 util-linux:ADD
 which:ADD
 xz:ADD
 
 # Skip
-acpid:SKP
 apmd:SKP
 btrfs-progs:SKP
 cpufrequtils:SKP
 cryptsetup:SKP
 cups:SKP
 dbus:SKP
-dcron:SKP
 dosfstools:SKP
 ed:SKP
 efibootmgr:SKP
-eject:SKP
 elilo:SKP
 floppy:SKP
 genpower:SKP
@@ -89,7 +92,6 @@ ncompress:SKP
 ntfs-3g:SKP
 os-prober:SKP
 patch:SKP
-pciutils:SKP
 pcmciautils:SKP
 quota:SKP
 reiserfsprogs:SKP
@@ -102,8 +104,6 @@ splitvt:SKP
 sysfsutils:SKP
 syslinux:SKP
 tcsh:SKP
-time:SKP
-tree:SKP
 udisks:SKP
 udisks2:SKP
 unarj:SKP

@@ -1,21 +1,18 @@
-#############################################################
-# Packages not included in a minimal Slackware installation #
-#############################################################
+#######################################
+# Packages not included in StripSlack #
+#######################################
 
 # Package group [a]
 
-acpid
 apmd
 btrfs-progs
 cpufrequtils
 cryptsetup
 cups
 dbus
-dcron
 dosfstools
 ed
 efibootmgr
-eject
 elilo
 floppy
 genpower
@@ -40,7 +37,6 @@ ncompress
 ntfs-3g
 os-prober
 patch
-pciutils
 pcmciautils
 quota
 reiserfsprogs
@@ -53,8 +49,6 @@ splitvt
 sysfsutils
 syslinux
 tcsh
-time
-tree
 udisks
 udisks2
 unarj
@@ -507,7 +501,6 @@ glade3
 glib
 glib-networking
 glib2
-glibc-i18n
 glibc-profile
 gmime
 gmm
@@ -585,7 +578,6 @@ libmpc
 libmsn
 libmtp
 libnjb
-libnl
 libnl3
 libnotify
 libogg
@@ -733,9 +725,7 @@ iptables
 iptraf-ng
 ipw2100-fw
 ipw2200-fw
-irssi
 iw
-lftp
 libassuan
 libgcrypt
 libgpg-error
@@ -750,7 +740,6 @@ libnetfilter_log
 libnetfilter_queue
 libnfnetlink
 libqmi
-links
 lynx
 mailx
 mcabber
@@ -759,7 +748,6 @@ mobile-broadband-provider-info
 mtr
 mutt
 nc
-ncftp
 net-snmp
 netatalk
 netdate
@@ -778,7 +766,6 @@ netwrite
 newspost
 nfacct
 nfs-utils
-nmap
 nn
 ntp
 obex-data-server
@@ -1216,5 +1203,4 @@ xfwm4-themes
 
 # Package group [y]
 
-bsd-games
 

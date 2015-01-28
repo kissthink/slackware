@@ -1,6 +1,6 @@
-#########################################################
-# Packages included in a minimal Slackware installation #
-#########################################################
+###################################
+# Packages included in StripSlack #
+###################################
 
 # Package group [a]
 
@@ -8,6 +8,7 @@ aaa_base
 aaa_elflibs
 aaa_terminfo
 acl
+acpid
 attr
 bash
 bin
@@ -15,9 +16,11 @@ bzip2
 coreutils
 cpio
 cxxlibs
+dcron
 devs
 dialog
 e2fsprogs
+eject
 elvis
 etc
 findutils
@@ -43,6 +46,7 @@ lvm2
 mdadm
 mkinitrd
 openssl-solibs
+pciutils
 pkgtools
 procps
 sed
@@ -52,6 +56,8 @@ sysvinit
 sysvinit-functions
 sysvinit-scripts
 tar
+time
+tree
 udev
 util-linux
 which
@@ -103,6 +109,8 @@ linux-howtos
 db48
 gd
 glibc
+glibc-i18n
+libnl
 libtasn1
 mpfr
 ncurses
@@ -118,9 +126,14 @@ gnupg
 gnutls
 iproute2
 iputils
+irssi
+lftp
+links
+ncftp
 net-tools
 nettle
 network-scripts
+nmap
 openssh
 p11-kit
 wget
@@ -160,4 +173,5 @@ libxcb
 
 # Package group [y]
 
+bsd-games
 
