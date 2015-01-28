@@ -14,6 +14,7 @@ dosfstools
 ed
 efibootmgr
 elilo
+elvis
 floppy
 genpower
 getty-ps
@@ -25,6 +26,8 @@ infozip
 inotify-tools
 isapnptools
 jfsutils
+kernel-huge
+kernel-huge-smp
 lha
 libcgroup
 logrotate

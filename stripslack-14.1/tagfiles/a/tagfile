@@ -16,7 +16,6 @@ devs:ADD
 dialog:ADD
 e2fsprogs:ADD
 eject:ADD
-elvis:ADD
 etc:ADD
 findutils:ADD
 file:ADD
@@ -30,8 +29,6 @@ kbd:ADD
 kernel-firmware:ADD
 kernel-generic:ADD
 kernel-generic-smp:ADD
-kernel-huge:ADD
-kernel-huge-smp:ADD
 kernel-modules:ADD
 kernel-modules-smp:ADD
 kmod:ADD
@@ -69,6 +66,7 @@ dosfstools:SKP
 ed:SKP
 efibootmgr:SKP
 elilo:SKP
+elvis:SKP
 floppy:SKP
 genpower:SKP
 getty-ps:SKP
@@ -80,6 +78,8 @@ infozip:SKP
 inotify-tools:SKP
 isapnptools:SKP
 jfsutils:SKP
+kernel-huge:SKP
+kernel-huge-smp:SKP
 lha:SKP
 libcgroup:SKP
 logrotate:SKP

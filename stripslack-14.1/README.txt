@@ -118,8 +118,10 @@ custom path
 
 Path to tagfiles: /tag
 
-From there, proceed as usual. If things go as expected, we can login as root
-after the initial reboot.
+Once you've reached the last step of the installation process, do not reboot
+yet. StripSlack doesn't ship the HUGE kernel. You have to chroot into the
+installed system, build an initrd and configure LILO to boot the GENERIC
+kernel. 
 
 
 Migration

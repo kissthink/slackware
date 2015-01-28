@@ -21,7 +21,6 @@ devs
 dialog
 e2fsprogs
 eject
-elvis
 etc
 findutils
 file
@@ -35,8 +34,6 @@ kbd
 kernel-firmware
 kernel-generic
 kernel-generic-smp
-kernel-huge
-kernel-huge-smp
 kernel-modules
 kernel-modules-smp
 kmod
