@@ -1,0 +1,45 @@
+tetex: tetex (teTeX binaries and support files)
+tetex:
+tetex: This package contains the binaries and support files required for the
+tetex: teTeX TeX distribution, such as input files for TeX, runtime
+tetex: configuration files, hyphenation tables, manpages, and the computer
+tetex: modern fonts.
+tetex:
+tetex:
+tetex:
+tetex:
+tetex:
+tetex:
+tetex-doc: tetex-doc (Documentation for teTeX)
+tetex-doc:
+tetex-doc: This package contains documentation for AMSTeX, BibTeX, extended plain
+tetex-doc: format, font packages, format files (babel, texdraw, pstricks, xypic),
+tetex-doc: LaTeX, MetaPost, Makeindex, pdftex, the Kpathsea library, as well as
+tetex-doc: general information about TeX such as a list of ftp servers, a draft
+tetex-doc: for the TeX Directory Standard (TDS), The TeX and LaTeX Catalogue,
+tetex-doc: TeX FAQs, and more.
+tetex-doc:
+tetex-doc:
+tetex-doc:
+transfig: transfig (transform .fig files)
+transfig:
+transfig: This package contains the binaries to transform .fig files (created by
+transfig: xfig) to some other formats like epsf and LaTeX.  If you have 
+transfig: installed xfig, you should also install this package if you want to
+transfig: use xfig to create other files than .fig files, which can then be
+transfig: included in your LaTeX documents.
+transfig:
+transfig:
+transfig:
+transfig:
+xfig: xfig (interactive drawing tool)
+xfig:
+xfig: This package contains the binary for xfig, an interactive drawing tool
+xfig: under X.  Xfig can create fig, epsf, and LaTeX files with various
+xfig: options.  You also have to install the transfig package (transfig.tgz)
+xfig: so that xfig can export fig files as epsf and LaTeX files.  This
+xfig: package also contains a set of basic examples of fig files.
+xfig:
+xfig:
+xfig:
+xfig:

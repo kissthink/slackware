@@ -1,0 +1,163 @@
+#########################################################
+# Packages included in a minimal Slackware installation #
+#########################################################
+
+# Package group [a]
+
+aaa_base
+aaa_elflibs
+aaa_terminfo
+acl
+attr
+bash
+bin
+bzip2
+coreutils
+cpio
+cxxlibs
+devs
+dialog
+e2fsprogs
+elvis
+etc
+findutils
+file
+gawk
+gettext
+glibc-solibs
+glibc-zoneinfo
+grep
+gzip
+kbd
+kernel-firmware
+kernel-generic
+kernel-generic-smp
+kernel-huge
+kernel-huge-smp
+kernel-modules
+kernel-modules-smp
+kmod
+less
+lilo
+lvm2
+mdadm
+mkinitrd
+openssl-solibs
+pkgtools
+procps
+sed
+shadow
+sysklogd
+sysvinit
+sysvinit-functions
+sysvinit-scripts
+tar
+udev
+util-linux
+which
+xz
+
+
+# Package group [ap]
+
+diffutils
+groff
+man
+man-pages
+slackpkg
+texinfo
+vim
+
+
+# Package group [d]
+
+git
+perl
+python
+
+
+# Package group [e]
+
+
+
+# Package group [f]
+
+linux-faqs
+linux-howtos
+
+
+# Package group [k]
+
+
+
+# Package group [kde]
+
+
+
+# Package group [kdei]
+
+
+
+# Package group [l]
+
+db48
+gd
+glibc
+libtasn1
+mpfr
+ncurses
+
+
+# Package group [n]
+
+curl
+ca-certificates
+cyrus-sasl
+dhcpcd
+gnupg
+gnutls
+iproute2
+iputils
+net-tools
+nettle
+network-scripts
+openssh
+p11-kit
+wget
+
+
+# Package group [t]
+
+
+
+# Package group [tcl]
+
+
+
+# Package group [x]
+
+fontconfig
+libICE
+libSM
+libX11
+libXau
+libXaw
+libXdmcp
+libXext
+libXmu
+libXpm
+libXt
+libxcb
+
+
+# Package group [xap]
+
+
+
+# Package group [xfce]
+
+
+
+# Package group [y]
+
+
