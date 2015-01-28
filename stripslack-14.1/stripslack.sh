@@ -52,16 +52,21 @@ done
 echo
 echo
 echo "+=============================================================================="
-echo "| Checking for packages to te removed from your system..."
+echo "| Checking for packages to be removed from your system..."
 echo "+=============================================================================="
 echo
 sleep 3
 for PACKAGE in $CRUFT; do
   if [ -r $PKGINFO/$PACKAGE ] ; then
-    /sbin/removepkg ${PACKAGE} 
+    PACKAGES="$PACKAGES $PACKAGE"
   fi
 done
 
+if [ ! -z "$PACKAGES" ]; then
+  /usr/sbin/slackpkg remove $PACKAGES
+fi
+
+unset PACKAGE
 unset PACKAGES
 
 echo 
