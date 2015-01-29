@@ -257,7 +257,7 @@ The 'desktop-14.1-32bit/tools/' subdirectory features the 'cleanmenu.sh'
 utility, a small Bash script to clean up various desktop menu entries and make
 them Joe-Sixpack-friendly. Run this utility:
 
-# cd desktop-14.1-32bit/tools/
+# cd slackware/desktop-14.1-32bit/tools/
 # ./cleanmenu.sh 
 
 The script replaces many '*.desktop' files in /usr/share/applications and

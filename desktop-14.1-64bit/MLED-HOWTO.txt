@@ -199,7 +199,7 @@ The script makes use of 'slackpkg', so make sure it's configured correctly.
 Trim your Slackware installation: 
 
   # cd slackware/desktop-14.1-64bit/tools/ 
-  # ./trim_desktop_xfce.sh 
+  # ./trim_desktop.sh 
 
 If you don't run the 'trim_desktop.sh' script, you'll be missing two packages
 from the official 'extra/' repository that don't ship on the installation
@@ -279,7 +279,7 @@ The 'desktop-14.1-64bit/tools/' subdirectory features the 'cleanmenu.sh'
 utility, a small Bash script to clean up various desktop menu entries and make
 them Joe-Sixpack-friendly. Run this utility:
 
-# cd desktop-14.1-64bit/tools/
+# cd slackware/desktop-14.1-64bit/tools/
 # ./cleanmenu.sh 
 
 The script replaces many '*.desktop' files in /usr/share/applications and
