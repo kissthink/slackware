@@ -206,7 +206,7 @@ correctement.
 Élaguez votre système Slackware de base :
 
   # cd slackware/desktop-14.1-64bit/tools/ 
-  # ./trim_desktop_xfce.sh 
+  # ./trim_desktop.sh 
 
 Si vous n'utilisez pas le script 'trim_desktop.sh', il vous manquera deux
 paquets absents des disques d'installation, et qui figurent dans le dépôt
@@ -275,7 +275,7 @@ Le sous-répertoire 'desktop-14.1-64bit/tools/' fournit l'utilitaire
 menu des applications de façon à les rendre lisibles pour Madame Michu. Lancez
 ce script :
 
-  # cd desktop-14.1-64bit/tools/ 
+  # cd slackware/desktop-14.1-64bit/tools/ 
   # ./cleanmenu.sh 
 
 Le script remplace toute une série de fichiers '*.desktop' dans

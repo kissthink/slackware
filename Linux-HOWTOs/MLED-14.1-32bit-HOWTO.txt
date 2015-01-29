@@ -255,7 +255,7 @@ Le sous-répertoire 'desktop-14.1-32bit/tools/' fournit l'utilitaire
 menu des applications de façon à les rendre lisibles pour Madame Michu. Lancez
 ce script :
 
-  # cd desktop-14.1-32bit/tools/ 
+  # cd slackware/desktop-14.1-32bit/tools/ 
   # ./cleanmenu.sh 
 
 Le script remplace toute une série de fichiers '*.desktop' dans
