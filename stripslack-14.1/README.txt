@@ -131,7 +131,16 @@ You may use the script 'stripslack.sh' to strip an existing Slackware
 installation and turn it into StripSlack. The script uses 'slackpkg', so make
 sure you have configured a valid mirror in '/etc/slackpkg/mirrors'. 
 
-  /!\ BIG FAT WARNING! THIS WILL FLAY YOUR HAMSTER ALIVE!
+  # cd
+  # git clone https://github.com/kikinovak/slackware
+  # cd slackware/stripslack-14.1
+  # ./stripslack.sh
+
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  !!! BIG FAT WARNING! THIS WILL FLAY YOUR HAMSTER ALIVE !!!
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 
 In the days and weeks to come, there will be some discussion around StripSlack
 on LQ, and some honing and fine-tuning is to be expected. Some packages will
