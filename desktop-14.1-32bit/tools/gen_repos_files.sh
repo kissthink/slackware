@@ -46,7 +46,7 @@ USERDEFS=${USERDEFS:-~/.genreprc}
 # Sane defaults:
 
 # The directory of the Slackware package repository:
-REPOSROOT=${REPOSROOT:-"/home/kikinovak/Web/slackware/desktop-14.1-32bit/"}
+REPOSROOT=${REPOSROOT:-"/home/kikinovak/Public/slackware/desktop-14.1-32bit/"}
 
 # Repository maintainer
 REPOSOWNER=${REPOSOWNER:-"Niki Kovacs <kikinovak@free.fr>"}

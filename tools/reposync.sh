@@ -4,6 +4,6 @@ CWD=$(pwd)
 LOCALSTUFF=$CWD/..
 RSYNCUSER=kikinovak
 SERVER=alphamule
-SERVERDIR=/home/kikinovak/Web/slackware
+SERVERDIR=/home/kikinovak/Public/slackware
 $RSYNC -av $LOCALSTUFF --exclude '.git*' $RSYNCUSER@$SERVER:$SERVERDIR 
 
