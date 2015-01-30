@@ -1,3 +1,6 @@
+Fri Jan 30 13:34:26 CET 2015
+multimedia/flashplayer-plugin-11.2.202.438-i386-1_microlinux.txz: Upgraded.
++--------------------------+
 Sat Jan 24 09:50:07 CET 2015
 xap/simple-scan-2.32.0.2-i486-1_microlinux.txz: Removed.
 	Simple Scan 2.32 doesn't store settings correctly, which is a showstopper.
