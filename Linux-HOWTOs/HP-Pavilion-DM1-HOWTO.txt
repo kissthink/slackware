@@ -94,28 +94,6 @@ blacklist ssb
 Supprimer la configuration dans '/etc/rc.d/rc.inet1.conf' et activer le
 NetworkManager.
 
-L'applet 'networkmanagement' de KDE ne fonctionne pas de manière
-satisfaisante, et il vaut mieux utiliser l'applet GNOME correspondant
-'network-manager-applet'. En bidouillant un peu, il s'intègre très bien au
-bureau KDE et fonctionne à merveille. 
-
-Supprimer l'applet de KDE s'il est installé :
-
-  # removepkg networkmanagement
-
-Intégrer 'nm-applet' au démarrage automatique de KDE :
-
-  $ mkdir -p ~/.config/autostart
-  $ grep -v NotShowIn /etc/xdg/autostart/nm-applet.desktop \
-    > ~/.config/autostart/nm-applet.desktop
-
-L'applet a besoin de 'polkit-gnome-authentication-agent' pour fonctionner
-correctement. On va donc l'ajouter au démarrage automatique :
-
-  $ grep -v NotShowIn \
-    /etc/xdg/autostart/polkit-gnome-authentication-agent-1.desktop \
-    > ~/.config/autostart/polkit-gnome-authentication-agent-1.desktop
-
 
 Carte son AMD HDMI
 ------------------
