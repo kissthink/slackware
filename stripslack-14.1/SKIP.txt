@@ -581,12 +581,10 @@ libmpc
 libmsn
 libmtp
 libnjb
-libnl3
 libnotify
 libogg
 liboggz
 liboil
-libpcap
 libplist
 libpng
 libproxy
@@ -724,7 +722,6 @@ iftop
 imapd
 inetd
 ipset
-iptables
 iptraf-ng
 ipw2100-fw
 ipw2200-fw
@@ -741,7 +738,6 @@ libnetfilter_cthelper
 libnetfilter_cttimeout
 libnetfilter_log
 libnetfilter_queue
-libnfnetlink
 libqmi
 lynx
 mailx

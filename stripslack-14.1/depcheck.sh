@@ -7,6 +7,7 @@
 
 for DIRECTORY in $(echo $PATH | sed 's/:/ /g'); do
   for FILE in $DIRECTORY/*; do
+    echo -n "." 
     if [ $(file -b $FILE | cut -d' ' -f1) == 'ELF' ]; then
       if ldd $FILE | grep -q 'not found'; then
          echo "$FILE"
@@ -15,3 +16,5 @@ for DIRECTORY in $(echo $PATH | sed 's/:/ /g'); do
     fi
   done
 done
+echo 
+echo

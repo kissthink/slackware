@@ -108,6 +108,8 @@ gd
 glibc
 glibc-i18n
 libnl
+libnl3
+libpcap
 libtasn1
 mpfr
 ncurses
@@ -122,9 +124,11 @@ dhcpcd
 gnupg
 gnutls
 iproute2
+iptables
 iputils
 irssi
 lftp
+libnfnetlink
 links
 ncftp
 net-tools

@@ -4,6 +4,8 @@ gd:ADD
 glibc:ADD
 glibc-i18n:ADD
 libnl:ADD
+libnl3:ADD
+libpcap:ADD
 libtasn1:ADD
 mpfr:ADD
 ncurses:ADD
@@ -138,12 +140,10 @@ libmpc:SKP
 libmsn:SKP
 libmtp:SKP
 libnjb:SKP
-libnl3:SKP
 libnotify:SKP
 libogg:SKP
 liboggz:SKP
 liboil:SKP
-libpcap:SKP
 libplist:SKP
 libpng:SKP
 libproxy:SKP
