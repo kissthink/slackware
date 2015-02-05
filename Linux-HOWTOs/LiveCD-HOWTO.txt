@@ -2,82 +2,35 @@
 LiveCD HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
 ============
 
-Dernière révision : 16 novembre 2014
+Dernière révision : 5 février 2015
 
-Ce HOWTO décrit la confection d'un LiveCD Slackware.
-
-
-Introduction
-------------
-
-La distribution LFS (Linux From Scratch) ne dispose pas de son propre CD
-d'installation. Elle a besoin d'un LiveCD avec une série d'outils de
-développement. Nous allons construire ce LiveCD à partir d'une installation
-existante de Slackware.
-
-Il sera doté d'un système de base raisonnablement complet, d'un serveur
-graphique, d'une panoplie complète d'outils de développment, du gestionnaire
-de fenêtres WindowMaker et du navigateur web Mozilla Firefox.
+Ce HOWTO décrit la confection d'un LiveCD MLED.
 
 
 Installation
 ------------
 
-Installer Slackware 14.1 32-bit dans une machine virtuelle. 
+Installer MLED dans une machine virtuelle :
+
+  * 40 Go d'espace disque
+  * 3 Go de RAM
 
 Partitionnement :
 
   * une seule partition Linux, formatée en ext4
   * pas de partition swap
 
-Installer les groupes de paquets A, AP, D, K, L, N, TCL et X en mode "full". 
-
 LILO : Frame Buffer 1024x768
 
 Options 'nomodeset quiet ipv6.disable=1'
 
-Nom d'hôte : slackware-live.microlinux.fr
+Nom d'hôte : mled-live.microlinux.fr
 
 Réseau : DHCP
 
 
-Configuration
--------------
-
-À l'issue du redémarrage initial, on peut éventuellement télécharger et
-installer le paquet 'user-settings-console' pour agrémenter la console.
-
-Configurer 'slackpkg' et effectuer la mise à jour initiale.
-
-Peaufiner LILO tout en restant sur le kernel 'huge-smp'.
-
-Ajouter un utilisateur 'livecduser' avec le mot de passe 'microlinux'. 
-
-Installer les Additions Invité de VirtualBox et redémarrer. La présence des
-modules correspondants permettra au LiveCD d'afficher correctement
-l'environnement graphique dans une machine virtuelle. 
-
-Définir la disposition du clavier pour le serveur graphique.
-
-Installer deux paquets du groupe XAP : 
-
-  * windowmaker
-  * mozilla-firefox
-
-En passant, on peut également installer les traductions de Firefox.
-
-Définir WindowMaker comme gestionnaire de fenêtres par défaut et passer en
-init 4.
-
-  /!\ Une astuce pour reconstruire les menus de WindowMaker après
-  l'installation ou la suppression d'une application, c'est de supprimer
-  ~/GNUstep et de relancer WindowMaker.
-
-Le système utilise actuellement 4,6 Go, il va donc falloir élaguer un peu.
-
-  # git clone https://github.com/kikinovak/lfs
-  # cd lfs/livecd
-  # ./trim-livecd.sh
+Outils de construction
+----------------------
 
 Aller sur le site des Slackware Live Scripts :
 
@@ -89,39 +42,32 @@ Télécharger et installer les paquets :
   * squashfs
   * unionfs-fuse
 
-Faire un peu de ménage dans le système, supprimer les fichiers et les
-répertoires qui ne servent à rien. 
+
+Configuration
+-------------
+
+Localiser le système en anglais : en_US.utf8
+
+Peaufiner LILO tout en restant sur le kernel 'huge-smp'.
+
+Ajouter un utilisateur 'livecduser' avec le mot de passe 'microlinux'. 
+
+Installer les Additions Invité de VirtualBox et redémarrer. La présence des
+modules correspondants permettra au LiveCD d'afficher correctement
+l'environnement graphique dans une machine virtuelle. 
+
+Définir la disposition du clavier pour le serveur graphique.
+
+Faire un peu de ménage dans le système, supprimer les paquets qui ne servent à
+rien :
+
+  * 
 
 Supprimer les fichiers de périphériques persistants :
 
   # cd /etc/udev/rules.d
   # rm 70-persistent-*
   # rm 60-vboxadd.rules
-
-
-Utilisateur pour LFS
---------------------
-
-On peut éventuellement ajouter un utilisateur pour la construction de LFS :
-
-  # groupadd lfs
-  # useradd -s /bin/bash -g lfs -m -k /dev/null lfs
-  # passwd lfs
-  # su - lfs
-  $ cat > ~/.bash_profile << "EOF"
-  > exec env -i HOME=$HOME TERM=$TERM PS1='\u:\w\$ ' /bin/bash
-  > EOF
-  $ cat > ~/.bashrc << "EOF"
-  > set +h
-  > umask 022
-  > LFS=/mnt/lfs
-  > LC_ALL=POSIX
-  > LFS_TGT=$(uname -m)-lfs-linux-gnu
-  > PATH=/tools/bin:/bin:/usr/bin
-  > export LFS LC_ALL LFS_TGT PATH
-  > EOF
-
-Mot de passe : 'lfs'
 
 
 Construction du système Live
