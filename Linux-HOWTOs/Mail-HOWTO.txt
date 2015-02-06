@@ -1027,5 +1027,19 @@ Supprimer les utilisateurs et les groupes système correspondants :
   # groupdel postdrop
 
 
+Problème de permissions
+-----------------------
+
+Après une mise à jour, il se peut que l'on ait des problèmes de permissions. 
+
+  # /etc/rc.d/rc.postfix stop
+  # killall -9 postdrop
+  # cd /var/spool/postfix
+  # chown -R root:postdrop public maildrop
+  # postfix set-permissions
+  # postfix check
+  # /etc/rc.d/rc.postfix start
+
+
 ------------------------------------------------------------------------------
 # vim: syntax=txt
