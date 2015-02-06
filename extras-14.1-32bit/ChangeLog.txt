@@ -1,3 +1,8 @@
+Fri Feb  6 08:35:45 CET 2015
+xap/dropbox-2.10.41-i486-2_microlinux.txz: Rebuilt.
+  Corrected wrong ARCH which made the package invisible to slackpkg on 32-bit
+	systems. Thanks to user bormant on LQ.
++--------------------------+
 Thu Jan 15 17:03:09 CET 2015
 ap/hplip-3.14.10-i486-1_microlinux.txz: Added.
   Support for last-generation HP printers.

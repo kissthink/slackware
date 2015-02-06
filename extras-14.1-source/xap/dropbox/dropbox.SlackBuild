@@ -27,15 +27,21 @@ PRGNAM=dropbox
 PACKNAM=dropbox-lnx
 
 VERSION=${VERSION:-2.10.41}
-BUILD=${BUILD:-1}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_microlinux}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
-    i?86) ARCH=x86 ;;
+    i?86) ARCH=i486 ;;
     arm*) ARCH=arm ;;
        *) ARCH=$( uname -m ) ;;
   esac
+fi
+
+if [ "$ARCH" == "i486" ]; then
+  PKGARCH="x86"
+else
+  PKGARCH="$ARCH"
 fi
 
 CWD=$(pwd)
@@ -45,7 +51,7 @@ OUTPUT=${OUTPUT:-/tmp}
 
 set -e
 
-DOWNLOAD="https://dl.dropboxusercontent.com/u/17/$PACKNAM.$ARCH-$VERSION.tar.gz"
+DOWNLOAD="https://dl.dropboxusercontent.com/u/17/$PACKNAM.$PKGARCH-$VERSION.tar.gz"
 
 wget -c $DOWNLOAD
 
@@ -53,7 +59,7 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf .$PRGNAM-dist
-tar xvf $CWD/$PACKNAM.$ARCH-$VERSION.tar.gz
+tar xvf $CWD/$PACKNAM.$PKGARCH-$VERSION.tar.gz
 cd .$PRGNAM-dist
 chown -R root:root .
 find -L . \
