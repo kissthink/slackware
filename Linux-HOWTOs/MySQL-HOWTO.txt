@@ -2,7 +2,7 @@
 MySQL HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
 ===========
 
-Dernière révision : 15 avril 2014
+Dernière révision : 26 avril 2015
 
 Ce HOWTO décrit la mise en place d'un serveur de bases de données
 MySQL/MariaDB sous Slackware. 
@@ -91,14 +91,14 @@ MySQL/MariaDB dispose de l'utilitaire 'mysql_secure_installation' pour assurer
 la sécurité d'une installation fraîche sur une machine de production. Ce
 programme permet d'effectuer quelques démarches de sécurisation essentielles :
 
-  > Définir un mot de passe du compte root MySQL (à ne PAS confondre avec le
-    compte root Linux).
+  1. Définir un mot de passe du compte root MySQL (à ne PAS confondre avec le
+     compte root Linux).
 
-  > Supprimer les comptes root MySQL accessibles de l'extérieur. 
+  2. Supprimer les comptes root MySQL accessibles de l'extérieur. 
 
-  > Supprimer les connexions anonymes.
+  3. Supprimer les connexions anonymes.
 
-  > Supprimer la base de données de test.
+  4. Supprimer la base de données de test.
 
 Lancer la sécurisation :
 
